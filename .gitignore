@@ -3,3 +3,7 @@ bower_components/
 .sass-cache/
 .tmp/
 
+
+.idea/.name
+.idea/arjshiv.github.io.iml
+.idea/misc.xml
