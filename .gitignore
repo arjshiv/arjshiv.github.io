@@ -7,3 +7,4 @@ bower_components/
 .idea/.name
 .idea/arjshiv.github.io.iml
 .idea/misc.xml
+*.xml
