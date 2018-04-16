@@ -1,0 +1,28 @@
+[
+    {
+        "role":"Chief Technology Officer",
+        "company":"Climb Credit, New York, NY",
+        "summary":"Lead Climb’s engineering and product teams to fulfill Climb's mission of expanding students' access to quality education. Drive and create the product and engineering strategy and roadmap.",
+        "accomplishments": [
+          "Increased loan originations 10x to $30mm/year by building Climb's automated underwriting platform, allowing 98% of applicants to receive loan decisions in less than a minute.",
+          "Improved automated decision-making efficiency 2x from 40% to 98% of all applicants, enabling most users to receive their decision within seconds (NodeJS + MongoDB + Angular/React).",
+          "Doubled the count of Climb's school partners from 30 to 60 by delivering B2B apps and API integrations to schools that were a constant differentiator.",
+          "Recruited and built Climb’s amazing engineering team, scaling the team from 1 - 5 people and the company from 5 - 30."
+        ],
+        "range":"June 2016 - Present",
+        "link": "www.climbcredit.com"
+    },
+    {
+        "role":"Founding Engineer, Analytics Engineering",
+        "company":"BlackRock, New York, NY",
+        "summary":"Led Product Management, Front-End Engineering, and Developer Advocacy for a team using BlackRock's industry-leading analytics to create products for the firm’s strategic initiatives.",
+        "accomplishments": [
+          "Directed efforts to build the firm’s premier retail analytics product, a $30mm annual run rate business delivered through a portfolio construction web application with a team of 3 engineers that grew to 10.",
+          "Expanded the delivery scale of the Client Services team, saving over 1,000 man-hours of support/year by creating a tutorial builder for BlackRock's product managers to create on-demand walkthroughs of apps in BlackRock’s software suite without writing a single line of code.",
+          "Eliminated over 4,000 developer hours/year by leading BlackRock’s web developer evangelization initiative, successfully upgrading the firm’s 2,000+ developers and enabling multiple new products to be built, going from Embedded Perl to a modern Angular/React client-side stack.",
+          "Saved over $300,000/year in spend and software resources for BlackRock's $14 trillion risk reporting platform through multiple projects that saved thousands of machine-hours on BlackRock's cloud platform"
+        ],
+        "range":"July 2013 — June 2016",
+        "link": "www.blackrock.com"
+    }
+]
