@@ -2,12 +2,12 @@
     {
         "role":"Chief Technology Officer",
         "company":"Climb Credit, New York, NY",
-        "summary":"Lead Climb’s engineering and product teams to fulfill Climb's mission of expanding students' access to quality education. Drive and create the product and engineering strategy and roadmap.",
+        "summary":"Lead Climb’s engineering and product teams to fulfill Climb's mission of expanding students' access to quality education. Drive product and engineering strategy and roadmap.",
         "accomplishments": [
-          "Increased loan originations 10x to $30mm/year by building Climb's automated underwriting platform, allowing 98% of applicants to receive loan decisions in less than a minute.",
-          "Improved automated decision-making efficiency 2x from 40% to 98% of all applicants, enabling most users to receive their decision within seconds (NodeJS + MongoDB + Angular/React).",
-          "Doubled the count of Climb's school partners from 30 to 60 by delivering B2B apps and API integrations to schools that were a constant differentiator.",
-          "Recruited and built Climb’s amazing engineering team, scaling the team from 1 - 5 people and the company from 5 - 30."
+          "Built Climb's student experience, growing conversion rates 2x by simplifying the financing process.",
+          "Increased loan originations 10x by building Climb's automated underwriting platform, enabling 98% of applicants to receive loan decisions in less than a minute.",
+          "Grew Climb's school partners 2x by delivering B2B apps and API integrations to schools that were a constant differentiator.",
+          "Recruited and built Climb’s engineering, product and data teams, scaling the team from 1 - 10 people and the company from 5 - 30."
         ],
         "range":"June 2016 - Present",
         "link": "www.climbcredit.com"

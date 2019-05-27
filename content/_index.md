@@ -9,4 +9,4 @@ outputs:
 - rss
 - json
 ---
-<p>I’m a technology and product executive with a track record of managing successful teams across technical and non-technical disciplines, creating products that generate over $40mm in combined annual revenue across companies large and small.</p>
+<p>Technology and product executive. I've built and launched several products generating over $40mm in combined annual revenue across large and small companies.</p>
