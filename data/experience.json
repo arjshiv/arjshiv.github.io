@@ -2,25 +2,23 @@
     {
         "role":"Chief Technology Officer",
         "company":"Climb Credit, New York, NY",
-        "summary":"Lead Climb’s engineering and product teams to fulfill Climb's mission of expanding students' access to quality education. Drive product and engineering strategy and roadmap.",
+        "summary":"Climb is a lender focused on high-ROI education. I lead Climb’s engineering and product teams and drive product strategy.",
         "accomplishments": [
-          "Built Climb's student experience, growing conversion rates 2x by simplifying the financing process.",
-          "Increased loan originations 10x by building Climb's automated underwriting platform, enabling 98% of applicants to receive loan decisions in less than a minute.",
-          "Grew Climb's school partners 2x by delivering B2B apps and API integrations to schools that were a constant differentiator.",
-          "Recruited and built Climb’s engineering, product and data teams, scaling the team from 1 - 10 people and the company from 5 - 30."
+          "Grew company 100% YoY from $0.5 to $5mm ARR, $10mm to $70mm in originations, and 25 to 200 school partners.",
+          "Recruited and built Climb’s engineering, product and data teams, scaling the team from 1 - 12 people and the company from 5 - 50."
         ],
         "range":"June 2016 - Present",
-        "link": "https://www.climbcredit.com"
+        "link": "https://climbcredit.com"
     },
     {
         "role":"Founding Engineer, Analytics Engineering",
         "company":"BlackRock, New York, NY",
-        "summary":"Led Product Management, Front-End Engineering, and Developer Advocacy for a team using BlackRock's industry-leading analytics to create products for the firm’s strategic initiatives.",
+        "summary":"BlackRock is the world's lasgest asset manager. I held multiple roles across the firm focuse don analytics and developer experience.",
         "accomplishments": [
-          "Directed efforts to build the firm’s premier retail analytics product, a $30mm annual run rate business delivered through a portfolio construction web application with a team of 3 engineers that grew to 10.",
-          "Expanded the delivery scale of the Client Services team, saving over 1,000 man-hours of support/year by creating a tutorial builder for BlackRock's product managers to create on-demand walkthroughs of apps in BlackRock’s software suite without writing a single line of code.",
-          "Eliminated over 4,000 developer hours/year by leading BlackRock’s web developer evangelization initiative, successfully upgrading the firm’s 2,000+ developers and enabling multiple new products to be built, going from Embedded Perl to a modern Angular/React client-side stack.",
-          "Saved over $300,000/year in spend and software resources for BlackRock's $14 trillion risk reporting platform through multiple projects that saved thousands of machine-hours on BlackRock's cloud platform"
+          "Built Aladdin for Retail, a $30mm annual run rate SaaS business delivering portfolio analytics to large wealth managers. Grew product + engineering team from 5 to 40",
+          "Built, advocated, and led GTM for AladdinHelp, a pre-WalkMe WalkMe, saving over 1,000 support hours/year.",
+          "Saved over 4,000 developer hours/year by leading an upgrade of the company's web technology stack across 2,000 developers.",
+          "Saved over $300,000/year in spend and software resources for BlackRock's $14 trillion risk reporting platform in my first 6 months through multiple projects that saved thousands of machine-hours on BlackRock's cloud platform."
         ],
         "range":"July 2013 — June 2016",
         "link": "https://www.blackrock.com"

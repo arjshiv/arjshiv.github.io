@@ -4,4 +4,10 @@ date: {{ .Date }}
 draft: true
 ---
 
-Technology and product executive. I've built and launched several products generating over $40mm in combined annual revenue across large and small companies.
+Trying to build joyful teams,lasting companies,and useful products. Work: CTO 
+@climbcredit
+, prev 
+@blackrock
+ + some startups. ❤️:
+@isuvaish
+,product,👟,and ☕️.

@@ -8,10 +8,10 @@ theme = "hugo-resume"
     lastName = "Kannan"
     address = "New York, NY"
     phone = "1-720-326-4767"
-    contactNote = "Engineering and Product Executive"
+    contactNote = "Product + Engineering Executive"
     profileImage = "images/arjun.png"
     email = "me@arjunkannan.com"
-    description = "Arjun Kannan's personal website"
+    description = "Arjun Kannan"
     favicon = "images/favicon.ico"
     # what sections
     showSkills = true
@@ -21,7 +21,7 @@ theme = "hugo-resume"
     showExperience = true
     showEducation = true
 
-    showQr = true
+    showQr = false
 
 [[params.handles]]
     name = "LinkedIn"

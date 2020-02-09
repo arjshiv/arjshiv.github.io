@@ -1,8 +1,7 @@
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: monospace;
   padding-top: 3em;
-  color: #aaa;
-  background-color: black;
+  color: #333;
 }
 
 @media (min-width: 992px) {
@@ -18,10 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: monospace;
   font-weight: 700;
   text-transform: uppercase;
-  color: #bbb;
+  color: #333;
 }
 
 h1 {
@@ -36,16 +35,20 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: monospace;
   font-size: 1.35rem;
 }
 
+.list-social-icons {
+  font-family: sans-serif;
+}
+
 .list-social-icons a {
-  color: lightseagreen;
+  /* color: lightseagreen; */
 }
 
 .list-social-icons a:hover {
-  color: darkcyan;
+  /* color: darkcyan; */
 }
 
 .list-social-icons a .fa-lg {
@@ -138,7 +141,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
-  color: lightseagreen !important;
+  color: black !important;
 }
 
 a {
