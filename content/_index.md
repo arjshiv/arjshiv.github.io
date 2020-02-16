@@ -9,7 +9,7 @@ outputs:
 - rss
 - json
 ---
-<p>Trying to build great teams, lasting companies, and useful products.</p>
+<p>I'm trying to build great teams, lasting companies, and useful products.</p>
 
 <h6>Who:</h6>
 <p>I run product, engineering, and data at <a href='www.climbcredit.com' target='_blank'>Climb Credit</a>, where we help people up their earning potential by giving them tools to find and finance great education. Previously, I worked at <a href='www.blackrock.com' target='_blank'>BlackRock</a>, where I focused on portfolio analytics, reporting,  developer experience, and later, leading product + engineering teams creating analytics software to help companies provide better financial advice.</p>
