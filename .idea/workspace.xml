@@ -19,9 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37769d4b-cbed-4129-912e-c89f4fd19f8e" name="Default" comment="">
+    <list default="true" id="37769d4b-cbed-4129-912e-c89f4fd19f8e" name="Default" comment="ENH: fix typo">
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/experience.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/experience.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/contributions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/contributions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/bosh-agents/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/bosh-agents/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/docker-marketplace/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/docker-marketplace/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/atlassian-ecosystem/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/atlassian-ecosystem/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bash/shell/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bash/shell/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bosh/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bosh/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/devops/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/devops/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/docker/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/docker/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/java/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/java/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/maven/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/maven/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/monit/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/monit/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/python/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/python/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/rest-apis/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/rest-apis/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/xml/xslt/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/xml/xslt/index.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,26 +52,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>#BD5D38</find>
-      <find>medium</find>
-      <find>nav-link</find>
-      <find>Saira Extra Condensed</find>
-      <find>serif</find>
-      <find>Ubuntu</find>
-      <find>resume</find>
-      <find>qr</find>
-      <find>resume.js</find>
-      <find>home</find>
-      <find>title</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>mediumpurple</replace>
-      <replace>sans-serif</replace>
-      <replace>Libre Franklin</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,6 +71,12 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -121,7 +129,7 @@
       <workItem from="1524017889226" duration="1524000" />
       <workItem from="1550447931682" duration="13000" />
       <workItem from="1552341341418" duration="34000" />
-      <workItem from="1593910160901" duration="266000" />
+      <workItem from="1593910160901" duration="1850000" />
     </task>
     <task id="LOCAL-00001" summary="ENH: Add Vue scaffolding">
       <created>1505098507290</created>
@@ -172,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1524018306722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ENH: fix typo">
+      <created>1593910440591</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593910440591</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ENH: fix typo">
+      <created>1593910554041</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593910554041</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,16 +248,29 @@
     <MESSAGE value="ENH: update for firebase" />
     <MESSAGE value="ENH: update college" />
     <MESSAGE value="ENH: update config" />
-    <option name="LAST_COMMIT_MESSAGE" value="ENH: update config" />
+    <MESSAGE value="ENH: fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="ENH: fix typo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1592" height="850" key="DiffContextDialog" timestamp="1593910427182">
       <screen x="0" y="23" width="1792" height="1050" />
     </state>
     <state x="100" y="123" width="1592" height="850" key="DiffContextDialog/0.23.1792.1050@0.23.1792.1050" timestamp="1593910427182" />
+    <state x="496" y="288" key="Vcs.Push.Dialog.v2" timestamp="1593910557438">
+      <screen x="0" y="23" width="1792" height="1050" />
+    </state>
+    <state x="496" y="288" key="Vcs.Push.Dialog.v2/0.23.1792.1050@0.23.1792.1050" timestamp="1593910557438" />
     <state x="100" y="123" width="1592" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593910427182">
       <screen x="0" y="23" width="1792" height="1050" />
     </state>
     <state x="100" y="123" width="1592" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1792.1050@0.23.1792.1050" timestamp="1593910427182" />
+    <state x="594" y="303" width="604" height="490" key="find.popup" timestamp="1593919221917">
+      <screen x="0" y="23" width="1792" height="1050" />
+    </state>
+    <state x="594" y="303" width="604" height="490" key="find.popup/0.23.1792.1050@0.23.1792.1050" timestamp="1593919221917" />
+    <state x="561" y="256" width="670" height="676" key="search.everywhere.popup" timestamp="1593918933991">
+      <screen x="0" y="23" width="1792" height="1050" />
+    </state>
+    <state x="561" y="256" width="670" height="676" key="search.everywhere.popup/0.23.1792.1050@0.23.1792.1050" timestamp="1593918933991" />
   </component>
 </project>

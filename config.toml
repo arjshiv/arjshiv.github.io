@@ -38,3 +38,7 @@ theme = "hugo-resume"
 [params.google.analytics]
     trackerID = "UA-117789770-1"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
