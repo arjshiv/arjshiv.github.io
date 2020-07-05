@@ -19,12 +19,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37769d4b-cbed-4129-912e-c89f4fd19f8e" name="Default" comment="ENH: fix typo">
+    <list default="true" id="37769d4b-cbed-4129-912e-c89f4fd19f8e" name="Default" comment="ENH: add a little more info">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.cHVibGlj.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/experience.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/experience.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/contributions/deploy-triggers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/contributions/deploy-triggers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/contributions/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/contributions/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/contributions/schema-org/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/contributions/schema-org/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/contributions/shields-docker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/contributions/shields-docker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/bosh-agents/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/bosh-agents/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/docker-marketplace/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/docker-marketplace/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/creations/marketplace/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/creations/marketplace/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/publications/alldaydevops/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/publications/alldaydevops/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/publications/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/publications/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/agile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/agile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/atlassian-developer-ecosystem/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/atlassian-developer-ecosystem/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/atlassian-ecosystem/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/atlassian-ecosystem/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bamboo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bamboo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bash/shell/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bash/shell/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bitbucket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bitbucket/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bosh/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bosh/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/ci/cd-pipelines/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/ci/cd-pipelines/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/confluence/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/confluence/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/continuous-delivery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/continuous-delivery/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/continuous-integration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/continuous-integration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/culture/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/culture/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/devops/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/devops/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/docker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/docker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/java/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/java/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/javascript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/javascript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/jira/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/jira/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/jquery/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/jquery/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/json/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/json/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/maven/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/maven/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/monit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/monit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/node.js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/node.js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/python/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/python/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/rest-apis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/rest-apis/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/spring/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/spring/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/xml/xslt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/xml/xslt/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +149,7 @@
       <workItem from="1524017889226" duration="1524000" />
       <workItem from="1550447931682" duration="13000" />
       <workItem from="1552341341418" duration="34000" />
-      <workItem from="1593910160901" duration="2129000" />
+      <workItem from="1593910160901" duration="2233000" />
     </task>
     <task id="LOCAL-00001" summary="ENH: Add Vue scaffolding">
       <created>1505098507290</created>
@@ -182,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593919258018</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ENH: add a little more info">
+      <created>1593919541311</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593919541311</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,17 +283,18 @@
     <MESSAGE value="ENH: update college" />
     <MESSAGE value="ENH: update config" />
     <MESSAGE value="ENH: fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ENH: fix typo" />
+    <MESSAGE value="ENH: add a little more info" />
+    <option name="LAST_COMMIT_MESSAGE" value="ENH: add a little more info" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="123" width="1592" height="850" key="DiffContextDialog" timestamp="1593910427182">
       <screen x="0" y="23" width="1792" height="1050" />
     </state>
     <state x="100" y="123" width="1592" height="850" key="DiffContextDialog/0.23.1792.1050@0.23.1792.1050" timestamp="1593910427182" />
-    <state x="496" y="288" key="Vcs.Push.Dialog.v2" timestamp="1593919262521">
+    <state x="496" y="288" key="Vcs.Push.Dialog.v2" timestamp="1593919543015">
       <screen x="0" y="23" width="1792" height="1050" />
     </state>
-    <state x="496" y="288" key="Vcs.Push.Dialog.v2/0.23.1792.1050@0.23.1792.1050" timestamp="1593919262521" />
+    <state x="496" y="288" key="Vcs.Push.Dialog.v2/0.23.1792.1050@0.23.1792.1050" timestamp="1593919543015" />
     <state x="100" y="123" width="1592" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1593910427182">
       <screen x="0" y="23" width="1792" height="1050" />
     </state>
