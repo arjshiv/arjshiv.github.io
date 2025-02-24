@@ -8,10 +8,9 @@ firebase-debug.log*
 firebase-debug.*.log*
 .history
 # Firebase cache
-.firebase
+./.firebase
 
 # Firebase config
-.
 # Uncomment this if you'd like others to create their own Firebase project.
 # For a team working on the same Firebase project(s), it is recommended to leave
 # it commented so all members can deploy to the same project(s) in .firebaserc.
@@ -68,3 +67,4 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 .firebase/*.cache
+.firebase/hosting.cHVibGlj.cache
