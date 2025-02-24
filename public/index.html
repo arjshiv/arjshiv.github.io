@@ -22,8 +22,8 @@
             <a href="#" class="logo">Arjun Kannan</a>
             <nav class="navigation">
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#angel-investing" class="nav-link">Angel Investing</a>
                 <a href="#views" class="nav-link">Views</a>
-                <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </header>
         
@@ -33,16 +33,22 @@
                 <div class="content-wrapper">
                     <h1 id="typewriter" class="typewriter"></h1>
                     <p class="letter-swap">Building ResiDesk | Bringing customer data into real estate | The future is here; I'm working to distribute it evenly.</p>
-                    <p class="letter-swap">Angel investor in 100+ startups • TechStars mentor • AI thought leader</p>
                     <div class="button-group">
                         <a href="#experience" class="btn primary">Explore My Journey</a>
-                        <a href="#contact" class="btn secondary">Get in Touch</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="angel-investing" class="angel-section">
+            <h2 class="section-title">Angel <span class="highlight">Investing</span></h2>
+            <div class="angel-container modern-card">
+                <p class="letter-swap">Angel investor in 100+ startups • TechStars mentor</p>
+            </div>
+        </section>
+
         <section id="videos" class="video-section">
+            <h2 class="section-title">Featured <span class="highlight">Videos</span></h2>
             <div class="video-container">
                 <iframe 
                     width="560" 
@@ -69,26 +75,35 @@
 
         <section id="experience">
             <h2 class="section-title">My <span class="highlight">Experience</span></h2>
-            <div class="experience-timeline">
-                <div class="timeline-item modern-card">
-                    <div class="timeline-header">
-                        <h3>ResiDesk - Co-Founder</h3>
+            <div class="experience-grid">
+                <div class="modern-card interactive">
+                    <div class="card-header">
+                        <h3>ResiDesk</h3>
+                        <p class="card-subtitle">Co-Founder</p>
                     </div>
-                    <p>Rebuilding trust in real estate with AI + human hybrid solutions. Handling millions of daily resident interactions, achieving 7% higher renewals and rent in a $5T industry</p>
+                    <div class="card-content">
+                        <p>Rebuilding trust in real estate with AI + human hybrid solutions. Handling millions of daily resident interactions, achieving 7% higher renewals and rent in a $5T industry</p>
+                    </div>
                 </div>
                 
-                <div class="timeline-item modern-card">
-                    <div class="timeline-header">
-                        <h3>Climb Credit - CTO/CPO</h3>
+                <div class="modern-card interactive">
+                    <div class="card-header">
+                        <h3>Climb Credit</h3>
+                        <p class="card-subtitle">CTO/CPO</p>
                     </div>
-                    <p>Led product, engineering, and data teams, scaling from $1M to $300M in annual loans. Helped thousands of students increase earnings by 40% through access to high-ROI education. Built sophisticated underwriting systems backed by Goldman Sachs.</p>
+                    <div class="card-content">
+                        <p>Led product, engineering, and data teams, scaling from $1M to $300M in annual loans. Helped thousands of students increase earnings by 40% through access to high-ROI education. Built sophisticated underwriting systems backed by Goldman Sachs.</p>
+                    </div>
                 </div>
                 
-                <div class="timeline-item modern-card">
-                    <div class="timeline-header">
-                        <h3>BlackRock - Product & Engineering Lead</h3>
+                <div class="modern-card interactive">
+                    <div class="card-header">
+                        <h3>BlackRock</h3>
+                        <p class="card-subtitle">Product & Engineering Lead</p>
                     </div>
-                    <p>Led Aladdin for Retail from $0 to $40M ARR in its first year. Simplified complex risk analysis tools for everyday financial advisors, scaling the team from 5 to 40 while maintaining product excellence.</p>
+                    <div class="card-content">
+                        <p>Led Aladdin for Retail from $0 to $40M ARR in its first year. Simplified complex risk analysis tools for everyday financial advisors, scaling the team from 5 to 40 while maintaining product excellence.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,27 +146,6 @@
                 </div>
             </div>
         </section>
-
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
-            <div class="contact-container modern-card">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
-            </div>
-        </section>
     </div>
     
     <footer>
@@ -182,6 +176,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="js/components/Typewriter.js"></script>
+    <script src="js/components/Button.js"></script>
+    <script src="js/components/Card.js"></script>
+    <script src="js/components/Form.js"></script>
+    <script src="js/components/Tabs.js"></script>
+    <script src="js/components/Toast.js"></script>
+    <script src="js/components/Dialog.js"></script>
     <script src="js/animations.js"></script>
     <script>
         // Initialize Typewriter
@@ -190,6 +190,21 @@
             text: "Hi, I'm",
             highlightedText: "Arjun Kannan",
             speed: 100
+        });
+
+        // Initialize shadcn/ui-inspired components
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Button component
+            new Button();
+            
+            // Initialize Card component
+            new Card();
+            
+            // Initialize Toast for notifications
+            window.toastManager = new Toast({
+                position: 'bottom-right',
+                duration: 5000
+            });
         });
     </script>
 </body>

@@ -176,48 +176,57 @@ body.light-theme .logo {
     transform: translateY(-2px);
 }
 
-/* Experience Timeline */
-.experience-timeline {
-    position: relative;
-    padding-left: 2rem;
-    margin-top: 4rem;
+/* Experience Section */
+.experience-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.experience-timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: hsl(var(--dark-border));
+.card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid hsl(var(--border));
 }
 
-.timeline-item {
-    position: relative;
-    padding: 2rem;
-    margin-bottom: 2rem;
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.card-subtitle {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content p {
+    margin: 0;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.6;
+}
+
+/* Dark mode styles */
+body.dark-theme .card-header h3 {
+    color: hsl(var(--dark-foreground));
+}
+
+body.dark-theme .card-subtitle,
+body.dark-theme .card-content p {
+    color: hsl(var(--dark-muted-foreground));
+}
+
+body.dark-theme .modern-card {
     background: hsl(var(--dark-muted));
-    border-radius: 1rem;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.timeline-item.visible {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -2.5rem;
-    top: 2rem;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background: hsl(var(--dark-muted-foreground));
+    border-color: hsl(var(--dark-border));
 }
 
 /* Card Grid */
@@ -351,8 +360,10 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .experience-timeline {
-        padding-left: 1.5rem;
+    .experience-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
@@ -435,78 +446,6 @@ footer {
     border: 1px solid hsl(var(--dark-border));
 }
 
-/* Timeline Header */
-.timeline-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.badge {
-    padding: 0.25rem 0.75rem;
-    background: hsl(var(--dark-muted-foreground));
-    border-radius: 1rem;
-    font-size: 0.875rem;
-    color: hsl(var(--dark-foreground));
-}
-
-/* Card Icons */
-.card-icon {
-    margin-bottom: 1.5rem;
-    color: hsl(var(--dark-muted-foreground));
-}
-
-/* Contact Form */
-.contact-section {
-    margin-top: 6rem;
-}
-
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-weight: 500;
-    color: hsl(var(--dark-foreground));
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    border: 1px solid hsl(var(--dark-border));
-    background: hsl(var(--dark-muted));
-    color: hsl(var(--dark-foreground));
-    font-family: inherit;
-    transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: hsl(var(--dark-muted-foreground));
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
-}
-
-.form-group textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
 /* Footer Enhancements */
 .footer-content {
     display: -ms-grid;
@@ -551,13 +490,6 @@ body.light-theme .tech-badge {
     border-color: hsl(var(--border));
 }
 
-body.light-theme .form-group input,
-body.light-theme .form-group textarea {
-    background: hsl(var(--muted));
-    color: hsl(var(--foreground));
-    border-color: hsl(var(--border));
-}
-
 body.light-theme .nav-link {
     color: hsl(var(--foreground));
 }
@@ -573,14 +505,6 @@ body.light-theme .theme-toggle {
     .footer-content {
         display: -ms-grid;
         -ms-grid-columns: 1fr 1fr 1fr;
-    }
-    
-    .contact-form {
-        -ms-flex-direction: column;
-    }
-    
-    .form-group {
-        -ms-flex-direction: column;
     }
 }
 
@@ -743,4 +667,17 @@ body.light-theme .letter-swap {
 
 body.light-theme .video-container {
     border-color: hsl(var(--border));
+}
+
+/* Add vendor prefixes for flex and transform properties */
+.flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.transform {
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
