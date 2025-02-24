@@ -64,11 +64,20 @@ header {
     background: hsla(var(--dark-background), 0.8);
 }
 
+body.light-theme header {
+    background: hsla(var(--background), 0.8);
+    border-bottom: 1px solid hsl(var(--border));
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: hsl(var(--dark-foreground));
     text-decoration: none;
+}
+
+body.light-theme .logo {
+    color: hsl(var(--foreground));
 }
 
 /* Hero Section */
@@ -98,6 +107,12 @@ header {
 
 .profile-image:hover {
     transform: scale(1.05);
+}
+
+.hero .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .hero h1 {
@@ -608,22 +623,78 @@ body.light-theme .theme-toggle {
     overflow: hidden;
 }
 
-/* Typewriter Effect */
+/* Enhanced Typewriter Effect */
 .typewriter {
     font-size: 4rem;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.typewriter .base-text,
+.typewriter .highlight {
+    display: inline-block;
+    position: relative;
 }
 
 .typewriter .highlight {
-    color: hsl(var(--dark-muted-foreground));
+    color: var(--highlight-color, hsl(var(--dark-muted-foreground)));
+    position: relative;
+}
+
+.typewriter .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        hsla(var(--dark-muted-foreground), 0.2),
+        hsla(var(--dark-muted-foreground), 0.1),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+    transform: translateX(-100%);
+}
+
+body.light-theme .typewriter .highlight {
+    color: var(--highlight-color, hsl(var(--primary)));
+}
+
+body.light-theme .typewriter .highlight::after {
+    background: linear-gradient(
+        45deg,
+        hsla(var(--primary), 0.2),
+        hsla(var(--primary), 0.1),
+        transparent
+    );
 }
 
 .typewriter .cursor {
     display: inline-block;
     margin-left: 4px;
-    animation: blink 0.7s infinite;
+    width: 3px;
+    height: 1em;
+    background-color: currentColor;
+    animation: blink 0.7s infinite, wave 2s ease-in-out infinite;
+    vertical-align: middle;
+    transform-origin: bottom;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes wave {
+    0%, 100% { transform: scaleY(1) rotate(0deg); }
+    25% { transform: scaleY(0.8) rotate(5deg); }
+    50% { transform: scaleY(1.2) rotate(-5deg); }
+    75% { transform: scaleY(0.9) rotate(3deg); }
 }
 
 @keyframes blink {
@@ -633,24 +704,43 @@ body.light-theme .theme-toggle {
 
 /* Letter Swap Effect */
 .letter-swap {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 0.5s ease forwards 0.5s;
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.6;
+    color: hsl(var(--dark-muted-foreground));
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.letter-swap:hover {
-    animation: letterSwap 1.5s ease;
+body.light-theme .letter-swap {
+    color: hsl(var(--muted-foreground));
 }
 
-@keyframes letterSwap {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-10px) rotateX(90deg); }
-    50% { transform: translateY(0) rotateX(180deg); }
-    75% { transform: translateY(10px) rotateX(270deg); }
-    100% { transform: translateY(0) rotateX(360deg); }
+/* Video embeds section */
+.video-section {
+    margin: 6rem 0;  /* Match the spacing of other sections */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid hsl(var(--dark-border));
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body.light-theme .video-container {
+    border-color: hsl(var(--border));
 }
