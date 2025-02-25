@@ -1,0 +1,76 @@
+/* Internet Explorer Compatibility Fixes */
+
+/* Make sure grid layouts work in IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Fix for grid layouts */
+    .cards, 
+    .key-themes,
+    .experience-grid,
+    .footer-content,
+    .video-section {
+        display: -ms-grid;
+    }
+    
+    /* Default grid columns */
+    .cards,
+    .key-themes {
+        -ms-grid-columns: 1fr 1fr 1fr;
+    }
+    
+    .footer-content {
+        -ms-grid-columns: 1fr 1fr 1fr;
+    }
+    
+    .video-section {
+        -ms-grid-columns: 1fr 1fr;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .cards,
+        .key-themes,
+        .experience-grid,
+        .footer-content,
+        .video-section {
+            -ms-grid-columns: 1fr;
+        }
+    }
+    
+    /* Fix for flex layouts */
+    .hero,
+    .content-wrapper,
+    .profile-section,
+    .button-group {
+        display: -ms-flexbox;
+    }
+    
+    .hero,
+    .content-wrapper {
+        -ms-flex-direction: column;
+    }
+    
+    /* Fix for transforms */
+    .profile-image:hover,
+    .card:hover,
+    .theme-card:hover,
+    .btn:hover,
+    .social-links a:hover,
+    .theme-toggle:hover,
+    .video-container:hover,
+    .modern-card.interactive:hover {
+        -ms-transform: translateY(-5px);
+    }
+    
+    .typewriter .highlight::after {
+        -ms-transform: translateX(-100%);
+    }
+    
+    .mouse-follower {
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    /* Fix for transform-origin */
+    .typewriter .cursor {
+        -ms-transform-origin: bottom;
+    }
+} 

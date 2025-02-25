@@ -6,10 +6,12 @@
     <title>Arjun's Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ie-compatibility.css">
 </head>
 <body>
     <div id="canvas-container"></div>
     <div class="mouse-follower"></div>
+    <div class="scroll-progress"></div>
     
     <button class="theme-toggle" aria-label="Toggle dark/light mode">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -17,24 +19,103 @@
         </svg>
     </button>
     
-    <div class="container">
-        <header>
+    <header>
+        <div class="header-content">
             <a href="#" class="logo">Arjun Kannan</a>
             <nav class="navigation">
+                <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#angel-investing" class="nav-link">Angel Investing</a>
                 <a href="#views" class="nav-link">Views</a>
             </nav>
-        </header>
+        </div>
+    </header>
+    
+    <div class="container">
         
         <section class="hero">
             <div class="profile-section">
                 <img src="assets/landscape-1.png" alt="Arjun" class="profile-image">
                 <div class="content-wrapper">
                     <h1 id="typewriter" class="typewriter"></h1>
-                    <p class="letter-swap">Building ResiDesk | Bringing customer data into real estate | The future is here; I'm working to distribute it evenly.</p>
+                    <p class="letter-swap">Building ResiDesk | Founder, angel investor | Working to distribute the future more evenly.</p>
                     <div class="button-group">
-                        <a href="#experience" class="btn primary">Explore My Journey</a>
+                        <a href="#about" class="btn primary">The Story</a>
+                        <a href="#experience" class="btn secondary">My Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <!-- Removed arrow -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <p class="about-intro">
+                        I build products that use AI to solve real problems. Not the kind that sound impressive at dinner parties, but the kind that actually change how industries work.
+                    </p>
+                    
+                    <p class="about-quote">
+                        The most promising technologies are often applied first to seemingly mundane problems. The real revolution happens when they transform the parts of life we take for granted.
+                    </p>
+                    
+                    <p class="about-philosophy">
+                        I've spent my career finding places where AI provides leverage - not by replacing humans, but by amplifying what they can do. This approach has been the foundation of my work at ResiDesk, Climb Credit, and BlackRock.
+                    </p>
+                    
+                    <div class="key-themes">
+                        <div class="theme-card">
+                            <div class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Human + AI Symbiosis</h3>
+                            <p>The goal isn't AI that replaces people, but AI that makes people more capable. Every successful AI system I've built has had humans as essential components, not afterthoughts.</p>
+                        </div>
+                        
+                        <div class="theme-card">
+                            <div class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                            </div>
+                            <h3>Legacy Industries</h3>
+                            <p>The biggest opportunities aren't in creating new markets, but in transforming existing ones. Real estate alone is a $5T industry that operates largely the same way it did 50 years ago.</p>
+                        </div>
+                        
+                        <div class="theme-card">
+                            <div class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3>Scaling Quality</h3>
+                            <p>The hardest thing about scaling isn't technology, it's maintaining quality. At Climb, we grew from $1M to $300M in loans while improving outcomes for students. The systems we built let us scale without sacrificing quality.</p>
+                        </div>
+                        
+                        <div class="theme-card">
+                            <div class="theme-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <h3>Pragmatic AI</h3>
+                            <p>Most AI projects fail not because the technology doesn't work, but because they solve the wrong problem. I'm interested in boring applications that create real value, not flashy demos that look good in pitch decks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-container">
+                        <a href="#experience" class="btn primary">See My Work</a>
                     </div>
                 </div>
             </div>
@@ -43,67 +124,73 @@
         <section id="angel-investing" class="angel-section">
             <h2 class="section-title">Angel <span class="highlight">Investing</span></h2>
             <div class="angel-container modern-card">
-                <p class="letter-swap">Angel investor in 100+ startups • TechStars mentor</p>
-            </div>
-        </section>
-
-        <section id="videos" class="video-section">
-            <h2 class="section-title">Featured <span class="highlight">Videos</span></h2>
-            <div class="video-container">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/OtvONEQNngQ" 
-                    title="AI Discussion with Greg Kamradt" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="video-container">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/C2aUblIKQoM" 
-                    title="AngelList Interview" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+                <p class="letter-swap">I've invested in 100+ startups, mostly in areas I know well. The best founders aren't trying to ride waves; they're solving problems they've experienced firsthand. This has always been the best predictor of success.</p>
+                <p>As a TechStars mentor, I help companies avoid the mistakes I've made. The patterns of success and failure in startups are surprisingly consistent. You just need someone who's seen them before.</p>
+                <div class="investment-arrow">
+                    <!-- Removed arrow -->
+                </div>
             </div>
         </section>
 
         <section id="experience">
-            <h2 class="section-title">My <span class="highlight">Experience</span></h2>
+            <h2 class="section-title">My <span class="highlight">Work</span></h2>
             <div class="experience-grid">
                 <div class="modern-card interactive">
                     <div class="card-header">
-                        <h3>ResiDesk</h3>
+                        <h3><a href="https://hello.theresidesk.com" class="company-link" target="_blank" rel="noopener noreferrer">ResiDesk</a></h3>
                         <p class="card-subtitle">Co-Founder</p>
                     </div>
                     <div class="card-content">
-                        <p>Rebuilding trust in real estate with AI + human hybrid solutions. Handling millions of daily resident interactions, achieving 7% higher renewals and rent in a $5T industry</p>
+                        <p>Real estate has always had a data problem. At ResiDesk, we're fixing that by understanding what residents actually want. We handle millions of daily interactions between residents and properties, learning from each one. The result: 7% higher renewals and rent. Small improvements at this scale matter - we work in a $5T industry.</p>
                     </div>
                 </div>
                 
                 <div class="modern-card interactive">
                     <div class="card-header">
-                        <h3>Climb Credit</h3>
+                        <h3><a href="https://www.climbcredit.com" class="company-link" target="_blank" rel="noopener noreferrer">Climb Credit</a></h3>
                         <p class="card-subtitle">CTO/CPO</p>
                     </div>
                     <div class="card-content">
-                        <p>Led product, engineering, and data teams, scaling from $1M to $300M in annual loans. Helped thousands of students increase earnings by 40% through access to high-ROI education. Built sophisticated underwriting systems backed by Goldman Sachs.</p>
+                        <p>Education financing is broken. Instead of chasing high-margin, predatory loans, we built systems to identify schools that actually improved students' earnings. We developed underwriting models that identified quality and aligned our incentives with student success. This approach let us grow from $1M to $300M in annual loans, with students seeing 40% average earnings increases.</p>
                     </div>
                 </div>
                 
                 <div class="modern-card interactive">
                     <div class="card-header">
-                        <h3>BlackRock</h3>
+                        <h3><a href="https://www.blackrock.com" class="company-link" target="_blank" rel="noopener noreferrer">BlackRock</a></h3>
                         <p class="card-subtitle">Product & Engineering Lead</p>
                     </div>
                     <div class="card-content">
-                        <p>Led Aladdin for Retail from $0 to $40M ARR in its first year. Simplified complex risk analysis tools for everyday financial advisors, scaling the team from 5 to 40 while maintaining product excellence.</p>
+                        <p>Aladdin was BlackRock's internal risk analysis system - so good that other asset managers wanted to use it. My team built Aladdin for Retail, making these institutional-grade tools accessible to financial advisors. We took complex math and made it intuitive. The product went from $0 to $40M ARR in its first year, ultimately changing how advisors assess portfolio risk.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="video-section">
+            <h2 class="section-title">Featured <span class="highlight">Talks</span></h2>
+            <div class="container">
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/OtvONEQNngQ" 
+                        title="AI Discussion with Greg Kamradt" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/C2aUblIKQoM" 
+                        title="AngelList Interview" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -117,8 +204,8 @@
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </div>
-                    <h3>On Technology Adoption</h3>
-                    <p>I'm excited about accelerating technology and pushing the boundaries of its adoption. I believe in applying innovative solutions in areas where they aren't typically used.</p>
+                    <h3>Tech Adoption Follows Power Laws</h3>
+                    <p>The biggest opportunities are in technologies that are already working but haven't been widely adopted yet. By the time something is obvious, the biggest gains have already happened. I look for ideas that seem weird to most people but obvious to experts in the field.</p>
                 </div>
                 
                 <div class="card modern-card">
@@ -129,8 +216,8 @@
                             <line x1="9" y1="21" x2="9" y2="9"></line>
                         </svg>
                     </div>
-                    <h3>On Practical Applications</h3>
-                    <p>Technology should be harnessed in practical ways to solve real-world problems. I'm focused on finding opportunities to implement tech where it can make a significant impact.</p>
+                    <h3>Unloved Problems Create Opportunity</h3>
+                    <p>The best problems to solve aren't the ones everyone's working on. They're the ones that seem tedious, complex, or unglamorous. Real estate, education financing, and risk analysis all fit this description. These are massive markets where even small improvements create enormous value.</p>
                 </div>
                 
                 <div class="card modern-card">
@@ -141,8 +228,8 @@
                             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                         </svg>
                     </div>
-                    <h3>On Future Potential</h3>
-                    <p>The future is here, and I aim to leverage technology to create new possibilities. My goal is to ensure that advancements benefit everyone, especially in underutilized areas.</p>
+                    <h3>The Human Element Remains Essential</h3>
+                    <p>The best AI systems aren't fully autonomous. They're tools that make humans more effective. This is why I focus on AI+human hybrid solutions. The goal isn't to replace people, but to let them work at a higher level of abstraction, handling the cases that require judgment while automating the rest.</p>
                 </div>
             </div>
         </section>
@@ -169,7 +256,6 @@
                     </div>
                 </div>
             </div>
-            <p class="copyright">© 2024 Arjun. All rights reserved.</p>
         </div>
     </footer>
 
@@ -205,6 +291,43 @@
                 position: 'bottom-right',
                 duration: 5000
             });
+
+            // Initialize scroll progress indicator
+            const scrollProgress = document.querySelector('.scroll-progress');
+            window.addEventListener('scroll', () => {
+                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercent = (scrollTop / scrollHeight) * 100;
+                scrollProgress.style.width = scrollPercent + '%';
+            });
+
+            // Add click handler for scroll indicator
+            document.querySelector('.scroll-indicator').addEventListener('click', () => {
+                document.querySelector('#about').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
+
+            // Apply animations to elements when they enter the viewport
+            const observeElements = (selector, className) => {
+                const elements = document.querySelectorAll(selector);
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add(className);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                elements.forEach(element => observer.observe(element));
+            };
+            
+            observeElements('.theme-card', 'visible');
+            observeElements('.modern-card', 'visible');
+            observeElements('.video-container', 'visible');
+            
+            // Website previews code removed - using standard links instead
         });
     </script>
 </body>
