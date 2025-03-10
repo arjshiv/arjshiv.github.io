@@ -1,333 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun's Landing Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/ie-compatibility.css">
+    <title>Arjun Kannan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        text: {
+                            light: '#1d1d1f',
+                            dark: '#f5f5f7'
+                        },
+                        subtle: {
+                            light: 'rgba(0, 0, 0, 0.6)',
+                            dark: 'rgba(255, 255, 255, 0.6)'
+                        },
+                        accent: '#0071e3',
+                        background: {
+                            light: '#ffffff',
+                            dark: '#000000'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .snap-container {
+                @apply h-screen overflow-y-auto snap-y snap-mandatory lg:h-screen;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;  /* Firefox */
+                -ms-overflow-style: none;  /* IE and Edge */
+            }
+            
+            .snap-container::-webkit-scrollbar {
+                display: none;  /* Chrome, Safari and Opera */
+            }
+
+            .section-fade {
+                @apply opacity-30 translate-y-5 transition-all duration-700 ease-out;
+            }
+
+            .section-fade.active {
+                @apply opacity-100 translate-y-0;
+            }
+
+            .profile-image {
+                @apply transition-all duration-700 ease-out grayscale hover:grayscale-0 w-full h-auto lg:w-full lg:h-auto;
+            }
+
+            .theme-transition {
+                @apply transition-colors duration-300;
+            }
+
+            @media (max-width: 1024px) {
+                .snap-container {
+                    height: auto;
+                    scroll-snap-type: none;
+                }
+                
+                section {
+                    height: auto !important;
+                    scroll-snap-align: none;
+                    min-height: auto !important;
+                    padding: 3rem 1.5rem !important;
+                }
+            }
+
+            .tooltip-trigger:hover .tooltip-text {
+                @apply opacity-100;
+            }
+
+            /* Initial attention animation for navigation */
+            @keyframes subtle-bounce {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-4px); }
+            }
+
+            .nav-arrow {
+                animation: subtle-bounce 2s ease-in-out infinite;
+                animation-play-state: paused;
+            }
+
+            .nav-arrow.show-animation {
+                animation-play-state: running;
+            }
+
+            /* Stop animation on hover or when disabled */
+            .nav-arrow:hover,
+            .nav-arrow:disabled {
+                animation-play-state: paused;
+            }
+        }
+    </style>
 </head>
-<body>
-    <div id="canvas-container"></div>
-    <div class="mouse-follower"></div>
-    <div class="scroll-progress"></div>
-    
-    <button class="theme-toggle" aria-label="Toggle dark/light mode">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
-    
-    <header>
-        <div class="header-content">
-            <a href="#" class="logo">Arjun Kannan</a>
-            <nav class="navigation">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#angel-investing" class="nav-link">Angel Investing</a>
-                <a href="#views" class="nav-link">Views</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="container">
-        
-        <section class="hero">
-            <div class="profile-section">
-                <img src="assets/landscape-1.png" alt="Arjun" class="profile-image">
-                <div class="content-wrapper">
-                    <h1 id="typewriter" class="typewriter"></h1>
-                    <p class="letter-swap">Building ResiDesk | Founder, angel investor | Working to distribute the future more evenly.</p>
-                    <div class="button-group">
-                        <a href="#about" class="btn primary">The Story</a>
-                        <a href="#experience" class="btn secondary">My Work</a>
-                    </div>
+<body class="font-sans antialiased overflow-x-hidden theme-transition dark:bg-background-dark">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full h-16 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 z-50 theme-transition">
+        <div class="h-full px-4 lg:px-8 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-8 h-8 rounded-full overflow-hidden">
+                    <img src="assets/landscape-1.png" alt="Arjun" class="w-full h-full object-cover">
+                </div>
+                <div class="hidden lg:flex items-center gap-6 text-subtle-light dark:text-subtle-dark">
+                    <a href="#about" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">About</a>
+                    <a href="#press" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Press</a>
+                    <a href="#work" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Work</a>
+                    <a href="#investing" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Angel Investing</a>
+                    <a href="#views" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Views</a>
                 </div>
             </div>
-
-            <div class="scroll-indicator">
-                <!-- Removed arrow -->
+            <div class="flex items-center gap-6">
+                <button id="theme-toggle" class="w-10 h-10 rounded-lg bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 flex items-center justify-center transition-all" aria-label="Toggle dark mode">
+                    <!-- Sun icon (shown in dark mode) -->
+                    <svg class="hidden dark:block w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    <!-- Moon icon (shown in light mode) -->
+                    <svg class="block dark:hidden w-5 h-5 text-text-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section id="about" class="about-section">
-            <h2 class="section-title">About <span class="highlight">Me</span></h2>
-            <div class="about-container">
-                <div class="about-content">
-                    <p class="about-intro">
+    <div class="min-h-screen flex flex-col lg:flex-row relative pt-16">
+        <!-- Fixed Sidebar - becomes top section on mobile -->
+        <div class="w-full lg:w-1/3 lg:fixed lg:top-16 lg:left-0 lg:h-[calc(100vh-4rem)] p-4 lg:p-8 flex flex-col justify-start lg:justify-center bg-background-light dark:bg-background-dark lg:z-20 theme-transition">
+            <div class="mb-6 lg:mb-8">
+                <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-text-light dark:text-text-dark theme-transition">ARJUN KANNAN</h1>
+                <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition">Building ResiDesk | Founder, angel investor | Working to distribute the future more evenly.</p>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-0">
+                <img src="assets/landscape-1.png" alt="Arjun" class="profile-image">
+            </div>
+        </div>
+
+        <!-- Progress Bar - hidden on mobile -->
+        <div class="hidden lg:block fixed top-16 left-1/3 w-2/3 h-px bg-black/10 dark:bg-white/10 z-30 theme-transition">
+            <div class="absolute top-0 left-0 h-full bg-accent transition-[width] duration-100 ease-out" style="width: var(--scroll-percent, 0%)"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
+            <section id="about" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+                <div class="w-full max-w-2xl mx-auto section-fade active">
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">About</h2>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         I build products that use AI to solve real problems. Not the kind that sound impressive at dinner parties, but the kind that actually change how industries work.
                     </p>
-                    
-                    <p class="about-quote">
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         The most promising technologies are often applied first to seemingly mundane problems. The real revolution happens when they transform the parts of life we take for granted.
                     </p>
-                    
-                    <p class="about-philosophy">
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
                         I've spent my career finding places where AI provides leverage - not by replacing humans, but by amplifying what they can do. This approach has been the foundation of my work at ResiDesk, Climb Credit, and BlackRock.
                     </p>
+                </div>
+            </section>
+
+            <section id="press" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+                <div class="w-full max-w-3xl mx-auto section-fade">
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Press</h2>
                     
-                    <div class="key-themes">
-                        <div class="theme-card">
-                            <div class="theme-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                            </div>
-                            <h3>Human + AI Symbiosis</h3>
-                            <p>The goal isn't AI that replaces people, but AI that makes people more capable. Every successful AI system I've built has had humans as essential components, not afterthoughts.</p>
+                    <!-- Videos -->
+                    <div class="grid grid-cols-1 gap-8 mb-12">
+                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
+                            <iframe 
+                                class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/OtvONEQNngQ" 
+                                title="AI Discussion with Greg Kamradt" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
-                        
-                        <div class="theme-card">
-                            <div class="theme-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                            </div>
-                            <h3>Legacy Industries</h3>
-                            <p>The biggest opportunities aren't in creating new markets, but in transforming existing ones. Real estate alone is a $5T industry that operates largely the same way it did 50 years ago.</p>
-                        </div>
-                        
-                        <div class="theme-card">
-                            <div class="theme-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <h3>Scaling Quality</h3>
-                            <p>The hardest thing about scaling isn't technology, it's maintaining quality. At Climb, we grew from $1M to $300M in loans while improving outcomes for students. The systems we built let us scale without sacrificing quality.</p>
-                        </div>
-                        
-                        <div class="theme-card">
-                            <div class="theme-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="12" y1="1" x2="12" y2="23"></line>
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg>
-                            </div>
-                            <h3>Pragmatic AI</h3>
-                            <p>Most AI projects fail not because the technology doesn't work, but because they solve the wrong problem. I'm interested in boring applications that create real value, not flashy demos that look good in pitch decks.</p>
+                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
+                            <iframe 
+                                class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/C2aUblIKQoM" 
+                                title="AngelList Interview" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
+
+                    <!-- Articles -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="https://www.law360.com/real-estate-authority/articles/2275147" target="_blank" rel="noopener noreferrer" class="group">
+                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                                <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">ResiDesk Simplifies Resident Engagement</h3>
+                                <p class="text-sm text-subtle-light dark:text-subtle-dark">Law360</p>
+                            </div>
+                        </a>
+                        <a href="https://www.hauteresidence.com/bridging-the-gap-between-ai-and-human-empathy-in-property-management-with-residesk" target="_blank" rel="noopener noreferrer" class="group">
+                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                                <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">Bridging AI and Human Empathy in Property Management</h3>
+                                <p class="text-sm text-subtle-light dark:text-subtle-dark">Haute Residence</p>
+                            </div>
+                        </a>
+                        <a href="https://www.under30ceo.com/how-entrepreneur-arjun-kannan-is-innovating-with-ai-and-tech-as-a-tool-for-social-equity" target="_blank" rel="noopener noreferrer" class="group">
+                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                                <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">Innovating with AI as a Tool for Social Equity</h3>
+                                <p class="text-sm text-subtle-light dark:text-subtle-dark">Under 30 CEO</p>
+                            </div>
+                        </a>
+                        <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management" target="_blank" rel="noopener noreferrer" class="group">
+                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                                <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">The Power of Applied AI in Real Estate</h3>
+                                <p class="text-sm text-subtle-light dark:text-subtle-dark">Hackernoon</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="work" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+                <div class="w-full max-w-2xl mx-auto section-fade">
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Work</h2>
                     
-                    <div class="cta-container">
-                        <a href="#experience" class="btn primary">See My Work</a>
+                    <div class="mb-4">
+                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">ResiDesk</a></h3>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">Co-Founder</span>
                     </div>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
+                        Real estate has always had a data problem. At ResiDesk, we're fixing that by understanding what residents actually want. We handle millions of daily interactions between residents and properties, learning from each one. The result: 7% higher renewals and rent. Small improvements at this scale matter - we work in a $5T industry.
+                    </p>
+                    
+                    <div class="mb-4">
+                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.climbcredit.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Climb Credit</a></h3>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">CTO/CPO</span>
+                    </div>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
+                        Education financing is broken. Instead of chasing high-margin, predatory loans, we built systems to identify schools that actually improved students' earnings. We developed underwriting models that identified quality and aligned our incentives with student success. This approach let us grow from $1M to $300M in annual loans, with students seeing 40% average earnings increases.
+                    </p>
+                    
+                    <div class="mb-4">
+                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.blackrock.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">BlackRock</a></h3>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">Product & Engineering Lead</span>
+                    </div>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
+                        Aladdin was BlackRock's internal risk analysis system - so good that other asset managers wanted to use it. My team built Aladdin for Retail, making these institutional-grade tools accessible to financial advisors. We took complex math and made it intuitive. The product went from $0 to $40M ARR in its first year, ultimately changing how advisors assess portfolio risk.
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="angel-investing" class="angel-section">
-            <h2 class="section-title">Angel <span class="highlight">Investing</span></h2>
-            <div class="angel-container modern-card">
-                <p class="letter-swap">I've invested in 100+ startups, mostly in areas I know well. The best founders aren't trying to ride waves; they're solving problems they've experienced firsthand. This has always been the best predictor of success.</p>
-                <p>As a TechStars mentor, I help companies avoid the mistakes I've made. The patterns of success and failure in startups are surprisingly consistent. You just need someone who's seen them before.</p>
-                <div class="investment-arrow">
-                    <!-- Removed arrow -->
+            <section id="investing" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+                <div class="w-full max-w-2xl mx-auto section-fade">
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Angel Investing</h2>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
+                        I've invested in 100+ startups, mostly in areas I know well. The best founders aren't trying to ride waves; they're solving problems they've experienced firsthand. This has always been the best predictor of success.
+                    </p>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
+                        As a TechStars mentor, I help companies avoid the mistakes I've made. The patterns of success and failure in startups are surprisingly consistent. You just need someone who's seen them before.
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="experience">
-            <h2 class="section-title">My <span class="highlight">Work</span></h2>
-            <div class="experience-grid">
-                <div class="modern-card interactive">
-                    <div class="card-header">
-                        <h3><a href="https://hello.theresidesk.com" class="company-link" target="_blank" rel="noopener noreferrer">ResiDesk</a></h3>
-                        <p class="card-subtitle">Co-Founder</p>
-                    </div>
-                    <div class="card-content">
-                        <p>Real estate has always had a data problem. At ResiDesk, we're fixing that by understanding what residents actually want. We handle millions of daily interactions between residents and properties, learning from each one. The result: 7% higher renewals and rent. Small improvements at this scale matter - we work in a $5T industry.</p>
-                    </div>
+            <section id="views" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+                <div class="w-full max-w-2xl mx-auto section-fade">
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Views</h2>
+                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Tech Adoption Follows Power Laws</h3>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
+                        The biggest opportunities are in technologies that are already working but haven't been widely adopted yet. By the time something is obvious, the biggest gains have already happened. I look for ideas that seem weird to most people but obvious to experts in the field.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Unloved Problems Create Opportunity</h3>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
+                        The best problems to solve aren't the ones everyone's working on. They're the ones that seem tedious, complex, or unglamorous. Real estate, education financing, and risk analysis all fit this description. These are massive markets where even small improvements create enormous value.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">The Human Element Remains Essential</h3>
+                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
+                        The best AI systems aren't fully autonomous. They're tools that make humans more effective. This is why I focus on AI+human hybrid solutions. The goal isn't to replace people, but to let them work at a higher level of abstraction, handling the cases that require judgment while automating the rest.
+                    </p>
                 </div>
-                
-                <div class="modern-card interactive">
-                    <div class="card-header">
-                        <h3><a href="https://www.climbcredit.com" class="company-link" target="_blank" rel="noopener noreferrer">Climb Credit</a></h3>
-                        <p class="card-subtitle">CTO/CPO</p>
-                    </div>
-                    <div class="card-content">
-                        <p>Education financing is broken. Instead of chasing high-margin, predatory loans, we built systems to identify schools that actually improved students' earnings. We developed underwriting models that identified quality and aligned our incentives with student success. This approach let us grow from $1M to $300M in annual loans, with students seeing 40% average earnings increases.</p>
-                    </div>
-                </div>
-                
-                <div class="modern-card interactive">
-                    <div class="card-header">
-                        <h3><a href="https://www.blackrock.com" class="company-link" target="_blank" rel="noopener noreferrer">BlackRock</a></h3>
-                        <p class="card-subtitle">Product & Engineering Lead</p>
-                    </div>
-                    <div class="card-content">
-                        <p>Aladdin was BlackRock's internal risk analysis system - so good that other asset managers wanted to use it. My team built Aladdin for Retail, making these institutional-grade tools accessible to financial advisors. We took complex math and made it intuitive. The product went from $0 to $40M ARR in its first year, ultimately changing how advisors assess portfolio risk.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="videos" class="video-section">
-            <h2 class="section-title">Featured <span class="highlight">Talks</span></h2>
-            <div class="container">
-                <div class="video-container">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/OtvONEQNngQ" 
-                        title="AI Discussion with Greg Kamradt" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-container">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src="https://www.youtube.com/embed/C2aUblIKQoM" 
-                        title="AngelList Interview" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="views">
-            <h2 class="section-title">My <span class="highlight">Views</span></h2>
-            <div class="cards">
-                <div class="card modern-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                    </div>
-                    <h3>Tech Adoption Follows Power Laws</h3>
-                    <p>The biggest opportunities are in technologies that are already working but haven't been widely adopted yet. By the time something is obvious, the biggest gains have already happened. I look for ideas that seem weird to most people but obvious to experts in the field.</p>
-                </div>
-                
-                <div class="card modern-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="3" y1="9" x2="21" y2="9"></line>
-                            <line x1="9" y1="21" x2="9" y2="9"></line>
-                        </svg>
-                    </div>
-                    <h3>Unloved Problems Create Opportunity</h3>
-                    <p>The best problems to solve aren't the ones everyone's working on. They're the ones that seem tedious, complex, or unglamorous. Real estate, education financing, and risk analysis all fit this description. These are massive markets where even small improvements create enormous value.</p>
-                </div>
-                
-                <div class="card modern-card">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                    </div>
-                    <h3>The Human Element Remains Essential</h3>
-                    <p>The best AI systems aren't fully autonomous. They're tools that make humans more effective. This is why I focus on AI+human hybrid solutions. The goal isn't to replace people, but to let them work at a higher level of abstraction, handling the cases that require judgment while automating the rest.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/arjun-kannan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/arjshiv" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://arjunkannan.com" target="_blank" rel="noopener noreferrer" aria-label="Personal Website">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                        <a href="mailto:arj.shiv@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="js/components/Typewriter.js"></script>
-    <script src="js/components/Button.js"></script>
-    <script src="js/components/Card.js"></script>
-    <script src="js/components/Form.js"></script>
-    <script src="js/components/Tabs.js"></script>
-    <script src="js/components/Toast.js"></script>
-    <script src="js/components/Dialog.js"></script>
-    <script src="js/animations.js"></script>
+        <!-- Navigation Widget - adjusted position for mobile -->
+        <div class="fixed bottom-4 left-4 lg:bottom-8 lg:left-8 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-xl rounded-2xl p-3 flex gap-3 border border-black/10 dark:border-white/10 shadow-lg z-50 theme-transition group">
+            <button class="nav-arrow prev w-12 h-12 rounded-xl bg-text-light/10 dark:bg-text-dark/10 text-text-light dark:text-text-dark hover:bg-text-light/20 dark:hover:bg-text-dark/20 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" disabled aria-label="Previous section">
+                <span class="absolute right-full mr-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-sm pointer-events-none tooltip-text">Previous section (←)</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:scale-110">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <button class="nav-arrow next w-12 h-12 rounded-xl bg-text-light/10 dark:bg-text-dark/10 text-text-light dark:text-text-dark hover:bg-text-light/20 dark:hover:bg-text-dark/20 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" aria-label="Next section">
+                <span class="absolute left-full ml-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-sm pointer-events-none tooltip-text">Next section (→)</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:scale-110">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        // Initialize Typewriter
-        new Typewriter({
-            selector: '#typewriter',
-            text: "Hi, I'm",
-            highlightedText: "Arjun Kannan",
-            speed: 100
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            // Store the preference
+            const isDark = document.documentElement.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
         });
 
-        // Initialize shadcn/ui-inspired components
+        // Check for saved theme preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        // Navigation functionality
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize Button component
-            new Button();
+            const sections = document.querySelectorAll('section');
+            const container = document.querySelector('.snap-container');
+            const profileImage = document.querySelector('.profile-image');
+            const sectionContents = document.querySelectorAll('.section-fade');
+            const prevButton = document.querySelector('.nav-arrow.prev');
+            const nextButton = document.querySelector('.nav-arrow.next');
             
-            // Initialize Card component
-            new Card();
-            
-            // Initialize Toast for notifications
-            window.toastManager = new Toast({
-                position: 'bottom-right',
-                duration: 5000
-            });
+            let currentSection = 0;
+            let isScrolling = false;
+            const isMobile = window.innerWidth < 1024;
 
-            // Initialize scroll progress indicator
-            const scrollProgress = document.querySelector('.scroll-progress');
-            window.addEventListener('scroll', () => {
-                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const scrollPercent = (scrollTop / scrollHeight) * 100;
-                scrollProgress.style.width = scrollPercent + '%';
-            });
+            // Update UI based on current section
+            function updateUI(index) {
+                // Update section visibility
+                sectionContents.forEach((content, i) => {
+                    content.classList.toggle('active', i === index);
+                });
 
-            // Add click handler for scroll indicator
-            document.querySelector('.scroll-indicator').addEventListener('click', () => {
-                document.querySelector('#about').scrollIntoView({ 
-                    behavior: 'smooth' 
+                // Update navigation buttons
+                prevButton.disabled = index === 0;
+                nextButton.disabled = index === sections.length - 1;
+
+                // Update progress bar
+                const progress = index / (sections.length - 1);
+                document.documentElement.style.setProperty('--scroll-percent', `${progress * 100}%`);
+
+                // Update image grayscale
+                profileImage.style.filter = `grayscale(${100 - (progress * 100)}%)`;
+
+                // Update navigation links
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    const sectionId = link.getAttribute('href').substring(1);
+                    if (sections[index].id === sectionId) {
+                        link.classList.add('text-text-light', 'dark:text-text-dark');
+                    } else {
+                        link.classList.remove('text-text-light', 'dark:text-text-dark');
+                    }
+                });
+
+                currentSection = index;
+            }
+
+            // Smooth scroll to section
+            function scrollToSection(index) {
+                if (isScrolling) return;
+                isScrolling = true;
+
+                const target = sections[index];
+                const offset = 80; // Account for header height
+                
+                if (window.innerWidth >= 1024) {
+                    // On desktop, scroll the container
+                    container.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    // On mobile, scroll the window
+                    window.scrollTo({
+                        top: target.offsetTop - offset,
+                        behavior: 'smooth'
+                    });
+                }
+
+                updateUI(index);
+                
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 700);
+            }
+
+            // Navigation handlers
+            function goToNextSection() {
+                if (currentSection < sections.length - 1) {
+                    scrollToSection(currentSection + 1);
+                }
+            }
+
+            function goToPrevSection() {
+                if (currentSection > 0) {
+                    scrollToSection(currentSection - 1);
+                }
+            }
+
+            // Event Listeners
+            nextButton.addEventListener('click', goToNextSection);
+            prevButton.addEventListener('click', goToPrevSection);
+
+            // Add click handlers for nav links
+            document.querySelectorAll('.nav-link').forEach((link, index) => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    scrollToSection(index);
                 });
             });
 
-            // Apply animations to elements when they enter the viewport
-            const observeElements = (selector, className) => {
-                const elements = document.querySelectorAll(selector);
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add(className);
-                            observer.unobserve(entry.target);
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    goToNextSection();
+                } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    goToPrevSection();
+                }
+            });
+
+            // Scroll handling with debounce
+            let scrollTimeout;
+            const scrollHandler = () => {
+                if (isScrolling) return;
+                
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const viewportHeight = window.innerHeight;
+                    const scrollTop = window.innerWidth >= 1024 ? container.scrollTop : window.pageYOffset;
+                    const headerOffset = window.innerWidth >= 1024 ? 0 : 80; // Only apply header offset on mobile
+                    
+                    // Find the most visible section
+                    let maxVisibleSection = 0;
+                    let maxVisibleAmount = 0;
+
+                    sections.forEach((section, index) => {
+                        const rect = section.getBoundingClientRect();
+                        const visibleAmount = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, headerOffset);
+                        
+                        if (visibleAmount > maxVisibleAmount) {
+                            maxVisibleAmount = visibleAmount;
+                            maxVisibleSection = index;
                         }
                     });
-                }, { threshold: 0.1 });
-                
-                elements.forEach(element => observer.observe(element));
+
+                    if (currentSection !== maxVisibleSection) {
+                        updateUI(maxVisibleSection);
+                    }
+                }, 50);
             };
-            
-            observeElements('.theme-card', 'visible');
-            observeElements('.modern-card', 'visible');
-            observeElements('.video-container', 'visible');
-            
-            // Website previews code removed - using standard links instead
+
+            // Add scroll listeners based on screen size
+            function updateScrollListeners() {
+                // Remove existing listeners
+                window.removeEventListener('scroll', scrollHandler);
+                container.removeEventListener('scroll', scrollHandler);
+
+                // Add appropriate listener
+                if (window.innerWidth >= 1024) {
+                    container.addEventListener('scroll', scrollHandler);
+                } else {
+                    window.addEventListener('scroll', scrollHandler);
+                }
+            }
+
+            // Initial setup of scroll listeners
+            updateScrollListeners();
+
+            // Update scroll listeners on resize
+            window.addEventListener('resize', () => {
+                updateScrollListeners();
+                scrollHandler();
+            });
+
+            // Initial setup
+            updateUI(0);
+
+            // Add initial animation class to arrows after a delay
+            setTimeout(() => {
+                document.querySelectorAll('.nav-arrow').forEach(arrow => {
+                    if (!arrow.disabled) {
+                        arrow.classList.add('show-animation');
+                    }
+                });
+
+                // Remove animation class after it plays for a while
+                setTimeout(() => {
+                    document.querySelectorAll('.nav-arrow').forEach(arrow => {
+                        arrow.classList.remove('show-animation');
+                    });
+                }, 6000); // Stop after 6 seconds
+            }, 2000); // Start after 2 seconds
         });
     </script>
 </body>
