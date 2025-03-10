@@ -96,6 +96,38 @@
             .nav-arrow:disabled {
                 animation-play-state: paused;
             }
+
+            .press-card {
+                @apply relative transform-gpu transition-all duration-300 ease-out;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+            }
+
+            .press-card:hover {
+                transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
+            }
+
+            .press-card::before {
+                content: '';
+                @apply absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300;
+                background: radial-gradient(
+                    800px circle at var(--mouse-x) var(--mouse-y),
+                    rgba(255, 255, 255, 0.06),
+                    transparent 40%
+                );
+            }
+
+            .press-card:hover::before {
+                @apply opacity-100;
+            }
+
+            .dark .press-card::before {
+                background: radial-gradient(
+                    800px circle at var(--mouse-x) var(--mouse-y),
+                    rgba(255, 255, 255, 0.08),
+                    transparent 40%
+                );
+            }
         }
     </style>
 </head>
@@ -168,9 +200,10 @@
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Press</h2>
                     
-                    <!-- Videos -->
-                    <div class="grid grid-cols-1 gap-8 mb-12">
-                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
+                    <!-- Combined grid for videos and articles -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- Videos -->
+                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 shadow-sm">
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/OtvONEQNngQ" 
@@ -180,7 +213,7 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5">
+                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 shadow-sm">
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/C2aUblIKQoM" 
@@ -190,30 +223,28 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                    </div>
 
-                    <!-- Articles -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Articles -->
                         <a href="https://www.law360.com/real-estate-authority/articles/2275147" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                            <div class="press-card h-full rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6 shadow-sm hover:shadow-md">
                                 <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">ResiDesk Simplifies Resident Engagement</h3>
                                 <p class="text-sm text-subtle-light dark:text-subtle-dark">Law360</p>
                             </div>
                         </a>
                         <a href="https://www.hauteresidence.com/bridging-the-gap-between-ai-and-human-empathy-in-property-management-with-residesk" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                            <div class="press-card h-full rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6 shadow-sm hover:shadow-md">
                                 <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">Bridging AI and Human Empathy in Property Management</h3>
                                 <p class="text-sm text-subtle-light dark:text-subtle-dark">Haute Residence</p>
                             </div>
                         </a>
                         <a href="https://www.under30ceo.com/how-entrepreneur-arjun-kannan-is-innovating-with-ai-and-tech-as-a-tool-for-social-equity" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                            <div class="press-card h-full rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6 shadow-sm hover:shadow-md">
                                 <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">Innovating with AI as a Tool for Social Equity</h3>
                                 <p class="text-sm text-subtle-light dark:text-subtle-dark">Under 30 CEO</p>
                             </div>
                         </a>
                         <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="rounded-xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6">
+                            <div class="press-card h-full rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all p-6 shadow-sm hover:shadow-md">
                                 <h3 class="text-lg font-semibold text-text-light dark:text-text-dark mb-2 group-hover:text-accent transition-colors">The Power of Applied AI in Real Estate</h3>
                                 <p class="text-sm text-subtle-light dark:text-subtle-dark">Hackernoon</p>
                             </div>
@@ -502,6 +533,39 @@
                     });
                 }, 6000); // Stop after 6 seconds
             }, 2000); // Start after 2 seconds
+        });
+
+        // Add 3D tilt effect tracking
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.press-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    card.style.setProperty('--mouse-x', `${x}px`);
+                    card.style.setProperty('--mouse-y', `${y}px`);
+
+                    // Calculate tilt based on mouse position
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -4;
+                    const rotateY = ((x - centerX) / centerX) * 4;
+
+                    card.style.transform = `
+                        perspective(1000px)
+                        rotateX(${rotateX}deg)
+                        rotateY(${rotateY}deg)
+                        scale(1.02)
+                    `;
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
         });
     </script>
 </body>
