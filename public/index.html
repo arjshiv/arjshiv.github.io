@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arjun Kannan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'monospace']
+                    },
                     colors: {
                         text: {
-                            light: '#1d1d1f',
-                            dark: '#f5f5f7'
+                            light: '#111111',
+                            dark: '#f6f4ef'
                         },
                         subtle: {
-                            light: 'rgba(0, 0, 0, 0.6)',
-                            dark: 'rgba(255, 255, 255, 0.6)'
+                            light: 'rgba(17, 17, 17, 0.65)',
+                            dark: 'rgba(246, 244, 239, 0.7)'
                         },
-                        accent: '#0071e3',
+                        accent: '#ff4d3a',
                         background: {
+                            light: '#f6f4ef',
+                            dark: '#0b0b0b'
+                        },
+                        panel: {
                             light: '#ffffff',
-                            dark: '#000000'
+                            dark: '#111111'
+                        },
+                        line: {
+                            light: 'rgba(0, 0, 0, 0.18)',
+                            dark: 'rgba(255, 255, 255, 0.18)'
                         }
                     }
                 }
@@ -30,7 +45,48 @@
         }
     </script>
     <style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --te-bg: #f6f4ef;
+                --te-grid: rgba(0, 0, 0, 0.08);
+                --te-border: rgba(0, 0, 0, 0.18);
+                --te-panel: #ffffff;
+            }
+
+            .dark {
+                --te-bg: #0b0b0b;
+                --te-grid: rgba(255, 255, 255, 0.08);
+                --te-border: rgba(255, 255, 255, 0.18);
+                --te-panel: #111111;
+            }
+        }
+
         @layer components {
+            .te-grid {
+                background-color: var(--te-bg);
+                background-image:
+                    linear-gradient(var(--te-grid) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--te-grid) 1px, transparent 1px);
+                background-size: 28px 28px;
+            }
+
+            .te-panel {
+                border: 2px solid var(--te-border);
+                background-color: var(--te-panel);
+            }
+
+            .te-label {
+                @apply font-mono uppercase tracking-[0.28em] text-xs text-subtle-light dark:text-subtle-dark;
+            }
+
+            .te-chip {
+                @apply font-mono text-xs font-semibold uppercase tracking-[0.18em] px-2 py-1 rounded-md bg-text-light text-background-light dark:bg-text-dark dark:text-background-dark;
+            }
+
+            .te-heading {
+                @apply uppercase tracking-[0.08em] font-semibold;
+            }
+
             .snap-container {
                 @apply h-screen overflow-y-auto snap-y snap-mandatory lg:h-screen;
                 -webkit-overflow-scrolling: touch;
@@ -131,15 +187,15 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased overflow-x-hidden theme-transition dark:bg-background-dark">
+<body class="font-display antialiased overflow-x-hidden theme-transition dark:bg-background-dark te-grid">
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full h-16 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 z-50 theme-transition">
+    <nav class="fixed top-0 left-0 w-full h-16 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b-2 border-black/10 dark:border-white/10 z-50 theme-transition">
         <div class="h-full px-4 lg:px-8 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <div class="w-8 h-8 rounded-full overflow-hidden">
+                <div class="w-8 h-8 rounded-lg overflow-hidden border-2 border-black/15 dark:border-white/15">
                     <img src="assets/landscape-1.png" alt="Arjun" class="w-full h-full object-cover">
                 </div>
-                <div class="hidden lg:flex items-center gap-6 text-subtle-light dark:text-subtle-dark">
+                <div class="hidden lg:flex items-center gap-6 text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.24em] text-xs">
                     <a href="#about" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">About</a>
                     <a href="#press" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Press</a>
                     <a href="#work" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Work</a>
@@ -148,7 +204,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-6">
-                <button id="theme-toggle" class="w-10 h-10 rounded-lg bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 flex items-center justify-center transition-all" aria-label="Toggle dark mode">
+                <button id="theme-toggle" class="w-10 h-10 rounded-lg border-2 border-black/10 dark:border-white/10 bg-panel-light/60 dark:bg-panel-dark/60 hover:bg-black/5 dark:hover:bg-white/5 flex items-center justify-center transition-all" aria-label="Toggle dark mode">
                     <!-- Sun icon (shown in dark mode) -->
                     <svg class="hidden dark:block w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -166,10 +222,14 @@
         <!-- Fixed Sidebar - becomes top section on mobile -->
         <div class="w-full lg:w-1/3 lg:fixed lg:top-16 lg:left-0 lg:h-[calc(100vh-4rem)] p-4 lg:p-8 flex flex-col justify-start lg:justify-center bg-background-light dark:bg-background-dark lg:z-20 theme-transition">
             <div class="mb-6 lg:mb-8">
-                <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-text-light dark:text-text-dark theme-transition">ARJUN KANNAN</h1>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="te-chip">ID-01</span>
+                    <span class="te-label">Founder Profile</span>
+                </div>
+                <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Arjun Kannan</h1>
                 <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition">Building ResiDesk | Founder, angel investor | Working to distribute the future more evenly.</p>
             </div>
-            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-0">
+            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-0 te-panel">
                 <img src="assets/landscape-1.png" alt="Arjun" class="profile-image">
             </div>
         </div>
@@ -183,7 +243,11 @@
         <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
             <section id="about" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
                 <div class="w-full max-w-2xl mx-auto section-fade active">
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">About</h2>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="te-chip">01</span>
+                        <span class="te-label">About</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">About</h2>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         I build products that use AI to solve real problems. Not the kind that sound impressive at dinner parties, but the kind that actually change how industries work.
                     </p>
@@ -198,12 +262,16 @@
 
             <section id="press" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Press</h2>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="te-chip">02</span>
+                        <span class="te-label">Press</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Press</h2>
                     
                     <!-- Combined grid for videos and articles -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <!-- Videos -->
-                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 shadow-sm">
+                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/w3Ew2tTDGwo" 
@@ -213,7 +281,7 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 shadow-sm">
+                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/OtvONEQNngQ" 
@@ -223,7 +291,7 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 shadow-sm">
+                        <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/C2aUblIKQoM" 
@@ -236,34 +304,34 @@
 
                         <!-- Articles -->
                         <a href="https://www.law360.com/real-estate-authority/articles/2275147" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all shadow-sm hover:shadow-md">
+                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">ResiDesk Simplifies Resident Engagement</h3>
-                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Law360</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Law360</p>
                                 </div>
                             </div>
                         </a>
                         <a href="https://www.hauteresidence.com/bridging-the-gap-between-ai-and-human-empathy-in-property-management-with-residesk" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all shadow-sm hover:shadow-md">
+                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">Bridging AI and Human Empathy in Property Management</h3>
-                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Haute Residence</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Haute Residence</p>
                                 </div>
                             </div>
                         </a>
                         <a href="https://www.under30ceo.com/how-entrepreneur-arjun-kannan-is-innovating-with-ai-and-tech-as-a-tool-for-social-equity" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all shadow-sm hover:shadow-md">
+                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">Innovating with AI as a Tool for Social Equity</h3>
-                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Under 30 CEO</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Under 30 CEO</p>
                                 </div>
                             </div>
                         </a>
                         <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management" target="_blank" rel="noopener noreferrer" class="group">
-                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 transition-all shadow-sm hover:shadow-md">
+                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">The Power of Applied AI in Real Estate</h3>
-                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Hackernoon</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Hackernoon</p>
                                 </div>
                             </div>
                         </a>
@@ -273,11 +341,15 @@
 
             <section id="work" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Work</h2>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="te-chip">03</span>
+                        <span class="te-label">Work</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Work</h2>
                     
                     <div class="mb-4">
                         <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">ResiDesk</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">Co-Founder</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">Co-Founder</span>
                     </div>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         Real estate has always had a data problem. At ResiDesk, we're fixing that by understanding what residents actually want. We handle millions of daily interactions between residents and properties, learning from each one. The result: 7% higher renewals and rent. Small improvements at this scale matter - we work in a $5T industry.
@@ -285,7 +357,7 @@
                     
                     <div class="mb-4">
                         <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.climbcredit.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Climb Credit</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">CTO/CPO</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">CTO/CPO</span>
                     </div>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         Education financing is broken. Instead of chasing high-margin, predatory loans, we built systems to identify schools that actually improved students' earnings. We developed underwriting models that identified quality and aligned our incentives with student success. This approach let us grow from $1M to $300M in annual loans, with students seeing 40% average earnings increases.
@@ -293,7 +365,7 @@
                     
                     <div class="mb-4">
                         <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.blackrock.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">BlackRock</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition">Product & Engineering Lead</span>
+                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">Product &amp; Engineering Lead</span>
                     </div>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
                         Aladdin was BlackRock's internal risk analysis system - so good that other asset managers wanted to use it. My team built Aladdin for Retail, making these institutional-grade tools accessible to financial advisors. We took complex math and made it intuitive. The product went from $0 to $40M ARR in its first year, ultimately changing how advisors assess portfolio risk.
@@ -303,7 +375,11 @@
 
             <section id="investing" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Angel Investing</h2>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="te-chip">04</span>
+                        <span class="te-label">Angel Investing</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Angel Investing</h2>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         I've invested in 100+ startups, mostly in areas I know well. The best founders aren't trying to ride waves; they're solving problems they've experienced firsthand. This has always been the best predictor of success.
                     </p>
@@ -315,7 +391,11 @@
 
             <section id="views" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition">Views</h2>
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="te-chip">05</span>
+                        <span class="te-label">Views</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Views</h2>
                     <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Tech Adoption Follows Power Laws</h3>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
                         The biggest opportunities are in technologies that are already working but haven't been widely adopted yet. By the time something is obvious, the biggest gains have already happened. I look for ideas that seem weird to most people but obvious to experts in the field.
@@ -335,15 +415,15 @@
         </div>
 
         <!-- Navigation Widget - adjusted position for mobile -->
-        <div class="fixed bottom-4 left-4 lg:bottom-8 lg:left-8 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-xl rounded-2xl p-3 flex gap-3 border border-black/10 dark:border-white/10 shadow-lg z-50 theme-transition group">
-            <button class="nav-arrow prev w-12 h-12 rounded-xl bg-text-light/10 dark:bg-text-dark/10 text-text-light dark:text-text-dark hover:bg-text-light/20 dark:hover:bg-text-dark/20 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" disabled aria-label="Previous section">
-                <span class="absolute right-full mr-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-sm pointer-events-none tooltip-text">Previous section (←)</span>
+        <div class="fixed bottom-4 left-4 lg:bottom-8 lg:left-8 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md rounded-xl p-3 flex gap-3 border-2 border-black/10 dark:border-white/10 z-50 theme-transition group">
+            <button class="nav-arrow prev w-12 h-12 rounded-lg border-2 border-black/10 dark:border-white/10 text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" disabled aria-label="Previous section">
+                <span class="absolute right-full mr-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-xs font-mono uppercase tracking-[0.2em] pointer-events-none tooltip-text">Previous section (←)</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:scale-110">
                     <path d="M15 18l-6-6 6-6"/>
                 </svg>
             </button>
-            <button class="nav-arrow next w-12 h-12 rounded-xl bg-text-light/10 dark:bg-text-dark/10 text-text-light dark:text-text-dark hover:bg-text-light/20 dark:hover:bg-text-dark/20 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" aria-label="Next section">
-                <span class="absolute left-full ml-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-sm pointer-events-none tooltip-text">Next section (→)</span>
+            <button class="nav-arrow next w-12 h-12 rounded-lg border-2 border-black/10 dark:border-white/10 text-text-light dark:text-text-dark hover:bg-black/5 dark:hover:bg-white/5 hover:-translate-y-0.5 transition-all disabled:opacity-20 disabled:transform-none disabled:cursor-not-allowed flex items-center justify-center theme-transition relative tooltip-trigger" aria-label="Next section">
+                <span class="absolute left-full ml-2 px-2 py-1 bg-text-light dark:bg-text-dark text-background-light dark:text-background-dark rounded opacity-0 transition-opacity whitespace-nowrap text-xs font-mono uppercase tracking-[0.2em] pointer-events-none tooltip-text">Next section (→)</span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transition-transform group-hover:scale-110">
                     <path d="M9 18l6-6-6-6"/>
                 </svg>
