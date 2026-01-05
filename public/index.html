@@ -70,6 +70,25 @@
                 background-size: 28px 28px;
             }
 
+            .te-glow::before {
+                content: '';
+                position: fixed;
+                inset: 0;
+                background:
+                    radial-gradient(520px circle at 20% 20%, rgba(255, 77, 58, 0.18), transparent 60%),
+                    radial-gradient(460px circle at 80% -10%, rgba(0, 0, 0, 0.12), transparent 55%);
+                opacity: 0.6;
+                pointer-events: none;
+                z-index: 0;
+            }
+
+            .dark .te-glow::before {
+                background:
+                    radial-gradient(520px circle at 20% 20%, rgba(255, 77, 58, 0.24), transparent 60%),
+                    radial-gradient(460px circle at 80% -10%, rgba(255, 255, 255, 0.08), transparent 55%);
+                opacity: 0.5;
+            }
+
             .te-panel {
                 border: 2px solid var(--te-border);
                 background-color: var(--te-panel);
@@ -85,6 +104,21 @@
 
             .te-heading {
                 @apply uppercase tracking-[0.08em] font-semibold;
+            }
+
+            .te-rule {
+                height: 2px;
+                flex: 1;
+                background-color: var(--te-border);
+            }
+
+            .te-tag {
+                @apply font-mono text-[0.65rem] uppercase tracking-[0.18em] px-2 py-1 rounded-md border-2 border-black/10 dark:border-white/10;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
+
+            .dark .te-tag {
+                background-color: rgba(17, 17, 17, 0.8);
             }
 
             .snap-container {
@@ -187,7 +221,7 @@
         }
     </style>
 </head>
-<body class="font-display antialiased overflow-x-hidden theme-transition dark:bg-background-dark te-grid">
+<body class="font-display antialiased overflow-x-hidden theme-transition dark:bg-background-dark te-grid te-glow relative">
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 w-full h-16 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b-2 border-black/10 dark:border-white/10 z-50 theme-transition">
         <div class="h-full px-4 lg:px-8 flex items-center justify-between">
@@ -218,7 +252,7 @@
         </div>
     </nav>
 
-    <div class="min-h-screen flex flex-col lg:flex-row relative pt-16">
+    <div class="min-h-screen flex flex-col lg:flex-row relative pt-16 z-10">
         <!-- Fixed Sidebar - becomes top section on mobile -->
         <div class="w-full lg:w-1/3 lg:fixed lg:top-16 lg:left-0 lg:h-[calc(100vh-4rem)] p-4 lg:p-8 flex flex-col justify-start lg:justify-center bg-background-light dark:bg-background-dark lg:z-20 theme-transition">
             <div class="mb-6 lg:mb-8">
@@ -229,8 +263,36 @@
                 <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3 lg:mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Arjun Kannan</h1>
                 <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition">Building ResiDesk | Founder, angel investor | Working to distribute the future more evenly.</p>
             </div>
-            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-0 te-panel">
+            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-6 te-panel">
                 <img src="assets/landscape-1.png" alt="Arjun" class="profile-image">
+            </div>
+            <div class="te-panel rounded-2xl p-4 lg:p-5">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="te-label">Snapshot</span>
+                    <span class="te-chip">2024</span>
+                </div>
+                <dl class="grid grid-cols-2 gap-4 text-xs">
+                    <div>
+                        <dt class="te-label">Focus</dt>
+                        <dd class="mt-1 text-sm font-semibold text-text-light dark:text-text-dark">Applied AI</dd>
+                    </div>
+                    <div>
+                        <dt class="te-label">Role</dt>
+                        <dd class="mt-1 text-sm font-semibold text-text-light dark:text-text-dark">Founder</dd>
+                    </div>
+                    <div>
+                        <dt class="te-label">Investments</dt>
+                        <dd class="mt-1 text-sm font-semibold text-text-light dark:text-text-dark">100+</dd>
+                    </div>
+                    <div>
+                        <dt class="te-label">Mentor</dt>
+                        <dd class="mt-1 text-sm font-semibold text-text-light dark:text-text-dark">TechStars</dd>
+                    </div>
+                    <div class="col-span-2">
+                        <dt class="te-label">Sectors</dt>
+                        <dd class="mt-1 text-sm font-semibold text-text-light dark:text-text-dark">Real Estate / Education / Finance</dd>
+                    </div>
+                </dl>
             </div>
         </div>
 
@@ -241,11 +303,12 @@
 
         <!-- Main Content -->
         <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
-            <section id="about" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+            <section id="about" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade active">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">01</span>
                         <span class="te-label">About</span>
+                        <span class="te-rule"></span>
                     </div>
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">About</h2>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
@@ -260,11 +323,12 @@
                 </div>
             </section>
 
-            <section id="press" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+            <section id="press" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">02</span>
                         <span class="te-label">Press</span>
+                        <span class="te-rule"></span>
                     </div>
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Press</h2>
                     
@@ -272,6 +336,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <!-- Videos -->
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
+                            <span class="te-tag absolute left-3 top-3 z-10">VID-01</span>
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/w3Ew2tTDGwo" 
@@ -282,6 +347,7 @@
                             </iframe>
                         </div>
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
+                            <span class="te-tag absolute left-3 top-3 z-10">VID-02</span>
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/OtvONEQNngQ" 
@@ -292,6 +358,7 @@
                             </iframe>
                         </div>
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
+                            <span class="te-tag absolute left-3 top-3 z-10">VID-03</span>
                             <iframe 
                                 class="absolute inset-0 w-full h-full"
                                 src="https://www.youtube.com/embed/C2aUblIKQoM" 
@@ -305,6 +372,7 @@
                         <!-- Articles -->
                         <a href="https://www.law360.com/real-estate-authority/articles/2275147" target="_blank" rel="noopener noreferrer" class="group">
                             <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+                                <span class="te-tag absolute left-3 top-3">AR-01</span>
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">ResiDesk Simplifies Resident Engagement</h3>
                                     <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Law360</p>
@@ -313,6 +381,7 @@
                         </a>
                         <a href="https://www.hauteresidence.com/bridging-the-gap-between-ai-and-human-empathy-in-property-management-with-residesk" target="_blank" rel="noopener noreferrer" class="group">
                             <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+                                <span class="te-tag absolute left-3 top-3">AR-02</span>
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">Bridging AI and Human Empathy in Property Management</h3>
                                     <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Haute Residence</p>
@@ -321,6 +390,7 @@
                         </a>
                         <a href="https://www.under30ceo.com/how-entrepreneur-arjun-kannan-is-innovating-with-ai-and-tech-as-a-tool-for-social-equity" target="_blank" rel="noopener noreferrer" class="group">
                             <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+                                <span class="te-tag absolute left-3 top-3">AR-03</span>
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">Innovating with AI as a Tool for Social Equity</h3>
                                     <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Under 30 CEO</p>
@@ -329,6 +399,7 @@
                         </a>
                         <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management" target="_blank" rel="noopener noreferrer" class="group">
                             <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-all">
+                                <span class="te-tag absolute left-3 top-3">AR-04</span>
                                 <div class="absolute inset-0 flex flex-col justify-center p-8">
                                     <h3 class="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">The Power of Applied AI in Real Estate</h3>
                                     <p class="text-sm text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.2em]">Hackernoon</p>
@@ -339,11 +410,12 @@
                 </div>
             </section>
 
-            <section id="work" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+            <section id="work" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">03</span>
                         <span class="te-label">Work</span>
+                        <span class="te-rule"></span>
                     </div>
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Work</h2>
                     
@@ -373,11 +445,12 @@
                 </div>
             </section>
 
-            <section id="investing" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+            <section id="investing" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">04</span>
                         <span class="te-label">Angel Investing</span>
+                        <span class="te-rule"></span>
                     </div>
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Angel Investing</h2>
                     <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
@@ -389,11 +462,12 @@
                 </div>
             </section>
 
-            <section id="views" class="min-h-screen lg:h-screen snap-start flex items-center p-4 lg:p-8">
+            <section id="views" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">05</span>
                         <span class="te-label">Views</span>
+                        <span class="te-rule"></span>
                     </div>
                     <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">Views</h2>
                     <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Tech Adoption Follows Power Laws</h3>
