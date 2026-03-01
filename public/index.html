@@ -686,18 +686,31 @@
 
         // Add 3D tilt effect tracking
         document.addEventListener('DOMContentLoaded', () => {
+            const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!supportsHover || prefersReducedMotion) {
+                return;
+            }
+
             const cards = document.querySelectorAll('.press-card');
             
             cards.forEach(card => {
-                card.addEventListener('mousemove', (e) => {
+                let rafId = 0;
+                let lastClientX = 0;
+                let lastClientY = 0;
+
+                const updateTilt = () => {
+                    rafId = 0;
+
                     const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
+                    const x = lastClientX - rect.left;
+                    const y = lastClientY - rect.top;
 
                     card.style.setProperty('--mouse-x', `${x}px`);
                     card.style.setProperty('--mouse-y', `${y}px`);
 
-                    // Calculate tilt based on mouse position
+                    // Calculate tilt based on mouse position.
                     const centerX = rect.width / 2;
                     const centerY = rect.height / 2;
                     const rotateX = ((y - centerY) / centerY) * -4;
@@ -709,9 +722,22 @@
                         rotateY(${rotateY}deg)
                         scale(1.02)
                     `;
+                };
+
+                card.addEventListener('mousemove', (e) => {
+                    lastClientX = e.clientX;
+                    lastClientY = e.clientY;
+
+                    if (rafId === 0) {
+                        rafId = requestAnimationFrame(updateTilt);
+                    }
                 });
 
                 card.addEventListener('mouseleave', () => {
+                    if (rafId !== 0) {
+                        cancelAnimationFrame(rafId);
+                        rafId = 0;
+                    }
                     card.style.transform = '';
                 });
             });
