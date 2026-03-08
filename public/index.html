@@ -633,7 +633,8 @@
             
             let currentSection = 0;
             let isScrolling = false;
-            const isMobile = window.innerWidth < 1024;
+            let sectionObserver;
+            const visibilityRatios = new Map();
 
             // Update UI based on current section
             function updateUI(index) {
@@ -731,58 +732,55 @@
                 }
             });
 
-            // Scroll handling with debounce
-            let scrollTimeout;
-            const scrollHandler = () => {
-                if (isScrolling) return;
-                
-                clearTimeout(scrollTimeout);
-                scrollTimeout = setTimeout(() => {
-                    const viewportHeight = window.innerHeight;
-                    const scrollTop = window.innerWidth >= 1024 ? container.scrollTop : window.pageYOffset;
-                    const headerOffset = window.innerWidth >= 1024 ? 0 : 80; // Only apply header offset on mobile
-                    
-                    // Find the most visible section
-                    let maxVisibleSection = 0;
-                    let maxVisibleAmount = 0;
+            function connectSectionObserver() {
+                if (sectionObserver) {
+                    sectionObserver.disconnect();
+                }
 
-                    sections.forEach((section, index) => {
-                        const rect = section.getBoundingClientRect();
-                        const visibleAmount = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, headerOffset);
-                        
-                        if (visibleAmount > maxVisibleAmount) {
-                            maxVisibleAmount = visibleAmount;
-                            maxVisibleSection = index;
+                visibilityRatios.clear();
+                const observerRoot = window.innerWidth >= 1024 ? container : null;
+
+                sectionObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        const sectionIndex = Number(entry.target.dataset.sectionIndex);
+                        visibilityRatios.set(sectionIndex, entry.intersectionRatio);
+                    });
+
+                    if (isScrolling) {
+                        return;
+                    }
+
+                    let mostVisibleIndex = currentSection;
+                    let highestRatio = 0;
+
+                    visibilityRatios.forEach((ratio, index) => {
+                        if (ratio > highestRatio) {
+                            highestRatio = ratio;
+                            mostVisibleIndex = index;
                         }
                     });
 
-                    if (currentSection !== maxVisibleSection) {
-                        updateUI(maxVisibleSection);
+                    if (highestRatio > 0.35 && mostVisibleIndex !== currentSection) {
+                        updateUI(mostVisibleIndex);
                     }
-                }, 50);
-            };
+                }, {
+                    root: observerRoot,
+                    rootMargin: window.innerWidth >= 1024 ? '0px 0px -10% 0px' : '-72px 0px -18% 0px',
+                    threshold: [0.2, 0.35, 0.5, 0.7, 0.9]
+                });
 
-            // Add scroll listeners based on screen size
-            function updateScrollListeners() {
-                // Remove existing listeners
-                window.removeEventListener('scroll', scrollHandler);
-                container.removeEventListener('scroll', scrollHandler);
-
-                // Add appropriate listener
-                if (window.innerWidth >= 1024) {
-                    container.addEventListener('scroll', scrollHandler);
-                } else {
-                    window.addEventListener('scroll', scrollHandler);
-                }
+                sections.forEach((section, index) => {
+                    section.dataset.sectionIndex = index;
+                    sectionObserver.observe(section);
+                });
             }
 
-            // Initial setup of scroll listeners
-            updateScrollListeners();
+            connectSectionObserver();
 
             // Update scroll listeners on resize
             window.addEventListener('resize', () => {
-                updateScrollListeners();
-                scrollHandler();
+                connectSectionObserver();
+                updateUI(currentSection);
             });
 
             // Initial setup
