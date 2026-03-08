@@ -148,6 +148,11 @@
                 @apply transition-colors duration-300;
             }
 
+            .content-section {
+                content-visibility: auto;
+                contain-intrinsic-size: 960px;
+            }
+
             @media (max-width: 1024px) {
                 .snap-container {
                     height: auto;
@@ -159,6 +164,21 @@
                     scroll-snap-align: none;
                     min-height: auto !important;
                     padding: 3rem 1.5rem !important;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .section-fade,
+                .profile-image,
+                .theme-transition,
+                .press-card,
+                .nav-arrow {
+                    transition: none !important;
+                    animation: none !important;
+                }
+
+                .snap-container {
+                    scroll-behavior: auto;
                 }
             }
 
@@ -308,7 +328,7 @@
 
         <!-- Main Content -->
         <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
-            <section id="about" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="about" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade active">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">01</span>
@@ -327,7 +347,7 @@
                     </p>
                 </div>
             </section>
-            <section id="latest" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="latest" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">02</span>
@@ -366,7 +386,7 @@
                 </div>
             </section>
 
-            <section id="press" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="press" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">03</span>
@@ -470,7 +490,7 @@
                     </div>
                 </div>
             </section>
-            <section id="speaking" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="speaking" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">04</span>
@@ -516,7 +536,7 @@
                 </div>
             </section>
 
-            <section id="work" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="work" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">05</span>
@@ -551,7 +571,7 @@
                 </div>
             </section>
 
-            <section id="investing" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="investing" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">06</span>
@@ -568,7 +588,7 @@
                 </div>
             </section>
 
-            <section id="views" class="min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="views" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">07</span>
