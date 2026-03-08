@@ -831,31 +831,52 @@
         // Add 3D tilt effect tracking
         document.addEventListener('DOMContentLoaded', () => {
             const cards = document.querySelectorAll('.press-card');
+            const canTiltCards =
+                window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+                !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!canTiltCards) {
+                return;
+            }
             
             cards.forEach(card => {
+                let frameId = 0;
+                let pointerX = 0;
+                let pointerY = 0;
+
                 card.addEventListener('mousemove', (e) => {
                     const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
+                    pointerX = e.clientX - rect.left;
+                    pointerY = e.clientY - rect.top;
 
-                    card.style.setProperty('--mouse-x', `${x}px`);
-                    card.style.setProperty('--mouse-y', `${y}px`);
+                    if (frameId) {
+                        return;
+                    }
 
-                    // Calculate tilt based on mouse position
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    const rotateX = ((y - centerY) / centerY) * -4;
-                    const rotateY = ((x - centerX) / centerX) * 4;
+                    frameId = window.requestAnimationFrame(() => {
+                        card.style.setProperty('--mouse-x', `${pointerX}px`);
+                        card.style.setProperty('--mouse-y', `${pointerY}px`);
 
-                    card.style.transform = `
-                        perspective(1000px)
-                        rotateX(${rotateX}deg)
-                        rotateY(${rotateY}deg)
-                        scale(1.02)
-                    `;
+                        const centerX = rect.width / 2;
+                        const centerY = rect.height / 2;
+                        const rotateX = ((pointerY - centerY) / centerY) * -4;
+                        const rotateY = ((pointerX - centerX) / centerX) * 4;
+
+                        card.style.transform = `
+                            perspective(1000px)
+                            rotateX(${rotateX}deg)
+                            rotateY(${rotateY}deg)
+                            scale(1.02)
+                        `;
+                        frameId = 0;
+                    });
                 });
 
                 card.addEventListener('mouseleave', () => {
+                    if (frameId) {
+                        window.cancelAnimationFrame(frameId);
+                        frameId = 0;
+                    }
                     card.style.transform = '';
                 });
             });
