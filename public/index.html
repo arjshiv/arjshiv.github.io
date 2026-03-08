@@ -218,6 +218,37 @@
                     transparent 40%
                 );
             }
+
+            .video-embed {
+                @apply relative w-full h-full border-0 bg-black;
+            }
+
+            .video-poster {
+                @apply relative flex h-full w-full items-end overflow-hidden bg-black text-left;
+            }
+
+            .video-poster img {
+                @apply absolute inset-0 h-full w-full object-cover;
+            }
+
+            .video-poster::after {
+                content: '';
+                @apply absolute inset-0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.7) 100%);
+            }
+
+            .video-poster-copy {
+                @apply relative z-10 flex w-full items-end justify-between gap-4 p-5;
+            }
+
+            .video-play {
+                @apply flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/35 bg-white/15 backdrop-blur-sm transition-transform duration-300;
+            }
+
+            .video-poster:hover .video-play,
+            .video-poster:focus-visible .video-play {
+                transform: scale(1.06);
+            }
         }
     </style>
 </head>
@@ -309,36 +340,54 @@
                         <!-- Videos -->
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <span class="te-tag absolute left-3 top-3 z-10">VID-01</span>
-                            <iframe 
-                                class="absolute inset-0 w-full h-full"
-                                src="https://www.youtube.com/embed/w3Ew2tTDGwo" 
-                                title="Startup Founder Interview" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                            <button class="video-poster video-embed" type="button" data-youtube-id="w3Ew2tTDGwo" data-video-title="Startup Founder Interview" aria-label="Play Startup Founder Interview">
+                                <img src="https://i.ytimg.com/vi/w3Ew2tTDGwo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                                <span class="video-poster-copy">
+                                    <span class="max-w-[16rem]">
+                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Watch</span>
+                                        <span class="mt-2 block text-lg font-semibold text-white">Startup Founder Interview</span>
+                                    </span>
+                                    <span class="video-play" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
+                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
                         </div>
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <span class="te-tag absolute left-3 top-3 z-10">VID-02</span>
-                            <iframe 
-                                class="absolute inset-0 w-full h-full"
-                                src="https://www.youtube.com/embed/OtvONEQNngQ" 
-                                title="AI Discussion with Greg Kamradt" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                            <button class="video-poster video-embed" type="button" data-youtube-id="OtvONEQNngQ" data-video-title="AI Discussion with Greg Kamradt" aria-label="Play AI Discussion with Greg Kamradt">
+                                <img src="https://i.ytimg.com/vi/OtvONEQNngQ/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                                <span class="video-poster-copy">
+                                    <span class="max-w-[16rem]">
+                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Watch</span>
+                                        <span class="mt-2 block text-lg font-semibold text-white">AI Discussion with Greg Kamradt</span>
+                                    </span>
+                                    <span class="video-play" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
+                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
                         </div>
                         <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
                             <span class="te-tag absolute left-3 top-3 z-10">VID-03</span>
-                            <iframe 
-                                class="absolute inset-0 w-full h-full"
-                                src="https://www.youtube.com/embed/C2aUblIKQoM" 
-                                title="AngelList Interview" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                            <button class="video-poster video-embed" type="button" data-youtube-id="C2aUblIKQoM" data-video-title="Why Work Here with Arjun Kannan" aria-label="Play Why Work Here with Arjun Kannan">
+                                <img src="https://i.ytimg.com/vi/C2aUblIKQoM/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                                <span class="video-poster-copy">
+                                    <span class="max-w-[16rem]">
+                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Watch</span>
+                                        <span class="mt-2 block text-lg font-semibold text-white">Why Work Here with Arjun Kannan</span>
+                                    </span>
+                                    <span class="video-play" aria-hidden="true">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
+                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </button>
                         </div>
 
                         <!-- Articles -->
@@ -503,6 +552,7 @@
             const sectionContents = document.querySelectorAll('.section-fade');
             const prevButton = document.querySelector('.nav-arrow.prev');
             const nextButton = document.querySelector('.nav-arrow.next');
+            const videoPosters = document.querySelectorAll('.video-poster');
             
             let currentSection = 0;
             let isScrolling = false;
@@ -660,6 +710,23 @@
 
             // Initial setup
             updateUI(0);
+
+            videoPosters.forEach((poster) => {
+                poster.addEventListener('click', () => {
+                    const iframe = document.createElement('iframe');
+                    const videoId = poster.dataset.youtubeId;
+                    const videoTitle = poster.dataset.videoTitle;
+
+                    iframe.className = 'absolute inset-0 w-full h-full border-0';
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+                    iframe.title = videoTitle;
+                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    iframe.allowFullscreen = true;
+                    iframe.loading = 'lazy';
+
+                    poster.replaceWith(iframe);
+                }, { once: true });
+            });
 
             // Add initial animation class to arrows after a delay
             setTimeout(() => {
