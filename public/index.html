@@ -612,8 +612,10 @@
                     const sectionId = link.getAttribute('href').substring(1);
                     if (sections[index].id === sectionId) {
                         link.classList.add('text-text-light', 'dark:text-text-dark');
+                        link.setAttribute('aria-current', 'true');
                     } else {
                         link.classList.remove('text-text-light', 'dark:text-text-dark');
+                        link.removeAttribute('aria-current');
                     }
                 });
 
