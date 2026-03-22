@@ -40,6 +40,7 @@
     --te-grid: rgba(0, 0, 0, 0.08);
     --te-border: rgba(0, 0, 0, 0.18);
     --te-panel: #ffffff;
+    --te-shadow: 0 24px 60px rgba(70, 47, 27, 0.08);
   }
 
   .dark {
@@ -47,6 +48,7 @@
     --te-grid: rgba(255, 255, 255, 0.08);
     --te-border: rgba(255, 255, 255, 0.18);
     --te-panel: #111111;
+    --te-shadow: 0 24px 60px rgba(0, 0, 0, 0.36);
   }
 }
 
@@ -65,7 +67,8 @@
     inset: 0;
     background:
       radial-gradient(520px circle at 20% 20%, rgba(255, 77, 58, 0.18), transparent 60%),
-      radial-gradient(460px circle at 80% -10%, rgba(0, 0, 0, 0.12), transparent 55%);
+      radial-gradient(460px circle at 80% -10%, rgba(0, 0, 0, 0.12), transparent 55%),
+      linear-gradient(180deg, rgba(255, 248, 240, 0.4), transparent 24%);
     opacity: 0.6;
     pointer-events: none;
     z-index: 0;
@@ -74,13 +77,15 @@
   .dark .te-glow::before {
     background:
       radial-gradient(520px circle at 20% 20%, rgba(255, 77, 58, 0.24), transparent 60%),
-      radial-gradient(460px circle at 80% -10%, rgba(255, 255, 255, 0.08), transparent 55%);
+      radial-gradient(460px circle at 80% -10%, rgba(255, 255, 255, 0.08), transparent 55%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 22%);
     opacity: 0.5;
   }
 
   .te-panel {
     border: 2px solid var(--te-border);
     background-color: var(--te-panel);
+    box-shadow: var(--te-shadow);
   }
 
   .hero-evidence {
@@ -155,14 +160,17 @@
 
   .section-fade {
     @apply translate-y-5 opacity-30 transition-all duration-700 ease-out;
+    filter: saturate(0.9);
   }
 
   .section-fade.active {
     @apply translate-y-0 opacity-100;
+    filter: saturate(1);
   }
 
   .profile-image {
     @apply h-auto w-full grayscale transition-all duration-700 ease-out hover:grayscale-0 lg:h-auto lg:w-full;
+    transform: scale(1.02);
   }
 
   .theme-transition {
@@ -236,10 +244,11 @@
     @apply relative transform-gpu transition-all duration-300 ease-out;
     transform-style: preserve-3d;
     perspective: 1000px;
+    overflow: hidden;
   }
 
   .press-card:hover {
-    transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
+    transform: perspective(1000px) rotateX(1.6deg) rotateY(1.6deg) scale(1.018);
   }
 
   .press-card::before {
