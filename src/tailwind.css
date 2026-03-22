@@ -113,6 +113,10 @@
     @apply rounded-full border border-black/10 px-3 py-2 text-[0.72rem] font-mono uppercase tracking-[0.18em] text-text-light transition-colors hover:bg-black/5 dark:border-white/10 dark:text-text-dark dark:hover:bg-white/5;
   }
 
+  .mobile-nav-link {
+    @apply inline-flex min-h-11 items-center rounded-full border border-black/10 px-4 py-2 font-mono text-[0.72rem] uppercase tracking-[0.18em] text-subtle-light transition-colors dark:border-white/10 dark:text-subtle-dark;
+  }
+
   .story-callout {
     @apply rounded-[1.75rem] border border-black/10 p-5 lg:p-6 dark:border-white/10;
     background:
