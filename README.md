@@ -39,3 +39,8 @@ Then open `http://127.0.0.1:4173`.
 firebase login
 firebase deploy
 ```
+
+
+## TODOS
+[] Migrate to a free vercel project from firebase
+[] Cron job to add all relevant mentions
