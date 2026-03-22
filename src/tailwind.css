@@ -170,6 +170,27 @@
     border-top: 1px solid var(--te-border);
   }
 
+  .source-inline-list {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .source-inline-link {
+    display: inline-block;
+    width: fit-content;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(17, 17, 17, 0.78);
+    border-bottom: 1px solid var(--te-border);
+    padding-bottom: 0.45rem;
+  }
+
+  .dark .source-inline-link {
+    color: rgba(246, 244, 239, 0.8);
+  }
+
   .hero-metric {
     @apply text-2xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark lg:text-[2rem];
   }
@@ -403,8 +424,7 @@
     .section-fade,
     .profile-image,
     .theme-transition,
-    .press-card,
-    .nav-arrow {
+    .press-card {
       transition: none !important;
       animation: none !important;
     }
@@ -414,39 +434,10 @@
     }
   }
 
-  .tooltip-trigger:hover .tooltip-text {
-    @apply opacity-100;
-  }
-
   a:focus-visible,
   button:focus-visible {
     outline: 2px solid rgba(255, 77, 58, 0.9);
     outline-offset: 3px;
-  }
-
-  @keyframes subtle-bounce {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-4px);
-    }
-  }
-
-  .nav-arrow {
-    animation: subtle-bounce 2s ease-in-out infinite;
-    animation-play-state: paused;
-  }
-
-  .nav-arrow.show-animation {
-    animation-play-state: running;
-  }
-
-  .nav-arrow:hover,
-  .nav-arrow:disabled {
-    animation-play-state: paused;
   }
 
   .press-card {
