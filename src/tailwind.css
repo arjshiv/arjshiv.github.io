@@ -83,6 +83,31 @@
     background-color: var(--te-panel);
   }
 
+  .hero-evidence {
+    @apply rounded-[1.75rem] p-5 lg:p-6;
+    background:
+      linear-gradient(135deg, rgba(255, 77, 58, 0.08), transparent 42%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.95));
+  }
+
+  .dark .hero-evidence {
+    background:
+      linear-gradient(135deg, rgba(255, 77, 58, 0.14), transparent 42%),
+      linear-gradient(180deg, rgba(24, 24, 24, 0.96), rgba(11, 11, 11, 0.98));
+  }
+
+  .hero-metric {
+    @apply text-2xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark lg:text-[2rem];
+  }
+
+  .hero-metric-copy {
+    @apply mt-2 text-[0.72rem] font-mono uppercase tracking-[0.18em] text-subtle-light dark:text-subtle-dark;
+  }
+
+  .hero-link {
+    @apply rounded-full border border-black/10 px-3 py-2 text-[0.72rem] font-mono uppercase tracking-[0.18em] text-text-light transition-colors hover:bg-black/5 dark:border-white/10 dark:text-text-dark dark:hover:bg-white/5;
+  }
+
   .te-label {
     @apply font-mono uppercase tracking-[0.28em] text-xs text-subtle-light dark:text-subtle-dark;
   }
