@@ -70,31 +70,40 @@
     <div class="min-h-screen flex flex-col lg:flex-row relative pt-28 lg:pt-16 z-10">
         <!-- Fixed Sidebar - becomes top section on mobile -->
         <div class="w-full lg:w-1/3 lg:fixed lg:top-16 lg:left-0 lg:h-[calc(100vh-4rem)] p-4 lg:p-8 flex flex-col justify-start lg:justify-center bg-background-light dark:bg-background-dark lg:z-20 theme-transition">
-            <div class="mb-6 lg:mb-8">
+            <div class="hero-stack mb-6 lg:mb-8">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="te-chip">ID-01</span>
                     <span class="te-label">Evidence Brief</span>
                 </div>
                 <p class="te-label mb-3">Founder / Product Operator / Investor</p>
-                <h1 class="text-3xl lg:text-4xl font-bold tracking-tight mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Arjun Kannan</h1>
-                <p class="text-lg lg:text-[1.35rem] leading-tight text-text-light dark:text-text-dark theme-transition mb-4">Building AI systems that turn overlooked operational friction into measurable business outcomes.</p>
-                <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition">This site is structured as a current record of work, third-party recognition, and industry influence around ResiDesk, applied AI, and operator-first product design.</p>
+                <h1 class="masthead-name text-text-light dark:text-text-dark theme-transition">
+                    <span class="masthead-line">Arjun</span>
+                    <span class="masthead-line">Kannan</span>
+                </h1>
+                <p class="hero-summary text-text-light dark:text-text-dark theme-transition">Building AI systems that turn overlooked operational friction into measurable business outcomes.</p>
+                <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition max-w-[34rem]">This page is organized as a public record of work, recognition, and operator credibility around ResiDesk, applied AI, and the systems that move large industries.</p>
             </div>
             <div class="hero-evidence te-panel mb-6 lg:mb-8">
                 <p class="te-label mb-4">Current Signal</p>
-                <div class="grid grid-cols-3 gap-3">
-                    <div>
-                        <p class="hero-metric">2026</p>
-                        <p class="hero-metric-copy">Latest verified public mention</p>
+                <p class="hero-summary max-w-[29rem] text-text-light dark:text-text-dark theme-transition mb-5">Public record current through March 2026, with the newest evidence clustered around speaking, research distribution, and third-party coverage.</p>
+                <div class="hero-proof-list">
+                    <div class="hero-proof-item">
+                        <p class="hero-metric-copy">Mar 11-12, 2026</p>
+                        <p class="text-base text-text-light dark:text-text-dark">BuiltWorlds Venture West speaker listing</p>
                     </div>
-                    <div>
-                        <p class="hero-metric">5+</p>
-                        <p class="hero-metric-copy">Recent third-party listings and features</p>
+                    <div class="hero-proof-item">
+                        <p class="hero-metric-copy">Feb 17-18, 2026</p>
+                        <p class="text-base text-text-light dark:text-text-dark">20for20 podcast episode and presentation page</p>
                     </div>
-                    <div>
-                        <p class="hero-metric">100+</p>
-                        <p class="hero-metric-copy">Startup investments and mentoring relationships</p>
+                    <div class="hero-proof-item">
+                        <p class="hero-metric-copy">May 6, 2025</p>
+                        <p class="text-base text-text-light dark:text-text-dark">TechBullion feature on ResiDesk&rsquo;s AI thesis</p>
                     </div>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-3">
+                    <span class="te-tag">2026 latest verified mention</span>
+                    <span class="te-tag">100+ startup investments</span>
+                    <span class="te-tag">Techstars mentor</span>
                 </div>
                 <div class="mt-5 flex flex-wrap gap-3">
                     <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="hero-link">20for20 press</a>
@@ -107,6 +116,10 @@
                     <source srcset="assets/landscape-1.avif" type="image/avif">
                     <img src="assets/landscape-1.webp" alt="Arjun" width="1400" height="788" fetchpriority="high" decoding="async" class="profile-image">
                 </picture>
+                <div class="portrait-caption">
+                    <p class="te-label mb-2">Field Note</p>
+                    <p class="text-sm text-white/80">Applied AI for housing, finance, and decision systems. Public record refreshed March 2026.</p>
+                </div>
             </div>
             <p class="text-sm text-subtle-light dark:text-subtle-dark theme-transition max-w-md">Latest evidence on this page is dated through March 2026 and linked to source pages, speaker listings, press entries, or public recordings.</p>
         </div>
@@ -118,7 +131,7 @@
 
         <!-- Main Content -->
         <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
-            <section id="about" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="about" data-section-code="01" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade active">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">01</span>
@@ -141,7 +154,7 @@
                     </p>
                 </div>
             </section>
-            <section id="latest" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="latest" data-section-code="02" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">02</span>
@@ -228,7 +241,7 @@
                 </div>
             </section>
 
-            <section id="press" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="press" data-section-code="03" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">03</span>
@@ -347,7 +360,7 @@
                     </div>
                 </div>
             </section>
-            <section id="speaking" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="speaking" data-section-code="04" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">04</span>
@@ -394,7 +407,7 @@
                 </div>
             </section>
 
-            <section id="work" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="work" data-section-code="05" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">05</span>
@@ -447,7 +460,7 @@
                 </div>
             </section>
 
-            <section id="investing" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="investing" data-section-code="06" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">06</span>
@@ -476,7 +489,7 @@
                 </div>
             </section>
 
-            <section id="views" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section id="views" data-section-code="07" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-2xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">07</span>
@@ -501,7 +514,7 @@
                     </p>
                 </div>
             </section>
-            <section class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
+            <section data-section-code="08" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
                 <div class="w-full max-w-3xl mx-auto section-fade">
                     <div class="flex items-center gap-3 mb-5">
                         <span class="te-chip">08</span>
