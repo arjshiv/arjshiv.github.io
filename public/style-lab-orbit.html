@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Lab Orbit</title>
+    <style>
+        @font-face {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 400 700;
+            font-display: swap;
+            src: url('./assets/fonts/space-grotesk-400-700-latin.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'IBM Plex Mono';
+            font-style: normal;
+            font-weight: 400 600;
+            font-display: swap;
+            src: url('./assets/fonts/ibm-plex-mono-400-latin.woff2') format('woff2');
+        }
+
+        :root {
+            --paper: #f4ede0;
+            --paper-strong: #fbf6ee;
+            --ink: #201b17;
+            --muted: #6c6157;
+            --rust: #ae5b31;
+            --olive: #7d8267;
+            --line: rgba(32, 27, 23, 0.12);
+            --shadow: 0 26px 64px rgba(73, 49, 25, 0.12);
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-width: 320px;
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(174, 91, 49, 0.16), transparent 28%),
+                linear-gradient(180deg, #faf5ec 0%, var(--paper) 55%, #efe3d3 100%);
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(rgba(32, 27, 23, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(32, 27, 23, 0.04) 1px, transparent 1px);
+            background-size: 30px 30px;
+            mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), transparent 55%);
+        }
+
+        .page {
+            width: min(calc(100% - 2rem), 1220px);
+            margin: 0 auto;
+            padding: 2rem 0 4rem;
+        }
+
+        .topline {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--line);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+            gap: 2rem;
+            padding: 3rem 0;
+            align-items: center;
+        }
+
+        .hero-copy, .hero-card, .section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: rise 760ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+        }
+
+        .hero-card { animation-delay: 120ms; }
+        .section:nth-of-type(1) { animation-delay: 180ms; }
+        .section:nth-of-type(2) { animation-delay: 260ms; }
+        .section:nth-of-type(3) { animation-delay: 340ms; }
+
+        .eyebrow, .meta {
+            margin: 0 0 1rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        h1, h2, h3, p { margin: 0; }
+
+        h1 {
+            font-size: clamp(4rem, 8vw, 7rem);
+            line-height: 0.88;
+            letter-spacing: -0.08em;
+            max-width: 6ch;
+        }
+
+        .hero-copy p:last-of-type {
+            max-width: 42rem;
+            margin-top: 1.25rem;
+            font-size: 1.12rem;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .chip {
+            padding: 0.82rem 1.2rem;
+            border-radius: 999px;
+            border: 1px solid rgba(32, 27, 23, 0.16);
+            background: rgba(255, 252, 247, 0.75);
+            box-shadow: var(--shadow);
+            font-size: 0.96rem;
+        }
+
+        .chip.primary {
+            border-color: transparent;
+            background: var(--ink);
+            color: #f8f3ea;
+        }
+
+        .hero-card {
+            padding: 1.2rem;
+            border: 1px solid rgba(32, 27, 23, 0.1);
+            border-radius: 2rem;
+            background: rgba(255, 252, 247, 0.86);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-card img {
+            width: 100%;
+            border-radius: 1.35rem;
+            aspect-ratio: 1.06 / 1;
+            object-fit: cover;
+        }
+
+        .hero-caption {
+            display: grid;
+            gap: 0.65rem;
+            padding: 1rem 0 0.4rem;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: 12rem 1fr;
+            gap: 2rem;
+            padding: 2rem 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .section-title {
+            font-size: 0.82rem;
+            font-family: 'IBM Plex Mono', monospace;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .spread {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .spread h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.06em;
+            line-height: 0.95;
+        }
+
+        .spread p {
+            max-width: 48rem;
+            color: var(--muted);
+            line-height: 1.72;
+        }
+
+        .sheet-row {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 1rem;
+        }
+
+        .sheet, .note {
+            position: relative;
+            padding: 1.1rem 1.2rem;
+            border-radius: 1.35rem;
+            background: rgba(255, 252, 247, 0.86);
+            border: 1px solid rgba(32, 27, 23, 0.08);
+            box-shadow: var(--shadow);
+        }
+
+        .sheet::before, .note::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(174, 91, 49, 0.08), transparent 45%);
+            pointer-events: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .fact {
+            padding-top: 1rem;
+            border-top: 1px solid var(--line);
+        }
+
+        .fact strong {
+            display: block;
+            margin-bottom: 0.55rem;
+            font-size: 1.15rem;
+            letter-spacing: -0.03em;
+        }
+
+        .fact p, .sheet p, .note p {
+            color: var(--muted);
+            line-height: 1.68;
+        }
+
+        .orbit {
+            width: 10rem;
+            height: 10rem;
+            margin-left: auto;
+            border-radius: 999px;
+            border: 1px solid rgba(32, 27, 23, 0.14);
+            position: relative;
+            background: radial-gradient(circle, rgba(174, 91, 49, 0.14), transparent 62%);
+        }
+
+        .orbit::before, .orbit::after {
+            content: '';
+            position: absolute;
+            inset: 1.1rem;
+            border-radius: 999px;
+            border: 1.25px solid rgba(32, 27, 23, 0.24);
+        }
+
+        .orbit::after {
+            inset: 2.15rem;
+            border-color: rgba(174, 91, 49, 0.72);
+            transform: rotate(-10deg);
+        }
+
+        .dot {
+            position: absolute;
+            width: 0.85rem;
+            height: 0.85rem;
+            border-radius: 999px;
+            background: var(--ink);
+            top: 2rem;
+            left: 6.7rem;
+            box-shadow: 0 0 0 0.35rem rgba(174, 91, 49, 0.18);
+        }
+
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 900px) {
+            .hero, .section, .sheet-row, .grid { grid-template-columns: 1fr; }
+            .orbit { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <div class="topline">
+            <span>Direction 01 / Orbit</span>
+            <span>Warm editorial museum</span>
+        </div>
+
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Founder, engineer, investor</p>
+                <h1>Arjun Kannan</h1>
+                <p>
+                    I build products for markets where feedback is expensive. Physics at Cornell. Finance at BlackRock.
+                    Lending at Climb. Housing at ResiDesk. Different industries, same problem: hidden information, slow loops, and expensive guesses.
+                </p>
+                <div class="actions">
+                    <span class="chip primary">ResiDesk</span>
+                    <span class="chip">Writing</span>
+                    <span class="chip">Conversations</span>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="assets/landscape-1.webp" alt="Arjun Kannan portrait">
+                <div class="hero-caption">
+                    <p class="meta">In one line</p>
+                    <p>The path looks random until you notice the recurring pattern. The work is always about making buried signal usable before the mistake gets expensive.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">The arc</div>
+            <div class="spread">
+                <h2>The path only looks random.</h2>
+                <div class="sheet-row">
+                    <div class="sheet">
+                        <p class="meta">Story</p>
+                        <p>My original plan was academia. Then I wrote some code in a lab and watched it save real time for real people. That is a difficult experience to unlearn.</p>
+                    </div>
+                    <div class="note">
+                        <p class="meta">Still true</p>
+                        <p>Coding is easy, engineering is hard.</p>
+                        <div class="orbit"><span class="dot"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">What changed</div>
+            <div class="grid">
+                <article class="fact">
+                    <strong>ResiDesk</strong>
+                    <p>Property management is full of information hiding in plain sight. The chatbot is the wrapper. The decision is the product.</p>
+                </article>
+                <article class="fact">
+                    <strong>Climb Credit</strong>
+                    <p>The market underwrote the person as they were. We cared about what happened after the program.</p>
+                </article>
+                <article class="fact">
+                    <strong>BlackRock</strong>
+                    <p>Same information. Better interface. Better business.</p>
+                </article>
+                <article class="fact">
+                    <strong>Recent</strong>
+                    <p>BuiltWorlds, 20for20, TechBullion, and TechTimes all picked up the same underlying story from different angles.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">How it feels</div>
+            <div class="spread">
+                <h2>Calm, exact, and slightly archival.</h2>
+                <p>This direction treats the site like a private collection opened to the public: restrained motion, thick paper, small metadata, and just enough warmth to keep it from becoming sterile.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
