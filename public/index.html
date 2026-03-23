@@ -1,815 +1,442 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Kannan | Public record</title>
-    <meta name="description" content="Founder at ResiDesk. Public record of Arjun Kannan&rsquo;s work across housing, finance, applied AI, speaking, press, and operating results.">
-    <meta property="og:title" content="Arjun Kannan | Public record">
-    <meta property="og:description" content="Public record of work, recognition, speaking, and operating results across ResiDesk, BlackRock, and Climb Credit.">
-    <meta name="twitter:card" content="summary">
-    <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
+    <title>Arjun Kannan</title>
+    <meta name="description" content="Arjun Kannan. Founder at ResiDesk. I build products that turn messy feedback into decisions across housing, finance, and applied AI.">
+    <meta property="og:title" content="Arjun Kannan">
+    <meta property="og:description" content="Founder at ResiDesk. Work across housing, finance, applied AI, investing, speaking, and operating results.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#f4ede2">
     <link rel="icon" type="image/webp" href="assets/landscape-1.webp">
-    <script>
-        (() => {
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const savedTheme = localStorage.getItem('theme');
-            const useDarkTheme = savedTheme ? savedTheme === 'dark' : prefersDark;
-
-            document.documentElement.classList.toggle('dark', useDarkTheme);
-        })();
-    </script>
     <link rel="preload" href="assets/fonts/space-grotesk-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-display antialiased overflow-x-hidden theme-transition dark:bg-background-dark te-grid te-glow relative">
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full h-16 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b-2 border-black/10 dark:border-white/10 z-50 theme-transition">
-        <div class="h-full px-4 lg:px-8 flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <div class="nav-monogram" aria-hidden="true">AK</div>
-                <div class="hidden lg:flex items-center gap-6 text-subtle-light dark:text-subtle-dark font-mono uppercase tracking-[0.24em] text-xs">
-                    <a href="#about" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Story</a>
-                    <a href="#latest" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Trail</a>
-                    <a href="#press" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Press</a>
-                    <a href="#speaking" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Speaking</a>
-                    <a href="#work" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Results</a>
-                    <a href="#investing" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Bets</a>
-                    <a href="#views" class="nav-link hover:text-text-light dark:hover:text-text-dark transition-colors">Reasoning</a>
-                </div>
-            </div>
-            <div class="flex items-center gap-6">
-                <button id="theme-toggle" class="w-10 h-10 rounded-lg border-2 border-black/10 dark:border-white/10 bg-panel-light/60 dark:bg-panel-dark/60 hover:bg-black/5 dark:hover:bg-white/5 flex items-center justify-center transition-all" aria-label="Toggle dark mode">
-                    <!-- Sun icon (shown in dark mode) -->
-                    <svg class="hidden dark:block w-5 h-5 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                    </svg>
-                    <!-- Moon icon (shown in light mode) -->
-                    <svg class="block dark:hidden w-5 h-5 text-text-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                    </svg>
-                </button>
-            </div>
+<body class="site-body">
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">AK</a>
+            <nav class="main-nav" aria-label="Primary">
+                <a href="#story" class="nav-link">Story</a>
+                <a href="#latest" class="nav-link">Latest</a>
+                <a href="#press" class="nav-link">Press</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#investing" class="nav-link">Investing</a>
+                <a href="#thinking" class="nav-link">Thinking</a>
+                <a href="#sources" class="nav-link">Sources</a>
+            </nav>
         </div>
-    </nav>
-    <div class="mobile-nav-strip lg:hidden fixed top-16 left-0 w-full z-40 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-black/10 dark:border-white/10 theme-transition">
-        <div class="overflow-x-auto whitespace-nowrap px-4 py-3 flex gap-3">
-            <a href="#about" class="nav-link mobile-nav-link">Story</a>
-            <a href="#latest" class="nav-link mobile-nav-link">Trail</a>
-            <a href="#press" class="nav-link mobile-nav-link">Press</a>
-            <a href="#speaking" class="nav-link mobile-nav-link">Speaking</a>
-            <a href="#work" class="nav-link mobile-nav-link">Results</a>
-            <a href="#investing" class="nav-link mobile-nav-link">Bets</a>
-            <a href="#views" class="nav-link mobile-nav-link">Reasoning</a>
-        </div>
-    </div>
+    </header>
 
-    <div class="min-h-screen flex flex-col lg:flex-row relative pt-28 lg:pt-16 z-10">
-        <!-- Fixed Sidebar - becomes top section on mobile -->
-        <div class="w-full lg:w-1/3 lg:fixed lg:top-16 lg:left-0 lg:h-[calc(100vh-4rem)] p-4 lg:p-8 flex flex-col justify-start bg-background-light dark:bg-background-dark lg:z-20 theme-transition left-rail">
-            <div class="hero-stack mb-6 lg:mb-8">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="te-chip">ID-01</span>
-                    <span class="te-label">Evidence Brief</span>
+    <main id="top" class="page-shell">
+        <section class="hero-section reveal visible">
+            <div class="hero-copy">
+                <p class="section-kicker">Arjun Kannan</p>
+                <h1 class="hero-title">I build products that turn hidden signal into decisions.</h1>
+                <p class="hero-deck">
+                    I planned to be an academic. Then I started writing code in a Cornell microscopy lab, moved into finance,
+                    built products at BlackRock and Climb Credit, and now run ResiDesk. The through line has not changed:
+                    find the information people already have but cannot use, then make it change a real outcome.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="primary-link">ResiDesk</a>
+                    <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="secondary-link">Substack</a>
+                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="secondary-link">Latest coverage</a>
                 </div>
-                <p class="te-label mb-3">Founder / Product Operator / Investor</p>
-                <h1 class="masthead-name text-text-light dark:text-text-dark theme-transition">
-                    <span class="masthead-line">Arjun</span>
-                    <span class="masthead-line">Kannan</span>
-                </h1>
-                <p class="hero-summary text-text-light dark:text-text-dark theme-transition">I build products for markets where bad feedback gets expensive fast.</p>
-                <p class="text-base lg:text-lg text-subtle-light dark:text-subtle-dark theme-transition max-w-[34rem]">This is the public record. Not the polished version. The one with dates, links, and outcomes.</p>
-            </div>
-            <div class="hero-evidence te-panel mb-6 lg:mb-8">
-                <p class="te-label mb-4">Current Signal</p>
-                <p class="hero-summary max-w-[29rem] text-text-light dark:text-text-dark theme-transition mb-5">If you want the fast read, start here. The recent trail is original research, invited speaking, and third-party coverage tied to operating work.</p>
-                <div class="hero-proof-list">
-                    <div class="hero-proof-item">
-                        <p class="hero-metric-copy">Mar 11-12, 2026</p>
-                        <p class="text-base text-text-light dark:text-text-dark">BuiltWorlds Venture West speaker listing</p>
-                    </div>
-                    <div class="hero-proof-item">
-                        <p class="hero-metric-copy">Feb 17-18, 2026</p>
-                        <p class="text-base text-text-light dark:text-text-dark">20for20 podcast episode and presentation page</p>
-                    </div>
-                    <div class="hero-proof-item">
-                        <p class="hero-metric-copy">May 6, 2025</p>
-                        <p class="text-base text-text-light dark:text-text-dark">TechBullion feature on ResiDesk&rsquo;s operator thesis</p>
-                    </div>
-                </div>
-                <div class="mt-5 flex flex-wrap gap-3">
-                    <span class="te-tag">Public trail through Mar 2026</span>
-                    <span class="te-tag">Operating record across three markets</span>
-                    <span class="te-tag">100+ startup investments</span>
-                    <span class="te-tag">Techstars mentor</span>
-                </div>
-                <div class="mt-5 flex flex-wrap gap-3">
-                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="hero-link">20for20 press</a>
-                    <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="hero-link">BuiltWorlds 2026</a>
-                    <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="hero-link">TechBullion</a>
+                <div class="hero-note">
+                    <p class="hero-note-label">Start here</p>
+                    <p class="hero-note-copy">Recent speaking, independent coverage, and operating results tied to the real work.</p>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden mb-6 lg:mb-6 te-panel">
-                <picture>
-                    <source srcset="assets/landscape-1.avif" type="image/avif">
-                    <img src="assets/landscape-1.webp" alt="Arjun" width="1400" height="788" fetchpriority="high" decoding="async" class="profile-image">
-                </picture>
-                <div class="portrait-caption">
-                    <p class="te-label mb-2">Why this page exists</p>
-                    <p class="text-sm text-white/80">Scattered links are weak evidence. This puts the work, the context, and the proof in one place.</p>
+            <div class="hero-side">
+                <figure class="portrait-card reveal visible">
+                    <img src="assets/landscape-1.webp" alt="Arjun Kannan" width="1400" height="788" class="portrait-image">
+                    <figcaption class="portrait-caption">
+                        <p class="portrait-caption-label">In one line</p>
+                        <p class="portrait-caption-copy">Physics to finance to housing AI, with the same instinct the whole way: decompose the problem and get closer to the real signal.</p>
+                    </figcaption>
+                </figure>
+                <div class="fact-card reveal visible">
+                    <p class="fact-card-label">What to know first</p>
+                    <ul class="fact-list">
+                        <li>BuiltWorlds Venture West speaker listing, March 11-12, 2026</li>
+                        <li>20for20 podcast and presentation page, February 17-18, 2026</li>
+                        <li>TechBullion feature on ResiDesk, May 6, 2025</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span class="meta-tag">100+ startup investments</span>
+                        <span class="meta-tag">Techstars mentor</span>
+                        <span class="meta-tag">Housing, finance, AI</span>
+                    </div>
                 </div>
             </div>
-            <p class="text-sm text-subtle-light dark:text-subtle-dark theme-transition max-w-md">If a line matters here, you should be able to click through to it.</p>
-        </div>
+        </section>
 
-        <!-- Progress Bar - hidden on mobile -->
-        <div class="hidden lg:block fixed top-16 left-1/3 w-2/3 h-px bg-black/10 dark:bg-white/10 z-30 theme-transition">
-            <div class="absolute top-0 left-0 h-full bg-accent transition-[width] duration-100 ease-out" style="width: var(--scroll-percent, 0%)"></div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="w-full lg:w-2/3 lg:ml-[33.333333%] snap-container">
-            <section id="about" data-section-code="01" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-2xl mx-auto section-fade active">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">01</span>
-                        <span class="te-label">What I do</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-8 text-text-light dark:text-text-dark theme-transition te-heading">What I do</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        I like markets with bad feedback loops. People are surrounded by information and still miss the signal that matters. That thread runs from physics at Cornell to BlackRock, Climb Credit, and ResiDesk.
+        <section id="story" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Story</p>
+                <h2>How I got here</h2>
+            </div>
+            <div class="story-intro">
+                <p>
+                    My original plan was a PhD. Both my parents have one, and that was the world I understood. What changed
+                    was seeing how fast software could turn an idea into something useful.
+                </p>
+                <div class="quote-panel">
+                    <p class="quote-label">A line I keep coming back to</p>
+                    <p class="quote-copy">Coding is easy, engineering is hard.</p>
+                </div>
+                <p>
+                    That line is not about difficulty for its own sake. It is about context. The hard part is knowing what
+                    problem matters, where the signal is buried, and what people will trust enough to use.
+                </p>
+            </div>
+            <div class="journey-grid">
+                <article class="journey-card">
+                    <p class="journey-label">Cornell</p>
+                    <h3>Code started as a lab shortcut.</h3>
+                    <p>
+                        In an electron microscopy lab, I used an early iPhone magnetometer to detect magnetic noise in the room
+                        and cut setup time. That was the first time I felt what software could do in a real setting.
                     </p>
-                    <div class="story-callout mb-8">
-                        <p class="te-label mb-3">The pattern</p>
-                        <p class="text-xl leading-tight text-text-light dark:text-text-dark theme-transition">Find the buried signal. Build the tool people will use. Make it change a real decision.</p>
-                    </div>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        At BlackRock, that meant making institutional risk tools usable for advisors. At Climb Credit, it meant underwriting around earnings outcomes. At ResiDesk, it means learning from resident conversations at scale and turning them into operating signal for owners and operators.
+                </article>
+                <article class="journey-card">
+                    <p class="journey-label">BlackRock</p>
+                    <h3>I learned to ask for what I wanted.</h3>
+                    <p>
+                        I did not get the job the first time. I followed up, re-interviewed months later, and asked if New York
+                        was possible instead of Delaware. That turned into a role building products that made institutional tools
+                        usable for advisors.
                     </p>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
-                        I don&rsquo;t care about AI theater. I care about whether the loop closes faster and whether the result shows up in renewals, revenue, or speed.
+                </article>
+                <article class="journey-card">
+                    <p class="journey-label">Climb Credit</p>
+                    <h3>The question was simple: does this improve outcomes?</h3>
+                    <p>
+                        I led product, engineering, and data around underwriting tied to earnings outcomes. The work helped grow
+                        annual loan volume from $1 million to $300 million.
                     </p>
+                </article>
+                <article class="journey-card">
+                    <p class="journey-label">ResiDesk</p>
+                    <h3>Housing does not have a survey problem. It has a signal problem.</h3>
+                    <p>
+                        Residents tell operators what matters every day, but the information shows up in fragments. We use those
+                        conversations to show what affects renewals, rent, and NOI before the market pays for the mistake.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="latest" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Latest</p>
+                <h2>Where the work showed up recently</h2>
+            </div>
+            <div class="mentions-layout">
+                <a href="https://www.youtube.com/watch?v=4YZgOR7niKo" target="_blank" rel="noopener noreferrer" class="feature-mention">
+                    <img src="https://i.ytimg.com/vi/4YZgOR7niKo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                    <div class="feature-mention-copy">
+                        <p class="feature-meta">20for20 / February 2026</p>
+                        <h3>How AI is changing resident sentiment analysis</h3>
+                        <p>
+                            A talk on what residents in 30,000+ units across 11 states say about Wi-Fi, which complaints predict churn,
+                            and why conversation data beats generic satisfaction surveys.
+                        </p>
+                    </div>
+                </a>
+                <div class="mention-list">
+                    <article class="mention-item">
+                        <p class="mention-date">March 11-12, 2026</p>
+                        <p>BuiltWorlds listed me as a Venture West speaker and Founder of ResiDesk.</p>
+                    </article>
+                    <article class="mention-item">
+                        <p class="mention-date">February 17-18, 2026</p>
+                        <p>20for20 published the podcast episode and presentation page for the resident sentiment study.</p>
+                    </article>
+                    <article class="mention-item">
+                        <p class="mention-date">November 20, 2025</p>
+                        <p>20for20 released the white paper on Wi-Fi sentiment in multifamily housing.</p>
+                    </article>
+                    <article class="mention-item">
+                        <p class="mention-date">May 6, 2025</p>
+                        <p>TechBullion published <em>NOI, Not Noise</em> on ResiDesk.</p>
+                    </article>
+                    <article class="mention-item">
+                        <p class="mention-date">September 18, 2024</p>
+                        <p>HackerNoon ran <em>The Power of Applied AI in Real Estate</em>.</p>
+                    </article>
+                    <article class="mention-item">
+                        <p class="mention-date">August 20, 2024</p>
+                        <p>TechTimes published a feature on my work across real estate, finance, and education.</p>
+                    </article>
                 </div>
-            </section>
-            <section id="latest" data-section-code="02" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-3xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">02</span>
-                        <span class="te-label">Public trail</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Public trail</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">The bar here is simple. If it matters, it should be public.</p>
+            </div>
+        </section>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-[1.08fr_0.92fr] gap-8">
-                        <a href="https://www.youtube.com/watch?v=4YZgOR7niKo" target="_blank" rel="noopener noreferrer" class="group">
-                            <article class="press-card relative min-h-[22rem] rounded-2xl overflow-hidden te-panel">
-                                <img src="https://i.ytimg.com/vi/4YZgOR7niKo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360" class="absolute inset-0 w-full h-full object-cover">
-                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/10"></div>
-                                <div class="relative z-10 h-full flex flex-col justify-end p-6 lg:p-8">
-                                    <span class="te-tag mb-4 w-fit border-white/20 bg-white/10 text-white">YT-2026</span>
-                                    <p class="text-sm font-mono uppercase tracking-[0.22em] text-white/70 mb-3">20for20 / Feb 14, 2026 / OPTECH follow-up</p>
-                                    <h3 class="text-2xl lg:text-3xl font-semibold text-white mb-4 group-hover:text-[#ffd8d1] transition-colors">How AI Is Changing Resident Sentiment Analysis</h3>
-                                    <p class="max-w-xl text-sm lg:text-base text-white/80">A 20for20 presentation on what residents in 30,000+ units across 11 states say about Wi-Fi, which complaints predict churn, and why conversations beat surveys.</p>
-                                </div>
-                            </article>
-                        </a>
-                        <div class="recognition-ledger">
-                            <div class="recognition-ledger-item">
-                                <p class="te-label mb-2">Mar 11-12, 2026</p>
-                                <p class="text-lg text-text-light dark:text-text-dark">BuiltWorlds lists me as a Venture West 2026 speaker and Founder of ResiDesk.</p>
-                            </div>
-                            <div class="recognition-ledger-item">
-                                <p class="te-label mb-2">Feb 17-18, 2026</p>
-                                <p class="text-lg text-text-light dark:text-text-dark">20for20 published the podcast episode and presentation page for the resident sentiment study.</p>
-                            </div>
-                            <div class="recognition-ledger-item">
-                                <p class="te-label mb-2">May 6, 2025</p>
-                                <p class="text-lg text-text-light dark:text-text-dark">TechBullion ran a feature on how ResiDesk turns resident conversations into operating signal for owners.</p>
-                            </div>
-                            <div class="recognition-ledger-item">
-                                <p class="te-label mb-3">Primary sources</p>
-                                <div class="source-inline-list">
-                                    <a href="https://www.youtube.com/watch?v=4YZgOR7niKo" target="_blank" rel="noopener noreferrer" class="source-inline-link">Watch on YouTube</a>
-                                    <a href="https://podcasts.apple.com/us/podcast/bonus-ep-how-ai-is-changing-resident-sentiment-analysis/id1749596468?i=1000750146163" target="_blank" rel="noopener noreferrer" class="source-inline-link">Listen on Apple Podcasts</a>
-                                    <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="source-inline-link">BuiltWorlds speaker page</a>
-                                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="source-inline-link">20for20 press page</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-spine mt-10">
-                        <div class="flex items-center gap-3 mb-6">
-                            <span class="te-tag">TIMELINE</span>
-                            <p class="te-label">Selected public trail</p>
-                        </div>
-                        <div class="space-y-5">
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">Mar 11-12, 2026</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">BuiltWorlds Venture West lists me as a speaker and Founder of ResiDesk.</p>
-                            </div>
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">Feb 17-18, 2026</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">20for20 publishes the podcast episode and presentation page for the resident sentiment study.</p>
-                            </div>
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">Nov 20, 2025</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">20for20 releases the white paper on Wi-Fi sentiment in multifamily housing.</p>
-                            </div>
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">May 6, 2025</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">TechBullion publishes the feature &ldquo;NOI, Not Noise&rdquo; on ResiDesk.</p>
-                            </div>
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">Sep 18, 2024</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">HackerNoon runs &ldquo;The Power of Applied AI in Real Estate&rdquo; and pushes the story beyond direct industry circles.</p>
-                            </div>
-                            <div class="border-l-2 border-black/10 dark:border-white/10 pl-5">
-                                <p class="text-sm font-mono uppercase tracking-[0.2em] text-subtle-light dark:text-subtle-dark">Aug 20, 2024</p>
-                                <p class="mt-2 text-lg text-text-light dark:text-text-dark">TechTimes publishes a feature on my work across real estate, finance, and education.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="press" data-section-code="03" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-3xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">03</span>
-                        <span class="te-label">Press</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Press</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">This is the outside view. You can hear how I reason, then compare that with how other people frame the work.</p>
-                    <div class="editorial-categories mb-10">
-                        <div>
-                            <p class="te-label mb-2">Independent Features</p>
-                            <p class="text-base text-text-light dark:text-text-dark">Outside validation from people who did not have to write about the work.</p>
-                        </div>
-                        <div>
-                            <p class="te-label mb-2">Recorded Conversations</p>
-                            <p class="text-base text-text-light dark:text-text-dark">A better test than a bio. You can hear how I reason when the answers are live.</p>
-                        </div>
-                        <div>
-                            <p class="te-label mb-2">Research Distribution</p>
-                            <p class="text-base text-text-light dark:text-text-dark">Pages tied to the resident sentiment work, not generic AI commentary.</p>
-                        </div>
-                    </div>
-
-                    <div class="press-layout">
-                        <div class="space-y-6">
-                            <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
-                            <span class="te-tag absolute left-3 top-3 z-10">VID-01</span>
-                            <button class="video-poster video-embed" type="button" data-youtube-id="w3Ew2tTDGwo" data-video-title="Startup Founder Interview" aria-label="Play Startup Founder Interview">
-                                <img src="https://i.ytimg.com/vi/w3Ew2tTDGwo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
-                                <span class="video-poster-copy">
-                                    <span class="max-w-[16rem]">
-                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Interview / 2024</span>
-                                        <span class="mt-2 block text-lg font-semibold text-white">Startup Founder Interview</span>
-                                    </span>
-                                    <span class="video-play" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
-                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
-                                        </svg>
-                                    </span>
+        <section id="press" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Press</p>
+                <h2>Interviews, talks, and coverage</h2>
+            </div>
+            <p class="section-intro">
+                The cleanest way to understand how I think is to hear it live. The second best way is to look at what other
+                people wrote after the work was already in market.
+            </p>
+            <div class="media-grid">
+                <div class="video-column">
+                    <div class="video-card">
+                        <button class="video-poster video-embed" type="button" data-youtube-id="w3Ew2tTDGwo" data-video-title="Startup Founder Interview" aria-label="Play Startup Founder Interview">
+                            <img src="https://i.ytimg.com/vi/w3Ew2tTDGwo/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                            <span class="video-poster-copy">
+                                <span>
+                                    <span class="video-meta">Interview / 2024</span>
+                                    <span class="video-title">Startup Founder Interview</span>
                                 </span>
-                            </button>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
-                            <span class="te-tag absolute left-3 top-3 z-10">VID-02</span>
+                                <span class="video-play">Watch</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="video-mini-grid">
+                        <div class="video-card">
                             <button class="video-poster video-embed" type="button" data-youtube-id="OtvONEQNngQ" data-video-title="AI Discussion with Greg Kamradt" aria-label="Play AI Discussion with Greg Kamradt">
                                 <img src="https://i.ytimg.com/vi/OtvONEQNngQ/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
                                 <span class="video-poster-copy">
-                                    <span class="max-w-[16rem]">
-                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Conversation / 2024</span>
-                                        <span class="mt-2 block text-lg font-semibold text-white">AI Discussion with Greg Kamradt</span>
+                                    <span>
+                                        <span class="video-meta">Conversation / 2024</span>
+                                        <span class="video-title">AI discussion with Greg Kamradt</span>
                                     </span>
-                                    <span class="video-play" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
-                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
-                                        </svg>
-                                    </span>
+                                    <span class="video-play">Watch</span>
                                 </span>
                             </button>
-                                </div>
-                                <div class="press-card relative w-full aspect-video rounded-2xl overflow-hidden te-panel">
-                            <span class="te-tag absolute left-3 top-3 z-10">VID-03</span>
+                        </div>
+                        <div class="video-card">
                             <button class="video-poster video-embed" type="button" data-youtube-id="C2aUblIKQoM" data-video-title="Why Work Here with Arjun Kannan" aria-label="Play Why Work Here with Arjun Kannan">
                                 <img src="https://i.ytimg.com/vi/C2aUblIKQoM/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
                                 <span class="video-poster-copy">
-                                    <span class="max-w-[16rem]">
-                                        <span class="block text-sm font-mono uppercase tracking-[0.2em] text-white/70">Founder Profile / 2024</span>
-                                        <span class="mt-2 block text-lg font-semibold text-white">Why Work Here with Arjun Kannan</span>
+                                    <span>
+                                        <span class="video-meta">Founder profile / 2024</span>
+                                        <span class="video-title">Why work here</span>
                                     </span>
-                                    <span class="video-play" aria-hidden="true">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" class="ml-0.5 text-white">
-                                            <path d="M4 3.5v11l10-5.5-10-5.5Z" />
-                                        </svg>
-                                    </span>
+                                    <span class="video-play">Watch</span>
                                 </span>
                             </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="article-stack">
-                            <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                                <p class="te-label mb-3">20for20 / Feb 2026</p>
-                                <h3 class="text-2xl text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">AI Sentiment Analysis: How Residents Really Feel About Wi-Fi</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">Turns the Wi-Fi study into an operator story about churn, retention, and what residents will pay for.</p>
-                            </a>
-                            <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                                <p class="te-label mb-3">BuiltWorlds / Mar 2026</p>
-                                <h3 class="text-2xl text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">BuiltWorlds Venture West 2026</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">A speaker listing inside a built-environment forum people in the market watch.</p>
-                            </a>
-                            <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                                <p class="te-label mb-3">TechBullion / May 2025</p>
-                                <h3 class="text-2xl text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">NOI, Not Noise</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">Frames ResiDesk around NOI and resident signal, not chatbot hype.</p>
-                            </a>
-                            <a href="https://lp.20for20.com/25-wp-wifi-sentiment-analysis" target="_blank" rel="noopener noreferrer" class="article-item group">
-                                <p class="te-label mb-3">20for20 White Paper / Nov 2025</p>
-                                <h3 class="text-2xl text-text-light dark:text-text-dark mb-3 group-hover:text-accent transition-colors">What Multifamily Residents Think About Wi-Fi</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">The underlying research artifact. Data first, story second.</p>
-                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="speaking" data-section-code="04" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-3xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">04</span>
-                        <span class="te-label">Speaking and stages</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Speaking and stages</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">Speaker listings matter for one reason. They show who is willing to put this work on stage.</p>
+                <div class="article-list">
+                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="article-item">
+                        <p class="article-meta">20for20 / February 2026</p>
+                        <h3>AI sentiment analysis: how residents really feel about Wi-Fi</h3>
+                        <p>Turns a Wi-Fi study into an operator question: what do residents stay for, and what will they pay for?</p>
+                    </a>
+                    <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="article-item">
+                        <p class="article-meta">BuiltWorlds / March 2026</p>
+                        <h3>BuiltWorlds Venture West 2026</h3>
+                        <p>A speaker listing in a room that owners, operators, and real estate technology people pay attention to.</p>
+                    </a>
+                    <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="article-item">
+                        <p class="article-meta">TechBullion / May 2025</p>
+                        <h3>NOI, Not Noise</h3>
+                        <p>Frames ResiDesk around resident signal and operating performance, not chatbot hype.</p>
+                    </a>
+                    <a href="https://lp.20for20.com/25-wp-wifi-sentiment-analysis" target="_blank" rel="noopener noreferrer" class="article-item">
+                        <p class="article-meta">20for20 white paper / November 2025</p>
+                        <h3>What multifamily residents think about Wi-Fi</h3>
+                        <p>The research layer behind the public conversation.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="group">
-                            <article class="press-card h-full rounded-2xl p-6 te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                                <span class="te-tag mb-5 inline-flex">CONF-01</span>
-                                <p class="text-sm font-mono uppercase tracking-[0.22em] text-subtle-light dark:text-subtle-dark mb-4">Mar 11-12, 2026 / San Francisco</p>
-                                <h3 class="text-2xl font-semibold text-text-light dark:text-text-dark mb-4 group-hover:text-accent transition-colors">BuiltWorlds Venture West 2026</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">BuiltWorlds put me on its owner and operator perspective session at Venture West.</p>
-                            </article>
-                        </a>
-                        <a href="https://20for20.com/2025/12/12/is-poor-wifi-damaging-your-residents-mental-health/" target="_blank" rel="noopener noreferrer" class="group">
-                            <article class="press-card h-full rounded-2xl p-6 te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                                <span class="te-tag mb-5 inline-flex">CONF-02</span>
-                                <p class="text-sm font-mono uppercase tracking-[0.22em] text-subtle-light dark:text-subtle-dark mb-4">NMHC OPTECH 2025 / 20for20</p>
-                                <h3 class="text-2xl font-semibold text-text-light dark:text-text-dark mb-4 group-hover:text-accent transition-colors">WiFi Study Debut</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">20for20 says the study first surfaced at NMHC OPTECH 2025 before the writeup went live.</p>
-                            </article>
-                        </a>
-                        <a href="https://home.mlops.community/public/events/ai-in-production-2024-02-15?agenda_day=6581a1909c91a678fa977858&agenda_filter_view=track&agenda_stage=6581a1909c91a678fa97785e&agenda_track=65955966a58860042772f95c&agenda_view=list" target="_blank" rel="noopener noreferrer" class="group">
-                            <article class="press-card h-full rounded-2xl p-6 te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                                <span class="te-tag mb-5 inline-flex">CONF-03</span>
-                                <p class="text-sm font-mono uppercase tracking-[0.22em] text-subtle-light dark:text-subtle-dark mb-4">Feb 22, 2024 / Online</p>
-                                <h3 class="text-2xl font-semibold text-text-light dark:text-text-dark mb-4 group-hover:text-accent transition-colors">AI in Production</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">MLOps Community included me in its AI in Production speaker lineup.</p>
-                            </article>
-                        </a>
-                        <a href="https://luma.com/9pgpvyz4" target="_blank" rel="noopener noreferrer" class="group">
-                            <article class="press-card h-full rounded-2xl p-6 te-panel hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
-                                <span class="te-tag mb-5 inline-flex">CONF-04</span>
-                                <p class="text-sm font-mono uppercase tracking-[0.22em] text-subtle-light dark:text-subtle-dark mb-4">#NYTechWeek / New York</p>
-                                <h3 class="text-2xl font-semibold text-text-light dark:text-text-dark mb-4 group-hover:text-accent transition-colors">CTO Forum: Lightning Talks & Networking</h3>
-                                <p class="text-base text-subtle-light dark:text-subtle-dark">Scout listed me among the featured speakers for its CTO forum during New York Tech Week.</p>
-                            </article>
-                        </a>
+        <section id="results" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Results</p>
+                <h2>What the work changed</h2>
+            </div>
+            <div class="stats-row">
+                <article class="stat-card">
+                    <p class="stat-label">ResiDesk</p>
+                    <p class="stat-value">7%</p>
+                    <p class="stat-copy">Higher renewals and rent after better resident intelligence and response workflows.</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-label">Climb Credit</p>
+                    <p class="stat-value">$1M → $300M</p>
+                    <p class="stat-copy">Annual loan growth tied to outcome-based underwriting and product execution.</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-label">BlackRock</p>
+                    <p class="stat-value">$40M ARR</p>
+                    <p class="stat-copy">Retail analytics product from zero to $40 million in ARR in year one.</p>
+                </article>
+            </div>
+            <div class="role-list">
+                <article class="role-entry">
+                    <div class="role-heading">
+                        <h3><a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer">ResiDesk</a></h3>
+                        <p>Co-founder</p>
                     </div>
-                </div>
-            </section>
+                    <p>
+                        The flashy demo is not the point. The point is helping operators understand what residents are already saying
+                        so they can make better calls on renewals, pricing, service, and staffing.
+                    </p>
+                </article>
+                <article class="role-entry">
+                    <div class="role-heading">
+                        <h3><a href="https://www.climbcredit.com" target="_blank" rel="noopener noreferrer">Climb Credit</a></h3>
+                        <p>CTO and CPO</p>
+                    </div>
+                    <p>
+                        We built around a simple standard: does this training program improve earnings? That pushed underwriting,
+                        data, and product toward measurable outcomes instead of loose storytelling.
+                    </p>
+                </article>
+                <article class="role-entry">
+                    <div class="role-heading">
+                        <h3><a href="https://www.blackrock.com" target="_blank" rel="noopener noreferrer">BlackRock</a></h3>
+                        <p>Product and engineering lead</p>
+                    </div>
+                    <p>
+                        The work was to translate institutional risk infrastructure into products advisors could use without having
+                        to think like institutions. That lesson still matters: value shows up when complexity becomes usable.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-            <section id="work" data-section-code="05" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-2xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">05</span>
-                        <span class="te-label">Results</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Results</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">The sectors changed. The job didn&rsquo;t. Find the signal. Make it usable. Tie it to a number.</p>
-                    <div class="inline-stat-strip mb-10">
-                        <div>
-                            <p class="te-label mb-2">ResiDesk</p>
-                            <p class="text-3xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark">7%</p>
-                            <p class="mt-3 text-base text-subtle-light dark:text-subtle-dark">Higher renewals and rent after better resident intelligence and response workflows.</p>
-                        </div>
-                        <div>
-                            <p class="te-label mb-2">Climb Credit</p>
-                            <p class="text-3xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark">$1M → $300M</p>
-                            <p class="mt-3 text-base text-subtle-light dark:text-subtle-dark">Annual loan growth tied to outcome-based underwriting and product execution.</p>
-                        </div>
-                        <div>
-                            <p class="te-label mb-2">BlackRock</p>
-                            <p class="text-3xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark">$40M ARR</p>
-                            <p class="mt-3 text-base text-subtle-light dark:text-subtle-dark">Retail analytics product from zero to $40 million in ARR in year one.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-4">
-                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">ResiDesk</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">Co-Founder</span>
-                    </div>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        Housing does not have a survey problem. It has a signal problem. Operators hear from residents all day and still miss what will lift renewals, hurt NOI, or push someone to leave. At ResiDesk, we use millions of resident interactions to make that visible. The work shows up in renewals, rent, and a clearer view of what residents stay and pay for.
+        <section id="investing" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Investing</p>
+                <h2>Where I spend time and money</h2>
+            </div>
+            <div class="two-column-copy">
+                <div class="quote-panel">
+                    <p class="quote-label">What I look for</p>
+                    <p class="quote-copy">Real market pain. Strong taste. Fast learning loops. Founders who know the problem cold.</p>
+                </div>
+                <div>
+                    <p>
+                        I have invested in more than 100 startups and mentored through Techstars. The filter is simple. I want founders
+                        who are close to the customer, allergic to fake signal, and willing to keep asking what is true.
                     </p>
-                    
-                    <div class="mb-4">
-                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.climbcredit.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">Climb Credit</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">CTO/CPO</span>
-                    </div>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        Climb started with a simple question: does this program change earnings? I led product, engineering, and data around underwriting that cared about that answer. The result helped grow annual loan volume from $1 million to $300 million.
-                    </p>
-                    
-                    <div class="mb-4">
-                        <h3 class="inline text-2xl font-semibold mr-4 text-text-light dark:text-text-dark theme-transition"><a href="https://www.blackrock.com" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">BlackRock</a></h3>
-                        <span class="text-sm text-subtle-light dark:text-subtle-dark theme-transition font-mono uppercase tracking-[0.2em]">Product &amp; Engineering Lead</span>
-                    </div>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
-                        At BlackRock, the work was straightforward to describe and hard to do. Take institutional risk tools and make them usable for advisors. My team helped build Aladdin for Retail, and it reached $40 million in ARR in its first year.
+                    <p>
+                        The same logic shows up in advising. Good advice is a system, not a personality. It should make the next decision
+                        clearer, not make the room feel smarter.
                     </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="investing" data-section-code="06" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-2xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">06</span>
-                        <span class="te-label">Where I place bets</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Where I place bets</h2>
-                    <div class="inline-stat-strip mb-8 md:grid-cols-2">
-                        <div>
-                            <p class="te-label mb-2">Portfolio Breadth</p>
-                            <p class="text-3xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark">100+</p>
-                            <p class="mt-3 text-base text-subtle-light dark:text-subtle-dark">Angel investments in founders working on markets they know cold.</p>
-                        </div>
-                        <div>
-                            <p class="te-label mb-2">Operator Mentoring</p>
-                            <p class="text-3xl font-semibold tracking-[-0.06em] text-text-light dark:text-text-dark">Techstars</p>
-                            <p class="mt-3 text-base text-subtle-light dark:text-subtle-dark">A sign that founders and programs trust my judgment in the room, not only in a check.</p>
-                        </div>
-                    </div>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        I back founders when I understand the market well enough to know what good looks like. Most of the people I back are not chasing a trend. They are deep in a market with bad defaults, slow feedback, and real consequences.
-                    </p>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
-                        The same filter shows up in mentoring. Get closer to the user. Shorten the loop. Kill fake signal early.
-                    </p>
-                </div>
-            </section>
+        <section id="thinking" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Thinking</p>
+                <h2>How I reason about building</h2>
+            </div>
+            <div class="principles-grid">
+                <article class="principle-card">
+                    <h3>Start with context.</h3>
+                    <p>If you do not know what problem you are solving, you are probably not going to solve it.</p>
+                </article>
+                <article class="principle-card">
+                    <h3>Do not chase the demo.</h3>
+                    <p>Pay attention to the part people are not demoing. That is usually where the real operating problem lives.</p>
+                </article>
+                <article class="principle-card">
+                    <h3>Use AI to sharpen human judgment.</h3>
+                    <p>The model should get you 80 percent of the way there so people can spend judgment on the last 20 percent.</p>
+                </article>
+                <article class="principle-card">
+                    <h3>Decompose the problem.</h3>
+                    <p>Most hard work gets easier once you break it into pieces small enough to test against reality.</p>
+                </article>
+            </div>
+            <div class="writing-callout">
+                <p class="writing-kicker">Writing</p>
+                <p class="writing-copy">
+                    On Substack I write the same way I try to build: direct, specific, and tied to the real bottleneck.
+                    <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer">Read the archive</a>.
+                </p>
+            </div>
+        </section>
 
-            <section id="views" data-section-code="07" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-2xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">07</span>
-                        <span class="te-label">How I reason</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">How I reason</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">A few rules keep showing up.</p>
-                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Adoption is lumpy</h3>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        The best openings show up after something starts working and before consensus forms. By the time everyone agrees, the edge is gone.
-                    </p>
-                    
-                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Boring problems pay</h3>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">
-                        Good markets often look dull from the outside. That is usually a gift. Housing, education finance, and risk tools all looked messy, slow, or unglamorous right before they got interesting.
-                    </p>
-                    
-                    <h3 class="text-2xl font-semibold mb-4 text-text-light dark:text-text-dark theme-transition">Keep humans above the model</h3>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark theme-transition">
-                        Models should make people faster and sharper. They should not take judgment off the table. The hard part is still the human part.
-                    </p>
-                </div>
-            </section>
-            <section data-section-code="08" class="content-section min-h-screen snap-start flex items-start py-10 px-4 lg:py-16 lg:px-8">
-                <div class="w-full max-w-3xl mx-auto section-fade">
-                    <div class="flex items-center gap-3 mb-5">
-                        <span class="te-chip">08</span>
-                        <span class="te-label">Evidence table</span>
-                        <span class="te-rule"></span>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4 text-text-light dark:text-text-dark theme-transition te-heading">Evidence table</h2>
-                    <p class="text-lg text-subtle-light dark:text-subtle-dark mb-8 theme-transition">If a line matters here, you should be able to click through to it.</p>
-                    <div class="article-stack">
-                        <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                            <p class="te-label mb-3">BuiltWorlds / Mar 11-12, 2026</p>
-                            <p class="text-lg text-text-light dark:text-text-dark">Speaker listing naming me Founder of ResiDesk.</p>
-                        </a>
-                        <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                            <p class="te-label mb-3">20for20 / Feb 18, 2026 and Jan-Nov 2025</p>
-                            <p class="text-lg text-text-light dark:text-text-dark">Media hub for the Wi-Fi presentation, white paper, podcast episode, and follow-on coverage.</p>
-                        </a>
-                        <a href="https://podcasts.apple.com/us/podcast/bonus-ep-how-ai-is-changing-resident-sentiment-analysis/id1749596468?i=1000750146163" target="_blank" rel="noopener noreferrer" class="article-item group">
-                            <p class="te-label mb-3">Apple Podcasts / Feb 17, 2026</p>
-                            <p class="text-lg text-text-light dark:text-text-dark">Public audio record of the resident sentiment discussion.</p>
-                        </a>
-                        <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="article-item group">
-                            <p class="te-label mb-3">TechBullion / May 6, 2025</p>
-                            <p class="text-lg text-text-light dark:text-text-dark">Feature on using resident conversations as operating signal for property operators.</p>
-                        </a>
-                        <a href="https://www.techtimes.com/articles/307216/20240820/ai-for-humans-practical-ways-ai-is-improving-lives-in-real-estate-finance-and-education.htm" target="_blank" rel="noopener noreferrer" class="article-item group">
-                            <p class="te-label mb-3">TechTimes / Aug 20, 2024</p>
-                            <p class="text-lg text-text-light dark:text-text-dark">Feature on applied AI work across real estate, finance, and education.</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Navigation Widget - adjusted position for mobile -->
-    </div>
+        <section id="sources" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Sources</p>
+                <h2>Links behind the claims</h2>
+            </div>
+            <div class="source-list">
+                <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="source-item">
+                    <p class="article-meta">BuiltWorlds / March 11-12, 2026</p>
+                    <p>Speaker listing naming me Founder of ResiDesk.</p>
+                </a>
+                <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="source-item">
+                    <p class="article-meta">20for20 / 2025-2026</p>
+                    <p>Media hub for the Wi-Fi presentation, white paper, podcast episode, and follow-on coverage.</p>
+                </a>
+                <a href="https://podcasts.apple.com/us/podcast/bonus-ep-how-ai-is-changing-resident-sentiment-analysis/id1749596468?i=1000750146163" target="_blank" rel="noopener noreferrer" class="source-item">
+                    <p class="article-meta">Apple Podcasts / February 17, 2026</p>
+                    <p>Public audio record of the resident sentiment discussion.</p>
+                </a>
+                <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="source-item">
+                    <p class="article-meta">TechBullion / May 6, 2025</p>
+                    <p>Feature on using resident conversations as operating signal for property operators.</p>
+                </a>
+                <a href="https://www.techtimes.com/articles/307216/20240820/ai-for-humans-practical-ways-ai-is-improving-lives-in-real-estate-finance-and-education.htm" target="_blank" rel="noopener noreferrer" class="source-item">
+                    <p class="article-meta">TechTimes / August 20, 2024</p>
+                    <p>Feature on applied AI work across real estate, finance, and education.</p>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('theme-toggle');
-        
-        themeToggle.addEventListener('click', () => {
-            document.documentElement.classList.toggle('dark');
-            // Store the preference
-            const isDark = document.documentElement.classList.contains('dark');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        document.documentElement.style.scrollBehavior = 'smooth';
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.16 });
+
+        document.querySelectorAll('.reveal').forEach((element) => {
+            revealObserver.observe(element);
         });
 
-        // Navigation functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('section');
-            const container = document.querySelector('.snap-container');
-            const profileImage = document.querySelector('.profile-image');
-            const sectionContents = document.querySelectorAll('.section-fade');
-            const prevButtons = document.querySelectorAll('.nav-arrow.prev');
-            const nextButtons = document.querySelectorAll('.nav-arrow.next');
-            const videoPosters = document.querySelectorAll('.video-poster');
-            
-            let currentSection = 0;
-            let isScrolling = false;
-            let sectionObserver;
-            const visibilityRatios = new Map();
+        const sections = [...document.querySelectorAll('main section[id]')];
+        const navLinks = [...document.querySelectorAll('.nav-link')];
 
-            // Update UI based on current section
-            function updateUI(index) {
-                // Update section visibility
-                sectionContents.forEach((content, i) => {
-                    content.classList.toggle('active', i === index);
-                });
-
-                // Update navigation buttons
-                prevButtons.forEach((button) => {
-                    button.disabled = index === 0;
-                });
-                nextButtons.forEach((button) => {
-                    button.disabled = index === sections.length - 1;
-                });
-
-                // Update progress bar
-                const progress = index / (sections.length - 1);
-                document.documentElement.style.setProperty('--scroll-percent', `${progress * 100}%`);
-
-                // Update image grayscale
-                profileImage.style.filter = `grayscale(${100 - (progress * 100)}%)`;
-
-                // Update navigation links
-                document.querySelectorAll('.nav-link').forEach(link => {
-                    const sectionId = link.getAttribute('href').substring(1);
-                    if (sections[index].id === sectionId) {
-                        link.classList.add('text-text-light', 'dark:text-text-dark');
-                        link.setAttribute('aria-current', 'true');
-                    } else {
-                        link.classList.remove('text-text-light', 'dark:text-text-dark');
-                        link.removeAttribute('aria-current');
-                    }
-                });
-
-                currentSection = index;
-            }
-
-            // Smooth scroll to section
-            function scrollToSection(index) {
-                if (isScrolling) return;
-                isScrolling = true;
-
-                const target = sections[index];
-                const offset = 80; // Account for header height
-                
-                if (window.innerWidth >= 1024) {
-                    // On desktop, scroll the container
-                    container.scrollTo({
-                        top: target.offsetTop,
-                        behavior: 'smooth'
-                    });
-                } else {
-                    // On mobile, scroll the window
-                    window.scrollTo({
-                        top: target.offsetTop - offset,
-                        behavior: 'smooth'
-                    });
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
                 }
-
-                updateUI(index);
-                
-                setTimeout(() => {
-                    isScrolling = false;
-                }, 700);
-            }
-
-            // Navigation handlers
-            function goToNextSection() {
-                if (currentSection < sections.length - 1) {
-                    scrollToSection(currentSection + 1);
-                }
-            }
-
-            function goToPrevSection() {
-                if (currentSection > 0) {
-                    scrollToSection(currentSection - 1);
-                }
-            }
-
-            // Event Listeners
-            nextButtons.forEach((button) => {
-                button.addEventListener('click', goToNextSection);
-            });
-            prevButtons.forEach((button) => {
-                button.addEventListener('click', goToPrevSection);
-            });
-
-            // Add click handlers for nav links
-            document.querySelectorAll('.nav-link').forEach((link) => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href')?.replace('#', '');
-                    const targetIndex = sections.findIndex((section) => section.id === targetId);
-
-                    if (targetIndex >= 0) {
-                        scrollToSection(targetIndex);
-                    }
+                navLinks.forEach((link) => {
+                    const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
+                    link.toggleAttribute('aria-current', isCurrent);
                 });
             });
-
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-                    e.preventDefault();
-                    goToNextSection();
-                } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
-                    e.preventDefault();
-                    goToPrevSection();
-                }
-            });
-
-            function connectSectionObserver() {
-                if (sectionObserver) {
-                    sectionObserver.disconnect();
-                }
-
-                visibilityRatios.clear();
-                const observerRoot = window.innerWidth >= 1024 ? container : null;
-
-                sectionObserver = new IntersectionObserver((entries) => {
-                    entries.forEach((entry) => {
-                        const sectionIndex = Number(entry.target.dataset.sectionIndex);
-                        visibilityRatios.set(sectionIndex, entry.intersectionRatio);
-                    });
-
-                    if (isScrolling) {
-                        return;
-                    }
-
-                    let mostVisibleIndex = currentSection;
-                    let highestRatio = 0;
-
-                    visibilityRatios.forEach((ratio, index) => {
-                        if (ratio > highestRatio) {
-                            highestRatio = ratio;
-                            mostVisibleIndex = index;
-                        }
-                    });
-
-                    if (highestRatio > 0.35 && mostVisibleIndex !== currentSection) {
-                        updateUI(mostVisibleIndex);
-                    }
-                }, {
-                    root: observerRoot,
-                    rootMargin: window.innerWidth >= 1024 ? '0px 0px -10% 0px' : '-72px 0px -18% 0px',
-                    threshold: [0.2, 0.35, 0.5, 0.7, 0.9]
-                });
-
-                sections.forEach((section, index) => {
-                    section.dataset.sectionIndex = index;
-                    sectionObserver.observe(section);
-                });
-            }
-
-            connectSectionObserver();
-
-            // Update scroll listeners on resize
-            window.addEventListener('resize', () => {
-                connectSectionObserver();
-                updateUI(currentSection);
-            });
-
-            // Initial setup
-            updateUI(0);
-
-            videoPosters.forEach((poster) => {
-                poster.addEventListener('click', () => {
-                    const iframe = document.createElement('iframe');
-                    const videoId = poster.dataset.youtubeId;
-                    const videoTitle = poster.dataset.videoTitle;
-
-                    iframe.className = 'absolute inset-0 w-full h-full border-0';
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
-                    iframe.title = videoTitle;
-                    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                    iframe.allowFullscreen = true;
-                    iframe.loading = 'lazy';
-
-                    poster.replaceWith(iframe);
-                }, { once: true });
-            });
-
-            // Add initial animation class to arrows after a delay
-            setTimeout(() => {
-                document.querySelectorAll('.nav-arrow').forEach(arrow => {
-                    if (!arrow.disabled) {
-                        arrow.classList.add('show-animation');
-                    }
-                });
-
-                // Remove animation class after it plays for a while
-                setTimeout(() => {
-                    document.querySelectorAll('.nav-arrow').forEach(arrow => {
-                        arrow.classList.remove('show-animation');
-                    });
-                }, 6000); // Stop after 6 seconds
-            }, 2000); // Start after 2 seconds
+        }, {
+            rootMargin: '-20% 0px -65% 0px',
+            threshold: 0.12,
         });
 
-        // Add 3D tilt effect tracking
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.press-card');
-            const canTiltCards =
-                window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
-                !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        sections.forEach((section) => navObserver.observe(section));
 
-            if (!canTiltCards) {
-                return;
-            }
-            
-            cards.forEach(card => {
-                let frameId = 0;
-                let pointerX = 0;
-                let pointerY = 0;
-
-                card.addEventListener('mousemove', (e) => {
-                    const rect = card.getBoundingClientRect();
-                    pointerX = e.clientX - rect.left;
-                    pointerY = e.clientY - rect.top;
-
-                    if (frameId) {
-                        return;
-                    }
-
-                    frameId = window.requestAnimationFrame(() => {
-                        card.style.setProperty('--mouse-x', `${pointerX}px`);
-                        card.style.setProperty('--mouse-y', `${pointerY}px`);
-
-                        const centerX = rect.width / 2;
-                        const centerY = rect.height / 2;
-                        const rotateX = ((pointerY - centerY) / centerY) * -4;
-                        const rotateY = ((pointerX - centerX) / centerX) * 4;
-
-                        card.style.transform = `
-                            perspective(1000px)
-                            rotateX(${rotateX}deg)
-                            rotateY(${rotateY}deg)
-                            scale(1.02)
-                        `;
-                        frameId = 0;
-                    });
-                });
-
-                card.addEventListener('mouseleave', () => {
-                    if (frameId) {
-                        window.cancelAnimationFrame(frameId);
-                        frameId = 0;
-                    }
-                    card.style.transform = '';
-                });
-            });
+        document.querySelectorAll('.video-poster').forEach((poster) => {
+            poster.addEventListener('click', () => {
+                const iframe = document.createElement('iframe');
+                iframe.className = 'video-frame';
+                iframe.src = `https://www.youtube.com/embed/${poster.dataset.youtubeId}?autoplay=1&rel=0`;
+                iframe.title = poster.dataset.videoTitle;
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                poster.replaceWith(iframe);
+            }, { once: true });
         });
     </script>
 </body>
