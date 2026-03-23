@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Story map illustration</title>
+  <desc id="desc">An abstract route with connected milestones.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <path d="M116 412C172 356 216 312 258 254C302 192 348 124 448 122C526 120 562 174 606 214C642 248 672 260 702 262" fill="none" stroke="#493d31" stroke-linecap="round" stroke-width="4"/>
+  <path d="M116 412C176 438 252 458 332 454C430 450 498 392 564 330C622 276 658 246 702 262" fill="none" stroke="#b45d34" stroke-dasharray="1 12" stroke-linecap="round" stroke-width="7"/>
+  <circle cx="116" cy="412" r="18" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <circle cx="258" cy="254" r="16" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <circle cx="448" cy="122" r="17" fill="#fbf6ed" stroke="#b45d34" stroke-width="5"/>
+  <circle cx="606" cy="214" r="14" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <circle cx="702" cy="262" r="18" fill="#1f1a16"/>
+  <g fill="#d9c8b4">
+    <rect x="114" y="110" width="130" height="14" rx="7"/>
+    <rect x="114" y="138" width="82" height="10" rx="5"/>
+    <rect x="548" y="382" width="120" height="14" rx="7"/>
+    <rect x="548" y="410" width="92" height="10" rx="5"/>
+  </g>
+  <path d="M184 164C218 124 256 102 308 96" fill="none" stroke="#d4c6b2" stroke-linecap="round" stroke-width="3"/>
+  <path d="M496 454C546 444 598 420 650 380" fill="none" stroke="#d4c6b2" stroke-linecap="round" stroke-width="3"/>
+</svg>

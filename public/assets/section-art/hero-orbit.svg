@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-labelledby="title desc">
+  <title id="title">Hero orbit illustration</title>
+  <desc id="desc">An abstract orbit with signal nodes around a central point.</desc>
+  <rect width="800" height="320" rx="34" fill="#fbf6ed"/>
+  <rect x="18" y="18" width="764" height="284" rx="28" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <ellipse cx="414" cy="162" rx="264" ry="92" fill="none" stroke="#493d31" stroke-width="4"/>
+  <ellipse cx="414" cy="162" rx="204" ry="62" fill="none" stroke="#d8c8b4" stroke-width="20"/>
+  <ellipse cx="414" cy="162" rx="204" ry="62" fill="none" stroke="#b45d34" stroke-dasharray="180 999" stroke-linecap="round" stroke-width="20"/>
+  <circle cx="414" cy="162" r="26" fill="#1f1a16"/>
+  <circle cx="210" cy="162" r="14" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <circle cx="618" cy="162" r="14" fill="#b45d34"/>
+  <circle cx="530" cy="88" r="12" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <circle cx="294" cy="240" r="12" fill="#fbf6ed" stroke="#493d31" stroke-width="4"/>
+  <g fill="#d9c8b4">
+    <rect x="84" y="78" width="124" height="14" rx="7"/>
+    <rect x="84" y="104" width="82" height="10" rx="5"/>
+    <rect x="594" y="214" width="118" height="14" rx="7"/>
+    <rect x="594" y="240" width="94" height="10" rx="5"/>
+  </g>
+</svg>

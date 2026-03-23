@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Investing network illustration</title>
+  <desc id="desc">A network of nodes with selective highlighted connections.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <g stroke="#d6c6b1" stroke-width="3">
+    <path d="M170 318L266 198L400 250L522 164L642 250L588 384L406 416L266 362Z" fill="none"/>
+    <path d="M266 198L266 362"/>
+    <path d="M400 250L406 416"/>
+    <path d="M522 164L588 384"/>
+    <path d="M170 318L406 416"/>
+    <path d="M266 198L642 250"/>
+  </g>
+  <g stroke="#493d31" stroke-width="4">
+    <path d="M266 198L400 250L522 164"/>
+    <path d="M400 250L588 384"/>
+  </g>
+  <g fill="#fbf6ed" stroke="#493d31" stroke-width="4">
+    <circle cx="170" cy="318" r="18"/>
+    <circle cx="266" cy="198" r="18"/>
+    <circle cx="400" cy="250" r="18"/>
+    <circle cx="406" cy="416" r="18"/>
+    <circle cx="588" cy="384" r="18"/>
+    <circle cx="642" cy="250" r="18"/>
+  </g>
+  <circle cx="522" cy="164" r="20" fill="#b45d34"/>
+  <g fill="#d9c8b4">
+    <rect x="122" y="114" width="124" height="15" rx="7"/>
+    <rect x="552" y="98" width="108" height="15" rx="7"/>
+    <rect x="550" y="444" width="98" height="12" rx="6"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Recent signal illustration</title>
+  <desc id="desc">An abstract signal board with rising bars and pulse lines.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <g stroke="#e2d6c5" stroke-width="2">
+    <path d="M112 136H696"/>
+    <path d="M112 224H696"/>
+    <path d="M112 312H696"/>
+    <path d="M112 400H696"/>
+  </g>
+  <g fill="#d7c7b3">
+    <rect x="132" y="334" width="58" height="86" rx="14"/>
+    <rect x="214" y="282" width="58" height="138" rx="14"/>
+    <rect x="296" y="240" width="58" height="180" rx="14"/>
+    <rect x="378" y="190" width="58" height="230" rx="14"/>
+  </g>
+  <rect x="460" y="134" width="60" height="286" rx="16" fill="#b45d34"/>
+  <rect x="542" y="248" width="58" height="172" rx="14" fill="#d7c7b3"/>
+  <rect x="624" y="298" width="58" height="122" rx="14" fill="#d7c7b3"/>
+  <path d="M132 182C176 182 196 182 226 164C246 152 258 124 278 124C312 124 324 198 360 198C390 198 398 158 430 158C474 158 486 238 528 238C574 238 568 112 632 112" fill="none" stroke="#493d31" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <path d="M132 182C176 182 196 182 226 164C246 152 258 124 278 124C312 124 324 198 360 198C390 198 398 158 430 158C474 158 486 238 528 238C574 238 568 112 632 112" fill="none" stroke="#fbf6ed" stroke-dasharray="0 15" stroke-linecap="round" stroke-width="2"/>
+  <circle cx="632" cy="112" r="18" fill="#1f1a16"/>
+</svg>

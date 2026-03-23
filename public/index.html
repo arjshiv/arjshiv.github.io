@@ -42,6 +42,9 @@
                     There is usually signal in the system already. The trick is to get it to the person making the decision before the mistake gets expensive.
                     I like messy workflows, real stakes, and products that change what happens next.
                 </p>
+                <div class="hero-emblem" aria-hidden="true">
+                    <img src="assets/section-art/hero-orbit.svg" alt="" class="section-art-image">
+                </div>
                 <div class="hero-actions">
                     <a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="primary-link">ResiDesk</a>
                     <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="secondary-link">Writing</a>
@@ -77,9 +80,14 @@
         </section>
 
         <section id="story" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Story</p>
-                <h2>The path only looks random</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Story</p>
+                    <h2>The path only looks random</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-story" aria-hidden="true">
+                    <img src="assets/section-art/story-map.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <div class="story-intro">
                 <p>
@@ -144,9 +152,14 @@
         </section>
 
         <section id="latest" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Recent</p>
-                <h2>Where this has surfaced lately</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Recent</p>
+                    <h2>Where this has surfaced lately</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-recent" aria-hidden="true">
+                    <img src="assets/section-art/recent-signal.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <p class="section-intro">
                 If the same idea keeps showing up in talks, trade press, and research, it is usually because it is hitting a real nerve.
@@ -193,9 +206,14 @@
         </section>
 
         <section id="press" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Conversations</p>
-                <h2>Hear me think out loud</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Conversations</p>
+                    <h2>Hear me think out loud</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-conversations" aria-hidden="true">
+                    <img src="assets/section-art/conversations-wave.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <p class="section-intro">
                 Writing lets you sand off the corners. Conversations do not.
@@ -268,9 +286,14 @@
         </section>
 
         <section id="results" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Work</p>
-                <h2>What changed</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Work</p>
+                    <h2>What changed</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-work" aria-hidden="true">
+                    <img src="assets/section-art/work-loop.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <p class="section-intro">
                 I care less about whether a product looks smart and more about whether it changes behavior.
@@ -337,9 +360,14 @@
         </section>
 
         <section id="investing" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Investing</p>
-                <h2>What I do when it is not my company</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Investing</p>
+                    <h2>What I do when it is not my company</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-investing" aria-hidden="true">
+                    <img src="assets/section-art/investing-network.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <div class="two-column-copy">
                 <div class="quote-panel">
@@ -364,9 +392,14 @@
         </section>
 
         <section id="thinking" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Writing</p>
-                <h2>Ideas I keep returning to</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Writing</p>
+                    <h2>Ideas I keep returning to</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-writing" aria-hidden="true">
+                    <img src="assets/section-art/writing-notes.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <p class="section-intro">
                 Same obsessions, different surface area.
@@ -403,9 +436,14 @@
         </section>
 
         <section id="sources" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Links</p>
-                <h2>If you want to keep going</h2>
+            <div class="section-masthead">
+                <div class="section-heading">
+                    <p class="section-kicker">Links</p>
+                    <h2>If you want to keep going</h2>
+                </div>
+                <div class="section-art-panel section-art-panel-links" aria-hidden="true">
+                    <img src="assets/section-art/links-index.svg" alt="" class="section-art-image">
+                </div>
             </div>
             <p class="section-intro">
                 Interviews, talks, and articles if you want the longer version.
@@ -452,7 +490,10 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, { threshold: 0.16 });
+        }, {
+            rootMargin: '0px 0px -8% 0px',
+            threshold: 0.05,
+        });
 
         document.querySelectorAll('.reveal').forEach((element) => {
             revealObserver.observe(element);
@@ -460,6 +501,7 @@
 
         const sections = [...document.querySelectorAll('main section[id]')];
         const navLinks = [...document.querySelectorAll('.nav-link')];
+        const artPanels = [...document.querySelectorAll('.section-art-panel')];
 
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -477,6 +519,33 @@
         });
 
         sections.forEach((section) => navObserver.observe(section));
+
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            let artFrame = null;
+
+            const updateArtPanels = () => {
+                artFrame = null;
+                const viewportCenter = window.innerHeight / 2;
+
+                artPanels.forEach((panel) => {
+                    const rect = panel.getBoundingClientRect();
+                    const panelCenter = rect.top + rect.height / 2;
+                    const distance = Math.max(-1, Math.min(1, (panelCenter - viewportCenter) / window.innerHeight));
+                    panel.style.setProperty('--art-shift', `${distance * -18}px`);
+                });
+            };
+
+            const requestArtUpdate = () => {
+                if (artFrame !== null) {
+                    return;
+                }
+                artFrame = window.requestAnimationFrame(updateArtPanels);
+            };
+
+            window.addEventListener('scroll', requestArtUpdate, { passive: true });
+            window.addEventListener('resize', requestArtUpdate);
+            requestArtUpdate();
+        }
 
         document.querySelectorAll('.video-poster').forEach((poster) => {
             poster.addEventListener('click', () => {

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Writing notes illustration</title>
+  <desc id="desc">Layered note sheets with marks, underlines, and marginalia.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <rect x="152" y="110" width="344" height="320" rx="24" fill="#f7ecdf" stroke="#d4c6b2" stroke-width="3" transform="rotate(-5 324 270)"/>
+  <rect x="286" y="124" width="344" height="320" rx="24" fill="#fcf8f0" stroke="#493d31" stroke-width="4" transform="rotate(5 458 284)"/>
+  <g stroke-linecap="round">
+    <g stroke="#d4c6b2" stroke-width="10">
+      <path d="M214 192H414"/>
+      <path d="M214 236H394"/>
+      <path d="M214 280H436"/>
+      <path d="M214 324H384"/>
+    </g>
+    <g stroke="#d4c6b2" stroke-width="10" transform="rotate(5 458 284)">
+      <path d="M320 190H548"/>
+      <path d="M320 234H518"/>
+      <path d="M320 278H564"/>
+      <path d="M320 322H474"/>
+    </g>
+    <path d="M346 228C390 214 422 208 470 206" stroke="#b45d34" stroke-width="5"/>
+    <path d="M354 312C404 328 448 334 502 334" stroke="#1f1a16" stroke-width="5"/>
+    <path d="M544 168L594 148" stroke="#b45d34" stroke-width="4"/>
+    <path d="M544 184L610 168" stroke="#b45d34" stroke-width="4"/>
+  </g>
+  <circle cx="604" cy="132" r="12" fill="#1f1a16"/>
+</svg>

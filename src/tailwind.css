@@ -343,6 +343,15 @@ select {
   padding-top: 0.35rem;
 }
 
+.hero-emblem {
+  width: min(100%, 16rem);
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(40, 31, 20, 0.1);
+  border-radius: calc(var(--radius-md) + 0.35rem);
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.72), rgba(255, 252, 246, 0.32));
+  box-shadow: var(--shadow-soft);
+}
+
 .primary-link,
 .secondary-link {
   display: inline-flex;
@@ -485,16 +494,123 @@ select {
   border-top: 1px solid var(--line);
 }
 
+.section-block::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.section-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 15rem);
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
 .section-heading {
   display: grid;
   gap: 0.5rem;
   max-width: 46rem;
-  margin-bottom: 1.5rem;
 }
 
 .section-heading h2 {
   font-size: clamp(2.35rem, 4.6vw, 3.6rem);
   line-height: 0.96;
+}
+
+.section-art-panel {
+  --panel-angle: 0deg;
+  --art-shift: 0px;
+  position: relative;
+  justify-self: end;
+  width: min(100%, 15rem);
+  padding: 1.1rem;
+  border-radius: calc(var(--radius-lg) + 0.15rem);
+  border: 1px solid rgba(40, 31, 20, 0.08);
+  background: linear-gradient(180deg, rgba(255, 252, 246, 0.82), rgba(255, 252, 246, 0.52));
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transform: translate3d(0, var(--art-shift), 0) rotate(var(--panel-angle));
+  transition: transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 560ms ease;
+}
+
+.section-art-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(180, 93, 52, 0.12), transparent 45%),
+    linear-gradient(120deg, transparent 15%, rgba(255, 255, 255, 0.28), transparent 55%);
+  opacity: 0.9;
+  transition: transform 560ms ease, opacity 560ms ease;
+}
+
+.section-art-panel::after {
+  content: '';
+  position: absolute;
+  inset: auto 1rem 1rem auto;
+  width: 3.25rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(40, 31, 20, 0.24));
+}
+
+.section-art-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  transform: translate3d(0, calc(var(--art-shift) * -0.35), 0);
+  filter: drop-shadow(0 12px 24px rgba(31, 26, 22, 0.08));
+  transition: transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1), filter 560ms ease;
+}
+
+.section-block.visible .section-art-panel,
+.section-block:hover .section-art-panel {
+  box-shadow: var(--shadow-strong);
+}
+
+.section-block.visible .section-art-panel::before,
+.section-block:hover .section-art-panel::before {
+  transform: translate3d(0.35rem, -0.35rem, 0);
+}
+
+.section-block.visible .section-art-image,
+.section-block:hover .section-art-image {
+  transform: translate3d(0, calc(var(--art-shift) * -0.35 - 0.35rem), 0) scale(1.02);
+  filter: drop-shadow(0 18px 30px rgba(31, 26, 22, 0.12));
+}
+
+.section-art-panel-story {
+  --panel-angle: -2deg;
+}
+
+.section-art-panel-recent {
+  --panel-angle: 1.5deg;
+}
+
+.section-art-panel-conversations {
+  --panel-angle: -1deg;
+}
+
+.section-art-panel-work {
+  --panel-angle: 2deg;
+}
+
+.section-art-panel-investing {
+  --panel-angle: -1.5deg;
+}
+
+.section-art-panel-writing {
+  --panel-angle: 1.2deg;
+}
+
+.section-art-panel-links {
+  --panel-angle: -1.2deg;
 }
 
 .section-intro {
@@ -848,6 +964,9 @@ select {
   .hero-copy > *,
   .hero-side > *,
   .portrait-image,
+  .section-art-panel,
+  .section-art-panel::before,
+  .section-art-image,
   .feature-mention img,
   .video-poster img,
   .primary-link,
@@ -867,6 +986,7 @@ select {
 
 @media (max-width: 1120px) {
   .hero-section,
+  .section-masthead,
   .mentions-layout,
   .media-grid,
   .story-intro,
@@ -881,6 +1001,11 @@ select {
 
   .hero-side {
     max-width: 42rem;
+  }
+
+  .section-art-panel {
+    justify-self: start;
+    width: min(100%, 13rem);
   }
 
   .journey-grid,
@@ -926,6 +1051,10 @@ select {
   .hero-deck,
   .section-intro {
     font-size: 1rem;
+  }
+
+  .hero-emblem {
+    width: min(100%, 13.5rem);
   }
 
   .section-block {

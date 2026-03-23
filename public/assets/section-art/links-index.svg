@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Links index illustration</title>
+  <desc id="desc">An abstract archive index with tabs and references.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <rect x="124" y="124" width="552" height="96" rx="24" fill="#fcf8f0" stroke="#493d31" stroke-width="4"/>
+  <rect x="124" y="244" width="552" height="96" rx="24" fill="#f8ede1" stroke="#d4c6b2" stroke-width="3"/>
+  <rect x="124" y="364" width="552" height="96" rx="24" fill="#fcf8f0" stroke="#493d31" stroke-width="4"/>
+  <g fill="#eadfce">
+    <rect x="154" y="154" width="176" height="14" rx="7"/>
+    <rect x="154" y="274" width="196" height="14" rx="7"/>
+    <rect x="154" y="394" width="214" height="14" rx="7"/>
+    <rect x="154" y="182" width="142" height="10" rx="5"/>
+    <rect x="154" y="302" width="162" height="10" rx="5"/>
+    <rect x="154" y="422" width="128" height="10" rx="5"/>
+  </g>
+  <path d="M572 152H636V196" fill="none" stroke="#b45d34" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <path d="M556 392H620V436" fill="none" stroke="#1f1a16" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <circle cx="612" cy="180" r="12" fill="#b45d34"/>
+  <circle cx="596" cy="420" r="12" fill="#1f1a16"/>
+  <path d="M512 268H640" fill="none" stroke="#d4c6b2" stroke-dasharray="1 12" stroke-linecap="round" stroke-width="7"/>
+</svg>

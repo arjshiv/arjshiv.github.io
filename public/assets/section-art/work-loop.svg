@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+  <title id="title">Work loop illustration</title>
+  <desc id="desc">A decision loop with checkpoints and feedback paths.</desc>
+  <rect width="800" height="560" rx="38" fill="#fbf6ed"/>
+  <rect x="26" y="26" width="748" height="508" rx="30" fill="none" stroke="#d4c6b2" stroke-width="2"/>
+  <path d="M178 280C178 176 262 92 366 92H428C534 92 620 178 620 284C620 390 534 476 428 476H366C262 476 178 392 178 288Z" fill="none" stroke="#493d31" stroke-width="4"/>
+  <path d="M240 280C240 210 296 154 366 154H428C500 154 558 212 558 284C558 356 500 414 428 414H366C296 414 240 358 240 288Z" fill="none" stroke="#d7c7b3" stroke-width="22"/>
+  <path d="M240 280C240 210 296 154 366 154H428C500 154 558 212 558 284C558 356 500 414 428 414H366C296 414 240 358 240 288Z" fill="none" stroke="#b45d34" stroke-dasharray="180 620" stroke-linecap="round" stroke-width="22"/>
+  <circle cx="366" cy="154" r="16" fill="#1f1a16"/>
+  <circle cx="558" cy="284" r="16" fill="#b45d34"/>
+  <circle cx="428" cy="414" r="16" fill="#1f1a16"/>
+  <circle cx="240" cy="288" r="16" fill="#b45d34"/>
+  <g fill="#d9c8b4">
+    <rect x="104" y="120" width="126" height="16" rx="8"/>
+    <rect x="104" y="148" width="92" height="10" rx="5"/>
+    <rect x="572" y="408" width="126" height="16" rx="8"/>
+    <rect x="572" y="436" width="92" height="10" rx="5"/>
+  </g>
+  <path d="M610 164C648 188 676 226 694 278" fill="none" stroke="#d4c6b2" stroke-linecap="round" stroke-width="3"/>
+  <path d="M106 338C126 398 164 434 214 452" fill="none" stroke="#d4c6b2" stroke-linecap="round" stroke-width="3"/>
+</svg>
