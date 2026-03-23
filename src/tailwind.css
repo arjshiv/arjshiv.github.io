@@ -132,7 +132,7 @@ select {
   align-items: center;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.032em;
 }
 
 .brand-mark::after {
@@ -180,7 +180,7 @@ select {
 .hero-note-label {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.73rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.152em;
   text-transform: uppercase;
 }
 
@@ -285,7 +285,7 @@ select {
   margin: 1rem 0 0;
   font-size: clamp(3.3rem, 8vw, 5.8rem);
   line-height: 0.9;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.074em;
 }
 
 .hero-subtitle {
@@ -294,7 +294,7 @@ select {
   color: var(--ink);
   font-size: clamp(1.2rem, 2.4vw, 1.65rem);
   line-height: 1.12;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.042em;
 }
 
 .hero-copy,
@@ -399,7 +399,7 @@ select {
 .program-card h2,
 .section-heading h2 {
   margin: 0;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.063em;
 }
 
 .program-card h2 {
@@ -447,7 +447,7 @@ select {
   color: var(--muted);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.114em;
   text-transform: uppercase;
   transition: transform 180ms ease, border-color 180ms ease, color 180ms ease;
 }
@@ -544,7 +544,7 @@ select {
   margin: 0.45rem 0 0.55rem;
   font-size: 1.32rem;
   line-height: 1.08;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.042em;
 }
 
 .faq-card {
@@ -567,7 +567,7 @@ select {
 .stat-value {
   margin: 0.2rem 0 0.45rem;
   font-size: clamp(2.1rem, 4vw, 3rem);
-  letter-spacing: -0.08em;
+  letter-spacing: -0.084em;
   line-height: 0.92;
 }
 
@@ -722,7 +722,7 @@ select {
   background: rgba(255, 255, 255, 0.16);
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.7rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.133em;
   text-transform: uppercase;
 }
 
