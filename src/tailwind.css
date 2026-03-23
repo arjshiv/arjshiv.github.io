@@ -460,6 +460,7 @@ select {
 .about-copy,
 .feature-copy,
 .principles-grid,
+.faq-list,
 .links-list,
 .recent-list,
 .article-list,
@@ -480,7 +481,8 @@ select {
 }
 
 .story-grid,
-.principles-grid {
+.principles-grid,
+.faq-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
@@ -489,6 +491,7 @@ select {
 
 .story-card,
 .principle-card,
+.faq-card,
 .recent-item,
 .article-card,
 .link-card,
@@ -501,11 +504,17 @@ select {
 .feature-copy h3,
 .article-card h3,
 .role-head h3,
-.principle-card h3 {
+.principle-card h3,
+.faq-card h3 {
   margin: 0.45rem 0 0.55rem;
   font-size: 1.32rem;
   line-height: 1.08;
   letter-spacing: -0.04em;
+}
+
+.faq-card {
+  display: grid;
+  gap: 0.3rem;
 }
 
 .stats-row {
@@ -705,7 +714,8 @@ select {
 
   .story-grid,
   .stats-row,
-  .principles-grid {
+  .principles-grid,
+  .faq-list {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -760,6 +770,7 @@ select {
   .story-grid,
   .stats-row,
   .principles-grid,
+  .faq-list,
   .video-mini-grid {
     grid-template-columns: 1fr;
   }
