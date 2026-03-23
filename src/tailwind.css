@@ -246,6 +246,7 @@ select {
 .recent-item,
 .video-card,
 .article-card,
+.link-preview-card,
 .principle-card,
 .link-card,
 .quote-panel {
@@ -428,6 +429,37 @@ select {
   margin-bottom: 1.3rem;
 }
 
+.section-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.35rem;
+}
+
+.tag-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.tag-link:hover,
+.tag-link:focus-visible {
+  color: var(--ink);
+  border-color: rgba(212, 81, 44, 0.28);
+  transform: translateY(-2px);
+  outline: none;
+}
+
 .section-heading h2 {
   font-size: clamp(1.9rem, 4vw, 2.85rem);
   line-height: 1;
@@ -462,6 +494,7 @@ select {
 .principles-grid,
 .faq-list,
 .links-list,
+.link-preview-grid,
 .recent-list,
 .article-list,
 .role-list {
@@ -494,6 +527,7 @@ select {
 .faq-card,
 .recent-item,
 .article-card,
+.link-preview-card,
 .link-card,
 .role-card {
   padding: 1.2rem;
@@ -503,6 +537,7 @@ select {
 .story-card h3,
 .feature-copy h3,
 .article-card h3,
+.link-preview-copy h3,
 .role-head h3,
 .principle-card h3,
 .faq-card h3 {
@@ -579,6 +614,7 @@ select {
 
 .recent-item,
 .article-card,
+.link-preview-card,
 .link-card {
   transition: transform 220ms ease, border-color 220ms ease;
 }
@@ -587,6 +623,8 @@ select {
 .recent-item:focus-visible,
 .article-card:hover,
 .article-card:focus-visible,
+.link-preview-card:hover,
+.link-preview-card:focus-visible,
 .link-card:hover,
 .link-card:focus-visible,
 .feature-card:hover,
@@ -594,6 +632,28 @@ select {
   transform: translateY(-4px);
   border-color: rgba(212, 81, 44, 0.28);
   outline: none;
+}
+
+.link-preview-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.link-preview-card {
+  display: grid;
+  gap: 0.9rem;
+  border-radius: var(--radius-lg);
+}
+
+.link-preview-card img {
+  width: 100%;
+  aspect-ratio: 1.4 / 1;
+  object-fit: cover;
+  border-radius: 1.1rem;
+}
+
+.link-preview-copy {
+  display: grid;
+  gap: 0.35rem;
 }
 
 .video-column {
@@ -686,8 +746,10 @@ select {
   .reveal.visible,
   .recent-item,
   .article-card,
+  .link-preview-card,
   .link-card,
   .feature-card,
+  .tag-link,
   .primary-link,
   .secondary-link,
   .text-link {
@@ -715,7 +777,8 @@ select {
   .story-grid,
   .stats-row,
   .principles-grid,
-  .faq-list {
+  .faq-list,
+  .link-preview-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -771,6 +834,7 @@ select {
   .stats-row,
   .principles-grid,
   .faq-list,
+  .link-preview-grid,
   .video-mini-grid {
     grid-template-columns: 1fr;
   }
