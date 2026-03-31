@@ -543,6 +543,15 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transform: rotate(-4deg);
 }
 
+.portrait-cutout::after {
+  content: '';
+  position: absolute;
+  inset: 0.6rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 248, 240, 0.7);
+  pointer-events: none;
+}
+
 .portrait-cutout img {
   width: 100%;
   aspect-ratio: 0.9 / 1;
