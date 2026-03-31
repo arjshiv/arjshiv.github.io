@@ -1505,6 +1505,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   .video-overlay {
     inset: auto 0.8rem 0.8rem 0.8rem;
     padding: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
