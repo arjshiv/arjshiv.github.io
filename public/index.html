@@ -614,6 +614,12 @@
         updateScrollProgress();
         window.addEventListener('scroll', updateScrollProgress, { passive: true });
         window.addEventListener('resize', updateScrollProgress);
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 760) {
+                document.body.dataset.navOpen = 'false';
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
 
         navToggle.addEventListener('click', () => {
             const nextState = document.body.dataset.navOpen !== 'true';
