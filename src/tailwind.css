@@ -393,9 +393,31 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     radial-gradient(circle at 82% 18%, rgba(201, 161, 94, 0.16), transparent 18rem);
 }
 
+.poster-card::after {
+  content: '';
+  position: absolute;
+  inset: auto auto 1.3rem 52%;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 81, 44, 0.15) 0, rgba(212, 81, 44, 0) 68%);
+  filter: blur(8px);
+  animation: hero-ambient 8s ease-in-out infinite alternate;
+}
+
 .poster-card > * {
   position: relative;
   z-index: 1;
+}
+
+@keyframes hero-ambient {
+  from {
+    transform: translate3d(-0.6rem, 0, 0) scale(0.96);
+  }
+
+  to {
+    transform: translate3d(0.5rem, -0.7rem, 0) scale(1.04);
+  }
 }
 
 .hero-title {
