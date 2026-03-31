@@ -1094,6 +1094,21 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border-radius: var(--radius-lg);
 }
 
+.link-preview-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(140deg, rgba(212, 81, 44, 0.3), rgba(201, 161, 94, 0.1), transparent 72%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
 .link-preview-card img {
   width: 100%;
   aspect-ratio: 1.4 / 1;
