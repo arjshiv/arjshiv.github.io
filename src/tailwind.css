@@ -940,6 +940,21 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   gap: 0.55rem;
 }
 
+.feature-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 2rem;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  background: rgba(212, 81, 44, 0.1);
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .recent-item,
 .article-card,
 .link-preview-card,
