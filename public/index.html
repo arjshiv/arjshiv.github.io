@@ -139,6 +139,9 @@
 <body class="site-body">
     <a href="#main-content" class="skip-link">Skip to content</a>
     <header class="topbar">
+        <div class="scroll-progress" aria-hidden="true">
+            <span class="scroll-progress-bar"></span>
+        </div>
         <div class="topbar-inner">
             <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">Arjun Kannan</a>
             <nav class="main-nav" aria-label="Primary">
@@ -586,6 +589,18 @@
 
     <script>
         document.documentElement.style.scrollBehavior = 'smooth';
+
+        const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+
+        const updateScrollProgress = () => {
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+            scrollProgressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+        };
+
+        updateScrollProgress();
+        window.addEventListener('scroll', updateScrollProgress, { passive: true });
+        window.addEventListener('resize', updateScrollProgress);
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
