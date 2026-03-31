@@ -135,6 +135,13 @@ select {
   backdrop-filter: blur(16px);
   background: rgba(244, 235, 220, 0.84);
   border-bottom: 1px solid rgba(24, 19, 17, 0.08);
+  transition: background-color 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.topbar-scrolled {
+  background: rgba(251, 245, 235, 0.94);
+  border-bottom-color: rgba(24, 19, 17, 0.12);
+  box-shadow: 0 14px 30px rgba(62, 42, 24, 0.08);
 }
 
 .scroll-progress {

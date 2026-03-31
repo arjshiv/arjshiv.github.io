@@ -590,12 +590,14 @@
     <script>
         document.documentElement.style.scrollBehavior = 'smooth';
 
+        const topbar = document.querySelector('.topbar');
         const scrollProgressBar = document.querySelector('.scroll-progress-bar');
 
         const updateScrollProgress = () => {
             const scrollable = document.documentElement.scrollHeight - window.innerHeight;
             const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
             scrollProgressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+            topbar.classList.toggle('topbar-scrolled', window.scrollY > 12);
         };
 
         updateScrollProgress();
