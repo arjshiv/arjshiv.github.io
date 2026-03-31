@@ -631,6 +631,8 @@
         const navScrim = document.querySelector('.nav-scrim');
         const backToTop = document.querySelector('.back-to-top');
         const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+        const sections = [...document.querySelectorAll('main section[id]')];
+        const navLinks = [...document.querySelectorAll('.nav-link')];
 
         const updateScrollProgress = () => {
             const scrollable = document.documentElement.scrollHeight - window.innerHeight;
@@ -690,9 +692,6 @@
             element.style.setProperty('--reveal-delay', `${index * 70}ms`);
             revealObserver.observe(element);
         });
-
-        const sections = [...document.querySelectorAll('main section[id]')];
-        const navLinks = [...document.querySelectorAll('.nav-link')];
 
         sections.forEach((section) => {
             const heading = section.querySelector('.section-heading h2');
