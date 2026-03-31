@@ -982,6 +982,15 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transition: transform 220ms ease, border-color 220ms ease;
 }
 
+.principle-card {
+  transition: transform 220ms ease, border-color 220ms ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-4px) rotate(-0.4deg);
+  border-color: rgba(212, 81, 44, 0.22);
+}
+
 .recent-item::after,
 .article-card::after,
 .link-preview-card::after {
