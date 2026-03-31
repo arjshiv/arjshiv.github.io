@@ -818,6 +818,26 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border-radius: var(--radius-lg);
 }
 
+.principles-grid {
+  counter-reset: principle-count;
+}
+
+.principle-card::before {
+  counter-increment: principle-count;
+  content: '0' counter(principle-count);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(212, 81, 44, 0.12);
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
 .story-card h3,
 .feature-copy h3,
 .article-card h3,
