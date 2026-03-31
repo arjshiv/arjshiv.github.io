@@ -456,6 +456,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.hero-fact:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 81, 44, 0.22);
+  background: rgba(255, 249, 240, 0.82);
 }
 
 .hero-actions {
