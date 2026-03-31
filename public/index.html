@@ -621,6 +621,7 @@
             <p class="site-footer-note">Built with a bias toward clarity, context, and a few good interactions.</p>
         </footer>
     </main>
+    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 
     <script>
         document.documentElement.style.scrollBehavior = 'smooth';
@@ -628,6 +629,7 @@
         const topbar = document.querySelector('.topbar');
         const navToggle = document.querySelector('.nav-toggle');
         const navScrim = document.querySelector('.nav-scrim');
+        const backToTop = document.querySelector('.back-to-top');
         const scrollProgressBar = document.querySelector('.scroll-progress-bar');
 
         const updateScrollProgress = () => {
@@ -635,6 +637,7 @@
             const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
             scrollProgressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
             topbar.classList.toggle('topbar-scrolled', window.scrollY > 12);
+            backToTop.classList.toggle('visible', window.scrollY > 700);
         };
 
         updateScrollProgress();
