@@ -1488,6 +1488,12 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     padding-top: 3rem;
   }
 
+  .site-footer-grid,
+  .site-footer-links {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
   .story-grid,
   .stats-row,
   .principles-grid,
