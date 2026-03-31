@@ -669,7 +669,8 @@
             threshold: 0.05,
         });
 
-        document.querySelectorAll('.reveal').forEach((element) => {
+        document.querySelectorAll('.reveal').forEach((element, index) => {
+            element.style.setProperty('--reveal-delay', `${index * 70}ms`);
             revealObserver.observe(element);
         });
 
