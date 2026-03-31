@@ -1155,6 +1155,15 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   line-height: 1.7;
 }
 
+.site-footer-note {
+  margin: 1.2rem 0 0;
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .site-footer-links {
   grid-auto-flow: column;
   width: fit-content;
