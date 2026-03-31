@@ -648,25 +648,6 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
-.hero-orbit-art {
-  position: absolute;
-  right: 11rem;
-  bottom: 1rem;
-  width: clamp(7rem, 14vw, 10rem);
-  opacity: 0.48;
-  animation: orbit-drift 14s linear infinite;
-}
-
-@keyframes orbit-drift {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .program-card {
   padding: 1.6rem;
   display: grid;
@@ -1334,7 +1315,6 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   .primary-link,
   .secondary-link,
   .text-link,
-  .hero-orbit-art,
   .portrait-cutout,
   .video-play,
   .scroll-cue-arrow {
@@ -1484,13 +1464,6 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
   .hero-title {
     font-size: clamp(2.8rem, 14vw, 4.1rem);
-  }
-
-  .hero-orbit-art {
-    right: 0.4rem;
-    bottom: 10.5rem;
-    width: 5.5rem;
-    opacity: 0.22;
   }
 
   .section-tags {
