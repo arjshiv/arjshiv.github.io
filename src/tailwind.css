@@ -436,6 +436,28 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   margin-top: 0.9rem;
 }
 
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+}
+
+.hero-fact {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(24, 19, 17, 0.1);
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
