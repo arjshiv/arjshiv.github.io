@@ -144,7 +144,10 @@
         </div>
         <div class="topbar-inner">
             <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">Arjun Kannan</a>
-            <nav class="main-nav" aria-label="Primary">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+                Menu
+            </button>
+            <nav id="primary-nav" class="main-nav" aria-label="Primary">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#work" class="nav-link">Work</a>
                 <a href="#recent" class="nav-link">Recent</a>
@@ -591,6 +594,7 @@
         document.documentElement.style.scrollBehavior = 'smooth';
 
         const topbar = document.querySelector('.topbar');
+        const navToggle = document.querySelector('.nav-toggle');
         const scrollProgressBar = document.querySelector('.scroll-progress-bar');
 
         const updateScrollProgress = () => {
@@ -603,6 +607,12 @@
         updateScrollProgress();
         window.addEventListener('scroll', updateScrollProgress, { passive: true });
         window.addEventListener('resize', updateScrollProgress);
+
+        navToggle.addEventListener('click', () => {
+            const nextState = document.body.dataset.navOpen !== 'true';
+            document.body.dataset.navOpen = String(nextState);
+            navToggle.setAttribute('aria-expanded', String(nextState));
+        });
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
