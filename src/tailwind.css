@@ -962,6 +962,17 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transition: transform 220ms ease, border-color 220ms ease;
 }
 
+.recent-item::after,
+.article-card::after,
+.link-preview-card::after {
+  content: '↗';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: rgba(212, 81, 44, 0.5);
+  transition: transform 220ms ease, color 220ms ease;
+}
+
 .stat-card {
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
@@ -988,6 +999,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transform: translateY(-4px);
   border-color: rgba(212, 81, 44, 0.28);
   outline: none;
+}
+
+.recent-item:hover::after,
+.article-card:hover::after,
+.link-preview-card:hover::after {
+  color: var(--accent);
+  transform: translate(0.12rem, -0.12rem);
 }
 
 .link-preview-grid {
