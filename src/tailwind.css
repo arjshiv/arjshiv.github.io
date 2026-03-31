@@ -323,6 +323,12 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   color: var(--ink);
 }
 
+.nav-link[aria-current='true'] {
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  background: rgba(212, 81, 44, 0.1);
+}
+
 .nav-link:hover::after,
 .nav-link:focus-visible::after,
 .nav-link[aria-current='true']::after {
