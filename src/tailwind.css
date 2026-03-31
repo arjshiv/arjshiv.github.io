@@ -534,6 +534,14 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   outline: none;
 }
 
+.primary-link:focus-visible,
+.secondary-link:focus-visible,
+.text-link:focus-visible,
+.tag-link:focus-visible,
+.nav-toggle:focus-visible {
+  box-shadow: 0 0 0 3px rgba(244, 235, 220, 0.9), 0 0 0 5px rgba(212, 81, 44, 0.28);
+}
+
 .portrait-cutout {
   position: relative;
   width: min(42%, 15rem);
