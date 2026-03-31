@@ -1099,6 +1099,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   aspect-ratio: 1.4 / 1;
   object-fit: cover;
   border-radius: 1.1rem;
+  transition: transform 280ms ease;
+}
+
+.link-preview-card:hover img {
+  transform: scale(1.04);
 }
 
 .link-preview-copy {
