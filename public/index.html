@@ -626,6 +626,20 @@
             navToggle.setAttribute('aria-expanded', 'false');
         });
 
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                document.body.dataset.navOpen = 'false';
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                document.body.dataset.navOpen = 'false';
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
