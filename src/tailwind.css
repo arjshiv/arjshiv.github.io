@@ -1052,6 +1052,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border: 0;
   background: transparent;
   cursor: pointer;
+  transition: transform 220ms ease;
+}
+
+.video-poster:hover,
+.video-poster:focus-visible {
+  transform: translateY(-4px);
+  outline: none;
 }
 
 .video-poster img,
