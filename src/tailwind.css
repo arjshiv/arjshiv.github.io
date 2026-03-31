@@ -911,6 +911,15 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transition: transform 220ms ease, border-color 220ms ease;
 }
 
+.stat-card {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(62, 42, 24, 0.16);
+}
+
 .recent-item:hover,
 .recent-item:focus-visible,
 .article-card:hover,
