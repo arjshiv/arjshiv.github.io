@@ -676,6 +676,20 @@
         const sections = [...document.querySelectorAll('main section[id]')];
         const navLinks = [...document.querySelectorAll('.nav-link')];
 
+        sections.forEach((section) => {
+            const heading = section.querySelector('.section-heading h2');
+            if (!heading) {
+                return;
+            }
+
+            const anchor = document.createElement('a');
+            anchor.className = 'section-anchor';
+            anchor.href = `#${section.id}`;
+            anchor.setAttribute('aria-label', `Link to ${heading.textContent}`);
+            anchor.textContent = '#';
+            heading.append(anchor);
+        });
+
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (!entry.isIntersecting) {
