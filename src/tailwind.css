@@ -2173,3 +2173,125 @@ body::after {
 .role-card:hover .role-head h3::after {
   width: 3.4rem;
 }
+
+.feature-card,
+.recent-item,
+.article-card {
+  border-radius: 1rem;
+}
+
+.feature-card {
+  gap: 0;
+  padding: 0;
+}
+
+.feature-card img,
+.link-preview-card img,
+.video-frame,
+.video-poster img {
+  border-radius: 0.9rem;
+}
+
+.feature-card img {
+  aspect-ratio: 1.48 / 1;
+  filter: grayscale(0.2) saturate(0.86) contrast(1.04);
+}
+
+.feature-copy {
+  padding: 1.15rem 1.1rem 1.2rem;
+}
+
+.feature-badge {
+  min-height: 1.9rem;
+  border-radius: 0.65rem;
+  background: linear-gradient(180deg, rgba(221, 105, 40, 0.94), rgba(182, 74, 22, 0.94));
+  color: #1f1612;
+}
+
+.recent-list {
+  gap: 0.9rem;
+}
+
+.recent-item,
+.article-card {
+  padding: 1.15rem;
+}
+
+.recent-item::after,
+.article-card::after {
+  top: 1.05rem;
+  right: 1.05rem;
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.recent-item:hover,
+.recent-item:focus-visible,
+.article-card:hover,
+.article-card:focus-visible {
+  border-color: rgba(255, 255, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    var(--panel-texture),
+    linear-gradient(180deg, var(--panel-high), var(--panel-base));
+}
+
+.recent-item:hover::after,
+.article-card:hover::after {
+  color: rgba(221, 105, 40, 0.88);
+}
+
+.video-column {
+  gap: 1rem;
+}
+
+.video-card {
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.video-mini-grid {
+  gap: 1rem;
+}
+
+.video-poster {
+  transform: none;
+}
+
+.video-poster:hover,
+.video-poster:focus-visible {
+  transform: translateY(-3px);
+}
+
+.video-frame,
+.video-poster img {
+  border-radius: 0.75rem;
+  filter: grayscale(0.18) saturate(0.88);
+}
+
+.video-overlay {
+  inset: auto 0.7rem 0.7rem 0.7rem;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.8rem;
+  background: linear-gradient(180deg, rgba(22, 22, 22, 0.42), rgba(18, 18, 18, 0.92));
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+}
+
+.video-meta {
+  color: rgba(243, 237, 227, 0.62);
+}
+
+.video-title {
+  margin-top: 0.4rem;
+  font-size: 0.98rem;
+}
+
+.video-play {
+  min-width: 4rem;
+  min-height: 2.1rem;
+  border-radius: 0.7rem;
+  background: linear-gradient(180deg, rgba(221, 105, 40, 0.94), rgba(182, 74, 22, 0.94));
+  color: #201410;
+  animation: none;
+}
