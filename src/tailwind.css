@@ -1917,3 +1917,107 @@ body::after {
   border-radius: 0.8rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12));
 }
+
+.program-card {
+  padding: 1.35rem;
+  align-content: start;
+}
+
+.program-head {
+  padding: 0 0 1rem;
+  color: rgba(243, 237, 227, 0.58);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.program-card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.55rem);
+  line-height: 0.95;
+}
+
+.program-item {
+  padding-top: 1rem;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+.program-item strong {
+  color: var(--ink);
+}
+
+.section-block {
+  position: relative;
+  margin-top: 1.6rem;
+  padding: 1.35rem;
+  border-radius: 1.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.08)),
+    radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.04), transparent 32%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.section-block::before {
+  content: '';
+  position: absolute;
+  inset: 0.75rem;
+  border-radius: 1rem;
+  border: 1px dashed rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.section-heading {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  max-width: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section-heading::after {
+  width: 7rem;
+  height: 3px;
+}
+
+.section-kicker,
+.article-meta,
+.quote-label,
+.story-label,
+.stat-label,
+.video-meta,
+.program-head,
+.hero-note-label {
+  color: rgba(243, 237, 227, 0.52);
+}
+
+.section-heading h2 {
+  color: var(--ink);
+  font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+.section-anchor {
+  color: rgba(221, 105, 40, 0.9);
+}
+
+.section-tags {
+  gap: 0.55rem;
+  margin-top: 0.65rem;
+}
+
+.tag-link {
+  min-height: 2rem;
+  padding: 0 0.75rem;
+  border-radius: 0.75rem;
+  border-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.12));
+  color: rgba(243, 237, 227, 0.82);
+}
+
+.tag-link:hover,
+.tag-link:focus-visible {
+  border-color: rgba(221, 105, 40, 0.28);
+  color: var(--ink);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+}
+
+.section-intro {
+  max-width: 48rem;
+}
