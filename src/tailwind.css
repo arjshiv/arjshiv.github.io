@@ -1526,3 +1526,99 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     padding: 1rem;
   }
 }
+
+/* Teenage Engineering-inspired foundation overrides */
+
+:root {
+  --cream: #dad3c8;
+  --cream-strong: #efebe4;
+  --ink: #f3ede3;
+  --muted: rgba(233, 226, 214, 0.7);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --accent: #dd6928;
+  --accent-soft: rgba(221, 105, 40, 0.16);
+  --gold: #b48d5c;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+  --panel-base: #1b1b1b;
+  --panel-mid: #262626;
+  --panel-high: #353535;
+  --panel-texture: radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.08), transparent 22%), linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.12));
+  --panel-sheen: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.01));
+  --paper: #d8d0c2;
+  --paper-line: rgba(35, 31, 28, 0.1);
+  --radius-xl: 1.65rem;
+  --radius-lg: 1.2rem;
+  --radius-md: 0.9rem;
+  --max-width: 1240px;
+  --header-height: 4.8rem;
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(221, 105, 40, 0.14), transparent 18%),
+    linear-gradient(180deg, #0d0d0d 0%, #121212 28%, #0f0f0f 100%);
+}
+
+body::before {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0 1px, transparent 1.4px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent 90%);
+  opacity: 0.28;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, transparent 0 8%, rgba(255, 255, 255, 0.03) 8% 8.2%, transparent 8.2% 50%, rgba(255, 255, 255, 0.03) 50% 50.2%, transparent 50.2% 100%),
+    linear-gradient(180deg, transparent 0 12%, rgba(255, 255, 255, 0.03) 12% 12.2%, transparent 12.2% 100%);
+  opacity: 0.5;
+}
+
+.page-shell {
+  width: min(calc(100% - 2rem), var(--max-width));
+  padding-top: 1.7rem;
+}
+
+.scroll-cue,
+.site-footer-copy,
+.site-footer-note {
+  color: var(--muted);
+}
+
+.poster-card,
+.program-card,
+.story-card,
+.stat-card,
+.role-card,
+.feature-card,
+.recent-item,
+.video-card,
+.article-card,
+.link-preview-card,
+.principle-card,
+.link-card,
+.quote-panel,
+.faq-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background:
+    var(--panel-sheen),
+    var(--panel-texture),
+    linear-gradient(180deg, var(--panel-high), var(--panel-base));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.44),
+    var(--shadow);
+}
+
+.section-heading::after,
+.role-head h3::after,
+.brand-mark::after {
+  background: linear-gradient(90deg, rgba(221, 105, 40, 0.85), rgba(221, 105, 40, 0));
+}
