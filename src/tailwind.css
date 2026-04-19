@@ -2736,3 +2736,28 @@ body {
     padding: 0 0.85rem;
   }
 }
+
+/* pass 2.4: section heading organization */
+
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  column-gap: 1rem;
+}
+
+.section-heading h2,
+.section-heading .section-tags,
+.section-heading::after {
+  grid-column: 1 / -1;
+}
+
+.section-heading .section-kicker,
+.section-heading .panel-index {
+  align-self: start;
+}
+
+.section-heading .panel-index {
+  justify-self: end;
+  text-align: right;
+}
