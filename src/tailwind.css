@@ -2834,3 +2834,26 @@ body {
   margin-bottom: 0.35rem;
   line-height: 0.9;
 }
+
+/* pass 2.8: media card balance */
+
+.feature-card img,
+.link-preview-card img {
+  object-position: center top;
+}
+
+.feature-copy,
+.link-preview-copy {
+  gap: 0.3rem;
+}
+
+.recent-list,
+.article-list {
+  gap: 0.8rem;
+}
+
+.recent-item,
+.article-card,
+.link-preview-card {
+  transition-duration: 180ms;
+}
