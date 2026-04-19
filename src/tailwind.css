@@ -2880,6 +2880,121 @@ body {
   }
 }
 
+/* deeper TE pass 3: stronger control metaphors */
+
+.module-console {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin: -0.2rem 0 1.3rem;
+  padding: 0.8rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(0, 0, 0, 0.16));
+}
+
+.console-track {
+  position: relative;
+  flex: 1 1 auto;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+
+.console-track span {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  width: 28%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(221, 105, 40, 0.9), rgba(255, 184, 126, 0.9));
+  transform: translateY(-50%);
+}
+
+.console-track.compact span {
+  left: 58%;
+  width: 18%;
+}
+
+.console-dial,
+.console-gauge {
+  flex: none;
+}
+
+.console-dial {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    radial-gradient(circle at 36% 34%, rgba(255, 255, 255, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.22));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.console-dial::after {
+  content: '';
+  position: absolute;
+  inset: 0.24rem auto auto 50%;
+  width: 0.1rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: rgba(243, 237, 227, 0.9);
+  transform: translateX(-50%) rotate(28deg);
+  transform-origin: bottom center;
+}
+
+.console-dial.small {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.console-gauge {
+  width: 3.8rem;
+  height: 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(0, 0, 0, 0.22);
+  padding: 0.18rem;
+}
+
+.console-gauge span {
+  display: block;
+  width: 58%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(221, 105, 40, 0.88), rgba(255, 184, 126, 0.88));
+}
+
+.console-led-bank {
+  display: inline-flex;
+  gap: 0.38rem;
+  flex: none;
+}
+
+.console-led-bank span {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.console-led-bank span:first-child {
+  background: rgba(221, 105, 40, 0.94);
+  box-shadow: 0 0 10px rgba(221, 105, 40, 0.38);
+}
+
+@media (max-width: 760px) {
+  .module-console {
+    margin-bottom: 1rem;
+    padding-inline: 0.8rem;
+  }
+}
+
 /* pass 2.5: scroll controls */
 
 .scroll-cue {
