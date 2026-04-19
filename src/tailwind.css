@@ -2995,6 +2995,62 @@ body {
   }
 }
 
+/* deeper TE pass 4: make lower sections feel like desk modules */
+
+@media (min-width: 981px) {
+  .page-shell {
+    position: relative;
+  }
+
+  .page-shell::before {
+    content: '';
+    position: absolute;
+    inset: 22rem 6% 8rem;
+    pointer-events: none;
+    background:
+      linear-gradient(90deg, transparent 0 22%, rgba(255, 255, 255, 0.035) 22% 22.2%, transparent 22.2% 78%, rgba(255, 255, 255, 0.035) 78% 78.2%, transparent 78.2% 100%);
+    opacity: 0.8;
+  }
+
+  .page-shell > .section-block {
+    width: min(100%, calc(100% - 3.6rem));
+    margin-top: 1.35rem;
+  }
+
+  .page-shell > .section-block:nth-of-type(odd) {
+    margin-left: auto;
+  }
+
+  .page-shell > .section-block:nth-of-type(even) {
+    margin-right: auto;
+  }
+
+  .page-shell > .section-block::after {
+    content: '';
+    position: absolute;
+    top: -1.15rem;
+    width: 3.2rem;
+    height: 1.15rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .page-shell > .section-block:nth-of-type(odd)::after {
+    right: 2.6rem;
+    border-left: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .page-shell > .section-block:nth-of-type(even)::after {
+    left: 2.6rem;
+  }
+
+  .page-shell > .site-footer {
+    width: min(100%, calc(100% - 5.5rem));
+    margin-left: auto;
+  }
+}
+
 /* pass 2.5: scroll controls */
 
 .scroll-cue {
