@@ -136,14 +136,20 @@
         }
     </script>
 </head>
-<body class="site-body">
+<body class="site-body" id="top">
     <a href="#main-content" class="skip-link">Skip to content</a>
     <header class="topbar">
         <div class="scroll-progress" aria-hidden="true">
             <span class="scroll-progress-bar"></span>
         </div>
         <div class="topbar-inner">
-            <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">Arjun Kannan</a>
+            <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">
+                <span class="brand-mark-led" aria-hidden="true"></span>
+                <span class="brand-mark-text">
+                    <span class="brand-mark-name">Arjun Kannan</span>
+                    <span class="brand-mark-role">product / systems / signal</span>
+                </span>
+            </a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
                 <span class="nav-toggle-label">Menu</span>
                 <span class="nav-toggle-icon" aria-hidden="true">
@@ -166,37 +172,50 @@
     <button class="nav-scrim" type="button" aria-label="Close navigation"></button>
 
     <main id="main-content" class="page-shell">
-        <section class="hero-section reveal visible">
+        <section class="hero-section reveal visible" aria-labelledby="hero-title">
             <article class="poster-card">
-                <p class="section-kicker">Co-founder at ResiDesk</p>
-                <h1 class="hero-title">Arjun Kannan</h1>
-                <p class="hero-subtitle">I work on the gap between what is known and what gets acted on.</p>
-                <p class="hero-copy">
-                    I co-founded ResiDesk. We help multifamily operators hear what residents are actually telling them, and act on it before small issues turn into expensive ones.
-                </p>
-                <p class="hero-copy">
-                    Before that I worked at Climb Credit and BlackRock. Before that I studied applied physics at Cornell and started writing code in a lab because it was the fastest way to fix a slow process.
-                </p>
-                <p class="hero-copy">
-                    The thread across all of it is the same: useful information stuck in the wrong place, reaching the wrong person, arriving too late.
-                </p>
-                <div class="hero-facts" aria-label="Focus areas">
-                    <span class="hero-fact">AI for operations</span>
-                    <span class="hero-fact">Resident signals</span>
-                    <span class="hero-fact">Workflow design</span>
-                    <span class="hero-fact">Decision support</span>
+                <div class="panel-heading">
+                    <p class="section-kicker">Co-founder at ResiDesk</p>
+                    <p class="panel-index">Control Surface 01</p>
+                </div>
+                <div class="hero-grid">
+                    <div class="hero-copy-panel">
+                        <p class="hero-note-label">Signal to action</p>
+                        <h1 id="hero-title" class="hero-title">Arjun Kannan</h1>
+                        <p class="hero-subtitle">I work on the gap between what is known and what gets acted on.</p>
+                        <div class="hero-note">
+                            <p class="hero-copy">
+                                I co-founded ResiDesk. We help multifamily operators hear what residents are actually telling them, and act on it before small issues turn into expensive ones.
+                            </p>
+                            <p class="hero-copy">
+                                Before that I worked at Climb Credit and BlackRock. Before that I studied applied physics at Cornell and started writing code in a lab because it was the fastest way to fix a slow process.
+                            </p>
+                            <p class="hero-copy">
+                                The thread across all of it is the same: useful information stuck in the wrong place, reaching the wrong person, arriving too late.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-utility-column">
+                        <div class="portrait-cutout">
+                            <img src="assets/landscape-1.webp" alt="Arjun Kannan" width="1400" height="788">
+                        </div>
+                        <div class="hero-facts" aria-label="Focus areas">
+                            <span class="hero-fact">AI for operations</span>
+                            <span class="hero-fact">Resident signals</span>
+                            <span class="hero-fact">Workflow design</span>
+                            <span class="hero-fact">Decision support</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-actions">
                     <a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="primary-link">ResiDesk <span aria-hidden="true">↗</span></a>
                     <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="secondary-link">Writing <span aria-hidden="true">↗</span></a>
                     <a href="#links" class="secondary-link">Selected links <span aria-hidden="true">↓</span></a>
                 </div>
-                <div class="portrait-cutout">
-                    <img src="assets/landscape-1.webp" alt="Arjun Kannan" width="1400" height="788">
-                </div>
             </article>
 
             <article class="program-card">
+                <p class="panel-index">Quick Start 02</p>
                 <div class="program-head">
                     <span>A good place to start</span>
                     <span>Spring 2026</span>
