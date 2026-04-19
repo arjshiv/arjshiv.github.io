@@ -2895,3 +2895,41 @@ body {
     gap: 0.8rem;
   }
 }
+
+/* pass 2.10: interaction polish */
+
+.nav-link,
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link,
+.recent-item,
+.article-card,
+.link-preview-card,
+.feature-card,
+.story-card,
+.stat-card,
+.role-card,
+.principle-card {
+  transition-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.primary-link:hover,
+.primary-link:focus-visible,
+.secondary-link:hover,
+.secondary-link:focus-visible,
+.text-link:hover,
+.text-link:focus-visible,
+.footer-link:hover,
+.footer-link:focus-visible,
+.tag-link:hover,
+.tag-link:focus-visible {
+  transform: translateY(-1px);
+}
+
+.section-anchor {
+  transition: opacity 160ms ease, transform 160ms ease, color 160ms ease;
+}
