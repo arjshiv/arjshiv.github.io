@@ -2021,3 +2021,87 @@ body::after {
 .section-intro {
   max-width: 48rem;
 }
+
+.about-grid,
+.two-column-section,
+.conversation-grid,
+.recent-grid {
+  gap: 1.2rem;
+}
+
+.about-copy,
+.story-grid,
+.role-list,
+.article-list,
+.recent-list,
+.principles-grid,
+.faq-list,
+.link-preview-grid {
+  gap: 1rem;
+}
+
+.about-copy p,
+.section-intro,
+.feature-copy p,
+.recent-item p:last-child,
+.article-card p:last-child,
+.stat-copy,
+.role-card p,
+.principle-card p,
+.link-card p:last-child {
+  color: rgba(243, 237, 227, 0.74);
+}
+
+.story-grid,
+.principles-grid,
+.faq-list {
+  margin-top: 1.2rem;
+}
+
+.story-card,
+.quote-panel {
+  padding: 1.2rem 1.15rem 1.25rem;
+  border-radius: 1rem;
+}
+
+.story-card::before,
+.quote-panel::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.52rem;
+  height: 0.52rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.story-card h3,
+.article-card h3,
+.principle-card h3,
+.feature-copy h3,
+.link-preview-copy h3 {
+  color: var(--ink);
+}
+
+.story-card h3 {
+  max-width: 12rem;
+}
+
+.quote-panel {
+  display: grid;
+  gap: 0.7rem;
+  padding-top: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.quote-panel::before {
+  inset: auto 1.2rem 1.05rem auto;
+  width: 5.5rem;
+  background: linear-gradient(90deg, rgba(221, 105, 40, 0.4), rgba(221, 105, 40, 0));
+}
+
+.quote-copy {
+  color: var(--ink);
+  font-size: 1.12rem;
+}
