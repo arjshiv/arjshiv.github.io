@@ -2762,6 +2762,52 @@ body {
   text-align: right;
 }
 
+/* deeper TE pass 1: lower visible copy density */
+
+.copy-deck {
+  max-width: 34rem;
+  margin: 0 0 1rem;
+  color: rgba(243, 237, 227, 0.92);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.about-copy {
+  max-width: 42rem;
+}
+
+.about-copy p,
+.section-intro,
+.recent-item p:last-child,
+.article-card p:last-child,
+.stat-copy,
+.role-card p,
+.principle-card p,
+.link-preview-copy p:last-child,
+.site-footer-copy {
+  max-width: 44rem;
+}
+
+.role-card p,
+.recent-item p:last-child,
+.article-card p:last-child {
+  max-width: 34rem;
+}
+
+.story-card p,
+.recent-item p:last-child,
+.article-card p:last-child,
+.principle-card p,
+.faq-card p,
+.role-card p {
+  font-size: 0.91rem;
+  line-height: 1.58;
+}
+
+.section-intro {
+  max-width: 38rem;
+}
+
 /* pass 2.5: scroll controls */
 
 .scroll-cue {
