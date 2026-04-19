@@ -2761,3 +2761,26 @@ body {
   justify-self: end;
   text-align: right;
 }
+
+/* pass 2.5: scroll controls */
+
+.scroll-cue {
+  gap: 0.85rem;
+  margin-top: 0.85rem;
+  padding: 0.2rem 0;
+}
+
+.scroll-cue-label {
+  color: rgba(243, 237, 227, 0.54);
+}
+
+.scroll-cue-arrow,
+.back-to-top {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.back-to-top {
+  right: 1rem;
+  bottom: 1rem;
+}
