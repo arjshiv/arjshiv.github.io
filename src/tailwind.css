@@ -2669,3 +2669,31 @@ body {
     line-height: 1.8;
   }
 }
+
+/* pass 2.2: hero controls */
+
+.hero-actions {
+  gap: 0.7rem;
+}
+
+.primary-link,
+.secondary-link {
+  min-height: 3rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 0.9rem;
+}
+
+.primary-link {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 12px 26px rgba(159, 69, 20, 0.28);
+}
+
+.secondary-link {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+.hero-fact {
+  min-height: 2.45rem;
+  padding-inline: 0.85rem;
+}
