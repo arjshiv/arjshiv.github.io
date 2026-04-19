@@ -2697,3 +2697,42 @@ body {
   min-height: 2.45rem;
   padding-inline: 0.85rem;
 }
+
+/* pass 2.3: header spacing */
+
+.topbar-inner {
+  width: min(calc(100% - 1.6rem), var(--max-width));
+  gap: 1rem;
+}
+
+.brand-mark {
+  gap: 0.65rem;
+}
+
+.brand-mark-name {
+  font-size: 0.94rem;
+}
+
+.brand-mark-role {
+  font-size: 0.58rem;
+}
+
+.main-nav {
+  gap: 0.45rem;
+}
+
+.nav-link {
+  min-height: 2.2rem;
+  padding: 0 0.75rem;
+}
+
+@media (max-width: 760px) {
+  .topbar-inner {
+    width: min(calc(100% - 1rem), var(--max-width));
+  }
+
+  .nav-toggle {
+    min-height: 2.5rem;
+    padding: 0 0.85rem;
+  }
+}
