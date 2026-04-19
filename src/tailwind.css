@@ -2808,6 +2808,78 @@ body {
   max-width: 38rem;
 }
 
+/* deeper TE pass 2: break the repeating grid rhythm */
+
+@media (min-width: 761px) {
+  .story-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .story-grid .story-card:first-child,
+  .story-grid .story-card:last-child {
+    min-height: 13rem;
+  }
+
+  .stats-row {
+    grid-template-columns: 1.15fr 0.9fr 1fr;
+  }
+
+  .role-list {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .role-list .role-card:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .recent-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(18rem, 0.88fr);
+  }
+
+  .recent-list {
+    grid-template-columns: 1fr;
+  }
+
+  .conversation-grid {
+    grid-template-columns: minmax(17rem, 0.86fr) minmax(0, 1.14fr);
+  }
+
+  .article-list {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+
+  .article-list .article-card:first-child {
+    grid-row: span 2;
+  }
+
+  .principles-grid {
+    grid-template-columns: 0.95fr 1.05fr;
+  }
+
+  .principles-grid .principle-card:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .link-preview-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .link-preview-grid .link-preview-card:nth-child(1),
+  .link-preview-grid .link-preview-card:nth-child(2) {
+    grid-column: span 3;
+  }
+
+  .link-preview-grid .link-preview-card:nth-child(3),
+  .link-preview-grid .link-preview-card:nth-child(4),
+  .link-preview-grid .link-preview-card:nth-child(5),
+  .link-preview-grid .link-preview-card:nth-child(6),
+  .link-preview-grid .link-preview-card:nth-child(7),
+  .link-preview-grid .link-preview-card:nth-child(8) {
+    grid-column: span 2;
+  }
+}
+
 /* pass 2.5: scroll controls */
 
 .scroll-cue {
