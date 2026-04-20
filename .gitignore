@@ -70,3 +70,11 @@ node_modules/
 .firebase/*.cache
 transcript-guideline.txt
 site-backbone.private.md
+
+# Local AI/editor runtime state
+.agents/
+.claude/
+.factory/
+.goose/
+.windsurf/
+skills-lock.json
