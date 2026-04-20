@@ -12,10 +12,14 @@
   "devDependencies": {
     "agent-browser": "^0.21.4",
     "autoprefixer": "^10.4.20",
+    "firebase-tools": "^15.15.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
-    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --minify"
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --minify",
+    "firebase:login": "firebase login",
+    "firebase:init": "firebase init",
+    "firebase:deploy": "firebase deploy"
   }
 }

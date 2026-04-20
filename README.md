@@ -36,9 +36,17 @@ Then open `http://127.0.0.1:4173`.
 ## Deploy
 
 ```bash
-firebase login
-firebase deploy
+npm run firebase:login
+npm run firebase:deploy
 ```
+
+If you need to reconfigure Firebase for this repo, use:
+
+```bash
+npm run firebase:init
+```
+
+The project now uses the repo-local Firebase CLI from `firebase-tools`, so it no longer depends on a globally installed `firebase` binary being on your shell `PATH`.
 
 
 ## TODOS
