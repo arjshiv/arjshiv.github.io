@@ -5,6 +5,7 @@
   "main": "public/index.html",
   "author": "Arjun Kannan",
   "license": "MIT",
+  "packageManager": "bun@1.2.3",
   "browserslist": [
     "last 2 versions",
     "ie > 8"
