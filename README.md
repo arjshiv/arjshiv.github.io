@@ -5,7 +5,7 @@ Arjun Kannan's personal website. The site is a static page served from `public/`
 ## Setup
 
 ```bash
-npm install
+bun install
 ```
 
 ## Build CSS
@@ -13,7 +13,7 @@ npm install
 The site now uses a local Tailwind build instead of the CDN runtime.
 
 ```bash
-npm run build:css
+bun run build:css
 ```
 
 This compiles:
@@ -36,9 +36,17 @@ Then open `http://127.0.0.1:4173`.
 ## Deploy
 
 ```bash
-firebase login
-firebase deploy
+bun run firebase:login
+bun run firebase:deploy
 ```
+
+If you need to reconfigure Firebase for this repo, use:
+
+```bash
+bun run firebase:init
+```
+
+The project now uses Bun for dependency management and script execution, plus the repo-local Firebase CLI from `firebase-tools`, so it no longer depends on a globally installed `firebase` binary being on your shell `PATH`.
 
 
 ## TODOS
