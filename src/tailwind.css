@@ -1224,6 +1224,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .feature-card img {
   aspect-ratio: 1.48 / 1;
   object-fit: cover;
+  filter: grayscale(0.18) contrast(1.06) brightness(0.92);
+  transition: filter 220ms var(--ease-out), transform 220ms var(--ease-out);
+}
+
+.feature-card:hover img,
+.feature-card:focus-visible img {
+  filter: grayscale(0) contrast(1.03) brightness(1);
 }
 
 .feature-card:hover,
