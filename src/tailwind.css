@@ -772,6 +772,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: grid;
   gap: 1rem;
   padding: clamp(1.35rem, 2.4vw, 1.65rem);
+  counter-reset: quick-start;
 }
 
 .program-card > .panel-index {
@@ -788,8 +789,19 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .program-item {
+  counter-increment: quick-start;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.program-item::before {
+  content: '0' counter(quick-start);
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
 }
 
 .program-item strong {
