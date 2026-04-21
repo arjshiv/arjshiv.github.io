@@ -866,7 +866,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     'title title title'
     'tags tags tags';
   gap: 0.55rem;
-  max-width: 48rem;
+  max-width: none;
   margin-bottom: 1.5rem;
   align-items: center;
 }
@@ -908,6 +908,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   font-size: clamp(2.1rem, 4.8vw, 3.4rem);
   line-height: 0.95;
   letter-spacing: -0.078em;
+  max-width: 52rem;
 }
 
 .section-anchor {
@@ -933,6 +934,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
+  max-width: 52rem;
 }
 
 .tag-link {
