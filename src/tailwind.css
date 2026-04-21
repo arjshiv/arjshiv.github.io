@@ -1273,12 +1273,25 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .recent-item {
+  position: relative;
   padding: 1.1rem 0;
+  padding-right: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   color: inherit;
   transition:
     transform 180ms var(--ease-out),
     color 180ms var(--ease-out);
+}
+
+.recent-item::after {
+  content: '↗';
+  position: absolute;
+  top: 1.15rem;
+  right: 0;
+  color: var(--text-faint);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  transition: color 180ms var(--ease-out), transform 180ms var(--ease-out);
 }
 
 .recent-item:first-child {
@@ -1292,6 +1305,12 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .article-card:focus-visible {
   color: var(--text-primary);
   outline: none;
+}
+
+.recent-item:hover::after,
+.recent-item:focus-visible::after {
+  color: var(--accent);
+  transform: translate(0.12rem, -0.12rem);
 }
 
 .video-column {
