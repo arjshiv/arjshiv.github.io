@@ -1100,6 +1100,14 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   font-variant-numeric: tabular-nums;
 }
 
+.story-card:nth-child(4) {
+  grid-column: 1 / -1;
+}
+
+.story-card:nth-child(4) p:last-child {
+  max-width: 58rem;
+}
+
 .story-card h3,
 .feature-copy h3,
 .article-card h3,
