@@ -611,6 +611,20 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   box-shadow: var(--panel-shadow-strong);
 }
 
+.portrait-cutout::before {
+  content: '';
+  position: absolute;
+  inset: 0.7rem;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: calc(var(--radius-xl) - 0.85rem);
+  background:
+    linear-gradient(var(--accent-line), var(--accent-line)) left top / 2.2rem 1px no-repeat,
+    linear-gradient(var(--accent-line), var(--accent-line)) right bottom / 2.2rem 1px no-repeat,
+    linear-gradient(var(--accent-line), var(--accent-line)) left top / 1px 2.2rem no-repeat,
+    linear-gradient(var(--accent-line), var(--accent-line)) right bottom / 1px 2.2rem no-repeat;
+}
+
 .portrait-cutout img {
   aspect-ratio: 0.95 / 1.12;
   object-fit: cover;
