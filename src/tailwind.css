@@ -1339,6 +1339,25 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   cursor: pointer;
 }
 
+.video-poster::before {
+  content: '▶';
+  position: absolute;
+  inset: 50% auto auto 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 999px;
+  background: rgba(8, 8, 9, 0.72);
+  color: var(--text-primary);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+  transform: translate(-50%, -50%);
+  font-size: 0.85rem;
+  text-indent: 0.16rem;
+}
+
 .video-poster img,
 .video-frame {
   aspect-ratio: 16 / 9;
