@@ -634,9 +634,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: grid;
   gap: 0.55rem;
   width: min(100%, 16.5rem);
+  counter-reset: hero-facts;
 }
 
 .hero-fact {
+  counter-increment: hero-facts;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -650,6 +652,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   font-size: 0.71rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.hero-fact::before {
+  content: '0' counter(hero-facts);
+  color: var(--accent);
+  margin-right: 0.8rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .hero-fact:hover {
