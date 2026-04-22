@@ -1088,6 +1088,12 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   width: 2px;
   border-radius: 999px;
   background: linear-gradient(180deg, var(--accent-line) 0%, rgba(255, 255, 255, 0.04) 100%);
+  transition: opacity 180ms var(--ease-out), transform 180ms var(--ease-out);
+}
+
+.quote-panel:hover::before {
+  opacity: 1;
+  transform: scaleY(1.08);
 }
 
 .quote-label,
