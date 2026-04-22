@@ -292,6 +292,7 @@ select {
 }
 
 .nav-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -305,6 +306,14 @@ select {
   font-size: 0.69rem;
   letter-spacing: 0.155em;
   text-transform: uppercase;
+}
+
+.nav-link[aria-current='true']::before {
+  content: '';
+  position: absolute;
+  inset: auto 0.9rem 0.45rem;
+  height: 1px;
+  background: var(--accent-line);
 }
 
 .nav-link:hover,
