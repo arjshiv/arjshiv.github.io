@@ -285,6 +285,7 @@ select {
 .tag-link,
 .footer-link,
 .hero-fact {
+  touch-action: manipulation;
   transition:
     transform 180ms var(--ease-out),
     background-color 180ms var(--ease-out),
