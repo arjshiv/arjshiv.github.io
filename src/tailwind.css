@@ -739,6 +739,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     0 18px 28px -24px rgba(0, 0, 0, 0.95);
 }
 
+.primary-link:hover,
+.primary-link:focus-visible {
+  background: #fff6e8;
+}
+
 .secondary-link,
 .text-link,
 .footer-link {
