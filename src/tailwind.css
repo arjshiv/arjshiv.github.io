@@ -1860,7 +1860,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 
   .hero-title {
-    font-size: clamp(2.7rem, 17vw, 4rem);
+    font-size: clamp(2.55rem, 15vw, 3.75rem);
   }
 
   .hero-subtitle {
