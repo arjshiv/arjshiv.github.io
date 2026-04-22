@@ -218,6 +218,7 @@ select {
   height: 100%;
   transform: scaleX(0);
   transform-origin: left;
+  will-change: transform;
   background: linear-gradient(90deg, var(--accent) 0%, rgba(239, 131, 84, 0.18) 100%);
 }
 
