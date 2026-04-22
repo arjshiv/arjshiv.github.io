@@ -35,6 +35,7 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: dark;
   --bg: #080809;
   --bg-deep: #050506;
   --surface-1: rgba(18, 18, 20, 0.92);
