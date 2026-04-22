@@ -1533,6 +1533,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transform: translate(0.12rem, -0.12rem);
 }
 
+.article-card:hover p:last-child,
+.article-card:focus-visible p:last-child {
+  color: var(--text-primary);
+}
+
 .article-list .article-card:first-child,
 .faq-list .faq-card:first-child {
   padding-top: 0;
