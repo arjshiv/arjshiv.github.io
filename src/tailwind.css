@@ -1704,6 +1704,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     align-items: stretch;
   }
 
+  .poster-card::before {
+    display: none;
+  }
+
   .portrait-cutout,
   .hero-facts {
     width: min(100%, 20rem);
