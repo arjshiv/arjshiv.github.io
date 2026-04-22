@@ -1206,6 +1206,12 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .role-card {
   display: grid;
   gap: 0.8rem;
+  transition: background-color 180ms var(--ease-out), transform 180ms var(--ease-out);
+}
+
+.role-card:hover {
+  background: linear-gradient(180deg, rgba(31, 31, 35, 0.98), rgba(18, 18, 20, 0.98));
+  transform: translateY(-1px);
 }
 
 .role-head {
