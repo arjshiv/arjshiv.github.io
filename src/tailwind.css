@@ -1394,6 +1394,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transform: translate(0.12rem, -0.12rem);
 }
 
+.recent-item:hover p:last-child,
+.recent-item:focus-visible p:last-child {
+  color: var(--text-primary);
+}
+
 .video-column {
   display: grid;
   gap: 1rem;
