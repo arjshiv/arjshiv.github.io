@@ -423,8 +423,9 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .faq-card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, var(--surface-2) 0%, rgba(15, 15, 17, 0.98) 100%);
-  box-shadow: var(--panel-shadow);
+  background: var(--surface-2);
+  border: 1px solid var(--white-line);
+  box-shadow: none;
 }
 
 .poster-card,
