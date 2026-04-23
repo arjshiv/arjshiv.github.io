@@ -80,6 +80,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1.2rem);
+  scrollbar-gutter: stable;
   scrollbar-color: rgba(239, 131, 84, 0.45) rgba(255, 255, 255, 0.035);
 }
 
