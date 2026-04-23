@@ -1717,9 +1717,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   width: 3rem;
   height: 3rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--white-line-strong);
+  background: #000000;
   color: var(--text-primary);
-  box-shadow: var(--panel-shadow-strong);
+  box-shadow: none;
   opacity: 0;
   pointer-events: none;
   transform: translateY(0.65rem);
@@ -1737,7 +1738,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .back-to-top:hover,
 .back-to-top:focus-visible {
-  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--text-primary);
+  background: #000000;
   outline: none;
   box-shadow: var(--focus-ring);
 }
