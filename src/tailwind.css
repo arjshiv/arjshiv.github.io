@@ -1324,9 +1324,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   min-height: 2.15rem;
   padding: 0 0.75rem;
   border-radius: 999px;
-  background: var(--accent-soft);
-  color: #f6ba99;
-  box-shadow: 0 0 0 1px rgba(239, 131, 84, 0.2) inset;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  box-shadow: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.15em;
