@@ -1880,11 +1880,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
     z-index: 60;
     display: grid;
     gap: 0.55rem;
+    max-height: calc(100vh - var(--header-height) - 2rem);
     padding: 0.9rem;
     border-radius: 1.25rem;
     background: rgba(12, 12, 14, 0.98);
     box-shadow: var(--panel-shadow-strong);
     opacity: 0;
+    overflow-y: auto;
     pointer-events: none;
     overscroll-behavior: contain;
     transform: translateY(-0.5rem);
