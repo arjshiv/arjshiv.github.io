@@ -537,7 +537,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   right: clamp(15.5rem, 26vw, 18.5rem);
   bottom: 2rem;
   width: 1px;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.09), transparent);
+  background: var(--white-line-strong);
   z-index: 0;
 }
 
