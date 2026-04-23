@@ -201,7 +201,7 @@ select {
   position: absolute;
   inset: auto 0 0;
   height: 2px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--white-line);
 }
 
 .scroll-progress-bar {
@@ -211,7 +211,7 @@ select {
   transform: scaleX(0);
   transform-origin: left;
   will-change: transform;
-  background: linear-gradient(90deg, var(--accent) 0%, rgba(239, 131, 84, 0.18) 100%);
+  background: var(--accent);
 }
 
 .topbar-inner {
