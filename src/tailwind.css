@@ -183,10 +183,8 @@ select {
   position: sticky;
   top: 0;
   z-index: 50;
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  background: rgba(8, 8, 9, 0.78);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.96);
+  border-bottom: 1px solid var(--white-line);
   transition:
     background-color 220ms var(--ease-out),
     border-color 220ms var(--ease-out),
@@ -194,9 +192,9 @@ select {
 }
 
 .topbar-scrolled {
-  background: rgba(10, 10, 11, 0.92);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 18px 38px -34px rgba(0, 0, 0, 0.95);
+  background: #000000;
+  border-bottom-color: var(--white-line-strong);
+  box-shadow: none;
 }
 
 .scroll-progress {
