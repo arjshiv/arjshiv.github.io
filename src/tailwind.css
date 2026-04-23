@@ -834,9 +834,9 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .program-card h2 {
   margin: 0;
   max-width: 11ch;
-  font-size: clamp(1.9rem, 3.4vw, 2.8rem);
+  font-size: 2.35rem;
   line-height: 0.96;
-  letter-spacing: -0.07em;
+  letter-spacing: 0;
   text-wrap: balance;
 }
 
