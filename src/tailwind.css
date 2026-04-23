@@ -861,7 +861,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   margin-bottom: 0.45rem;
   color: var(--text-primary);
   font-size: 1.08rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .scroll-cue {
