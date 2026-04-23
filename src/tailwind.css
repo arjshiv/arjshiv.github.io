@@ -1016,7 +1016,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   padding-left: 1rem;
   border-left: 2px solid var(--accent-line);
   color: var(--text-primary);
-  font-size: clamp(1.08rem, 1.7vw, 1.22rem);
+  font-size: 1.16rem;
   line-height: 1.6;
 }
 
