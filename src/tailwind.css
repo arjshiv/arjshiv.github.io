@@ -1646,8 +1646,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .link-preview-card::before {
   content: '↗';
   position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
+  top: 1.3rem;
+  right: 1.3rem;
   z-index: 2;
   display: inline-flex;
   align-items: center;
