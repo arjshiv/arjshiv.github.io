@@ -290,10 +290,11 @@ select {
   justify-content: center;
   min-height: 2.7rem;
   padding: 0 0.92rem;
-  border-radius: 0.88rem;
+  border-radius: 999px;
   color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.028);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  background: transparent;
+  border: 1px solid transparent;
+  box-shadow: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.69rem;
   letter-spacing: 0.155em;
@@ -312,8 +313,9 @@ select {
 .nav-link:focus-visible,
 .nav-link[aria-current='true'] {
   color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  background: transparent;
+  border-color: var(--white-line-strong);
+  box-shadow: none;
   outline: none;
 }
 
