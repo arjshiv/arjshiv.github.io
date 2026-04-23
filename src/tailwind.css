@@ -262,7 +262,7 @@ select {
 .brand-mark-name {
   font-size: 1.04rem;
   font-weight: 600;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   color: var(--text-primary);
 }
 
