@@ -1020,7 +1020,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .console-track span {
   width: min(9rem, 25vw);
   height: 2px;
-  background: linear-gradient(90deg, var(--accent-line) 0%, rgba(255, 255, 255, 0.08) 100%);
+  background: var(--white-line-strong);
 }
 
 .console-track.compact span {
@@ -1079,7 +1079,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .quote-panel {
   padding: 1.35rem;
-  background: linear-gradient(180deg, rgba(23, 23, 26, 0.94) 0%, rgba(15, 15, 17, 0.98) 100%);
+  background: var(--surface-2);
 }
 
 .quote-panel::before {
@@ -1088,7 +1088,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   inset: 1.35rem auto 1.35rem 1.35rem;
   width: 2px;
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--accent-line) 0%, rgba(255, 255, 255, 0.04) 100%);
+  background: var(--accent);
   transition: opacity 180ms var(--ease-out), transform 180ms var(--ease-out);
 }
 
