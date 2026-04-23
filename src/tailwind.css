@@ -301,7 +301,7 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.55rem;
+  min-height: 2.7rem;
   padding: 0 0.92rem;
   border-radius: 0.88rem;
   color: var(--text-muted);
