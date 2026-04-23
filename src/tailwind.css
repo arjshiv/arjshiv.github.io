@@ -1192,7 +1192,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   margin: 0.55rem 0 0.6rem;
   font-size: 1.4rem;
   line-height: 1.02;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .stats-row {
