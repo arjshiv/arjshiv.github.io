@@ -1308,7 +1308,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .feature-card:focus-visible,
 .link-preview-card:hover,
 .link-preview-card:focus-visible {
-  box-shadow: var(--panel-shadow-strong);
+  border-color: var(--white-line-strong);
+  box-shadow: none;
 }
 
 .feature-copy {
