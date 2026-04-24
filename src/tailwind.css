@@ -526,7 +526,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .poster-card {
   min-height: 39rem;
-  padding: clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(1.75rem, 3.4vw, 2.4rem);
 }
 
 .poster-card::before {
