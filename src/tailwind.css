@@ -190,7 +190,7 @@ select {
 }
 
 .topbar-scrolled {
-  background: #000000;
+  background: rgba(8, 8, 9, 0.96);
   border-bottom-color: var(--white-line-strong);
   box-shadow: none;
 }
@@ -1425,7 +1425,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 999px;
-  background: #000000;
+  background: var(--bg-deep);
   color: var(--text-primary);
   border: 1px solid var(--white-line-strong);
   box-shadow: none;
