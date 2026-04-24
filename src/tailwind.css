@@ -53,8 +53,8 @@
   --white-line-strong: #333333;
   --panel-shadow: none;
   --panel-shadow-strong: none;
-  --focus-outline: var(--accent);
-  --focus-offset: 0.22rem;
+  --focus-outline: #d7b0b1;
+  --focus-offset: 0.18rem;
   --radius-xl: 1rem;
   --radius-lg: 1rem;
   --radius-md: 1rem;
