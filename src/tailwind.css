@@ -555,10 +555,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .hero-title {
   margin: 0.9rem 0 0;
-  max-width: 8ch;
-  font-size: clamp(3.5rem, 5.6rem, 5.6rem);
-  line-height: 0.88;
-  letter-spacing: 0;
+  max-width: 9ch;
+  font-size: clamp(3.25rem, 5.1vw, 5.25rem);
+  line-height: 0.92;
+  letter-spacing: -0.045em;
   font-feature-settings: 'kern' 1, 'liga' 1;
   text-wrap: balance;
 }
