@@ -619,6 +619,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .hero-copy {
   hyphens: none;
   overflow-wrap: normal;
+  max-width: 62ch;
 }
 
 .hero-utility-column {
