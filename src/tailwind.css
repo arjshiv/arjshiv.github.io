@@ -630,8 +630,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .portrait-cutout {
-  width: min(100%, 16.5rem);
-  margin: 0;
+  width: min(100%, 17.25rem);
+  margin: 0.35rem 0 0 auto;
   border: 1px solid var(--white-line-strong);
   border-radius: 0.75rem;
   overflow: hidden;
