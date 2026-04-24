@@ -1170,11 +1170,11 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .story-card:nth-child(4) {
-  grid-column: 1 / -1;
+  grid-column: 2;
 }
 
 .story-card:nth-child(4) p:last-child {
-  max-width: 58rem;
+  max-width: 32rem;
 }
 
 .story-card h3,
