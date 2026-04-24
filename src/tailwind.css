@@ -74,7 +74,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1.2rem);
   scrollbar-gutter: stable;
-  scrollbar-color: rgba(215, 25, 33, 0.7) #111111;
+  scrollbar-color: rgba(183, 67, 70, 0.62) var(--surface-2);
 }
 
 ::-webkit-scrollbar {
@@ -82,13 +82,13 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #111111;
+  background: var(--surface-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 3px solid #000000;
+  border: 3px solid var(--bg-deep);
   border-radius: 999px;
-  background: rgba(215, 25, 33, 0.7);
+  background: rgba(183, 67, 70, 0.62);
 }
 
 body {
