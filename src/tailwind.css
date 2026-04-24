@@ -1319,8 +1319,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .feature-card {
   display: grid;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.15rem;
+  padding: 1.1rem;
 }
 
 .feature-card img,
@@ -1330,7 +1330,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .feature-card img {
-  aspect-ratio: 1.48 / 1;
+  aspect-ratio: 1.62 / 1;
   object-fit: cover;
   filter: grayscale(1) contrast(1.12) brightness(0.88);
   transition: filter 220ms var(--ease-out), transform 220ms var(--ease-out);
