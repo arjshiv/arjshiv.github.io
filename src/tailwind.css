@@ -1123,7 +1123,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .story-grid,
 .principles-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   gap: 1rem;
   margin-top: 1.5rem;
 }
