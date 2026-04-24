@@ -36,12 +36,12 @@
 
 :root {
   color-scheme: dark;
-  --bg: #000000;
-  --bg-deep: #000000;
-  --surface-1: #0b0b0b;
-  --surface-2: #111111;
-  --surface-3: #1a1a1a;
-  --surface-raised: #1a1a1a;
+  --bg: #080809;
+  --bg-deep: #050506;
+  --surface-1: #0d0d0f;
+  --surface-2: #121214;
+  --surface-3: #1b1b1e;
+  --surface-raised: #1b1b1e;
   --text-primary: #e8e8e8;
   --text-secondary: #999999;
   --text-muted: #777777;
