@@ -1698,7 +1698,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .link-preview-card img {
-  aspect-ratio: 1.5 / 1;
+  aspect-ratio: 1.42 / 1;
   object-fit: cover;
   filter: grayscale(1) contrast(1.08) brightness(0.92);
   transition: filter 220ms var(--ease-out);
