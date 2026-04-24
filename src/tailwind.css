@@ -1258,7 +1258,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .role-list {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.82fr) minmax(0, 0.82fr);
+  align-items: start;
 }
 
 .role-card {
