@@ -1663,7 +1663,8 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .link-preview-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: start;
 }
 
 .link-preview-card {
