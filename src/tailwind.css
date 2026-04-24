@@ -1497,7 +1497,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   justify-content: space-between;
   gap: 0.8rem;
   padding: 1.05rem;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(8, 8, 9, 0.9);
 }
 
 .video-title {
