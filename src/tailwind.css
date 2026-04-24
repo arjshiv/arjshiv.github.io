@@ -2013,11 +2013,13 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 
   .hero-title {
-    font-size: 3.1rem;
+    font-size: 2.9rem;
+    letter-spacing: -0.04em;
   }
 
   .hero-subtitle {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
+    max-width: 24rem;
   }
 
   .hero-actions,
