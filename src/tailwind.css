@@ -946,10 +946,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   align-items: center;
   gap: 0.7rem;
   margin: 0;
-  font-size: 3rem;
-  line-height: 0.95;
-  letter-spacing: 0;
-  max-width: 52rem;
+  font-size: clamp(2.35rem, 4.2vw, 3.25rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  max-width: 48rem;
 }
 
 .section-anchor {
