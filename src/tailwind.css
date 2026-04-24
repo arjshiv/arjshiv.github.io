@@ -766,6 +766,14 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   transform: none;
 }
 
+.feature-card:active,
+.link-preview-card:active,
+.video-poster:active,
+.recent-item:active,
+.article-card:active {
+  transform: translateY(1px) scale(0.992);
+}
+
 .primary-link:active,
 .secondary-link:active,
 .text-link:active,
