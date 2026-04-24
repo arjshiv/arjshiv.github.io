@@ -901,14 +901,14 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .section-heading {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: minmax(7rem, auto) 1fr auto;
   grid-template-areas:
     'kicker line index'
-    'title title title'
-    'tags tags tags';
-  gap: 0.55rem;
+    '. title title'
+    '. tags tags';
+  gap: 0.65rem 0.85rem;
   max-width: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   align-items: center;
 }
 
