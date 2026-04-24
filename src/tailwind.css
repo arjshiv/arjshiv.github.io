@@ -1088,8 +1088,9 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .quote-panel {
-  padding: 1.35rem;
+  padding: 1.45rem 1.45rem 1.35rem;
   background: var(--surface-2);
+  margin-top: 1.25rem;
 }
 
 .quote-panel::before {
