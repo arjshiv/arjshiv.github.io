@@ -556,6 +556,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 33rem;
 }
 
 .hero-title {
