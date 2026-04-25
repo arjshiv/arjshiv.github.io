@@ -100,6 +100,7 @@ body {
   color: var(--text-primary);
   background: var(--bg);
   font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.006em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
