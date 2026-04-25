@@ -728,14 +728,14 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .primary-link {
-  background: var(--text-primary);
+  background: #ded7d2;
   color: var(--bg);
   box-shadow: none;
 }
 
 .primary-link:hover,
 .primary-link:focus-visible {
-  background: var(--text-display, #ffffff);
+  background: #f0ebe6;
 }
 
 .secondary-link,
