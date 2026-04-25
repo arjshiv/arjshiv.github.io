@@ -228,8 +228,9 @@ select {
 .brand-mark {
   display: inline-flex;
   align-items: center;
-  gap: 0.78rem;
+  gap: 0.68rem;
   min-height: 3rem;
+  padding-right: 0.8rem;
 }
 
 .brand-mark-led {
