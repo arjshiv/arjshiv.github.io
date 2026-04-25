@@ -42,6 +42,7 @@
   --surface-2: #121214;
   --surface-3: #1b1b1e;
   --surface-raised: #1b1b1e;
+  --surface-hover: #18181b;
   --text-primary: #e8e8e8;
   --text-secondary: #999999;
   --text-muted: #777777;
@@ -51,6 +52,7 @@
   --accent-line: rgba(183, 67, 70, 0.72);
   --white-line: #222222;
   --white-line-strong: #333333;
+  --rule-subtle: rgba(255, 255, 255, 0.075);
   --panel-shadow: none;
   --panel-shadow-strong: none;
   --focus-outline: #d7b0b1;
