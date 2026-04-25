@@ -1206,10 +1206,10 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .link-preview-copy h3,
 .role-head h3,
 .principle-card h3 {
-  margin: 0.55rem 0 0.6rem;
-  font-size: 1.4rem;
-  line-height: 1.02;
-  letter-spacing: 0;
+  margin: 0.5rem 0 0.55rem;
+  font-size: 1.34rem;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
 }
 
 .stats-row {
