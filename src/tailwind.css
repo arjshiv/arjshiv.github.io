@@ -235,8 +235,8 @@ select {
 
 .brand-mark-led {
   flex: none;
-  width: 0.62rem;
-  height: 0.62rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 999px;
   background: var(--accent);
   box-shadow: none;
