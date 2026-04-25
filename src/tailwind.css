@@ -185,8 +185,8 @@ select {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(0, 0, 0, 0.96);
-  border-bottom: 1px solid var(--white-line);
+  background: rgba(8, 8, 9, 0.96);
+  border-bottom: 1px solid var(--rule-subtle);
   transition:
     background-color 220ms var(--ease-out),
     border-color 220ms var(--ease-out);
