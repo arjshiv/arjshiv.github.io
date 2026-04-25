@@ -290,8 +290,8 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.7rem;
-  padding: 0 0.92rem;
+  min-height: 2.6rem;
+  padding: 0 0.78rem;
   border-radius: 999px;
   color: var(--text-muted);
   background: transparent;
@@ -299,7 +299,7 @@ select {
   box-shadow: none;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.69rem;
-  letter-spacing: 0.155em;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
 }
 
