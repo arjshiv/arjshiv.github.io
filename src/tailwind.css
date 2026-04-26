@@ -2506,3 +2506,13 @@ body::after {
 .console-led-bank span:first-child {
   background: var(--accent);
 }
+
+/* Nothing update 27: Segment stats like hardware */
+.stats-row {
+  background: transparent;
+  border-color: var(--white-line);
+}
+
+.stat-card {
+  background: transparent;
+}
