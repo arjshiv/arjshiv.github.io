@@ -2442,3 +2442,18 @@ body::after {
 .primary-link:focus-visible {
   background: var(--text-primary);
 }
+
+/* Nothing update 22: Technical secondary actions */
+.secondary-link,
+.text-link,
+.footer-link {
+  background: transparent;
+  border-color: var(--white-line-strong);
+  border-radius: 0.25rem;
+}
+
+.secondary-link:hover,
+.text-link:hover,
+.footer-link:hover {
+  background: rgba(244, 241, 234, 0.055);
+}
