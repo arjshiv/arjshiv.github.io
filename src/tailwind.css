@@ -2429,3 +2429,16 @@ body::after {
 .hero-fact::before {
   color: var(--accent);
 }
+
+/* Nothing update 21: Flatten primary actions */
+.primary-link {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+  color: #000;
+  box-shadow: none;
+}
+
+.primary-link:hover,
+.primary-link:focus-visible {
+  background: var(--text-primary);
+}
