@@ -2726,3 +2726,13 @@ body::after {
     border-radius: var(--radius-xl);
   }
 }
+
+/* Nothing update 47: Add dot-matrix hero surface */
+.poster-card .panel-heading::after {
+  content: '';
+  width: 4.25rem;
+  height: 1rem;
+  background-image: radial-gradient(circle, rgba(244, 241, 234, 0.5) 1px, transparent 1.3px);
+  background-size: 6px 6px;
+  opacity: 0.42;
+}
