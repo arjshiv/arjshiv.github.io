@@ -2417,3 +2417,15 @@ body::after {
 .portrait-cutout img {
   filter: grayscale(1) contrast(1.12) brightness(0.86);
 }
+
+/* Nothing update 20: Make hero facts instrument rows */
+.hero-fact {
+  border-radius: 0.25rem;
+  background: #050505;
+  min-height: 2.72rem;
+  box-shadow: none;
+}
+
+.hero-fact::before {
+  color: var(--accent);
+}
