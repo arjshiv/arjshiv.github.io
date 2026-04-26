@@ -2344,3 +2344,19 @@ body::after {
   transform: skewY(-7deg) rotate(-2deg);
   background-image: repeating-linear-gradient(0deg, rgba(244, 241, 234, 0.13) 0 1px, transparent 1px 14px);
 }
+
+/* Nothing update 14: Return display type to system voice */
+.hero-title,
+.section-heading h2,
+.program-card h2,
+.story-card h3,
+.feature-copy h3,
+.article-card h3,
+.link-preview-copy h3,
+.role-head h3,
+.principle-card h3,
+.quote-copy,
+.site-footer-copy,
+.stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+}
