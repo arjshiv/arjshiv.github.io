@@ -2368,3 +2368,19 @@ body::after {
   line-height: 0.84;
   letter-spacing: -0.035em;
 }
+
+/* Nothing update 16: Constrain heading budget */
+.section-heading h2 {
+  font-size: clamp(2.25rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 0.94;
+}
+
+.story-card h3,
+.feature-copy h3,
+.article-card h3,
+.link-preview-copy h3,
+.role-head h3,
+.principle-card h3 {
+  font-size: 1.34rem;
+}
