@@ -2587,3 +2587,13 @@ body::after {
   color: var(--accent);
   border-color: var(--accent);
 }
+
+/* Nothing update 35: Tighten recent list rhythm */
+.recent-item {
+  padding-block: 0.92rem;
+  border-top-color: var(--rule-subtle);
+}
+
+.recent-item::after {
+  color: var(--text-faint);
+}
