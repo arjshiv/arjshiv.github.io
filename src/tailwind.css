@@ -2491,3 +2491,18 @@ body::after {
 .section-heading::before {
   background: var(--rule-subtle);
 }
+
+/* Nothing update 26: Mechanical console indicators */
+.console-track span {
+  background: rgba(244, 241, 234, 0.24);
+}
+
+.console-dial,
+.console-gauge span {
+  background: transparent;
+  box-shadow: none;
+}
+
+.console-led-bank span:first-child {
+  background: var(--accent);
+}
