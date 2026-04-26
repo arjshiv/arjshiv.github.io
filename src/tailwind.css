@@ -2516,3 +2516,14 @@ body::after {
 .stat-card {
   background: transparent;
 }
+
+/* Nothing update 28: Make stat values data-first */
+.stat-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.stat-card::before {
+  background: var(--accent);
+}
