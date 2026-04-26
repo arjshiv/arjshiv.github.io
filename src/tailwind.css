@@ -2539,3 +2539,16 @@ body::after {
 .link-preview-card:hover {
   box-shadow: none;
 }
+
+/* Nothing update 30: Make story cards sparse */
+.story-card {
+  background: #050505;
+}
+
+.story-card::before {
+  color: var(--text-faint);
+}
+
+.story-card:hover::before {
+  color: var(--accent);
+}
