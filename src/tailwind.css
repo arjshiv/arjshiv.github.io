@@ -2644,3 +2644,13 @@ body::after {
   border-color: var(--accent);
   background: transparent;
 }
+
+/* Nothing update 40: FAQ open state stays quiet */
+.faq-card[open] {
+  background: #050505;
+  border-left-color: var(--accent);
+}
+
+.faq-card summary::after {
+  color: var(--accent);
+}
