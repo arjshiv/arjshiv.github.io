@@ -2457,3 +2457,16 @@ body::after {
 .footer-link:hover {
   background: rgba(244, 241, 234, 0.055);
 }
+
+/* Nothing update 23: Convert tags to system chips */
+.tag-link {
+  background: transparent;
+  border-radius: 0.25rem;
+  min-height: 2.42rem;
+}
+
+.tag-link:hover,
+.tag-link:focus-visible {
+  border-color: var(--text-primary);
+  background: rgba(244, 241, 234, 0.055);
+}
