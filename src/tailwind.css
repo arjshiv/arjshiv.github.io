@@ -2709,3 +2709,20 @@ body::after {
     background: rgba(0, 0, 0, 0.72);
   }
 }
+
+/* Nothing update 46: Mobile radii stay technical */
+@media (max-width: 760px) {
+  .poster-card,
+  .program-card,
+  .feature-card,
+  .link-preview-card,
+  .story-card,
+  .stat-card,
+  .role-card,
+  .article-card,
+  .principle-card,
+  .quote-panel,
+  .faq-card {
+    border-radius: var(--radius-xl);
+  }
+}
