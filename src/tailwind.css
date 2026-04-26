@@ -2768,3 +2768,18 @@ body::after {
 .faq-card summary:focus-visible {
   outline-color: var(--accent);
 }
+
+/* Nothing update 50: Final Nothing/Kris synthesis */
+.site-body {
+  background: transparent;
+}
+
+::-moz-selection,
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+img {
+  outline-color: rgba(244, 241, 234, 0.14);
+}
