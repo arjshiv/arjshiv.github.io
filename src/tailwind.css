@@ -2579,3 +2579,11 @@ body::after {
 .link-preview-card:focus-visible img {
   filter: grayscale(1) contrast(1.12) brightness(0.9);
 }
+
+/* Nothing update 34: Limit red to badge events */
+.feature-badge {
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
