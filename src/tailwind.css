@@ -2292,3 +2292,21 @@ body::after {
 .hero-section {
   gap: 1.25rem;
 }
+
+/* Nothing update 10: Flatten panel surfaces */
+.poster-card,
+.program-card,
+.story-card,
+.stat-card,
+.role-card,
+.feature-card,
+.video-card,
+.article-card,
+.principle-card,
+.link-preview-card,
+.quote-panel,
+.faq-card {
+  background: rgba(9, 9, 9, 0.92);
+  box-shadow: none;
+  border-color: var(--white-line);
+}
