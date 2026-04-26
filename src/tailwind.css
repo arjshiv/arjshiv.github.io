@@ -2310,3 +2310,18 @@ body::after {
   box-shadow: none;
   border-color: var(--white-line);
 }
+
+/* Nothing update 11: Remove decorative panel glows */
+.poster-card::after,
+.program-card::after,
+.feature-card::after,
+.link-preview-card::after,
+.story-card::after,
+.stat-card::after,
+.role-card::after,
+.video-card::after,
+.principle-card::after,
+.quote-panel::after,
+.faq-card::after {
+  display: none;
+}
