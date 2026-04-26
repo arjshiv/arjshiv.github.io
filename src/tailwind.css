@@ -2263,3 +2263,17 @@ body::after {
 .brand-mark-name {
   font-weight: 500;
 }
+
+/* Nothing update 07: Square primary navigation */
+.nav-link {
+  border-radius: 0.25rem;
+  min-height: 2.45rem;
+  padding-inline: 0.72rem;
+}
+
+.nav-link:focus-visible,
+.nav-link:hover,
+.nav-link[aria-current='true'] {
+  background: rgba(244, 241, 234, 0.055);
+  box-shadow: none;
+}
