@@ -2384,3 +2384,18 @@ body::after {
 .principle-card h3 {
   font-size: 1.34rem;
 }
+
+/* Nothing update 17: Make label layer consistently mono */
+.section-kicker,
+.panel-index,
+.quote-label,
+.story-label,
+.article-meta,
+.video-meta,
+.stat-label,
+.program-head,
+.hero-note-label,
+.role-head p {
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
