@@ -2242,3 +2242,12 @@ body::after {
 .topbar {
   border-bottom-color: rgba(244, 241, 234, 0.12);
 }
+
+/* Nothing update 05: Set progress as red interrupt */
+.scroll-progress {
+  background: rgba(244, 241, 234, 0.1);
+}
+
+.scroll-progress-bar {
+  background: var(--accent);
+}
