@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Space Grotesk"', 'sans-serif'],
-        mono: ['"IBM Plex Mono"', 'monospace'],
+        display: ['"Azeret Mono"', 'monospace'],
+        mono: ['"Fragment Mono"', 'monospace'],
       },
       colors: {
         text: {
