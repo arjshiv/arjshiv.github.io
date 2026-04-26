@@ -2337,3 +2337,10 @@ body::after {
   border-color: rgba(244, 241, 234, 0.22);
   box-shadow: none;
 }
+
+/* Nothing update 13: Make monolith wireframe precise */
+.poster-card::before {
+  width: clamp(6rem, 13vw, 10rem);
+  transform: skewY(-7deg) rotate(-2deg);
+  background-image: repeating-linear-gradient(0deg, rgba(244, 241, 234, 0.13) 0 1px, transparent 1px 14px);
+}
