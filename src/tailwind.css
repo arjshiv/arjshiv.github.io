@@ -2399,3 +2399,11 @@ body::after {
   letter-spacing: 0.18em;
   color: var(--text-muted);
 }
+
+/* Nothing update 18: Flatten hero note */
+.hero-note {
+  background: #050505;
+  border: 1px solid var(--white-line);
+  border-left: 1px solid var(--accent);
+  box-shadow: none;
+}
