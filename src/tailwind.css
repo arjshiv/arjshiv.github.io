@@ -2619,3 +2619,16 @@ body::after {
 .video-play {
   border-radius: 0.25rem;
 }
+
+/* Nothing update 38: Article arrows as interrupt only */
+.article-card::before,
+.recent-item::after,
+.link-preview-card::before {
+  color: var(--text-faint);
+}
+
+.article-card:hover::before,
+.recent-item:hover::after,
+.link-preview-card:hover::before {
+  color: var(--accent);
+}
