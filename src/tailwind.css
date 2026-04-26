@@ -2470,3 +2470,13 @@ body::after {
   border-color: var(--text-primary);
   background: rgba(244, 241, 234, 0.055);
 }
+
+/* Nothing update 24: Flatten program card */
+.program-card {
+  background: #050505;
+  border-radius: var(--radius-xl);
+}
+
+.program-item {
+  border-top-color: var(--rule-subtle);
+}
