@@ -2665,3 +2665,8 @@ body::after {
   background: #000;
   border-radius: 0.25rem;
 }
+
+/* Nothing update 42: Link preview media monochrome */
+.link-preview-card img {
+  filter: grayscale(1) contrast(1.08) brightness(0.84);
+}
