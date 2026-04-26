@@ -2561,3 +2561,13 @@ body::after {
 .role-head h3 a::after {
   color: var(--accent);
 }
+
+/* Nothing update 32: Feature cards as product frames */
+.feature-card {
+  background: #050505;
+  border-radius: var(--radius-xl);
+}
+
+.feature-card img {
+  filter: grayscale(1) contrast(1.08) brightness(0.82);
+}
