@@ -2750,3 +2750,21 @@ body::after {
   background: var(--rule-subtle);
   display: block;
 }
+
+/* Nothing update 49: Focus is visible but quiet */
+.primary-link:focus-visible,
+.secondary-link:focus-visible,
+.text-link:focus-visible,
+.footer-link:focus-visible,
+.tag-link:focus-visible,
+.hero-fact:focus-visible,
+.scroll-cue:focus-visible,
+.feature-card:focus-visible,
+.link-preview-card:focus-visible,
+.video-poster:focus-visible,
+.recent-item:focus-visible,
+.article-card:focus-visible,
+.nav-link:focus-visible,
+.faq-card summary:focus-visible {
+  outline-color: var(--accent);
+}
