@@ -2251,3 +2251,15 @@ body::after {
 .scroll-progress-bar {
   background: var(--accent);
 }
+
+/* Nothing update 06: Tune brand glyph dot */
+.brand-mark-led {
+  width: 0.42rem;
+  height: 0.42rem;
+  background: var(--accent);
+  box-shadow: none;
+}
+
+.brand-mark-name {
+  font-weight: 500;
+}
