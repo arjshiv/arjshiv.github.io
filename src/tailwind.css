@@ -2407,3 +2407,13 @@ body::after {
   border-left: 1px solid var(--accent);
   box-shadow: none;
 }
+
+/* Nothing update 19: Grade portrait monochrome */
+.portrait-cutout {
+  border-radius: var(--radius-lg);
+  box-shadow: none;
+}
+
+.portrait-cutout img {
+  filter: grayscale(1) contrast(1.12) brightness(0.86);
+}
