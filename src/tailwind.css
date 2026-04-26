@@ -2736,3 +2736,17 @@ body::after {
   background-size: 6px 6px;
   opacity: 0.42;
 }
+
+/* Nothing update 48: Add panel tick marks */
+.program-card::before,
+.feature-card::before,
+.link-preview-card::after {
+  content: '';
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 1.35rem;
+  height: 1px;
+  background: var(--rule-subtle);
+  display: block;
+}
