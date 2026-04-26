@@ -2224,3 +2224,9 @@ body::before {
   mix-blend-mode: normal;
   opacity: 0.12;
 }
+
+/* Nothing update 03: Expose structural rails */
+body::after {
+  width: min(calc(100% - 2.5rem), var(--max-width));
+  border-inline: 1px solid rgba(244, 241, 234, 0.055);
+}
