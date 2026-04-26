@@ -2230,3 +2230,15 @@ body::after {
   width: min(calc(100% - 2.5rem), var(--max-width));
   border-inline: 1px solid rgba(244, 241, 234, 0.055);
 }
+
+/* Nothing update 04: Make topbar flat hardware */
+.topbar,
+.topbar-scrolled {
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.topbar {
+  border-bottom-color: rgba(244, 241, 234, 0.12);
+}
