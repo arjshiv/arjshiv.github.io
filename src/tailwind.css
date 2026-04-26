@@ -2632,3 +2632,15 @@ body::after {
 .link-preview-card:hover::before {
   color: var(--accent);
 }
+
+/* Nothing update 39: Principle counters as index chips */
+.principle-card::before {
+  border-radius: 0.25rem;
+  background: transparent;
+}
+
+.principle-card:hover::before {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: transparent;
+}
