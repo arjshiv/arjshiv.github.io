@@ -2696,3 +2696,16 @@ body::after {
 .article-card {
   transition-duration: 120ms;
 }
+
+/* Nothing update 45: Mobile nav inherits black system */
+@media (max-width: 760px) {
+  .main-nav {
+    background: #050505;
+    border-radius: var(--radius-xl);
+    box-shadow: none;
+  }
+
+  .nav-scrim {
+    background: rgba(0, 0, 0, 0.72);
+  }
+}
