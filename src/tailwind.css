@@ -2480,3 +2480,14 @@ body::after {
 .program-item {
   border-top-color: var(--rule-subtle);
 }
+
+/* Nothing update 25: Use spacing before dividers */
+.section-block {
+  padding-top: clamp(5.5rem, 9vw, 8rem);
+}
+
+.section-block::before,
+.site-footer::before,
+.section-heading::before {
+  background: var(--rule-subtle);
+}
