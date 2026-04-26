@@ -2283,3 +2283,12 @@ body::after {
   inset: auto 0.72rem 0.36rem;
   background: var(--accent);
 }
+
+/* Nothing update 09: Reduce shell density */
+.page-shell {
+  padding-top: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.hero-section {
+  gap: 1.25rem;
+}
