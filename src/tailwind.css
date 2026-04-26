@@ -2610,3 +2610,12 @@ body::after {
   background: #f4f1ea;
   border-color: #f4f1ea;
 }
+
+/* Nothing update 37: Flatten video overlay */
+.video-overlay {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.video-play {
+  border-radius: 0.25rem;
+}
