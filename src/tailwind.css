@@ -2654,3 +2654,14 @@ body::after {
 .faq-card summary::after {
   color: var(--accent);
 }
+
+/* Nothing update 41: Link preview panels flatten */
+.link-preview-card {
+  background: #050505;
+  border-radius: var(--radius-xl);
+}
+
+.link-preview-card::before {
+  background: #000;
+  border-radius: 0.25rem;
+}
