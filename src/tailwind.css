@@ -2552,3 +2552,12 @@ body::after {
 .story-card:hover::before {
   color: var(--accent);
 }
+
+/* Nothing update 31: Role cards as system panels */
+.role-card {
+  background: #050505;
+}
+
+.role-head h3 a::after {
+  color: var(--accent);
+}
