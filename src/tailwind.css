@@ -2597,3 +2597,16 @@ body::after {
 .recent-item::after {
   color: var(--text-faint);
 }
+
+/* Nothing update 36: Make video controls physical */
+.video-poster::before {
+  background: #f4f1ea;
+  border-color: #f4f1ea;
+  box-shadow: none;
+}
+
+.video-poster:hover::before,
+.video-poster:focus-visible::before {
+  background: #f4f1ea;
+  border-color: #f4f1ea;
+}
