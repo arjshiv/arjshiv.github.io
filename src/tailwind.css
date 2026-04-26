@@ -2527,3 +2527,15 @@ body::after {
 .stat-card::before {
   background: var(--accent);
 }
+
+/* Nothing update 29: Reduce card motion */
+.story-card:hover,
+.role-card:hover {
+  transform: none;
+  background: #0d0d0d;
+}
+
+.feature-card:hover,
+.link-preview-card:hover {
+  box-shadow: none;
+}
