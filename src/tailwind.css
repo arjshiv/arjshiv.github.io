@@ -2682,3 +2682,17 @@ body::after {
   border-radius: 0.25rem;
   box-shadow: none;
 }
+
+/* Nothing update 44: Percussive transition timing */
+.nav-link,
+.nav-toggle,
+.primary-link,
+.secondary-link,
+.text-link,
+.tag-link,
+.footer-link,
+.hero-fact,
+.recent-item,
+.article-card {
+  transition-duration: 120ms;
+}
