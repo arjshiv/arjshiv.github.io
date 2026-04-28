@@ -3004,3 +3004,8 @@ img {
   --accent: #cf252b;
   --accent-line: rgba(207, 37, 43, 0.74);
 }
+
+/* Taste update 04: Soften the global ground without returning to gradients */
+body {
+  background: radial-gradient(circle at 12% 0%, rgba(64, 43, 36, 0.18), transparent 24rem), #020202;
+}
