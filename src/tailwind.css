@@ -3009,3 +3009,12 @@ img {
 body {
   background: radial-gradient(circle at 12% 0%, rgba(64, 43, 36, 0.18), transparent 24rem), #020202;
 }
+
+/* Taste update 05: Break the dot matrix into a less wallpaper-like scan field */
+body::before {
+  background-image:
+    radial-gradient(circle, rgba(244, 241, 234, 0.2) 0.55px, transparent 0.65px),
+    linear-gradient(90deg, transparent 0 49%, rgba(244, 241, 234, 0.035) 50%, transparent 51% 100%);
+  background-size: 12px 12px, 72px 100%;
+  opacity: 0.105;
+}
