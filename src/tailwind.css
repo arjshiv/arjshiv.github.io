@@ -3262,3 +3262,10 @@ body::after {
 .link-preview-card:nth-child(4n + 3) {
   margin-top: 2.2rem;
 }
+
+/* Taste update 46: Reduce arrow button dominance on link previews */
+.link-preview-card::before {
+  width: 1.9rem;
+  height: 1.9rem;
+  background: rgba(5, 5, 5, 0.88);
+}
