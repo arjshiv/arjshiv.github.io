@@ -3147,3 +3147,12 @@ body::after {
   border-color: var(--accent);
   color: var(--accent-pale);
 }
+
+/* Taste update 27: Let section headings breathe without feeling oversized */
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  letter-spacing: 0;
+}
