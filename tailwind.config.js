@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['"Azeret Mono"', 'monospace'],
-        mono: ['"Fragment Mono"', 'monospace'],
+        display: ['"Geist Mono"', 'monospace'],
+        mono: ['"Geist Mono"', 'monospace'],
       },
       colors: {
         text: {

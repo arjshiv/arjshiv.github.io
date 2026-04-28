@@ -73,7 +73,7 @@ body {
   background:
     linear-gradient(115deg, rgba(85, 41, 27, 0.34), transparent 26rem),
     linear-gradient(180deg, #080101 0%, #0d0403 48%, #050202 100%);
-  font-family: 'Atkinson Hyperlegible', ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -234,7 +234,7 @@ select {
 
 .brand-mark-role {
   color: var(--text-muted);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -274,7 +274,7 @@ select {
   background: transparent;
   border: 1px solid transparent;
   box-shadow: none;
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.69rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -319,7 +319,7 @@ select {
 }
 
 .nav-toggle-label {
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -519,7 +519,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .hero-note-label {
   margin: 0;
   color: var(--text-muted);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -580,7 +580,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .hero-title {
   margin: 0.9rem 0 0;
   max-width: 9ch;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: clamp(3.5rem, 5.8vw, 6.15rem);
   font-weight: 500;
   line-height: 0.86;
@@ -644,7 +644,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .video-title,
 .faq-card summary,
 .signal-stage strong {
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
 }
 
 .hero-copy + .hero-copy,
@@ -703,7 +703,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   background: rgba(3, 2, 2, 0.24);
   box-shadow: inset 0 1px 0 rgba(247, 242, 238, 0.05);
   color: var(--text-secondary);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.71rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -746,7 +746,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   min-height: 3rem;
   padding: 0 1.05rem;
   border-radius: 0.58rem;
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -865,7 +865,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .program-card h2 {
   margin: 0;
   max-width: 11ch;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 2.55rem;
   font-weight: 500;
   line-height: 0.92;
@@ -884,7 +884,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: block;
   margin-bottom: 0.45rem;
   color: var(--accent-pale);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
 }
@@ -913,7 +913,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 }
 
 .scroll-cue-label {
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -992,7 +992,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   align-items: center;
   gap: 0.7rem;
   margin: 0;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: clamp(2.55rem, 4.6vw, 3.85rem);
   font-weight: 500;
   line-height: 0.92;
@@ -1007,7 +1007,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   margin-left: 0.7rem;
   opacity: 0;
   color: var(--accent);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.85rem;
   transform: translateY(0.1rem);
   transition:
@@ -1040,7 +1040,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   background: rgba(231, 200, 169, 0.035);
   color: var(--text-secondary);
   box-shadow: none;
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -1171,7 +1171,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .quote-copy {
   margin-top: 0.6rem;
   color: var(--text-primary);
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1.16rem;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -1222,7 +1222,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   top: 1.25rem;
   right: 1.25rem;
   color: var(--text-faint);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   font-variant-numeric: tabular-nums;
@@ -1248,7 +1248,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .role-head h3,
 .principle-card h3 {
   margin: 0.5rem 0 0.55rem;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1.45rem;
   font-weight: 500;
   line-height: 1.02;
@@ -1304,7 +1304,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .stat-value {
   margin: 0;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: clamp(2.45rem, 4.7vw, 3.25rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
@@ -1361,7 +1361,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   display: inline-block;
   margin-left: 0.32rem;
   color: var(--accent-pale);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   transform: translateY(-0.14rem);
 }
@@ -1369,7 +1369,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 .role-head p {
   margin: 0;
   color: var(--text-muted);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1432,7 +1432,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   background: rgba(219, 74, 38, 0.1);
   color: var(--accent-pale);
   box-shadow: none;
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.66rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -1467,7 +1467,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   top: 1.12rem;
   right: 0;
   color: var(--text-faint);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   transition: color 180ms var(--ease-out), transform 180ms var(--ease-out);
 }
@@ -1588,7 +1588,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border: 1px solid var(--white-line-strong);
   background: transparent;
   box-shadow: none;
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.66rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1628,7 +1628,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   top: 1.25rem;
   right: 0;
   color: var(--text-faint);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   transition: color 180ms var(--ease-out), transform 180ms var(--ease-out);
 }
@@ -1666,7 +1666,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border: 1px solid var(--white-line-strong);
   background: transparent;
   color: var(--text-secondary);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   font-variant-numeric: tabular-nums;
@@ -1764,7 +1764,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   border: 1px solid var(--white-line-strong);
   background: rgba(3, 2, 2, 0.76);
   color: var(--text-primary);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.72rem;
   box-shadow: none;
 }
@@ -1801,7 +1801,7 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
 
 .site-footer-copy {
   margin: 0;
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   max-width: 36rem;
   font-size: 1.72rem;
   line-height: 1.14;
@@ -2401,7 +2401,7 @@ body::after {
 .quote-copy,
 .site-footer-copy,
 .stat-value {
-  font-family: 'Azeret Mono', monospace;
+  font-family: 'Geist Mono', monospace;
 }
 
 /* Nothing update 15: Sharpen hero headline scale */
@@ -2562,7 +2562,7 @@ body::after {
 
 /* Nothing update 28: Make stat values data-first */
 .stat-value {
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
@@ -2970,7 +2970,7 @@ img {
 
 .signal-stage span {
   color: var(--text-faint);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.74rem;
   letter-spacing: 0.14em;
 }
@@ -3024,7 +3024,7 @@ img {
   border: 1px solid var(--white-line-strong);
   border-radius: var(--radius-md);
   color: var(--text-primary);
-  font-family: 'Fragment Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.7rem;
   letter-spacing: 0.13em;
   text-transform: uppercase;
