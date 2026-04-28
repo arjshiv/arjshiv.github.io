@@ -3194,3 +3194,8 @@ body::after {
 .stats-row {
   box-shadow: inset 0 1px 0 rgba(244, 241, 234, 0.055);
 }
+
+/* Taste update 34: Remove compressed tracking from stat numerals */
+.stat-value {
+  letter-spacing: 0;
+}
