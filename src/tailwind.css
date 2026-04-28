@@ -3178,3 +3178,8 @@ body::after {
 .quote-panel {
   background: linear-gradient(90deg, rgba(207, 37, 43, 0.055), transparent 10rem), #060606;
 }
+
+/* Taste update 31: Add a consistent minimum to story tiles for calmer masonry */
+.story-card {
+  min-height: 12.5rem;
+}
