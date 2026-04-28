@@ -3067,3 +3067,8 @@ body::after {
   border-color: rgba(244, 241, 234, 0.18);
   background: rgba(244, 241, 234, 0.045);
 }
+
+/* Taste update 13: Slightly narrow the global shell for stronger line rhythm */
+:root {
+  --max-width: 1216px;
+}
