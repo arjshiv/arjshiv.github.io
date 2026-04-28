@@ -3275,3 +3275,13 @@ body::after {
   max-width: 39rem;
   letter-spacing: 0;
 }
+
+/* Taste update 48: Bring the back-to-top control into the same system language */
+.back-to-top {
+  background: #050505;
+  border-color: rgba(244, 241, 234, 0.2);
+}
+
+.back-to-top:active {
+  transform: translateY(1px) scale(0.96);
+}
