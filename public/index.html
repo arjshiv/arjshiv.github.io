@@ -972,6 +972,7 @@
         const signalCopy = document.querySelector('#signal-step-copy');
         const signalMetricA = document.querySelector('#signal-metric-a');
         const signalMetricB = document.querySelector('#signal-metric-b');
+        const signalReadout = document.querySelector('.signal-readout');
 
         const setSignalStep = (stepIndex) => {
             const step = signalSteps[stepIndex];
@@ -979,16 +980,29 @@
                 return;
             }
 
-            signalButtons.forEach((button, index) => {
-                const isActive = index === stepIndex;
-                button.classList.toggle('is-active', isActive);
-                button.setAttribute('aria-selected', String(isActive));
-            });
-            signalLabel.textContent = step.label;
-            signalTitle.textContent = step.title;
-            signalCopy.textContent = step.copy;
-            signalMetricA.textContent = step.metrics[0];
-            signalMetricB.textContent = step.metrics[1];
+            const writeSignalStep = () => {
+                signalButtons.forEach((button, index) => {
+                    const isActive = index === stepIndex;
+                    button.classList.toggle('is-active', isActive);
+                    button.setAttribute('aria-selected', String(isActive));
+                });
+                signalLabel.textContent = step.label;
+                signalTitle.textContent = step.title;
+                signalCopy.textContent = step.copy;
+                signalMetricA.textContent = step.metrics[0];
+                signalMetricB.textContent = step.metrics[1];
+            };
+
+            if (!motionAllowed || !signalReadout) {
+                writeSignalStep();
+                return;
+            }
+
+            signalReadout.classList.add('is-switching');
+            window.setTimeout(() => {
+                writeSignalStep();
+                signalReadout.classList.remove('is-switching');
+            }, 120);
         };
 
         signalButtons.forEach((button) => {

@@ -3328,3 +3328,19 @@ body::after {
 .section-block.visible .section-heading h2.text-animate-hero .text-word {
   animation-play-state: running;
 }
+
+/* Text animation update 03: Signal readout text swap */
+.signal-readout h3,
+.signal-readout p,
+.signal-metrics {
+  transition:
+    opacity 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
+}
+
+.signal-readout.is-switching h3,
+.signal-readout.is-switching p,
+.signal-readout.is-switching .signal-metrics {
+  opacity: 0;
+  transform: translateY(0.28rem);
+}
