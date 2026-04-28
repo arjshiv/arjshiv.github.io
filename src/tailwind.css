@@ -3045,3 +3045,12 @@ body::after {
 .brand-mark-led {
   animation: brand-led-breathe 3.6s var(--ease-out) infinite;
 }
+
+/* Taste update 10: Tighten the wordmark into a more deliberate label stack */
+.brand-mark-text {
+  gap: 0.1rem;
+}
+
+.brand-mark-role {
+  letter-spacing: 0.16em;
+}
