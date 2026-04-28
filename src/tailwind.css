@@ -3140,3 +3140,10 @@ body::after {
   font-size: 2.35rem;
   letter-spacing: 0;
 }
+
+/* Taste update 26: Give the scroll cue a clearer interactive state */
+.scroll-cue:hover .scroll-cue-arrow,
+.scroll-cue:focus-visible .scroll-cue-arrow {
+  border-color: var(--accent);
+  color: var(--accent-pale);
+}
