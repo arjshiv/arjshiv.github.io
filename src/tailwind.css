@@ -3054,3 +3054,9 @@ body::after {
 .brand-mark-role {
   letter-spacing: 0.16em;
 }
+
+/* Taste update 11: Balance nav hit areas while keeping the technical shape */
+.nav-link {
+  min-width: 3.4rem;
+  padding-inline: 0.68rem;
+}
