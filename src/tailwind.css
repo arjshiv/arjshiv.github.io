@@ -3024,3 +3024,8 @@ body::after {
   width: min(calc(100% - 2.25rem), calc(var(--max-width) + 2rem));
   border-inline-color: rgba(244, 241, 234, 0.045);
 }
+
+/* Taste update 07: Give the topbar a quiet hardware seam */
+.topbar {
+  box-shadow: inset 0 -1px 0 rgba(244, 241, 234, 0.035);
+}
