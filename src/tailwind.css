@@ -3269,3 +3269,9 @@ body::after {
   height: 1.9rem;
   background: rgba(5, 5, 5, 0.88);
 }
+
+/* Taste update 47: Let the footer statement keep a sharper measure */
+.site-footer-copy {
+  max-width: 39rem;
+  letter-spacing: 0;
+}
