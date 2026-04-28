@@ -3233,3 +3233,11 @@ body::after {
 .video-overlay {
   background: linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.92));
 }
+
+/* Taste update 41: Make play buttons match the off-white token */
+.video-poster::before,
+.video-poster:hover::before,
+.video-poster:focus-visible::before {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
