@@ -3285,3 +3285,8 @@ body::after {
 .back-to-top:active {
   transform: translateY(1px) scale(0.96);
 }
+
+/* Taste update 49: Rebalance the Now module toward a stronger lead panel */
+.now-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+}
