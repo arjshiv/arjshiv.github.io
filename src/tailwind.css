@@ -3088,3 +3088,8 @@ body::after {
   opacity: 0.74;
   border-color: rgba(244, 241, 234, 0.16);
 }
+
+/* Taste update 17: Remove strained display tracking from the mono hero */
+.hero-title {
+  letter-spacing: 0;
+}
