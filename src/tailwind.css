@@ -3221,3 +3221,10 @@ body::after {
 .feature-copy {
   gap: 0.42rem;
 }
+
+/* Taste update 39: Give recent-list hover a left-hand reading cue */
+.recent-item:hover,
+.recent-item:focus-visible {
+  padding-left: 0.55rem;
+  border-left: 1px solid rgba(207, 37, 43, 0.62);
+}
