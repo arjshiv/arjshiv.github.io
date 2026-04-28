@@ -3082,3 +3082,9 @@ body::after {
 .poster-card {
   border-color: rgba(244, 241, 234, 0.18);
 }
+
+/* Taste update 16: Let the hero monolith register as instrument detail, not decoration */
+.poster-card::before {
+  opacity: 0.74;
+  border-color: rgba(244, 241, 234, 0.16);
+}
