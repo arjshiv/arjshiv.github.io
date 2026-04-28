@@ -3156,3 +3156,10 @@ body::after {
 .section-heading h2 {
   letter-spacing: 0;
 }
+
+/* Taste update 28: Make static tags visibly non-clickable */
+.tag-label {
+  pointer-events: none;
+  border-style: dashed;
+  color: var(--text-muted);
+}
