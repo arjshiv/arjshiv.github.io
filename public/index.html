@@ -815,6 +815,33 @@
         const scrollProgressBar = document.querySelector('.scroll-progress-bar');
         const sections = [...document.querySelectorAll('main section[id]')];
         const navLinks = [...document.querySelectorAll('.nav-link')];
+        const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const wrapTextWords = (element) => {
+            if (!element || element.dataset.textWrapped === 'true') {
+                return;
+            }
+            const words = element.textContent.trim().split(/\s+/);
+            element.textContent = '';
+            words.forEach((word, index) => {
+                const wordSpan = document.createElement('span');
+                wordSpan.className = 'text-word';
+                wordSpan.style.setProperty('--word-index', index);
+                wordSpan.textContent = word;
+                element.append(wordSpan);
+                if (index < words.length - 1) {
+                    element.append(' ');
+                }
+            });
+            element.dataset.textWrapped = 'true';
+        };
+
+        if (motionAllowed) {
+            document.querySelectorAll('.hero-title, .hero-subtitle').forEach((element) => {
+                element.classList.add('text-animate-hero');
+                wrapTextWords(element);
+            });
+        }
 
         const updateScrollProgress = () => {
             const scrollable = document.documentElement.scrollHeight - window.innerHeight;
