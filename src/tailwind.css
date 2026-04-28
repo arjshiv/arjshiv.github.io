@@ -3246,3 +3246,9 @@ body::after {
 .article-card:focus-visible {
   background: rgba(244, 241, 234, 0.035);
 }
+
+/* Taste update 43: Make principle cards feel like numbered notes */
+.principle-card {
+  min-height: 13rem;
+  border-top-color: rgba(244, 241, 234, 0.2);
+}
