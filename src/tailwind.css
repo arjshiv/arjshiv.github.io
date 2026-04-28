@@ -3257,3 +3257,8 @@ body::after {
 .faq-card[open] {
   box-shadow: inset 0 1px 0 rgba(244, 241, 234, 0.055);
 }
+
+/* Taste update 45: Make the link preview masonry feel more intentional */
+.link-preview-card:nth-child(4n + 3) {
+  margin-top: 2.2rem;
+}
