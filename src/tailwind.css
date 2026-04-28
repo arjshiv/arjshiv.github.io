@@ -2991,3 +2991,16 @@ img {
     padding-inline: 0.7rem;
   }
 }
+
+/* Taste update 03: Use ink-black tokens instead of hard black edges */
+:root {
+  --bg: #020202;
+  --bg-deep: #030202;
+  --surface-1: #060606;
+  --surface-2: #0a0a09;
+  --surface-3: #11100f;
+  --surface-hover: #171513;
+  --text-primary: #f6f1e8;
+  --accent: #cf252b;
+  --accent-line: rgba(207, 37, 43, 0.74);
+}
