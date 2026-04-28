@@ -3035,3 +3035,13 @@ body::after {
   background: rgba(5, 5, 5, 0.975);
   border-bottom-color: rgba(244, 241, 234, 0.18);
 }
+
+/* Taste update 09: Add a small living status pulse to the brand LED */
+@keyframes brand-led-breathe {
+  0%, 100% { opacity: 0.7; transform: translateY(-0.03rem) scale(0.92); }
+  50% { opacity: 1; transform: translateY(-0.03rem) scale(1.08); }
+}
+
+.brand-mark-led {
+  animation: brand-led-breathe 3.6s var(--ease-out) infinite;
+}
