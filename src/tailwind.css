@@ -3060,3 +3060,10 @@ body::after {
   min-width: 3.4rem;
   padding-inline: 0.68rem;
 }
+
+/* Taste update 12: Make nav hover read as a pressed surface */
+.nav-link:hover,
+.nav-link:focus-visible {
+  border-color: rgba(244, 241, 234, 0.18);
+  background: rgba(244, 241, 234, 0.045);
+}
