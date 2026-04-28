@@ -3129,3 +3129,8 @@ body::after {
 .footer-link {
   min-height: 2.86rem;
 }
+
+/* Taste update 24: Add a quiet rail to the quick-start module */
+.program-card {
+  border-left-color: rgba(207, 37, 43, 0.64);
+}
