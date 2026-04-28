@@ -3199,3 +3199,8 @@ body::after {
 .stat-value {
   letter-spacing: 0;
 }
+
+/* Taste update 35: Rebalance role cards into a less equal rhythm */
+.role-list {
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, 0.78fr) minmax(0, 0.86fr);
+}
