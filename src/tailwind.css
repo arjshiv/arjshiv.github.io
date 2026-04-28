@@ -3121,3 +3121,11 @@ body::after {
   border-color: rgba(244, 241, 234, 0.28);
   background: #060606;
 }
+
+/* Taste update 23: Align action controls to the same instrument height */
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link {
+  min-height: 2.86rem;
+}
