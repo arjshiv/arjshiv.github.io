@@ -3209,3 +3209,10 @@ body::after {
 .role-card:hover {
   border-color: rgba(207, 37, 43, 0.42);
 }
+
+/* Taste update 37: Add an inset frame to media previews */
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  outline-color: rgba(244, 241, 234, 0.18);
+}
