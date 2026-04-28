@@ -3072,3 +3072,8 @@ body::after {
 :root {
   --max-width: 1216px;
 }
+
+/* Taste update 14: Push the hero split a little further off-center */
+.hero-section {
+  grid-template-columns: minmax(0, 1.32fr) minmax(18rem, 0.68fr);
+}
