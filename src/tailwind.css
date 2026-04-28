@@ -3183,3 +3183,9 @@ body::after {
 .story-card {
   min-height: 12.5rem;
 }
+
+/* Taste update 32: Keep story hover tonal, not shiny */
+.story-card:hover {
+  border-color: rgba(244, 241, 234, 0.2);
+  background: #0b0b0a;
+}
