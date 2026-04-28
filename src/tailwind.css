@@ -3115,3 +3115,9 @@ body::after {
 .hero-fact:nth-child(even) {
   transform: translateX(0.45rem);
 }
+
+/* Taste update 22: Make hero fact hover a border event, not a color wash */
+.hero-fact:hover {
+  border-color: rgba(244, 241, 234, 0.28);
+  background: #060606;
+}
