@@ -3093,3 +3093,9 @@ body::after {
 .hero-title {
   letter-spacing: 0;
 }
+
+/* Taste update 18: Improve the hero subtitle measure on wide screens */
+.hero-subtitle {
+  max-width: 28rem;
+  line-height: 1.16;
+}
