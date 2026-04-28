@@ -3104,3 +3104,9 @@ body::after {
 .hero-note {
   border-top-color: rgba(244, 241, 234, 0.18);
 }
+
+/* Taste update 20: Reframe the portrait as a document crop instead of a decorative image */
+.portrait-cutout img {
+  aspect-ratio: 0.92 / 1.08;
+  object-position: 54% 42%;
+}
