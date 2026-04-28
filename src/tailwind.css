@@ -3134,3 +3134,9 @@ body::after {
 .program-card {
   border-left-color: rgba(207, 37, 43, 0.64);
 }
+
+/* Taste update 25: Tighten the quick-start heading to match the compact sidebar */
+.program-card h2 {
+  font-size: 2.35rem;
+  letter-spacing: 0;
+}
