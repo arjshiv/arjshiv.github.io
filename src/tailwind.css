@@ -3344,3 +3344,21 @@ body::after {
   opacity: 0;
   transform: translateY(0.28rem);
 }
+
+/* Text animation update 04: Metric emphasis pulses */
+@keyframes text-metric-register {
+  0% {
+    opacity: 0.62;
+    transform: translateY(0.22rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal.visible .stat-value,
+.signal-stage.is-active strong,
+.signal-metrics span {
+  animation: text-metric-register 420ms var(--ease-out) both;
+}
