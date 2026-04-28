@@ -3228,3 +3228,8 @@ body::after {
   padding-left: 0.55rem;
   border-left: 1px solid rgba(207, 37, 43, 0.62);
 }
+
+/* Taste update 40: Avoid pure black in video overlays */
+.video-overlay {
+  background: linear-gradient(180deg, transparent, rgba(5, 5, 5, 0.92));
+}
