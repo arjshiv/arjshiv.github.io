@@ -3110,3 +3110,8 @@ body::after {
   aspect-ratio: 0.92 / 1.08;
   object-position: 54% 42%;
 }
+
+/* Taste update 21: Reduce hero fact drift so the list scans faster */
+.hero-fact:nth-child(even) {
+  transform: translateX(0.45rem);
+}
