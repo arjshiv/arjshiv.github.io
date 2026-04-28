@@ -3163,3 +3163,13 @@ body::after {
   border-style: dashed;
   color: var(--text-muted);
 }
+
+/* Taste update 29: Give console LEDs a tiny status cadence */
+@keyframes console-led-scan {
+  0%, 100% { opacity: 0.28; }
+  50% { opacity: 0.85; }
+}
+
+.console-led-bank span:nth-child(2) {
+  animation: console-led-scan 4.8s var(--ease-out) infinite;
+}
