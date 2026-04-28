@@ -3318,3 +3318,13 @@ body::after {
     transform: translateY(0);
   }
 }
+
+/* Text animation update 02: Section heading reveal */
+.section-heading h2.text-animate-hero .text-word {
+  animation-play-state: paused;
+  animation-delay: calc(40ms + var(--word-index) * 46ms);
+}
+
+.section-block.visible .section-heading h2.text-animate-hero .text-word {
+  animation-play-state: running;
+}
