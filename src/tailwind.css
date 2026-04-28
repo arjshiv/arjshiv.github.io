@@ -3216,3 +3216,8 @@ body::after {
 .video-poster img {
   outline-color: rgba(244, 241, 234, 0.18);
 }
+
+/* Taste update 38: Tighten feature copy spacing for stronger editorial rhythm */
+.feature-copy {
+  gap: 0.42rem;
+}
