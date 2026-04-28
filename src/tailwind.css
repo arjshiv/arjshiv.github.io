@@ -3252,3 +3252,8 @@ body::after {
   min-height: 13rem;
   border-top-color: rgba(244, 241, 234, 0.2);
 }
+
+/* Taste update 44: Make FAQ open panels feel inserted, not pasted on */
+.faq-card[open] {
+  box-shadow: inset 0 1px 0 rgba(244, 241, 234, 0.055);
+}
