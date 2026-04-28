@@ -3077,3 +3077,8 @@ body::after {
 .hero-section {
   grid-template-columns: minmax(0, 1.32fr) minmax(18rem, 0.68fr);
 }
+
+/* Taste update 15: Sharpen the hero poster edge without adding cardiness */
+.poster-card {
+  border-color: rgba(244, 241, 234, 0.18);
+}
