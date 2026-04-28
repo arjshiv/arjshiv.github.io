@@ -3204,3 +3204,8 @@ body::after {
 .role-list {
   grid-template-columns: minmax(0, 1.42fr) minmax(0, 0.78fr) minmax(0, 0.86fr);
 }
+
+/* Taste update 36: Make role hover clarify ownership instead of lifting */
+.role-card:hover {
+  border-color: rgba(207, 37, 43, 0.42);
+}
