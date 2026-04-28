@@ -3029,3 +3029,9 @@ body::after {
 .topbar {
   box-shadow: inset 0 -1px 0 rgba(244, 241, 234, 0.035);
 }
+
+/* Taste update 08: Keep the scrolled topbar distinct without adding glow */
+.topbar-scrolled {
+  background: rgba(5, 5, 5, 0.975);
+  border-bottom-color: rgba(244, 241, 234, 0.18);
+}
