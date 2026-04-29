@@ -3968,3 +3968,11 @@ button {
   animation-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 46: Scroll cue response */
+.scroll-cue,
+.scroll-cue-arrow {
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
