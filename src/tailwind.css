@@ -3728,3 +3728,10 @@ button {
   transition: transform 80ms linear;
 }
 
+
+/* Smooth update 16: Snappier topbar state */
+.topbar {
+  transition-duration: 160ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
