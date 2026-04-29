@@ -3959,3 +3959,12 @@ button {
   animation-delay: calc(80ms + var(--word-index) * 38ms);
 }
 
+
+/* Smooth update 45: Faster metric register */
+.signal-metrics span,
+.signal-stage.is-active strong,
+.reveal.visible .stat-value {
+  animation-duration: 320ms;
+  animation-timing-function: var(--ease-snappy);
+}
+
