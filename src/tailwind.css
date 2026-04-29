@@ -3713,3 +3713,12 @@ button {
   transition-timing-function: var(--ease-fast-out);
 }
 
+
+/* Smooth update 14: Reduce reveal travel */
+.reveal,
+.hero-section.reveal > *,
+.section-block.reveal > *,
+.site-footer.reveal > * {
+  transform: translateY(0.9rem);
+}
+
