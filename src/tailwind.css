@@ -3857,3 +3857,10 @@ button {
   contain-intrinsic-size: 1px 900px;
 }
 
+
+/* Smooth update 33: Keep hero immediately rendered */
+.hero-section {
+  content-visibility: visible;
+  contain: layout style;
+}
+
