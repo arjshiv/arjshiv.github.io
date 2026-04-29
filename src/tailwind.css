@@ -3998,3 +3998,12 @@ button {
   }
 }
 
+
+/* Smooth update 50: Reduced motion stays instant and stable */
+@media (prefers-reduced-motion: reduce) {
+  .section-block {
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
+  }
+}
+
