@@ -3990,3 +3990,11 @@ button {
   contain: layout paint style;
 }
 
+
+/* Smooth update 49: More accurate mobile intrinsic sections */
+@media (max-width: 760px) {
+  .section-block {
+    contain-intrinsic-size: 1px 1200px;
+  }
+}
+
