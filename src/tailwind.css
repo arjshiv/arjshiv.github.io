@@ -3820,3 +3820,11 @@ button {
   transform: translateY(-1px);
 }
 
+
+/* Smooth update 29: Story card lift */
+.story-card:hover,
+.role-card:hover,
+.principle-card:hover {
+  transform: translateY(-1px);
+}
+
