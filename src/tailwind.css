@@ -3629,3 +3629,14 @@ button {
   touch-action: manipulation;
 }
 
+
+/* Smooth update 05: Faster shared link feedback */
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link {
+  transition-duration: var(--motion-hover);
+  transition-timing-function: var(--ease-snappy);
+}
+
