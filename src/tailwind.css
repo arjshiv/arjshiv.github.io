@@ -3828,3 +3828,18 @@ button {
   transform: translateY(-1px);
 }
 
+
+/* Smooth update 30: No hover lift on touch layouts */
+@media (max-width: 760px) {
+  .feature-card:hover,
+  .link-preview-card:hover,
+  .article-card:hover,
+  .video-card:hover,
+  .story-card:hover,
+  .role-card:hover,
+  .principle-card:hover,
+  .stat-card:hover {
+    transform: none;
+  }
+}
+
