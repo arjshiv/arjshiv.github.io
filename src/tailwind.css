@@ -3843,3 +3843,10 @@ button {
   }
 }
 
+
+/* Smooth update 31: Isolate section rendering */
+.section-block,
+.site-footer {
+  contain: layout paint style;
+}
+
