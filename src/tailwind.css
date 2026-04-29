@@ -3864,3 +3864,12 @@ button {
   contain: layout style;
 }
 
+
+/* Smooth update 34: Contain image paint */
+.portrait-cutout,
+.feature-card,
+.link-preview-card,
+.video-poster {
+  contain: paint;
+}
+
