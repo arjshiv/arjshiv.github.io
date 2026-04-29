@@ -3614,3 +3614,18 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+/* Smooth update 04: Tighten touch response */
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link,
+.nav-link,
+.nav-toggle,
+.video-poster,
+.signal-stage,
+.back-to-top {
+  touch-action: manipulation;
+}
+
