@@ -3792,3 +3792,9 @@ button {
   transform: translateX(0.12rem);
 }
 
+
+/* Smooth update 25: Keep open FAQ settled */
+.faq-card[open] summary:hover {
+  transform: none;
+}
+
