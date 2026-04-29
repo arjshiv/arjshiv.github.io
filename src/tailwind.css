@@ -3697,3 +3697,10 @@ button {
   }
 }
 
+
+/* Smooth update 12: Shorter page reveals */
+.reveal {
+  transition-duration: var(--motion-reveal);
+  transition-timing-function: var(--ease-fast-out);
+}
+
