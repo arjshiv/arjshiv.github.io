@@ -3704,3 +3704,12 @@ button {
   transition-timing-function: var(--ease-fast-out);
 }
 
+
+/* Smooth update 13: Shorter child reveals */
+.hero-section.reveal > *,
+.section-block.reveal > *,
+.site-footer.reveal > * {
+  transition-duration: var(--motion-reveal);
+  transition-timing-function: var(--ease-fast-out);
+}
+
