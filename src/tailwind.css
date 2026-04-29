@@ -3976,3 +3976,9 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 47: Footer link press clarity */
+.footer-link:active {
+  color: var(--accent-pale);
+}
+
