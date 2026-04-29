@@ -3751,3 +3751,10 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 19: Video button press */
+.video-poster:active::before {
+  transform: translate(-50%, -50%) scale(0.94);
+  transition-duration: var(--motion-tap);
+}
+
