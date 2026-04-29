@@ -3758,3 +3758,10 @@ button {
   transition-duration: var(--motion-tap);
 }
 
+
+/* Smooth update 20: Signal stage feedback speed */
+.signal-stage {
+  transition-duration: 120ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
