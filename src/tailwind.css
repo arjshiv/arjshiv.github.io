@@ -3953,3 +3953,9 @@ button {
   animation-timing-function: var(--ease-fast-out);
 }
 
+
+/* Smooth update 44: Tighter word stagger */
+.text-animate-hero .text-word {
+  animation-delay: calc(80ms + var(--word-index) * 38ms);
+}
+
