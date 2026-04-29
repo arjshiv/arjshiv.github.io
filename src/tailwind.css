@@ -3907,3 +3907,12 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 38: Faster mobile nav drawer */
+@media (max-width: 760px) {
+  .main-nav {
+    transition-duration: 180ms;
+    transition-timing-function: var(--ease-snappy);
+  }
+}
+
