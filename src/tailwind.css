@@ -3850,3 +3850,10 @@ button {
   contain: layout paint style;
 }
 
+
+/* Smooth update 32: Skip below-fold rendering until needed */
+.section-block {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
