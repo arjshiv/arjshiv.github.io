@@ -3681,3 +3681,10 @@ button {
   transform: none;
 }
 
+
+/* Smooth update 10: Menu button hover */
+.nav-toggle:hover {
+  transform: translateY(-1px);
+  border-color: var(--white-line-strong);
+}
+
