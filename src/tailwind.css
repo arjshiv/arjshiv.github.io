@@ -3946,3 +3946,10 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 43: Faster text entrance */
+.text-animate-hero .text-word {
+  animation-duration: 520ms;
+  animation-timing-function: var(--ease-fast-out);
+}
+
