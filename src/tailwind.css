@@ -3675,3 +3675,9 @@ button {
   transform: translateY(-1px);
 }
 
+
+/* Smooth update 09: Keep current nav stable */
+.nav-link[aria-current='true'] {
+  transform: none;
+}
+
