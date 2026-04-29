@@ -3931,3 +3931,9 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 41: Hero fact press */
+.hero-fact:active {
+  transform: scale(0.99);
+}
+
