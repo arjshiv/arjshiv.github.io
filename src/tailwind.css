@@ -3722,3 +3722,9 @@ button {
   transform: translateY(0.9rem);
 }
 
+
+/* Smooth update 15: Smooth scroll progress paint */
+.scroll-progress-bar {
+  transition: transform 80ms linear;
+}
+
