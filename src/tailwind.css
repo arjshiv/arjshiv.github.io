@@ -3771,3 +3771,12 @@ button {
   transform: scale(0.99);
 }
 
+
+/* Smooth update 22: Faster readout switch */
+.signal-metrics,
+.signal-readout h3,
+.signal-readout p {
+  transition-duration: 150ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
