@@ -3668,3 +3668,10 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 08: Small nav lift */
+.nav-link:hover,
+.nav-link:focus-visible {
+  transform: translateY(-1px);
+}
+
