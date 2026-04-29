@@ -3780,3 +3780,9 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 23: FAQ summary feedback */
+.faq-card summary {
+  transition: color 140ms var(--ease-snappy), transform 140ms var(--ease-snappy);
+}
+
