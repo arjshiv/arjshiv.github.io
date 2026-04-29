@@ -3742,3 +3742,12 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 18: Lighter image hover timing */
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  transition-duration: 160ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
