@@ -3688,3 +3688,12 @@ button {
   border-color: var(--white-line-strong);
 }
 
+
+/* Smooth update 11: Compact hero actions on touch */
+@media (max-width: 560px) {
+  .hero-actions {
+    margin-top: 1.15rem;
+    padding-top: 0.8rem;
+  }
+}
+
