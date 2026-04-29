@@ -3765,3 +3765,9 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 21: Signal stage press */
+.signal-stage:active {
+  transform: scale(0.99);
+}
+
