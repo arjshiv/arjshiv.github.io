@@ -3786,3 +3786,9 @@ button {
   transition: color 140ms var(--ease-snappy), transform 140ms var(--ease-snappy);
 }
 
+
+/* Smooth update 24: FAQ summary hover lift */
+.faq-card summary:hover {
+  transform: translateX(0.12rem);
+}
+
