@@ -3654,3 +3654,17 @@ button {
   transition-duration: var(--motion-tap);
 }
 
+
+/* Smooth update 07: Card transition budget */
+.article-card,
+.feature-card,
+.link-preview-card,
+.story-card,
+.role-card,
+.principle-card,
+.faq-card,
+.video-card {
+  transition-duration: var(--motion-hover);
+  transition-timing-function: var(--ease-snappy);
+}
+
