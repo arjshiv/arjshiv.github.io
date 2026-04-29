@@ -3887,3 +3887,16 @@ button {
   outline-offset: 0.14rem;
 }
 
+
+/* Smooth update 36: Focus reads without layout shift */
+.primary-link:focus-visible,
+.secondary-link:focus-visible,
+.text-link:focus-visible,
+.footer-link:focus-visible,
+.tag-link:focus-visible,
+.nav-link:focus-visible,
+.video-poster:focus-visible,
+.signal-stage:focus-visible {
+  box-shadow: 0 0 0 1px rgba(207, 37, 43, 0.2);
+}
+
