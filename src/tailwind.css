@@ -3590,3 +3590,13 @@ body::after {
 .signal-metrics span {
   animation: text-metric-register 420ms var(--ease-out) both;
 }
+
+/* Smooth update 01: Snappy motion tokens */
+:root {
+  --ease-snappy: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-fast-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-tap: 90ms;
+  --motion-hover: 140ms;
+  --motion-reveal: 420ms;
+}
+
