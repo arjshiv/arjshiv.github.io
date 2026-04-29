@@ -3982,3 +3982,11 @@ button {
   color: var(--accent-pale);
 }
 
+
+/* Smooth update 48: Sidebar render containment */
+.program-card,
+.poster-card,
+.signal-console {
+  contain: layout paint style;
+}
+
