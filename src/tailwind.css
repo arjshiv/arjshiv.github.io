@@ -3735,3 +3735,10 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 17: Back-to-top response */
+.back-to-top {
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
