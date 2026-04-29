@@ -3798,3 +3798,10 @@ button {
   transform: none;
 }
 
+
+/* Smooth update 26: Stat value response */
+.stat-card .stat-value {
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
