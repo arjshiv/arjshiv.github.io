@@ -3924,3 +3924,10 @@ button {
   }
 }
 
+
+/* Smooth update 40: Hero fact response */
+.hero-fact {
+  transition-duration: 120ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
