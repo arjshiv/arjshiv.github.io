@@ -3937,3 +3937,12 @@ button {
   transform: scale(0.99);
 }
 
+
+/* Smooth update 42: Preview marker speed */
+.link-preview-card::before,
+.article-card::before,
+.recent-item::after {
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-snappy);
+}
+
