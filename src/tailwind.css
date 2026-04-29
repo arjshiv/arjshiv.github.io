@@ -3916,3 +3916,11 @@ button {
   }
 }
 
+
+/* Smooth update 39: Mobile nav scan rhythm */
+@media (max-width: 760px) {
+  .main-nav .nav-link {
+    min-height: 2.85rem;
+  }
+}
+
