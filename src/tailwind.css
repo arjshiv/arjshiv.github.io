@@ -3600,3 +3600,10 @@ body::after {
   --motion-reveal: 420ms;
 }
 
+
+/* Smooth update 02: Contain horizontal overscroll */
+html,
+body {
+  overscroll-behavior-x: none;
+}
+
