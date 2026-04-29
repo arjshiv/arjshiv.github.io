@@ -3805,3 +3805,9 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 27: Subtle stat hover lift */
+.stat-card:hover {
+  transform: translateY(-1px);
+}
+
