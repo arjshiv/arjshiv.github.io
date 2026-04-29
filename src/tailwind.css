@@ -3811,3 +3811,12 @@ button {
   transform: translateY(-1px);
 }
 
+
+/* Smooth update 28: Subtle content card lift */
+.feature-card:hover,
+.link-preview-card:hover,
+.article-card:hover,
+.video-card:hover {
+  transform: translateY(-1px);
+}
+
