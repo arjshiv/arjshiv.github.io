@@ -3640,3 +3640,17 @@ button {
   transition-timing-function: var(--ease-snappy);
 }
 
+
+/* Smooth update 06: Physical press feedback */
+.primary-link:active,
+.secondary-link:active,
+.text-link:active,
+.footer-link:active,
+.tag-link:active,
+.nav-link:active,
+.nav-toggle:active,
+.back-to-top:active {
+  transform: translateY(1px) scale(0.985);
+  transition-duration: var(--motion-tap);
+}
+
