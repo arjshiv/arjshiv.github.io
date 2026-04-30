@@ -4747,3 +4747,10 @@ body::after {
   box-shadow: 0.32rem 0.32rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 22: portrait treatment keeps detail while staying printed */
+.portrait-cutout img {
+  filter: grayscale(1) contrast(1.18) brightness(1.04);
+  opacity: 0.96;
+}
+
