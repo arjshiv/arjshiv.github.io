@@ -4894,3 +4894,13 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Image-guided polish 38: supporting copy avoids washed gray */
+.operating-rule p,
+.story-card p,
+.role-card p,
+.article-card p,
+.principle-card p {
+  color: var(--retro-ink-soft);
+}
+
