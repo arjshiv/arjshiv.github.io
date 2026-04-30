@@ -5456,3 +5456,11 @@ body::before {
   grid-column: span 2;
 }
 
+
+/* Full-site polish 30: operating cards consistent depth */
+.operating-rule {
+  border-width: 3px;
+  box-shadow: var(--site-shadow-sm);
+  padding: clamp(1rem, 2vw, 1.25rem);
+}
+
