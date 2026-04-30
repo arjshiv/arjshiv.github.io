@@ -5630,3 +5630,14 @@ summary:focus-visible {
   }
 }
 
+
+/* Full-site polish 49: mobile-first sweep for grids and spacing */
+@media (max-width: 760px) {
+  .page-shell { width: min(calc(100% - 1rem), 40rem); padding-bottom: 3.5rem; }
+  .hero-section, .hero-grid, .now-grid, .operating-grid, .signal-console, .about-grid, .recent-grid, .conversation-grid, .two-column-section, .principles-grid, .link-preview-grid { grid-template-columns: 1fr; }
+  .operating-rule { grid-column: auto; }
+  .section-block { margin-top: 3rem; padding-top: 2.15rem; }
+  .section-heading { grid-template-columns: 1fr auto; grid-template-areas: 'kicker index' 'title title' 'tags tags'; }
+  .section-heading h2 { font-size: clamp(2.25rem, 13vw, 3.4rem); }
+}
+
