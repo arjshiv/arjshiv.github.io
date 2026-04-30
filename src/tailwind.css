@@ -4095,3 +4095,14 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 10: Active nav plate */
+.nav-link[aria-current='true'],
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--retro-yellow);
+  border-color: var(--retro-line);
+  color: var(--retro-ink);
+  box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
+}
+
