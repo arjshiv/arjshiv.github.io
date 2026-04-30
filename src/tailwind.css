@@ -4866,3 +4866,14 @@ body::after {
   color: var(--retro-ink-soft);
 }
 
+
+/* Image-guided polish 35: now cards use darker copy on color */
+.now-card {
+  border: 3px solid var(--retro-line);
+  box-shadow: var(--retro-shadow-sm);
+}
+
+.now-card p {
+  color: var(--retro-ink-soft);
+}
+
