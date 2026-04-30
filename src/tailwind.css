@@ -4723,3 +4723,11 @@ body::after {
   text-wrap: balance;
 }
 
+
+/* Image-guided polish 19: body note becomes a readable paper slip */
+.hero-note {
+  background: color-mix(in oklch, var(--retro-paper) 82%, var(--retro-yellow-panel) 18%);
+  border: 3px solid var(--retro-line);
+  box-shadow: var(--retro-shadow-sm);
+}
+
