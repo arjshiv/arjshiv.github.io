@@ -4482,3 +4482,14 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 47: FAQ as accordion cards */
+.faq-card {
+  background: color-mix(in oklch, var(--retro-yellow) 10%, var(--retro-paper) 90%);
+}
+
+.faq-card[open] {
+  background: var(--retro-yellow);
+  border-color: var(--retro-line);
+}
+
