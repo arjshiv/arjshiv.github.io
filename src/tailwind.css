@@ -4917,3 +4917,10 @@ body::after {
   color: var(--retro-paper);
 }
 
+
+/* Image-guided polish 40: stat values pop without losing contrast */
+.stat-value {
+  color: var(--retro-yellow-panel);
+  text-shadow: 0.05em 0.05em 0 var(--retro-line);
+}
+
