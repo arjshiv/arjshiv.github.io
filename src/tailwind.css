@@ -5713,3 +5713,14 @@ summary:focus-visible {
   max-width: 62ch;
 }
 
+
+/* Full-site polish 49: mobile refinement after full-site audit */
+@media (max-width: 760px) {
+  .topbar-inner { width: min(calc(100% - 1rem), 40rem); }
+  .brand-mark { min-width: 0; padding-inline: 0.58rem 0.7rem; }
+  .hero-note { padding: 1rem; }
+  #writing .two-column-section { grid-template-columns: 1fr; }
+  .principles-grid { grid-template-columns: 1fr; }
+  .primary-link, .secondary-link, .text-link, .footer-link { width: 100%; justify-content: center; }
+}
+
