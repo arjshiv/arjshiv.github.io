@@ -5253,3 +5253,15 @@ body::before {
   box-shadow: var(--site-shadow-sm);
 }
 
+
+/* Full-site polish 09: nav buttons align and breathe consistently */
+.main-nav {
+  gap: 0.55rem;
+}
+
+.nav-link {
+  min-height: 2.45rem;
+  padding-inline: 0.85rem;
+  box-shadow: var(--site-shadow-sm);
+}
+
