@@ -4536,3 +4536,18 @@ body::after {
   contain: layout style;
 }
 
+/* Retro polish fix: restore ink contrast inside pale panels */
+.program-item strong,
+.program-head,
+.panel-index,
+.now-card h3,
+.operating-rule h3,
+.story-card h3,
+.role-head h3,
+.feature-copy h3,
+.article-card h3,
+.principle-card h3,
+.link-preview-copy h3,
+.faq-card summary {
+  color: var(--retro-ink);
+}
