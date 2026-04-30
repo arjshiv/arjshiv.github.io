@@ -4317,3 +4317,9 @@ body::after {
   box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
 }
 
+
+/* Retro update 30: Program card becomes side ticket */
+.program-card {
+  background: color-mix(in oklch, var(--retro-blue) 16%, var(--retro-paper) 84%);
+}
+
