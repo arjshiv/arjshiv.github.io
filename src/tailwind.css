@@ -4800,3 +4800,12 @@ body::after {
   box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 28: program title gets clear hierarchy */
+.program-card h2 {
+  color: var(--retro-ink);
+  text-shadow: none;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
