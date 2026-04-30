@@ -4024,3 +4024,10 @@ button {
   --retro-radius: 0.22rem;
 }
 
+
+/* Retro update 02: Warm paper page */
+body {
+  color: var(--retro-ink);
+  background: var(--retro-paper);
+}
+
