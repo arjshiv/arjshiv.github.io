@@ -4153,3 +4153,19 @@ body::after {
   box-shadow: var(--retro-shadow);
 }
 
+
+/* Retro update 15: Remove glossy card overlays */
+.poster-card::after,
+.program-card::after,
+.feature-card::after,
+.link-preview-card::after,
+.story-card::after,
+.stat-card::after,
+.role-card::after,
+.video-card::after,
+.principle-card::after,
+.quote-panel::after,
+.faq-card::after {
+  display: none;
+}
+
