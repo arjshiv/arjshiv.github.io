@@ -4392,3 +4392,13 @@ body::after {
   box-shadow: 0.5rem 0.5rem 0 var(--retro-line);
 }
 
+
+/* Retro update 39: Signal tabs as switches */
+.signal-stage {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
