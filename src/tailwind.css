@@ -5612,3 +5612,12 @@ body::before {
   max-width: 42ch;
 }
 
+
+/* Full-site polish 47: visible focus ring for all controls */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--site-red);
+  outline-offset: 0.18rem;
+}
+
