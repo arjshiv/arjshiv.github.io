@@ -4263,3 +4263,9 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 25: Printed duotone portrait */
+.portrait-cutout img {
+  filter: grayscale(1) contrast(1.25) sepia(0.18);
+}
+
