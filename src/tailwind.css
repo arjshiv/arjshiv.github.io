@@ -5641,3 +5641,19 @@ summary:focus-visible {
   .section-heading h2 { font-size: clamp(2.25rem, 13vw, 3.4rem); }
 }
 
+
+/* Full-site polish 50: smallest screens and reduced motion */
+@media (max-width: 420px) {
+  .hero-title { font-size: clamp(3rem, 17vw, 4.25rem); }
+  .hero-subtitle { font-size: 1.08rem; }
+  .program-card h2, .signal-readout h3 { font-size: clamp(1.85rem, 9vw, 2.35rem); }
+  .brand-mark-role { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
