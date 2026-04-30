@@ -5170,3 +5170,23 @@ body::after {
   content-visibility: visible;
   contain-intrinsic-size: auto;
 }
+
+/* Full-site polish 02: consolidated documented retro system tokens */
+:root {
+  --site-paper: oklch(95.5% 0.03 86);
+  --site-cream: oklch(92.8% 0.04 82);
+  --site-card: oklch(94% 0.036 84);
+  --site-ink: oklch(12.5% 0.018 58);
+  --site-ink-2: oklch(25% 0.022 58);
+  --site-red: oklch(47% 0.18 30);
+  --site-yellow: oklch(83% 0.155 84);
+  --site-blue: oklch(58% 0.102 242);
+  --site-blue-soft: oklch(81% 0.058 235);
+  --site-green: oklch(77% 0.052 122);
+  --site-line: oklch(12% 0.018 58);
+  --site-radius: 0.24rem;
+  --site-shadow: 0.28rem 0.28rem 0 var(--site-line);
+  --site-shadow-sm: 0.16rem 0.16rem 0 var(--site-line);
+  --ease-retro: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
