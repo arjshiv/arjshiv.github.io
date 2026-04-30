@@ -5371,3 +5371,10 @@ body::before {
   max-width: 56ch;
 }
 
+
+/* Full-site polish 21: portrait fits the poster without swallowing it */
+.portrait-cutout {
+  width: min(100%, 19rem);
+  margin-inline: auto 0;
+}
+
