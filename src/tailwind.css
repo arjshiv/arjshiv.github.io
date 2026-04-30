@@ -5378,3 +5378,14 @@ body::before {
   margin-inline: auto 0;
 }
 
+
+/* Full-site polish 22: fact tickets align with portrait width */
+.hero-facts {
+  width: min(100%, 19rem);
+  margin-inline: auto 0;
+}
+
+.hero-fact {
+  min-height: 2.8rem;
+}
+
