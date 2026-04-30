@@ -5586,3 +5586,10 @@ body::before {
   letter-spacing: -0.015em;
 }
 
+
+/* Full-site polish 44: investing section aligns with FAQ and links */
+#investing .two-column-section {
+  grid-template-columns: minmax(0, 0.95fr) minmax(18rem, 1.05fr);
+  gap: clamp(1rem, 2.4vw, 1.5rem);
+}
+
