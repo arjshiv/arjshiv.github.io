@@ -4279,3 +4279,17 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 27: Link buttons become chunky */
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
