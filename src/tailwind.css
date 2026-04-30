@@ -5472,3 +5472,14 @@ body::before {
   padding: clamp(1rem, 2.5vw, 1.45rem);
 }
 
+
+/* Full-site polish 32: signal tabs stop acting like huge cards */
+.signal-stage {
+  min-height: 3.35rem;
+  padding: 0.72rem 0.9rem;
+}
+
+.signal-stage-list {
+  gap: 0.55rem;
+}
+
