@@ -5682,3 +5682,14 @@ summary:focus-visible {
   max-width: 46ch;
 }
 
+
+/* Full-site polish 46: principle cards stop feeling cramped */
+.principle-card {
+  padding: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.principle-card h3 {
+  max-width: 14ch;
+  line-height: 1.05;
+}
+
