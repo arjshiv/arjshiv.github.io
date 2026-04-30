@@ -5306,3 +5306,11 @@ body::before {
   margin-bottom: clamp(1.25rem, 3vw, 2rem);
 }
 
+
+/* Full-site polish 14: heading scale is strong without overwhelming sections */
+.section-heading h2 {
+  font-size: clamp(2.35rem, 4.4vw, 3.7rem);
+  line-height: 0.96;
+  max-width: 20ch;
+}
+
