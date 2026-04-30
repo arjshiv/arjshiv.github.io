@@ -4754,3 +4754,16 @@ body::after {
   opacity: 0.96;
 }
 
+
+/* Image-guided polish 23: hero facts become touchable ticket rows */
+.hero-facts {
+  gap: 0.55rem;
+}
+
+.hero-fact {
+  background: var(--retro-yellow-panel);
+  border: 3px solid var(--retro-line);
+  box-shadow: var(--retro-shadow-sm);
+  color: var(--retro-ink);
+}
+
