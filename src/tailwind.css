@@ -4943,3 +4943,18 @@ body::after {
 
 .signal-stage strong { color: var(--retro-ink); }
 
+
+/* Image-guided polish 43: active signal tab remains readable */
+.signal-stage.is-active,
+.signal-stage:hover,
+.signal-stage:focus-visible {
+  background: var(--retro-red);
+  color: var(--retro-paper);
+}
+
+.signal-stage.is-active strong,
+.signal-stage:hover strong,
+.signal-stage:focus-visible strong {
+  color: var(--retro-paper);
+}
+
