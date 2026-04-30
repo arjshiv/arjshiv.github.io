@@ -4323,3 +4323,14 @@ body::after {
   background: color-mix(in oklch, var(--retro-blue) 16%, var(--retro-paper) 84%);
 }
 
+
+/* Retro update 31: Program item separators */
+.program-item {
+  border-top: 2px dashed var(--retro-line);
+}
+
+.program-item::before {
+  color: var(--retro-red);
+  font-weight: 700;
+}
+
