@@ -4767,3 +4767,9 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Image-guided polish 24: fact rows use restrained color rhythm */
+.hero-fact:nth-child(2) { background: var(--retro-blue-soft); }
+.hero-fact:nth-child(3) { background: var(--retro-green-panel); }
+.hero-fact:nth-child(4) { background: color-mix(in oklch, var(--retro-red) 20%, var(--retro-paper) 80%); }
+
