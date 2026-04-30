@@ -4269,3 +4269,13 @@ body::after {
   filter: grayscale(1) contrast(1.25) sepia(0.18);
 }
 
+
+/* Retro update 26: Fact chips as keyboard keys */
+.hero-fact {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-yellow);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
