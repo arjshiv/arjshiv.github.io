@@ -4112,3 +4112,13 @@ body::after {
   display: none;
 }
 
+
+/* Retro update 12: Mobile toggle becomes hardware button */
+.nav-toggle {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-yellow);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
