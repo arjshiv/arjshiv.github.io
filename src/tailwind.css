@@ -4731,3 +4731,11 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Image-guided polish 20: hero paragraphs use comfortable measure */
+.hero-copy {
+  color: var(--retro-ink-soft);
+  max-width: 58ch;
+  line-height: 1.66;
+}
+
