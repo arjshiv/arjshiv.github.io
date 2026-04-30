@@ -4512,3 +4512,27 @@ body::after {
   }
 }
 
+
+/* Retro update 50: Final retro interaction polish */
+.primary-link:active,
+.secondary-link:active,
+.text-link:active,
+.footer-link:active,
+.tag-link:active,
+.nav-link:active,
+.signal-stage:active,
+.hero-fact:active {
+  box-shadow: 0.06rem 0.06rem 0 var(--retro-line);
+  transform: translate(0.12rem, 0.12rem);
+}
+
+.poster-card,
+.program-card,
+.signal-console,
+.feature-card,
+.link-preview-card,
+.portrait-cutout,
+.video-poster {
+  contain: layout style;
+}
+
