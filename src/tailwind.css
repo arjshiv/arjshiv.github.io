@@ -5621,3 +5621,12 @@ summary:focus-visible {
   outline-offset: 0.18rem;
 }
 
+
+/* Full-site polish 48: tactile hover compression without layout shift */
+@media (hover: hover) and (pointer: fine) {
+  .primary-link:hover, .secondary-link:hover, .text-link:hover, .footer-link:hover, .tag-link:hover, .nav-link:hover {
+    transform: translate(0.08rem, 0.08rem);
+    box-shadow: 0.08rem 0.08rem 0 var(--site-line);
+  }
+}
+
