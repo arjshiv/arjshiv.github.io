@@ -4656,3 +4656,10 @@ body::after {
   box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 11: hero poster keeps depth without low contrast overlays */
+.poster-card::before {
+  opacity: 0.7;
+  background: linear-gradient(135deg, transparent 0 58%, color-mix(in oklch, var(--retro-yellow-panel) 22%, transparent) 58% 100%);
+}
+
