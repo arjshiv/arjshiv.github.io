@@ -5229,3 +5229,16 @@ body::before {
   border-bottom-width: 3px;
 }
 
+
+/* Full-site polish 07: brand mark reads like a label, not a warning block */
+.brand-mark {
+  background: var(--site-card);
+  color: var(--site-ink);
+  padding-inline: 0.72rem 0.9rem;
+  min-height: 2.8rem;
+}
+
+.brand-mark-name {
+  color: var(--site-ink);
+}
+
