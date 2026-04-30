@@ -4369,3 +4369,9 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Retro update 36: Now cards alternate colors */
+.now-card:nth-child(1) { background: color-mix(in oklch, var(--retro-blue) 18%, var(--retro-paper) 82%); }
+.now-card:nth-child(2) { background: color-mix(in oklch, var(--retro-green) 18%, var(--retro-paper) 82%); }
+.now-card:nth-child(3) { background: color-mix(in oklch, var(--retro-red) 12%, var(--retro-paper) 88%); }
+
