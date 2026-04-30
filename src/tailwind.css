@@ -5427,3 +5427,10 @@ body::before {
   line-height: 1.5;
 }
 
+
+/* Full-site polish 27: now grid balances panel and stack */
+.now-grid {
+  grid-template-columns: minmax(0, 1.02fr) minmax(18rem, 0.98fr);
+  gap: clamp(1rem, 2.4vw, 1.5rem);
+}
+
