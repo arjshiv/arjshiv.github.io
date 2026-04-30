@@ -4837,3 +4837,11 @@ body::after {
   padding-block: clamp(0.9rem, 2vw, 1.25rem);
 }
 
+
+/* Image-guided polish 32: section titles avoid yellow blur */
+.section-heading h2 {
+  color: var(--retro-ink);
+  text-shadow: 0.04em 0.04em 0 color-mix(in oklch, var(--retro-yellow-panel) 70%, transparent);
+  line-height: 0.98;
+}
+
