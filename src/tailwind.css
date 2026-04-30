@@ -4359,3 +4359,13 @@ body::after {
   border-color: var(--retro-line);
 }
 
+
+/* Retro update 35: Now primary yellow slab */
+.now-primary-panel {
+  background: var(--retro-yellow);
+}
+
+.now-primary-panel h3 {
+  color: var(--retro-ink);
+}
+
