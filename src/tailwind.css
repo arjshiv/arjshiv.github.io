@@ -4714,3 +4714,12 @@ body::after {
   max-width: 10ch;
 }
 
+
+/* Image-guided polish 18: subtitle moves from gray to readable ink */
+.hero-subtitle {
+  color: var(--retro-ink);
+  font-weight: 750;
+  max-width: 31ch;
+  text-wrap: balance;
+}
+
