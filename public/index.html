@@ -973,6 +973,7 @@
         const signalMetricA = document.querySelector('#signal-metric-a');
         const signalMetricB = document.querySelector('#signal-metric-b');
         const signalReadout = document.querySelector('.signal-readout');
+        let signalSwitchTimer;
 
         const setSignalStep = (stepIndex) => {
             const step = signalSteps[stepIndex];
@@ -998,8 +999,9 @@
                 return;
             }
 
+            window.clearTimeout(signalSwitchTimer);
             signalReadout.classList.add('is-switching');
-            window.setTimeout(() => {
+            signalSwitchTimer = window.setTimeout(() => {
                 writeSignalStep();
                 signalReadout.classList.remove('is-switching');
             }, 120);

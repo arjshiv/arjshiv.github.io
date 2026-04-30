@@ -65,6 +65,20 @@ Use Geist and Geist Mono only.
 - Motion should be quick, transform/opacity-only, and respect reduced motion.
 - Do not use animated states that temporarily reduce text contrast.
 
+## Interface Detail Rules
+
+Reference: Jakub Krehel's "Details That Make Interfaces Feel Better".
+
+- Headings use `text-wrap: balance`; paragraph copy uses `text-wrap: pretty`.
+- All visible numeric labels, counters, dates, and module indexes use tabular numbers.
+- Root text stays antialiased for crisp rendering.
+- Interactive motion must be interruptible. Use transitions for hover, active, menu, and text-swap states; keyframes are only for staged entrance.
+- Press feedback uses `scale(0.96)` exactly where it does not distort layout.
+- Images and embeds get a subtle inset outline so media edges stay crisp on paper surfaces.
+- Use optical alignment for arrows and tiny symbols; do not trust geometric centering when the icon shape reads off.
+- Prefer soft layered depth for secondary repeated cards. Keep hard retro borders for major panels and controls only, so the page does not become visually noisy.
+- Nested surfaces must use concentric radii: outer radius equals inner radius plus the visible padding.
+
 ## Copy System
 
 - Copy stays close to the transcript voice: practical, candid, context-heavy.
