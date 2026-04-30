@@ -5445,3 +5445,14 @@ body::before {
   padding: clamp(1.25rem, 2.6vw, 1.75rem);
 }
 
+
+/* Full-site polish 29: operating grid avoids generic equal-card feel */
+.operating-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(0.85rem, 2vw, 1.15rem);
+}
+
+.operating-rule {
+  grid-column: span 2;
+}
+
