@@ -4300,3 +4300,20 @@ body::after {
   color: var(--retro-paper);
 }
 
+
+/* Retro update 29: Chunky hover compression */
+.primary-link:hover,
+.secondary-link:hover,
+.text-link:hover,
+.footer-link:hover,
+.tag-link:hover,
+.primary-link:focus-visible,
+.secondary-link:focus-visible,
+.text-link:focus-visible,
+.footer-link:focus-visible,
+.tag-link:focus-visible {
+  background: var(--retro-yellow);
+  color: var(--retro-ink);
+  box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
+}
+
