@@ -4375,3 +4375,13 @@ body::after {
 .now-card:nth-child(2) { background: color-mix(in oklch, var(--retro-green) 18%, var(--retro-paper) 82%); }
 .now-card:nth-child(3) { background: color-mix(in oklch, var(--retro-red) 12%, var(--retro-paper) 88%); }
 
+
+/* Retro update 37: Operating rules as shuffled cards */
+.operating-rule:nth-child(odd) {
+  background: color-mix(in oklch, var(--retro-yellow) 18%, var(--retro-paper) 82%);
+}
+
+.operating-rule:nth-child(even) {
+  background: color-mix(in oklch, var(--retro-blue) 14%, var(--retro-paper) 86%);
+}
+
