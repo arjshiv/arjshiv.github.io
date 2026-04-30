@@ -4427,3 +4427,13 @@ body::after {
   font-weight: 700;
 }
 
+
+/* Retro update 42: Metrics as status badges */
+.signal-metrics span {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-yellow);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
