@@ -4169,3 +4169,10 @@ body::after {
   display: none;
 }
 
+
+/* Retro update 16: Hero poster as retro plate */
+.poster-card {
+  background: linear-gradient(135deg, color-mix(in oklch, var(--retro-yellow) 26%, var(--retro-paper) 74%) 0 34%, var(--retro-paper) 34% 100%);
+  box-shadow: 0.5rem 0.5rem 0 var(--retro-line);
+}
+
