@@ -4459,3 +4459,17 @@ body::after {
 .story-card:nth-child(4n + 3),
 .role-card:nth-child(3n + 3) { background: color-mix(in oklch, var(--retro-green) 16%, var(--retro-paper) 84%); }
 
+
+/* Retro update 45: Feature cards as print blocks */
+.feature-card,
+.link-preview-card {
+  background: var(--retro-paper);
+}
+
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  filter: grayscale(1) contrast(1.22);
+  border-bottom: 3px solid var(--retro-line);
+}
+
