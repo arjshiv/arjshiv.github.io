@@ -4854,3 +4854,15 @@ body::after {
   box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 34: now panel turns into a strong yellow module */
+.now-primary-panel {
+  background: var(--retro-yellow-panel);
+  border: 4px solid var(--retro-line);
+  box-shadow: var(--retro-shadow);
+}
+
+.now-primary-panel p {
+  color: var(--retro-ink-soft);
+}
+
