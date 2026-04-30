@@ -4216,3 +4216,10 @@ body::after {
   font-weight: 700;
 }
 
+
+/* Retro update 21: Hero subtitle as plain ink */
+.hero-subtitle {
+  color: var(--retro-ink);
+  font-weight: 600;
+}
+
