@@ -5400,3 +5400,11 @@ body::before {
   min-height: 2.9rem;
 }
 
+
+/* Full-site polish 24: start-here ticket loses excessive height */
+.program-card {
+  padding: clamp(1.25rem, 2.4vw, 1.65rem);
+  border-width: 3px;
+  box-shadow: var(--site-shadow);
+}
+
