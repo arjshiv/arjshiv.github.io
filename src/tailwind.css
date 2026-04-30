@@ -4792,3 +4792,11 @@ body::after {
   border-color: var(--retro-line);
 }
 
+
+/* Image-guided polish 27: side panel reads as a start-here ticket */
+.program-card {
+  background: var(--retro-green-panel);
+  border: 4px solid var(--retro-line);
+  box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
+}
+
