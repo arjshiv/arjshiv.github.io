@@ -5703,3 +5703,13 @@ summary:focus-visible {
   padding-top: clamp(1.75rem, 3.6vw, 2.75rem);
 }
 
+
+/* Full-site polish 48: link preview cards stay readable on mobile */
+.link-preview-card {
+  min-height: auto;
+}
+
+.link-preview-copy p {
+  max-width: 62ch;
+}
+
