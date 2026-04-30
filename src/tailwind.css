@@ -5218,3 +5218,14 @@ body::before {
   background-size: 32px 32px;
 }
 
+
+/* Full-site polish 06: topbar scale and visual weight */
+.topbar-inner {
+  width: min(calc(100% - clamp(1.25rem, 4vw, 3rem)), 1230px);
+  min-height: 4.25rem;
+}
+
+.topbar {
+  border-bottom-width: 3px;
+}
+
