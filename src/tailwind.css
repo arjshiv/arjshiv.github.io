@@ -4637,3 +4637,14 @@ body::after {
   border-color: var(--retro-line);
 }
 
+
+/* Image-guided polish 09: shell spacing breathes without drifting */
+.page-shell {
+  padding-top: clamp(1.25rem, 2.8vw, 2.5rem);
+  padding-bottom: clamp(3rem, 7vw, 6rem);
+}
+
+.section-block {
+  margin-top: clamp(2.75rem, 6vw, 5.5rem);
+}
+
