@@ -4176,3 +4176,12 @@ body::after {
   box-shadow: 0.5rem 0.5rem 0 var(--retro-line);
 }
 
+
+/* Retro update 17: Hero device stripe */
+.poster-card::before {
+  border: 3px solid var(--retro-line);
+  background: repeating-linear-gradient(45deg, var(--retro-blue) 0 10px, var(--retro-paper) 10px 20px);
+  box-shadow: var(--retro-shadow-sm);
+  opacity: 0.42;
+}
+
