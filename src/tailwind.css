@@ -5211,3 +5211,10 @@ body::after {
   opacity: 0.08;
 }
 
+
+/* Full-site polish 05: subtler print texture that does not fight text */
+body::before {
+  opacity: 0.18;
+  background-size: 32px 32px;
+}
+
