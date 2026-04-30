@@ -4185,3 +4185,11 @@ body::after {
   opacity: 0.42;
 }
 
+
+/* Retro update 18: Panel headings as receipt rows */
+.panel-heading,
+.program-head {
+  border-bottom: 2px dashed var(--retro-line);
+  color: var(--retro-ink);
+}
+
