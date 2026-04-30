@@ -4493,3 +4493,13 @@ body::after {
   border-color: var(--retro-line);
 }
 
+
+/* Retro update 48: Footer as end poster */
+.site-footer {
+  border: 3px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: color-mix(in oklch, var(--retro-blue) 14%, var(--retro-paper) 86%);
+  box-shadow: var(--retro-shadow);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
