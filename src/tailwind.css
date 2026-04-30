@@ -4053,3 +4053,13 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Retro update 06: Chunky sticky topbar */
+.topbar,
+.topbar-scrolled {
+  background: color-mix(in oklch, var(--retro-paper) 94%, var(--retro-yellow) 6%);
+  border-bottom: 2px solid var(--retro-line);
+  box-shadow: 0 0.18rem 0 var(--retro-line);
+  backdrop-filter: none;
+}
+
