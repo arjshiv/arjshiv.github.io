@@ -4604,3 +4604,16 @@ body::after {
   box-shadow: none;
 }
 
+
+/* Image-guided polish 06: brand mark and lockup gain contrast */
+.brand-mark {
+  background: var(--retro-red);
+  border: 3px solid var(--retro-line);
+  box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
+}
+
+.brand-name,
+.brand-context {
+  color: var(--retro-ink);
+}
+
