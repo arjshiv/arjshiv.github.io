@@ -4739,3 +4739,11 @@ body::after {
   line-height: 1.66;
 }
 
+
+/* Image-guided polish 21: portrait gains the generated blue backing plate */
+.portrait-cutout {
+  background: var(--retro-blue-soft);
+  border: 4px solid var(--retro-line);
+  box-shadow: 0.32rem 0.32rem 0 var(--retro-line);
+}
+
