@@ -4293,3 +4293,10 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 28: Primary action in red */
+.primary-link {
+  background: var(--retro-red);
+  color: var(--retro-paper);
+}
+
