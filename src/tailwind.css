@@ -4503,3 +4503,12 @@ body::after {
   padding: clamp(1.25rem, 3vw, 2rem);
 }
 
+
+/* Retro update 49: Mobile shadows stay crisp but smaller */
+@media (max-width: 760px) {
+  :root {
+    --retro-shadow: 0.22rem 0.22rem 0 var(--retro-line);
+    --retro-shadow-sm: 0.14rem 0.14rem 0 var(--retro-line);
+  }
+}
+
