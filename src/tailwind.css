@@ -5464,3 +5464,11 @@ body::before {
   padding: clamp(1rem, 2vw, 1.25rem);
 }
 
+
+/* Full-site polish 31: signal console is compact and usable */
+.signal-console {
+  grid-template-columns: minmax(16rem, 0.78fr) minmax(0, 1fr);
+  gap: clamp(1rem, 2.5vw, 1.35rem);
+  padding: clamp(1rem, 2.5vw, 1.45rem);
+}
+
