@@ -5389,3 +5389,14 @@ body::before {
   min-height: 2.8rem;
 }
 
+
+/* Full-site polish 23: hero actions become a clean command row */
+.hero-actions {
+  gap: 0.7rem;
+  margin-top: clamp(1.25rem, 2.6vw, 1.9rem);
+}
+
+.primary-link, .secondary-link, .text-link {
+  min-height: 2.9rem;
+}
+
