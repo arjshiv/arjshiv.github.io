@@ -4334,3 +4334,11 @@ body::after {
   font-weight: 700;
 }
 
+
+/* Retro update 32: Section headings as printed titles */
+.section-heading h2 {
+  color: var(--retro-ink);
+  font-weight: 700;
+  text-shadow: 0.045em 0.045em 0 var(--retro-yellow);
+}
+
