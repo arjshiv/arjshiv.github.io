@@ -5408,3 +5408,11 @@ body::before {
   box-shadow: var(--site-shadow);
 }
 
+
+/* Full-site polish 25: start-here heading scale is readable */
+.program-card h2 {
+  max-width: 12ch;
+  font-size: clamp(2.05rem, 3.2vw, 2.75rem);
+  line-height: 1;
+}
+
