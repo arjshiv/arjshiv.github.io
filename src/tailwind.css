@@ -4063,3 +4063,14 @@ body::after {
   backdrop-filter: none;
 }
 
+
+/* Retro update 07: Brand LED becomes stamp */
+.brand-mark-led {
+  width: 0.72rem;
+  height: 0.72rem;
+  border: 2px solid var(--retro-line);
+  border-radius: 0;
+  background: var(--retro-red);
+  box-shadow: var(--retro-shadow-sm);
+}
+
