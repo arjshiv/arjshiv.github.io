@@ -5546,3 +5546,10 @@ body::before {
   padding: clamp(1rem, 2vw, 1.25rem);
 }
 
+
+/* Full-site polish 40: conversations section balances video and links */
+.conversation-grid {
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
