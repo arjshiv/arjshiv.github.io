@@ -4351,3 +4351,11 @@ body::after {
   height: 2px;
 }
 
+
+/* Retro update 34: Tags as stickers */
+.section-tags .tag-link,
+.tag-label {
+  background: color-mix(in oklch, var(--retro-green) 24%, var(--retro-paper) 76%);
+  border-color: var(--retro-line);
+}
+
