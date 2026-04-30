@@ -4223,3 +4223,13 @@ body::after {
   font-weight: 600;
 }
 
+
+/* Retro update 22: Hero note as note card */
+.hero-note {
+  background: var(--retro-paper);
+  border: 3px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  box-shadow: var(--retro-shadow-sm);
+  color: var(--retro-ink);
+}
+
