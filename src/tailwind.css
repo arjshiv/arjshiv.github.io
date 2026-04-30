@@ -4473,3 +4473,12 @@ body::after {
   border-bottom: 3px solid var(--retro-line);
 }
 
+
+/* Retro update 46: Badges in primary ink */
+.feature-badge {
+  border: 2px solid var(--retro-line);
+  background: var(--retro-red);
+  color: var(--retro-paper);
+  box-shadow: var(--retro-shadow-sm);
+}
+
