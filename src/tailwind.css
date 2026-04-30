@@ -4978,3 +4978,13 @@ body::after {
   min-height: 2.55rem;
 }
 
+
+/* Image-guided polish 46: previews unify with the print-card system */
+.feature-card,
+.link-preview-card,
+.video-card {
+  background: var(--retro-cream);
+  border: 3px solid var(--retro-line);
+  box-shadow: var(--retro-shadow-sm);
+}
+
