@@ -4074,3 +4074,14 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 08: Brand type in ink */
+.brand-mark-name {
+  color: var(--retro-ink);
+  font-weight: 700;
+}
+
+.brand-mark-role {
+  color: var(--retro-ink-soft);
+}
+
