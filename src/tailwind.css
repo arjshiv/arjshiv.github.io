@@ -5011,3 +5011,16 @@ body::after {
   border-bottom: 4px solid var(--retro-line);
 }
 
+
+/* Image-guided polish 49: mobile layout follows the generated compact ticket stack */
+@media (max-width: 760px) {
+  .topbar-inner { padding-inline: 0.85rem; }
+  .nav-toggle { min-height: 3.4rem; background: var(--retro-yellow-panel); color: var(--retro-ink); border: 3px solid var(--retro-line); box-shadow: var(--retro-shadow-sm); }
+  .page-shell { padding-inline: 0.75rem; }
+  .poster-card, .program-card, .signal-console, .now-primary-panel, .site-footer { border-width: 3px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 1.1rem; }
+  .hero-title { max-width: 9ch; font-size: clamp(3rem, 18vw, 4.9rem); }
+  .hero-subtitle { max-width: 24ch; }
+  .program-item { grid-template-columns: 3.5rem 1fr; }
+}
+
