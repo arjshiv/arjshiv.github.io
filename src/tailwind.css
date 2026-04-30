@@ -4688,3 +4688,11 @@ body::after {
   gap: clamp(1.4rem, 3.5vw, 3.1rem);
 }
 
+
+/* Image-guided polish 15: small hero label becomes a red anchor */
+.hero-note-label {
+  color: var(--retro-red);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
