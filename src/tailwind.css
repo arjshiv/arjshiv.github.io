@@ -5024,3 +5024,26 @@ body::after {
   .program-item { grid-template-columns: 3.5rem 1fr; }
 }
 
+
+/* Image-guided polish 50: final contrast sweep for pale panels */
+.program-card *,
+.now-primary-panel *,
+.now-card *,
+.operating-rule *,
+.story-card *,
+.role-card *,
+.article-card *,
+.principle-card *,
+.faq-card *,
+.link-preview-card *,
+.feature-card * {
+  text-decoration-color: currentColor;
+}
+
+.program-card .panel-index,
+.now-primary-panel .panel-index,
+.section-heading .panel-index {
+  color: var(--retro-red);
+  font-weight: 800;
+}
+
