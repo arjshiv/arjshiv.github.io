@@ -5190,3 +5190,14 @@ body::after {
   --ease-retro: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+
+/* Full-site polish 03: align browser chrome with light retro system */
+:root { color-scheme: light; }
+
+body {
+  background: var(--site-paper);
+  color: var(--site-ink);
+}
+
+meta[name='theme-color'] { color: var(--site-paper); }
+
