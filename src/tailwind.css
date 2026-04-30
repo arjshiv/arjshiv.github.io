@@ -5528,3 +5528,10 @@ body::before {
   padding: clamp(1rem, 2vw, 1.25rem);
 }
 
+
+/* Full-site polish 38: recent proof grid avoids oversized media imbalance */
+.recent-grid {
+  grid-template-columns: minmax(0, 0.95fr) minmax(18rem, 1.05fr);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
