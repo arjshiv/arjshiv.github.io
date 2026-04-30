@@ -4988,3 +4988,17 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Image-guided polish 47: preview copy and titles stay readable */
+.feature-copy p,
+.link-preview-copy p,
+.video-card p {
+  color: var(--retro-ink-soft);
+}
+
+.feature-copy h3,
+.link-preview-copy h3,
+.video-card h3 {
+  color: var(--retro-ink);
+}
+
