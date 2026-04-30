@@ -4570,3 +4570,14 @@ body::after {
   --retro-shadow-sm: 0.2rem 0.2rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 02: remove muddy black page gutters */
+body {
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+}
+
+.page-shell {
+  background: var(--retro-paper);
+}
+
