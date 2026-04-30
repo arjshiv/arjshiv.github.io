@@ -5507,3 +5507,14 @@ body::before {
   line-height: 1.58;
 }
 
+
+/* Full-site polish 36: proof band becomes concise and balanced */
+.stats-row {
+  gap: clamp(0.8rem, 2vw, 1.1rem);
+  padding: clamp(1rem, 2.5vw, 1.35rem);
+}
+
+.stat-card {
+  padding: 0.9rem;
+}
+
