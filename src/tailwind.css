@@ -4663,3 +4663,14 @@ body::after {
   background: linear-gradient(135deg, transparent 0 58%, color-mix(in oklch, var(--retro-yellow-panel) 22%, transparent) 58% 100%);
 }
 
+
+/* Image-guided polish 12: panel headings stop fading out */
+.panel-heading,
+.program-head,
+.panel-index,
+.section-kicker,
+.story-label {
+  color: var(--retro-ink);
+  opacity: 1;
+}
+
