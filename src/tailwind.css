@@ -5344,3 +5344,11 @@ body::before {
   box-shadow: var(--site-shadow);
 }
 
+
+/* Full-site polish 18: hero title wraps deliberately */
+.hero-title {
+  font-size: clamp(3.6rem, 6.2vw, 5.8rem);
+  line-height: 0.88;
+  max-width: 9.5ch;
+}
+
