@@ -4128,3 +4128,28 @@ body::after {
   padding-top: clamp(1.1rem, 2vw, 1.65rem);
 }
 
+
+/* Retro update 14: Global framed surfaces */
+.poster-card,
+.program-card,
+.now-primary-panel,
+.now-card,
+.operating-rule,
+.signal-console,
+.signal-readout,
+.story-card,
+.role-card,
+.feature-card,
+.article-card,
+.principle-card,
+.faq-card,
+.link-preview-card,
+.quote-panel,
+.video-card {
+  border: 3px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: color-mix(in oklch, var(--retro-paper) 93%, var(--retro-yellow) 7%);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow);
+}
+
