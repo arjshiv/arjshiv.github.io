@@ -4040,3 +4040,9 @@ body::before {
   opacity: 0.32;
 }
 
+
+/* Retro update 04: Remove dark center rails */
+body::after {
+  border-inline-color: color-mix(in oklch, var(--retro-line) 16%, transparent);
+}
+
