@@ -4627,3 +4627,13 @@ body::after {
   min-height: 2.6rem;
 }
 
+
+/* Image-guided polish 08: active navigation uses the red reference key */
+.nav-link[aria-current],
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--retro-red);
+  color: var(--retro-paper);
+  border-color: var(--retro-line);
+}
+
