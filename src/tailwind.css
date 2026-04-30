@@ -5434,3 +5434,14 @@ body::before {
   gap: clamp(1rem, 2.4vw, 1.5rem);
 }
 
+
+/* Full-site polish 28: now surfaces share padding and border weight */
+.now-primary-panel, .now-card {
+  border-width: 3px;
+  box-shadow: var(--site-shadow-sm);
+}
+
+.now-primary-panel {
+  padding: clamp(1.25rem, 2.6vw, 1.75rem);
+}
+
