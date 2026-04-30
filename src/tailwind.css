@@ -5329,3 +5329,10 @@ body::before {
   color: var(--site-red);
 }
 
+
+/* Full-site polish 16: hero proportions become more stable on desktop */
+.hero-section {
+  grid-template-columns: minmax(0, 1.6fr) minmax(19rem, 0.78fr);
+  gap: clamp(1.2rem, 2.4vw, 1.7rem);
+}
+
