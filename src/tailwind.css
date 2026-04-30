@@ -5242,3 +5242,14 @@ body::before {
   color: var(--site-ink);
 }
 
+
+/* Full-site polish 08: red LED becomes the accent, not the whole brand surface */
+.brand-mark-led {
+  width: 0.68rem;
+  height: 0.68rem;
+  border-radius: 0;
+  background: var(--site-red);
+  border: 2px solid var(--site-line);
+  box-shadow: var(--site-shadow-sm);
+}
+
