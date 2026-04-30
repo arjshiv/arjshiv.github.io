@@ -4007,3 +4007,20 @@ button {
   }
 }
 
+
+/* Retro update 01: Paper and ink token reset */
+:root {
+  --retro-paper: oklch(95% 0.034 82);
+  --retro-paper-deep: oklch(90% 0.05 78);
+  --retro-ink: oklch(18% 0.018 55);
+  --retro-ink-soft: oklch(29% 0.024 55);
+  --retro-red: oklch(58% 0.22 28);
+  --retro-yellow: oklch(86% 0.17 86);
+  --retro-blue: oklch(58% 0.14 248);
+  --retro-green: oklch(67% 0.14 145);
+  --retro-line: oklch(19% 0.018 55);
+  --retro-shadow: 0.34rem 0.34rem 0 var(--retro-line);
+  --retro-shadow-sm: 0.2rem 0.2rem 0 var(--retro-line);
+  --retro-radius: 0.22rem;
+}
+
