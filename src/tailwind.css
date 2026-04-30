@@ -4782,3 +4782,13 @@ body::after {
   box-shadow: 0.28rem 0.28rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 26: secondary links stop competing with primary */
+.secondary-link,
+.text-link,
+.footer-link {
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+  border-color: var(--retro-line);
+}
+
