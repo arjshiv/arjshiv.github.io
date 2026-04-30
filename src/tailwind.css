@@ -4551,3 +4551,22 @@ body::after {
 .faq-card summary {
   color: var(--retro-ink);
 }
+
+/* Image-guided polish 01: stronger accessible paper tokens */
+:root {
+  --retro-paper: oklch(96% 0.026 86);
+  --retro-cream: oklch(93.5% 0.04 83);
+  --retro-panel: oklch(91.5% 0.047 79);
+  --retro-blue-panel: oklch(56% 0.102 242);
+  --retro-blue-soft: oklch(82% 0.062 235);
+  --retro-green-panel: oklch(78% 0.055 122);
+  --retro-yellow-panel: oklch(83% 0.16 84);
+  --retro-red: oklch(48% 0.18 30);
+  --retro-ink: oklch(13% 0.018 60);
+  --retro-ink-soft: oklch(24% 0.02 60);
+  --retro-muted: oklch(34% 0.022 60);
+  --retro-line: oklch(12% 0.018 60);
+  --retro-shadow: 0.36rem 0.36rem 0 var(--retro-line);
+  --retro-shadow-sm: 0.2rem 0.2rem 0 var(--retro-line);
+}
+
