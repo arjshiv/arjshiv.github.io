@@ -5483,3 +5483,13 @@ body::before {
   gap: 0.55rem;
 }
 
+
+/* Full-site polish 33: signal readout measure and heading */
+.signal-readout {
+  padding: clamp(1.15rem, 2.4vw, 1.55rem);
+}
+
+.signal-readout h3 {
+  max-width: 17ch;
+}
+
