@@ -5072,3 +5072,101 @@ body::after {
   animation: none;
   will-change: auto;
 }
+
+/* Taste Skill correction: FAQ should feel like a controlled accordion, not a table */
+#faq {
+  padding-top: clamp(2rem, 4vw, 3.25rem);
+  padding-bottom: clamp(1.4rem, 3vw, 2.5rem);
+}
+
+#faq .section-heading {
+  border-top-width: 3px;
+  padding-block: clamp(0.85rem, 1.8vw, 1.15rem);
+}
+
+#faq .section-heading h2 {
+  max-width: 18ch;
+}
+
+#faq .faq-list {
+  width: min(100%, 58rem);
+  margin-top: clamp(1rem, 2.4vw, 1.45rem);
+  margin-inline: auto;
+  gap: 0.65rem;
+}
+
+#faq .faq-card,
+#faq .faq-list .faq-card:first-child {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 3px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-cream);
+  box-shadow: var(--retro-shadow-sm);
+  overflow: clip;
+}
+
+#faq .faq-card summary {
+  min-height: 4.35rem;
+  padding: 1rem clamp(3.25rem, 5vw, 4.25rem) 1rem clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--retro-ink);
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  line-height: 1.22;
+}
+
+#faq .faq-card summary:hover {
+  color: var(--retro-red);
+}
+
+#faq .faq-card summary::after {
+  right: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--retro-red);
+  font-weight: 800;
+}
+
+#faq .faq-card[open] {
+  background: color-mix(in oklch, var(--retro-yellow-panel) 18%, var(--retro-paper) 82%);
+  border-color: var(--retro-line);
+  padding-inline: 0;
+  margin-inline: 0;
+}
+
+#faq .faq-card p {
+  margin: 0;
+  padding: 0 clamp(1rem, 2.5vw, 1.4rem) clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--retro-ink-soft);
+  max-width: 62ch;
+}
+
+@media (min-width: 980px) {
+  #faq {
+    display: block;
+  }
+
+  #faq .section-heading {
+    grid-column: auto;
+  }
+
+  #faq .faq-list {
+    grid-column: auto;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  #faq .faq-list {
+    width: 100%;
+  }
+
+  #faq .faq-card summary {
+    min-height: 3.9rem;
+  }
+}
+
+/* Taste Skill correction: do not reserve fake blank height between narrative modules */
+.section-block,
+.site-footer {
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
+}
