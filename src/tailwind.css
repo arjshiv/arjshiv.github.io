@@ -4031,3 +4031,12 @@ body {
   background: var(--retro-paper);
 }
 
+
+/* Retro update 03: Graph-paper substrate */
+body::before {
+  background-image: linear-gradient(90deg, color-mix(in oklch, var(--retro-line) 12%, transparent) 1px, transparent 1px), linear-gradient(0deg, color-mix(in oklch, var(--retro-line) 10%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mix-blend-mode: multiply;
+  opacity: 0.32;
+}
+
