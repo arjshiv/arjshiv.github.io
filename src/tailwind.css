@@ -4969,3 +4969,12 @@ body::after {
   color: var(--retro-ink-soft);
 }
 
+
+/* Image-guided polish 45: metric badges mirror generated chips */
+.signal-metrics span {
+  background: var(--retro-yellow-panel);
+  border: 3px solid var(--retro-line);
+  color: var(--retro-ink);
+  min-height: 2.55rem;
+}
+
