@@ -4085,3 +4085,13 @@ body::after {
   color: var(--retro-ink-soft);
 }
 
+
+/* Retro update 09: Nav as cartridge buttons */
+.nav-link {
+  border: 2px solid var(--retro-line);
+  border-radius: var(--retro-radius);
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+  box-shadow: var(--retro-shadow-sm);
+}
+
