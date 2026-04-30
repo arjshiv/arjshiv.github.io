@@ -4681,3 +4681,10 @@ body::after {
   padding-bottom: clamp(0.85rem, 1.6vw, 1.1rem);
 }
 
+
+/* Image-guided polish 14: hero columns align to the generated poster balance */
+.hero-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(17rem, 0.84fr);
+  gap: clamp(1.4rem, 3.5vw, 3.1rem);
+}
+
