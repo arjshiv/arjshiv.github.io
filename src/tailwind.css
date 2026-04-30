@@ -5416,3 +5416,14 @@ body::before {
   line-height: 1;
 }
 
+
+/* Full-site polish 26: start-here rows share one clean system */
+.program-item {
+  padding-top: 0.85rem;
+  gap: 0.45rem 0.75rem;
+}
+
+.program-item p {
+  line-height: 1.5;
+}
+
