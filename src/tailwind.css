@@ -4342,3 +4342,12 @@ body::after {
   text-shadow: 0.045em 0.045em 0 var(--retro-yellow);
 }
 
+
+/* Retro update 33: Section rule becomes bold divider */
+.section-heading::before,
+.section-block::before,
+.site-footer::before {
+  background: var(--retro-line);
+  height: 2px;
+}
+
