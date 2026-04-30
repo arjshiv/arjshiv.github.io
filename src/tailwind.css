@@ -4696,3 +4696,11 @@ body::after {
   letter-spacing: 0.12em;
 }
 
+
+/* Image-guided polish 16: title gets crisper ink and controlled shadow */
+.hero-title {
+  color: var(--retro-ink);
+  text-shadow: 0.055em 0.055em 0 var(--retro-yellow-panel);
+  line-height: 0.9;
+}
+
