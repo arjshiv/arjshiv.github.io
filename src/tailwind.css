@@ -4589,3 +4589,10 @@ body::before {
   mix-blend-mode: multiply;
 }
 
+
+/* Image-guided polish 04: replace heavy darkness with thin print rails */
+body::after {
+  background: linear-gradient(90deg, transparent 0, transparent calc(50% - 42rem), var(--retro-line) calc(50% - 42rem), var(--retro-line) calc(50% - 41.84rem), transparent calc(50% - 41.84rem), transparent calc(50% + 41.84rem), var(--retro-line) calc(50% + 41.84rem), var(--retro-line) calc(50% + 42rem), transparent calc(50% + 42rem));
+  opacity: 0.14;
+}
+
