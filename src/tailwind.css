@@ -4596,3 +4596,11 @@ body::after {
   opacity: 0.14;
 }
 
+
+/* Image-guided polish 05: topbar becomes a crisp register strip */
+.topbar {
+  background: var(--retro-cream);
+  border-bottom: 4px solid var(--retro-line);
+  box-shadow: none;
+}
+
