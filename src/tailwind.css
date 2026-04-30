@@ -4704,3 +4704,13 @@ body::after {
   line-height: 0.9;
 }
 
+
+/* Image-guided polish 17: hero title avoids awkward over-wide wrapping */
+.hero-copy-panel {
+  max-width: 42rem;
+}
+
+.hero-title {
+  max-width: 10ch;
+}
+
