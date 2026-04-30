@@ -4193,3 +4193,18 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Retro update 19: Labels use ink, not gray */
+.article-meta,
+.hero-note-label,
+.panel-index,
+.program-head,
+.quote-label,
+.section-kicker,
+.stat-label,
+.story-label,
+.video-meta,
+.role-head p {
+  color: var(--retro-ink-soft);
+}
+
