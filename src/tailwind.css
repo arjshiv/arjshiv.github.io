@@ -4932,3 +4932,14 @@ body::after {
   box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 42: signal tabs get stronger touch affordance */
+.signal-stage {
+  min-height: 4.1rem;
+  background: var(--retro-paper);
+  color: var(--retro-ink);
+  border: 3px solid var(--retro-line);
+}
+
+.signal-stage strong { color: var(--retro-ink); }
+
