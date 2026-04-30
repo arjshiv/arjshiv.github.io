@@ -4809,3 +4809,12 @@ body::after {
   text-wrap: balance;
 }
 
+
+/* Image-guided polish 29: program rows align like ticket entries */
+.program-item {
+  display: grid;
+  grid-template-columns: minmax(5.5rem, 0.28fr) 1fr;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  align-items: start;
+}
+
