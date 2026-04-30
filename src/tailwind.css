@@ -5314,3 +5314,18 @@ body::before {
   max-width: 20ch;
 }
 
+
+/* Full-site polish 15: labels use consistent ink and red module indexes */
+.section-kicker,
+.story-label,
+.article-meta,
+.stat-label,
+.video-meta,
+.quote-label {
+  color: var(--site-ink-2);
+}
+
+.section-heading .panel-index {
+  color: var(--site-red);
+}
+
