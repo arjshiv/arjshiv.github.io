@@ -4402,3 +4402,17 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 40: Active signal switch */
+.signal-stage.is-active,
+.signal-stage:hover,
+.signal-stage:focus-visible {
+  background: var(--retro-red);
+  color: var(--retro-paper);
+  border-color: var(--retro-line);
+}
+
+.signal-stage.is-active span {
+  color: var(--retro-yellow);
+}
+
