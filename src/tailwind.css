@@ -5298,3 +5298,11 @@ body::before {
   opacity: 0.9;
 }
 
+
+/* Full-site polish 13: section heading grid no longer creates awkward label drift */
+.section-heading {
+  grid-template-columns: minmax(4rem, 0.16fr) 1fr auto;
+  gap: 0.65rem 1rem;
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+
