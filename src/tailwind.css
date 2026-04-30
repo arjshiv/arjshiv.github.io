@@ -4818,3 +4818,14 @@ body::after {
   align-items: start;
 }
 
+
+/* Image-guided polish 30: program row copy has strong contrast */
+.program-item p {
+  color: var(--retro-ink-soft);
+  line-height: 1.55;
+}
+
+.program-item strong {
+  color: var(--retro-red);
+}
+
