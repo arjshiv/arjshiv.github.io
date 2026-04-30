@@ -5657,3 +5657,16 @@ summary:focus-visible {
   }
 }
 
+
+/* Full-site polish 44: console marks become quiet dividers, not stray artifacts */
+.module-console {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#writing .module-console {
+  display: none;
+}
+
