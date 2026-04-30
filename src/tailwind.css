@@ -4581,3 +4581,11 @@ body {
   background: var(--retro-paper);
 }
 
+
+/* Image-guided polish 03: printed field stays subtle behind content */
+body::before {
+  opacity: 0.32;
+  background-size: 26px 26px;
+  mix-blend-mode: multiply;
+}
+
