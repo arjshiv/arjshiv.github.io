@@ -5289,3 +5289,12 @@ body::before {
   margin-top: clamp(3.5rem, 6vw, 5.5rem);
 }
 
+
+/* Full-site polish 12: section boundaries become deliberate rules */
+.section-block::before,
+.site-footer::before {
+  height: 2px;
+  background: var(--site-line);
+  opacity: 0.9;
+}
+
