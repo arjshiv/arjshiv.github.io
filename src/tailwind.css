@@ -5336,3 +5336,11 @@ body::before {
   gap: clamp(1.2rem, 2.4vw, 1.7rem);
 }
 
+
+/* Full-site polish 17: hero poster padding and frame are calmer */
+.poster-card {
+  padding: clamp(1.45rem, 3vw, 2.15rem);
+  border-width: 3px;
+  box-shadow: var(--site-shadow);
+}
+
