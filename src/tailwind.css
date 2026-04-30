@@ -5724,3 +5724,22 @@ summary:focus-visible {
   .primary-link, .secondary-link, .text-link, .footer-link { width: 100%; justify-content: center; }
 }
 
+
+/* Full-site polish 50: final system hardening for flagship pass */
+.poster-card,
+.program-card,
+.now-primary-panel,
+.signal-console,
+.stats-row,
+.site-footer {
+  contain: layout style;
+}
+
+.reveal.visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
