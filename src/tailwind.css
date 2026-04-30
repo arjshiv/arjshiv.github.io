@@ -4046,3 +4046,10 @@ body::after {
   border-inline-color: color-mix(in oklch, var(--retro-line) 16%, transparent);
 }
 
+
+/* Retro update 05: Highlighter selection */
+::selection {
+  background: var(--retro-yellow);
+  color: var(--retro-ink);
+}
+
