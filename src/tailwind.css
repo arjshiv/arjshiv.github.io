@@ -4924,3 +4924,11 @@ body::after {
   text-shadow: 0.05em 0.05em 0 var(--retro-line);
 }
 
+
+/* Image-guided polish 41: signal console becomes a paper arcade module */
+.signal-console {
+  background: var(--retro-panel);
+  border: 4px solid var(--retro-line);
+  box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
+}
+
