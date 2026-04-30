@@ -4437,3 +4437,16 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 43: Stats as score counters */
+.stats-row {
+  border: 3px solid var(--retro-line);
+  background: var(--retro-paper);
+  box-shadow: var(--retro-shadow);
+}
+
+.stat-value {
+  color: var(--retro-red);
+  font-weight: 700;
+}
+
