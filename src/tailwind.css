@@ -4773,3 +4773,12 @@ body::after {
 .hero-fact:nth-child(3) { background: var(--retro-green-panel); }
 .hero-fact:nth-child(4) { background: color-mix(in oklch, var(--retro-red) 20%, var(--retro-paper) 80%); }
 
+
+/* Image-guided polish 25: primary CTA becomes the dominant red control */
+.primary-link {
+  background: var(--retro-red);
+  color: var(--retro-paper);
+  border: 3px solid var(--retro-line);
+  box-shadow: 0.28rem 0.28rem 0 var(--retro-line);
+}
+
