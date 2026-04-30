@@ -5265,3 +5265,16 @@ body::before {
   box-shadow: var(--site-shadow-sm);
 }
 
+
+/* Full-site polish 10: current nav state is clear but not shouty */
+.nav-link[aria-current='true'],
+.nav-link[aria-current] {
+  background: var(--site-red);
+  color: var(--site-paper);
+}
+
+.nav-link[aria-current='true']::before,
+.nav-link[aria-current]::before {
+  display: none;
+}
+
