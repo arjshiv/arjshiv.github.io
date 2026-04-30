@@ -5360,3 +5360,14 @@ body::before {
   line-height: 1.18;
 }
 
+
+/* Full-site polish 20: hero note density and measure */
+.hero-note {
+  max-width: 38rem;
+  padding: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.hero-copy {
+  max-width: 56ch;
+}
+
