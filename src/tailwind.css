@@ -5535,3 +5535,14 @@ body::before {
   gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
+
+/* Full-site polish 39: feature cards use one coherent media treatment */
+.feature-card, .link-preview-card, .video-card {
+  border-radius: var(--site-radius);
+  overflow: hidden;
+}
+
+.feature-copy, .link-preview-copy {
+  padding: clamp(1rem, 2vw, 1.25rem);
+}
+
