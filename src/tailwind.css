@@ -4877,3 +4877,9 @@ body::after {
   color: var(--retro-ink-soft);
 }
 
+
+/* Image-guided polish 36: now card palette follows reference rhythm */
+.now-card:nth-child(1) { background: var(--retro-blue-soft); }
+.now-card:nth-child(2) { background: var(--retro-green-panel); }
+.now-card:nth-child(3) { background: color-mix(in oklch, var(--retro-red) 18%, var(--retro-paper) 82%); }
+
