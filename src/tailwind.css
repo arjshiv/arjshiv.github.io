@@ -4648,3 +4648,11 @@ body::after {
   margin-top: clamp(2.75rem, 6vw, 5.5rem);
 }
 
+
+/* Image-guided polish 10: hero poster gets a clean heavy frame */
+.poster-card {
+  background: var(--retro-cream);
+  border: 4px solid var(--retro-line);
+  box-shadow: 0.42rem 0.42rem 0 var(--retro-line);
+}
+
