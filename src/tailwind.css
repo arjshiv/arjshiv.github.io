@@ -5002,3 +5002,12 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Image-guided polish 48: media gets consistent printed treatment */
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  filter: grayscale(1) contrast(1.16) brightness(1.03);
+  border-bottom: 4px solid var(--retro-line);
+}
+
