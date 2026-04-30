@@ -5600,3 +5600,15 @@ body::before {
   gap: clamp(0.9rem, 2vw, 1.15rem);
 }
 
+
+/* Full-site polish 46: footer reads as final output, not another card wall */
+.site-footer {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  border-width: 3px;
+  box-shadow: var(--site-shadow);
+}
+
+.site-footer-copy {
+  max-width: 42ch;
+}
+
