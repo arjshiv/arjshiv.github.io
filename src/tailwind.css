@@ -4883,3 +4883,14 @@ body::after {
 .now-card:nth-child(2) { background: var(--retro-green-panel); }
 .now-card:nth-child(3) { background: color-mix(in oklch, var(--retro-red) 18%, var(--retro-paper) 82%); }
 
+
+/* Image-guided polish 37: operating cards align to same print system */
+.operating-rule,
+.story-card,
+.role-card,
+.article-card,
+.principle-card {
+  border: 3px solid var(--retro-line);
+  box-shadow: var(--retro-shadow-sm);
+}
+
