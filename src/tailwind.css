@@ -5670,3 +5670,15 @@ summary:focus-visible {
   display: none;
 }
 
+
+/* Full-site polish 45: writing section aligns copy with the heading system */
+#writing .two-column-section {
+  grid-template-columns: minmax(0, 0.82fr) minmax(20rem, 1.18fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+#writing .section-intro {
+  max-width: 46ch;
+}
+
