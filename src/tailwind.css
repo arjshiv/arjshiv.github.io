@@ -5278,3 +5278,14 @@ body::before {
   display: none;
 }
 
+
+/* Full-site polish 11: reset global section rhythm from override pile */
+.section-block {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4.5vw, 3.5rem);
+}
+
+.section-block + .section-block {
+  margin-top: clamp(3.5rem, 6vw, 5.5rem);
+}
+
