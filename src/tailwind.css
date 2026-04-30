@@ -4617,3 +4617,13 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Image-guided polish 07: navigation buttons read as physical controls */
+.nav-link {
+  background: var(--retro-paper);
+  border: 3px solid var(--retro-line);
+  box-shadow: 0.24rem 0.24rem 0 var(--retro-line);
+  color: var(--retro-ink);
+  min-height: 2.6rem;
+}
+
