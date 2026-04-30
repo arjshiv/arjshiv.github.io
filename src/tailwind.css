@@ -4958,3 +4958,14 @@ body::after {
   color: var(--retro-paper);
 }
 
+
+/* Image-guided polish 44: readout copy and metrics hold contrast */
+.signal-readout {
+  background: var(--retro-paper);
+  border: 3px solid var(--retro-line);
+}
+
+.signal-readout p {
+  color: var(--retro-ink-soft);
+}
+
