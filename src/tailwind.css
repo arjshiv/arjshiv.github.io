@@ -4233,3 +4233,24 @@ body::after {
   color: var(--retro-ink);
 }
 
+
+/* Retro update 23: Body copy contrast reset */
+.hero-copy,
+.program-item p,
+.about-copy p,
+.story-card p,
+.section-intro,
+.feature-copy p,
+.recent-item p:last-child,
+.article-card p:last-child,
+.stat-copy,
+.role-card p,
+.principle-card p,
+.link-preview-copy p:last-child,
+.faq-card p,
+.now-card p:last-child,
+.operating-rule p:last-child,
+.signal-readout p {
+  color: var(--retro-ink-soft);
+}
+
