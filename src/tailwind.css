@@ -5201,3 +5201,13 @@ body {
 
 meta[name='theme-color'] { color: var(--site-paper); }
 
+
+/* Full-site polish 04: cleaner page rail and less black gutter dominance */
+.page-shell {
+  width: min(calc(100% - clamp(1.25rem, 4vw, 3rem)), 1230px);
+}
+
+body::after {
+  opacity: 0.08;
+}
+
