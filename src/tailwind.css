@@ -4829,3 +4829,11 @@ body::after {
   color: var(--retro-red);
 }
 
+
+/* Image-guided polish 31: section headings become clean ticket headers */
+.section-heading {
+  border-top: 4px solid var(--retro-line);
+  border-bottom: 2px dashed var(--retro-line);
+  padding-block: clamp(0.9rem, 2vw, 1.25rem);
+}
+
