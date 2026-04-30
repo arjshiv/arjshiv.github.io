@@ -4385,3 +4385,10 @@ body::after {
   background: color-mix(in oklch, var(--retro-blue) 14%, var(--retro-paper) 86%);
 }
 
+
+/* Retro update 38: Signal console as arcade panel */
+.signal-console {
+  background: color-mix(in oklch, var(--retro-ink) 8%, var(--retro-paper) 92%);
+  box-shadow: 0.5rem 0.5rem 0 var(--retro-line);
+}
+
