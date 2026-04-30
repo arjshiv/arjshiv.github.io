@@ -4106,3 +4106,9 @@ body::after {
   box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
 }
 
+
+/* Retro update 11: Remove tiny active underline */
+.nav-link[aria-current='true']::before {
+  display: none;
+}
+
