@@ -4845,3 +4845,12 @@ body::after {
   line-height: 0.98;
 }
 
+
+/* Image-guided polish 33: tags keep sticker feel with readable labels */
+.section-tags .tag-link,
+.tag-label {
+  color: var(--retro-ink);
+  border: 2px solid var(--retro-line);
+  box-shadow: 0.12rem 0.12rem 0 var(--retro-line);
+}
+
