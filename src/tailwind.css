@@ -4416,3 +4416,14 @@ body::after {
   color: var(--retro-yellow);
 }
 
+
+/* Retro update 41: Readout as cream display */
+.signal-readout {
+  background: var(--retro-paper);
+}
+
+.signal-readout h3 {
+  color: var(--retro-ink);
+  font-weight: 700;
+}
+
