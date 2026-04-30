@@ -5575,3 +5575,14 @@ body::before {
   min-height: auto;
 }
 
+
+/* Full-site polish 43: FAQ is documented accordion, not table */
+#faq .faq-list {
+  width: min(100%, 54rem);
+}
+
+#faq .faq-card summary {
+  font-family: 'Geist Mono', monospace;
+  letter-spacing: -0.015em;
+}
+
