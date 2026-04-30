@@ -5500,3 +5500,10 @@ body::before {
   gap: clamp(1rem, 2.4vw, 1.5rem);
 }
 
+
+/* Full-site polish 35: story cards and role cards get readable measures */
+.story-card p, .role-card p, .article-card p, .principle-card p {
+  max-width: 62ch;
+  line-height: 1.58;
+}
+
