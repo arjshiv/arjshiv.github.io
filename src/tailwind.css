@@ -4904,3 +4904,16 @@ body::after {
   color: var(--retro-ink-soft);
 }
 
+
+/* Image-guided polish 39: stats row becomes a blue proof band */
+.stats-row {
+  background: var(--retro-blue-panel);
+  color: var(--retro-paper);
+  border: 4px solid var(--retro-line);
+}
+
+.stats-row p,
+.stats-row span {
+  color: var(--retro-paper);
+}
+
