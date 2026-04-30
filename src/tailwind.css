@@ -4674,3 +4674,10 @@ body::after {
   opacity: 1;
 }
 
+
+/* Image-guided polish 13: dashed rules become legible registration marks */
+.panel-heading {
+  border-bottom: 3px dashed var(--retro-line);
+  padding-bottom: clamp(0.85rem, 1.6vw, 1.1rem);
+}
+
