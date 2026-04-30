@@ -5352,3 +5352,11 @@ body::before {
   max-width: 9.5ch;
 }
 
+
+/* Full-site polish 19: hero subtitle reads as body argument, not poster noise */
+.hero-subtitle {
+  max-width: 34ch;
+  font-size: clamp(1.18rem, 1.9vw, 1.54rem);
+  line-height: 1.18;
+}
+
