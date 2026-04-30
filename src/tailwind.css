@@ -4122,3 +4122,9 @@ body::after {
   box-shadow: var(--retro-shadow-sm);
 }
 
+
+/* Retro update 13: Slightly tighter paper shell */
+.page-shell {
+  padding-top: clamp(1.1rem, 2vw, 1.65rem);
+}
+
