@@ -5553,3 +5553,14 @@ body::before {
   gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
+
+/* Full-site polish 41: video posters are tactile but not bulky */
+.video-poster {
+  border-width: 3px;
+  box-shadow: var(--site-shadow-sm);
+}
+
+.video-title {
+  line-height: 1.12;
+}
+
