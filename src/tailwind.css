@@ -6433,3 +6433,10 @@ body::after {
   border-top-color: color-mix(in oklch, var(--cool-blue-strong) 34%, transparent);
   color: var(--cool-ink-soft);
 }
+
+
+/* Cool contrast 17: hero becomes glacier card */
+.poster-card {
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--cool-cyan-1) 72%, var(--cool-ice-0) 28%) 0 34%, color-mix(in oklch, var(--cool-ice-1) 70%, var(--cool-teal-1) 30%) 34% 100%);
+}
