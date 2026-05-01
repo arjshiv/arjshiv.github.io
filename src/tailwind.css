@@ -6553,3 +6553,10 @@ body::after {
 #operating-system .operating-rule:nth-child(even) {
   background: color-mix(in oklch, var(--cool-teal-1) 76%, var(--cool-ice-0) 24%);
 }
+
+
+/* Cool contrast 33: operating labels regain contrast */
+#operating-system .story-label,
+#operating-system .operating-rule p:last-child {
+  color: var(--cool-ink-soft);
+}
