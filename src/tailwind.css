@@ -6325,3 +6325,11 @@ body::before {
   --retro-shadow: var(--cool-shadow);
   --retro-shadow-sm: var(--cool-shadow-sm);
 }
+
+
+/* Cool contrast 04: cool page substrate */
+body,
+.page-shell {
+  background: linear-gradient(180deg, var(--cool-ice-0), var(--cool-ice-1));
+  color: var(--cool-ink);
+}
