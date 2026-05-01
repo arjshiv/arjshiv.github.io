@@ -6294,3 +6294,34 @@ body::before {
   --cool-shadow: 0.28rem 0.28rem 0 var(--cool-line);
   --cool-shadow-sm: 0.16rem 0.16rem 0 var(--cool-line);
 }
+
+
+/* Cool contrast 03: map legacy tokens to cool system */
+:root {
+  --site-paper: var(--cool-ice-0);
+  --site-cream: var(--cool-ice-1);
+  --site-card: var(--cool-ice-2);
+  --site-ink: var(--cool-ink);
+  --site-ink-2: var(--cool-ink-soft);
+  --site-red: var(--cool-accent);
+  --site-yellow: var(--cool-cyan-1);
+  --site-blue: var(--cool-blue-strong);
+  --site-blue-soft: var(--cool-cyan-1);
+  --site-green: var(--cool-teal-1);
+  --site-line: var(--cool-line);
+  --site-shadow: var(--cool-shadow);
+  --site-shadow-sm: var(--cool-shadow-sm);
+  --retro-paper: var(--cool-ice-0);
+  --retro-cream: var(--cool-ice-1);
+  --retro-panel: var(--cool-ice-2);
+  --retro-blue-panel: var(--cool-blue-strong);
+  --retro-blue-soft: var(--cool-cyan-1);
+  --retro-green-panel: var(--cool-teal-1);
+  --retro-yellow-panel: var(--cool-cyan-2);
+  --retro-red: var(--cool-accent);
+  --retro-ink: var(--cool-ink);
+  --retro-ink-soft: var(--cool-ink-soft);
+  --retro-line: var(--cool-line);
+  --retro-shadow: var(--cool-shadow);
+  --retro-shadow-sm: var(--cool-shadow-sm);
+}
