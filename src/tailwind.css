@@ -6529,3 +6529,9 @@ body::after {
 .now-card:nth-child(1) {
   background: color-mix(in oklch, var(--cool-cyan-1) 84%, var(--cool-ice-0) 16%);
 }
+
+
+/* Cool contrast 29: now card two mint */
+.now-card:nth-child(2) {
+  background: color-mix(in oklch, var(--cool-teal-1) 84%, var(--cool-ice-0) 16%);
+}
