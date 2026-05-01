@@ -6358,3 +6358,10 @@ body::after {
   background: color-mix(in oklch, var(--cool-cyan-1) 72%, var(--cool-ice-0) 28%);
   border-bottom-color: var(--cool-line);
 }
+
+
+/* Cool contrast 08: soften brand label */
+.brand-mark {
+  background: color-mix(in oklch, var(--cool-cyan-1) 58%, var(--cool-ice-0) 42%);
+  color: var(--cool-ink);
+}
