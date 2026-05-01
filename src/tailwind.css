@@ -6476,3 +6476,13 @@ body::after {
   background: var(--cool-blue-strong);
   color: var(--cool-ice-0);
 }
+
+
+/* Cool contrast 23: secondary controls use ice */
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link {
+  background: color-mix(in oklch, var(--cool-ice-0) 78%, var(--cool-cyan-1) 22%);
+  color: var(--cool-ink);
+}
