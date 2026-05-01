@@ -6667,3 +6667,11 @@ body::after {
 .site-footer {
   background: color-mix(in oklch, var(--cool-cyan-1) 64%, var(--cool-teal-1) 36%);
 }
+
+
+/* Cool contrast 48: focus ring cools down */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline-color: var(--cool-blue-strong);
+}
