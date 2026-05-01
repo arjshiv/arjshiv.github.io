@@ -6661,3 +6661,9 @@ body::after {
   background: color-mix(in oklch, var(--cool-teal-1) 78%, var(--cool-ice-0) 22%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 47: footer becomes cool final panel */
+.site-footer {
+  background: color-mix(in oklch, var(--cool-cyan-1) 64%, var(--cool-teal-1) 36%);
+}
