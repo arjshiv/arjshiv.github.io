@@ -6274,3 +6274,23 @@ body::before {
 .program-item::before {
   color: color-mix(in oklch, var(--retro-red) 84%, var(--retro-blue-panel) 16%);
 }
+
+
+/* Cool contrast 02: anchor cool OKLCH tokens */
+:root {
+  --cool-ice-0: oklch(98.2% 0.012 220);
+  --cool-ice-1: oklch(96.4% 0.022 218);
+  --cool-ice-2: oklch(93.6% 0.038 212);
+  --cool-cyan-1: oklch(89% 0.06 205);
+  --cool-cyan-2: oklch(82% 0.085 198);
+  --cool-teal-1: oklch(82% 0.083 174);
+  --cool-teal-2: oklch(71% 0.115 181);
+  --cool-blue-strong: oklch(48% 0.14 224);
+  --cool-teal-strong: oklch(46% 0.13 188);
+  --cool-ink: oklch(12.5% 0.04 215);
+  --cool-ink-soft: oklch(26% 0.046 209);
+  --cool-line: oklch(13.5% 0.038 214);
+  --cool-accent: oklch(54% 0.14 338);
+  --cool-shadow: 0.28rem 0.28rem 0 var(--cool-line);
+  --cool-shadow-sm: 0.16rem 0.16rem 0 var(--cool-line);
+}
