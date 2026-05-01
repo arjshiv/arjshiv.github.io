@@ -6502,3 +6502,9 @@ body::after {
   background: var(--cool-teal-1);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 25: program card becomes seafoam */
+.program-card {
+  background: color-mix(in oklch, var(--cool-teal-1) 82%, var(--cool-ice-0) 18%);
+}
