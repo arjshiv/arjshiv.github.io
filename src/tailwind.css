@@ -6440,3 +6440,10 @@ body::after {
   background:
     linear-gradient(135deg, color-mix(in oklch, var(--cool-cyan-1) 72%, var(--cool-ice-0) 28%) 0 34%, color-mix(in oklch, var(--cool-ice-1) 70%, var(--cool-teal-1) 30%) 34% 100%);
 }
+
+
+/* Cool contrast 18: hero diagonal becomes blue glass paper */
+.poster-card::before {
+  background: linear-gradient(135deg, transparent 0 58%, color-mix(in oklch, var(--cool-blue-strong) 16%, transparent) 58% 100%);
+  border-color: color-mix(in oklch, var(--cool-line) 82%, var(--cool-blue-strong) 18%);
+}
