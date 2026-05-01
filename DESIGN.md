@@ -28,6 +28,8 @@ Full palette, but controlled by role.
 
 Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
 
+Color theory rule: hold contrast by lightness first, then tune hue and chroma. Most surfaces should live at high lightness with low-to-medium chroma; active/proof panels can drop much darker for clear contrast. The palette should use analogous cool hues (cyan, blue, teal, mint) with a tiny split-complement accent only for module indexes and status ticks.
+
 ## Typography
 
 Use Geist and Geist Mono only.
