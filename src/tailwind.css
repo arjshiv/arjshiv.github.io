@@ -6380,3 +6380,13 @@ body::after {
   color: var(--cool-ink);
   border-color: var(--cool-line);
 }
+
+
+/* Cool contrast 11: deepen active nav contrast */
+.nav-link[aria-current],
+.nav-link[aria-current='true'],
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--cool-blue-strong);
+  color: var(--cool-ice-0);
+}
