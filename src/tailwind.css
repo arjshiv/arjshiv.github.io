@@ -6547,3 +6547,9 @@ body::after {
 #operating-system .operating-rule:nth-child(odd) {
   background: color-mix(in oklch, var(--cool-cyan-2) 62%, var(--cool-ice-0) 38%);
 }
+
+
+/* Cool contrast 32: operating even cards mint */
+#operating-system .operating-rule:nth-child(even) {
+  background: color-mix(in oklch, var(--cool-teal-1) 76%, var(--cool-ice-0) 24%);
+}
