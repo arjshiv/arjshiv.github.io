@@ -6620,3 +6620,9 @@ body::after {
 .story-card:nth-child(4n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 72%, var(--cool-ice-0) 28%); }
 .story-card:nth-child(4n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 72%, var(--cool-ice-0) 28%); }
 .story-card:nth-child(4n + 3) { background: color-mix(in oklch, var(--cool-cyan-2) 58%, var(--cool-ice-0) 42%); }
+
+
+/* Cool contrast 41: role cards match cool rhythm */
+.role-card:nth-child(3n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 70%, var(--cool-ice-0) 30%); }
+.role-card:nth-child(3n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 72%, var(--cool-ice-0) 28%); }
+.role-card:nth-child(3n + 3) { background: color-mix(in oklch, var(--cool-cyan-2) 54%, var(--cool-ice-0) 46%); }
