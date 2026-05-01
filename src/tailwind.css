@@ -6626,3 +6626,12 @@ body::after {
 .role-card:nth-child(3n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 70%, var(--cool-ice-0) 30%); }
 .role-card:nth-child(3n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 72%, var(--cool-ice-0) 28%); }
 .role-card:nth-child(3n + 3) { background: color-mix(in oklch, var(--cool-cyan-2) 54%, var(--cool-ice-0) 46%); }
+
+
+/* Cool contrast 42: article cards use ice not cream */
+.article-card,
+.feature-card,
+.video-card,
+.link-preview-card {
+  background: color-mix(in oklch, var(--cool-ice-0) 68%, var(--cool-cyan-1) 32%);
+}
