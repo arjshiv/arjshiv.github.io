@@ -6390,3 +6390,10 @@ body::after {
   background: var(--cool-blue-strong);
   color: var(--cool-ice-0);
 }
+
+
+/* Cool contrast 12: cool mobile menu button */
+.nav-toggle {
+  background: color-mix(in oklch, var(--cool-teal-1) 70%, var(--cool-cyan-1) 30%);
+  color: var(--cool-ink);
+}
