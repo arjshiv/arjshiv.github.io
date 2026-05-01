@@ -6648,3 +6648,9 @@ body::after {
   background: var(--cool-accent);
   color: var(--cool-ice-0);
 }
+
+
+/* Cool contrast 45: FAQ cool closed state */
+.faq-card {
+  background: color-mix(in oklch, var(--cool-ice-0) 70%, var(--cool-cyan-1) 30%);
+}
