@@ -6343,3 +6343,10 @@ body::before {
     linear-gradient(0deg, color-mix(in oklch, var(--cool-teal-strong) 10%, transparent) 1px, transparent 1px);
   background-size: 30px 30px;
 }
+
+
+/* Cool contrast 06: cool page rails */
+body::after {
+  opacity: 0.1;
+  background: linear-gradient(90deg, transparent 0, transparent calc(50% - 42rem), color-mix(in oklch, var(--cool-blue-strong) 44%, transparent) calc(50% - 42rem), color-mix(in oklch, var(--cool-blue-strong) 44%, transparent) calc(50% - 41.86rem), transparent calc(50% - 41.86rem), transparent calc(50% + 41.86rem), color-mix(in oklch, var(--cool-blue-strong) 44%, transparent) calc(50% + 41.86rem), color-mix(in oklch, var(--cool-blue-strong) 44%, transparent) calc(50% + 42rem), transparent calc(50% + 42rem));
+}
