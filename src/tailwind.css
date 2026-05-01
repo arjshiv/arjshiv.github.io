@@ -6463,3 +6463,9 @@ body::after {
 .hero-fact:nth-child(even) {
   background: var(--cool-teal-1);
 }
+
+
+/* Cool contrast 21: portrait backing cools down */
+.portrait-cutout {
+  background: color-mix(in oklch, var(--cool-cyan-2) 68%, var(--cool-ice-0) 32%);
+}
