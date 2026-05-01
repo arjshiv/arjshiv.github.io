@@ -6614,3 +6614,9 @@ body::after {
 .stat-value {
   text-shadow: 0.045em 0.045em 0 var(--cool-line);
 }
+
+
+/* Cool contrast 40: story cards get cool rhythm */
+.story-card:nth-child(4n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 72%, var(--cool-ice-0) 28%); }
+.story-card:nth-child(4n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 72%, var(--cool-ice-0) 28%); }
+.story-card:nth-child(4n + 3) { background: color-mix(in oklch, var(--cool-cyan-2) 58%, var(--cool-ice-0) 42%); }
