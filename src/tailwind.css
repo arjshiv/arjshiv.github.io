@@ -6404,3 +6404,12 @@ body::after {
 .hero-title {
   text-shadow: 0.045em 0.045em 0 color-mix(in oklch, var(--cool-blue-strong) 26%, transparent);
 }
+
+
+/* Cool contrast 14: module indexes become cool magenta ticks */
+.section-heading .panel-index,
+.hero-note-label,
+.program-item::before,
+.story-label::first-letter {
+  color: var(--cool-accent);
+}
