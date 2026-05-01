@@ -6635,3 +6635,9 @@ body::after {
 .link-preview-card {
   background: color-mix(in oklch, var(--cool-ice-0) 68%, var(--cool-cyan-1) 32%);
 }
+
+
+/* Cool contrast 43: preview alternates stay cool */
+.link-preview-card:nth-child(3n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 74%, var(--cool-ice-0) 26%); }
+.link-preview-card:nth-child(3n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 70%, var(--cool-ice-0) 30%); }
+.link-preview-card:nth-child(3n) { background: color-mix(in oklch, var(--cool-cyan-2) 54%, var(--cool-ice-0) 46%); }
