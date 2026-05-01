@@ -6426,3 +6426,10 @@ body::after {
 .site-footer::before {
   background: var(--cool-line);
 }
+
+
+/* Cool contrast 16: intro rules stop reading coral */
+.section-intro {
+  border-top-color: color-mix(in oklch, var(--cool-blue-strong) 34%, transparent);
+  color: var(--cool-ink-soft);
+}
