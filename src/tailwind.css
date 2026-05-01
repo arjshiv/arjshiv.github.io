@@ -6508,3 +6508,12 @@ body::after {
 .program-card {
   background: color-mix(in oklch, var(--cool-teal-1) 82%, var(--cool-ice-0) 18%);
 }
+
+
+/* Cool contrast 26: program row labels cool accent only */
+.program-item strong {
+  color: var(--cool-blue-strong);
+}
+.program-item::before {
+  color: var(--cool-accent);
+}
