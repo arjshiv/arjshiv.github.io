@@ -6541,3 +6541,9 @@ body::after {
 .now-card:nth-child(3) {
   background: color-mix(in oklch, var(--cool-blue-soft, var(--cool-cyan-2)) 62%, var(--cool-ice-0) 38%);
 }
+
+
+/* Cool contrast 31: operating odd cards cyan */
+#operating-system .operating-rule:nth-child(odd) {
+  background: color-mix(in oklch, var(--cool-cyan-2) 62%, var(--cool-ice-0) 38%);
+}
