@@ -6447,3 +6447,10 @@ body::after {
   background: linear-gradient(135deg, transparent 0 58%, color-mix(in oklch, var(--cool-blue-strong) 16%, transparent) 58% 100%);
   border-color: color-mix(in oklch, var(--cool-line) 82%, var(--cool-blue-strong) 18%);
 }
+
+
+/* Cool contrast 19: hero note gets icy fill */
+.hero-note {
+  background: color-mix(in oklch, var(--cool-ice-0) 60%, var(--cool-cyan-1) 40%);
+  color: var(--cool-ink);
+}
