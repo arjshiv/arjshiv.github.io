@@ -6675,3 +6675,18 @@ button:focus-visible,
 summary:focus-visible {
   outline-color: var(--cool-blue-strong);
 }
+
+
+/* Cool contrast 49: mobile surfaces stay bright */
+@media (max-width: 760px) {
+  .poster-card,
+  .program-card,
+  .now-primary-panel,
+  .signal-console,
+  .site-footer {
+    box-shadow: 0.18rem 0.18rem 0 var(--cool-line);
+  }
+  .page-shell {
+    background: var(--cool-ice-0);
+  }
+}
