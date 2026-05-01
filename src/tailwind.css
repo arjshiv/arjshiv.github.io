@@ -6587,3 +6587,10 @@ body::after {
   background: var(--cool-blue-strong);
   color: var(--cool-ice-0);
 }
+
+
+/* Cool contrast 37: signal metric chips use pale cyan */
+.signal-metrics span {
+  background: var(--cool-cyan-1);
+  color: var(--cool-ink);
+}
