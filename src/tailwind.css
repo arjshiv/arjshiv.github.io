@@ -6594,3 +6594,10 @@ body::after {
   background: var(--cool-cyan-1);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 38: proof band becomes deep teal */
+.stats-row {
+  background: color-mix(in oklch, var(--cool-teal-strong) 68%, var(--cool-blue-strong) 32%);
+  color: var(--cool-ice-0);
+}
