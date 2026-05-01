@@ -6641,3 +6641,10 @@ body::after {
 .link-preview-card:nth-child(3n + 1) { background: color-mix(in oklch, var(--cool-cyan-1) 74%, var(--cool-ice-0) 26%); }
 .link-preview-card:nth-child(3n + 2) { background: color-mix(in oklch, var(--cool-teal-1) 70%, var(--cool-ice-0) 30%); }
 .link-preview-card:nth-child(3n) { background: color-mix(in oklch, var(--cool-cyan-2) 54%, var(--cool-ice-0) 46%); }
+
+
+/* Cool contrast 44: feature badge uses small cool accent */
+.feature-badge {
+  background: var(--cool-accent);
+  color: var(--cool-ice-0);
+}
