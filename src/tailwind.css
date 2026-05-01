@@ -6397,3 +6397,10 @@ body::after {
   background: color-mix(in oklch, var(--cool-teal-1) 70%, var(--cool-cyan-1) 30%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 13: cool section title shadow */
+.section-heading h2,
+.hero-title {
+  text-shadow: 0.045em 0.045em 0 color-mix(in oklch, var(--cool-blue-strong) 26%, transparent);
+}
