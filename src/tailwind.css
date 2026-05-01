@@ -6517,3 +6517,9 @@ body::after {
 .program-item::before {
   color: var(--cool-accent);
 }
+
+
+/* Cool contrast 27: now primary becomes glacier blue */
+.now-primary-panel {
+  background: color-mix(in oklch, var(--cool-cyan-1) 76%, var(--cool-teal-1) 24%);
+}
