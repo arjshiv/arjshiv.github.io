@@ -6535,3 +6535,9 @@ body::after {
 .now-card:nth-child(2) {
   background: color-mix(in oklch, var(--cool-teal-1) 84%, var(--cool-ice-0) 16%);
 }
+
+
+/* Cool contrast 30: now card three pale blue */
+.now-card:nth-child(3) {
+  background: color-mix(in oklch, var(--cool-blue-soft, var(--cool-cyan-2)) 62%, var(--cool-ice-0) 38%);
+}
