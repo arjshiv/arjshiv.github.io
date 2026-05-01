@@ -19,14 +19,14 @@ A partner or operator is reading the site on a laptop during the workday, probab
 
 Full palette, but controlled by role.
 
-- Paper base: warm tinted off-white, never pure white.
-- Ink: warm charcoal, never pure black.
-- Red: primary action, active state, module index, strongest emphasis.
-- Yellow: attention panels, proof highlights, tactile buttons.
-- Blue: proof bands, media backing plates, selected secondary panels.
-- Green: start-here and operational panels.
+- Paper base: pale aqua-cream, never pure white.
+- Ink: dark teal-black, never flat black.
+- Teal-blue: main active state, proof bands, media backing plates, selected primary panels.
+- Seafoam and mint: start-here panels, operational cards, secondary rhythm.
+- Soft citrus: small highlights and tactile shadows, not the dominant field color.
+- Coral: module index, tiny warning/active accents, never the main palette.
 
-Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
+Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
 
 ## Typography
 
