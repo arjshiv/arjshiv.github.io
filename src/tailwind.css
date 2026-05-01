@@ -6690,3 +6690,31 @@ summary:focus-visible {
     background: var(--cool-ice-0);
   }
 }
+
+
+/* Cool contrast 50: final cool contrast hardening */
+.hero-copy,
+.program-item p,
+.about-copy p,
+.story-card p,
+.section-intro,
+.feature-copy p,
+.recent-item p:last-child,
+.article-card p:last-child,
+.stat-copy,
+.role-card p,
+.principle-card p,
+.link-preview-copy p:last-child,
+.faq-card p,
+.now-card p:last-child,
+.operating-rule p:last-child,
+.signal-readout p {
+  color: var(--cool-ink-soft);
+}
+.signal-console p,
+.signal-console .panel-index,
+.stats-row p,
+.stats-row .stat-label,
+.stats-row .stat-value {
+  color: var(--cool-ice-0);
+}
