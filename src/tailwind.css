@@ -6413,3 +6413,16 @@ body::after {
 .story-label::first-letter {
   color: var(--cool-accent);
 }
+
+
+/* Cool contrast 15: section rules use blue ink */
+.section-heading,
+.panel-heading,
+.program-head {
+  border-color: var(--cool-line);
+}
+.section-heading::before,
+.section-block::before,
+.site-footer::before {
+  background: var(--cool-line);
+}
