@@ -6567,3 +6567,10 @@ body::after {
   background: color-mix(in oklch, var(--cool-blue-strong) 72%, var(--cool-teal-strong) 28%);
   color: var(--cool-ice-0);
 }
+
+
+/* Cool contrast 35: signal readout remains readable ice */
+.signal-readout {
+  background: color-mix(in oklch, var(--cool-ice-0) 82%, var(--cool-cyan-1) 18%);
+  color: var(--cool-ink);
+}
