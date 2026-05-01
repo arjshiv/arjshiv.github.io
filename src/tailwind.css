@@ -6365,3 +6365,10 @@ body::after {
   background: color-mix(in oklch, var(--cool-cyan-1) 58%, var(--cool-ice-0) 42%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 09: make status LED a tiny accent */
+.brand-mark-led {
+  background: var(--cool-accent);
+  box-shadow: 0.1rem 0.1rem 0 var(--cool-line);
+}
