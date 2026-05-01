@@ -6523,3 +6523,9 @@ body::after {
 .now-primary-panel {
   background: color-mix(in oklch, var(--cool-cyan-1) 76%, var(--cool-teal-1) 24%);
 }
+
+
+/* Cool contrast 28: now card one cyan */
+.now-card:nth-child(1) {
+  background: color-mix(in oklch, var(--cool-cyan-1) 84%, var(--cool-ice-0) 16%);
+}
