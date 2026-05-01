@@ -6454,3 +6454,12 @@ body::after {
   background: color-mix(in oklch, var(--cool-ice-0) 60%, var(--cool-cyan-1) 40%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 20: hero fact tickets split cyan and mint */
+.hero-fact:nth-child(odd) {
+  background: var(--cool-cyan-1);
+}
+.hero-fact:nth-child(even) {
+  background: var(--cool-teal-1);
+}
