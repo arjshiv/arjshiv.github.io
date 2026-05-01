@@ -2,7 +2,7 @@
 
 ## Design Direction
 
-Polished retro operating manual: warm paper, hard ink, ticket controls, printed labels, and restrained red, blue, green, and yellow panels. The site should feel like a physical reference binder for applied AI and housing operations, not a novelty arcade skin.
+Polished retro operating manual: icy paper, hard teal-black ink, ticket controls, printed labels, and restrained cyan, teal, seafoam, and mint panels. The site should feel like a physical reference binder for applied AI and housing operations, not a novelty arcade skin.
 
 Reference family:
 
@@ -19,11 +19,11 @@ A partner or operator is reading the site on a laptop during the workday, probab
 
 Full palette, but controlled by role.
 
-- Paper base: pale aqua-cream, never pure white.
+- Paper base: icy blue-white, never pure white and never cream.
 - Ink: dark teal-black, never flat black.
 - Teal-blue: main active state, proof bands, media backing plates, selected primary panels.
 - Seafoam and mint: start-here panels, operational cards, secondary rhythm.
-- Soft citrus: small highlights and tactile shadows, not the dominant field color.
+- Cool aqua highlight: small highlights and tactile shadows, not a yellow field.
 - Coral: module index, tiny warning/active accents, never the main palette.
 
 Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
@@ -54,7 +54,7 @@ Use Geist and Geist Mono only.
 - Borders are hard ink, usually 2px or 3px. Use 4px only for primary hero or major proof modules.
 - Radius stays tight: around 0.18rem to 0.35rem for retro surfaces.
 - Shadows are hard offset shadows using the ink token. They must not be clipped by containment.
-- Surface backgrounds should be intentional: paper, cream, yellow, blue, green, or red-tinted paper.
+- Surface backgrounds should be intentional: ice paper, glacier blue, cyan, teal, seafoam, or mint.
 - Every repeated card set needs a clear visual system, not random color alternation.
 
 ## Interaction

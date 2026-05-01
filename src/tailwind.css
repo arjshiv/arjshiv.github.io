@@ -6126,3 +6126,151 @@ body::before {
 .site-footer {
   background: color-mix(in oklch, var(--retro-blue-soft) 52%, var(--retro-green-panel) 48%);
 }
+
+
+/* Cool concept pass: icy cyan direction from generated palette board */
+:root {
+  --site-paper: oklch(97.6% 0.018 218);
+  --site-cream: oklch(95.2% 0.032 210);
+  --site-card: oklch(93.4% 0.046 202);
+  --site-ink: oklch(13.5% 0.035 210);
+  --site-ink-2: oklch(27% 0.048 205);
+  --site-red: oklch(55% 0.14 20);
+  --site-yellow: oklch(91.5% 0.055 205);
+  --site-blue: oklch(62% 0.13 218);
+  --site-blue-soft: oklch(88.5% 0.062 212);
+  --site-green: oklch(86% 0.075 172);
+  --site-line: oklch(14% 0.034 210);
+
+  --retro-paper: oklch(97.6% 0.018 218);
+  --retro-cream: oklch(95.2% 0.032 210);
+  --retro-panel: oklch(92.8% 0.055 198);
+  --retro-blue-panel: oklch(62% 0.13 218);
+  --retro-blue-soft: oklch(88.5% 0.062 212);
+  --retro-green-panel: oklch(86% 0.075 172);
+  --retro-yellow-panel: oklch(91.5% 0.055 205);
+  --retro-red: oklch(55% 0.14 20);
+  --retro-ink: oklch(13.5% 0.035 210);
+  --retro-ink-soft: oklch(27% 0.048 205);
+  --retro-muted: oklch(38% 0.052 202);
+  --retro-line: oklch(14% 0.034 210);
+}
+
+body,
+.page-shell {
+  background: var(--retro-paper);
+}
+
+body::before {
+  opacity: 0.18;
+  background-image:
+    linear-gradient(90deg, color-mix(in oklch, var(--retro-blue-panel) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in oklch, var(--retro-blue-soft) 32%, transparent) 1px, transparent 1px);
+}
+
+.topbar,
+.topbar-scrolled {
+  background: color-mix(in oklch, var(--retro-blue-soft) 62%, var(--retro-paper) 38%);
+}
+
+.brand-mark,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link,
+.signal-stage,
+.faq-card,
+.hero-note {
+  background: color-mix(in oklch, var(--retro-blue-soft) 44%, var(--retro-paper) 56%);
+}
+
+.poster-card {
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--retro-blue-soft) 68%, var(--retro-paper) 32%) 0 35%, color-mix(in oklch, var(--retro-green-panel) 26%, var(--retro-paper) 74%) 35% 100%);
+}
+
+.program-card,
+.hero-fact,
+.hero-fact:nth-child(3),
+.now-card:nth-child(2),
+.operating-rule:nth-child(even),
+.story-card:nth-child(4n + 3),
+.role-card:nth-child(3n + 3),
+.section-tags .tag-link,
+.tag-label {
+  background: var(--retro-green-panel);
+}
+
+.now-primary-panel,
+.hero-fact:nth-child(1),
+.hero-fact:nth-child(4),
+.operating-rule:nth-child(odd),
+.story-card:nth-child(4n + 1),
+.role-card:nth-child(3n + 1),
+.principle-card:nth-child(odd),
+.link-preview-card:nth-child(3n + 2) {
+  background: color-mix(in oklch, var(--retro-blue-soft) 74%, var(--retro-green-panel) 26%);
+}
+
+.portrait-cutout,
+.now-card:nth-child(1),
+.story-card:nth-child(4n + 2),
+.role-card:nth-child(3n + 2),
+.link-preview-card:nth-child(3n + 1),
+.feature-card,
+.video-card {
+  background: var(--retro-blue-soft);
+}
+
+.now-card:nth-child(3),
+.principle-card:nth-child(even),
+.link-preview-card:nth-child(3n),
+.signal-metrics span,
+.faq-card[open] {
+  background: var(--retro-yellow-panel);
+}
+
+.signal-console,
+.stats-row,
+.nav-link[aria-current],
+.nav-link[aria-current='true'],
+.nav-link:hover,
+.nav-link:focus-visible,
+.primary-link,
+.signal-stage.is-active,
+.signal-stage:hover,
+.signal-stage:focus-visible {
+  background: color-mix(in oklch, var(--retro-blue-panel) 84%, var(--retro-green-panel) 16%);
+  color: var(--retro-paper);
+}
+
+.nav-toggle,
+.primary-link:hover,
+.primary-link:focus-visible,
+.secondary-link:hover,
+.text-link:hover,
+.footer-link:hover,
+.tag-link:hover {
+  background: color-mix(in oklch, var(--retro-green-panel) 72%, var(--retro-blue-soft) 28%);
+  color: var(--retro-ink);
+}
+
+.section-heading h2,
+.hero-title {
+  text-shadow: 0.045em 0.045em 0 color-mix(in oklch, var(--retro-blue-panel) 24%, transparent);
+}
+
+.poster-card::before {
+  background: linear-gradient(135deg, transparent 0 58%, color-mix(in oklch, var(--retro-blue-panel) 14%, transparent) 58% 100%);
+}
+
+.section-intro {
+  border-top-color: color-mix(in oklch, var(--retro-blue-panel) 36%, transparent);
+}
+
+.section-heading .panel-index,
+.hero-note-label,
+.program-item strong,
+.program-item::before {
+  color: color-mix(in oklch, var(--retro-red) 84%, var(--retro-blue-panel) 16%);
+}
