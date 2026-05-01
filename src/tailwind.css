@@ -6560,3 +6560,10 @@ body::after {
 #operating-system .operating-rule p:last-child {
   color: var(--cool-ink-soft);
 }
+
+
+/* Cool contrast 34: signal console deepens intentionally */
+.signal-console {
+  background: color-mix(in oklch, var(--cool-blue-strong) 72%, var(--cool-teal-strong) 28%);
+  color: var(--cool-ice-0);
+}
