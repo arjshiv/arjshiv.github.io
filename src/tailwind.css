@@ -6574,3 +6574,16 @@ body::after {
   background: color-mix(in oklch, var(--cool-ice-0) 82%, var(--cool-cyan-1) 18%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 36: signal tabs improve contrast */
+.signal-stage {
+  background: color-mix(in oklch, var(--cool-ice-0) 72%, var(--cool-cyan-1) 28%);
+  color: var(--cool-ink);
+}
+.signal-stage.is-active,
+.signal-stage:hover,
+.signal-stage:focus-visible {
+  background: var(--cool-blue-strong);
+  color: var(--cool-ice-0);
+}
