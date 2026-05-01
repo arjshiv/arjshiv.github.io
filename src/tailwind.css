@@ -6333,3 +6333,13 @@ body,
   background: linear-gradient(180deg, var(--cool-ice-0), var(--cool-ice-1));
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 05: reduce graph paper warmth */
+body::before {
+  opacity: 0.16;
+  background-image:
+    linear-gradient(90deg, color-mix(in oklch, var(--cool-blue-strong) 12%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in oklch, var(--cool-teal-strong) 10%, transparent) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
