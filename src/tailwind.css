@@ -6469,3 +6469,10 @@ body::after {
 .portrait-cutout {
   background: color-mix(in oklch, var(--cool-cyan-2) 68%, var(--cool-ice-0) 32%);
 }
+
+
+/* Cool contrast 22: primary buttons gain deep cyan contrast */
+.primary-link {
+  background: var(--cool-blue-strong);
+  color: var(--cool-ice-0);
+}
