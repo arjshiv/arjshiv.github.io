@@ -6486,3 +6486,19 @@ body::after {
   background: color-mix(in oklch, var(--cool-ice-0) 78%, var(--cool-cyan-1) 22%);
   color: var(--cool-ink);
 }
+
+
+/* Cool contrast 24: hover states become mint not yellow */
+.primary-link:hover,
+.primary-link:focus-visible,
+.secondary-link:hover,
+.secondary-link:focus-visible,
+.text-link:hover,
+.text-link:focus-visible,
+.footer-link:hover,
+.footer-link:focus-visible,
+.tag-link:hover,
+.tag-link:focus-visible {
+  background: var(--cool-teal-1);
+  color: var(--cool-ink);
+}
