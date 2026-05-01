@@ -6372,3 +6372,11 @@ body::after {
   background: var(--cool-accent);
   box-shadow: 0.1rem 0.1rem 0 var(--cool-line);
 }
+
+
+/* Cool contrast 10: neutralize idle nav buttons */
+.nav-link {
+  background: color-mix(in oklch, var(--cool-ice-0) 82%, var(--cool-cyan-1) 18%);
+  color: var(--cool-ink);
+  border-color: var(--cool-line);
+}
