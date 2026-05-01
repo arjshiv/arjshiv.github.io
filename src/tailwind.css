@@ -6654,3 +6654,10 @@ body::after {
 .faq-card {
   background: color-mix(in oklch, var(--cool-ice-0) 70%, var(--cool-cyan-1) 30%);
 }
+
+
+/* Cool contrast 46: FAQ open state mint contrast */
+.faq-card[open] {
+  background: color-mix(in oklch, var(--cool-teal-1) 78%, var(--cool-ice-0) 22%);
+  color: var(--cool-ink);
+}
