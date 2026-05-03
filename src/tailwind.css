@@ -8092,3 +8092,23 @@ summary:focus-visible {
   background: var(--lazy-ice);
   color: var(--lazy-violet);
 }
+
+/* Lazyweb refinement 26: reduce anchor runway and improve mobile headings */
+.section-block {
+  padding-top: clamp(1.45rem, 3.2vw, 2.5rem);
+}
+
+#operating-system {
+  padding-top: clamp(1.25rem, 2.8vw, 2.2rem);
+}
+
+@media (max-width: 760px) {
+  #links .section-heading h2,
+  #conversations .section-heading h2 {
+    max-width: 13ch;
+  }
+
+  #links .section-heading h2 {
+    font-size: clamp(2.05rem, 10vw, 2.9rem);
+  }
+}
