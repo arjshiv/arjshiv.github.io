@@ -2105,6 +2105,29 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
+/* Lazyweb refinement 13: keep mobile hero from feeling like a wall of text */
+@media (max-width: 760px) {
+  .hero-note {
+    display: grid;
+    gap: 0.72rem;
+  }
+
+  .hero-copy + .hero-copy {
+    margin-top: 0;
+    padding-top: 0.72rem;
+    border-top: 1px dashed color-mix(in oklch, var(--lazy-line) 48%, transparent);
+  }
+
+  .portrait-cutout {
+    max-height: none;
+  }
+
+  .portrait-cutout img {
+    aspect-ratio: 16 / 10.5;
+    max-height: none;
+  }
+}
+
 @media (max-width: 560px) {
   .page-shell,
   .topbar-inner {
