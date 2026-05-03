@@ -2,11 +2,12 @@
 
 ## Design Direction
 
-Polished retro operating manual: icy paper, hard teal-black ink, ticket controls, printed labels, and restrained cyan, teal, seafoam, and mint panels. The site should feel like a physical reference binder for applied AI and housing operations, not a novelty arcade skin.
+Polished field-passport personal site: icy paper, hard teal-black ink, app-like ticket controls, printed labels, and bright cyan, aqua, teal, mint, and small violet accents. The site should feel like a modern consumer app crossed with a field manual for applied AI and housing operations, not a novelty arcade skin.
 
 Reference family:
 
 - RetroUI-style hard borders and tactile surfaces.
+- Lazyweb consumer-app patterns: readable FAQ rows, playful progress surfaces, passport/checkpoint energy, and mobile-first card rhythm.
 - Nothing-inspired mechanical labeling and grid discipline.
 - Taste Skill anti-slop rules: no generic SaaS gradients, no empty decorative cards, no fake polish that breaks layout.
 - Impeccable rules: brand register, concrete voice, no side-stripe accents, no gradient text, no glassmorphism by default, no identical card-grid monotony when another structure fits better.
@@ -21,10 +22,11 @@ Full palette, but controlled by role.
 
 - Paper base: icy blue-white, never pure white and never cream.
 - Ink: dark teal-black, never flat black.
-- Teal-blue: main active state, proof bands, media backing plates, selected primary panels.
-- Seafoam and mint: start-here panels, operational cards, secondary rhythm.
-- Cool aqua highlight: small highlights and tactile shadows, not a yellow field.
-- Coral: module index, tiny warning/active accents, never the main palette.
+- Deep blue: main active state, proof bands, primary controls, selected tabs.
+- Cyan and aqua: hero surfaces, proof previews, content cards, and field-map panels.
+- Seafoam and mint: start-here panels, operating cards, secondary controls, and hover states.
+- Violet: module indexes, small status ticks, badges, and active accents.
+- Coral is optional and rare. It should not pull the site warm.
 
 Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
 

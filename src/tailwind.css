@@ -6718,3 +6718,809 @@ summary:focus-visible {
 .stats-row .stat-value {
   color: var(--cool-ice-0);
 }
+
+/* Lazyweb field-passport theme 01: modern playful color system */
+:root {
+  color-scheme: light;
+  --lazy-ice: oklch(98.4% 0.014 204);
+  --lazy-paper: oklch(96.8% 0.028 196);
+  --lazy-card: oklch(94.2% 0.046 190);
+  --lazy-cyan: oklch(88% 0.076 203);
+  --lazy-aqua: oklch(80% 0.105 196);
+  --lazy-mint: oklch(86% 0.098 164);
+  --lazy-green: oklch(77% 0.125 156);
+  --lazy-blue: oklch(50% 0.155 235);
+  --lazy-blue-dark: oklch(29% 0.115 235);
+  --lazy-violet: oklch(55% 0.18 315);
+  --lazy-coral: oklch(65% 0.17 29);
+  --lazy-ink: oklch(13% 0.044 222);
+  --lazy-ink-soft: oklch(26% 0.05 218);
+  --lazy-muted: oklch(42% 0.05 210);
+  --lazy-line: oklch(16% 0.052 222);
+  --lazy-ring: oklch(56% 0.16 224);
+  --lazy-radius: 0.5rem;
+  --lazy-radius-sm: 0.34rem;
+  --lazy-shadow: 0 0.45rem 0 var(--lazy-line);
+  --lazy-shadow-sm: 0 0.22rem 0 var(--lazy-line);
+  --lazy-soft-shadow: 0 1.2rem 2.6rem color-mix(in oklch, var(--lazy-blue-dark) 14%, transparent);
+
+  --site-paper: var(--lazy-ice);
+  --site-cream: var(--lazy-paper);
+  --site-card: var(--lazy-card);
+  --site-ink: var(--lazy-ink);
+  --site-ink-2: var(--lazy-ink-soft);
+  --site-red: var(--lazy-violet);
+  --site-yellow: var(--lazy-cyan);
+  --site-blue: var(--lazy-blue);
+  --site-blue-soft: var(--lazy-cyan);
+  --site-green: var(--lazy-mint);
+  --site-line: var(--lazy-line);
+  --site-radius: var(--lazy-radius);
+  --site-shadow: var(--lazy-shadow);
+  --site-shadow-sm: var(--lazy-shadow-sm);
+
+  --retro-paper: var(--lazy-ice);
+  --retro-cream: var(--lazy-paper);
+  --retro-panel: var(--lazy-card);
+  --retro-blue-panel: var(--lazy-blue);
+  --retro-blue-soft: var(--lazy-cyan);
+  --retro-green-panel: var(--lazy-mint);
+  --retro-yellow-panel: var(--lazy-aqua);
+  --retro-red: var(--lazy-violet);
+  --retro-ink: var(--lazy-ink);
+  --retro-ink-soft: var(--lazy-ink-soft);
+  --retro-line: var(--lazy-line);
+}
+
+/* Lazyweb field-passport theme 02: page substrate */
+html {
+  scrollbar-color: var(--lazy-blue) var(--lazy-paper);
+}
+
+body,
+.page-shell {
+  background:
+    linear-gradient(180deg, var(--lazy-ice) 0%, var(--lazy-paper) 42%, color-mix(in oklch, var(--lazy-mint) 22%, var(--lazy-ice)) 100%);
+  color: var(--lazy-ink);
+}
+
+body::before {
+  opacity: 0.28;
+  background-image:
+    linear-gradient(90deg, color-mix(in oklch, var(--lazy-blue) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(0deg, color-mix(in oklch, var(--lazy-green) 12%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mix-blend-mode: multiply;
+}
+
+body::after {
+  opacity: 0.11;
+  background:
+    linear-gradient(90deg,
+      transparent 0,
+      transparent calc(50% - 42rem),
+      var(--lazy-blue) calc(50% - 42rem),
+      var(--lazy-blue) calc(50% - 41.9rem),
+      transparent calc(50% - 41.9rem),
+      transparent calc(50% + 41.9rem),
+      var(--lazy-blue) calc(50% + 41.9rem),
+      var(--lazy-blue) calc(50% + 42rem),
+      transparent calc(50% + 42rem));
+  border: 0;
+}
+
+::selection {
+  background: var(--lazy-mint);
+  color: var(--lazy-ink);
+}
+
+/* Lazyweb field-passport theme 03: app-like top navigation */
+.topbar,
+.topbar-scrolled {
+  background: color-mix(in oklch, var(--lazy-cyan) 72%, var(--lazy-ice) 28%);
+  border-bottom: 2px solid var(--lazy-line);
+  box-shadow: 0 0.18rem 0 var(--lazy-line);
+  backdrop-filter: none;
+}
+
+.topbar-inner {
+  min-height: 4.4rem;
+}
+
+.scroll-progress {
+  height: 0.22rem;
+  background: color-mix(in oklch, var(--lazy-blue) 18%, var(--lazy-ice));
+}
+
+.scroll-progress-bar {
+  background: linear-gradient(90deg, var(--lazy-blue), var(--lazy-green), var(--lazy-violet));
+}
+
+.brand-mark {
+  min-height: 2.9rem;
+  padding: 0 0.9rem 0 0.72rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius);
+  background: var(--lazy-ice);
+  box-shadow: var(--lazy-shadow-sm);
+  color: var(--lazy-ink);
+}
+
+.brand-mark-led {
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: 0.18rem;
+  background: var(--lazy-violet);
+  box-shadow: 0.1rem 0.1rem 0 var(--lazy-line);
+}
+
+.brand-mark-name,
+.brand-mark-role {
+  color: var(--lazy-ink);
+}
+
+.nav-link {
+  min-height: 2.48rem;
+  padding-inline: 0.82rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: color-mix(in oklch, var(--lazy-ice) 78%, var(--lazy-cyan) 22%);
+  color: var(--lazy-ink);
+  box-shadow: 0 0.18rem 0 var(--lazy-line);
+}
+
+.nav-link[aria-current],
+.nav-link[aria-current='true'],
+.nav-link:hover,
+.nav-link:focus-visible {
+  background: var(--lazy-blue);
+  color: var(--lazy-ice);
+}
+
+.nav-link[aria-current]::before,
+.nav-link[aria-current='true']::before {
+  display: none;
+}
+
+/* Lazyweb field-passport theme 04: shared tactile surfaces */
+.poster-card,
+.program-card,
+.now-primary-panel,
+.now-card,
+#operating-system .operating-rule,
+.signal-console,
+.signal-readout,
+.story-card,
+.role-card,
+.feature-card,
+.video-card,
+.article-card,
+.principle-card,
+#faq .faq-card,
+.link-preview-card,
+.quote-panel,
+.stats-row,
+.site-footer {
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius);
+  color: var(--lazy-ink);
+  box-shadow: var(--lazy-shadow-sm), var(--lazy-soft-shadow);
+}
+
+.poster-card::after,
+.program-card::after,
+.feature-card::after,
+.link-preview-card::after,
+.story-card::after,
+.stat-card::after,
+.role-card::after,
+.video-card::after,
+.principle-card::after,
+.quote-panel::after,
+.faq-card::after {
+  display: none;
+}
+
+.panel-heading,
+.program-head,
+.section-heading {
+  border-color: var(--lazy-line);
+}
+
+.section-kicker,
+.panel-index,
+.story-label,
+.article-meta,
+.video-meta,
+.stat-label,
+.quote-label,
+.role-head p {
+  color: var(--lazy-muted);
+}
+
+.section-heading .panel-index,
+.hero-note-label,
+.program-item::before,
+.feature-badge {
+  color: var(--lazy-violet);
+}
+
+/* Lazyweb field-passport theme 05: hero as personal passport cover */
+.hero-section {
+  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.75fr);
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+}
+
+.poster-card {
+  min-height: auto;
+  padding: clamp(1.35rem, 3vw, 2.25rem);
+  background:
+    linear-gradient(138deg, color-mix(in oklch, var(--lazy-cyan) 72%, var(--lazy-ice) 28%) 0 36%, color-mix(in oklch, var(--lazy-mint) 58%, var(--lazy-ice) 42%) 36% 100%);
+  box-shadow: var(--lazy-shadow), var(--lazy-soft-shadow);
+}
+
+.poster-card::before {
+  top: clamp(5.4rem, 11vw, 7.4rem);
+  right: clamp(1rem, 11vw, 9rem);
+  bottom: 1.4rem;
+  width: clamp(5rem, 14vw, 10rem);
+  border: 2px solid color-mix(in oklch, var(--lazy-line) 75%, var(--lazy-blue) 25%);
+  border-radius: var(--lazy-radius);
+  background:
+    linear-gradient(135deg, transparent 0 54%, color-mix(in oklch, var(--lazy-blue) 18%, transparent) 54% 100%),
+    radial-gradient(circle at 25% 25%, color-mix(in oklch, var(--lazy-violet) 28%, transparent) 0 0.22rem, transparent 0.24rem);
+  background-size: auto, 1rem 1rem;
+  box-shadow: none;
+  opacity: 0.64;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(16rem, 0.78fr);
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+}
+
+.hero-copy-panel {
+  min-height: auto;
+}
+
+.hero-title {
+  max-width: 10ch;
+  color: var(--lazy-ink);
+  font-size: clamp(3.35rem, 6vw, 5.95rem);
+  font-weight: 700;
+  line-height: 0.9;
+  text-shadow: 0.045em 0.045em 0 color-mix(in oklch, var(--lazy-aqua) 78%, transparent);
+}
+
+.hero-subtitle {
+  max-width: 33ch;
+  color: var(--lazy-ink);
+  font-size: clamp(1.16rem, 1.9vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.hero-note {
+  max-width: 38rem;
+  padding: clamp(1.05rem, 2vw, 1.35rem);
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius);
+  background: color-mix(in oklch, var(--lazy-ice) 66%, var(--lazy-cyan) 34%);
+  box-shadow: inset 0 0 0 1px color-mix(in oklch, var(--lazy-ice) 88%, var(--lazy-blue));
+}
+
+.hero-copy,
+.program-item p,
+.about-copy p,
+.story-card p,
+.section-intro,
+.feature-copy p,
+.recent-item p:last-child,
+.article-card p:last-child,
+.stat-copy,
+.role-card p,
+.principle-card p,
+.link-preview-copy p:last-child,
+.faq-card p,
+.now-card p:last-child,
+.operating-rule p:last-child,
+.signal-readout p {
+  color: var(--lazy-ink-soft);
+}
+
+.portrait-cutout {
+  width: min(100%, 18.5rem);
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius);
+  background: var(--lazy-aqua);
+  box-shadow: var(--lazy-shadow-sm);
+}
+
+.portrait-cutout img,
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  filter: saturate(1.08) contrast(1.02) brightness(1.02);
+}
+
+.hero-facts {
+  width: min(100%, 18.5rem);
+}
+
+.hero-fact {
+  min-height: 2.72rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-cyan);
+  color: var(--lazy-ink);
+  box-shadow: var(--lazy-shadow-sm);
+}
+
+.hero-fact:nth-child(2) {
+  background: var(--lazy-mint);
+}
+
+.hero-fact:nth-child(3) {
+  background: color-mix(in oklch, var(--lazy-aqua) 74%, var(--lazy-ice) 26%);
+}
+
+.hero-fact:nth-child(4) {
+  background: color-mix(in oklch, var(--lazy-violet) 22%, var(--lazy-ice) 78%);
+}
+
+.hero-fact::before {
+  color: var(--lazy-blue-dark);
+}
+
+/* Lazyweb field-passport theme 06: controls and command chips */
+.primary-link,
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link,
+.nav-toggle,
+.back-to-top {
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  box-shadow: var(--lazy-shadow-sm);
+}
+
+.primary-link {
+  background: var(--lazy-blue);
+  color: var(--lazy-ice);
+}
+
+.secondary-link,
+.text-link,
+.footer-link,
+.tag-link {
+  background: color-mix(in oklch, var(--lazy-ice) 72%, var(--lazy-cyan) 28%);
+  color: var(--lazy-ink);
+}
+
+.primary-link:hover,
+.primary-link:focus-visible,
+.secondary-link:hover,
+.secondary-link:focus-visible,
+.text-link:hover,
+.text-link:focus-visible,
+.footer-link:hover,
+.footer-link:focus-visible,
+.tag-link:hover,
+.tag-link:focus-visible {
+  background: var(--lazy-mint);
+  color: var(--lazy-ink);
+}
+
+.feature-badge {
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-violet);
+  color: var(--lazy-ice);
+  box-shadow: 0 0.14rem 0 var(--lazy-line);
+}
+
+/* Lazyweb field-passport theme 07: start panel and section rhythm */
+.program-card {
+  margin-top: clamp(1.2rem, 4vw, 2.65rem);
+  background: color-mix(in oklch, var(--lazy-mint) 76%, var(--lazy-ice) 24%);
+  box-shadow: var(--lazy-shadow), var(--lazy-soft-shadow);
+}
+
+.program-card h2 {
+  max-width: 13ch;
+  color: var(--lazy-ink);
+  font-weight: 700;
+}
+
+.program-item {
+  grid-template-columns: minmax(3.5rem, 0.22fr) 1fr;
+  border-top: 2px dashed color-mix(in oklch, var(--lazy-line) 72%, transparent);
+}
+
+.program-item strong {
+  color: var(--lazy-blue-dark);
+}
+
+.section-block {
+  margin-top: clamp(3rem, 6vw, 5.25rem);
+  padding-top: clamp(2rem, 4vw, 3.2rem);
+}
+
+.section-heading {
+  border-top: 2px solid var(--lazy-line);
+  border-bottom: 2px dashed color-mix(in oklch, var(--lazy-line) 84%, transparent);
+  padding-block: clamp(0.82rem, 1.8vw, 1.1rem);
+}
+
+.section-heading::before,
+.section-block::before,
+.site-footer::before {
+  background: var(--lazy-line);
+}
+
+.section-heading h2 {
+  color: var(--lazy-ink);
+  font-weight: 700;
+  text-shadow: 0.04em 0.04em 0 color-mix(in oklch, var(--lazy-aqua) 60%, transparent);
+}
+
+.section-tags .tag-link,
+.tag-label {
+  background: color-mix(in oklch, var(--lazy-cyan) 54%, var(--lazy-ice) 46%);
+  color: var(--lazy-ink);
+}
+
+/* Lazyweb field-passport theme 08: content modules */
+.now-primary-panel {
+  min-height: 22rem;
+  background: color-mix(in oklch, var(--lazy-cyan) 78%, var(--lazy-mint) 22%);
+}
+
+.now-primary-panel::after {
+  border-color: color-mix(in oklch, var(--lazy-blue) 38%, transparent);
+  background-image: radial-gradient(circle, color-mix(in oklch, var(--lazy-blue-dark) 42%, transparent) 1px, transparent 1.4px);
+}
+
+.now-card:nth-child(1),
+#operating-system .operating-rule:nth-child(3n + 1),
+.story-card:nth-child(4n + 1),
+.role-card:nth-child(3n + 1),
+.link-preview-card:nth-child(3n + 1) {
+  background: color-mix(in oklch, var(--lazy-cyan) 70%, var(--lazy-ice) 30%);
+}
+
+.now-card:nth-child(2),
+#operating-system .operating-rule:nth-child(3n + 2),
+.story-card:nth-child(4n + 2),
+.role-card:nth-child(3n + 2),
+.link-preview-card:nth-child(3n + 2) {
+  background: color-mix(in oklch, var(--lazy-mint) 76%, var(--lazy-ice) 24%);
+}
+
+.now-card:nth-child(3),
+#operating-system .operating-rule:nth-child(3n),
+.story-card:nth-child(4n + 3),
+.role-card:nth-child(3n + 3),
+.principle-card:nth-child(even),
+.link-preview-card:nth-child(3n) {
+  background: color-mix(in oklch, var(--lazy-aqua) 54%, var(--lazy-ice) 46%);
+}
+
+.principle-card:nth-child(odd),
+.article-card,
+.feature-card,
+.video-card {
+  background: color-mix(in oklch, var(--lazy-ice) 62%, var(--lazy-cyan) 38%);
+}
+
+#operating-system .operating-grid {
+  gap: clamp(1rem, 2.2vw, 1.45rem);
+}
+
+#operating-system .operating-rule {
+  min-height: clamp(13.5rem, 17vw, 16rem);
+}
+
+#operating-system .operating-rule h3,
+.now-card h3,
+.story-card h3,
+.role-head h3,
+.feature-copy h3,
+.article-card h3,
+.principle-card h3,
+.link-preview-copy h3,
+.faq-card summary {
+  color: var(--lazy-ink);
+}
+
+/* Lazyweb field-passport theme 09: signal console, proof, media */
+.signal-console,
+.stats-row {
+  background:
+    linear-gradient(135deg, var(--lazy-blue-dark), color-mix(in oklch, var(--lazy-blue) 72%, var(--lazy-green) 28%));
+  color: var(--lazy-ice);
+  box-shadow: var(--lazy-shadow), var(--lazy-soft-shadow);
+}
+
+.signal-console .panel-index,
+.signal-console p,
+.signal-console .story-label,
+.stats-row p,
+.stats-row span,
+.stats-row .stat-label,
+.stats-row .stat-copy,
+.stats-row .stat-value {
+  color: var(--lazy-ice);
+}
+
+.signal-stage {
+  min-height: 3.45rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-ice);
+  color: var(--lazy-ink);
+  box-shadow: 0 0.16rem 0 var(--lazy-line);
+}
+
+.signal-stage span {
+  color: var(--lazy-muted);
+}
+
+.signal-stage strong {
+  color: var(--lazy-ink);
+}
+
+.signal-stage.is-active,
+.signal-stage:hover,
+.signal-stage:focus-visible {
+  background: var(--lazy-violet);
+  color: var(--lazy-ice);
+}
+
+.signal-stage.is-active strong,
+.signal-stage:hover strong,
+.signal-stage:focus-visible strong,
+.signal-stage.is-active span,
+.signal-stage:hover span,
+.signal-stage:focus-visible span {
+  color: var(--lazy-ice);
+}
+
+.signal-readout {
+  background: color-mix(in oklch, var(--lazy-ice) 72%, var(--lazy-cyan) 28%);
+}
+
+.signal-metrics span {
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-mint);
+  color: var(--lazy-ink);
+  box-shadow: 0 0.16rem 0 var(--lazy-line);
+}
+
+.stat-card {
+  border-color: color-mix(in oklch, var(--lazy-ice) 28%, transparent);
+}
+
+.stat-value {
+  color: var(--lazy-mint);
+  text-shadow: 0.045em 0.045em 0 var(--lazy-line);
+}
+
+.feature-card img,
+.link-preview-card img,
+.video-poster img {
+  border-bottom: 2px solid var(--lazy-line);
+  outline-color: color-mix(in oklch, var(--lazy-line) 16%, transparent);
+}
+
+.video-overlay {
+  background: linear-gradient(180deg, transparent, color-mix(in oklch, var(--lazy-blue-dark) 88%, transparent));
+}
+
+.video-poster::before,
+.video-poster:hover::before,
+.video-poster:focus-visible::before {
+  border: 2px solid var(--lazy-line);
+  background: var(--lazy-mint);
+  color: var(--lazy-ink);
+  box-shadow: 0 0.18rem 0 var(--lazy-line);
+}
+
+/* Lazyweb field-passport theme 10: FAQ and footer */
+#faq .faq-list {
+  width: min(100%, 60rem);
+  gap: 0.7rem;
+}
+
+#faq .faq-card,
+#faq .faq-list .faq-card:first-child {
+  background: color-mix(in oklch, var(--lazy-ice) 70%, var(--lazy-cyan) 30%);
+  box-shadow: var(--lazy-shadow-sm);
+}
+
+#faq .faq-card summary {
+  min-height: 4rem;
+  color: var(--lazy-ink);
+}
+
+#faq .faq-card summary:hover {
+  color: var(--lazy-blue);
+}
+
+#faq .faq-card summary::after {
+  color: var(--lazy-violet);
+}
+
+#faq .faq-card[open] {
+  background: color-mix(in oklch, var(--lazy-mint) 78%, var(--lazy-ice) 22%);
+}
+
+.site-footer {
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--lazy-cyan) 76%, var(--lazy-ice) 24%), color-mix(in oklch, var(--lazy-mint) 76%, var(--lazy-ice) 24%));
+  box-shadow: var(--lazy-shadow), var(--lazy-soft-shadow);
+}
+
+.site-footer-copy,
+.site-footer-note {
+  color: var(--lazy-ink);
+}
+
+.back-to-top {
+  background: var(--lazy-blue);
+  color: var(--lazy-ice);
+}
+
+/* Lazyweb field-passport theme 11: motion and responsive polish */
+@media (hover: hover) and (pointer: fine) {
+  .primary-link:hover,
+  .secondary-link:hover,
+  .text-link:hover,
+  .footer-link:hover,
+  .tag-link:hover,
+  .nav-link:hover,
+  .signal-stage:hover,
+  .hero-fact:hover {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0.08rem 0 var(--lazy-line);
+  }
+
+  .feature-card:hover,
+  .link-preview-card:hover,
+  .video-card:hover,
+  .story-card:hover,
+  .role-card:hover,
+  .principle-card:hover,
+  #operating-system .operating-rule:hover {
+    transform: translateY(-0.12rem);
+    box-shadow: var(--lazy-shadow), var(--lazy-soft-shadow);
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--lazy-ring);
+  outline-offset: 0.18rem;
+}
+
+@media (max-width: 980px) {
+  .hero-section,
+  .hero-grid,
+  .now-grid,
+  .signal-console,
+  .about-grid,
+  .recent-grid,
+  .conversation-grid,
+  .two-column-section,
+  .link-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-utility-column,
+  .portrait-cutout,
+  .hero-facts {
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar-inner {
+    min-height: 4.25rem;
+  }
+
+  .main-nav {
+    border: 2px solid var(--lazy-line);
+    border-radius: var(--lazy-radius);
+    background: color-mix(in oklch, var(--lazy-cyan) 82%, var(--lazy-ice) 18%);
+    box-shadow: var(--lazy-shadow);
+  }
+
+  .nav-scrim {
+    background: color-mix(in oklch, var(--lazy-blue-dark) 42%, transparent);
+  }
+
+  .nav-toggle {
+    background: var(--lazy-mint);
+    color: var(--lazy-ink);
+  }
+
+  .page-shell {
+    width: min(calc(100% - 1rem), 42rem);
+    padding-inline: 0;
+  }
+
+  .poster-card,
+  .program-card,
+  .now-primary-panel,
+  .now-card,
+  #operating-system .operating-rule,
+  .signal-console,
+  .signal-readout,
+  .story-card,
+  .role-card,
+  .feature-card,
+  .video-card,
+  .article-card,
+  .principle-card,
+  #faq .faq-card,
+  .link-preview-card,
+  .quote-panel,
+  .stats-row,
+  .site-footer {
+    box-shadow: 0 0.16rem 0 var(--lazy-line);
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 16vw, 4.5rem);
+    max-width: 9.5ch;
+  }
+
+  .hero-subtitle {
+    max-width: 26ch;
+  }
+
+  .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-fact {
+    justify-content: center;
+    min-height: 2.42rem;
+    text-align: center;
+  }
+
+  .hero-fact::before {
+    display: none;
+  }
+
+  .program-item {
+    grid-template-columns: 3.4rem 1fr;
+  }
+
+  .primary-link,
+  .secondary-link,
+  .text-link,
+  .footer-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-mark {
+    padding-inline: 0.58rem 0.68rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 15.5vw, 3.8rem);
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2rem, 11vw, 2.85rem);
+  }
+}
