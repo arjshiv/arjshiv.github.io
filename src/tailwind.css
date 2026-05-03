@@ -7280,7 +7280,7 @@ body::after {
 #faq,
 #investing,
 #links {
-  scroll-margin-top: calc(var(--header-height) + 0.8rem);
+  scroll-margin-top: 0;
 }
 
 .scroll-cue {
