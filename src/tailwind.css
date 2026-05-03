@@ -7044,6 +7044,30 @@ body::after {
   color: var(--lazy-blue-dark);
 }
 
+/* Lazyweb refinement 08: make proof modules feel like app summary cards */
+.stats-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  overflow: hidden;
+}
+
+.stat-card {
+  min-height: 10.5rem;
+  border-inline-end: 1px solid color-mix(in oklch, var(--lazy-ice) 28%, transparent);
+}
+
+.stat-card:last-child {
+  border-inline-end: 0;
+}
+
+.stat-card::before {
+  background: var(--lazy-mint);
+}
+
+.stat-label {
+  color: color-mix(in oklch, var(--lazy-ice) 82%, var(--lazy-mint) 18%);
+}
+
 /* Lazyweb field-passport theme 05: hero as personal passport cover */
 .hero-section {
   grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.75fr);
