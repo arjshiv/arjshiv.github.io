@@ -2133,6 +2133,32 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   max-width: 18ch;
 }
 
+/* Lazyweb refinement 15: give the operating map a more playful route cadence */
+#operating-system .operating-rule:nth-child(1),
+#operating-system .operating-rule:nth-child(4) {
+  transform: rotate(-0.35deg);
+}
+
+#operating-system .operating-rule:nth-child(3),
+#operating-system .operating-rule:nth-child(6) {
+  transform: rotate(0.35deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #operating-system .operating-rule:hover {
+    transform: translateY(-0.12rem) rotate(0deg);
+  }
+}
+
+@media (max-width: 760px) {
+  #operating-system .operating-rule:nth-child(1),
+  #operating-system .operating-rule:nth-child(3),
+  #operating-system .operating-rule:nth-child(4),
+  #operating-system .operating-rule:nth-child(6) {
+    transform: none;
+  }
+}
+
 /* Lazyweb refinement 13: keep mobile hero from feeling like a wall of text */
 @media (max-width: 760px) {
   .hero-note {
