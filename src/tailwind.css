@@ -2130,6 +2130,29 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   z-index: 1;
 }
 
+/* Lazyweb refinement 17: improve small-label contrast everywhere */
+.section-kicker,
+.panel-index,
+.story-label,
+.article-meta,
+.video-meta,
+.stat-label,
+.quote-label,
+.role-head p,
+.brand-mark-role {
+  font-weight: 600;
+}
+
+.hero-note-label,
+.section-heading .panel-index {
+  font-weight: 800;
+}
+
+.panel-heading .section-kicker,
+.panel-heading .panel-index {
+  letter-spacing: 0.18em;
+}
+
 /* Lazyweb refinement 14: make the signal map feel like a guided flow */
 .signal-stage-list {
   counter-reset: signal-passport;
