@@ -2195,6 +2195,23 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
+/* Lazyweb refinement 20: tune image crops for a more intentional portfolio feel */
+.portrait-cutout img {
+  object-position: 52% 42%;
+}
+
+.feature-card img {
+  aspect-ratio: 1.7 / 1;
+}
+
+.link-preview-card img {
+  aspect-ratio: 1.5 / 1;
+}
+
+.video-poster img {
+  filter: saturate(1.04) contrast(1.04) brightness(1);
+}
+
 /* Lazyweb refinement 14: make the signal map feel like a guided flow */
 .signal-stage-list {
   counter-reset: signal-passport;
