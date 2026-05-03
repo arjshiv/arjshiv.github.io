@@ -7026,6 +7026,36 @@ body::after {
   color: var(--lazy-ink);
 }
 
+/* Lazyweb refinement 11: make FAQ rows match modern app settings screens */
+#faq .faq-card,
+#faq .faq-list .faq-card:first-child {
+  border-radius: var(--lazy-radius);
+}
+
+#faq .faq-card summary {
+  padding-inline-start: clamp(1rem, 2.6vw, 1.45rem);
+  font-family: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+#faq .faq-card summary::after {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-ice);
+  box-shadow: 0 0.12rem 0 var(--lazy-line);
+}
+
+#faq .faq-card[open] summary::after {
+  background: var(--lazy-blue);
+  color: var(--lazy-ice);
+}
+
 /* Lazyweb refinement 06: turn section tags into collectible stamps */
 .section-tags {
   gap: 0.62rem;
