@@ -7000,6 +7000,26 @@ body::after {
   box-shadow: 0 0.14rem 0 var(--lazy-line);
 }
 
+/* Lazyweb refinement 06: turn section tags into collectible stamps */
+.section-tags {
+  gap: 0.62rem;
+}
+
+.section-tags .tag-link,
+.tag-label {
+  min-height: 2.46rem;
+  border-style: solid;
+  letter-spacing: 0.12em;
+}
+
+.section-tags .tag-link:nth-child(2n) {
+  background: color-mix(in oklch, var(--lazy-mint) 58%, var(--lazy-ice) 42%);
+}
+
+.section-tags .tag-link:nth-child(3n) {
+  background: color-mix(in oklch, var(--lazy-aqua) 50%, var(--lazy-ice) 50%);
+}
+
 /* Lazyweb field-passport theme 05: hero as personal passport cover */
 .hero-section {
   grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.75fr);
