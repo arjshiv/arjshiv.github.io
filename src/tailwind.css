@@ -7020,6 +7020,30 @@ body::after {
   background: color-mix(in oklch, var(--lazy-aqua) 50%, var(--lazy-ice) 50%);
 }
 
+/* Lazyweb refinement 07: improve lower-page card scan density */
+.story-grid,
+.role-list,
+.principles-grid,
+.link-preview-grid {
+  gap: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+.story-card,
+.role-card,
+.principle-card {
+  padding: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.story-card h3,
+.role-head h3,
+.principle-card h3 {
+  margin-top: 0.42rem;
+}
+
+.story-card::before {
+  color: var(--lazy-blue-dark);
+}
+
 /* Lazyweb field-passport theme 05: hero as personal passport cover */
 .hero-section {
   grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.75fr);
