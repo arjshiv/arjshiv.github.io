@@ -7543,3 +7543,27 @@ summary:focus-visible {
     max-width: 31rem;
   }
 }
+
+/* Lazyweb refinement 03: give the quick-start card passport-entry rhythm */
+.program-card .panel-index {
+  width: fit-content;
+  padding: 0.24rem 0.5rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: color-mix(in oklch, var(--lazy-ice) 70%, var(--lazy-mint) 30%);
+  box-shadow: 0 0.12rem 0 var(--lazy-line);
+}
+
+.program-head {
+  padding-top: 0.2rem;
+}
+
+.program-item::before {
+  width: fit-content;
+  min-width: 2.2rem;
+  padding: 0.12rem 0.36rem;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: var(--lazy-ice);
+  color: var(--lazy-violet);
+}
