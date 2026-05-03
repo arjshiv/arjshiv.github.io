@@ -2269,6 +2269,28 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
+/* Lazyweb refinement 24: final responsive type balancing */
+@media (max-width: 760px) {
+  .section-heading {
+    gap: 0.5rem 0.7rem;
+  }
+
+  .section-heading h2 {
+    max-width: 12ch;
+    letter-spacing: -0.015em;
+  }
+
+  #links .section-heading h2,
+  #conversations .section-heading h2 {
+    max-width: 11ch;
+  }
+
+  .now-primary-panel h3,
+  .signal-readout h3 {
+    max-width: 11ch;
+  }
+}
+
 /* Lazyweb refinement 14: make the signal map feel like a guided flow */
 .signal-stage-list {
   counter-reset: signal-passport;
