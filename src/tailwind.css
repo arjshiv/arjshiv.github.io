@@ -7000,6 +7000,32 @@ body::after {
   box-shadow: 0 0.14rem 0 var(--lazy-line);
 }
 
+/* Lazyweb refinement 10: make article lists feel intentionally quieter */
+.recent-item,
+.article-card {
+  border-top-color: color-mix(in oklch, var(--lazy-line) 24%, transparent);
+}
+
+.recent-item::after,
+.article-card::before {
+  width: 1.85rem;
+  height: 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--lazy-line);
+  border-radius: var(--lazy-radius-sm);
+  background: color-mix(in oklch, var(--lazy-ice) 70%, var(--lazy-cyan) 30%);
+  color: var(--lazy-blue);
+  box-shadow: 0 0.12rem 0 var(--lazy-line);
+}
+
+.recent-item:hover::after,
+.article-card:hover::before {
+  background: var(--lazy-mint);
+  color: var(--lazy-ink);
+}
+
 /* Lazyweb refinement 06: turn section tags into collectible stamps */
 .section-tags {
   gap: 0.62rem;
