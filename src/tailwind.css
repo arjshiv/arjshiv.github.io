@@ -7524,3 +7524,22 @@ summary:focus-visible {
     font-size: clamp(2rem, 11vw, 2.85rem);
   }
 }
+
+/* Lazyweb refinement 02: make the first viewport feel intentionally composed */
+@media (min-width: 1161px) {
+  .hero-section {
+    align-items: start;
+  }
+
+  .poster-card {
+    min-height: min(48rem, calc(100vh - var(--header-height) - 4rem));
+  }
+
+  .program-card {
+    max-height: none;
+  }
+
+  .program-item p {
+    max-width: 31rem;
+  }
+}
