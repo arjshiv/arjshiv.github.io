@@ -837,7 +837,7 @@
         };
 
         if (motionAllowed) {
-            document.querySelectorAll('.hero-title, .hero-subtitle, .section-heading h2').forEach((element) => {
+            document.querySelectorAll('.hero-title, .hero-subtitle, .quote-copy').forEach((element) => {
                 element.classList.add('text-animate-hero');
                 wrapTextWords(element);
             });
@@ -886,20 +886,8 @@
             }
         });
 
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            rootMargin: '0px 0px -8% 0px',
-            threshold: 0.05,
-        });
-
-        document.querySelectorAll('.reveal').forEach((element, index) => {
-            element.style.setProperty('--reveal-delay', `${index * 70}ms`);
-            revealObserver.observe(element);
+        document.querySelectorAll('.reveal').forEach((element) => {
+            element.classList.add('visible');
         });
 
         sections.forEach((section) => {

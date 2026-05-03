@@ -9461,3 +9461,61 @@ body::before {
     box-shadow: var(--contrast-shadow-sm);
   }
 }
+
+/* Pixel Point text motion pass: no section reveals, content is visible immediately */
+.reveal,
+.reveal.visible,
+.hero-section.reveal > *,
+.section-block.reveal > *,
+.site-footer.reveal > *,
+.hero-section.reveal.visible > *,
+.section-block.reveal.visible > *,
+.site-footer.reveal.visible > * {
+  opacity: 1;
+  transform: none;
+  transition-property: none;
+  transition-delay: 0ms;
+}
+
+.text-word {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.text-animate-hero .text-word,
+.section-heading h2.text-animate-hero .text-word,
+.section-block.visible .section-heading h2.text-animate-hero .text-word {
+  opacity: 1;
+  transform: none;
+  animation: text-word-settle 460ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(18ms + var(--word-index) * 28ms);
+  animation-play-state: running;
+  will-change: transform, filter;
+}
+
+.hero-subtitle.text-animate-hero .text-word,
+.quote-copy.text-animate-hero .text-word {
+  animation-duration: 380ms;
+  animation-delay: calc(var(--word-index) * 18ms);
+}
+
+@keyframes text-word-settle {
+  from {
+    transform: translateY(0.08em);
+    filter: blur(0.7px);
+  }
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-animate-hero .text-word,
+  .section-heading h2.text-animate-hero .text-word,
+  .section-block.visible .section-heading h2.text-animate-hero .text-word {
+    animation: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
