@@ -6974,6 +6974,32 @@ body::after {
   box-shadow: 0 0.04rem 0 var(--lazy-line);
 }
 
+/* Lazyweb refinement 05: keep section anchors from landing in dead space */
+#now,
+#operating-system,
+#signal-map,
+#about,
+#work,
+#recent,
+#conversations,
+#writing,
+#faq,
+#investing,
+#links {
+  scroll-margin-top: calc(var(--header-height) + 0.8rem);
+}
+
+.scroll-cue {
+  color: var(--lazy-muted);
+}
+
+.scroll-cue-arrow {
+  border: 2px solid var(--lazy-line);
+  background: var(--lazy-ice);
+  color: var(--lazy-blue);
+  box-shadow: 0 0.14rem 0 var(--lazy-line);
+}
+
 /* Lazyweb field-passport theme 05: hero as personal passport cover */
 .hero-section {
   grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.75fr);
