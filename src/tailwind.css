@@ -2153,6 +2153,24 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   letter-spacing: 0.18em;
 }
 
+/* Lazyweb refinement 18: keep long link titles from crowding previews */
+.link-preview-copy h3,
+.feature-copy h3,
+.article-card h3 {
+  max-width: 22ch;
+  line-height: 1.05;
+}
+
+.link-preview-copy p:last-child,
+.feature-copy p,
+.article-card p:last-child {
+  max-width: 58ch;
+}
+
+.link-preview-card {
+  align-content: start;
+}
+
 /* Lazyweb refinement 14: make the signal map feel like a guided flow */
 .signal-stage-list {
   counter-reset: signal-passport;
