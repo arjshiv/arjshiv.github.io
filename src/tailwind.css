@@ -2252,6 +2252,23 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   color: color-mix(in oklch, var(--lazy-ice) 88%, var(--lazy-mint) 12%);
 }
 
+/* Lazyweb refinement 23: reduce decorative diagonal dominance in the hero */
+.poster-card::before {
+  right: clamp(0.75rem, 8vw, 6.25rem);
+  width: clamp(4.5rem, 10vw, 8rem);
+  opacity: 0.42;
+}
+
+.poster-card .panel-heading::after {
+  opacity: 0.24;
+}
+
+@media (max-width: 980px) {
+  .poster-card::before {
+    display: none;
+  }
+}
+
 /* Lazyweb refinement 14: make the signal map feel like a guided flow */
 .signal-stage-list {
   counter-reset: signal-passport;
