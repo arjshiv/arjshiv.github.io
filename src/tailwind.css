@@ -7056,6 +7056,32 @@ body::after {
   color: var(--lazy-ice);
 }
 
+/* Lazyweb refinement 12: improve mobile menu as a real app drawer */
+@media (max-width: 760px) {
+  .main-nav {
+    gap: 0.62rem;
+    padding: 0.72rem;
+  }
+
+  .main-nav .nav-link {
+    min-height: 3.05rem;
+    justify-content: space-between;
+    padding-inline: 0.9rem;
+  }
+
+  .main-nav .nav-link::after {
+    content: '↗';
+    font-size: 0.72rem;
+    opacity: 0.58;
+  }
+
+  .main-nav .nav-link[aria-current]::after,
+  .main-nav .nav-link[aria-current='true']::after {
+    content: '●';
+    opacity: 1;
+  }
+}
+
 /* Lazyweb refinement 06: turn section tags into collectible stamps */
 .section-tags {
   gap: 0.62rem;
