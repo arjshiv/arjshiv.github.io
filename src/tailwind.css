@@ -2105,6 +2105,34 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
+/* Lazyweb refinement 14: make the signal map feel like a guided flow */
+.signal-stage-list {
+  counter-reset: signal-passport;
+}
+
+.signal-stage {
+  counter-increment: signal-passport;
+}
+
+.signal-stage::after {
+  content: '0' counter(signal-passport);
+  justify-self: end;
+  color: var(--lazy-muted);
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.signal-stage.is-active::after,
+.signal-stage:hover::after,
+.signal-stage:focus-visible::after {
+  color: var(--lazy-ice);
+}
+
+.signal-readout h3 {
+  max-width: 18ch;
+}
+
 /* Lazyweb refinement 13: keep mobile hero from feeling like a wall of text */
 @media (max-width: 760px) {
   .hero-note {
