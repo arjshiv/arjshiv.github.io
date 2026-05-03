@@ -2105,6 +2105,37 @@ body[data-nav-open='true'] .nav-toggle-icon span:nth-child(3) {
   }
 }
 
+/* Lazyweb refinement 25: final app-polish details */
+.primary-link span[aria-hidden='true'],
+.secondary-link span[aria-hidden='true'],
+.text-link span[aria-hidden='true'] {
+  font-weight: 800;
+}
+
+.feature-card,
+.link-preview-card,
+.video-card,
+.story-card,
+.role-card,
+.principle-card,
+.now-card,
+#operating-system .operating-rule {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature-card,
+  .link-preview-card,
+  .video-card,
+  .story-card,
+  .role-card,
+  .principle-card,
+  .now-card,
+  #operating-system .operating-rule {
+    will-change: auto;
+  }
+}
+
 /* Lazyweb refinement 16: make footer feel like the last passport stamp */
 .site-footer {
   overflow: hidden;
