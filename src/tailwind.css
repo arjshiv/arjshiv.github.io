@@ -9526,6 +9526,18 @@ body::before {
     linear-gradient(135deg, color-mix(in oklch, var(--contrast-ice) 62%, var(--contrast-cyan) 38%), color-mix(in oklch, var(--contrast-paper) 54%, var(--contrast-mint) 46%));
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .ai-tools-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
