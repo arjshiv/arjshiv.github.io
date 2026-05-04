@@ -16,12 +16,14 @@
     "firebase-tools": "^15.15.0",
     "playwright": "^1.59.1",
     "postcss": "^8.4.49",
+    "purgecss": "^8.0.0",
     "tailwindcss": "^3.4.17"
   },
   "scripts": {
     "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --minify",
     "check:ai-tools": "node scripts/ai-field-tools-check.mjs",
     "check:contrast": "node scripts/contrast-check.mjs",
+    "check:performance": "node scripts/performance-check.mjs",
     "firebase:login": "firebase login",
     "firebase:init": "firebase init",
     "firebase:deploy": "firebase deploy"

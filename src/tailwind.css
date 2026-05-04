@@ -9178,24 +9178,42 @@ body::before {
 
 /* Contrast repair pass: cool palette, ink-first text, audited hover states */
 :root {
-  --contrast-paper: oklch(97% 0.025 205);
-  --contrast-ice: oklch(94% 0.048 204);
-  --contrast-cyan: oklch(87% 0.1 203);
-  --contrast-aqua: oklch(82% 0.13 192);
-  --contrast-mint: oklch(84% 0.13 158);
-  --contrast-green: oklch(76% 0.15 151);
-  --contrast-blue: oklch(40% 0.14 235);
-  --contrast-violet: oklch(36% 0.12 286);
-  --contrast-ink: oklch(15% 0.045 223);
-  --contrast-soft: oklch(26% 0.045 220);
-  --contrast-muted: oklch(34% 0.045 218);
-  --contrast-line: oklch(13% 0.05 224);
+  --contrast-paper: #eaf7f9;
+  --contrast-ice: #d7f3f8;
+  --contrast-cyan: #92e7ef;
+  --contrast-aqua: #73d7df;
+  --contrast-mint: #7be5aa;
+  --contrast-green: #55c87f;
+  --contrast-blue: #075884;
+  --contrast-violet: #542f79;
+  --contrast-ink: #041f2d;
+  --contrast-soft: #173b4d;
+  --contrast-muted: #26536a;
+  --contrast-line: #031923;
   --contrast-shadow: 0.36rem 0.36rem 0 var(--contrast-line);
   --contrast-shadow-sm: 0.16rem 0.16rem 0 var(--contrast-line);
 }
 
+@supports (color: oklch(50% 0 0)) {
+  :root {
+    --contrast-paper: oklch(97% 0.025 205);
+    --contrast-ice: oklch(94% 0.048 204);
+    --contrast-cyan: oklch(87% 0.1 203);
+    --contrast-aqua: oklch(82% 0.13 192);
+    --contrast-mint: oklch(84% 0.13 158);
+    --contrast-green: oklch(76% 0.15 151);
+    --contrast-blue: oklch(40% 0.14 235);
+    --contrast-violet: oklch(36% 0.12 286);
+    --contrast-ink: oklch(15% 0.045 223);
+    --contrast-soft: oklch(26% 0.045 220);
+    --contrast-muted: oklch(34% 0.045 218);
+    --contrast-line: oklch(13% 0.05 224);
+  }
+}
+
 body,
 .page-shell {
+  background: var(--contrast-paper);
   background:
     radial-gradient(circle at 7% 14%, color-mix(in oklch, var(--contrast-aqua) 44%, transparent) 0 16rem, transparent 16.5rem),
     radial-gradient(circle at 92% 6%, color-mix(in oklch, var(--contrast-mint) 52%, transparent) 0 15rem, transparent 15.5rem),
@@ -9522,6 +9540,7 @@ body::before {
 
 /* AI field tools: browser-native experiments, not a generic chat widget */
 #ai-field-tools {
+  background: var(--contrast-ice);
   background:
     linear-gradient(135deg, color-mix(in oklch, var(--contrast-ice) 62%, var(--contrast-cyan) 38%), color-mix(in oklch, var(--contrast-paper) 54%, var(--contrast-mint) 46%));
 }
@@ -9848,4 +9867,22 @@ mark.signal-highlight {
 
 .nav-toggle-label {
   color: var(--contrast-ink);
+}
+
+/* Performance pass: skip lower-page layout and paint until sections approach the viewport */
+@supports (content-visibility: auto) {
+  main > .section-block,
+  .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 920px;
+  }
+
+  #ai-field-tools {
+    contain-intrinsic-size: auto 1500px;
+  }
+
+  .hero-section,
+  #now {
+    content-visibility: visible;
+  }
 }

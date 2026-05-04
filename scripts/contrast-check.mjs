@@ -86,7 +86,24 @@ async function auditText(root, minRatio) {
     return textElements.flatMap((element) => {
       const style = getComputedStyle(element);
       const fg = parse(style.color);
-      if (!fg || fg.a === 0) return [];
+      const text = Array.from(element.childNodes)
+        .filter((node) => node.nodeType === Node.TEXT_NODE)
+        .map((node) => node.textContent.trim())
+        .filter(Boolean)
+        .join(' ')
+        .replace(/\s+/g, ' ')
+        .slice(0, 90);
+      if (!fg) {
+        return [{
+          selector: labelFor(element),
+          text,
+          ratio: 0,
+          color: style.color,
+          background: 'unparsed',
+          reason: 'unparsed foreground color',
+        }];
+      }
+      if (fg.a === 0) return [];
 
       let cursor = element;
       let bg = null;
@@ -107,14 +124,6 @@ async function auditText(root, minRatio) {
 
       const ratio = contrast(fg, bg);
       if (ratio >= minimum) return [];
-
-      const text = Array.from(element.childNodes)
-        .filter((node) => node.nodeType === Node.TEXT_NODE)
-        .map((node) => node.textContent.trim())
-        .filter(Boolean)
-        .join(' ')
-        .replace(/\s+/g, ' ')
-        .slice(0, 90);
 
       return [{
         selector: labelFor(element),
@@ -169,7 +178,7 @@ if (failures.length > 0) {
   console.error(`Contrast audit failed: ${failures.length} text samples below ${minRatio}:1`);
   for (const failure of failures.slice(0, 120)) {
     console.error(
-      `[${failure.viewport}/${failure.state}] ${failure.ratio}:1 ${failure.selector} "${failure.text}" ${failure.color} on ${failure.background}`,
+      `[${failure.viewport}/${failure.state}] ${failure.ratio}:1 ${failure.selector} "${failure.text}" ${failure.color} on ${failure.background}${failure.reason ? ` (${failure.reason})` : ''}`,
     );
   }
   if (failures.length > 120) console.error(`...and ${failures.length - 120} more`);

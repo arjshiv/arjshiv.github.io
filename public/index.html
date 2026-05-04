@@ -24,6 +24,7 @@
     <meta name="theme-color" content="#d7f7f2">
     <meta name="color-scheme" content="light">
     <link rel="icon" type="image/webp" href="assets/landscape-1.webp">
+    <link rel="preload" as="image" href="assets/landscape-1.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
@@ -918,7 +919,34 @@
         </footer>
     </main>
     <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-    <script src="ai-field-tools.js" defer></script>
+    <script>
+        (() => {
+            let aiFieldToolsLoaded = false;
+            const loadAiFieldTools = () => {
+                if (aiFieldToolsLoaded) {
+                    return;
+                }
+                aiFieldToolsLoaded = true;
+                const script = document.createElement('script');
+                script.src = 'ai-field-tools.js';
+                script.defer = true;
+                document.body.append(script);
+            };
+
+            const aiTools = document.querySelector('#ai-field-tools');
+            if ('IntersectionObserver' in window && aiTools) {
+                const aiToolsObserver = new IntersectionObserver((entries) => {
+                    if (entries.some((entry) => entry.isIntersecting)) {
+                        loadAiFieldTools();
+                        aiToolsObserver.disconnect();
+                    }
+                }, { rootMargin: '900px 0px' });
+                aiToolsObserver.observe(aiTools);
+            } else {
+                window.addEventListener('load', () => window.setTimeout(loadAiFieldTools, 900), { once: true });
+            }
+        })();
+    </script>
 
     <script>
         const topbar = document.querySelector('.topbar');
