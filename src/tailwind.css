@@ -9567,6 +9567,7 @@ body::before {
 .ai-tool {
   position: relative;
   display: flex;
+  align-self: start;
   min-width: 0;
   flex-direction: column;
   gap: 0.9rem;
@@ -9596,6 +9597,12 @@ body::before {
   grid-row: span 2;
   background: var(--contrast-mint);
   box-shadow: var(--contrast-shadow);
+}
+
+.ai-tool-wide {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(120deg, color-mix(in oklch, var(--contrast-cyan) 48%, var(--contrast-paper) 52%) 0 52%, color-mix(in oklch, var(--contrast-mint) 42%, var(--contrast-paper) 58%) 52% 100%);
 }
 
 .ai-tool-head,
@@ -9707,6 +9714,7 @@ body::before {
 .ai-chip-row button:hover,
 .ai-chip-row button:focus-visible {
   background: var(--contrast-mint);
+  color: var(--contrast-ink);
   transform: translate(-1px, -1px);
 }
 
@@ -9779,6 +9787,59 @@ mark.signal-highlight {
   box-shadow: 0.08rem 0.08rem 0 var(--contrast-line);
 }
 
+.design-critique-output {
+  min-height: 4rem;
+  border-top: 2px dashed color-mix(in oklch, var(--contrast-line) 74%, transparent);
+  padding-top: 0.95rem;
+}
+
+.critique-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.critique-score {
+  display: grid;
+  gap: 0.45rem;
+  min-width: 0;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.26rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  padding: 0.85rem;
+  box-shadow: 0.12rem 0.12rem 0 var(--contrast-line);
+}
+
+.critique-score span {
+  color: var(--contrast-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.critique-score strong {
+  color: var(--contrast-blue);
+  font-family: var(--font-mono);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 0.95;
+}
+
+.critique-score p {
+  color: var(--contrast-soft);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.critique-verdict {
+  max-width: 76ch;
+  margin-top: 0.9rem;
+  color: var(--contrast-ink);
+}
+
 @media (max-width: 960px) {
   .ai-tools-grid {
     grid-template-columns: 1fr;
@@ -9786,6 +9847,10 @@ mark.signal-highlight {
 
   .ai-tool-primary {
     grid-row: auto;
+  }
+
+  .critique-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -9799,6 +9864,10 @@ mark.signal-highlight {
   .ai-tools-grid .text-link {
     width: 100%;
     justify-content: center;
+  }
+
+  .critique-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -9884,5 +9953,51 @@ mark.signal-highlight {
   .hero-section,
   #now {
     content-visibility: visible;
+  }
+}
+
+/* Open Design pass: keep the final contact area useful, not overbuilt */
+.site-footer {
+  gap: clamp(1rem, 2vw, 1.5rem);
+  min-height: auto;
+  align-content: start;
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
+  padding-block: clamp(2.25rem, 5vw, 4.5rem);
+}
+
+.site-footer-grid {
+  grid-template-columns: minmax(0, 0.82fr) minmax(14rem, 0.32fr);
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+  align-items: end;
+}
+
+.site-footer-copy {
+  max-width: 22ch;
+  font-size: clamp(1.9rem, 3.8vw, 3.6rem);
+  line-height: 1.03;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.site-footer-links {
+  align-content: end;
+  gap: 0.65rem;
+}
+
+.site-footer-note {
+  max-width: 44rem;
+  border-top: 2px dashed color-mix(in oklch, var(--contrast-paper) 72%, transparent);
+  padding-top: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer-copy {
+    max-width: 16ch;
+    font-size: clamp(1.9rem, 9vw, 2.75rem);
   }
 }

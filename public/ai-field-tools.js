@@ -110,6 +110,33 @@
     workforce: ['AC is out and I work nights.', 'I need a payment plan before Friday.', 'The playground gate does not latch.', 'Can I get text updates instead of portal notices?'],
   };
 
+  const designCritique = [
+    ['Philosophy', '9.0', 'The page has a clear argument: customer truth, context, measurement, and follow-through beat impressive demos. Keep the field-passport shell because it matches that argument.'],
+    ['Hierarchy', '8.2', 'The top half scans well. The lower tools section now needs to behave like an operator console, with clear primary actions and less equal-weight card noise.'],
+    ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to earn structure, not just decoration.'],
+    ['Function', '9.1', 'The browser tools do real work without a server: answer, route, score, simulate, highlight, and keep notes locally. That is stronger than a fake chat widget.'],
+    ['Innovation', '8.5', 'The memorable move is treating a personal site like a working field manual. Push that further by making each interaction reveal judgment, not novelty.'],
+  ];
+
+  const tweakBriefs = {
+    legibility: {
+      title: 'Legibility pass',
+      steps: ['Audit hover states first; text should never get lighter during motion.', 'Keep long paragraphs under 68 characters per line.', 'Use borders to group choices, not to outline every empty surface.'],
+    },
+    speed: {
+      title: 'Speed pass',
+      steps: ['Keep AI tools lazy-loaded and avoid any JavaScript above the fold.', 'Prefer content-visibility for lower sections and compressed images for proof cards.', 'Make interactions transform-only so old browsers do less paint work.'],
+    },
+    voice: {
+      title: 'Voice pass',
+      steps: ['Replace abstract claims with the job: residents text, operators decide, someone owns the next step.', 'Use first person when the claim is personal.', 'Cut anything that sounds like a press release or a transcript summary.'],
+    },
+    proof: {
+      title: 'Proof pass',
+      steps: ['Move the visitor from claim to receipt quickly: work history, talks, writing, press.', 'Name the outcome, then link the source.', 'Do not let design flourishes hide the actual evidence.'],
+    },
+  };
+
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
 
   const tokenize = (value) => value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word && !stopWords.has(word));
@@ -338,6 +365,45 @@
     });
   };
 
+  const initDesignCritique = () => {
+    const button = document.querySelector('#run-design-critique');
+    const output = document.querySelector('#design-critique-output');
+    if (!button || !output) return;
+    const render = () => {
+      output.innerHTML = `
+        <div class="critique-grid">
+          ${designCritique.map(([label, score, note]) => `
+            <div class="critique-score">
+              <span>${escapeHtml(label)}</span>
+              <strong>${escapeHtml(score)}</strong>
+              <p>${escapeHtml(note)}</p>
+            </div>
+          `).join('')}
+        </div>
+        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful artifact. Keep pushing toward fewer decorations, more judgment, and clearer proof.</p>
+      `;
+    };
+    button.addEventListener('click', render);
+  };
+
+  const initTweaks = () => {
+    const panel = document.querySelector('#site-tweak-panel');
+    const output = document.querySelector('#tweak-output');
+    if (!panel || !output) return;
+    const render = (id) => {
+      const brief = tweakBriefs[id];
+      if (!brief) return;
+      output.innerHTML = `
+        <strong>${escapeHtml(brief.title)}</strong>
+        <ul>${brief.steps.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ul>
+      `;
+    };
+    panel.querySelectorAll('button[data-tweak]').forEach((button) => {
+      button.addEventListener('click', () => render(button.dataset.tweak));
+    });
+    render('legibility');
+  };
+
   detectBrowserAI();
   initAsk();
   initGuide();
@@ -345,5 +411,7 @@
   initUsefulAi();
   initSignalSim();
   initHighlights();
+  initDesignCritique();
+  initTweaks();
   initNotes();
 })();

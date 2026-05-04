@@ -891,8 +891,29 @@
                     <button type="button" class="secondary-link" id="toggle-highlights" aria-pressed="false">Highlight throughline</button>
                 </article>
 
+                <article class="ai-tool ai-tool-wide" aria-labelledby="ai-critique-title">
+                    <p class="story-label">08 / Design critique</p>
+                    <h3 id="ai-critique-title">Grade the site like a product.</h3>
+                    <p>I borrowed one useful habit from Open Design: score the work before calling it done. This runs that loop on the page itself: direction, hierarchy, detail, function, and whether anything here is actually worth remembering.</p>
+                    <button type="button" class="secondary-link" id="run-design-critique">Run critique</button>
+                    <div class="design-critique-output" id="design-critique-output" aria-live="polite"></div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-tweaks-title">
+                    <p class="story-label">09 / Tweak brief</p>
+                    <h3 id="ai-tweaks-title">Pick the next improvement.</h3>
+                    <p>Choose the pressure you care about and get a concrete pass to make next.</p>
+                    <div class="ai-chip-row" id="site-tweak-panel">
+                        <button type="button" data-tweak="legibility">Legibility</button>
+                        <button type="button" data-tweak="speed">Speed</button>
+                        <button type="button" data-tweak="voice">Voice</button>
+                        <button type="button" data-tweak="proof">Proof</button>
+                    </div>
+                    <div class="ai-answer compact" id="tweak-output" aria-live="polite"></div>
+                </article>
+
                 <article class="ai-tool" aria-labelledby="ai-notes-title">
-                    <p class="story-label">08 / Private notes</p>
+                    <p class="story-label">10 / Private notes</p>
                     <h3 id="ai-notes-title">Keep notes locally while you read.</h3>
                     <textarea id="private-notes" rows="6" placeholder="Notes stay in this browser."></textarea>
                     <div class="ai-note-actions">
@@ -908,7 +929,7 @@
             <p class="section-kicker">Reach out</p>
             <p class="panel-index">[OUTPUT 15]</p>
             <div class="site-footer-grid">
-                <p class="site-footer-copy">If you want to talk about product, AI, housing, or a messy work problem where the details matter, here is where to find me.</p>
+                <p class="site-footer-copy">Want to talk product, AI, housing, or a messy work problem? Reach me here.</p>
                 <div class="site-footer-links">
                     <a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="footer-link">ResiDesk</a>
                     <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Substack</a>

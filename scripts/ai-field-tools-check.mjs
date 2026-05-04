@@ -30,6 +30,8 @@ await page.click('#score-ai-idea');
 await page.selectOption('#building-type', 'urban');
 await page.click('#simulate-signals');
 await page.click('#toggle-highlights');
+await page.click('#run-design-critique');
+await page.click('#site-tweak-panel button[data-tweak="voice"]');
 await page.fill('#private-notes', 'I care about demos versus adoption. The useful AI test is a good hook.');
 await page.click('#summarize-notes');
 
@@ -40,6 +42,8 @@ const result = await page.evaluate(() => ({
   score: document.querySelector('#ai-score-output')?.textContent || '',
   simCount: document.querySelectorAll('#signal-sim-output li').length,
   highlights: document.querySelectorAll('mark.signal-highlight').length,
+  critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
+  tweak: document.querySelector('#tweak-output')?.textContent || '',
   notes: document.querySelector('#notes-output')?.textContent || '',
   overflow: document.documentElement.scrollWidth - window.innerWidth,
 }));
@@ -58,6 +62,8 @@ if (result.lensCount !== 3) failures.push(`Transcript lens rendered ${result.len
 if (!result.score.includes('5/5')) failures.push('Useful AI score did not reach expected 5/5 for the complete sample.');
 if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.simCount} list items, expected at least 7.`);
 if (result.highlights < 20) failures.push(`Throughline highlighter rendered ${result.highlights} highlights, expected at least 20.`);
+if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
+if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
 if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
 if (result.overflow !== 0) failures.push(`Desktop overflow is ${result.overflow}px.`);
 if (result.mobileOverflow !== 0) failures.push(`Mobile overflow is ${result.mobileOverflow}px.`);
