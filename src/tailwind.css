@@ -9782,3 +9782,70 @@ mark.signal-highlight {
     justify-content: center;
   }
 }
+
+/* Footer contrast repair: never let paper buttons inherit paper text */
+.site-footer .footer-link {
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  border-color: var(--contrast-line);
+}
+
+.site-footer .footer-link:hover,
+.site-footer .footer-link:focus-visible {
+  background: var(--contrast-mint);
+  color: var(--contrast-ink);
+}
+
+/* OKLCH contrast audit repairs */
+#now .now-primary-panel p,
+#now .now-primary-panel p:last-child {
+  color: var(--contrast-ink);
+}
+
+#operating-system .panel-index {
+  color: var(--contrast-ink);
+}
+
+.feature-badge {
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  border: 2px solid var(--contrast-line);
+}
+
+.feature-card:hover .feature-badge,
+.feature-card:focus-visible .feature-badge {
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+}
+
+.scroll-cue,
+.scroll-cue:hover,
+.scroll-cue:focus-visible {
+  color: var(--contrast-ink);
+}
+
+.scroll-cue-label,
+.scroll-cue-arrow {
+  color: var(--contrast-ink);
+}
+
+.scroll-cue-arrow {
+  background: var(--contrast-mint);
+  border-color: var(--contrast-line);
+}
+
+.scroll-cue:hover .scroll-cue-arrow,
+.scroll-cue:focus-visible .scroll-cue-arrow {
+  background: var(--contrast-mint);
+  color: var(--contrast-ink);
+}
+
+.nav-toggle,
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  color: var(--contrast-ink);
+}
+
+.nav-toggle-label {
+  color: var(--contrast-ink);
+}

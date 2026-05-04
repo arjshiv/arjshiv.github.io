@@ -13,12 +13,45 @@ const viewports = [
 async function auditText(root, minRatio) {
   return root.evaluate((scanRoot, minimum) => {
     const transparent = (color) => !color || color === 'transparent' || color === 'rgba(0, 0, 0, 0)';
+    const clamp = (value, min = 0, max = 1) => Math.min(Math.max(value, min), max);
     const parse = (value) => {
-      const match = value.match(/rgba?\(([^)]+)\)/);
-      if (!match) return null;
-      const [r, g, b, a = '1'] = match[1].split(/,\s*/).map(Number);
-      if ([r, g, b, a].some(Number.isNaN)) return null;
-      return { r, g, b, a };
+      const rgbMatch = value.match(/rgba?\(([^)]+)\)/);
+      if (rgbMatch) {
+        const normalized = rgbMatch[1].replace(/\s*\/\s*/, ' ').replace(/,/g, ' ');
+        const [r, g, b, a = '1'] = normalized.split(/\s+/).filter(Boolean).map(Number);
+        if ([r, g, b, a].some(Number.isNaN)) return null;
+        return { r, g, b, a };
+      }
+
+      const oklchMatch = value.match(/oklch\(([^)]+)\)/);
+      if (!oklchMatch) return null;
+      const parts = oklchMatch[1].replace(/\s*\/\s*/, ' ').split(/\s+/).filter(Boolean);
+      if (parts.length < 3) return null;
+      const l = parts[0].endsWith('%') ? Number(parts[0].slice(0, -1)) / 100 : Number(parts[0]);
+      const c = Number(parts[1]);
+      const h = Number(parts[2]) * Math.PI / 180;
+      const alpha = parts[3] ? Number(parts[3]) : 1;
+      if ([l, c, h, alpha].some(Number.isNaN)) return null;
+
+      const a = c * Math.cos(h);
+      const b = c * Math.sin(h);
+      const lPrime = l + 0.3963377774 * a + 0.2158037573 * b;
+      const mPrime = l - 0.1055613458 * a - 0.0638541728 * b;
+      const sPrime = l - 0.0894841775 * a - 1.2914855480 * b;
+      const lmsL = lPrime ** 3;
+      const lmsM = mPrime ** 3;
+      const lmsS = sPrime ** 3;
+      const linear = [
+        4.0767416621 * lmsL - 3.3077115913 * lmsM + 0.2309699292 * lmsS,
+        -1.2684380046 * lmsL + 2.6097574011 * lmsM - 0.3413193965 * lmsS,
+        -0.0041960863 * lmsL - 0.7034186147 * lmsM + 1.7076147010 * lmsS,
+      ];
+      const gamma = (channel) => {
+        const clamped = clamp(channel);
+        return clamped <= 0.0031308 ? 12.92 * clamped : 1.055 * (clamped ** (1 / 2.4)) - 0.055;
+      };
+      const [r, g, blue] = linear.map((channel) => Math.round(gamma(channel) * 255));
+      return { r, g, b: blue, a: alpha };
     };
     const luminance = ({ r, g, b }) => {
       const linear = [r, g, b].map((value) => {
