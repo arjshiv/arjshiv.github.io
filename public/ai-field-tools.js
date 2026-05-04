@@ -133,10 +133,33 @@
     `;
   };
 
+  const getBrowserLanguageModel = () => globalThis.LanguageModel || globalThis.ai?.languageModel || null;
+
+  const answerWithBrowserModel = async (question) => {
+    const api = getBrowserLanguageModel();
+    if (!api?.create) return null;
+    try {
+      if (api.availability) {
+        const availability = await api.availability();
+        if (availability === 'unavailable') return null;
+      }
+      const session = await api.create({
+        systemPrompt: 'Answer only from the supplied site notes. Be plainspoken, specific, and concise. If the notes do not answer the question, say so.',
+      });
+      const notes = topDocs(question, 5).map((doc) => `${doc.title}: ${doc.text}`).join('\n');
+      const prompt = `Question: ${question}\n\nSite notes:\n${notes}`;
+      const response = session.prompt ? await session.prompt(prompt) : null;
+      session.destroy?.();
+      return response ? `<p><strong>Browser model:</strong> ${escapeHtml(String(response))}</p>${answerFromCorpus(question)}` : null;
+    } catch {
+      return null;
+    }
+  };
+
   const detectBrowserAI = async () => {
     const status = document.querySelector('#browser-ai-status');
     if (!status) return;
-    const hasPromptApi = Boolean(globalThis.LanguageModel || globalThis.ai?.languageModel);
+    const hasPromptApi = Boolean(getBrowserLanguageModel());
     const hasWebGpu = Boolean(navigator.gpu);
     if (hasPromptApi) {
       status.textContent = 'Browser model hook available';
@@ -157,14 +180,15 @@
     const input = document.querySelector('#ai-question');
     const output = document.querySelector('#ai-answer');
     if (!form || !input || !output) return;
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const question = input.value.trim();
       if (!question) {
         output.innerHTML = '<p class="article-meta">Ask a real question first.</p>';
         return;
       }
-      output.innerHTML = answerFromCorpus(question);
+      output.innerHTML = '<p class="article-meta">Reading local site notes...</p>';
+      output.innerHTML = (await answerWithBrowserModel(question)) || answerFromCorpus(question);
     });
     document.querySelectorAll('#conversation-map button').forEach((button) => {
       button.addEventListener('click', () => {
