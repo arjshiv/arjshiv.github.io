@@ -176,6 +176,7 @@
                 <a href="#recent" class="nav-link">Proof</a>
                 <a href="#conversations" class="nav-link">Talks</a>
                 <a href="#writing" class="nav-link">Writing</a>
+                <a href="#ai-field-tools" class="nav-link">AI</a>
                 <a href="#links" class="nav-link">Links</a>
             </nav>
         </div>
@@ -791,9 +792,120 @@
             </div>
         </section>
 
+        <section id="ai-field-tools" class="section-block reveal">
+            <div class="section-heading">
+                <p class="section-kicker">AI field tools</p>
+                <p class="panel-index">[MODULE 14]</p>
+                <h2>Useful browser experiments</h2>
+                <div class="section-tags">
+                    <span class="tag-link tag-label">Runs in the browser</span>
+                    <span class="tag-link tag-label">No server required</span>
+                    <span class="tag-link tag-label">Falls back cleanly</span>
+                </div>
+            </div>
+            <div class="ai-tools-grid">
+                <article class="ai-tool ai-tool-primary" aria-labelledby="ai-ask-title">
+                    <div class="ai-tool-head">
+                        <p class="story-label">01 / Ask this site</p>
+                        <span class="ai-status" id="browser-ai-status">Checking browser AI</span>
+                    </div>
+                    <h3 id="ai-ask-title">Ask a question. Get an answer from this page.</h3>
+                    <p>The answer is grounded in the site copy, talks, writing, and proof links. If your browser exposes local AI, the tool can try that too. Otherwise it uses a small local retrieval engine.</p>
+                    <form class="ai-ask-form" id="ai-ask-form">
+                        <label class="sr-only" for="ai-question">Question</label>
+                        <input id="ai-question" type="search" autocomplete="off" placeholder="What does Arjun mean by demos are not adoption?">
+                        <button type="submit" class="primary-link">Ask</button>
+                    </form>
+                    <div class="ai-answer" id="ai-answer" aria-live="polite">
+                        <p class="article-meta">Try asking about ResiDesk, housing, demos, BlackRock, Climb, writing, or AI.</p>
+                    </div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-map-title">
+                    <p class="story-label">02 / Conversation map</p>
+                    <h3 id="ai-map-title">Start with a real question.</h3>
+                    <div class="ai-chip-row" id="conversation-map">
+                        <button type="button" data-question="What is the throughline of the site?">Throughline</button>
+                        <button type="button" data-question="What does Arjun believe about AI?">AI view</button>
+                        <button type="button" data-question="Why housing and ResiDesk?">Housing</button>
+                        <button type="button" data-question="What did BlackRock and Climb teach him?">Before ResiDesk</button>
+                    </div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-guide-title">
+                    <p class="story-label">03 / Reading guide</p>
+                    <h3 id="ai-guide-title">Build a path through the site.</h3>
+                    <label for="guide-persona">I am reading as</label>
+                    <select id="guide-persona">
+                        <option value="operator">an owner or operator</option>
+                        <option value="founder">a founder or product builder</option>
+                        <option value="journalist">a journalist or event organizer</option>
+                        <option value="candidate">a candidate or collaborator</option>
+                        <option value="investor">an investor</option>
+                    </select>
+                    <button type="button" class="secondary-link" id="build-guide">Build guide</button>
+                    <ol class="ai-output-list" id="guide-output"></ol>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-transcript-title">
+                    <p class="story-label">04 / Transcript lens</p>
+                    <h3 id="ai-transcript-title">Pull the useful parts out of a talk.</h3>
+                    <label for="talk-lens">Conversation</label>
+                    <select id="talk-lens">
+                        <option value="harnoor">Harnoor interview</option>
+                        <option value="greg">Greg Kamradt conversation</option>
+                        <option value="wellfound">Why Work Here</option>
+                        <option value="20for20">20for20 resident sentiment</option>
+                    </select>
+                    <button type="button" class="secondary-link" id="run-lens">Show lens</button>
+                    <div class="ai-answer compact" id="lens-output"></div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-useful-title">
+                    <p class="story-label">05 / Useful AI test</p>
+                    <h3 id="ai-useful-title">Paste an AI idea. See if it earns its keep.</h3>
+                    <textarea id="useful-ai-input" rows="5" placeholder="Example: AI assistant that answers resident texts, checks the lease, flags risky cases, and hands unresolved issues to the property team."></textarea>
+                    <button type="button" class="secondary-link" id="score-ai-idea">Score idea</button>
+                    <div class="ai-score" id="ai-score-output" aria-live="polite"></div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-resident-title">
+                    <p class="story-label">06 / Resident signal simulator</p>
+                    <h3 id="ai-resident-title">Generate a small building signal map.</h3>
+                    <label for="building-type">Building type</label>
+                    <select id="building-type">
+                        <option value="garden">garden-style apartments</option>
+                        <option value="urban">urban high-rise</option>
+                        <option value="student">student housing</option>
+                        <option value="workforce">workforce housing</option>
+                    </select>
+                    <button type="button" class="secondary-link" id="simulate-signals">Simulate signals</button>
+                    <div class="signal-sim-output" id="signal-sim-output"></div>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-highlight-title">
+                    <p class="story-label">07 / Throughline highlighter</p>
+                    <h3 id="ai-highlight-title">Show the pattern inside the page.</h3>
+                    <p>Highlights language about customer truth, context, measurement, follow-through, trust, and the anti-demo point.</p>
+                    <button type="button" class="secondary-link" id="toggle-highlights" aria-pressed="false">Highlight throughline</button>
+                </article>
+
+                <article class="ai-tool" aria-labelledby="ai-notes-title">
+                    <p class="story-label">08 / Private notes</p>
+                    <h3 id="ai-notes-title">Keep notes locally while you read.</h3>
+                    <textarea id="private-notes" rows="6" placeholder="Notes stay in this browser."></textarea>
+                    <div class="ai-note-actions">
+                        <button type="button" class="secondary-link" id="summarize-notes">Summarize notes</button>
+                        <button type="button" class="text-link" id="clear-notes">Clear</button>
+                    </div>
+                    <div class="ai-answer compact" id="notes-output"></div>
+                </article>
+            </div>
+        </section>
+
         <footer class="site-footer reveal">
             <p class="section-kicker">Reach out</p>
-            <p class="panel-index">[OUTPUT 14]</p>
+            <p class="panel-index">[OUTPUT 15]</p>
             <div class="site-footer-grid">
                 <p class="site-footer-copy">If you want to talk about product, AI, housing, or a messy work problem where the details matter, here is where to find me.</p>
                 <div class="site-footer-links">
