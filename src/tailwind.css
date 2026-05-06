@@ -9828,6 +9828,32 @@ body::before {
   text-transform: uppercase;
 }
 
+.operator-memo ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.operator-memo li {
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.24rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-soft);
+  padding: 0.7rem;
+}
+
+.operator-memo li span {
+  display: block;
+  color: var(--contrast-violet);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
