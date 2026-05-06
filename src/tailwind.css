@@ -9860,6 +9860,12 @@ body::before {
   margin-top: 0.25rem;
 }
 
+.command-result,
+.site-compass-link,
+.ai-copy-output {
+  min-height: 2.75rem;
+}
+
 .site-compass-output {
   display: grid;
   gap: 0.5rem;
