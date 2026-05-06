@@ -495,8 +495,14 @@
             <li><span>Decision</span>Decide who owns the next step before adding more analysis.</li>
             <li><span>Follow-through</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
           </ul>
+          <button type="button" class="text-link ai-copy-output" data-copy-kind="memo">Copy memo</button>
         </div>
       `;
+    });
+    output.addEventListener('click', async (event) => {
+      if (!event.target.matches('[data-copy-kind="memo"]')) return;
+      const copied = await copyText(output.innerText.replace('Copy memo', '').trim());
+      event.target.textContent = copied ? 'Copied' : 'Copy unavailable';
     });
   };
 
