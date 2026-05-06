@@ -1067,6 +1067,15 @@
             });
         }
 
+        commandLauncher?.addEventListener('click', () => setCommandPalette(true));
+        commandClose?.addEventListener('click', () => setCommandPalette(false));
+        commandSearch?.addEventListener('input', () => renderCommands(commandSearch.value));
+        commandPalette?.addEventListener('click', (event) => {
+            if (event.target === commandPalette) {
+                setCommandPalette(false);
+            }
+        });
+
         const updateScrollProgress = () => {
             const scrollable = document.documentElement.scrollHeight - window.innerHeight;
             const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
