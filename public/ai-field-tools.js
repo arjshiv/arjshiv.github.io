@@ -427,6 +427,23 @@
     render('legibility');
   };
 
+  const initProofPacket = () => {
+    const select = document.querySelector('#proof-audience');
+    const button = document.querySelector('#build-proof-packet');
+    const output = document.querySelector('#proof-packet-output');
+    if (!select || !button || !output) return;
+    const render = () => {
+      const packet = proofPackets[select.value] || proofPackets.operator;
+      output.innerHTML = `
+        <ol class="proof-packet-list">
+          ${packet.map(([title, href, note]) => `<li><a href="${href}">${escapeHtml(title)}</a><p>${escapeHtml(note)}</p></li>`).join('')}
+        </ol>
+      `;
+    };
+    button.addEventListener('click', render);
+    render();
+  };
+
   detectBrowserAI();
   initAsk();
   initGuide();
@@ -436,5 +453,6 @@
   initHighlights();
   initDesignCritique();
   initTweaks();
+  initProofPacket();
   initNotes();
 })();
