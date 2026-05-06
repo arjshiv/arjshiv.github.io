@@ -9945,6 +9945,10 @@ body[data-reader-mode="true"] .principle-card p {
   line-height: 1.62;
 }
 
+body[data-command-open="true"] {
+  overflow: hidden;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
