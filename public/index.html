@@ -1096,6 +1096,8 @@
             });
         }
 
+        document.body.dataset.readerMode = localStorage.getItem('arjun-reader-mode') === 'true' ? 'true' : 'false';
+
         commandLauncher?.addEventListener('click', () => setCommandPalette(true));
         commandClose?.addEventListener('click', () => setCommandPalette(false));
         commandSearch?.addEventListener('input', () => renderCommands(commandSearch.value));
