@@ -485,6 +485,18 @@
     });
   };
 
+  const initSiteCompass = () => {
+    const output = document.querySelector('#site-compass-output');
+    if (!output) return;
+    output.innerHTML = compassItems.map(([title, href, note], index) => `
+      <a class="site-compass-link" href="${href}">
+        <span>${String(index + 1).padStart(2, '0')}</span>
+        <strong>${escapeHtml(title)}</strong>
+        <em>${escapeHtml(note)}</em>
+      </a>
+    `).join('');
+  };
+
   detectBrowserAI();
   initAsk();
   initGuide();
@@ -496,5 +508,6 @@
   initTweaks();
   initProofPacket();
   initOperatorMemo();
+  initSiteCompass();
   initNotes();
 })();
