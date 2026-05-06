@@ -994,6 +994,15 @@
         const sections = [...document.querySelectorAll('main section[id]')];
         const navLinks = [...document.querySelectorAll('.nav-link')];
         const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const commandItems = [
+            ['Now', '#now', 'Current ResiDesk work and operating focus', 'start'],
+            ['Operating map', '#operating-system', 'How I think about customer, context, AI, trust, and team', 'system'],
+            ['Proof', '#recent', 'Recent writing, press, and receipts', 'receipts'],
+            ['Talks', '#conversations', 'Hear the argument in my own words', 'voice'],
+            ['AI field tools', '#ai-field-tools', 'Ask, score, simulate, critique, and take notes locally', 'tools'],
+            ['Links', '#links', 'External articles, panels, and company links', 'sources'],
+            ['Reach out', 'mailto:arj.shiv@gmail.com', 'Email me about product, AI, housing, or messy work', 'contact'],
+        ];
 
         const wrapTextWords = (element) => {
             if (!element || element.dataset.textWrapped === 'true') {
