@@ -462,9 +462,15 @@
         <ol class="proof-packet-list">
           ${packet.map(([title, href, note]) => `<li><a href="${href}">${escapeHtml(title)}</a><p>${escapeHtml(note)}</p></li>`).join('')}
         </ol>
+        <button type="button" class="text-link ai-copy-output" data-copy-kind="proof">Copy packet</button>
       `;
     };
     button.addEventListener('click', render);
+    output.addEventListener('click', async (event) => {
+      if (!event.target.matches('[data-copy-kind="proof"]')) return;
+      const copied = await copyText(output.innerText.replace('Copy packet', '').trim());
+      event.target.textContent = copied ? 'Copied' : 'Copy unavailable';
+    });
     render();
   };
 
