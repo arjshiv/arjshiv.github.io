@@ -160,6 +160,15 @@
     ],
   };
 
+  const compassItems = [
+    ['Now', '#now', 'what I am building'],
+    ['Map', '#signal-map', 'how resident messages turn into work'],
+    ['Work', '#work', 'the operating arc'],
+    ['Proof', '#recent', 'external receipts'],
+    ['Talks', '#conversations', 'direct voice'],
+    ['Writing', '#writing', 'AI point of view'],
+  ];
+
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
 
   const tokenize = (value) => value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word && !stopWords.has(word));
