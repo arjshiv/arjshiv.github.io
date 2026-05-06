@@ -1110,7 +1110,11 @@
             }
             const target = command.dataset.commandTarget;
             setCommandPalette(false);
-            if (target?.startsWith('#')) {
+            if (target === 'reader-mode') {
+                const nextState = document.body.dataset.readerMode !== 'true';
+                document.body.dataset.readerMode = String(nextState);
+                localStorage.setItem('arjun-reader-mode', String(nextState));
+            } else if (target?.startsWith('#')) {
                 document.querySelector(target)?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
             } else if (target) {
                 window.location.href = target;
