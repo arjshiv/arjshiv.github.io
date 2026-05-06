@@ -9810,6 +9810,24 @@ body::before {
   color: var(--contrast-soft);
 }
 
+.operator-memo-output {
+  min-height: 4rem;
+  border-top: 2px dashed color-mix(in oklch, var(--contrast-line) 74%, transparent);
+  padding-top: 0.85rem;
+}
+
+.operator-memo {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.operator-memo > strong {
+  color: var(--contrast-ink);
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
