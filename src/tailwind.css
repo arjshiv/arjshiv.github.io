@@ -9797,6 +9797,19 @@ body::before {
   font-weight: 800;
 }
 
+.proof-packet-list a {
+  color: var(--contrast-blue);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.proof-packet-list p {
+  margin-top: 0.18rem;
+  color: var(--contrast-soft);
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
