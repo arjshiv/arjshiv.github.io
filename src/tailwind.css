@@ -9854,6 +9854,24 @@ body::before {
   text-transform: uppercase;
 }
 
+.site-compass-output {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.site-compass-link {
+  display: grid;
+  grid-template-columns: 2.6rem minmax(0, 0.75fr) minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.25rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  padding: 0.65rem;
+  box-shadow: 0.1rem 0.1rem 0 var(--contrast-line);
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
