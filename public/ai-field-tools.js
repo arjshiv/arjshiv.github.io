@@ -178,6 +178,15 @@
     const scored = tokens.reduce((counts, token) => counts.set(token, (counts.get(token) || 0) + 1), new Map());
     return [...scored.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4).map(([token]) => token).join(', ') || 'the work';
   };
+  const copyText = async (value) => {
+    if (!navigator.clipboard?.writeText) return false;
+    try {
+      await navigator.clipboard.writeText(value);
+      return true;
+    } catch {
+      return false;
+    }
+  };
   const scoreDoc = (query, doc) => {
     const queryTokens = tokenize(query);
     const text = `${doc.title} ${doc.text} ${doc.tags.join(' ')}`.toLowerCase();
