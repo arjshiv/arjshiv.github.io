@@ -10151,3 +10151,32 @@ mark.signal-highlight {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+.command-launcher:hover,
+.command-launcher:focus-visible,
+.command-close:hover,
+.command-close:focus-visible,
+.command-result:hover,
+.command-result:focus-visible {
+  background: var(--contrast-mint);
+  color: var(--contrast-ink);
+  transform: translate(-1px, -1px);
+}
+
+.command-launcher:active,
+.command-close:active,
+.command-result:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+@media (max-width: 620px) {
+  .command-launcher {
+    right: 0.75rem;
+    bottom: 4rem;
+  }
+
+  .command-launcher span {
+    display: none;
+  }
+}
