@@ -10099,3 +10099,31 @@ mark.signal-highlight {
   padding: 0.8rem 0.9rem;
   font: inherit;
 }
+
+.command-results {
+  display: grid;
+  gap: 0.55rem;
+  max-height: min(24rem, 52vh);
+  margin-top: 0.85rem;
+  overflow: auto;
+  padding: 0.1rem 0.2rem 0.3rem 0;
+}
+
+.command-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  align-items: center;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.26rem;
+  background: var(--contrast-ice);
+  color: var(--contrast-ink);
+  padding: 0.8rem;
+  text-align: left;
+  box-shadow: 0.12rem 0.12rem 0 var(--contrast-line);
+}
+
+.command-result strong,
+.command-result span {
+  display: block;
+}
