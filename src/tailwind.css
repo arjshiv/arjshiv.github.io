@@ -9854,6 +9854,12 @@ body::before {
   text-transform: uppercase;
 }
 
+.ai-copy-output {
+  justify-self: start;
+  min-height: 2.55rem;
+  margin-top: 0.25rem;
+}
+
 .site-compass-output {
   display: grid;
   gap: 0.5rem;
