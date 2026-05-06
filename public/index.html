@@ -1045,6 +1045,21 @@
             `).join('');
         };
 
+        const setCommandPalette = (isOpen) => {
+            if (!commandPalette || !commandLauncher) {
+                return;
+            }
+            commandPalette.hidden = !isOpen;
+            commandLauncher.setAttribute('aria-expanded', String(isOpen));
+            document.body.dataset.commandOpen = String(isOpen);
+            if (isOpen) {
+                renderCommands(commandSearch?.value || '');
+                window.setTimeout(() => commandSearch?.focus(), 0);
+            } else {
+                commandLauncher.focus();
+            }
+        };
+
         if (motionAllowed) {
             document.querySelectorAll('.hero-title, .hero-subtitle, .quote-copy').forEach((element) => {
                 element.classList.add('text-animate-hero');
