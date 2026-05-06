@@ -1028,6 +1028,23 @@
             element.dataset.textWrapped = 'true';
         };
 
+        const renderCommands = (query = '') => {
+            if (!commandResults) {
+                return;
+            }
+            const normalized = query.trim().toLowerCase();
+            const filteredItems = commandItems.filter(([title, href, description, label]) => {
+                const haystack = `${title} ${href} ${description} ${label}`.toLowerCase();
+                return !normalized || haystack.includes(normalized);
+            });
+            commandResults.innerHTML = filteredItems.map(([title, href, description, label]) => `
+                <button class="command-result" type="button" data-command-target="${href}" role="option">
+                    <span><strong>${title}</strong><span>${description}</span></span>
+                    <em>${label}</em>
+                </button>
+            `).join('');
+        };
+
         if (motionAllowed) {
             document.querySelectorAll('.hero-title, .hero-subtitle, .quote-copy').forEach((element) => {
                 element.classList.add('text-animate-hero');
