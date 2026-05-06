@@ -9778,6 +9778,25 @@ body::before {
   background: var(--contrast-blue);
 }
 
+.proof-packet-output {
+  min-height: 4rem;
+  border-top: 2px dashed color-mix(in oklch, var(--contrast-line) 74%, transparent);
+  padding-top: 0.85rem;
+}
+
+.proof-packet-list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.proof-packet-list li::marker {
+  color: var(--contrast-violet);
+  font-family: var(--font-mono);
+  font-weight: 800;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
