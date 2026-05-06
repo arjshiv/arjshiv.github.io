@@ -9872,6 +9872,25 @@ body::before {
   box-shadow: 0.1rem 0.1rem 0 var(--contrast-line);
 }
 
+.site-compass-link span,
+.site-compass-link strong {
+  font-family: var(--font-mono);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-compass-link span {
+  color: var(--contrast-violet);
+  font-variant-numeric: tabular-nums;
+}
+
+.site-compass-link em {
+  color: var(--contrast-soft);
+  font-style: normal;
+  line-height: 1.25;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
