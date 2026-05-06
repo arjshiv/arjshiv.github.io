@@ -163,6 +163,12 @@
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
 
   const tokenize = (value) => value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word && !stopWords.has(word));
+  const firstSentence = (value) => value.split(/[.!?]\s+/).map((item) => item.trim()).find(Boolean) || value.trim();
+  const summarizeTopic = (value) => {
+    const tokens = tokenize(value);
+    const scored = tokens.reduce((counts, token) => counts.set(token, (counts.get(token) || 0) + 1), new Map());
+    return [...scored.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4).map(([token]) => token).join(', ') || 'the work';
+  };
   const scoreDoc = (query, doc) => {
     const queryTokens = tokenize(query);
     const text = `${doc.title} ${doc.text} ${doc.tags.join(' ')}`.toLowerCase();
