@@ -1073,6 +1073,18 @@
         commandPalette?.addEventListener('click', (event) => {
             if (event.target === commandPalette) {
                 setCommandPalette(false);
+                return;
+            }
+            const command = event.target.closest('.command-result');
+            if (!command) {
+                return;
+            }
+            const target = command.dataset.commandTarget;
+            setCommandPalette(false);
+            if (target?.startsWith('#')) {
+                document.querySelector(target)?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
+            } else if (target) {
+                window.location.href = target;
             }
         });
 
