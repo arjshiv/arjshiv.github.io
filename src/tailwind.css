@@ -9908,6 +9908,22 @@ body::before {
   }
 }
 
+body[data-reader-mode="true"] {
+  background: var(--contrast-paper);
+}
+
+body[data-reader-mode="true"] .section-block,
+body[data-reader-mode="true"] .hero-section,
+body[data-reader-mode="true"] .site-footer {
+  box-shadow: none;
+}
+
+body[data-reader-mode="true"] .section-art,
+body[data-reader-mode="true"] .ai-tool::after,
+body[data-reader-mode="true"] .signal-console::before {
+  opacity: 0.08;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
