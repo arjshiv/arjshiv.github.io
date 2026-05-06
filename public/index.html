@@ -196,7 +196,7 @@
             <h2 id="command-palette-title">Jump to the useful part.</h2>
             <label class="sr-only" for="command-search">Search site commands</label>
             <input id="command-search" type="search" autocomplete="off" placeholder="Try proof, AI, talks, ResiDesk, contact">
-            <div class="command-results" id="command-results" role="listbox" aria-label="Site commands"></div>
+            <div class="command-results" id="command-results"></div>
         </div>
     </section>
 
@@ -1067,7 +1067,7 @@
                 return !normalized || haystack.includes(normalized);
             });
             commandResults.innerHTML = filteredItems.map(([title, href, description, label]) => `
-                <button class="command-result" type="button" data-command-target="${href}" role="option">
+                <button class="command-result" type="button" data-command-target="${href}">
                     <span><strong>${title}</strong><span>${description}</span></span>
                     <em>${label}</em>
                 </button>
