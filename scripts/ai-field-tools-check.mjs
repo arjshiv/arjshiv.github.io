@@ -14,6 +14,9 @@ page.on('console', (message) => {
 page.on('pageerror', (error) => errors.push(error.message));
 
 await page.goto(target, { waitUntil: 'networkidle' });
+await page.click('.command-launcher');
+await page.fill('#command-search', 'proof');
+await page.click('.command-result[data-command-target="#recent"]');
 await page.locator('#ai-field-tools').scrollIntoViewIfNeeded();
 
 await page.fill('#ai-question', 'What does Arjun mean by demos are not adoption?');
