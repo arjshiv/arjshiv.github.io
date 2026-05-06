@@ -10127,3 +10127,27 @@ mark.signal-highlight {
 .command-result span {
   display: block;
 }
+
+.command-result strong {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.command-result span {
+  margin-top: 0.15rem;
+  color: var(--contrast-soft);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.command-result em {
+  color: var(--contrast-violet);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
