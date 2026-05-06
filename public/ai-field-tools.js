@@ -137,6 +137,29 @@
     },
   };
 
+  const proofPackets = {
+    operator: [
+      ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and routing the right issue to the right person.'],
+      ['Signal map', '#signal-map', 'Then show how raw resident messages become operating signal.'],
+      ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the external receipt on resident feedback and retention.'],
+    ],
+    founder: [
+      ['Operating map', '#operating-system', 'Use the six principles as the company-building spine.'],
+      ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
+    ],
+    journalist: [
+      ['Work arc', '#work', 'Use the path from physics to BlackRock, Climb, and ResiDesk.'],
+      ['Talks', '#conversations', 'Pull direct voice from interviews and panels.'],
+      ['Links', '#links', 'Use the press links as external sourcing.'],
+    ],
+    investor: [
+      ['Now', '#now', 'Start with the current ResiDesk focus.'],
+      ['Prior outcomes', '#work', 'Use BlackRock and Climb as proof of operating range.'],
+      ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
+    ],
+  };
+
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
 
   const tokenize = (value) => value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word && !stopWords.has(word));
