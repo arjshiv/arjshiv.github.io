@@ -10064,3 +10064,38 @@ mark.signal-highlight {
   justify-content: space-between;
   gap: 1rem;
 }
+
+.command-close,
+.command-palette input {
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.26rem;
+  background: var(--contrast-ice);
+  color: var(--contrast-ink);
+  box-shadow: var(--contrast-shadow-sm);
+}
+
+.command-close {
+  min-height: 2.55rem;
+  padding: 0.45rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.command-palette h2 {
+  max-width: 12ch;
+  margin: 0.85rem 0;
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.command-palette input {
+  width: 100%;
+  min-height: 3.25rem;
+  padding: 0.8rem 0.9rem;
+  font: inherit;
+}
