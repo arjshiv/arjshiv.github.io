@@ -10033,3 +10033,34 @@ mark.signal-highlight {
   padding: 0.18rem 0.42rem;
   font: inherit;
 }
+
+.command-palette {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: start center;
+  background: color-mix(in oklch, var(--contrast-ink) 42%, transparent);
+  padding: clamp(5rem, 10vw, 8rem) 1rem 1rem;
+}
+
+.command-palette[hidden] {
+  display: none;
+}
+
+.command-palette-panel {
+  width: min(44rem, 100%);
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.38rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  padding: clamp(1rem, 2.2vw, 1.4rem);
+  box-shadow: 0.45rem 0.45rem 0 var(--contrast-line);
+}
+
+.command-palette-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
