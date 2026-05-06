@@ -10324,6 +10324,14 @@ mark.signal-highlight {
   transform: translate(-1px, -1px);
 }
 
+.command-launcher:focus-visible,
+.command-close:focus-visible,
+.command-result:focus-visible,
+.site-compass-link:focus-visible {
+  outline: 3px solid var(--contrast-blue);
+  outline-offset: 3px;
+}
+
 .command-launcher:active,
 .command-close:active,
 .command-result:active {
