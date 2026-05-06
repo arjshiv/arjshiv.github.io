@@ -51,6 +51,9 @@ const result = await page.evaluate(() => ({
   highlights: document.querySelectorAll('mark.signal-highlight').length,
   critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
   tweak: document.querySelector('#tweak-output')?.textContent || '',
+  proofCount: document.querySelectorAll('#proof-packet-output li').length,
+  memo: document.querySelector('#operator-memo-output')?.textContent || '',
+  compassCount: document.querySelectorAll('#site-compass-output a').length,
   notes: document.querySelector('#notes-output')?.textContent || '',
   overflow: document.documentElement.scrollWidth - window.innerWidth,
 }));
@@ -71,6 +74,9 @@ if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.sim
 if (result.highlights < 20) failures.push(`Throughline highlighter rendered ${result.highlights} highlights, expected at least 20.`);
 if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
 if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
+if (result.proofCount !== 3) failures.push(`Proof packet rendered ${result.proofCount} items, expected 3.`);
+if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
+if (result.compassCount !== 6) failures.push(`Site compass rendered ${result.compassCount} links, expected 6.`);
 if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
 if (result.overflow !== 0) failures.push(`Desktop overflow is ${result.overflow}px.`);
 if (result.mobileOverflow !== 0) failures.push(`Mobile overflow is ${result.mobileOverflow}px.`);
