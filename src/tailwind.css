@@ -9924,6 +9924,15 @@ body[data-reader-mode="true"] .signal-console::before {
   opacity: 0.08;
 }
 
+body[data-reader-mode="true"] .section-intro,
+body[data-reader-mode="true"] .hero-copy,
+body[data-reader-mode="true"] .story-card p,
+body[data-reader-mode="true"] .role-card p,
+body[data-reader-mode="true"] .principle-card p {
+  max-width: 62ch;
+  line-height: 1.62;
+}
+
 mark.signal-highlight {
   border: 2px solid var(--contrast-line);
   border-radius: 0.18rem;
