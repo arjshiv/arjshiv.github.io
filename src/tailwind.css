@@ -10349,3 +10349,13 @@ mark.signal-highlight {
     display: none;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .command-launcher,
+  .command-close,
+  .command-result,
+  .site-compass-link {
+    transition: none;
+    transform: none !important;
+  }
+}
