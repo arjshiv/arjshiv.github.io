@@ -35,6 +35,8 @@ await page.click('#simulate-signals');
 await page.click('#toggle-highlights');
 await page.click('#run-design-critique');
 await page.click('#site-tweak-panel button[data-tweak="voice"]');
+await page.selectOption('#proof-audience', 'founder');
+await page.click('#build-proof-packet');
 await page.fill('#private-notes', 'I care about demos versus adoption. The useful AI test is a good hook.');
 await page.click('#summarize-notes');
 
