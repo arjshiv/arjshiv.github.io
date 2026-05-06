@@ -450,6 +450,32 @@
     render();
   };
 
+  const initOperatorMemo = () => {
+    const input = document.querySelector('#operator-memo-input');
+    const button = document.querySelector('#build-operator-memo');
+    const output = document.querySelector('#operator-memo-output');
+    if (!input || !button || !output) return;
+    button.addEventListener('click', () => {
+      const note = input.value.trim();
+      if (!note) {
+        output.innerHTML = '<p class="article-meta">Paste the messy notes first.</p>';
+        return;
+      }
+      const topic = summarizeTopic(note);
+      output.innerHTML = `
+        <div class="operator-memo">
+          <strong>Memo</strong>
+          <p>${escapeHtml(firstSentence(note))}</p>
+          <ul>
+            <li><span>Pattern</span>${escapeHtml(topic)}</li>
+            <li><span>Decision</span>Decide who owns the next step before adding more analysis.</li>
+            <li><span>Follow-through</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
+          </ul>
+        </div>
+      `;
+    });
+  };
+
   detectBrowserAI();
   initAsk();
   initGuide();
@@ -460,5 +486,6 @@
   initDesignCritique();
   initTweaks();
   initProofPacket();
+  initOperatorMemo();
   initNotes();
 })();
