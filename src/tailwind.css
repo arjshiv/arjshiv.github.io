@@ -9047,135 +9047,6 @@ body::before {
   color: var(--sotd-ink);
 }
 
-#conversations,
-#writing {
-  background:
-    linear-gradient(135deg, color-mix(in oklch, var(--sotd-green) 50%, var(--sotd-paper) 50%), color-mix(in oklch, var(--sotd-yellow) 34%, var(--sotd-paper) 66%));
-}
-
-#links {
-  background:
-    linear-gradient(135deg, color-mix(in oklch, var(--sotd-sky) 56%, var(--sotd-paper) 44%), color-mix(in oklch, var(--sotd-green) 38%, var(--sotd-paper) 62%));
-}
-
-.site-footer {
-  background: var(--sotd-blue);
-}
-
-.hero-copy,
-.program-item p,
-.about-copy p,
-.story-card p,
-.section-intro,
-.feature-copy p,
-.recent-item p:last-child,
-.article-card p:last-child,
-.stat-copy,
-.role-card p,
-.principle-card p,
-.link-preview-copy p:last-child,
-.faq-card p,
-.now-card p:last-child,
-.operating-rule p:last-child,
-.signal-readout p {
-  color: var(--sotd-soft);
-}
-
-.recent-item,
-.article-card,
-.link-preview-card,
-.feature-card,
-.story-card,
-.role-card,
-.principle-card,
-.faq-card,
-#operating-system .operating-rule,
-.now-card,
-.now-primary-panel {
-  color: var(--sotd-ink);
-}
-
-.recent-item:hover,
-.recent-item:focus-visible,
-.article-card:hover,
-.article-card:focus-visible,
-.story-card:hover,
-.story-card:focus-visible,
-.role-card:hover,
-.role-card:focus-visible,
-.feature-card:hover,
-.feature-card:focus-visible,
-.link-preview-card:hover,
-.link-preview-card:focus-visible,
-.principle-card:hover,
-.principle-card:focus-visible,
-#about .story-card:hover,
-#about .story-card:focus-visible {
-  color: var(--sotd-ink);
-  background-color: color-mix(in oklch, var(--sotd-yellow) 32%, var(--sotd-paper) 68%);
-}
-
-.recent-item:hover p,
-.recent-item:focus-visible p,
-.recent-item:hover p:last-child,
-.recent-item:focus-visible p:last-child,
-.article-card:hover p,
-.article-card:focus-visible p,
-.article-card:hover p:last-child,
-.article-card:focus-visible p:last-child,
-.story-card:hover p,
-.story-card:focus-visible p,
-.role-card:hover p,
-.role-card:focus-visible p,
-.feature-card:hover p,
-.feature-card:focus-visible p,
-.link-preview-card:hover p,
-.link-preview-card:focus-visible p,
-.principle-card:hover p,
-.principle-card:focus-visible p {
-  color: var(--sotd-soft);
-}
-
-.recent-item:hover h3,
-.recent-item:focus-visible h3,
-.article-card:hover h3,
-.article-card:focus-visible h3,
-.story-card:hover h3,
-.story-card:focus-visible h3,
-.role-card:hover h3,
-.role-card:focus-visible h3,
-.feature-card:hover h3,
-.feature-card:focus-visible h3,
-.link-preview-card:hover h3,
-.link-preview-card:focus-visible h3,
-.principle-card:hover h3,
-.principle-card:focus-visible h3 {
-  color: var(--sotd-ink);
-}
-
-.article-meta,
-.story-label,
-.section-kicker,
-.panel-index {
-  color: var(--sotd-soft);
-}
-
-@media (max-width: 760px) {
-  .topbar {
-    background: var(--sotd-paper);
-  }
-
-  .hero-section {
-    gap: 1rem;
-  }
-
-  .section-block,
-  .poster-card,
-  .program-card {
-    box-shadow: 0.18rem 0.18rem 0 var(--sotd-line);
-  }
-}
-
 /* Contrast repair pass: cool palette, ink-first text, audited hover states */
 :root {
   --contrast-paper: #eaf7f9;
@@ -10196,4 +10067,56 @@ mark.signal-highlight {
 @media (max-width: 620px) {
   .command-launcher { right: 0.75rem; bottom: 4rem; }
   .command-launcher span { display: none; }
+}
+
+#conversations .article-list {
+  display: grid;
+  gap: 0.9rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#conversations .article-card,
+#conversations .article-list .article-card:first-child {
+  min-height: auto;
+  padding: 1.15rem 3.35rem 1.15rem 1.15rem;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.38rem;
+  background: color-mix(in oklch, var(--contrast-aqua) 28%, var(--contrast-paper) 72%);
+  box-shadow: var(--contrast-shadow-sm);
+  overflow: visible;
+}
+
+#conversations .article-card::before {
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.28rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-blue);
+  box-shadow: 0.1rem 0.1rem 0 var(--contrast-line);
+}
+
+#conversations .article-card h3 {
+  max-width: 18ch;
+  margin-top: 0.75rem;
+  line-height: 1.04;
+}
+
+.recent-item:hover p,
+.recent-item:focus-visible p,
+.recent-item:hover p:last-child,
+.recent-item:focus-visible p:last-child,
+#conversations .article-card:hover p,
+#conversations .article-card:focus-visible p,
+#conversations .article-card:hover p:last-child,
+#conversations .article-card:focus-visible p:last-child {
+  color: var(--contrast-ink);
 }
