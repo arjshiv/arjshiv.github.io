@@ -24,6 +24,9 @@ await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textCont
 await page.click('.command-launcher');
 await page.fill('#command-search', 'operator packet');
 await page.click('.command-result[data-command-target="proof:operator"]');
+await page.click('.command-launcher');
+await page.fill('#command-search', 'draft operator memo');
+await page.click('.command-result[data-command-target^="memo:"]');
 await page.locator('#ai-field-tools').scrollIntoViewIfNeeded();
 
 await page.fill('#ai-question', 'What does Arjun mean by demos are not adoption?');
