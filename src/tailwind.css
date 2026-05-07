@@ -9190,8 +9190,8 @@ body::before {
   --contrast-soft: #173b4d;
   --contrast-muted: #26536a;
   --contrast-line: #031923;
-  --contrast-shadow: 0.36rem 0.36rem 0 var(--contrast-line);
-  --contrast-shadow-sm: 0.16rem 0.16rem 0 var(--contrast-line);
+  --contrast-shadow: 0.3rem 0.3rem 0 var(--contrast-line);
+  --contrast-shadow-sm: 0.13rem 0.13rem 0 var(--contrast-line);
 }
 
 @supports (color: oklch(50% 0 0)) {
