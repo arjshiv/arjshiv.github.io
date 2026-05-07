@@ -145,7 +145,7 @@
     ],
     founder: [
       ['Operating map', '#operating-system', 'Use the six principles as the company-building spine.'],
-      ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust.'],
+      ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it real.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
     ],
     journalist: [
