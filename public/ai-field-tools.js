@@ -200,7 +200,7 @@
     const usableDocs = docs.length ? docs : [corpus[0], corpus[2], corpus[1]];
     const lead = usableDocs[0];
     return `
-      <p><strong>Short answer:</strong> ${escapeHtml(lead.text)}</p>
+      <p><strong>What this site can say:</strong> ${escapeHtml(lead.text)}</p>
       <ul>
         ${usableDocs.map((doc) => `<li><a href="${doc.href}">${escapeHtml(doc.title)}</a>: ${escapeHtml(doc.text)}</li>`).join('')}
       </ul>
