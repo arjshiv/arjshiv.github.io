@@ -10158,7 +10158,7 @@ mark.signal-highlight {
 .command-results {
   display: grid;
   gap: 0.55rem;
-  max-height: min(16rem, 38vh);
+  max-height: min(18rem, 42vh);
   margin-top: 0.85rem;
   overflow: auto;
 }
@@ -10175,6 +10175,7 @@ mark.signal-highlight {
 
 .command-result strong,
 .command-result span { display: block; }
+
 .command-launcher:hover,
 .command-launcher:focus-visible,
 .command-close:hover,
