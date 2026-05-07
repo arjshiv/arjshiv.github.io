@@ -85,7 +85,7 @@
       ['#now', 'Understand the current focus.'],
       ['#about', 'Get the personal path and operating bias.'],
       ['#writing', 'Read the principles.'],
-      ['#links', 'Use recordings to hear the tone directly.'],
+      ['#links', 'Use recordings to hear how the work sounds without site polish.'],
     ],
     investor: [
       ['#now', 'Start with the current company focus.'],
