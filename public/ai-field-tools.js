@@ -140,7 +140,7 @@
   const proofPackets = {
     operator: [
       ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and routing the right issue to the right person.'],
-      ['Signal map', '#signal-map', 'Then show how raw resident messages become operating signal.'],
+      ['Signal map', '#signal-map', 'Then show how raw resident messages become an operating decision.'],
       ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the external receipt on resident feedback and retention.'],
     ],
     founder: [
