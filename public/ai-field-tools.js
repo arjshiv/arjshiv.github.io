@@ -162,7 +162,7 @@
 
   const compassItems = [
     ['Now', '#now', 'what I am building'],
-    ['Map', '#signal-map', 'how resident messages turn into work'],
+    ['Map', '#signal-map', 'how resident messages turn into decisions'],
     ['Work', '#work', 'the operating arc'],
     ['Proof', '#recent', 'external receipts'],
     ['Talks', '#conversations', 'direct voice'],
