@@ -470,6 +470,11 @@
       `;
     };
     button.addEventListener('click', render);
+    window.addEventListener('site-command-proof', (event) => {
+      const audience = String(event.detail || 'operator');
+      if (proofPackets[audience]) select.value = audience;
+      render();
+    });
     output.addEventListener('click', async (event) => {
       if (!event.target.matches('[data-copy-kind="proof"]')) return;
       const copied = await copyText(output.innerText.replace('Copy packet', '').trim());
