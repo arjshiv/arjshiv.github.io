@@ -264,6 +264,10 @@
       output.innerHTML = '<p class="article-meta">Reading local site notes...</p>';
       output.innerHTML = (await answerWithBrowserModel(question)) || answerFromCorpus(question);
     });
+    window.addEventListener('site-command-ask', (event) => {
+      input.value = String(event.detail || '').trim();
+      if (input.value) form.requestSubmit();
+    });
     document.querySelectorAll('#conversation-map button').forEach((button) => {
       button.addEventListener('click', () => {
         input.value = button.dataset.question || button.textContent.trim();
