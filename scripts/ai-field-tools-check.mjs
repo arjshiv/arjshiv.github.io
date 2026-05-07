@@ -17,11 +17,18 @@ await page.goto(target, { waitUntil: 'networkidle' });
 await page.click('.command-launcher');
 await page.fill('#command-search', 'proof');
 await page.click('.command-result[data-command-target="#recent"]');
+await page.click('.command-launcher');
+await page.fill('#command-search', 'ask about ai');
+await page.click('.command-result[data-command-target^="ask:"]');
+await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
+await page.click('.command-launcher');
+await page.fill('#command-search', 'operator packet');
+await page.click('.command-result[data-command-target="proof:operator"]');
 await page.locator('#ai-field-tools').scrollIntoViewIfNeeded();
 
 await page.fill('#ai-question', 'What does Arjun mean by demos are not adoption?');
 await page.click('#ai-ask-form button');
-await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Reading local site notes'));
+await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
 
 await page.click('#conversation-map button[data-question="Why housing and ResiDesk?"]');
 await page.selectOption('#guide-persona', 'journalist');
