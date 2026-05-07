@@ -4,7 +4,7 @@
       id: 'residesk',
       title: 'ResiDesk',
       href: '#now',
-      text: 'I co-founded ResiDesk to help rental properties hear what residents are saying, answer well, understand what is actually happening, and get the right issue to the right person without making someone read every text by hand.',
+      text: 'I co-founded ResiDesk to help rental properties hear what residents are saying, answer well, understand what is actually happening, and get the right issue to the person who can move it without making someone read every text by hand.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
     {
