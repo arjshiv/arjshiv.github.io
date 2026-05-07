@@ -78,7 +78,7 @@
       ['#work', 'Use the measured work history.'],
       ['#recent', 'Pull recent proof and article links.'],
       ['#conversations', 'Use talks for direct voice.'],
-      ['#links', 'Grab external press, panels, and recordings.'],
+      ['#links', 'Grab external press, panels, recordings, and dates.'],
     ],
     candidate: [
       ['#operating-system', 'Read how the company thinks about work.'],
