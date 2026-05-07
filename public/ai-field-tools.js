@@ -70,7 +70,7 @@
       ['#operating-system', 'Start with the operating map.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at the path from physics to finance to housing.'],
-      ['#ai-field-tools', 'Try the Useful AI test against your own idea.'],
+      ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
       ['#conversations', 'Watch the company-systems conversations.'],
     ],
     journalist: [
