@@ -261,7 +261,7 @@
         output.innerHTML = '<p class="article-meta">Ask a real question first.</p>';
         return;
       }
-      output.innerHTML = '<p class="article-meta">Reading local site notes...</p>';
+      output.innerHTML = '<p class="article-meta">Checking the site notes...</p>';
       output.innerHTML = (await answerWithBrowserModel(question)) || answerFromCorpus(question);
     });
     window.addEventListener('site-command-ask', (event) => {
