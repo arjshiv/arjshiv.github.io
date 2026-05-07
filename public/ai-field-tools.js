@@ -508,6 +508,10 @@
         </div>
       `;
     });
+    window.addEventListener('site-command-memo', (event) => {
+      input.value = String(event.detail || '').trim();
+      if (input.value) button.click();
+    });
     output.addEventListener('click', async (event) => {
       if (!event.target.matches('[data-copy-kind="memo"]')) return;
       const copied = await copyText(output.innerText.replace('Copy memo', '').trim());
