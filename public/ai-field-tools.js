@@ -62,7 +62,7 @@
     operator: [
       ['#now', 'Start with the current ResiDesk work.'],
       ['#signal-map', 'Then look at how resident messages turn into operating signal.'],
-      ['#recent', 'Check the proof links around resident engagement and NOI.'],
+      ['#recent', 'Check the proof links around resident feedback, retention, and NOI.'],
       ['#conversations', 'Watch the longer explanation if you want the operating context.'],
       ['#links', 'Use the press links for external receipts.'],
     ],
