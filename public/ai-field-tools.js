@@ -92,7 +92,7 @@
       ['#work', 'Look at prior operating outcomes.'],
       ['#recent', 'Check the public proof.'],
       ['#investing', 'Read the investing lens.'],
-      ['#ai-field-tools', 'Use the simulator to see the product thesis.'],
+      ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
   };
 
