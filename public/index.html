@@ -1120,6 +1120,9 @@
                 const nextState = document.body.dataset.readerMode !== 'true';
                 document.body.dataset.readerMode = String(nextState);
                 localStorage.setItem('arjun-reader-mode', String(nextState));
+            } else if (target?.startsWith('ask:')) {
+                document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
+                window.dispatchEvent(new CustomEvent('site-command-ask', { detail: target.slice(4) }));
             } else if (target?.startsWith('#')) {
                 document.querySelector(target)?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
             } else if (target) {
