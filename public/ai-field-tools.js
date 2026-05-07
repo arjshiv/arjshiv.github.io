@@ -343,7 +343,7 @@
         <ul>${messages.map((message) => `<li>${escapeHtml(message)}</li>`).join('')}</ul>
         <strong>Operator view</strong>
         <ul>
-          <li>Theme: maintenance and communication gaps.</li>
+          <li>Theme: maintenance, access, and communication gaps.</li>
           <li>Risk: repeated small issues become renewal objections.</li>
           <li>Next step: route urgent cases, then show the owner the recurring pattern.</li>
         </ul>
