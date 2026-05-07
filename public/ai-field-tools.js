@@ -150,7 +150,7 @@
     ],
     journalist: [
       ['Work arc', '#work', 'Use the path from physics to BlackRock, Climb, and ResiDesk.'],
-      ['Talks', '#conversations', 'Pull direct voice from interviews and panels.'],
+      ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the polished site copy.'],
       ['Links', '#links', 'Use the press links as external sourcing.'],
     ],
     investor: [
