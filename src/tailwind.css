@@ -8613,11 +8613,13 @@ body::after {
 #writing .principles-grid {
   display: flex;
   gap: 1rem;
+  box-sizing: border-box;
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 1rem;
+  padding: 0.35rem 0.2rem 1rem;
   scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0.2rem;
   overscroll-behavior-x: contain;
 }
 
