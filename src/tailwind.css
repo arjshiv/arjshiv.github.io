@@ -9797,3 +9797,9 @@ mark.signal-highlight {
 .hero-subtitle,
 .quote-copy,
 .principle-card h3,
+.article-card h3,
+.recent-item p:last-child {
+  text-wrap: balance;
+}
+
+.hero-copy,
