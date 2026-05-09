@@ -9769,3 +9769,12 @@ mark.signal-highlight {
   line-height: 1.35;
 }
 
+.route-ticket:hover,
+.route-ticket:focus-visible {
+  transform: translateY(-0.12rem);
+  background: var(--contrast-mint);
+  box-shadow: 0.16rem 0.16rem 0 var(--contrast-line);
+}
+
+.route-ticket:active,
+.primary-link:active,
