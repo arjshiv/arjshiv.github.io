@@ -3947,26 +3947,7 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-/* Smooth update 13: Shorter child reveals */
-.hero-section.reveal > *,
-.section-block.reveal > *,
-.site-footer.reveal > * {
-  transition-duration: var(--motion-reveal);
-  transition-timing-function: var(--ease-fast-out);
-}
-
-
-/* Smooth update 14: Reduce reveal travel */
-.reveal,
-.hero-section.reveal > *,
-.section-block.reveal > *,
-.site-footer.reveal > * {
-  transform: translateY(0.9rem);
-}
-
-
-/* Smooth update 15: Smooth scroll progress paint */
-.scroll-progress-bar {
+ {
   transition: transform 80ms linear;
 }
 
