@@ -9881,3 +9881,9 @@ mark.signal-highlight {
 .principle-card:hover,
 .principle-card:focus-visible,
 .now-card:hover,
+.now-card:focus-visible,
+.stat-card:hover,
+.stat-card:focus-visible {
+  transform: translateY(-0.08rem);
+}
+
