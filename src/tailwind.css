@@ -8634,21 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
--sotd-paper);
-}
-
-#about {
-  background:
-    linear-gradient(125deg, color-mix(in oklch, var(--sotd-paper) 78%, var(--sotd-yellow) 22%), color-mix(in oklch, var(--sotd-sky) 48%, var(--sotd-paper) 52%));
-}
-
-#about .quote-panel,
-#about .story-card:nth-child(2n) {
-  background: var(--sotd-yellow);
-}
-
-#about .story-card:nth-child(2n + 1) {
-  background: var(--sotd-sky);
+d-sky);
 }
 
 #work,
