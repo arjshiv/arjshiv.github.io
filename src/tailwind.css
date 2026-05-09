@@ -8634,21 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-sotd-ink);
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow-sm);
-}
-
-.portrait-cutout {
-  background: var(--sotd-sky);
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow);
-}
-
-.program-card {
-  background: color-mix(in oklch, var(--sotd-green) 52%, var(--sotd-paper) 48%);
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow);
+d-shadow);
 }
 
 .program-card .panel-index,
