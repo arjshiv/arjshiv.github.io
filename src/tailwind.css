@@ -8634,17 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-
-/* SOTD correction pass: make the imagegen direction unmistakable */
-:root {
-  --sotd-paper: oklch(96% 0.044 84);
-  --sotd-cream: oklch(92.5% 0.062 82);
-  --sotd-yellow: oklch(86% 0.16 86);
-  --sotd-blue: oklch(56% 0.15 242);
-  --sotd-sky: oklch(82% 0.095 216);
-  --sotd-green: oklch(78% 0.13 145);
-  --sotd-mint: oklch(88% 0.085 162);
-  --sotd-red: oklch(55% 0.2 29);
+ 0.2 29);
   --sotd-ink: oklch(13% 0.028 64);
   --sotd-soft: oklch(26% 0.03 64);
   --sotd-line: oklch(12% 0.026 64);
