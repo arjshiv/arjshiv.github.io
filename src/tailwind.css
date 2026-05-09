@@ -8634,24 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
- 26%) 58% 100%),
-    var(--sotd-paper);
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow);
-}
-
-.hero-title {
-  color: var(--sotd-ink);
-  text-shadow: 0.05em 0.05em 0 var(--sotd-yellow);
-}
-
-.hero-subtitle {
-  color: var(--sotd-ink);
-}
-
-.hero-note {
-  background: color-mix(in oklch, var(--sotd-paper) 74%, var(--sotd-yellow) 26%);
-  color: var(--sotd-ink);
+sotd-ink);
   border-color: var(--sotd-line);
   box-shadow: var(--sotd-shadow-sm);
 }
