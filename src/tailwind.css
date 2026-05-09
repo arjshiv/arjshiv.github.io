@@ -9901,3 +9901,10 @@ mark.signal-highlight {
   border: 2px solid transparent;
 }
 
+.command-result:hover,
+.command-result:focus-visible {
+  border-color: var(--contrast-line);
+}
+
+.ai-tool input,
+.ai-tool textarea,
