@@ -8634,24 +8634,6 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-d-sky);
-}
-
-#work,
-#recent {
-  background:
-    linear-gradient(180deg, color-mix(in oklch, var(--sotd-paper) 72%, var(--sotd-sky) 28%), color-mix(in oklch, var(--sotd-yellow) 28%, var(--sotd-paper) 72%));
-}
-
-#work .stats-row {
-  background: var(--sotd-blue);
-}
-
-#recent .recent-list,
-.article-list {
-  background: var(--sotd-paper);
-  color: var(--sotd-ink);
-}
 
 /* Contrast repair pass: cool palette, ink-first text, audited hover states */
 :root {
