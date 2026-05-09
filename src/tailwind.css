@@ -8634,30 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-y-link,
-.text-link,
-.footer-link,
-.tag-link,
-.back-to-top {
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow-sm);
-}
-
-.brand-mark {
-  background: var(--sotd-paper);
-}
-
-.brand-mark-led {
-  background: var(--sotd-red);
-}
-
-.nav-link {
-  background: var(--sotd-paper);
-  color: var(--sotd-ink);
-}
-
-.nav-link[aria-current],
-.nav-link[aria-current='true'],
+rue'],
 .nav-link:hover,
 .nav-link:focus-visible,
 .primary-link {
