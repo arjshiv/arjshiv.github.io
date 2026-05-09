@@ -9807,3 +9807,6 @@ mark.signal-highlight {
 .about-copy p,
 .story-card p,
 .role-card p,
+.article-card p,
+.recent-item p:last-child,
+.link-preview-copy p:last-child,
