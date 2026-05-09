@@ -9810,3 +9810,9 @@ mark.signal-highlight {
 .article-card p,
 .recent-item p:last-child,
 .link-preview-copy p:last-child,
+.faq-card p,
+.ai-tool p {
+  text-wrap: pretty;
+}
+
+.article-meta,
