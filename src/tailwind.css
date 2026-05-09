@@ -3947,33 +3947,6 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-form: none;
-}
-
-
-/* Smooth update 10: Menu button hover */
-.nav-toggle:hover {
-  transform: translateY(-1px);
-  border-color: var(--white-line-strong);
-}
-
-
-/* Smooth update 11: Compact hero actions on touch */
-@media (max-width: 560px) {
-  .hero-actions {
-    margin-top: 1.15rem;
-    padding-top: 0.8rem;
-  }
-}
-
-
-/* Smooth update 12: Shorter page reveals */
-.reveal {
-  transition-duration: var(--motion-reveal);
-  transition-timing-function: var(--ease-fast-out);
-}
-
-
 /* Smooth update 13: Shorter child reveals */
 .hero-section.reveal > *,
 .section-block.reveal > *,
