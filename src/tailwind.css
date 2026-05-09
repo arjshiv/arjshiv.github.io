@@ -9708,3 +9708,33 @@ mark.signal-highlight {
 #conversations .article-card:focus-visible p:last-child {
   color: var(--contrast-ink);
 }
+
+/* Web-pattern pass: personal-site route, app-like surfaces, cleaner motion */
+.start-route {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: clamp(1rem, 2.5vw, 1.75rem) auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  padding: 0.7rem;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.5rem;
+  background: color-mix(in oklch, var(--contrast-ice) 76%, var(--contrast-paper) 24%);
+  box-shadow: var(--contrast-shadow-sm);
+}
+
+.route-ticket {
+  min-height: 6rem;
+  display: grid;
+  align-content: start;
+  gap: 0.35rem;
+  padding: 0.85rem;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.36rem;
+  background: var(--contrast-paper);
+  color: var(--contrast-ink);
+  box-shadow: 0.08rem 0.08rem 0 var(--contrast-line);
+  text-decoration: none;
+  transition: transform 140ms var(--ease-out), box-shadow 140ms var(--ease-out), background-color 140ms var(--ease-out);
+}
+
