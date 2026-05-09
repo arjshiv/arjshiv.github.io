@@ -8634,21 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-,
-.footer-link:focus-visible,
-.tag-link:hover,
-.tag-link:focus-visible {
-  background: var(--sotd-yellow);
-  color: var(--sotd-ink);
-}
-
-.hero-section {
-  grid-template-columns: minmax(0, 1.45fr) minmax(19rem, 0.55fr);
-}
-
-.poster-card {
-  background:
-    linear-gradient(90deg, var(--sotd-paper) 0 58%, color-mix(in oklch, var(--sotd-sky) 74%, var(--sotd-paper) 26%) 58% 100%),
+ 26%) 58% 100%),
     var(--sotd-paper);
   border-color: var(--sotd-line);
   box-shadow: var(--sotd-shadow);
