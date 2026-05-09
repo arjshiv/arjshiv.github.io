@@ -3947,30 +3947,7 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-25: Keep open FAQ settled */
-.faq-card[open] summary:hover {
-  transform: none;
-}
-
-
-/* Smooth update 26: Stat value response */
-.stat-card .stat-value {
-  transition-duration: 140ms;
-  transition-timing-function: var(--ease-snappy);
-}
-
-
-/* Smooth update 27: Subtle stat hover lift */
-.stat-card:hover {
-  transform: translateY(-1px);
-}
-
-
-/* Smooth update 28: Subtle content card lift */
-.feature-card:hover,
-.link-preview-card:hover,
-.article-card:hover,
-.video-card:hover {
+ver {
   transform: translateY(-1px);
 }
 
