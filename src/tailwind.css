@@ -9738,3 +9738,18 @@ mark.signal-highlight {
   transition: transform 140ms var(--ease-out), box-shadow 140ms var(--ease-out), background-color 140ms var(--ease-out);
 }
 
+.route-ticket:nth-child(2),
+.route-ticket:nth-child(4) {
+  background: color-mix(in oklch, var(--contrast-mint) 32%, var(--contrast-paper) 68%);
+}
+
+.route-ticket span,
+.route-ticket em {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-style: normal;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
