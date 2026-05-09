@@ -9826,3 +9826,20 @@ mark.signal-highlight {
 .feature-card img,
 .link-preview-card img,
 .video-poster img,
+.portrait-cutout img {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+}
+
+.section-heading {
+  row-gap: 0.7rem;
+}
+
+.section-heading::after {
+  opacity: 0.72;
+}
+
+.section-tags {
+  gap: 0.45rem;
+}
+
