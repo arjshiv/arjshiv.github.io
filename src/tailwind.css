@@ -9867,3 +9867,6 @@ mark.signal-highlight {
 }
 
 .feature-card:hover,
+.feature-card:focus-visible,
+.link-preview-card:hover,
+.link-preview-card:focus-visible,
