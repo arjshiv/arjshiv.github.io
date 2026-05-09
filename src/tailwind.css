@@ -8634,21 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-   linear-gradient(0deg, color-mix(in oklch, var(--sotd-line) 10%, transparent) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-
-.topbar {
-  background: color-mix(in oklch, var(--sotd-paper) 86%, var(--sotd-sky) 14%);
-  border-color: var(--sotd-line);
-  box-shadow: var(--sotd-shadow-sm);
-}
-
-.brand-mark,
-.nav-link,
-.nav-toggle,
-.primary-link,
-.secondary-link,
+y-link,
 .text-link,
 .footer-link,
 .tag-link,
