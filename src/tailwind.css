@@ -3947,32 +3947,7 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-
-
-/* Smooth update 07: Card transition budget */
-.article-card,
-.feature-card,
-.link-preview-card,
-.story-card,
-.role-card,
-.principle-card,
-.faq-card,
-.video-card {
-  transition-duration: var(--motion-hover);
-  transition-timing-function: var(--ease-snappy);
-}
-
-
-/* Smooth update 08: Small nav lift */
-.nav-link:hover,
-.nav-link:focus-visible {
-  transform: translateY(-1px);
-}
-
-
-/* Smooth update 09: Keep current nav stable */
-.nav-link[aria-current='true'] {
-  transform: none;
+form: none;
 }
 
 
