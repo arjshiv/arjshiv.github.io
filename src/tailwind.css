@@ -3947,32 +3947,6 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-ver {
-  transform: translateY(-1px);
-}
-
-
-/* Smooth update 29: Story card lift */
-.story-card:hover,
-.role-card:hover,
-.principle-card:hover {
-  transform: translateY(-1px);
-}
-
-
-/* Smooth update 30: No hover lift on touch layouts */
-@media (max-width: 760px) {
-  .feature-card:hover,
-  .link-preview-card:hover,
-  .article-card:hover,
-  .video-card:hover,
-  .story-card:hover,
-  .role-card:hover,
-  .principle-card:hover,
-  .stat-card:hover {
-    transform: none;
-  }
-}
 
 
 /* Smooth update 31: Isolate section rendering */
