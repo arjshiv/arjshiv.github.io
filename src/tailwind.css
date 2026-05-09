@@ -9870,3 +9870,7 @@ mark.signal-highlight {
 .feature-card:focus-visible,
 .link-preview-card:hover,
 .link-preview-card:focus-visible,
+.article-card:hover,
+.article-card:focus-visible,
+.video-card:hover,
+.video-card:focus-visible,
