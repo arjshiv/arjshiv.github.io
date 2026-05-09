@@ -9887,3 +9887,17 @@ mark.signal-highlight {
   transform: translateY(-0.08rem);
 }
 
+.faq-card[open] {
+  background: color-mix(in oklch, var(--contrast-mint) 22%, var(--contrast-paper) 78%);
+}
+
+.faq-card summary {
+  min-height: 3.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.command-result {
+  border: 2px solid transparent;
+}
+
