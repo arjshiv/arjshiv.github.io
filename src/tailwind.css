@@ -9908,3 +9908,9 @@ mark.signal-highlight {
 
 .ai-tool input,
 .ai-tool textarea,
+.ai-tool select,
+.command-palette input {
+  box-shadow: inset 0.08rem 0.08rem 0 color-mix(in oklch, var(--contrast-blue) 12%, transparent);
+}
+
+.ai-tool input:focus,
