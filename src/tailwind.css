@@ -8634,17 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-, transparent 18.5rem),
-    radial-gradient(circle at 88% 8%, color-mix(in oklch, var(--sotd-yellow) 34%, transparent) 0 16rem, transparent 16.5rem),
-    var(--sotd-paper);
-  color: var(--sotd-ink);
-}
-
-body::before {
-  opacity: 0.24;
-  background-image:
-    linear-gradient(90deg, color-mix(in oklch, var(--sotd-line) 12%, transparent) 1px, transparent 1px),
-    linear-gradient(0deg, color-mix(in oklch, var(--sotd-line) 10%, transparent) 1px, transparent 1px);
+   linear-gradient(0deg, color-mix(in oklch, var(--sotd-line) 10%, transparent) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
