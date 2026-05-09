@@ -3947,31 +3947,7 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
-
-
-
-/* Smooth update 22: Faster readout switch */
-.signal-metrics,
-.signal-readout h3,
-.signal-readout p {
-  transition-duration: 150ms;
-  transition-timing-function: var(--ease-snappy);
-}
-
-
-/* Smooth update 23: FAQ summary feedback */
-.faq-card summary {
-  transition: color 140ms var(--ease-snappy), transform 140ms var(--ease-snappy);
-}
-
-
-/* Smooth update 24: FAQ summary hover lift */
-.faq-card summary:hover {
-  transform: translateX(0.12rem);
-}
-
-
-/* Smooth update 25: Keep open FAQ settled */
+25: Keep open FAQ settled */
 .faq-card[open] summary:hover {
   transform: none;
 }
