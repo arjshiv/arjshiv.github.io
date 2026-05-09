@@ -8634,27 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-rue'],
-.nav-link:hover,
-.nav-link:focus-visible,
-.primary-link {
-  background: var(--sotd-red);
-  color: var(--sotd-paper);
-}
-
-.secondary-link,
-.text-link,
-.footer-link,
-.tag-link {
-  background: var(--sotd-paper);
-  color: var(--sotd-ink);
-}
-
-.secondary-link:hover,
-.secondary-link:focus-visible,
-.text-link:hover,
-.text-link:focus-visible,
-.footer-link:hover,
+,
 .footer-link:focus-visible,
 .tag-link:hover,
 .tag-link:focus-visible {
