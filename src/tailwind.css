@@ -8634,24 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-r: var(--sotd-line);
-  box-shadow: var(--sotd-shadow);
-}
-
-.section-heading h2 {
-  color: var(--sotd-ink);
-  text-shadow: 0.045em 0.045em 0 var(--sotd-yellow);
-}
-
-.section-heading .panel-index,
-.hero-note-label,
-.feature-badge {
-  color: var(--sotd-red);
-}
-
-#now {
-  background:
-    linear-gradient(120deg, color-mix(in oklch, var(--sotd-yellow) 45%, var(--sotd-paper) 55%) 0 40%, color-mix(in oklch, var(--sotd-sky) 58%, var(--sotd-paper) 42%) 40% 100%);
+-paper) 55%) 0 40%, color-mix(in oklch, var(--sotd-sky) 58%, var(--sotd-paper) 42%) 40% 100%);
 }
 
 #now .now-primary-panel {
