@@ -9753,3 +9753,19 @@ mark.signal-highlight {
   font-variant-numeric: tabular-nums;
 }
 
+.route-ticket span {
+  color: var(--contrast-violet);
+}
+
+.route-ticket strong {
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 1.3vw, 1.12rem);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.route-ticket em {
+  color: var(--contrast-soft);
+  line-height: 1.35;
+}
+
