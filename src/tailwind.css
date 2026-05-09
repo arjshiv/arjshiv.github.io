@@ -8634,17 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-5) { background: var(--sotd-green); }
-#operating-system .operating-rule:nth-child(3),
-#operating-system .operating-rule:nth-child(6) { background: var(--sotd-sky); }
-
-#signal-map {
-  background:
-    linear-gradient(135deg, var(--sotd-blue), color-mix(in oklch, var(--sotd-blue) 72%, var(--sotd-green) 28%));
-}
-
-#signal-map .signal-readout {
-  background: var(--sotd-paper);
+-sotd-paper);
 }
 
 #about {
