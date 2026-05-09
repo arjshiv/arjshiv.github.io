@@ -3947,30 +3947,7 @@ button {
   transform: translateY(1px) scale(0.985);
   transition-duration: var(--motion-tap);
 }
- {
-  transition: transform 80ms linear;
-}
-
-
-/* Smooth update 16: Snappier topbar state */
-.topbar {
-  transition-duration: 160ms;
-  transition-timing-function: var(--ease-snappy);
-}
-
-
-/* Smooth update 17: Back-to-top response */
-.back-to-top {
-  transition-duration: 140ms;
-  transition-timing-function: var(--ease-snappy);
-}
-
-
-/* Smooth update 18: Lighter image hover timing */
-.feature-card img,
-.link-preview-card img,
-.video-poster img {
-  transition-duration: 160ms;
+;
   transition-timing-function: var(--ease-snappy);
 }
 
