@@ -9816,3 +9816,10 @@ mark.signal-highlight {
 }
 
 .article-meta,
+.panel-index,
+.story-label,
+.stat-value,
+.route-ticket span {
+  font-variant-numeric: tabular-nums;
+}
+
