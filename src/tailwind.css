@@ -8634,18 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
- 0.2 29);
-  --sotd-ink: oklch(13% 0.028 64);
-  --sotd-soft: oklch(26% 0.03 64);
-  --sotd-line: oklch(12% 0.026 64);
-  --sotd-shadow: 0.42rem 0.42rem 0 var(--sotd-line);
-  --sotd-shadow-sm: 0.2rem 0.2rem 0 var(--sotd-line);
-}
-
-body,
-.page-shell {
-  background:
-    radial-gradient(circle at 7% 18%, color-mix(in oklch, var(--sotd-blue) 16%, transparent) 0 18rem, transparent 18.5rem),
+, transparent 18.5rem),
     radial-gradient(circle at 88% 8%, color-mix(in oklch, var(--sotd-yellow) 34%, transparent) 0 16rem, transparent 16.5rem),
     var(--sotd-paper);
   color: var(--sotd-ink);
