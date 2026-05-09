@@ -9778,3 +9778,9 @@ mark.signal-highlight {
 
 .route-ticket:active,
 .primary-link:active,
+.secondary-link:active,
+.tag-link:active,
+.command-result:active {
+  transform: scale(0.96);
+}
+
