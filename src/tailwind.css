@@ -8634,16 +8634,7 @@ body::after {
     font-size: clamp(2.4rem, 12vw, 4rem);
   }
 }
-d) 20%, var(--sotd-paper) 80%); }
-
-#operating-system {
-  background: color-mix(in oklch, var(--sotd-sky) 46%, var(--sotd-paper) 54%);
-}
-
-#operating-system .operating-rule:nth-child(1),
-#operating-system .operating-rule:nth-child(4) { background: var(--sotd-yellow); }
-#operating-system .operating-rule:nth-child(2),
-#operating-system .operating-rule:nth-child(5) { background: var(--sotd-green); }
+5) { background: var(--sotd-green); }
 #operating-system .operating-rule:nth-child(3),
 #operating-system .operating-rule:nth-child(6) { background: var(--sotd-sky); }
 
