@@ -9860,3 +9860,10 @@ mark.signal-highlight {
 .faq-card,
 .now-card,
 .video-card,
+.stat-card,
+.signal-stage {
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-out);
+}
+
+.feature-card:hover,
