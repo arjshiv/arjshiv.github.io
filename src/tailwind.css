@@ -9925,3 +9925,39 @@ mark.signal-highlight {
   scrollbar-color: var(--contrast-blue) color-mix(in oklch, var(--contrast-paper) 62%, var(--contrast-ice) 38%);
 }
 
+#writing .principle-card {
+  justify-content: start;
+}
+
+@media (min-width: 980px) {
+  #now .now-grid,
+  #recent .recent-grid,
+  #conversations .conversation-grid,
+  #ai-field-tools .ai-tools-grid {
+    align-items: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .start-route {
+    grid-template-columns: 1fr;
+    width: min(calc(100% - 1rem), var(--max-width));
+    padding: 0.55rem;
+  }
+
+  .route-ticket {
+    min-height: 4.6rem;
+  }
+
+  .feature-card:hover,
+  .link-preview-card:hover,
+  .article-card:hover,
+  .video-card:hover,
+  .story-card:hover,
+  .role-card:hover,
+  .principle-card:hover,
+  .now-card:hover,
+  .stat-card:hover {
+    transform: none;
+  }
+}
