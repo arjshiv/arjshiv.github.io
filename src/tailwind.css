@@ -9914,3 +9914,14 @@ mark.signal-highlight {
 }
 
 .ai-tool input:focus,
+.ai-tool textarea:focus,
+.ai-tool select:focus,
+.command-palette input:focus {
+  outline: 3px solid var(--contrast-blue);
+  outline-offset: 2px;
+}
+
+#writing .principles-grid {
+  scrollbar-color: var(--contrast-blue) color-mix(in oklch, var(--contrast-paper) 62%, var(--contrast-ice) 38%);
+}
+
