@@ -9792,6 +9792,37 @@ mark.signal-highlight {
   scroll-margin-top: calc(var(--header-height) + 1.2rem);
 }
 
+.hero-copy-panel {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-utility-column {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  max-width: 7.1ch;
+}
+
+@media (min-width: 1180px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(21rem, 0.82fr);
+    column-gap: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  .hero-title {
+    max-width: 6.45ch;
+  }
+
+  .portrait-cutout {
+    margin-top: clamp(3rem, 9vw, 8.5rem);
+    margin-left: auto;
+    transform: rotate(2.4deg);
+  }
+}
+
 .section-heading h2,
 .hero-title,
 .hero-subtitle,

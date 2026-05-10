@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: '#writing',
-      text: 'I care about AI that shortens the distance between a real problem and a finished task. Context, evaluation, handoff, and judgment matter more than novelty or model names.',
+      text: 'I care about AI that shortens the distance between a real problem and a finished task. Context, tests, handoff, and judgment matter more than novelty or model names.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks',
       href: '#conversations',
-      text: 'The talks cover physics, software, ResiDesk, running the company, and why a good demo is not the same thing as useful work.',
+      text: 'In the talks I usually end up in the same place: physics taught me to care about measurement, software became useful when it saved real time, and ResiDesk is about hearing residents clearly enough to act.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
@@ -61,13 +61,13 @@
   const guides = {
     operator: [
       ['#now', 'Start with the current ResiDesk work.'],
-      ['#signal-map', 'Then look at how resident messages turn into operating signal.'],
-      ['#recent', 'Check the proof links around resident feedback, retention, and NOI.'],
-      ['#conversations', 'Watch the longer explanation if you want the operating context.'],
-      ['#links', 'Use the press links for external receipts.'],
+      ['#signal-map', 'Then look at how resident messages turn into work someone owns.'],
+      ['#recent', 'Use the outside links around resident feedback, retention, and NOI.'],
+      ['#conversations', 'Watch the longer explanation if you want to hear it less polished.'],
+      ['#links', 'Use the press links when you want external sourcing.'],
     ],
     founder: [
-      ['#operating-system', 'Start with the operating map.'],
+      ['#operating-system', 'Start with how I think about building.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at the path from physics to finance to housing.'],
       ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
@@ -76,7 +76,7 @@
     journalist: [
       ['#about', 'Start with the narrative arc.'],
       ['#work', 'Use the measured work history.'],
-      ['#recent', 'Pull recent proof and article links.'],
+      ['#recent', 'Pull recent writing and article links.'],
       ['#conversations', 'Use talks for direct voice.'],
       ['#links', 'Grab external press, panels, recordings, and dates.'],
     ],
@@ -90,14 +90,14 @@
     investor: [
       ['#now', 'Start with the current company focus.'],
       ['#work', 'Look at prior operating outcomes.'],
-      ['#recent', 'Check the public proof.'],
+      ['#recent', 'Check the public links.'],
       ['#investing', 'Read the investing lens.'],
       ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
   };
 
   const talkLenses = {
-    harnoor: ['Physics made me care about measurement.', 'Software became useful when it saved real time.', 'ResiDesk is a customer-truth problem first, not an AI novelty problem.'],
+    harnoor: ['Physics made me care about measurement.', 'Software became useful when it saved real time.', 'ResiDesk starts with the customer, not the AI demo.'],
     greg: ['The useful part of AI is leverage inside actual company work.', 'Context has to travel with the task.', 'A system is only good if it changes what someone does next.'],
     wellfound: ['The team needs people who can carry context.', 'The work is close to residents, operators, and messy edge cases.', 'Trust matters because a human team still owns the judgment.'],
     '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to be useful to the operator, not just interesting to analyze.'],
@@ -111,11 +111,11 @@
   };
 
   const designCritique = [
-    ['Philosophy', '9.0', 'The page has a clear argument: customer truth, context, measurement, and follow-through beat impressive demos. Keep the field-passport shell because it matches that argument.'],
-    ['Hierarchy', '8.2', 'The top half scans well. The lower tools section now needs to behave like an operator console, with clear primary actions and less equal-weight card noise.'],
-    ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to earn structure, not just decoration.'],
-    ['Function', '9.1', 'The browser tools do real work without a server: answer, route, score, simulate, highlight, and keep notes locally. That is stronger than a fake chat widget.'],
-    ['Innovation', '8.5', 'The memorable move is treating a personal site like a working field manual. Push that further by making each interaction reveal judgment, not novelty.'],
+    ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
+    ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
+    ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to help the reader.'],
+    ['Function', '9.1', 'The browser tools do real work without a server: answer, route, score, simulate, highlight, and keep notes locally. That is more useful than a fake chat widget.'],
+    ['Taste', '8.5', 'The best version of the site should feel like a useful object. Push each interaction toward judgment, not novelty.'],
   ];
 
   const tweakBriefs = {
@@ -125,26 +125,26 @@
     },
     speed: {
       title: 'Speed pass',
-      steps: ['Keep AI tools lazy-loaded and avoid any JavaScript above the fold.', 'Prefer content-visibility for lower sections and compressed images for proof cards.', 'Make interactions transform-only so old browsers do less paint work.'],
+      steps: ['Keep AI tools lazy-loaded and avoid any JavaScript above the fold.', 'Prefer content-visibility for lower sections and compressed images for public link cards.', 'Make interactions transform-only so old browsers do less paint work.'],
     },
     voice: {
       title: 'Voice pass',
       steps: ['Replace abstract claims with the job: residents text, operators decide, someone owns the next step.', 'Use first person when the claim is personal.', 'Cut anything that sounds like a press release or a transcript summary.'],
     },
     proof: {
-      title: 'Proof pass',
-      steps: ['Move the visitor from claim to receipt quickly: work history, talks, writing, press.', 'Name the outcome, then link the source.', 'Do not let design flourishes hide the actual evidence.'],
+      title: 'Public-link pass',
+      steps: ['Move the visitor from claim to source quickly: work history, talks, writing, press.', 'Name the outcome, then link the source.', 'Do not let design flourishes hide the actual evidence.'],
     },
   };
 
   const proofPackets = {
     operator: [
       ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and routing the right issue to the right person.'],
-      ['Signal map', '#signal-map', 'Then show how raw resident messages become an operating decision.'],
-      ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the external receipt on resident feedback and retention.'],
+      ['Resident messages', '#signal-map', 'Then show how raw resident messages become work someone owns.'],
+      ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the external link on resident feedback and retention.'],
     ],
     founder: [
-      ['Operating map', '#operating-system', 'Use the six principles as the company-building spine.'],
+      ['How I build', '#operating-system', 'Use the six principles as the company-building spine.'],
       ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it real.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
     ],
@@ -155,7 +155,7 @@
     ],
     investor: [
       ['Now', '#now', 'Start with the current ResiDesk focus.'],
-      ['Prior outcomes', '#work', 'Use BlackRock and Climb as proof that the pattern is not housing-only.'],
+      ['Prior outcomes', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
   };
@@ -163,8 +163,8 @@
   const compassItems = [
     ['Now', '#now', 'what I am building'],
     ['Map', '#signal-map', 'how resident messages turn into decisions'],
-    ['Work', '#work', 'the operating arc'],
-    ['Proof', '#recent', 'external receipts'],
+    ['Work', '#work', 'the work arc'],
+    ['Public', '#recent', 'outside links'],
     ['Talks', '#conversations', 'direct voice'],
     ['Writing', '#writing', 'AI point of view'],
   ];
@@ -325,7 +325,7 @@
           <strong>${score}/5 useful-work checks</strong>
           <span class="ai-score-bar" aria-hidden="true"><span style="--score-width:${percent}%"></span></span>
           <ul>${hits.map(([label, hit]) => `<li>${hit ? 'Pass' : 'Missing'}: ${label}</li>`).join('')}</ul>
-          <p>${score >= 4 ? 'This has the shape of useful AI. The next question is whether a real team would trust it on a busy day.' : 'This still sounds more like a demo than an operating system. Add context, ownership, and a concrete next step.'}</p>
+          <p>${score >= 4 ? 'This has the shape of useful AI. The next question is whether a real team would trust it on a busy day.' : 'This still sounds more like a demo than real work. Add context, ownership, and a concrete next step.'}</p>
         </div>
       `;
     });
@@ -389,7 +389,7 @@
     button?.addEventListener('click', () => {
       active = !active;
       button.setAttribute('aria-pressed', String(active));
-      button.textContent = active ? 'Remove highlights' : 'Highlight throughline';
+      button.textContent = active ? 'Remove highlights' : 'Highlight pattern';
       if (active) apply();
       else clear();
     });
@@ -431,7 +431,7 @@
             </div>
           `).join('')}
         </div>
-        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful artifact. Keep pushing toward fewer decorations, more judgment, and clearer proof.</p>
+        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful object. Keep pushing toward fewer decorations, more judgment, and clearer sources.</p>
       `;
     };
     button.addEventListener('click', render);
