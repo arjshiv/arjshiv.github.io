@@ -291,7 +291,7 @@
     const output = document.querySelector('#guide-output');
     if (!select || !button || !output) return;
     button.addEventListener('click', () => {
-      output.innerHTML = guides[select.value].map(([href, copy]) => `<li><a href="${href}">${href.replace('#', '')}</a> ${copy}</li>`).join('');
+      output.innerHTML = (guides[select.value] || guides.operator).map(([href, copy]) => `<li><a href="${href}">${href.replace('#', '')}</a> ${copy}</li>`).join('');
     });
     button.click();
   };
