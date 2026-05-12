@@ -9992,3 +9992,6 @@ mark.signal-highlight {
     transform: none;
   }
 }
+
+/* Next polish 086 */
+.command-help{margin:0;color:var(--contrast-soft);font-size:.92rem;line-height:1.4}
