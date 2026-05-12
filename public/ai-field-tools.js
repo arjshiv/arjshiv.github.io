@@ -410,7 +410,11 @@
     const clear = document.querySelector('#clear-notes');
     const output = document.querySelector('#notes-output');
     if (!input || !summarize || !clear || !output) return;
-    input.value = localStorage.getItem('arjun-site-notes') || '';
+    try {
+      input.value = localStorage.getItem('arjun-site-notes') || '';
+    } catch {
+      input.value = '';
+    }
     input.addEventListener('input', () => localStorage.setItem('arjun-site-notes', input.value));
     summarize.addEventListener('click', () => {
       const sentences = input.value.split(/[.!?]\s+/).map((item) => item.trim()).filter(Boolean);
