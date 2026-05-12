@@ -91,6 +91,10 @@ Reference: Jakub Krehel's "Details That Make Interfaces Feel Better".
 - Prefer "read every text by hand" over "at scale" when explaining the practical problem.
 - Keep the anti-demo point, but do not overuse it.
 
+## Current Polish Pass
+
+The May 2026 polish pass keeps the site light, fast, keyboard-friendly, and grounded in first-person copy. New UI should improve orientation, not add decoration.
+
 ## Known Quality Bar
 
 Flagship personal site. It should be visually distinctive, highly readable, responsive, fast, and clean enough that future edits can follow the documented system instead of adding another override pile.
