@@ -1392,6 +1392,14 @@
             button.addEventListener('click', () => {
                 setSignalStep(Number(button.dataset.signalStep));
             });
+            button.addEventListener('keydown', (event) => {
+                if (!event.key.startsWith('Arrow')) return;
+                event.preventDefault();
+                const direction = event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 1;
+                const next = (Number(button.dataset.signalStep) + direction + signalButtons.length) % signalButtons.length;
+                signalButtons[next]?.focus();
+                setSignalStep(next);
+            });
         });
 
         document.querySelectorAll('.video-poster').forEach((poster) => {
