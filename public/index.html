@@ -1409,7 +1409,8 @@
                 iframe.className = 'video-frame';
                 iframe.src = `https://www.youtube-nocookie.com/embed/${poster.dataset.youtubeId}?autoplay=1&rel=0`;
                 iframe.title = poster.dataset.videoTitle;
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.loading = 'eager';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
                 iframe.referrerPolicy = 'strict-origin-when-cross-origin';
                 iframe.allowFullscreen = true;
                 poster.replaceWith(iframe);
