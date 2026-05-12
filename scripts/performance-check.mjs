@@ -50,7 +50,7 @@ for (const result of results) {
   if (result.domNodes > maxDomNodes) failures.push(`${result.viewport}: DOM nodes ${result.domNodes} > ${maxDomNodes}`);
 }
 
-console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially }) => ({
+console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially, domNodes }) => ({
   viewport,
   initialBytes,
   cssBytes,
