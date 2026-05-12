@@ -10004,3 +10004,6 @@ mark.signal-highlight {
 
 /* Next polish 089 */
 .command-results{max-height:min(52vh,28rem);overflow:auto;overscroll-behavior:contain}
+
+/* Next polish 090 */
+.ai-answer[aria-busy="true"]{outline:2px dashed var(--contrast-blue);outline-offset:3px}
