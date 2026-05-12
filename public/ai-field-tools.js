@@ -246,6 +246,7 @@
     }
     if (hasWebGpu) {
       status.textContent = 'WebGPU available';
+      status.title = 'This browser can run local model features when available.';
       status.classList.add('is-local');
       return;
     }
