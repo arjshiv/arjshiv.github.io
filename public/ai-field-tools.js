@@ -363,7 +363,7 @@
 
   const initHighlights = () => {
     const button = document.querySelector('#toggle-highlights');
-    const terms = ['customer', 'context', 'measurement', 'follow-through', 'trust', 'demo', 'resident', 'operator', 'judgment', 'next step'];
+    const terms = ['customer', 'context', 'measurement', 'follow-through', 'trust', 'demo', 'resident', 'operator', 'judgment', 'next step', 'building'];
     let active = false;
     const apply = () => {
       if (document.querySelector('mark.signal-highlight')) return;
