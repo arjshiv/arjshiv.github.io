@@ -64,6 +64,7 @@ const result = await page.evaluate(() => ({
   critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
   tweak: document.querySelector('#tweak-output')?.textContent || '',
   proofCount: document.querySelectorAll('#proof-packet-output li').length,
+  askBusy: document.querySelector('#ai-answer')?.getAttribute('aria-busy'),
   memo: document.querySelector('#operator-memo-output')?.textContent || '',
   compassCount: document.querySelectorAll('#site-compass-output a').length,
   notes: document.querySelector('#notes-output')?.textContent || '',
