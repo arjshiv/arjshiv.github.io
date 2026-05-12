@@ -10016,3 +10016,6 @@ mark.signal-highlight {
 
 /* Next polish 093 */
 .section-anchor:focus-visible{outline:2px solid var(--contrast-blue);outline-offset:2px}
+
+/* Next polish 094 */
+.signal-stage:focus-visible{outline:3px solid var(--contrast-mint);outline-offset:3px}
