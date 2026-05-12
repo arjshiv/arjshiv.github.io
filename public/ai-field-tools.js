@@ -423,7 +423,7 @@
     summarize.addEventListener('click', () => {
       const sentences = input.value.split(/[.!?]\s+/).map((item) => item.trim()).filter(Boolean);
       output.innerHTML = sentences.length
-        ? `<ul>${sentences.slice(0, 4).map((sentence) => `<li>${escapeHtml(sentence)}</li>`).join('')}</ul>`
+        ? `<ul>${sentences.slice(0, 4).map((sentence) => `<li>${escapeHtml(sentence.slice(0, 280))}</li>`).join('')}</ul>`
         : '<p class="article-meta">No notes yet.</p>';
     });
     clear.addEventListener('click', () => {
