@@ -88,6 +88,7 @@ if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result
 if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
 if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
 if (result.proofCount !== 3) failures.push(`Link packet rendered ${result.proofCount} items, expected 3.`);
+if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
 if (result.compassCount !== 6) failures.push(`Site compass rendered ${result.compassCount} links, expected 6.`);
 if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
