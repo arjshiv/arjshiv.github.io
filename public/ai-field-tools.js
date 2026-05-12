@@ -194,7 +194,7 @@
     const text = `${doc.title} ${doc.text} ${tags}`.toLowerCase();
     return queryTokens.reduce((score, token) => score + (title.includes(token) ? 2 : 0) + (tags.includes(token) ? 1.5 : 0) + (text.includes(token) ? 1 : 0), 0);
   };
-  const topDocs = (query, count = 3) => corpus.map((doc) => ({ ...doc, score: scoreDoc(query, doc) })).sort((a, b) => b.score - a.score).slice(0, count);
+  const topDocs = (query, count = 3) => corpus.map((doc) => ({ ...doc, score: scoreDoc(query, doc) })).sort((a, b) => b.score - a.score || a.title.localeCompare(b.title)).slice(0, count);
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 
   const answerFromCorpus = (question) => {
