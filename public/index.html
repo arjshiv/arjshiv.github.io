@@ -1146,6 +1146,7 @@
             }
             commandPalette.hidden = !isOpen;
             commandLauncher.setAttribute('aria-expanded', String(isOpen));
+            if (isOpen) lastCommandFocus = document.activeElement || commandLauncher;
             document.body.dataset.commandOpen = String(isOpen);
             if (isOpen) {
                 renderCommands(commandSearch?.value || '');
