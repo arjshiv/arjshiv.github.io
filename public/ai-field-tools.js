@@ -267,8 +267,10 @@
         output.innerHTML = '<p class="article-meta">Ask a real question first.</p>';
         return;
       }
+      output.setAttribute('aria-busy', 'true');
       output.innerHTML = '<p class="article-meta">Checking the site notes...</p>';
       output.innerHTML = (await answerWithBrowserModel(question)) || answerFromCorpus(question);
+      output.setAttribute('aria-busy', 'false');
     });
     window.addEventListener('site-command-ask', (event) => {
       input.value = String(event.detail || '').trim();
