@@ -1131,8 +1131,8 @@
                 const haystack = `${title} ${href} ${description} ${label}`.toLowerCase();
                 return !normalized || haystack.includes(normalized);
             });
-            commandResults.innerHTML = filteredItems.map(([title, href, description, label]) => `
-                <button class="command-result" type="button" data-command-target="${href}">
+            commandResults.innerHTML = filteredItems.length ? filteredItems.map(([title, href, description, label], index) => `
+                <button class="command-result" type="button" role="option" id="command-result-${index}" aria-selected="false" data-command-index="${index}" data-command-target="${href}">
                     <span><strong>${title}</strong><span>${description}</span></span>
                     <em>${label}</em>
                 </button>
