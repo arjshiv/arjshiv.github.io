@@ -1212,6 +1212,7 @@
                 const nextState = document.body.dataset.readerMode !== 'true';
                 document.body.dataset.readerMode = String(nextState);
                 localStorage.setItem('arjun-reader-mode', String(nextState));
+                commandLauncher.title = nextState ? 'Reader mode on' : 'Open site command palette';
             } else if (target?.startsWith('ask:')) {
                 document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
                 dispatchAiToolCommand('site-command-ask', target.slice(4));
