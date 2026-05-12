@@ -1136,7 +1136,8 @@
                     <span><strong>${title}</strong><span>${description}</span></span>
                     <em>${label}</em>
                 </button>
-            `).join('');
+            `).join('') : '<p class="command-empty" role="status">No matching command yet.</p>';
+            setCommandActive(0);
         };
 
         const setCommandPalette = (isOpen) => {
