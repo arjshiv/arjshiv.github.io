@@ -10010,3 +10010,6 @@ mark.signal-highlight {
 
 /* Next polish 091 */
 .ai-tool ::placeholder,.command-palette ::placeholder{color:color-mix(in oklch,var(--contrast-ink) 62%,var(--contrast-paper) 38%);opacity:1}
+
+/* Next polish 092 */
+.scroll-cue:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:4px}
