@@ -47,6 +47,7 @@ for (const result of results) {
   if (result.cssBytes > maxCssBytes) failures.push(`${result.viewport}: CSS bytes ${result.cssBytes} > ${maxCssBytes}`);
   if (result.initialJsBytes > maxInitialJsBytes) failures.push(`${result.viewport}: initial JS bytes ${result.initialJsBytes} > ${maxInitialJsBytes}`);
   if (result.aiLoadedInitially) failures.push(`${result.viewport}: AI tools script loaded before the AI section was near the viewport`);
+  if (result.domNodes > maxDomNodes) failures.push(`${result.viewport}: DOM nodes ${result.domNodes} > ${maxDomNodes}`);
 }
 
 console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially }) => ({
