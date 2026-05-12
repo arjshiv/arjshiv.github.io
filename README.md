@@ -10,7 +10,7 @@ bun install
 
 ## Quality Checks
 
-Run `bun run check:copy`, `bun run check:layout`, `bun run check:contrast`, `bun run check:performance`, and `bun run check:ai-tools` before shipping visual or copy changes.
+Run `bun run check:all` before shipping visual or copy changes. For a narrower pass, run `bun run check:copy`, `bun run check:layout`, `bun run check:contrast`, `bun run check:performance`, or `bun run check:ai-tools` directly.
 
 ## Build CSS
 
