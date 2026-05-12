@@ -1255,10 +1255,7 @@
             navToggle.setAttribute('aria-expanded', String(nextState));
         });
 
-        navScrim.addEventListener('click', () => {
-            document.body.dataset.navOpen = 'false';
-            navToggle.setAttribute('aria-expanded', 'false');
-        });
+        navScrim.addEventListener('click', closeNav);
 
         navLinks.forEach((link) => {
             link.addEventListener('click', () => {
