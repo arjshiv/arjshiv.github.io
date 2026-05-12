@@ -10031,3 +10031,6 @@ mark.signal-highlight {
 
 /* Next polish 098 */
 .proof-packet-list li+li{margin-top:.75rem}
+
+/* Next polish 099 */
+.operator-memo li{display:grid;grid-template-columns:minmax(6rem,.45fr) 1fr;gap:.55rem}
