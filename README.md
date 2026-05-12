@@ -8,6 +8,10 @@ Arjun Kannan's personal website. The site is a static page served from `public/`
 bun install
 ```
 
+## Quality Checks
+
+Run `bun run check:copy`, `bun run check:layout`, `bun run check:contrast`, `bun run check:performance`, and `bun run check:ai-tools` before shipping visual or copy changes.
+
 ## Build CSS
 
 The site now uses a local Tailwind build instead of the CDN runtime.
