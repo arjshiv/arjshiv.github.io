@@ -317,7 +317,7 @@
       ['Owner', ['owner', 'team', 'person', 'human', 'operator', 'handoff']],
       ['Next step', ['route', 'task', 'follow', 'fix', 'resolve', 'escalate']],
       ['Measurement', ['measure', 'score', 'renewal', 'retention', 'noi', 'outcome']],
-      ['Trust', ['trust', 'review', 'approve', 'judgment', 'risk', 'flag']],
+      ['Trust', ['trust', 'review', 'approve', 'judgment', 'risk', 'flag', 'tone']],
     ];
     button.addEventListener('click', () => {
       const text = input.value.trim().toLowerCase();
