@@ -10001,3 +10001,6 @@ mark.signal-highlight {
 
 /* Next polish 088 */
 .command-result[data-active="true"]{border-color:var(--contrast-blue);background:var(--contrast-mint);box-shadow:.12rem .12rem 0 var(--contrast-line)}
+
+/* Next polish 089 */
+.command-results{max-height:min(52vh,28rem);overflow:auto;overscroll-behavior:contain}
