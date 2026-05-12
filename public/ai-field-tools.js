@@ -189,8 +189,10 @@
   };
   const scoreDoc = (query, doc) => {
     const queryTokens = tokenize(query);
-    const text = `${doc.title} ${doc.text} ${doc.tags.join(' ')}`.toLowerCase();
-    return queryTokens.reduce((score, token) => score + (text.includes(token) ? 1 : 0), 0);
+    const title = doc.title.toLowerCase();
+    const tags = doc.tags.join(' ').toLowerCase();
+    const text = `${doc.title} ${doc.text} ${tags}`.toLowerCase();
+    return queryTokens.reduce((score, token) => score + (title.includes(token) ? 2 : 0) + (tags.includes(token) ? 1.5 : 0) + (text.includes(token) ? 1 : 0), 0);
   };
   const topDocs = (query, count = 3) => corpus.map((doc) => ({ ...doc, score: scoreDoc(query, doc) })).sort((a, b) => b.score - a.score).slice(0, count);
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
