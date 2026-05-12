@@ -78,7 +78,7 @@ async function auditText(root, minRatio) {
     const textElements = candidates.filter((element) => {
       const style = getComputedStyle(element);
       const rect = element.getBoundingClientRect();
-      if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0) return false;
+      if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0 || element.closest('[aria-hidden="true"]')) return false;
       if (rect.width < 1 || rect.height < 1) return false;
       return Array.from(element.childNodes).some((node) => node.nodeType === Node.TEXT_NODE && node.textContent.trim());
     });
