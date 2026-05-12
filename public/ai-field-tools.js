@@ -348,7 +348,7 @@
       const messages = signalFixtures[select.value] || signalFixtures.garden;
       const label = select.selectedOptions[0]?.textContent || 'building';
       output.innerHTML = `
-        <strong>Incoming resident messages</strong>
+        <strong>Incoming resident messages for ${escapeHtml(label)}</strong>
         <ul>${messages.map((message) => `<li>${escapeHtml(message)}</li>`).join('')}</ul>
         <strong>Operator view</strong>
         <ul>
