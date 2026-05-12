@@ -24,6 +24,7 @@
     "check:ai-tools": "node scripts/ai-field-tools-check.mjs",
     "check:contrast": "node scripts/contrast-check.mjs",
     "check:performance": "node scripts/performance-check.mjs",
+    "check:copy": "node scripts/copy-tone-check.mjs",
     "firebase:login": "firebase login",
     "firebase:init": "firebase init",
     "firebase:deploy": "firebase deploy"
