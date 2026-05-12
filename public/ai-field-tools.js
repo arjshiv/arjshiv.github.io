@@ -203,6 +203,7 @@
     const lead = usableDocs[0];
     return `
       <p><strong>Short answer:</strong> ${escapeHtml(lead.text)}</p>
+      <p class="article-meta">Grounded in ${usableDocs.length} page notes.</p>
       <ul>
         ${usableDocs.map((doc) => `<li><a href="${doc.href}">${escapeHtml(doc.title)}</a>: ${escapeHtml(doc.text)}</li>`).join('')}
       </ul>
