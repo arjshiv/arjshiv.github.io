@@ -10028,3 +10028,6 @@ mark.signal-highlight {
 
 /* Next polish 097 */
 #notes-output{max-height:18rem;overflow:auto}
+
+/* Next polish 098 */
+.proof-packet-list li+li{margin-top:.75rem}
