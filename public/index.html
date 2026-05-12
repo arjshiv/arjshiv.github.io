@@ -1267,8 +1267,7 @@
                     setCommandPalette(false);
                     return;
                 }
-                document.body.dataset.navOpen = 'false';
-                navToggle.setAttribute('aria-expanded', 'false');
+                closeNav();
             }
             if (event.key === '/' && !event.metaKey && !event.ctrlKey && !event.altKey && !event.target.matches('input, textarea, select')) {
                 event.preventDefault();
