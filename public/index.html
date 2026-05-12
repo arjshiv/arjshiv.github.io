@@ -1293,7 +1293,9 @@
             heading.append(anchor);
         });
 
-        const navObserver = new IntersectionObserver((entries) => {
+        const observeNavSections = () => {
+            if (!('IntersectionObserver' in window)) return;
+            const navObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (!entry.isIntersecting) {
                     return;
