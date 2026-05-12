@@ -325,7 +325,7 @@
         output.innerHTML = '<p class="article-meta">Paste the idea first.</p>';
         return;
       }
-      const hits = checks.map(([label, words]) => [label, words.some((word) => text.includes(word))]);
+      const hits = checks.map(([label, words]) => [label, words.some((word) => new RegExp(`\\b${word}\\w*\\b`, 'i').test(text))]);
       const score = hits.filter(([, hit]) => hit).length;
       const percent = Math.round((score / checks.length) * 100);
       output.innerHTML = `
