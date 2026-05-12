@@ -302,7 +302,7 @@
     const output = document.querySelector('#lens-output');
     if (!select || !button || !output) return;
     button.addEventListener('click', () => {
-      output.innerHTML = `<ul>${talkLenses[select.value].map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+      output.innerHTML = `<ul>${(talkLenses[select.value] || talkLenses.harnoor).map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
     });
     button.click();
   };
