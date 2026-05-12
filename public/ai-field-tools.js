@@ -415,7 +415,11 @@
     } catch {
       input.value = '';
     }
-    input.addEventListener('input', () => localStorage.setItem('arjun-site-notes', input.value));
+    input.addEventListener('input', () => {
+      try {
+        localStorage.setItem('arjun-site-notes', input.value);
+      } catch {}
+    });
     summarize.addEventListener('click', () => {
       const sentences = input.value.split(/[.!?]\s+/).map((item) => item.trim()).filter(Boolean);
       output.innerHTML = sentences.length
