@@ -9995,3 +9995,6 @@ mark.signal-highlight {
 
 /* Next polish 086 */
 .command-help{margin:0;color:var(--contrast-soft);font-size:.92rem;line-height:1.4}
+
+/* Next polish 087 */
+.command-empty{margin:.4rem 0 0;padding:.85rem;border:2px dashed var(--contrast-line);background:var(--contrast-paper);color:var(--contrast-soft)}
