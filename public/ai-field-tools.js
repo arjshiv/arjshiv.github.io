@@ -251,6 +251,7 @@
       return;
     }
     status.textContent = 'Local fallback active';
+    status.title = 'This uses the built-in page retrieval fallback.';
     status.classList.add('is-local');
   };
 
