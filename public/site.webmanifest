@@ -1,0 +1,18 @@
+{
+  "name": "Arjun Kannan",
+  "short_name": "Arjun",
+  "description": "A personal site about ResiDesk, housing, AI, and useful work.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#d7f7f2",
+  "theme_color": "#075884",
+  "icons": [
+    {
+      "src": "/assets/landscape-1.webp",
+      "sizes": "512x288",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
