@@ -1258,10 +1258,7 @@
         navScrim.addEventListener('click', closeNav);
 
         navLinks.forEach((link) => {
-            link.addEventListener('click', () => {
-                document.body.dataset.navOpen = 'false';
-                navToggle.setAttribute('aria-expanded', 'false');
-            });
+            link.addEventListener('click', closeNav);
         });
 
         window.addEventListener('keydown', (event) => {
