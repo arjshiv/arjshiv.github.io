@@ -1108,6 +1108,20 @@
             element.dataset.textWrapped = 'true';
         };
 
+        const setCommandActive = (nextIndex = 0) => {
+            const buttons = commandButtons();
+            if (!buttons.length) {
+                commandActiveIndex = 0;
+                return;
+            }
+            commandActiveIndex = Math.min(Math.max(nextIndex, 0), buttons.length - 1);
+            buttons.forEach((button, index) => {
+                const active = index === commandActiveIndex;
+                button.dataset.active = String(active);
+                button.setAttribute('aria-selected', String(active));
+            });
+        };
+
         const renderCommands = (query = '') => {
             if (!commandResults) {
                 return;
