@@ -19,6 +19,10 @@ Derived from the linked talks and interviews.
 - "If nobody owns what happens next, it is probably theater."
 - "I care about whether someone still uses it when nobody is watching."
 
+## Current Copy Test
+
+Any new section should pass this plain question: would I say this to an owner, operator, founder, or candidate without sounding like I am recapping myself?
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
