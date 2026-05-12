@@ -1065,6 +1065,7 @@
         const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         let lastCommandFocus = commandLauncher;
         let commandActiveIndex = 0;
+        const commandButtons = () => [...commandResults?.querySelectorAll('.command-result') || []];
         const dispatchAiToolCommand = (eventName, detail) => {
             const ready = window.loadSiteAiFieldTools?.() || Promise.resolve();
             ready.then(() => window.dispatchEvent(new CustomEvent(eventName, { detail })));
