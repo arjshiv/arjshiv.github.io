@@ -31,6 +31,7 @@ for (const viewport of [
       initialJsBytes: initialJs.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
       initialBytes: resources.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
       aiLoadedInitially: resources.some((resource) => resource.name.endsWith('/ai-field-tools.js')),
+      domNodes: document.querySelectorAll('*').length,
     };
   });
   results.push({ viewport: viewport.name, ...result });
