@@ -193,7 +193,7 @@
     return queryTokens.reduce((score, token) => score + (text.includes(token) ? 1 : 0), 0);
   };
   const topDocs = (query, count = 3) => corpus.map((doc) => ({ ...doc, score: scoreDoc(query, doc) })).sort((a, b) => b.score - a.score).slice(0, count);
-  const escapeHtml = (value) => value.replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
+  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 
   const answerFromCorpus = (question) => {
     const docs = topDocs(question).filter((doc) => doc.score > 0);
