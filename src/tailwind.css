@@ -10037,3 +10037,6 @@ mark.signal-highlight {
 
 /* Next polish 100 */
 @media (prefers-contrast:more){.primary-link,.secondary-link,.tag-link,.route-ticket,.command-result{border-width:3px}.hero-title,.section-heading h2{text-shadow:none}}
+
+/* Next polish 101 */
+@media (hover:none){.route-ticket:hover,.feature-card:hover,.link-preview-card:hover,.article-card:hover,.story-card:hover,.role-card:hover,.principle-card:hover,.now-card:hover,.stat-card:hover{transform:none}}
