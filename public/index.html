@@ -1171,6 +1171,32 @@
             renderCommands(commandSearch.value);
             setCommandActive(0);
         });
+        commandResults?.addEventListener('mousemove', (event) => {
+            const command = event.target.closest('.command-result');
+            if (command?.dataset.commandIndex) setCommandActive(Number(command.dataset.commandIndex));
+        });
+
+        commandSearch?.addEventListener('keydown', (event) => {
+            const buttons = commandButtons();
+            if (!buttons.length) return;
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                setCommandActive(commandActiveIndex + 1);
+            } else if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                setCommandActive(commandActiveIndex - 1);
+            } else if (event.key === 'Home') {
+                event.preventDefault();
+                setCommandActive(0);
+            } else if (event.key === 'End') {
+                event.preventDefault();
+                setCommandActive(buttons.length - 1);
+            } else if (event.key === 'Enter') {
+                event.preventDefault();
+                buttons[commandActiveIndex]?.click();
+            }
+        });
+
         commandPalette?.addEventListener('click', (event) => {
             if (event.target === commandPalette) {
                 setCommandPalette(false);
