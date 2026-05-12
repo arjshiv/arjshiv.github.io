@@ -262,7 +262,7 @@
     if (!form || !input || !output) return;
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const question = input.value.trim();
+      const question = input.value.trim().slice(0, 180);
       if (!question) {
         output.innerHTML = '<p class="article-meta">Ask a real question first.</p>';
         return;
