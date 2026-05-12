@@ -1167,7 +1167,10 @@
 
         commandLauncher?.addEventListener('click', () => setCommandPalette(true));
         commandClose?.addEventListener('click', () => setCommandPalette(false));
-        commandSearch?.addEventListener('input', () => renderCommands(commandSearch.value));
+        commandSearch?.addEventListener('input', () => {
+            renderCommands(commandSearch.value);
+            setCommandActive(0);
+        });
         commandPalette?.addEventListener('click', (event) => {
             if (event.target === commandPalette) {
                 setCommandPalette(false);
