@@ -1290,6 +1290,7 @@
             anchor.href = `#${section.id}`;
             anchor.setAttribute('aria-label', `Link to ${heading.textContent}`);
             anchor.textContent = '#';
+            anchor.title = `Copy link to ${heading.textContent}`;
             heading.append(anchor);
         });
 
