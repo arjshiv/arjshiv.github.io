@@ -428,7 +428,9 @@
     });
     clear.addEventListener('click', () => {
       input.value = '';
-      localStorage.removeItem('arjun-site-notes');
+      try {
+        localStorage.removeItem('arjun-site-notes');
+      } catch {}
       output.innerHTML = '<p class="article-meta">Cleared in this browser.</p>';
     });
   };
