@@ -1373,6 +1373,7 @@
                 signalCopy.textContent = step.copy;
                 signalMetricA.textContent = step.metrics[0];
                 signalMetricB.textContent = step.metrics[1];
+                signalReadout?.setAttribute('data-current-step', String(stepIndex + 1));
             };
 
             if (!motionAllowed || !signalReadout) {
