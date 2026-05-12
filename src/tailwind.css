@@ -10022,3 +10022,6 @@ mark.signal-highlight {
 
 /* Next polish 095 */
 .route-ticket:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:3px}
+
+/* Next polish 096 */
+.video-frame{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--contrast-ink)}
