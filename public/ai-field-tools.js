@@ -274,7 +274,7 @@
     });
     window.addEventListener('site-command-ask', (event) => {
       input.value = String(event.detail || '').trim();
-      if (input.value) form.requestSubmit();
+      if (input.value) (form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true })));
     });
     document.querySelectorAll('#conversation-map button').forEach((button) => {
       button.addEventListener('click', () => {
