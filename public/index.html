@@ -1152,7 +1152,7 @@
                 renderCommands(commandSearch?.value || '');
                 window.setTimeout(() => commandSearch?.focus(), 0);
             } else {
-                commandLauncher.focus();
+                (lastCommandFocus || commandLauncher).focus();
             }
         };
 
