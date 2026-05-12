@@ -10025,3 +10025,6 @@ mark.signal-highlight {
 
 /* Next polish 096 */
 .video-frame{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--contrast-ink)}
+
+/* Next polish 097 */
+#notes-output{max-height:18rem;overflow:auto}
