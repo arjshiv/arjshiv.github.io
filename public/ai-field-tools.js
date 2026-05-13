@@ -451,6 +451,20 @@
       ],
       notes: ['Source the claim.', 'Use the date.', 'Keep the reader oriented.'],
     },
+    {
+      id: 'personal-arc',
+      label: 'Personal arc',
+      title: 'The path makes more sense when it stays tied to measurement.',
+      deck: 'Physics, finance, education finance, housing: different rooms, same bias toward useful measurement.',
+      kind: 'route',
+      values: [
+        ['Physics', 70],
+        ['BlackRock', 76],
+        ['Climb', 85],
+        ['ResiDesk', 94],
+      ],
+      notes: ['Do not make it a bio list.', 'Name the lesson.', 'Connect the work.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
