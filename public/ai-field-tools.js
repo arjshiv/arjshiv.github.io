@@ -569,6 +569,21 @@
       ],
       notes: ['Respect skim readers.', 'Keep sources close.', 'Make the next click obvious.'],
     },
+    {
+      id: 'follow-through-queue',
+      label: 'Action queue',
+      title: 'If nobody owns the queue, the answer did not help.',
+      deck: 'The stack shows how local AI can sort work while leaving judgment with a person.',
+      kind: 'stack',
+      values: [
+        ['Urgent', 90],
+        ['Owner', 82],
+        ['Due next', 71],
+        ['Blocked', 59],
+        ['Review', 65],
+      ],
+      notes: ['Prioritize visibly.', 'Keep blockers honest.', 'Review before sending.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
