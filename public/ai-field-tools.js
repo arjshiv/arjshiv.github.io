@@ -406,6 +406,22 @@
       ],
       notes: ['Show the real job.', 'Reward context carriers.', 'Skip vague culture copy.'],
     },
+    {
+      id: 'founder-diligence',
+      label: 'Founder diligence',
+      title: 'A good founder answer starts close to the customer.',
+      deck: 'This heatmap gives investors and founders a fast way to check where the story is strongest.',
+      kind: 'matrix',
+      values: [
+        ['Customer', 91],
+        ['Pain', 84],
+        ['Market', 67],
+        ['Proof', 76],
+        ['Team', 73],
+        ['Learning', 82],
+      ],
+      notes: ['Close to pain beats polish.', 'Proof should travel.', 'Learning speed matters.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
