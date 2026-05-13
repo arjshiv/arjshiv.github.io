@@ -377,6 +377,21 @@
       ],
       notes: ['A demo can lie by omission.', 'Busy work is the test.', 'Repeat use is the signal.'],
     },
+    {
+      id: 'owner-briefing',
+      label: 'Owner briefing',
+      title: 'An owner needs the pattern, not the inbox.',
+      deck: 'This stack turns resident noise into a brief a decision-maker can use.',
+      kind: 'stack',
+      values: [
+        ['Raw text', 90],
+        ['Theme', 78],
+        ['Cost', 61],
+        ['Action', 74],
+        ['Owner brief', 84],
+      ],
+      notes: ['Do not forward the mess.', 'Compress without hiding.', 'Tie it to action.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
