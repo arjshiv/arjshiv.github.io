@@ -422,6 +422,20 @@
       ],
       notes: ['Close to pain beats polish.', 'Proof should travel.', 'Learning speed matters.'],
     },
+    {
+      id: 'transcript-terrain',
+      label: 'Transcript terrain',
+      title: 'Talks are useful when they expose the repeated terrain.',
+      deck: 'The chart shows the topics that keep coming back across the public conversations.',
+      kind: 'bars',
+      values: [
+        ['Physics', 54],
+        ['AI', 82],
+        ['Housing', 87],
+        ['Teams', 66],
+      ],
+      notes: ['Use talks for voice.', 'Watch repeated themes.', 'Do not over-polish the source.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
