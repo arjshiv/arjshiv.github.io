@@ -184,6 +184,20 @@
       ],
       notes: ['Start concrete.', 'Keep the owner visible.', 'End with the next step.'],
     },
+    {
+      id: 'signal-flow',
+      label: 'Signal flow',
+      title: 'A resident message should not stay a message.',
+      deck: 'The useful picture is the handoff from text to owner-visible work.',
+      kind: 'bars',
+      values: [
+        ['Text', 96],
+        ['Theme', 72],
+        ['Owner', 64],
+        ['Fix', 58],
+      ],
+      notes: ['Capture the raw words.', 'Name the pattern.', 'Move the work.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
@@ -606,6 +620,26 @@
               <text x="${x.toFixed(1)}" y="228">${escapeHtml(String(index + 1).padStart(2, '0'))}</text>
             </g>
           `).join('')}
+        </svg>
+      `;
+    }
+    if (mode.kind === 'bars') {
+      const barWidth = 82;
+      const gap = 36;
+      return `
+        <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
+          <path class="visual-grid-line" d="M34 198H526M34 136H526M34 74H526" />
+          ${mode.values.map(([label, value], index) => {
+            const x = 58 + index * (barWidth + gap);
+            const h = Math.max(18, (value / max) * 136);
+            const y = 198 - h;
+            return `
+              <g class="visual-bar">
+                <rect x="${x}" y="${y.toFixed(1)}" width="${barWidth}" height="${h.toFixed(1)}" rx="10" />
+                <text x="${x + barWidth / 2}" y="226">${escapeHtml(label)}</text>
+              </g>
+            `;
+          }).join('')}
         </svg>
       `;
     }

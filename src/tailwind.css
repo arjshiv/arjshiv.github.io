@@ -9203,6 +9203,26 @@ body::before {
   text-anchor: middle;
 }
 
+.visual-bar rect {
+  fill: var(--contrast-mint);
+  stroke: var(--contrast-line);
+  stroke-width: 3;
+}
+
+.visual-bar:nth-of-type(2n) rect {
+  fill: color-mix(in oklch, var(--contrast-cyan) 52%, var(--contrast-paper) 48%);
+}
+
+.visual-bar text {
+  fill: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-anchor: middle;
+  text-transform: uppercase;
+}
+
 .visual-stat-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
