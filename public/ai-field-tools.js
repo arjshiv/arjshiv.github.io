@@ -363,6 +363,20 @@
       ],
       notes: ['Listen before renewal season.', 'Show cause, not just churn.', 'Give the owner time.'],
     },
+    {
+      id: 'demo-gap',
+      label: 'Demo gap',
+      title: 'Some demos look better than the work they replace.',
+      deck: 'The bars show the dangerous gap between a polished room and a busy team.',
+      kind: 'bars',
+      values: [
+        ['Room', 94],
+        ['Setup', 64],
+        ['Mess', 48],
+        ['Repeat', 57],
+      ],
+      notes: ['A demo can lie by omission.', 'Busy work is the test.', 'Repeat use is the signal.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
