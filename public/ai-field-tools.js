@@ -287,6 +287,22 @@
       ],
       notes: ['Show inputs.', 'Expose missing context.', 'Let the person judge.'],
     },
+    {
+      id: 'voice-fingerprint',
+      label: 'Voice fingerprint',
+      title: 'The copy should sound like a person, not a summary of one.',
+      deck: 'This view checks whether the language stays concrete, first-person, and close to the job.',
+      kind: 'matrix',
+      values: [
+        ['Concrete', 86],
+        ['First person', 68],
+        ['Short', 74],
+        ['Skeptical', 79],
+        ['Specific', 88],
+        ['Plain', 82],
+      ],
+      notes: ['Cut recap voice.', 'Use real nouns.', 'Keep the claim narrow.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
