@@ -40,6 +40,7 @@ await page.selectOption('#guide-persona', 'journalist');
 await page.click('#build-guide');
 await page.selectOption('#talk-lens', 'greg');
 await page.click('#run-lens');
+await page.click('.visual-mode-button[data-visual-mode="operator-day"]');
 await page.fill('#useful-ai-input', 'AI assistant that checks resident history and lease context, drafts a response, flags risky cases, routes unresolved work to the operator, and measures retention outcomes.');
 await page.click('#score-ai-idea');
 await page.selectOption('#building-type', 'urban');
@@ -58,6 +59,8 @@ const result = await page.evaluate(() => ({
   answer: document.querySelector('#ai-answer')?.textContent || '',
   guideCount: document.querySelectorAll('#guide-output li').length,
   lensCount: document.querySelectorAll('#lens-output li').length,
+  visualModeCount: document.querySelectorAll('#visual-mode-list .visual-mode-button').length,
+  visualStage: document.querySelector('#visual-stage')?.textContent || '',
   score: document.querySelector('#ai-score-output')?.textContent || '',
   simCount: document.querySelectorAll('#signal-sim-output li').length,
   highlights: document.querySelectorAll('mark.signal-highlight').length,
@@ -82,6 +85,8 @@ const failures = [];
 if (!result.answer.includes('ResiDesk')) failures.push('Ask/conversation answer did not render expected grounded content.');
 if (result.guideCount !== 5) failures.push(`Reading guide rendered ${result.guideCount} items, expected 5.`);
 if (result.lensCount !== 3) failures.push(`Transcript lens rendered ${result.lensCount} items, expected 3.`);
+if (result.visualModeCount !== 30) failures.push(`Visual lab rendered ${result.visualModeCount} modes, expected 30.`);
+if (!result.visualStage.toLowerCase().includes('operator')) failures.push('Visual lab did not render the selected operator-day view.');
 if (!result.score.includes('5/5')) failures.push('Useful AI score did not reach expected 5/5 for the complete sample.');
 if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.simCount} list items, expected at least 7.`);
 if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result.highlights} highlights, expected at least 20.`);

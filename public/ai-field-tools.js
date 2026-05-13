@@ -600,6 +600,21 @@
       ],
       notes: ['Prefer narrow jobs.', 'Use model APIs where they fit.', 'Keep routing concrete.'],
     },
+    {
+      id: 'operator-day',
+      label: 'Operator day',
+      title: 'The best AI feature is the one that gives time back during the day.',
+      deck: 'This route keeps the product honest: shorter commute from problem to finished work.',
+      kind: 'route',
+      values: [
+        ['Inbox', 83],
+        ['Triage', 78],
+        ['Reply', 66],
+        ['Escalate', 74],
+        ['Close loop', 87],
+      ],
+      notes: ['Save real time.', 'Keep the human in judgment.', 'Close the loop before celebrating.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
@@ -1006,6 +1021,7 @@
     const width = 560;
     const height = 250;
     const max = Math.max(...mode.values.map(([, value]) => value), 1);
+    const textAttrs = 'fill="var(--contrast-ink)" font-family="var(--font-mono)" font-weight="900" letter-spacing=".07em"';
     if (mode.kind === 'route') {
       const points = mode.values.map(([, value], index) => {
         const x = 52 + index * ((width - 104) / Math.max(mode.values.length - 1, 1));
@@ -1014,12 +1030,12 @@
       });
       return `
         <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
-          <path class="visual-grid-line" d="M34 198H526M34 136H526M34 74H526" />
-          <path class="visual-route-line" d="${points.map(([x, y], index) => `${index ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')}" />
+          <path d="M34 198H526M34 136H526M34 74H526" fill="none" stroke="color-mix(in oklch, var(--contrast-line) 24%, transparent)" stroke-width="2" stroke-dasharray="5 8" />
+          <path d="${points.map(([x, y], index) => `${index ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')}" fill="none" stroke="var(--contrast-blue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
           ${points.map(([x, y], index) => `
-            <g class="visual-node">
-              <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="12" />
-              <text x="${x.toFixed(1)}" y="228">${escapeHtml(String(index + 1).padStart(2, '0'))}</text>
+            <g>
+              <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="12" fill="var(--contrast-mint)" stroke="var(--contrast-line)" stroke-width="3" />
+              <text x="${x.toFixed(1)}" y="228" ${textAttrs} font-size="14" text-anchor="middle">${escapeHtml(String(index + 1).padStart(2, '0'))}</text>
             </g>
           `).join('')}
         </svg>
@@ -1030,15 +1046,16 @@
       const gap = 36;
       return `
         <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
-          <path class="visual-grid-line" d="M34 198H526M34 136H526M34 74H526" />
+          <path d="M34 198H526M34 136H526M34 74H526" fill="none" stroke="color-mix(in oklch, var(--contrast-line) 24%, transparent)" stroke-width="2" stroke-dasharray="5 8" />
           ${mode.values.map(([label, value], index) => {
             const x = 58 + index * (barWidth + gap);
             const h = Math.max(18, (value / max) * 136);
             const y = 198 - h;
+            const fill = index % 2 ? 'color-mix(in oklch, var(--contrast-cyan) 52%, var(--contrast-paper) 48%)' : 'var(--contrast-mint)';
             return `
-              <g class="visual-bar">
-                <rect x="${x}" y="${y.toFixed(1)}" width="${barWidth}" height="${h.toFixed(1)}" rx="10" />
-                <text x="${x + barWidth / 2}" y="226">${escapeHtml(label)}</text>
+              <g>
+                <rect x="${x}" y="${y.toFixed(1)}" width="${barWidth}" height="${h.toFixed(1)}" rx="10" fill="${fill}" stroke="var(--contrast-line)" stroke-width="3" />
+                <text x="${x + barWidth / 2}" y="226" ${textAttrs} font-size="13" text-anchor="middle">${escapeHtml(label)}</text>
               </g>
             `;
           }).join('')}
@@ -1055,10 +1072,10 @@
             const y = 52 + row * 82;
             const opacity = (0.34 + (value / max) * 0.46).toFixed(2);
             return `
-              <g class="visual-cell" style="--cell-opacity:${opacity}">
-                <rect x="${x}" y="${y}" width="132" height="56" rx="8" />
-                <text x="${x + 14}" y="${y + 24}">${escapeHtml(label)}</text>
-                <text class="visual-cell-value" x="${x + 14}" y="${y + 44}">${escapeHtml(String(value))}</text>
+              <g>
+                <rect x="${x}" y="${y}" width="132" height="56" rx="8" fill="var(--contrast-mint)" fill-opacity="${opacity}" stroke="var(--contrast-line)" stroke-width="3" />
+                <text x="${x + 14}" y="${y + 24}" ${textAttrs} font-size="13">${escapeHtml(label)}</text>
+                <text x="${x + 14}" y="${y + 44}" ${textAttrs} font-size="18" font-variant-numeric="tabular-nums">${escapeHtml(String(value))}</text>
               </g>
             `;
           }).join('')}
@@ -1070,19 +1087,19 @@
       const cy = 126;
       return `
         <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
-          <circle class="visual-orbit-ring" cx="${cx}" cy="${cy}" r="84" />
-          <circle class="visual-orbit-core" cx="${cx}" cy="${cy}" r="33" />
-          <text class="visual-orbit-core-text" x="${cx}" y="${cy + 5}">SITE</text>
+          <circle cx="${cx}" cy="${cy}" r="84" fill="none" stroke="color-mix(in oklch, var(--contrast-blue) 36%, transparent)" stroke-width="3" stroke-dasharray="8 10" />
+          <circle cx="${cx}" cy="${cy}" r="33" fill="var(--contrast-blue)" stroke="var(--contrast-line)" stroke-width="3" />
+          <text x="${cx}" y="${cy + 5}" fill="var(--contrast-paper)" font-family="var(--font-mono)" font-size="12" font-weight="900" letter-spacing=".08em" text-anchor="middle">SITE</text>
           ${mode.values.map(([label, value], index) => {
             const angle = (-90 + index * (360 / mode.values.length)) * Math.PI / 180;
             const radius = 70 + (value / max) * 24;
             const x = cx + Math.cos(angle) * radius;
             const y = cy + Math.sin(angle) * radius;
             return `
-              <g class="visual-orbit-node">
-                <line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" />
-                <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15" />
-                <text x="${x.toFixed(1)}" y="${(y + 32).toFixed(1)}">${escapeHtml(label)}</text>
+              <g>
+                <line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" stroke="color-mix(in oklch, var(--contrast-line) 42%, transparent)" stroke-width="2" />
+                <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15" fill="var(--contrast-mint)" stroke="var(--contrast-line)" stroke-width="3" />
+                <text x="${x.toFixed(1)}" y="${(y + 32).toFixed(1)}" ${textAttrs} font-size="12" text-anchor="middle">${escapeHtml(label)}</text>
               </g>
             `;
           }).join('')}
@@ -1096,10 +1113,11 @@
             const x = 64 + index * 74;
             const y = 188 - index * 28;
             const w = 240 + (value / max) * 80;
+            const fill = index % 2 ? 'color-mix(in oklch, var(--contrast-cyan) 52%, var(--contrast-paper) 48%)' : 'var(--contrast-mint)';
             return `
-              <g class="visual-stack-layer">
-                <rect x="${x}" y="${y}" width="${w.toFixed(1)}" height="34" rx="8" />
-                <text x="${x + 18}" y="${y + 23}">${escapeHtml(label)}</text>
+              <g>
+                <rect x="${x}" y="${y}" width="${w.toFixed(1)}" height="34" rx="8" fill="${fill}" stroke="var(--contrast-line)" stroke-width="3" />
+                <text x="${x + 18}" y="${y + 23}" ${textAttrs} font-size="14">${escapeHtml(label)}</text>
               </g>
             `;
           }).join('')}
@@ -1141,7 +1159,7 @@
     const list = document.querySelector('#visual-mode-list');
     if (!list) return;
     list.innerHTML = visualModes.map((mode, index) => `
-      <button type="button" class="visual-mode-button" role="option" aria-selected="${index === 0 ? 'true' : 'false'}" data-visual-mode="${escapeHtml(mode.id)}">
+      <button type="button" class="visual-mode-button" aria-pressed="${index === 0 ? 'true' : 'false'}" data-visual-mode="${escapeHtml(mode.id)}">
         <span>${String(index + 1).padStart(2, '0')}</span>
         <strong>${escapeHtml(mode.label)}</strong>
       </button>
@@ -1149,7 +1167,7 @@
     const activate = (id) => {
       const mode = visualModes.find((item) => item.id === id) || visualModes[0];
       list.querySelectorAll('.visual-mode-button').forEach((button) => {
-        button.setAttribute('aria-selected', String(button.dataset.visualMode === mode.id));
+        button.setAttribute('aria-pressed', String(button.dataset.visualMode === mode.id));
       });
       renderVisualMode(mode);
     };
@@ -1161,7 +1179,7 @@
       if (!['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
       event.preventDefault();
       const buttons = [...list.querySelectorAll('.visual-mode-button')];
-      const current = Math.max(0, buttons.findIndex((button) => button.getAttribute('aria-selected') === 'true'));
+      const current = Math.max(0, buttons.findIndex((button) => button.getAttribute('aria-pressed') === 'true'));
       const direction = ['ArrowDown', 'ArrowRight'].includes(event.key) ? 1 : -1;
       const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : (current + direction + buttons.length) % buttons.length;
       buttons[next]?.focus();
