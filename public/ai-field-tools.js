@@ -198,6 +198,22 @@
       ],
       notes: ['Capture the raw words.', 'Name the pattern.', 'Move the work.'],
     },
+    {
+      id: 'risk-heatmap',
+      label: 'Risk heatmap',
+      title: 'Small resident issues become expensive when they repeat.',
+      deck: 'The browser can show which ordinary complaints are starting to cluster.',
+      kind: 'matrix',
+      values: [
+        ['Maintenance', 81],
+        ['Access', 63],
+        ['Noise', 54],
+        ['Renewal', 76],
+        ['Wi-Fi', 68],
+        ['Payments', 47],
+      ],
+      notes: ['Do not average away pain.', 'Watch repeat issues.', 'Make renewal risk visible.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
@@ -637,6 +653,26 @@
               <g class="visual-bar">
                 <rect x="${x}" y="${y.toFixed(1)}" width="${barWidth}" height="${h.toFixed(1)}" rx="10" />
                 <text x="${x + barWidth / 2}" y="226">${escapeHtml(label)}</text>
+              </g>
+            `;
+          }).join('')}
+        </svg>
+      `;
+    }
+    if (mode.kind === 'matrix') {
+      return `
+        <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
+          ${mode.values.map(([label, value], index) => {
+            const col = index % 3;
+            const row = Math.floor(index / 3);
+            const x = 48 + col * 160;
+            const y = 52 + row * 82;
+            const opacity = (0.34 + (value / max) * 0.46).toFixed(2);
+            return `
+              <g class="visual-cell" style="--cell-opacity:${opacity}">
+                <rect x="${x}" y="${y}" width="132" height="56" rx="8" />
+                <text x="${x + 14}" y="${y + 24}">${escapeHtml(label)}</text>
+                <text class="visual-cell-value" x="${x + 14}" y="${y + 44}">${escapeHtml(String(value))}</text>
               </g>
             `;
           }).join('')}

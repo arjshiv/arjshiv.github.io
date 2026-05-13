@@ -9223,6 +9223,27 @@ body::before {
   text-transform: uppercase;
 }
 
+.visual-cell rect {
+  fill: var(--contrast-mint);
+  fill-opacity: var(--cell-opacity, 0.6);
+  stroke: var(--contrast-line);
+  stroke-width: 3;
+}
+
+.visual-cell text {
+  fill: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.visual-cell-value {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
 .visual-stat-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
