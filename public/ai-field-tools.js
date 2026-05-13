@@ -333,6 +333,20 @@
       ],
       notes: ['Drafting is not ownership.', 'Escalation should be legible.', 'Measurement closes the loop.'],
     },
+    {
+      id: 'maintenance-pulse',
+      label: 'Maintenance pulse',
+      title: 'Maintenance complaints are often a trust chart.',
+      deck: 'This view turns repeated small problems into a pulse an operator can read.',
+      kind: 'bars',
+      values: [
+        ['Washer', 52],
+        ['Elevator', 88],
+        ['Lights', 61],
+        ['Package', 73],
+      ],
+      notes: ['Frequency matters.', 'Repeated small issues count.', 'Show the building pattern.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
