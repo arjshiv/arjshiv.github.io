@@ -465,6 +465,21 @@
       ],
       notes: ['Do not make it a bio list.', 'Name the lesson.', 'Connect the work.'],
     },
+    {
+      id: 'capability-ladder',
+      label: 'Capability ladder',
+      title: 'Browser AI should degrade like a ladder, not a cliff.',
+      deck: 'The stack shows how the site moves from local data to browser model help when available.',
+      kind: 'stack',
+      values: [
+        ['Static data', 96],
+        ['Search', 88],
+        ['SVG view', 83],
+        ['Prompt API', 62],
+        ['Model read', 54],
+      ],
+      notes: ['Feature-detect first.', 'Keep deterministic output.', 'Let newer browsers add depth.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
