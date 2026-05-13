@@ -244,6 +244,20 @@
       ],
       notes: ['No answer floats alone.', 'Judgment stays human.', 'The test is use under pressure.'],
     },
+    {
+      id: 'adoption-curve',
+      label: 'Adoption curve',
+      title: 'The demo is early, not done.',
+      deck: 'A local model can help describe the gap, but the chart keeps the test honest.',
+      kind: 'route',
+      values: [
+        ['Demo', 92],
+        ['First use', 71],
+        ['Busy day', 52],
+        ['Habit', 64],
+      ],
+      notes: ['Room reaction is not adoption.', 'Watch the next morning.', 'Measure repeat use.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
