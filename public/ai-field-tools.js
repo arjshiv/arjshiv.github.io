@@ -392,6 +392,20 @@
       ],
       notes: ['Do not forward the mess.', 'Compress without hiding.', 'Tie it to action.'],
     },
+    {
+      id: 'candidate-lens',
+      label: 'Candidate lens',
+      title: 'Candidates should see how the work really feels.',
+      deck: 'A browser AI summary can help, but the route should still show the work style directly.',
+      kind: 'route',
+      values: [
+        ['Context', 91],
+        ['Ownership', 82],
+        ['Mess', 74],
+        ['Judgment', 86],
+      ],
+      notes: ['Show the real job.', 'Reward context carriers.', 'Skip vague culture copy.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
