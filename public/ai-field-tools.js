@@ -480,6 +480,20 @@
       ],
       notes: ['Feature-detect first.', 'Keep deterministic output.', 'Let newer browsers add depth.'],
     },
+    {
+      id: 'local-model-state',
+      label: 'Model state',
+      title: 'The browser model is a bonus, not a dependency.',
+      deck: 'This view makes the availability story explicit so the tool feels honest.',
+      kind: 'bars',
+      values: [
+        ['Fallback', 100],
+        ['WebGPU', 58],
+        ['Prompt', 42],
+        ['Download', 31],
+      ],
+      notes: ['Always render first.', 'Explain availability.', 'Never hide the fallback.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
