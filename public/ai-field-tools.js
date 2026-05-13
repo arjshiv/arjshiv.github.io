@@ -494,6 +494,22 @@
       ],
       notes: ['Always render first.', 'Explain availability.', 'Never hide the fallback.'],
     },
+    {
+      id: 'note-swarm',
+      label: 'Note swarm',
+      title: 'Private notes are better when patterns surface locally.',
+      deck: 'Nothing leaves the browser. The visualization just helps the reader see what they kept noticing.',
+      kind: 'matrix',
+      values: [
+        ['Demo', 71],
+        ['Adoption', 78],
+        ['Context', 86],
+        ['Housing', 64],
+        ['Trust', 82],
+        ['AI', 69],
+      ],
+      notes: ['Keep notes local.', 'Summarize lightly.', 'Show repeated words.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
