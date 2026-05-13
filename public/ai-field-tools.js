@@ -273,6 +273,20 @@
       ],
       notes: ['Do not stop at insight.', 'Name the decision.', 'Show who acts.'],
     },
+    {
+      id: 'context-receipt',
+      label: 'Context receipt',
+      title: 'Before AI answers, it should show what it used.',
+      deck: 'A receipt makes browser AI feel accountable instead of mysterious.',
+      kind: 'bars',
+      values: [
+        ['Policy', 71],
+        ['History', 86],
+        ['Lease', 68],
+        ['Tone', 61],
+      ],
+      notes: ['Show inputs.', 'Expose missing context.', 'Let the person judge.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
