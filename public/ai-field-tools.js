@@ -258,6 +258,21 @@
       ],
       notes: ['Room reaction is not adoption.', 'Watch the next morning.', 'Measure repeat use.'],
     },
+    {
+      id: 'decision-stack',
+      label: 'Decision stack',
+      title: 'The output has to land where a decision happens.',
+      deck: 'This stack separates analysis from the person who can change the building.',
+      kind: 'stack',
+      values: [
+        ['Resident', 83],
+        ['Pattern', 78],
+        ['Operator', 86],
+        ['Owner', 69],
+        ['Change', 62],
+      ],
+      notes: ['Do not stop at insight.', 'Name the decision.', 'Show who acts.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
