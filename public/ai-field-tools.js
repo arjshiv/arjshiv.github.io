@@ -555,6 +555,20 @@
       ],
       notes: ['Contrast is not optional.', 'Hover cannot reduce readability.', 'Mobile counts first.'],
     },
+    {
+      id: 'reading-time-route',
+      label: 'Reading route',
+      title: 'Different readers should not have to take the same path.',
+      deck: 'The route view helps a browser model suggest a path without changing the page itself.',
+      kind: 'route',
+      values: [
+        ['Skim', 45],
+        ['Source', 72],
+        ['Deep read', 88],
+        ['Reach out', 61],
+      ],
+      notes: ['Respect skim readers.', 'Keep sources close.', 'Make the next click obvious.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
