@@ -347,6 +347,22 @@
       ],
       notes: ['Frequency matters.', 'Repeated small issues count.', 'Show the building pattern.'],
     },
+    {
+      id: 'renewal-warning',
+      label: 'Renewal warning',
+      title: 'Renewal risk usually talks before it leaves.',
+      deck: 'The heatmap keeps early resident signals from disappearing into ticket history.',
+      kind: 'matrix',
+      values: [
+        ['Price', 76],
+        ['Noise', 58],
+        ['Amenities', 71],
+        ['Response', 83],
+        ['Access', 62],
+        ['Safety', 69],
+      ],
+      notes: ['Listen before renewal season.', 'Show cause, not just churn.', 'Give the owner time.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
