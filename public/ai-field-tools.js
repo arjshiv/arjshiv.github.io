@@ -539,6 +539,22 @@
       ],
       notes: ['Watch crowded sections.', 'Leave reading room.', 'Do not pack every surface.'],
     },
+    {
+      id: 'section-contrast',
+      label: 'Contrast map',
+      title: 'Playful color still has to read.',
+      deck: 'The heatmap keeps visual ambition tied to legibility and hover states.',
+      kind: 'matrix',
+      values: [
+        ['Hero', 88],
+        ['Cards', 81],
+        ['Hover', 76],
+        ['Mobile', 83],
+        ['Links', 90],
+        ['Tools', 78],
+      ],
+      notes: ['Contrast is not optional.', 'Hover cannot reduce readability.', 'Mobile counts first.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
