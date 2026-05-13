@@ -850,9 +850,22 @@
                 </div>
             </div>
             <div class="ai-tools-grid">
+                <article class="ai-tool ai-tool-wide browser-visual-lab" aria-labelledby="browser-visual-title">
+                    <div class="ai-tool-head">
+                        <p class="story-label">01 / Browser AI visual lab</p>
+                        <span class="ai-status" id="visual-ai-status" role="status">Local visuals ready</span>
+                    </div>
+                    <h3 id="browser-visual-title">Turn the site into working pictures.</h3>
+                    <p id="browser-visual-help">Pick a view. The graphic is deterministic and runs anywhere. If the browser has a local model, it can add a sharper read on what the picture means.</p>
+                    <div class="visual-lab-layout">
+                        <div class="visual-mode-list ai-chip-row" id="visual-mode-list"></div>
+                        <div class="visual-stage" id="visual-stage" aria-live="polite" aria-describedby="browser-visual-help"></div>
+                    </div>
+                </article>
+
                 <article class="ai-tool ai-tool-primary" aria-labelledby="ai-ask-title">
                     <div class="ai-tool-head">
-                        <p class="story-label">01 / Ask this site</p>
+                        <p class="story-label">02 / Ask this site</p>
                         <span class="ai-status" id="browser-ai-status" role="status">Checking browser AI</span>
                     </div>
                     <h3 id="ai-ask-title">Ask a question. Get an answer from this page.</h3>
@@ -864,19 +877,6 @@
                     </form>
                     <div class="ai-answer" id="ai-answer" aria-live="polite">
                         <p class="article-meta">Try asking about ResiDesk, housing, demos, BlackRock, Climb, writing, or AI.</p>
-                    </div>
-                </article>
-
-                <article class="ai-tool ai-tool-wide browser-visual-lab" aria-labelledby="browser-visual-title">
-                    <div class="ai-tool-head">
-                        <p class="story-label">02 / Browser AI visual lab</p>
-                        <span class="ai-status" id="visual-ai-status" role="status">Local visuals ready</span>
-                    </div>
-                    <h3 id="browser-visual-title">Turn the site into working pictures.</h3>
-                    <p id="browser-visual-help">Pick a view. The graphic is deterministic and runs anywhere. If the browser has a local model, it can add a sharper read on what the picture means.</p>
-                    <div class="visual-lab-layout">
-                        <div class="visual-mode-list ai-chip-row" id="visual-mode-list"></div>
-                        <div class="visual-stage" id="visual-stage" aria-live="polite" aria-describedby="browser-visual-help"></div>
                     </div>
                 </article>
 
@@ -1059,6 +1059,21 @@
             } else {
                 window.addEventListener('load', () => window.setTimeout(loadAiFieldTools, 900), { once: true });
             }
+
+            const showAiToolsForHash = () => {
+                if (window.location.hash !== '#ai-field-tools') return;
+                loadAiFieldTools().then(() => {
+                    window.setTimeout(() => aiTools?.scrollIntoView({ block: 'start', behavior: 'auto' }), 0);
+                });
+            };
+            const shouldLoadAiToolsForHash = () => window.location.hash === '#ai-field-tools';
+            if (shouldLoadAiToolsForHash()) {
+                window.setTimeout(showAiToolsForHash, 0);
+            }
+            window.addEventListener('hashchange', showAiToolsForHash);
+            document.querySelectorAll('a[href="#ai-field-tools"]').forEach((link) => {
+                link.addEventListener('click', () => window.setTimeout(showAiToolsForHash, 0), { passive: true });
+            });
         })();
     </script>
 

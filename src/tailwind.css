@@ -3956,10 +3956,10 @@ button {
 }
 
 
-/* Smooth update 32: Skip below-fold rendering until needed */
+/* Smooth update 32: Keep sections reachable for hash navigation */
 .section-block {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 900px;
+  content-visibility: visible;
+  contain-intrinsic-size: auto;
 }
 
 
@@ -4096,10 +4096,10 @@ button {
 }
 
 
-/* Smooth update 49: More accurate mobile intrinsic sections */
+/* Smooth update 49: Mobile sections keep natural height */
 @media (max-width: 760px) {
   .section-block {
-    contain-intrinsic-size: 1px 1200px;
+    contain-intrinsic-size: auto;
   }
 }
 
@@ -9521,16 +9521,12 @@ mark.signal-highlight {
   color: var(--contrast-ink);
 }
 
-/* Performance pass: skip lower-page layout and paint until sections approach the viewport */
+/* Performance pass: keep lower-page sections reachable by hash and keyboard navigation */
 @supports (content-visibility: auto) {
   main > .section-block,
   .site-footer {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 920px;
-  }
-
-  #ai-field-tools {
-    contain-intrinsic-size: auto 1500px;
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
   }
 
   .hero-section,
