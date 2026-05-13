@@ -525,6 +525,20 @@
       ],
       notes: ['Do not dodge hard questions.', 'Map objection to system design.', 'Answer with evidence.'],
     },
+    {
+      id: 'page-density',
+      label: 'Page density',
+      title: 'A visual site should still give the reader air.',
+      deck: 'This chart treats density as a design variable, not an accident.',
+      kind: 'bars',
+      values: [
+        ['Hero', 70],
+        ['Now', 63],
+        ['Map', 78],
+        ['Tools', 86],
+      ],
+      notes: ['Watch crowded sections.', 'Leave reading room.', 'Do not pack every surface.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
