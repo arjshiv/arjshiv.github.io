@@ -510,6 +510,21 @@
       ],
       notes: ['Keep notes local.', 'Summarize lightly.', 'Show repeated words.'],
     },
+    {
+      id: 'objection-map',
+      label: 'Objection map',
+      title: 'The objections should point to the part of the system that answers them.',
+      deck: 'This keeps browser AI from becoming a chatty layer over unresolved product questions.',
+      kind: 'orbit',
+      values: [
+        ['Accuracy', 75],
+        ['Trust', 89],
+        ['Privacy', 72],
+        ['Workflow', 84],
+        ['ROI', 67],
+      ],
+      notes: ['Do not dodge hard questions.', 'Map objection to system design.', 'Answer with evidence.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
