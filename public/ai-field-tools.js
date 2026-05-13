@@ -318,6 +318,21 @@
       ],
       notes: ['Start with the resident.', 'Keep roles distinct.', 'Do not flatten the audience.'],
     },
+    {
+      id: 'handoff-map',
+      label: 'Handoff map',
+      title: 'A good answer knows when it is done with its part.',
+      deck: 'The map shows where AI should stop drafting and start routing.',
+      kind: 'route',
+      values: [
+        ['Read', 85],
+        ['Draft', 74],
+        ['Flag', 81],
+        ['Route', 88],
+        ['Measure', 67],
+      ],
+      notes: ['Drafting is not ownership.', 'Escalation should be legible.', 'Measurement closes the loop.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
