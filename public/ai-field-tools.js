@@ -584,6 +584,22 @@
       ],
       notes: ['Prioritize visibly.', 'Keep blockers honest.', 'Review before sending.'],
     },
+    {
+      id: 'ai-use-case-sorter',
+      label: 'Use-case sorter',
+      title: 'Useful AI sorts by work changed, not model drama.',
+      deck: 'The heatmap makes the browser-AI feature set feel practical instead of magical.',
+      kind: 'matrix',
+      values: [
+        ['Summarize', 76],
+        ['Rewrite', 58],
+        ['Translate', 52],
+        ['Search', 83],
+        ['Classify', 80],
+        ['Route', 88],
+      ],
+      notes: ['Prefer narrow jobs.', 'Use model APIs where they fit.', 'Keep routing concrete.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
