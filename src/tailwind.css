@@ -9282,6 +9282,25 @@ body::before {
   stroke-width: 3;
 }
 
+.visual-stack-layer rect {
+  fill: color-mix(in oklch, var(--contrast-mint) 48%, var(--contrast-paper) 52%);
+  stroke: var(--contrast-line);
+  stroke-width: 3;
+}
+
+.visual-stack-layer:nth-child(2n) rect {
+  fill: color-mix(in oklch, var(--contrast-cyan) 50%, var(--contrast-paper) 50%);
+}
+
+.visual-stack-layer text {
+  fill: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .visual-stat-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

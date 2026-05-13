@@ -229,6 +229,21 @@
       ],
       notes: ['Keep claims close to sources.', 'Separate talk from proof.', 'Make the trail easy.'],
     },
+    {
+      id: 'trust-stack',
+      label: 'Trust stack',
+      title: 'A useful answer has layers under it.',
+      deck: 'The picture makes the hidden stack visible: source, context, owner, test, and follow-through.',
+      kind: 'stack',
+      values: [
+        ['Source', 88],
+        ['Context', 82],
+        ['Owner', 74],
+        ['Test', 67],
+        ['Follow', 79],
+      ],
+      notes: ['No answer floats alone.', 'Judgment stays human.', 'The test is use under pressure.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
@@ -712,6 +727,23 @@
                 <line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" />
                 <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15" />
                 <text x="${x.toFixed(1)}" y="${(y + 32).toFixed(1)}">${escapeHtml(label)}</text>
+              </g>
+            `;
+          }).join('')}
+        </svg>
+      `;
+    }
+    if (mode.kind === 'stack') {
+      return `
+        <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
+          ${mode.values.map(([label, value], index) => {
+            const x = 64 + index * 74;
+            const y = 188 - index * 28;
+            const w = 240 + (value / max) * 80;
+            return `
+              <g class="visual-stack-layer">
+                <rect x="${x}" y="${y}" width="${w.toFixed(1)}" height="34" rx="8" />
+                <text x="${x + 18}" y="${y + 23}">${escapeHtml(label)}</text>
               </g>
             `;
           }).join('')}
