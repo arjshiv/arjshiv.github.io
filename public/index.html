@@ -867,8 +867,21 @@
                     </div>
                 </article>
 
+                <article class="ai-tool ai-tool-wide browser-visual-lab" aria-labelledby="browser-visual-title">
+                    <div class="ai-tool-head">
+                        <p class="story-label">02 / Browser AI visual lab</p>
+                        <span class="ai-status" id="visual-ai-status" role="status">Local visuals ready</span>
+                    </div>
+                    <h3 id="browser-visual-title">Turn the site into working pictures.</h3>
+                    <p id="browser-visual-help">Pick a view. The graphic is deterministic and runs anywhere. If the browser has a local model, it can add a sharper read on what the picture means.</p>
+                    <div class="visual-lab-layout">
+                        <div class="visual-mode-list" id="visual-mode-list" role="listbox" aria-label="Browser AI visualization modes"></div>
+                        <div class="visual-stage" id="visual-stage" aria-live="polite" aria-describedby="browser-visual-help"></div>
+                    </div>
+                </article>
+
                 <article class="ai-tool" aria-labelledby="ai-map-title">
-                    <p class="story-label">02 / Conversation map</p>
+                    <p class="story-label">03 / Conversation map</p>
                     <h3 id="ai-map-title">Start with a real question.</h3>
                     <div class="ai-chip-row" id="conversation-map">
                         <button type="button" data-question="What pattern connects the site?">Pattern</button>
@@ -879,7 +892,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-guide-title">
-                    <p class="story-label">03 / Reading guide</p>
+                    <p class="story-label">04 / Reading guide</p>
                     <h3 id="ai-guide-title">Build a path through the site.</h3>
                     <label for="guide-persona">I am reading as</label>
                     <select id="guide-persona">
@@ -894,7 +907,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-transcript-title">
-                    <p class="story-label">04 / Transcript lens</p>
+                    <p class="story-label">05 / Transcript lens</p>
                     <h3 id="ai-transcript-title">Pull the useful parts out of a talk.</h3>
                     <label for="talk-lens">Conversation</label>
                     <select id="talk-lens">
@@ -908,7 +921,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-useful-title">
-                    <p class="story-label">05 / Useful AI test</p>
+                    <p class="story-label">06 / Useful AI test</p>
                     <h3 id="ai-useful-title">Paste an AI idea. See if it earns its keep.</h3>
                     <textarea id="useful-ai-input" rows="5" maxlength="600" placeholder="Example: AI assistant that answers resident texts, checks the lease, flags risky cases, and hands unresolved issues to the property team."></textarea>
                     <button type="button" class="secondary-link" id="score-ai-idea">Score idea</button>
@@ -916,7 +929,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-resident-title">
-                    <p class="story-label">06 / Resident messages</p>
+                    <p class="story-label">07 / Resident messages</p>
                     <h3 id="ai-resident-title">Generate a small building readout.</h3>
                     <label for="building-type">Building type</label>
                     <select id="building-type">
@@ -930,14 +943,14 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-highlight-title">
-                    <p class="story-label">07 / Pattern highlighter</p>
+                    <p class="story-label">08 / Pattern highlighter</p>
                     <h3 id="ai-highlight-title">Show the pattern inside the page.</h3>
                     <p>Highlights the words I keep coming back to: customer, context, measurement, follow-through, trust, and demo.</p>
                     <button type="button" class="secondary-link" id="toggle-highlights" aria-pressed="false">Highlight pattern</button>
                 </article>
 
                 <article class="ai-tool ai-tool-wide" aria-labelledby="ai-critique-title">
-                    <p class="story-label">08 / Design check</p>
+                    <p class="story-label">09 / Design check</p>
                     <h3 id="ai-critique-title">Check whether the page is doing its job.</h3>
                     <p>I like making the design explain itself before I call it done. This checks the page on direction, hierarchy, detail, function, and whether it actually helps a reader.</p>
                     <button type="button" class="secondary-link" id="run-design-critique">Run critique</button>
@@ -945,7 +958,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-tweaks-title">
-                    <p class="story-label">09 / Next pass</p>
+                    <p class="story-label">10 / Next pass</p>
                     <h3 id="ai-tweaks-title">Pick the next thing to fix.</h3>
                     <p>Pick the part that feels weakest and get a concrete pass to make next.</p>
                     <div class="ai-chip-row" id="site-tweak-panel">
@@ -958,7 +971,7 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-proof-title">
-                    <p class="story-label">10 / Link packet</p>
+                    <p class="story-label">11 / Link packet</p>
                     <h3 id="ai-proof-title">Build a small link stack.</h3>
                     <label for="proof-audience">Audience</label>
                     <select id="proof-audience">
@@ -972,7 +985,7 @@
                 </article>
 
                 <article class="ai-tool ai-tool-wide" aria-labelledby="ai-memo-title">
-                    <p class="story-label">11 / Operator memo</p>
+                    <p class="story-label">12 / Operator memo</p>
                     <h3 id="ai-memo-title">Turn messy notes into a next-step memo.</h3>
                     <textarea id="operator-memo-input" rows="4" maxlength="600" placeholder="Example: residents keep texting about elevators, package room access, and renewal confusion. Team answers one-off, owner wants a clearer view."></textarea>
                     <button type="button" class="secondary-link" id="build-operator-memo">Build memo</button>
@@ -980,13 +993,13 @@
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-compass-title">
-                    <p class="story-label">12 / Site compass</p>
+                    <p class="story-label">13 / Site compass</p>
                     <h3 id="ai-compass-title">Pick the part of the story you need.</h3>
                     <div class="site-compass-output" id="site-compass-output"></div>
                 </article>
 
                 <article class="ai-tool" aria-labelledby="ai-notes-title">
-                    <p class="story-label">13 / Private notes</p>
+                    <p class="story-label">14 / Private notes</p>
                     <h3 id="ai-notes-title">Keep notes locally while you read.</h3>
                     <textarea id="private-notes" rows="6" maxlength="900" placeholder="Notes stay in this browser."></textarea>
                     <div class="ai-note-actions">

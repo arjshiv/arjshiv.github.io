@@ -169,6 +169,23 @@
     ['Writing', '#writing', 'AI point of view'],
   ];
 
+  const visualModes = [
+    {
+      id: 'site-spine',
+      label: 'Site spine',
+      title: 'The whole page has one job.',
+      deck: 'A fast route from customer truth to work someone owns.',
+      kind: 'route',
+      values: [
+        ['Customer', 92],
+        ['Context', 84],
+        ['Judgment', 77],
+        ['Follow-through', 88],
+      ],
+      notes: ['Start concrete.', 'Keep the owner visible.', 'End with the next step.'],
+    },
+  ];
+
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
 
   const tokenize = (value) => value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((word) => word && !stopWords.has(word));
@@ -211,6 +228,24 @@
   };
 
   const getBrowserLanguageModel = () => globalThis.LanguageModel || globalThis.ai?.languageModel || null;
+
+  const visualPlanFromBrowserModel = async (mode) => {
+    const api = getBrowserLanguageModel();
+    if (!api?.create) return null;
+    try {
+      const availability = api.availability ? await api.availability() : 'available';
+      if (availability === 'unavailable') return null;
+      const session = await api.create({
+        systemPrompt: 'Read this site-visualization brief and return one plainspoken sentence. No hype. No markdown.',
+      });
+      const prompt = `Visualization: ${mode.title}\nPoint: ${mode.deck}\nSignals: ${mode.values.map(([label, value]) => `${label} ${value}`).join(', ')}`;
+      const response = session.prompt ? await session.prompt(prompt) : null;
+      session.destroy?.();
+      return response ? String(response).trim().slice(0, 220) : null;
+    } catch {
+      return null;
+    }
+  };
 
   const answerWithBrowserModel = async (question) => {
     const api = getBrowserLanguageModel();
@@ -551,7 +586,95 @@
     `).join('');
   };
 
+  const renderVisualSvg = (mode) => {
+    const width = 560;
+    const height = 250;
+    const max = Math.max(...mode.values.map(([, value]) => value), 1);
+    if (mode.kind === 'route') {
+      const points = mode.values.map(([, value], index) => {
+        const x = 52 + index * ((width - 104) / Math.max(mode.values.length - 1, 1));
+        const y = 196 - (value / max) * 122;
+        return [x, y];
+      });
+      return `
+        <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
+          <path class="visual-grid-line" d="M34 198H526M34 136H526M34 74H526" />
+          <path class="visual-route-line" d="${points.map(([x, y], index) => `${index ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')}" />
+          ${points.map(([x, y], index) => `
+            <g class="visual-node">
+              <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="12" />
+              <text x="${x.toFixed(1)}" y="228">${escapeHtml(String(index + 1).padStart(2, '0'))}</text>
+            </g>
+          `).join('')}
+        </svg>
+      `;
+    }
+    return '';
+  };
+
+  const renderVisualMode = async (mode) => {
+    const stage = document.querySelector('#visual-stage');
+    const status = document.querySelector('#visual-ai-status');
+    if (!stage) return;
+    stage.innerHTML = `
+      <div class="visual-stage-copy">
+        <span class="story-label">${escapeHtml(mode.label)}</span>
+        <h4>${escapeHtml(mode.title)}</h4>
+        <p>${escapeHtml(mode.deck)}</p>
+      </div>
+      ${renderVisualSvg(mode)}
+      <div class="visual-stat-row">
+        ${mode.values.map(([label, value]) => `
+          <span><strong>${escapeHtml(String(value))}</strong>${escapeHtml(label)}</span>
+        `).join('')}
+      </div>
+      <ul class="visual-notes">
+        ${mode.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join('')}
+      </ul>
+    `;
+    const interpretation = await visualPlanFromBrowserModel(mode);
+    if (interpretation) {
+      status.textContent = 'Browser model added a read';
+      status.classList.add('is-browser');
+      stage.insertAdjacentHTML('beforeend', `<p class="visual-model-read"><strong>Browser read:</strong> ${escapeHtml(interpretation)}</p>`);
+    }
+  };
+
+  const initVisualLab = () => {
+    const list = document.querySelector('#visual-mode-list');
+    if (!list) return;
+    list.innerHTML = visualModes.map((mode, index) => `
+      <button type="button" class="visual-mode-button" role="option" aria-selected="${index === 0 ? 'true' : 'false'}" data-visual-mode="${escapeHtml(mode.id)}">
+        <span>${String(index + 1).padStart(2, '0')}</span>
+        <strong>${escapeHtml(mode.label)}</strong>
+      </button>
+    `).join('');
+    const activate = (id) => {
+      const mode = visualModes.find((item) => item.id === id) || visualModes[0];
+      list.querySelectorAll('.visual-mode-button').forEach((button) => {
+        button.setAttribute('aria-selected', String(button.dataset.visualMode === mode.id));
+      });
+      renderVisualMode(mode);
+    };
+    list.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-visual-mode]');
+      if (button) activate(button.dataset.visualMode);
+    });
+    list.addEventListener('keydown', (event) => {
+      if (!['ArrowDown', 'ArrowRight', 'ArrowUp', 'ArrowLeft', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const buttons = [...list.querySelectorAll('.visual-mode-button')];
+      const current = Math.max(0, buttons.findIndex((button) => button.getAttribute('aria-selected') === 'true'));
+      const direction = ['ArrowDown', 'ArrowRight'].includes(event.key) ? 1 : -1;
+      const next = event.key === 'Home' ? 0 : event.key === 'End' ? buttons.length - 1 : (current + direction + buttons.length) % buttons.length;
+      buttons[next]?.focus();
+      buttons[next]?.click();
+    });
+    activate(visualModes[0]?.id);
+  };
+
   detectBrowserAI();
+  initVisualLab();
   initAsk();
   initGuide();
   initTalkLens();
