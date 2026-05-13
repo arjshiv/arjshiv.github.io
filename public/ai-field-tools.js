@@ -436,6 +436,21 @@
       ],
       notes: ['Use talks for voice.', 'Watch repeated themes.', 'Do not over-polish the source.'],
     },
+    {
+      id: 'article-evidence',
+      label: 'Article evidence',
+      title: 'Outside links should reduce trust friction.',
+      deck: 'The constellation keeps articles, writing, and recordings from becoming a loose link pile.',
+      kind: 'orbit',
+      values: [
+        ['Law360', 78],
+        ['20for20', 73],
+        ['Hackernoon', 71],
+        ['TechTimes', 63],
+        ['TechBullion', 66],
+      ],
+      notes: ['Source the claim.', 'Use the date.', 'Keep the reader oriented.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
