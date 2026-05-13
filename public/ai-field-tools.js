@@ -303,6 +303,21 @@
       ],
       notes: ['Cut recap voice.', 'Use real nouns.', 'Keep the claim narrow.'],
     },
+    {
+      id: 'customer-compass',
+      label: 'Customer compass',
+      title: 'The center of the map is still the customer.',
+      deck: 'Browser AI is useful here only if it keeps pulling the reader back to the job.',
+      kind: 'orbit',
+      values: [
+        ['Resident', 94],
+        ['Operator', 82],
+        ['Owner', 73],
+        ['Founder', 67],
+        ['Candidate', 58],
+      ],
+      notes: ['Start with the resident.', 'Keep roles distinct.', 'Do not flatten the audience.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
