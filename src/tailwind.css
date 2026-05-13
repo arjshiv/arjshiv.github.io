@@ -9244,6 +9244,44 @@ body::before {
   font-variant-numeric: tabular-nums;
 }
 
+.visual-orbit-ring {
+  fill: none;
+  stroke: color-mix(in oklch, var(--contrast-blue) 36%, transparent);
+  stroke-width: 3;
+  stroke-dasharray: 8 10;
+}
+
+.visual-orbit-core {
+  fill: var(--contrast-blue);
+  stroke: var(--contrast-line);
+  stroke-width: 3;
+}
+
+.visual-orbit-core-text,
+.visual-orbit-node text {
+  fill: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-anchor: middle;
+}
+
+.visual-orbit-core-text {
+  fill: var(--contrast-paper);
+}
+
+.visual-orbit-node line {
+  stroke: color-mix(in oklch, var(--contrast-line) 42%, transparent);
+  stroke-width: 2;
+}
+
+.visual-orbit-node circle {
+  fill: var(--contrast-mint);
+  stroke: var(--contrast-line);
+  stroke-width: 3;
+}
+
 .visual-stat-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

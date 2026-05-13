@@ -214,6 +214,21 @@
       ],
       notes: ['Do not average away pain.', 'Watch repeat issues.', 'Make renewal risk visible.'],
     },
+    {
+      id: 'proof-constellation',
+      label: 'Proof constellation',
+      title: 'Claims should have nearby proof.',
+      deck: 'This view pulls the outside links, talks, and company facts into one source map.',
+      kind: 'orbit',
+      values: [
+        ['ResiDesk', 90],
+        ['Talks', 76],
+        ['Writing', 72],
+        ['Press', 66],
+        ['Work', 81],
+      ],
+      notes: ['Keep claims close to sources.', 'Separate talk from proof.', 'Make the trail easy.'],
+    },
   ];
 
   const stopWords = new Set('a an and are as at be by for from has have how i in is it its me more my not of on or that the this to what when where who why with you your'.split(' '));
@@ -673,6 +688,30 @@
                 <rect x="${x}" y="${y}" width="132" height="56" rx="8" />
                 <text x="${x + 14}" y="${y + 24}">${escapeHtml(label)}</text>
                 <text class="visual-cell-value" x="${x + 14}" y="${y + 44}">${escapeHtml(String(value))}</text>
+              </g>
+            `;
+          }).join('')}
+        </svg>
+      `;
+    }
+    if (mode.kind === 'orbit') {
+      const cx = width / 2;
+      const cy = 126;
+      return `
+        <svg class="visual-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(mode.title)}">
+          <circle class="visual-orbit-ring" cx="${cx}" cy="${cy}" r="84" />
+          <circle class="visual-orbit-core" cx="${cx}" cy="${cy}" r="33" />
+          <text class="visual-orbit-core-text" x="${cx}" y="${cy + 5}">SITE</text>
+          ${mode.values.map(([label, value], index) => {
+            const angle = (-90 + index * (360 / mode.values.length)) * Math.PI / 180;
+            const radius = 70 + (value / max) * 24;
+            const x = cx + Math.cos(angle) * radius;
+            const y = cy + Math.sin(angle) * radius;
+            return `
+              <g class="visual-orbit-node">
+                <line x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}" />
+                <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15" />
+                <text x="${x.toFixed(1)}" y="${(y + 32).toFixed(1)}">${escapeHtml(label)}</text>
               </g>
             `;
           }).join('')}
