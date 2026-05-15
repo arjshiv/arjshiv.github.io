@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks',
       href: '#conversations',
-      text: 'In the talks I usually end up in the same place: physics taught me to care about measurement, software became useful when it saved real time, and ResiDesk is about hearing residents clearly enough to act.',
+      text: 'The talks keep circling the same practical lesson: measurement matters, software is useful when it saves real time, and ResiDesk starts with hearing residents clearly enough to act.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
