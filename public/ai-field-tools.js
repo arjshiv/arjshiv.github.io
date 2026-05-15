@@ -217,8 +217,8 @@
     {
       id: 'proof-constellation',
       label: 'Proof constellation',
-      title: 'Claims should have nearby proof.',
-      deck: 'This view pulls the outside links, talks, and company facts into one source map.',
+      title: 'Do not make the reader hunt for proof.',
+      deck: 'Put the links, talks, and company facts close to the claim they support.',
       kind: 'orbit',
       values: [
         ['ResiDesk', 90],
