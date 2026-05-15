@@ -290,8 +290,8 @@
     {
       id: 'voice-fingerprint',
       label: 'Voice fingerprint',
-      title: 'The copy should sound like a person, not a summary of one.',
-      deck: 'This view checks whether the language stays concrete, first-person, and close to the job.',
+      title: 'The copy should sound like me, not a recap of me.',
+      deck: 'Check for concrete nouns, first-person claims, and language that stays close to the job.',
       kind: 'matrix',
       values: [
         ['Concrete', 86],
