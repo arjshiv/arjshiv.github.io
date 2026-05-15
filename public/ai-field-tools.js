@@ -202,7 +202,7 @@
       id: 'risk-heatmap',
       label: 'Risk heatmap',
       title: 'Small resident issues become expensive when they repeat.',
-      deck: 'The browser can show which ordinary complaints are starting to cluster.',
+      deck: 'The point is to catch ordinary complaints before they quietly become a pattern.',
       kind: 'matrix',
       values: [
         ['Maintenance', 81],
