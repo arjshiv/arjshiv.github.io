@@ -277,7 +277,7 @@
       id: 'context-receipt',
       label: 'Context receipt',
       title: 'Before AI answers, it should show what it used.',
-      deck: 'A receipt makes browser AI feel accountable instead of mysterious.',
+      deck: 'Show the inputs before asking anyone to trust the answer.',
       kind: 'bars',
       values: [
         ['Policy', 71],
