@@ -188,7 +188,7 @@
       id: 'signal-flow',
       label: 'Signal flow',
       title: 'A resident message should not stay a message.',
-      deck: 'The useful picture is the handoff from text to owner-visible work.',
+      deck: 'The useful view is the handoff from a resident text to work an owner can see.',
       kind: 'bars',
       values: [
         ['Text', 96],
