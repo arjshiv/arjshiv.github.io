@@ -514,7 +514,7 @@
       id: 'objection-map',
       label: 'Objection map',
       title: 'The objections should point to the part of the system that answers them.',
-      deck: 'This keeps browser AI from becoming a chatty layer over unresolved product questions.',
+      deck: 'Do not let browser AI talk around the hard product questions.',
       kind: 'orbit',
       values: [
         ['Accuracy', 75],
