@@ -262,7 +262,7 @@
       id: 'decision-stack',
       label: 'Decision stack',
       title: 'The output has to land where a decision happens.',
-      deck: 'This stack separates analysis from the person who can change the building.',
+      deck: 'Analysis only matters if it reaches the person who can change the building.',
       kind: 'stack',
       values: [
         ['Resident', 83],
