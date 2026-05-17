@@ -10176,6 +10176,22 @@ mark.signal-highlight {
   line-height: 1.5;
 }
 
+@media (max-width: 980px) {
+  .lab-fit-board {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-fit-lead {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .lab-fit-lanes {
+    grid-template-columns: 1fr;
+  }
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
