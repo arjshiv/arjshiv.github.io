@@ -851,6 +851,8 @@
         <p><strong>Adoption test:</strong> Name the owner, show the missing context, decide what gets reviewed, and measure whether the work moved.</p>
       `;
     };
+    button.addEventListener('click', render);
+    render();
   };
 
   const initSignalSim = () => {
