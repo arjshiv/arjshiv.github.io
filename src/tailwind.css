@@ -10106,6 +10106,24 @@ mark.signal-highlight {
   box-shadow: var(--contrast-shadow-sm);
 }
 
+.tuesday-output ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tuesday-output li {
+  border: 2px dashed color-mix(in oklch, var(--contrast-line) 62%, transparent);
+  border-radius: 0.24rem;
+  padding: 0.65rem;
+  color: var(--contrast-soft);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
 .deployment-room {
   --deploy-panel: color-mix(in oklch, var(--contrast-ice) 66%, var(--contrast-paper) 34%);
 }
