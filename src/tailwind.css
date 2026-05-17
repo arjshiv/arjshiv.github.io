@@ -10119,3 +10119,50 @@ mark.signal-highlight {
   font-size: 1.05rem;
   line-height: 1.55;
 }
+
+.deployment-loop {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.deployment-loop li {
+  display: grid;
+  align-content: start;
+  gap: 0.62rem;
+  min-height: 15rem;
+  padding: 0.95rem;
+  background: color-mix(in oklch, var(--contrast-aqua) 28%, var(--contrast-paper) 72%);
+}
+
+.deployment-loop span {
+  width: fit-content;
+  border: 2px solid var(--contrast-line);
+  border-radius: 999px;
+  background: var(--contrast-paper);
+  padding: 0.2rem 0.5rem;
+  color: var(--contrast-violet);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums;
+}
+
+.deployment-loop strong {
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.deployment-loop p {
+  margin: 0;
+  color: var(--contrast-soft);
+  font-size: 0.95rem;
+  line-height: 1.48;
+}
