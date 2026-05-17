@@ -10222,3 +10222,26 @@ mark.signal-highlight {
   font-size: 0.92rem;
   line-height: 1.3;
 }
+
+.deployment-loop li:nth-child(2),
+.deployment-loop li:nth-child(4) {
+  background: color-mix(in oklch, var(--contrast-mint) 32%, var(--contrast-paper) 68%);
+}
+
+.deployment-loop li:nth-child(3) {
+  background: color-mix(in oklch, var(--contrast-cyan) 42%, var(--contrast-paper) 58%);
+}
+
+.deployment-loop li:hover,
+.deployment-metrics div:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--contrast-shadow);
+}
+
+.deployment-loop li,
+.deployment-metrics div {
+  transition:
+    transform 140ms var(--ease-out),
+    box-shadow 140ms var(--ease-out),
+    background-color 140ms var(--ease-out);
+}
