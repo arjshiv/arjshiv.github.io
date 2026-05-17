@@ -10124,6 +10124,17 @@ mark.signal-highlight {
   line-height: 1.35;
 }
 
+@media (max-width: 820px) {
+  .tuesday-controls,
+  .tuesday-output ul {
+    grid-template-columns: 1fr;
+  }
+
+  .tuesday-controls .secondary-link {
+    width: 100%;
+  }
+}
+
 .deployment-room {
   --deploy-panel: color-mix(in oklch, var(--contrast-ice) 66%, var(--contrast-paper) 34%);
 }
