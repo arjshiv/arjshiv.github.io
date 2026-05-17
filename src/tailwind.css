@@ -10115,6 +10115,30 @@ mark.signal-highlight {
   line-height: 1.55;
 }
 
+.lab-fit-lanes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.lab-fit-lanes article {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 12rem;
+  padding: 0.95rem;
+  background: var(--contrast-paper);
+}
+
+.lab-fit-lanes span {
+  color: var(--contrast-violet);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
