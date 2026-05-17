@@ -10192,3 +10192,33 @@ mark.signal-highlight {
   letter-spacing: -0.03em;
   text-wrap: balance;
 }
+
+.deployment-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  grid-column: 1 / -1;
+}
+
+.deployment-metrics div {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 6.8rem;
+  padding: 0.9rem;
+  background: var(--contrast-paper);
+}
+
+.deployment-metrics strong {
+  color: var(--contrast-blue);
+  font-family: var(--font-mono);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.deployment-metrics span {
+  color: var(--contrast-soft);
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
