@@ -10260,3 +10260,18 @@ mark.signal-highlight {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+@media (max-width: 620px) {
+  .deployment-loop,
+  .deployment-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .deployment-loop li {
+    min-height: 0;
+  }
+
+  .deployment-brief h3 {
+    max-width: 11ch;
+  }
+}
