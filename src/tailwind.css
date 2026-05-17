@@ -10098,6 +10098,23 @@ mark.signal-highlight {
   background: color-mix(in oklch, var(--contrast-cyan) 38%, var(--contrast-paper) 62%);
 }
 
+.lab-fit-lead h3 {
+  margin: 0;
+  max-width: 12ch;
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.lab-fit-lead p:last-child {
+  max-width: 42rem;
+  color: var(--contrast-soft);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
