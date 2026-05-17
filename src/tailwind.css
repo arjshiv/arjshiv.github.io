@@ -10085,6 +10085,27 @@ mark.signal-highlight {
   align-items: end;
 }
 
+.tuesday-controls label {
+  align-self: center;
+  color: var(--contrast-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tuesday-output {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.3rem;
+  background: var(--contrast-paper);
+  padding: 1rem;
+  box-shadow: var(--contrast-shadow-sm);
+}
+
 .deployment-room {
   --deploy-panel: color-mix(in oklch, var(--contrast-ice) 66%, var(--contrast-paper) 34%);
 }
