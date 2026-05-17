@@ -10245,3 +10245,18 @@ mark.signal-highlight {
     box-shadow 140ms var(--ease-out),
     background-color 140ms var(--ease-out);
 }
+
+@media (max-width: 980px) {
+  .deployment-board {
+    grid-template-columns: 1fr;
+  }
+
+  .deployment-brief,
+  .deployment-proof {
+    min-height: 0;
+  }
+
+  .deployment-loop {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
