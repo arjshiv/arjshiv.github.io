@@ -842,7 +842,11 @@
     const render = () => {
       const claimText = tuesdayClaims[claim.value] || tuesdayClaims.answers;
       const envText = tuesdayEnvironments[environment.value] || tuesdayEnvironments.operator;
-      output.innerHTML = `<p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>`;
+      const breakpoints = tuesdayBreakpoints[claim.value] || tuesdayBreakpoints.answers;
+      output.innerHTML = `
+        <p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>
+        <ul>${breakpoints.map((item) => `<li>Demo risk: ${escapeHtml(item)}</li>`).join('')}</ul>
+      `;
     };
   };
 
