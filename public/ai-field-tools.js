@@ -110,6 +110,13 @@
     workforce: ['AC is out and I work nights.', 'I need a payment plan before Friday.', 'The playground gate does not latch.', 'Can I get text updates instead of portal notices?'],
   };
 
+  const tuesdayClaims = {
+    answers: 'The demo answers customer messages.',
+    research: 'The demo summarizes customer research.',
+    sales: 'The demo writes sales follow-up.',
+    ops: 'The demo routes operational work.',
+  };
+
   const designCritique = [
     ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
     ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
