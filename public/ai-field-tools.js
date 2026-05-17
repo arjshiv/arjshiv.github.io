@@ -117,6 +117,13 @@
     ops: 'The demo routes operational work.',
   };
 
+  const tuesdayEnvironments = {
+    operator: 'a busy operator team',
+    enterprise: 'an enterprise customer',
+    field: 'a frontline team',
+    exec: 'an exec sponsor review',
+  };
+
   const designCritique = [
     ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
     ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
