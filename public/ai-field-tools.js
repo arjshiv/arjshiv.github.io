@@ -131,6 +131,13 @@
     ops: ['routing ambiguity', 'permission gaps', 'no close-the-loop signal'],
   };
 
+  const tuesdayEnvironmentPressure = {
+    operator: ['time pressure', 'many small exceptions', 'resident trust'],
+    enterprise: ['security review', 'systems integration', 'change management'],
+    field: ['low patience', 'mobile use', 'messy language'],
+    exec: ['ROI proof', 'board-level narrative', 'risk ownership'],
+  };
+
   const designCritique = [
     ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
     ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
