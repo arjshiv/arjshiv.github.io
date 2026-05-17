@@ -10155,6 +10155,27 @@ mark.signal-highlight {
   line-height: 1.45;
 }
 
+.lab-fit-proof {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+  background: var(--contrast-blue);
+  color: var(--contrast-paper);
+}
+
+.lab-fit-proof .story-label {
+  color: color-mix(in oklch, var(--contrast-paper) 82%, var(--contrast-cyan) 18%);
+}
+
+.lab-fit-proof p:last-child {
+  max-width: 74ch;
+  margin: 0;
+  color: var(--contrast-paper);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
