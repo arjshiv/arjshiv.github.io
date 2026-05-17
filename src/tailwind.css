@@ -10072,3 +10072,50 @@ mark.signal-highlight {
 
 /* Next polish 101 */
 @media (hover:none){.route-ticket:hover,.feature-card:hover,.link-preview-card:hover,.article-card:hover,.story-card:hover,.role-card:hover,.principle-card:hover,.now-card:hover,.stat-card:hover{transform:none}}
+
+.deployment-room {
+  --deploy-panel: color-mix(in oklch, var(--contrast-ice) 66%, var(--contrast-paper) 34%);
+}
+
+.deployment-board {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(0.85rem, 2vw, 1.2rem);
+  align-items: stretch;
+}
+
+.deployment-brief,
+.deployment-proof,
+.deployment-loop li,
+.deployment-metrics div {
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.34rem;
+  background: var(--deploy-panel);
+  color: var(--contrast-ink);
+  box-shadow: var(--contrast-shadow-sm);
+}
+
+.deployment-brief {
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
+  min-height: 24rem;
+  padding: clamp(1.1rem, 2.2vw, 1.45rem);
+}
+
+.deployment-brief h3 {
+  margin: 0;
+  max-width: 13ch;
+  font-family: var(--font-mono);
+  font-size: clamp(2.15rem, 4vw, 3.55rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.deployment-brief p:last-child {
+  max-width: 42rem;
+  color: var(--contrast-soft);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
