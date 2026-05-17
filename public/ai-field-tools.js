@@ -833,6 +833,14 @@
     });
   };
 
+  const initTuesdayTest = () => {
+    const claim = document.querySelector('#tuesday-claim');
+    const environment = document.querySelector('#tuesday-env');
+    const button = document.querySelector('#run-tuesday-test');
+    const output = document.querySelector('#tuesday-output');
+    if (!claim || !environment || !button || !output) return;
+  };
+
   const initSignalSim = () => {
     const select = document.querySelector('#building-type');
     const button = document.querySelector('#simulate-signals');
