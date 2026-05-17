@@ -848,6 +848,7 @@
         <p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>
         <ul>${breakpoints.map((item) => `<li>Demo risk: ${escapeHtml(item)}</li>`).join('')}</ul>
         <ul>${pressure.map((item) => `<li>Workday pressure: ${escapeHtml(item)}</li>`).join('')}</ul>
+        <p><strong>Adoption test:</strong> Name the owner, show the missing context, decide what gets reviewed, and measure whether the work moved.</p>
       `;
     };
   };
