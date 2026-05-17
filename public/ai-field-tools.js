@@ -839,6 +839,11 @@
     const button = document.querySelector('#run-tuesday-test');
     const output = document.querySelector('#tuesday-output');
     if (!claim || !environment || !button || !output) return;
+    const render = () => {
+      const claimText = tuesdayClaims[claim.value] || tuesdayClaims.answers;
+      const envText = tuesdayEnvironments[environment.value] || tuesdayEnvironments.operator;
+      output.innerHTML = `<p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>`;
+    };
   };
 
   const initSignalSim = () => {
