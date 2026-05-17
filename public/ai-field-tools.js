@@ -843,9 +843,11 @@
       const claimText = tuesdayClaims[claim.value] || tuesdayClaims.answers;
       const envText = tuesdayEnvironments[environment.value] || tuesdayEnvironments.operator;
       const breakpoints = tuesdayBreakpoints[claim.value] || tuesdayBreakpoints.answers;
+      const pressure = tuesdayEnvironmentPressure[environment.value] || tuesdayEnvironmentPressure.operator;
       output.innerHTML = `
         <p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>
         <ul>${breakpoints.map((item) => `<li>Demo risk: ${escapeHtml(item)}</li>`).join('')}</ul>
+        <ul>${pressure.map((item) => `<li>Workday pressure: ${escapeHtml(item)}</li>`).join('')}</ul>
       `;
     };
   };
