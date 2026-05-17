@@ -1244,6 +1244,7 @@
   initGuide();
   initTalkLens();
   initUsefulAi();
+  initTuesdayTest();
   initSignalSim();
   initHighlights();
   initDesignCritique();
