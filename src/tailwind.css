@@ -10073,6 +10073,31 @@ mark.signal-highlight {
 /* Next polish 101 */
 @media (hover:none){.route-ticket:hover,.feature-card:hover,.link-preview-card:hover,.article-card:hover,.story-card:hover,.role-card:hover,.principle-card:hover,.now-card:hover,.stat-card:hover{transform:none}}
 
+.lab-fit-board {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(0.85rem, 2vw, 1.2rem);
+  align-items: stretch;
+}
+
+.lab-fit-lead,
+.lab-fit-lanes article,
+.lab-fit-proof {
+  border: 2px solid var(--contrast-line);
+  border-radius: 0.34rem;
+  box-shadow: var(--contrast-shadow-sm);
+  color: var(--contrast-ink);
+}
+
+.lab-fit-lead {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 25rem;
+  padding: clamp(1.15rem, 2.4vw, 1.55rem);
+  background: color-mix(in oklch, var(--contrast-cyan) 38%, var(--contrast-paper) 62%);
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
