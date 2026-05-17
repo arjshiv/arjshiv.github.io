@@ -10139,6 +10139,22 @@ mark.signal-highlight {
   font-variant-numeric: tabular-nums;
 }
 
+.lab-fit-lanes h4 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.lab-fit-lanes p {
+  margin: 0;
+  color: var(--contrast-soft);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
 .tuesday-test-tool {
   background:
     linear-gradient(110deg, color-mix(in oklch, var(--contrast-mint) 36%, var(--contrast-paper) 64%) 0 48%, color-mix(in oklch, var(--contrast-cyan) 34%, var(--contrast-paper) 66%) 48% 100%);
