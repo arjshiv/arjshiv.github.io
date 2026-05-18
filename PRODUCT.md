@@ -49,7 +49,7 @@ Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings,
 ## Strategic Principles
 
 - The visitor should understand the throughline in one pass: customer truth, context, measurement, and follow-through.
-- The first scroll should answer the three serious-reader questions: what is the thesis, where is the proof, and when is Arjun useful?
+- The first scroll should answer the three serious-reader questions without announcing segmentation: what is the thesis, where is the proof, and when is Arjun useful?
 - The design should feel built, not decorated.
 - Retro styling must improve legibility and memory. It should not create random borders, dead slabs, or table-like accidents.
 - The mobile version is a first-class reading experience.
