@@ -10631,3 +10631,16 @@ mark.signal-highlight {
 .evidence-table p {
   margin: 0;
 }
+
+.evidence-table h3 {
+  color: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem);
+  line-height: 1;
+}
+
+.evidence-table p:not(.story-label) {
+  color: var(--contrast-soft);
+  font-size: 1rem;
+  line-height: 1.5;
+}
