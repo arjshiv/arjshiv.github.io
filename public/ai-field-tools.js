@@ -95,7 +95,7 @@
       ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
     evidence: [
-      ['#proof-brief', 'Start with the three claims and the receipts nearby.'],
+      ['#work', 'Start with the work history and outcomes.'],
       ['#evidence-ledger', 'Use the ledger for outcomes, recognition, and original work.'],
       ['#work', 'Check the role history and measurable outcomes.'],
       ['#links', 'Open the external sources, dates, and public references.'],
@@ -149,7 +149,7 @@
     ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
     ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
     ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to help the reader.'],
-    ['Function', '9.1', 'The browser tools do real work without a server: answer, route, score, simulate, highlight, and keep notes locally. That is more useful than a fake chat widget.'],
+    ['Function', '9.1', 'The browser tools do real work without a server: answer, score, simulate, highlight, and keep notes locally. That is more useful than a fake chat widget.'],
     ['Taste', '8.5', 'The best version of the site should feel like a useful object. Push each interaction toward judgment, not novelty.'],
   ];
 
@@ -194,15 +194,13 @@
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
     evidence: [
-      ['Proof brief', '#proof-brief', 'Start with the concise claim set.'],
-      ['Evidence ledger', '#evidence-ledger', 'Use the ledger for outcomes, recognition, and source links.'],
+      ['Work history', '#work', 'Start with the roles and outcomes.'],
+      ['Source links', '#evidence-ledger', 'Use the ledger for outcomes, recognition, and source links.'],
       ['External links', '#links', 'Open the public articles, talks, and dates.'],
     ],
   };
 
   const compassItems = [
-    ['Proof', '#proof-brief', 'the concise argument'],
-    ['Fit', '#advisor-fit', 'where I can help'],
     ['Evidence', '#evidence-ledger', 'claims with receipts'],
     ['Now', '#now', 'what I am building'],
     ['Map', '#signal-map', 'how resident messages turn into decisions'],
@@ -439,7 +437,7 @@
       id: 'candidate-lens',
       label: 'Candidate lens',
       title: 'Candidates should see how the work really feels.',
-      deck: 'A browser AI summary can help, but the route should still show the work style directly.',
+      deck: 'A browser AI summary can help, but the page should still show the work style directly.',
       kind: 'route',
       values: [
         ['Context', 91],
@@ -599,10 +597,10 @@
       notes: ['Contrast is not optional.', 'Hover cannot reduce readability.', 'Mobile counts first.'],
     },
     {
-      id: 'reading-time-route',
-      label: 'Reading route',
+      id: 'reading-time-map',
+      label: 'Quick read',
       title: 'Different readers should not have to take the same path.',
-      deck: 'The route view helps a browser model suggest a path without changing the page itself.',
+      deck: 'This view helps a browser model pull relevant sections without changing the page itself.',
       kind: 'route',
       values: [
         ['Skim', 45],
@@ -647,7 +645,7 @@
       id: 'operator-day',
       label: 'Operator day',
       title: 'The best AI feature is the one that gives time back during the day.',
-      deck: 'This route keeps the product honest: shorter commute from problem to finished work.',
+      deck: 'This keeps the product honest: shorter commute from problem to finished work.',
       kind: 'route',
       values: [
         ['Inbox', 83],

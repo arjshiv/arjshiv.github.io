@@ -83,7 +83,7 @@ await browser.close();
 
 const failures = [];
 if (!result.answer.includes('ResiDesk')) failures.push('Ask/conversation answer did not render expected grounded content.');
-if (result.guideCount !== 5) failures.push(`Reading guide rendered ${result.guideCount} items, expected 5.`);
+if (result.guideCount !== 5) failures.push(`Section finder rendered ${result.guideCount} items, expected 5.`);
 if (result.lensCount !== 3) failures.push(`Transcript lens rendered ${result.lensCount} items, expected 3.`);
 if (result.visualModeCount !== 30) failures.push(`Visual lab rendered ${result.visualModeCount} modes, expected 30.`);
 if (!result.visualStage.toLowerCase().includes('operator')) failures.push('Visual lab did not render the selected operator-day view.');
@@ -95,7 +95,7 @@ if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not ren
 if (result.proofCount !== 3) failures.push(`Link packet rendered ${result.proofCount} items, expected 3.`);
 if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
-if (result.compassCount !== 9) failures.push(`Site compass rendered ${result.compassCount} links, expected 9.`);
+if (result.compassCount !== 7) failures.push(`Site compass rendered ${result.compassCount} links, expected 7.`);
 if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
 if (result.overflow !== 0) failures.push(`Desktop overflow is ${result.overflow}px.`);
 if (result.mobileOverflow !== 0) failures.push(`Mobile overflow is ${result.mobileOverflow}px.`);

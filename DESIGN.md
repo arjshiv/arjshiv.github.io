@@ -47,7 +47,7 @@ Use Geist and Geist Mono only.
 
 - Page width stays constrained around the existing max width.
 - Sections should have a visible rhythm: heading, content, proof or links. Avoid giant empty slabs.
-- Early sections should work as a brief: a quiet start map, proof, advisor fit, then current work. It should never sound like the visitor is being sorted into a funnel.
+- Early sections should feel like an authentic founder page: current notes, current work, receipts, then deeper context. It should never sound like the visitor is being sorted into a funnel.
 - Hero can be asymmetric. Utility and content sections should favor readable grids.
 - Cards are allowed when they behave like physical printed objects. Do not nest cards inside cards.
 - Avoid full-width heavy-bordered rows unless the row is genuinely a table or control.
