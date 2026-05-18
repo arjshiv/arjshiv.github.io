@@ -193,6 +193,11 @@
       ['Prior outcomes', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
+    evidence: [
+      ['Proof brief', '#proof-brief', 'Start with the concise claim set.'],
+      ['Evidence ledger', '#evidence-ledger', 'Use the ledger for outcomes, recognition, and source links.'],
+      ['External links', '#links', 'Open the public articles, talks, and dates.'],
+    ],
   };
 
   const compassItems = [
