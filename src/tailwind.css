@@ -10511,3 +10511,27 @@ mark.signal-highlight {
     max-width: 18ch;
   }
 }
+
+.advisor-fit-board {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.95fr) minmax(0, 1.35fr);
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  align-items: stretch;
+}
+
+.advisor-fit-lead,
+.advisor-fit-list article {
+  border: 3px solid var(--contrast-line);
+  border-radius: 1rem;
+  background: color-mix(in oklch, var(--contrast-mint) 44%, var(--contrast-paper) 56%);
+  box-shadow: var(--contrast-shadow-sm);
+  color: var(--contrast-ink);
+}
+
+.advisor-fit-lead {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 25rem;
+  padding: clamp(1.25rem, 2.8vw, 2rem);
+}
