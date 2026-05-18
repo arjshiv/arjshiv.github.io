@@ -95,7 +95,7 @@ if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not ren
 if (result.proofCount !== 3) failures.push(`Link packet rendered ${result.proofCount} items, expected 3.`);
 if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
-if (result.compassCount !== 6) failures.push(`Site compass rendered ${result.compassCount} links, expected 6.`);
+if (result.compassCount !== 9) failures.push(`Site compass rendered ${result.compassCount} links, expected 9.`);
 if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
 if (result.overflow !== 0) failures.push(`Desktop overflow is ${result.overflow}px.`);
 if (result.mobileOverflow !== 0) failures.push(`Mobile overflow is ${result.mobileOverflow}px.`);
