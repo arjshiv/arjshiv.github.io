@@ -47,6 +47,7 @@ Use Geist and Geist Mono only.
 
 - Page width stays constrained around the existing max width.
 - Sections should have a visible rhythm: heading, content, proof or links. Avoid giant empty slabs.
+- Early sections should work as a brief: reader paths, proof, advisor fit, then current work.
 - Hero can be asymmetric. Utility and content sections should favor readable grids.
 - Cards are allowed when they behave like physical printed objects. Do not nest cards inside cards.
 - Avoid full-width heavy-bordered rows unless the row is genuinely a table or control.
