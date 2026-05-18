@@ -10535,3 +10535,19 @@ mark.signal-highlight {
   min-height: 25rem;
   padding: clamp(1.25rem, 2.8vw, 2rem);
 }
+
+.advisor-fit-lead h3 {
+  margin: 0;
+  max-width: 16ch;
+  color: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: clamp(2rem, 4.6vw, 3.8rem);
+  line-height: 0.95;
+}
+
+.advisor-fit-lead p:last-child {
+  margin: 0;
+  color: var(--contrast-soft);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.5;
+}
