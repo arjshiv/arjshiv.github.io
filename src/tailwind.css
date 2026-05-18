@@ -10599,3 +10599,22 @@ mark.signal-highlight {
     min-height: 0;
   }
 }
+
+.evidence-table {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.evidence-table article {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  min-height: 21rem;
+  padding: clamp(1.15rem, 2vw, 1.55rem);
+  border: 3px solid var(--contrast-line);
+  border-radius: 1rem;
+  background: color-mix(in oklch, var(--contrast-cyan) 38%, var(--contrast-paper) 62%);
+  box-shadow: var(--contrast-shadow-sm);
+  color: var(--contrast-ink);
+}
