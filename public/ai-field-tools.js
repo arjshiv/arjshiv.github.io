@@ -201,6 +201,9 @@
   };
 
   const compassItems = [
+    ['Proof', '#proof-brief', 'the concise argument'],
+    ['Fit', '#advisor-fit', 'where I can help'],
+    ['Evidence', '#evidence-ledger', 'claims with receipts'],
     ['Now', '#now', 'what I am building'],
     ['Map', '#signal-map', 'how resident messages turn into decisions'],
     ['Work', '#work', 'the work arc'],
