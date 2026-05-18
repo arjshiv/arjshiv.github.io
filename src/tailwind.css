@@ -10618,3 +10618,16 @@ mark.signal-highlight {
   box-shadow: var(--contrast-shadow-sm);
   color: var(--contrast-ink);
 }
+
+.evidence-table article:nth-child(2) {
+  background: color-mix(in oklch, var(--contrast-mint) 35%, var(--contrast-paper) 65%);
+}
+
+.evidence-table article:nth-child(3) {
+  background: color-mix(in oklch, var(--contrast-ice) 78%, var(--contrast-paper) 22%);
+}
+
+.evidence-table h3,
+.evidence-table p {
+  margin: 0;
+}
