@@ -94,6 +94,13 @@
       ['#investing', 'Read the investing lens.'],
       ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
+    evidence: [
+      ['#proof-brief', 'Start with the three claims and the receipts nearby.'],
+      ['#evidence-ledger', 'Use the ledger for outcomes, recognition, and original work.'],
+      ['#work', 'Check the role history and measurable outcomes.'],
+      ['#links', 'Open the external sources, dates, and public references.'],
+      ['#conversations', 'Use talks when direct voice matters.'],
+    ],
   };
 
   const talkLenses = {
