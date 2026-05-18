@@ -10654,3 +10654,13 @@ mark.signal-highlight {
   text-decoration-thickness: 0.14em;
   text-underline-offset: 0.18em;
 }
+
+@media (max-width: 980px) {
+  .evidence-table {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-table article {
+    min-height: 0;
+  }
+}
