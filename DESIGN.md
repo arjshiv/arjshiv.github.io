@@ -14,7 +14,7 @@ Reference family:
 
 ## Physical Scene
 
-A partner or operator is reading the site on a laptop during the workday, probably between calls, trying to decide whether Arjun's work is specific and real. The page should be light, legible, fast to scan, and tactile enough to be memorable.
+A founder, AI-team executive, partner, or evidence reviewer is reading the site on a laptop during the workday, probably between calls, trying to decide whether Arjun's work is specific and real. The page should be light, legible, fast to scan, and tactile enough to be memorable.
 
 ## Color Strategy
 
