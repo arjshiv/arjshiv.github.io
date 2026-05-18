@@ -10587,3 +10587,15 @@ mark.signal-highlight {
   color: var(--contrast-soft);
   line-height: 1.42;
 }
+
+@media (max-width: 980px) {
+  .advisor-fit-board,
+  .advisor-fit-list {
+    grid-template-columns: 1fr;
+  }
+
+  .advisor-fit-lead,
+  .advisor-fit-list article {
+    min-height: 0;
+  }
+}
