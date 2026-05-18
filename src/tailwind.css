@@ -10565,3 +10565,25 @@ mark.signal-highlight {
   min-height: 13.5rem;
   padding: clamp(1rem, 2vw, 1.35rem);
 }
+
+.advisor-fit-list span {
+  color: #a91d2d;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.advisor-fit-list h4,
+.advisor-fit-list p {
+  margin: 0;
+}
+
+.advisor-fit-list h4 {
+  color: var(--contrast-ink);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+.advisor-fit-list p {
+  color: var(--contrast-soft);
+  line-height: 1.42;
+}
