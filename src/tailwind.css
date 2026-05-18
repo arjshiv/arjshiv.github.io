@@ -10644,3 +10644,13 @@ mark.signal-highlight {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+.evidence-table .text-link {
+  align-self: end;
+  width: max-content;
+  margin-top: auto;
+  color: var(--contrast-blue);
+  font-weight: 800;
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.18em;
+}
