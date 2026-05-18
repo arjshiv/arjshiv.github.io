@@ -14,6 +14,8 @@ The site is not a generic founder landing page. It should feel like a working fi
 
 - Rental housing owners, operators, investors, and partners trying to understand ResiDesk and Arjun's point of view.
 - Founders, engineers, and product people interested in applied AI, agents, evaluation, and workflow design.
+- Founders and executive teams evaluating Arjun as an advisor, operator, or AI deployment partner.
+- Evidence reviewers, including immigration-adjacent readers, who need claims, dates, outcomes, and third-party links without hunting.
 - Journalists, event organizers, podcast hosts, and conference teams looking for a concise source of biography, talks, and links.
 - Candidates and collaborators who want to understand how Arjun thinks before reaching out.
 
