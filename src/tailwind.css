@@ -10551,3 +10551,17 @@ mark.signal-highlight {
   font-size: clamp(1rem, 1.6vw, 1.2rem);
   line-height: 1.5;
 }
+
+.advisor-fit-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.85rem, 1.8vw, 1.1rem);
+}
+
+.advisor-fit-list article {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 13.5rem;
+  padding: clamp(1rem, 2vw, 1.35rem);
+}
