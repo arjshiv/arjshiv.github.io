@@ -10481,3 +10481,19 @@ mark.signal-highlight {
 .proof-claim-primary {
   background: color-mix(in oklch, var(--contrast-cyan) 58%, var(--contrast-paper) 42%);
 }
+
+.proof-claim h3 {
+  margin: 0;
+  max-width: 14ch;
+  color: var(--contrast-ink);
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 0.96;
+}
+
+.proof-claim p:last-child {
+  margin: 0;
+  color: var(--contrast-soft);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.48;
+}
