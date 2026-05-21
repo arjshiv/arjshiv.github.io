@@ -495,7 +495,7 @@
     {
       id: 'personal-arc',
       label: 'Personal arc',
-      title: 'The path makes more sense when it stays tied to measurement.',
+      title: 'The arc makes more sense when it stays tied to measurement.',
       deck: 'Physics, finance, education finance, housing: different rooms, same bias toward useful measurement.',
       kind: 'route',
       values: [
