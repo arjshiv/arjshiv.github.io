@@ -121,7 +121,7 @@
     answers: 'The demo answers customer messages.',
     research: 'The demo summarizes customer research.',
     sales: 'The demo writes sales follow-up.',
-    ops: 'The demo routes operational work.',
+    ops: 'The demo moves operational work.',
   };
 
   const tuesdayEnvironments = {
