@@ -83,7 +83,7 @@
     candidate: [
       ['#operating-system', 'Read how the company thinks about work.'],
       ['#now', 'Understand the current focus.'],
-      ['#about', 'Get the personal path and operating bias.'],
+      ['#about', 'Get the personal arc and operating bias.'],
       ['#writing', 'Read the principles.'],
       ['#links', 'Use recordings to hear how the work sounds without site polish.'],
     ],
