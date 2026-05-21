@@ -883,7 +883,7 @@
         <ul>
           <li>Theme: maintenance, access, and communication gaps.</li>
           <li>Risk: repeated small issues become renewal objections because nobody sees the pattern early enough.</li>
-          <li>Next step: route urgent cases, then show the owner the recurring pattern.</li>
+          <li>Next step: triage urgent cases, then show the owner the recurring pattern.</li>
         </ul>
       `;
     });
