@@ -48,7 +48,7 @@ Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings,
 
 ## Strategic Principles
 
-- The visitor should understand the throughline in one pass: customer truth, context, measurement, and follow-through.
+- The visitor should understand the throughline in one pass: customer context, measurement, ownership, and follow-through.
 - The first scroll should feel like an actual founder's site. It should answer what Arjun is building, what he believes, and where the receipts are without sorting the reader into a persona.
 - The design should feel built, not decorated.
 - Retro styling must improve legibility and memory. It should not create random borders, dead slabs, or table-like accidents.
