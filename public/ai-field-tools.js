@@ -184,7 +184,7 @@
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
     ],
     journalist: [
-      ['Work arc', '#work', 'Use the path from physics to BlackRock, Climb, and ResiDesk.'],
+      ['Work arc', '#work', 'Use the arc from physics to BlackRock, Climb, and ResiDesk.'],
       ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the polished site copy.'],
       ['Links', '#links', 'Use the press links as external sourcing.'],
     ],
