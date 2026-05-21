@@ -215,7 +215,7 @@
       id: 'site-spine',
       label: 'Site spine',
       title: 'The whole page has one job.',
-      deck: 'The path from what customers keep saying to work someone owns.',
+      deck: 'How what customers keep saying becomes work someone owns.',
       kind: 'route',
       values: [
         ['Customer', 92],
