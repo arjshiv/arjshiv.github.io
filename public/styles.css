@@ -316,3 +316,6 @@
 
 /* prevent grid overflow for feature card. */
 .feature-card{min-width:0;}
+
+/* balance local headings for feature card. */
+.feature-card :where(h1,h2,h3,h4){text-wrap:balance;}
