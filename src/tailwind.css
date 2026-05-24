@@ -11072,3 +11072,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for AI tool. */
 .ai-tool{min-width:0;}
+
+/* balance local headings for AI tool. */
+.ai-tool :where(h1,h2,h3,h4){text-wrap:balance;}
