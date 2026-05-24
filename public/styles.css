@@ -370,3 +370,6 @@
 
 /* stabilize embedded media for FAQ summary. */
 .faq-card summary :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for FAQ summary. */
+.faq-card summary :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
