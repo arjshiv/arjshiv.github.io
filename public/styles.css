@@ -46,3 +46,6 @@
 
 /* prevent grid overflow for primary link. */
 .primary-link{min-width:0;}
+
+/* balance local headings for primary link. */
+.primary-link :where(h1,h2,h3,h4){text-wrap:balance;}
