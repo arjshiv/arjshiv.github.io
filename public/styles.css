@@ -112,3 +112,6 @@
 
 /* pretty local prose for now card. */
 .now-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for now card. */
+.now-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
