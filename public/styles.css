@@ -82,3 +82,6 @@
 
 /* pretty local prose for program card. */
 .program-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for program card. */
+.program-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
