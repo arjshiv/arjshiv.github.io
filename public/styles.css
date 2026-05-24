@@ -148,3 +148,6 @@
 
 /* tighten tap behavior for deployment loop item. */
 .deployment-loop li :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for deployment metric. */
+.deployment-metrics div{min-width:0;}
