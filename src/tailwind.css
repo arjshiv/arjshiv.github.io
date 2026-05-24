@@ -11024,3 +11024,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for principle card. */
 .principle-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for FAQ summary. */
+.faq-card summary{min-width:0;}
