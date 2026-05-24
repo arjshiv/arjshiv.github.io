@@ -10790,3 +10790,6 @@ mark.signal-highlight {
 
 /* balance local headings for operating rule. */
 .operating-rule :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for operating rule. */
+.operating-rule :where(p,li){text-wrap:pretty;}
