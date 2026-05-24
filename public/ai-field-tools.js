@@ -96,7 +96,7 @@
     ],
     evidence: [
       ['#work', 'Start with the work history and outcomes.'],
-      ['#evidence-ledger', 'Use the ledger for outcomes, recognition, and original work.'],
+      ['#proof-table', 'Use the proof table for claim, role, result, and source.'],
       ['#work', 'Check the role history and measurable outcomes.'],
       ['#links', 'Open the external sources, dates, and public references.'],
       ['#conversations', 'Use talks when direct voice matters.'],
