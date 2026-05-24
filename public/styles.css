@@ -121,3 +121,6 @@
 
 /* prevent grid overflow for operating rule. */
 .operating-rule{min-width:0;}
+
+/* balance local headings for operating rule. */
+.operating-rule :where(h1,h2,h3,h4){text-wrap:balance;}
