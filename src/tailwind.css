@@ -10967,3 +10967,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for recent item. */
 .recent-item{min-width:0;}
+
+/* balance local headings for recent item. */
+.recent-item :where(h1,h2,h3,h4){text-wrap:balance;}
