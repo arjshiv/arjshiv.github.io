@@ -439,3 +439,6 @@
 
 /* balance local headings for video poster. */
 .video-poster :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for video poster. */
+.video-poster :where(p,li){text-wrap:pretty;}
