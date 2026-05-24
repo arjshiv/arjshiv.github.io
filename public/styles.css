@@ -91,3 +91,6 @@
 
 /* prevent grid overflow for program item. */
 .program-item{min-width:0;}
+
+/* balance local headings for program item. */
+.program-item :where(h1,h2,h3,h4){text-wrap:balance;}
