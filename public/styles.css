@@ -499,3 +499,6 @@
 
 /* Compression 087: proof table links. */
 .proof-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.proof-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
+
+/* Compression 088: proof table mobile layout. */
+@media (max-width:760px){.proof-row{grid-template-columns:1fr}.proof-row>*{border-left:0;border-top:1px solid color-mix(in oklch,var(--contrast-line) 50%,transparent)}.proof-row>*:first-child{border-top:0}.proof-row-head{display:none}}
