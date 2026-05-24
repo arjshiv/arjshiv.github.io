@@ -11021,3 +11021,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for principle card. */
 .principle-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for principle card. */
+.principle-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
