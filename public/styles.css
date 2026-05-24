@@ -436,3 +436,6 @@
 
 /* prevent grid overflow for video poster. */
 .video-poster{min-width:0;}
+
+/* balance local headings for video poster. */
+.video-poster :where(h1,h2,h3,h4){text-wrap:balance;}
