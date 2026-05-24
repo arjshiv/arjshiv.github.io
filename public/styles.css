@@ -400,3 +400,6 @@
 
 /* stabilize embedded media for link preview card. */
 .link-preview-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for link preview card. */
+.link-preview-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
