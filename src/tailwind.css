@@ -10724,3 +10724,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for primary link. */
 .primary-link :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for secondary link. */
+.secondary-link{min-width:0;}
