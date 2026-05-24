@@ -139,3 +139,6 @@
 
 /* balance local headings for deployment loop item. */
 .deployment-loop li :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for deployment loop item. */
+.deployment-loop li :where(p,li){text-wrap:pretty;}
