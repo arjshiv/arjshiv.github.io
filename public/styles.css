@@ -154,3 +154,6 @@
 
 /* balance local headings for deployment metric. */
 .deployment-metrics div :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for deployment metric. */
+.deployment-metrics div :where(p,li){text-wrap:pretty;}
