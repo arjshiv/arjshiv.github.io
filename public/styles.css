@@ -52,3 +52,6 @@
 
 /* pretty local prose for primary link. */
 .primary-link :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for primary link. */
+.primary-link :where(img,video,iframe,svg){max-width:100%;height:auto;}
