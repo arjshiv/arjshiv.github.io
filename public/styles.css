@@ -343,3 +343,6 @@
 
 /* tighten tap behavior for article card. */
 .article-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for principle card. */
+.principle-card{min-width:0;}
