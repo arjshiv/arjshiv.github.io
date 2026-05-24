@@ -10877,3 +10877,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for signal readout. */
 .signal-readout{min-width:0;}
+
+/* balance local headings for signal readout. */
+.signal-readout :where(h1,h2,h3,h4){text-wrap:balance;}
