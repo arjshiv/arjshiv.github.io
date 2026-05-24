@@ -22,3 +22,6 @@
 
 /* pretty local prose for hero note. */
 .hero-note :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for hero note. */
+.hero-note :where(img,video,iframe,svg){max-width:100%;height:auto;}
