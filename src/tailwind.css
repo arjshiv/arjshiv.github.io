@@ -11123,3 +11123,6 @@ mark.signal-highlight {
 
 /* pretty local prose for command result. */
 .command-result :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for command result. */
+.command-result :where(img,video,iframe,svg){max-width:100%;height:auto;}
