@@ -469,3 +469,6 @@
 
 /* Compression 077: alternate reader path colors. */
 .reader-path-card:nth-child(2){background:color-mix(in oklch,var(--contrast-mint) 34%,var(--contrast-paper) 66%)}.reader-path-card:nth-child(3){background:color-mix(in oklch,var(--contrast-ice) 82%,var(--contrast-paper) 18%)}
+
+/* Compression 078: add reader path hover tactility. */
+.reader-path-card{transition:transform .14s var(--ease-out),box-shadow .14s var(--ease-out),background-color .14s var(--ease-out)}.reader-path-card:focus-visible,.reader-path-card:hover{transform:translate(-1px,-1px);box-shadow:var(--contrast-shadow);outline:0}
