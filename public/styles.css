@@ -193,3 +193,6 @@
 
 /* tighten tap behavior for AI field lead. */
 .lab-fit-lead :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for signal stage. */
+.signal-stage{min-width:0;}
