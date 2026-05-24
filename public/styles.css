@@ -67,3 +67,6 @@
 
 /* pretty local prose for secondary link. */
 .secondary-link :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for secondary link. */
+.secondary-link :where(img,video,iframe,svg){max-width:100%;height:auto;}
