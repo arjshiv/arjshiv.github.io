@@ -11111,3 +11111,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for video poster. */
 .video-poster :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for video poster. */
+.video-poster :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
