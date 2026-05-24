@@ -10922,3 +10922,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for role card. */
 .role-card{min-width:0;}
+
+/* balance local headings for role card. */
+.role-card :where(h1,h2,h3,h4){text-wrap:balance;}
