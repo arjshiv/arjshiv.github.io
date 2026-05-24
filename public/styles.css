@@ -382,3 +382,6 @@
 
 /* pretty local prose for FAQ card. */
 .faq-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for FAQ card. */
+.faq-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
