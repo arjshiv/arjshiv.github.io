@@ -97,3 +97,6 @@
 
 /* pretty local prose for program item. */
 .program-item :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for program item. */
+.program-item :where(img,video,iframe,svg){max-width:100%;height:auto;}
