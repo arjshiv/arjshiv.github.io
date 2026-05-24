@@ -307,3 +307,6 @@
 
 /* pretty local prose for recent item. */
 .recent-item :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for recent item. */
+.recent-item :where(img,video,iframe,svg){max-width:100%;height:auto;}
