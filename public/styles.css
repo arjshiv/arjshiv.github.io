@@ -34,3 +34,6 @@
 
 /* balance local headings for hero actions. */
 .hero-actions :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for hero actions. */
+.hero-actions :where(p,li){text-wrap:pretty;}
