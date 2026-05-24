@@ -183,6 +183,11 @@
       ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it real.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
     ],
+    'ai-team': [
+      ['Tuesday test', '#deployment-room', 'Start with what has to survive after the model demo.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the system-around-the-model argument.'],
+      ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and owner-visible work show up in housing.'],
+    ],
     journalist: [
       ['Work arc', '#work', 'Use the arc from physics to BlackRock, Climb, and ResiDesk.'],
       ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the polished site copy.'],
