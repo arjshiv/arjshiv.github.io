@@ -271,3 +271,6 @@
 
 /* prevent grid overflow for stat card. */
 .stat-card{min-width:0;}
+
+/* balance local headings for stat card. */
+.stat-card :where(h1,h2,h3,h4){text-wrap:balance;}
