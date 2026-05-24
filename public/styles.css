@@ -286,3 +286,6 @@
 
 /* prevent grid overflow for evidence card. */
 .evidence-table article{min-width:0;}
+
+/* balance local headings for evidence card. */
+.evidence-table article :where(h1,h2,h3,h4){text-wrap:balance;}
