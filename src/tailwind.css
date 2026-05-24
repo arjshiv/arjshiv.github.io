@@ -10727,3 +10727,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for secondary link. */
 .secondary-link{min-width:0;}
+
+/* balance local headings for secondary link. */
+.secondary-link :where(h1,h2,h3,h4){text-wrap:balance;}
