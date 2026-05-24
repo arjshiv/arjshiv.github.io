@@ -11027,3 +11027,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for FAQ summary. */
 .faq-card summary{min-width:0;}
+
+/* balance local headings for FAQ summary. */
+.faq-card summary :where(h1,h2,h3,h4){text-wrap:balance;}
