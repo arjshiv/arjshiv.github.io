@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: '#writing',
-      text: 'I care about AI that shortens the distance between a real problem and a finished task. Context, tests, handoff, and judgment matter more than novelty or model names.',
+      text: 'I care about AI that survives the Tuesday after the demo. Context, evals, handoff, trust, and judgment matter more than novelty or model names.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
