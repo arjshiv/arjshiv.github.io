@@ -313,3 +313,6 @@
 
 /* tighten tap behavior for recent item. */
 .recent-item :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for feature card. */
+.feature-card{min-width:0;}
