@@ -163,3 +163,6 @@
 
 /* tighten tap behavior for deployment metric. */
 .deployment-metrics div :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for AI field lane. */
+.lab-fit-lanes article{min-width:0;}
