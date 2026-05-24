@@ -10832,3 +10832,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for AI field lane. */
 .lab-fit-lanes article{min-width:0;}
+
+/* balance local headings for AI field lane. */
+.lab-fit-lanes article :where(h1,h2,h3,h4){text-wrap:balance;}
