@@ -253,3 +253,6 @@
 
 /* tighten tap behavior for story card. */
 .story-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for role card. */
+.role-card{min-width:0;}
