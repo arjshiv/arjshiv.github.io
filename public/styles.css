@@ -328,3 +328,6 @@
 
 /* tighten tap behavior for feature card. */
 .feature-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for article card. */
+.article-card{min-width:0;}
