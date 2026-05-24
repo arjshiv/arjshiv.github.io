@@ -376,3 +376,6 @@
 
 /* prevent grid overflow for FAQ card. */
 .faq-card{min-width:0;}
+
+/* balance local headings for FAQ card. */
+.faq-card :where(h1,h2,h3,h4){text-wrap:balance;}
