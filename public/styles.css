@@ -49,3 +49,6 @@
 
 /* balance local headings for primary link. */
 .primary-link :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for primary link. */
+.primary-link :where(p,li){text-wrap:pretty;}
