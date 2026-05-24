@@ -235,3 +235,6 @@
 
 /* stabilize embedded media for about copy. */
 .about-copy :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for about copy. */
+.about-copy :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
