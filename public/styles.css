@@ -103,3 +103,6 @@
 
 /* tighten tap behavior for program item. */
 .program-item :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for now card. */
+.now-card{min-width:0;}
