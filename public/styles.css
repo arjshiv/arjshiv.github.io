@@ -352,3 +352,6 @@
 
 /* pretty local prose for principle card. */
 .principle-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for principle card. */
+.principle-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
