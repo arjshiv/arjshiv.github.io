@@ -229,3 +229,6 @@
 
 /* balance local headings for about copy. */
 .about-copy :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for about copy. */
+.about-copy :where(p,li){text-wrap:pretty;}
