@@ -73,3 +73,6 @@
 
 /* tighten tap behavior for secondary link. */
 .secondary-link :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for program card. */
+.program-card{min-width:0;}
