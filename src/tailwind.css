@@ -10853,3 +10853,6 @@ mark.signal-highlight {
 
 /* pretty local prose for AI field lead. */
 .lab-fit-lead :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for AI field lead. */
+.lab-fit-lead :where(img,video,iframe,svg){max-width:100%;height:auto;}
