@@ -175,3 +175,6 @@
 
 /* stabilize embedded media for AI field lane. */
 .lab-fit-lanes article :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for AI field lane. */
+.lab-fit-lanes article :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
