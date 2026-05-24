@@ -10709,3 +10709,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for hero actions. */
 .hero-actions :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for primary link. */
+.primary-link{min-width:0;}
