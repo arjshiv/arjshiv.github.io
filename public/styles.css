@@ -391,3 +391,6 @@
 
 /* prevent grid overflow for link preview card. */
 .link-preview-card{min-width:0;}
+
+/* balance local headings for link preview card. */
+.link-preview-card :where(h1,h2,h3,h4){text-wrap:balance;}
