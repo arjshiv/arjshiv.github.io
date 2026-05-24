@@ -157,3 +157,6 @@
 
 /* pretty local prose for deployment metric. */
 .deployment-metrics div :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for deployment metric. */
+.deployment-metrics div :where(img,video,iframe,svg){max-width:100%;height:auto;}
