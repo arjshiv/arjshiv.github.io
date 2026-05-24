@@ -11084,3 +11084,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for AI tool. */
 .ai-tool :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for Tuesday output. */
+.tuesday-output{min-width:0;}
