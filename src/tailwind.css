@@ -10817,3 +10817,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for deployment metric. */
 .deployment-metrics div{min-width:0;}
+
+/* balance local headings for deployment metric. */
+.deployment-metrics div :where(h1,h2,h3,h4){text-wrap:balance;}
