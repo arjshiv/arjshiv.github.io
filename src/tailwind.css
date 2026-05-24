@@ -10976,3 +10976,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for recent item. */
 .recent-item :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for recent item. */
+.recent-item :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
