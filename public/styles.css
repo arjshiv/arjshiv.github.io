@@ -433,3 +433,6 @@
 
 /* tighten tap behavior for Tuesday output. */
 .tuesday-output :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for video poster. */
+.video-poster{min-width:0;}
