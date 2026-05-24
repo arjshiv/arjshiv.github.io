@@ -11117,3 +11117,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for command result. */
 .command-result{min-width:0;}
+
+/* balance local headings for command result. */
+.command-result :where(h1,h2,h3,h4){text-wrap:balance;}
