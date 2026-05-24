@@ -214,3 +214,6 @@
 
 /* balance local headings for signal readout. */
 .signal-readout :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for signal readout. */
+.signal-readout :where(p,li){text-wrap:pretty;}
