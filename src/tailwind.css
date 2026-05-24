@@ -10667,3 +10667,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for hero copy panel. */
 .hero-copy-panel{min-width:0;}
+
+/* balance local headings for hero copy panel. */
+.hero-copy-panel :where(h1,h2,h3,h4){text-wrap:balance;}
