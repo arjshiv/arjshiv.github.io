@@ -454,3 +454,6 @@
 
 /* balance local headings for command result. */
 .command-result :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for command result. */
+.command-result :where(p,li){text-wrap:pretty;}
