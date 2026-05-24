@@ -10664,3 +10664,6 @@ mark.signal-highlight {
     min-height: 0;
   }
 }
+
+/* prevent grid overflow for hero copy panel. */
+.hero-copy-panel{min-width:0;}
