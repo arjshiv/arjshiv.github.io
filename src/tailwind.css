@@ -10703,3 +10703,6 @@ mark.signal-highlight {
 
 /* pretty local prose for hero actions. */
 .hero-actions :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for hero actions. */
+.hero-actions :where(img,video,iframe,svg){max-width:100%;height:auto;}
