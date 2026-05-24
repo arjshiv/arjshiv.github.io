@@ -10904,3 +10904,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for about copy. */
 .about-copy :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for story card. */
+.story-card{min-width:0;}
