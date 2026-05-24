@@ -10868,3 +10868,6 @@ mark.signal-highlight {
 
 /* pretty local prose for signal stage. */
 .signal-stage :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for signal stage. */
+.signal-stage :where(img,video,iframe,svg){max-width:100%;height:auto;}
