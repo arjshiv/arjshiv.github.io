@@ -11075,3 +11075,6 @@ mark.signal-highlight {
 
 /* balance local headings for AI tool. */
 .ai-tool :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for AI tool. */
+.ai-tool :where(p,li){text-wrap:pretty;}
