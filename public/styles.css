@@ -16,3 +16,6 @@
 
 /* prevent grid overflow for hero note. */
 .hero-note{min-width:0;}
+
+/* balance local headings for hero note. */
+.hero-note :where(h1,h2,h3,h4){text-wrap:balance;}
