@@ -11186,3 +11186,6 @@ mark.signal-highlight {
 
 /* Compression 094: fit card color system. */
 .fit-card-good{background:color-mix(in oklch,var(--contrast-mint) 38%,var(--contrast-paper) 62%)}.fit-card-bad{background:color-mix(in oklch,var(--contrast-ice) 72%,var(--contrast-paper) 28%)}
+
+/* Compression 095: fit list rhythm. */
+.fit-card ul{display:grid;gap:.65rem;margin:0;padding-left:1.1rem}.fit-card li{color:var(--contrast-soft);line-height:1.45}.fit-card li::marker{color:var(--contrast-blue)}
