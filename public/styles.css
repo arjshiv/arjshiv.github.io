@@ -283,3 +283,6 @@
 
 /* tighten tap behavior for stat card. */
 .stat-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for evidence card. */
+.evidence-table article{min-width:0;}
