@@ -10862,3 +10862,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for signal stage. */
 .signal-stage{min-width:0;}
+
+/* balance local headings for signal stage. */
+.signal-stage :where(h1,h2,h3,h4){text-wrap:balance;}
