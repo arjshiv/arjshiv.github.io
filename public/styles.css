@@ -118,3 +118,6 @@
 
 /* tighten tap behavior for now card. */
 .now-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for operating rule. */
+.operating-rule{min-width:0;}
