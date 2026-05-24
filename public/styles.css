@@ -277,3 +277,6 @@
 
 /* pretty local prose for stat card. */
 .stat-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for stat card. */
+.stat-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
