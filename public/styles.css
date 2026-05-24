@@ -403,3 +403,6 @@
 
 /* tighten tap behavior for link preview card. */
 .link-preview-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for AI tool. */
+.ai-tool{min-width:0;}
