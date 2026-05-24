@@ -67,7 +67,7 @@
       ['#links', 'Use the press links when you want external sourcing.'],
     ],
     founder: [
-      ['#operating-system', 'Start with how I think about building.'],
+      ['#proof-table', 'Start with the claims, roles, results, and sources.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at the arc from physics to finance to housing.'],
       ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
