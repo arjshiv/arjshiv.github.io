@@ -322,3 +322,6 @@
 
 /* pretty local prose for feature card. */
 .feature-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for feature card. */
+.feature-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
