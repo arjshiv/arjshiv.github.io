@@ -460,3 +460,6 @@
 
 /* stabilize embedded media for command result. */
 .command-result :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for command result. */
+.command-result :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
