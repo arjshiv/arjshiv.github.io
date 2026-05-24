@@ -178,3 +178,6 @@
 
 /* tighten tap behavior for AI field lane. */
 .lab-fit-lanes article :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for AI field lead. */
+.lab-fit-lead{min-width:0;}
