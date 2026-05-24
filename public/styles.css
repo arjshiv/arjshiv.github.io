@@ -127,3 +127,6 @@
 
 /* pretty local prose for operating rule. */
 .operating-rule :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for operating rule. */
+.operating-rule :where(img,video,iframe,svg){max-width:100%;height:auto;}
