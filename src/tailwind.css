@@ -11198,3 +11198,6 @@ mark.signal-highlight {
 
 /* Compression 098: make command launcher quieter. */
 .command-launcher{opacity:.82}.command-launcher:hover,.command-launcher:focus-visible{opacity:1}
+
+/* Compression 099: compact heading utility. */
+.compact-heading{margin-bottom:clamp(.9rem,2vw,1.25rem)}.compact-heading .section-kicker{color:var(--contrast-blue)}
