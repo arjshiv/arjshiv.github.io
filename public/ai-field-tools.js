@@ -74,7 +74,7 @@
       ['#conversations', 'Watch the company-systems conversations.'],
     ],
     journalist: [
-      ['#about', 'Start with the narrative arc.'],
+      ['#conversations', 'Start with talks, topics, and direct voice.'],
       ['#work', 'Use the measured work history.'],
       ['#recent', 'Pull recent writing and article links.'],
       ['#conversations', 'Use talks for direct voice.'],
