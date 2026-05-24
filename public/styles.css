@@ -40,3 +40,6 @@
 
 /* stabilize embedded media for hero actions. */
 .hero-actions :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for hero actions. */
+.hero-actions :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
