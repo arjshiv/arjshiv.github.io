@@ -325,3 +325,6 @@
 
 /* stabilize embedded media for feature card. */
 .feature-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for feature card. */
+.feature-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
