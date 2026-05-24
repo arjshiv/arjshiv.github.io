@@ -133,3 +133,6 @@
 
 /* tighten tap behavior for operating rule. */
 .operating-rule :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for deployment loop item. */
+.deployment-loop li{min-width:0;}
