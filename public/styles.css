@@ -430,3 +430,6 @@
 
 /* stabilize embedded media for Tuesday output. */
 .tuesday-output :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for Tuesday output. */
+.tuesday-output :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
