@@ -10802,3 +10802,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for deployment loop item. */
 .deployment-loop li{min-width:0;}
+
+/* balance local headings for deployment loop item. */
+.deployment-loop li :where(h1,h2,h3,h4){text-wrap:balance;}
