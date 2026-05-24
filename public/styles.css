@@ -511,3 +511,6 @@
 
 /* Compression 091: ResiDesk loop steps. */
 .resident-loop-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.65rem;margin:0;padding:0;list-style:none}.resident-loop-steps li{display:grid;gap:.45rem;min-height:12rem;padding:.85rem;border:2px solid var(--contrast-line);border-radius:.34rem;background:var(--contrast-paper);box-shadow:var(--contrast-shadow-sm)}.resident-loop-steps span{color:var(--contrast-violet);font-family:var(--font-mono);font-weight:900}.resident-loop-steps strong{font-family:var(--font-mono);font-size:1.1rem}.resident-loop-steps p{margin:0;color:var(--contrast-soft);font-size:.92rem;line-height:1.4}
+
+/* Compression 092: ResiDesk loop mobile. */
+@media (max-width:920px){.residesk-loop-grid,.resident-loop-steps{grid-template-columns:1fr}.residesk-before-after,.resident-loop-steps li{min-height:0}}
