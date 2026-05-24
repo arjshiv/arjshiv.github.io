@@ -475,3 +475,6 @@
 
 /* Compression 079: make reader paths mobile safe. */
 @media (max-width:860px){.reader-path-grid{grid-template-columns:1fr}.reader-path-card{min-height:0}}
+
+/* Compression 080: style hero promise line. */
+.hero-promise{max-width:28rem;margin:.8rem 0 0;color:var(--contrast-ink);font-family:var(--font-mono);font-size:clamp(1.2rem,2vw,1.65rem);font-weight:800;line-height:1.12;letter-spacing:-.03em;text-wrap:balance}
