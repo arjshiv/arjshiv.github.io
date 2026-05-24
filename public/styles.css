@@ -262,3 +262,6 @@
 
 /* pretty local prose for role card. */
 .role-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for role card. */
+.role-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
