@@ -226,3 +226,6 @@
 
 /* prevent grid overflow for about copy. */
 .about-copy{min-width:0;}
+
+/* balance local headings for about copy. */
+.about-copy :where(h1,h2,h3,h4){text-wrap:balance;}
