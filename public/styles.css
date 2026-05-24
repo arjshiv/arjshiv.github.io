@@ -388,3 +388,6 @@
 
 /* tighten tap behavior for FAQ card. */
 .faq-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for link preview card. */
+.link-preview-card{min-width:0;}
