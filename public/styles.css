@@ -427,3 +427,6 @@
 
 /* pretty local prose for Tuesday output. */
 .tuesday-output :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for Tuesday output. */
+.tuesday-output :where(img,video,iframe,svg){max-width:100%;height:auto;}
