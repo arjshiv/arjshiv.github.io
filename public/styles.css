@@ -505,3 +505,6 @@
 
 /* Compression 089: ResiDesk loop grid. */
 .residesk-loop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.85rem,2vw,1.1rem);margin-bottom:1rem}.residesk-before-after{display:grid;gap:.75rem;min-height:16rem;padding:clamp(1.1rem,2.2vw,1.45rem);border:3px solid var(--contrast-line);border-radius:.42rem;background:color-mix(in oklch,var(--contrast-cyan) 40%,var(--contrast-paper) 60%);box-shadow:var(--contrast-shadow-sm)}
+
+/* Compression 090: ResiDesk before after type. */
+.residesk-before-after h3{margin:0;font-family:var(--font-mono);font-size:clamp(1.7rem,3vw,2.55rem);line-height:.95;letter-spacing:-.04em}.residesk-before-after p:last-child{margin:0;color:var(--contrast-soft);line-height:1.5}
