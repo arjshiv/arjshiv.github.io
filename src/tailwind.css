@@ -11033,3 +11033,6 @@ mark.signal-highlight {
 
 /* pretty local prose for FAQ summary. */
 .faq-card summary :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for FAQ summary. */
+.faq-card summary :where(img,video,iframe,svg){max-width:100%;height:auto;}
