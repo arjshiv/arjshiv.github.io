@@ -10730,3 +10730,6 @@ mark.signal-highlight {
 
 /* balance local headings for secondary link. */
 .secondary-link :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for secondary link. */
+.secondary-link :where(p,li){text-wrap:pretty;}
