@@ -61,7 +61,7 @@
   const guides = {
     operator: [
       ['#now', 'Start with the current ResiDesk work.'],
-      ['#signal-map', 'Then look at how resident messages turn into work someone owns.'],
+      ['#residesk-loop', 'Then look at the resident-message loop from message to report.'],
       ['#recent', 'Use the outside links around resident feedback, retention, and NOI.'],
       ['#conversations', 'Watch the longer explanation if you want to hear it less polished.'],
       ['#links', 'Use the press links when you want external sourcing.'],
