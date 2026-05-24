@@ -11081,3 +11081,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for AI tool. */
 .ai-tool :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for AI tool. */
+.ai-tool :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
