@@ -11150,3 +11150,6 @@ mark.signal-highlight {
 
 /* Compression 082: style portrait caption. */
 .portrait-caption{margin:.75rem 0 0;color:var(--contrast-soft);font-size:.92rem;line-height:1.45;text-wrap:pretty}
+
+/* Compression 083: reduce hero action density. */
+.hero-actions{justify-content:flex-start}.hero-actions .primary-link,.hero-actions .secondary-link{min-width:min(100%,13rem)}
