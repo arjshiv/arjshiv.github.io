@@ -442,3 +442,6 @@
 
 /* pretty local prose for video poster. */
 .video-poster :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for video poster. */
+.video-poster :where(img,video,iframe,svg){max-width:100%;height:auto;}
