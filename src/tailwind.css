@@ -10874,3 +10874,6 @@ mark.signal-highlight {
 
 /* tighten tap behavior for signal stage. */
 .signal-stage :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for signal readout. */
+.signal-readout{min-width:0;}
