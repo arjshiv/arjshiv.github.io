@@ -10673,3 +10673,6 @@ mark.signal-highlight {
 
 /* pretty local prose for hero copy panel. */
 .hero-copy-panel :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for hero copy panel. */
+.hero-copy-panel :where(img,video,iframe,svg){max-width:100%;height:auto;}
