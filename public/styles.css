@@ -247,3 +247,6 @@
 
 /* pretty local prose for story card. */
 .story-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for story card. */
+.story-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
