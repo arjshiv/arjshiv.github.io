@@ -424,3 +424,6 @@
 
 /* balance local headings for Tuesday output. */
 .tuesday-output :where(h1,h2,h3,h4){text-wrap:balance;}
+
+/* pretty local prose for Tuesday output. */
+.tuesday-output :where(p,li){text-wrap:pretty;}
