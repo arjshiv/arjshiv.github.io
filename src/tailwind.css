@@ -11168,3 +11168,6 @@ mark.signal-highlight {
 
 /* Compression 088: proof table mobile layout. */
 @media (max-width:760px){.proof-row{grid-template-columns:1fr}.proof-row>*{border-left:0;border-top:1px solid color-mix(in oklch,var(--contrast-line) 50%,transparent)}.proof-row>*:first-child{border-top:0}.proof-row-head{display:none}}
+
+/* Compression 089: ResiDesk loop grid. */
+.residesk-loop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.85rem,2vw,1.1rem);margin-bottom:1rem}.residesk-before-after{display:grid;gap:.75rem;min-height:16rem;padding:clamp(1.1rem,2.2vw,1.45rem);border:3px solid var(--contrast-line);border-radius:.42rem;background:color-mix(in oklch,var(--contrast-cyan) 40%,var(--contrast-paper) 60%);box-shadow:var(--contrast-shadow-sm)}
