@@ -88,3 +88,6 @@
 
 /* tighten tap behavior for program card. */
 .program-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for program item. */
+.program-item{min-width:0;}
