@@ -11138,3 +11138,6 @@ mark.signal-highlight {
 
 /* Compression 078: add reader path hover tactility. */
 .reader-path-card{transition:transform .14s var(--ease-out),box-shadow .14s var(--ease-out),background-color .14s var(--ease-out)}.reader-path-card:focus-visible,.reader-path-card:hover{transform:translate(-1px,-1px);box-shadow:var(--contrast-shadow);outline:0}
+
+/* Compression 079: make reader paths mobile safe. */
+@media (max-width:860px){.reader-path-grid{grid-template-columns:1fr}.reader-path-card{min-height:0}}
