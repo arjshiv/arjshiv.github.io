@@ -11156,3 +11156,6 @@ mark.signal-highlight {
 
 /* Compression 084: proof table shell. */
 .proof-table{display:grid;border:3px solid var(--contrast-line);border-radius:.42rem;overflow:hidden;background:var(--contrast-paper);box-shadow:var(--contrast-shadow-sm)}
+
+/* Compression 085: proof table rows. */
+.proof-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr) minmax(0,.85fr) minmax(7rem,.45fr);gap:0;border-top:2px solid var(--contrast-line)}.proof-row:first-child{border-top:0}.proof-row>*{padding:.9rem;border-left:2px solid var(--contrast-line);color:var(--contrast-soft);line-height:1.42}.proof-row>*:first-child{border-left:0;color:var(--contrast-ink)}
