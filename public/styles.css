@@ -241,3 +241,6 @@
 
 /* prevent grid overflow for story card. */
 .story-card{min-width:0;}
+
+/* balance local headings for story card. */
+.story-card :where(h1,h2,h3,h4){text-wrap:balance;}
