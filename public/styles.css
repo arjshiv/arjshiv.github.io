@@ -496,3 +496,6 @@
 
 /* Compression 086: proof table header. */
 .proof-row-head{background:var(--contrast-blue)}.proof-row-head>*{color:var(--contrast-paper);font-family:var(--font-mono);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+
+/* Compression 087: proof table links. */
+.proof-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.proof-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
