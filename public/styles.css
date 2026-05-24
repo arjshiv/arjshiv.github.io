@@ -13,3 +13,6 @@
 
 /* tighten tap behavior for hero copy panel. */
 .hero-copy-panel :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for hero note. */
+.hero-note{min-width:0;}
