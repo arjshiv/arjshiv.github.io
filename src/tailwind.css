@@ -10691,3 +10691,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for hero note. */
 .hero-note :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for hero note. */
+.hero-note :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
