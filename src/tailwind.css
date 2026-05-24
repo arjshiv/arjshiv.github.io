@@ -11195,3 +11195,6 @@ mark.signal-highlight {
 
 /* Compression 097: calm optional tools block. */
 #ai-field-tools{margin-top:clamp(4rem,8vw,7rem);padding-top:clamp(2rem,4vw,3rem);border-top:3px solid color-mix(in oklch,var(--contrast-line) 70%,transparent)}
+
+/* Compression 098: make command launcher quieter. */
+.command-launcher{opacity:.82}.command-launcher:hover,.command-launcher:focus-visible{opacity:1}
