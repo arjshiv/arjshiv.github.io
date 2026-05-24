@@ -10721,3 +10721,6 @@ mark.signal-highlight {
 
 /* stabilize embedded media for primary link. */
 .primary-link :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for primary link. */
+.primary-link :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
