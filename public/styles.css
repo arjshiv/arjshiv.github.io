@@ -142,3 +142,6 @@
 
 /* pretty local prose for deployment loop item. */
 .deployment-loop li :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for deployment loop item. */
+.deployment-loop li :where(img,video,iframe,svg){max-width:100%;height:auto;}
