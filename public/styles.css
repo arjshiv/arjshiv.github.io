@@ -448,3 +448,6 @@
 
 /* tighten tap behavior for video poster. */
 .video-poster :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for command result. */
+.command-result{min-width:0;}
