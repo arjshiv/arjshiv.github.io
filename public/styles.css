@@ -337,3 +337,6 @@
 
 /* pretty local prose for article card. */
 .article-card :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for article card. */
+.article-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
