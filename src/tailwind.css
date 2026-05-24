@@ -10742,3 +10742,6 @@ mark.signal-highlight {
 
 /* prevent grid overflow for program card. */
 .program-card{min-width:0;}
+
+/* balance local headings for program card. */
+.program-card :where(h1,h2,h3,h4){text-wrap:balance;}
