@@ -463,3 +463,6 @@
 
 /* tighten tap behavior for command result. */
 .command-result :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* Compression 076: style three reader paths. */
+.reader-path-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.75rem,2vw,1rem)}.reader-path-card{display:grid;gap:.75rem;min-height:15rem;padding:clamp(1rem,2vw,1.35rem);border:3px solid var(--contrast-line);border-radius:.42rem;background:color-mix(in oklch,var(--contrast-cyan) 34%,var(--contrast-paper) 66%);box-shadow:var(--contrast-shadow-sm);color:var(--contrast-ink)}.reader-path-card span{color:var(--contrast-violet);font-family:var(--font-mono);font-weight:900}.reader-path-card strong{font-family:var(--font-mono);font-size:clamp(1.25rem,2vw,1.65rem);line-height:1}.reader-path-card p{margin:0;color:var(--contrast-soft);line-height:1.45}
