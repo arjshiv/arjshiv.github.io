@@ -10958,3 +10958,6 @@ mark.signal-highlight {
 
 /* pretty local prose for evidence card. */
 .evidence-table article :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for evidence card. */
+.evidence-table article :where(img,video,iframe,svg){max-width:100%;height:auto;}
