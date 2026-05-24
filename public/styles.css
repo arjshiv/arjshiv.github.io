@@ -487,3 +487,6 @@
 
 /* Compression 083: reduce hero action density. */
 .hero-actions{justify-content:flex-start}.hero-actions .primary-link,.hero-actions .secondary-link{min-width:min(100%,13rem)}
+
+/* Compression 084: proof table shell. */
+.proof-table{display:grid;border:3px solid var(--contrast-line);border-radius:.42rem;overflow:hidden;background:var(--contrast-paper);box-shadow:var(--contrast-shadow-sm)}
