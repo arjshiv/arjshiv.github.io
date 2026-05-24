@@ -11183,3 +11183,6 @@ mark.signal-highlight {
 
 /* Compression 093: fit boundary grid. */
 .fit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.85rem,2vw,1.1rem)}.fit-card{display:grid;gap:.85rem;padding:clamp(1.1rem,2.2vw,1.5rem);border:3px solid var(--contrast-line);border-radius:.42rem;box-shadow:var(--contrast-shadow-sm)}
+
+/* Compression 094: fit card color system. */
+.fit-card-good{background:color-mix(in oklch,var(--contrast-mint) 38%,var(--contrast-paper) 62%)}.fit-card-bad{background:color-mix(in oklch,var(--contrast-ice) 72%,var(--contrast-paper) 28%)}
