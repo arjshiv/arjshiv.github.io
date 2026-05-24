@@ -298,3 +298,6 @@
 
 /* tighten tap behavior for evidence card. */
 .evidence-table article :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for recent item. */
+.recent-item{min-width:0;}
