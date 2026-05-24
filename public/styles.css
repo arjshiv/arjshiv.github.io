@@ -172,3 +172,6 @@
 
 /* pretty local prose for AI field lane. */
 .lab-fit-lanes article :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for AI field lane. */
+.lab-fit-lanes article :where(img,video,iframe,svg){max-width:100%;height:auto;}
