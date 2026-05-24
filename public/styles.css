@@ -115,3 +115,6 @@
 
 /* stabilize embedded media for now card. */
 .now-card :where(img,video,iframe,svg){max-width:100%;height:auto;}
+
+/* tighten tap behavior for now card. */
+.now-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
