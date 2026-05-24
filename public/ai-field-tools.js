@@ -91,7 +91,7 @@
       ['#now', 'Start with the current company focus.'],
       ['#work', 'Look at prior operating outcomes.'],
       ['#recent', 'Check the public links.'],
-      ['#investing', 'Read the investing lens.'],
+      ['#fit-boundaries', 'Read where I am useful and where I am not.'],
       ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
     evidence: [
