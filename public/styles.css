@@ -373,3 +373,6 @@
 
 /* tighten tap behavior for FAQ summary. */
 .faq-card summary :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for FAQ card. */
+.faq-card{min-width:0;}
