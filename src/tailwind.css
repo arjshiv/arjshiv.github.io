@@ -10883,3 +10883,6 @@ mark.signal-highlight {
 
 /* pretty local prose for signal readout. */
 .signal-readout :where(p,li){text-wrap:pretty;}
+
+/* stabilize embedded media for signal readout. */
+.signal-readout :where(img,video,iframe,svg){max-width:100%;height:auto;}
