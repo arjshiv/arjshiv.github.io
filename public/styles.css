@@ -268,3 +268,6 @@
 
 /* tighten tap behavior for role card. */
 .role-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
+
+/* prevent grid overflow for stat card. */
+.stat-card{min-width:0;}
