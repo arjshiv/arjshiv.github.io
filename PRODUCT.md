@@ -6,7 +6,7 @@ brand
 
 ## Product Purpose
 
-This is Arjun Kannan's personal site. It should explain who he is, what he is building at ResiDesk, how his work connects physics, finance, housing, and AI, and where founders, advisor-seekers, AI teams, and evidence reviewers can find proof quickly.
+This is Arjun Kannan's personal site. It should explain who he is, what he is building at ResiDesk, how his work connects physics, finance, housing, and AI, and where founders, advisor-seekers, AI teams, and serious readers can understand the path quickly.
 
 The site is not a generic founder landing page. It should feel like a working field manual for a builder who cares about context, customers, measurement, and tools that keep working after the demo.
 
@@ -15,7 +15,7 @@ The site is not a generic founder landing page. It should feel like a working fi
 - Rental housing owners, operators, investors, and partners trying to understand ResiDesk and Arjun's point of view.
 - Founders, engineers, and product people interested in applied AI, agents, evaluation, and workflow design.
 - Founders and executive teams evaluating Arjun as an advisor, operator, or AI deployment partner.
-- Evidence reviewers, including immigration-adjacent readers, who need claims, dates, outcomes, and third-party links without hunting.
+- Serious readers, including immigration-adjacent readers, who need dates, outcomes, and third-party links without making the whole site feel like a formal dossier.
 - Journalists, event organizers, podcast hosts, and conference teams looking for a concise source of biography, talks, and links.
 - Candidates and collaborators who want to understand how Arjun thinks before reaching out.
 
@@ -33,10 +33,10 @@ Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings,
 ## Tone Rules
 
 - Use first person where the page is about Arjun's perspective.
-- Use short, direct sentences for claims.
+- Use short, direct sentences for important points.
 - Explain AI through the job it changes, not through abstract capability.
 - Keep skepticism in the copy. Demos can mislead. Tools have to earn their keep.
-- Do not overclaim. If the site cites a number, the number should be attached to a concrete job or outcome.
+- Do not overstate. If the site cites a number, the number should be attached to a concrete job or outcome.
 
 ## Anti-References
 
@@ -49,7 +49,7 @@ Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings,
 ## Strategic Principles
 
 - The visitor should understand the throughline in one pass: customer context, measurement, ownership, and follow-through.
-- The first scroll should feel like an actual founder's site. It should answer what Arjun is building, what he believes, and where the receipts are without sorting the reader into a persona.
+- The first scroll should feel like an actual founder's site. It should answer what Arjun is building, what he believes, and how the journey got here without sorting the reader into a persona.
 - The design should feel built, not decorated.
 - Retro styling must improve legibility and memory. It should not create random borders, dead slabs, or table-like accidents.
 - The mobile version is a first-class reading experience.

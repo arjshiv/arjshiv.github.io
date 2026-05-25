@@ -1,12 +1,12 @@
 # Voice Guide
 
-Derived from the linked talks and interviews.
+A working voice for the site.
 
 ## Core Shape
 
 - Use first person when explaining a belief or decision.
 - Start from the concrete job: renter, building, owner, operator, text, ticket, renewal, repair.
-- Be honest without turning the sentence into a shove. The best version is: acknowledge the pressure, name the evidence, separate pain from root cause, and give the next step.
+- Be honest without turning the sentence into a shove. Believe the complaint first, then ask what actually caused it and who can change it.
 - Treat problems as system problems first. Do not make people feel alone with the mess.
 - Say "the way I think about it" only when it helps the page sound like a person, not a memo.
 - Prefer blunt setup lines: "Renting is expensive and weirdly bad." "Talk to your customer is still business 101."
@@ -22,7 +22,7 @@ Derived from the linked talks and interviews.
 - "I care about whether someone still uses it when nobody is watching."
 - "I believe the pain. I still want to separate pain from root cause."
 - "Good catch. Let's make this easier to notice next time."
-- "Tell me what broke, what evidence we have, who owns it, and what changes next."
+- "Tell me what broke, what we know, who owns it, and what changes next."
 
 ## Current Copy Test
 
@@ -34,3 +34,4 @@ Any new section should pass this plain question: would I say this to an owner, o
 - Phrases like "what shows up across the talks" or "the thread across."
 - Abstract nouns stacked together: workflow orchestration, operating cadence, resident engagement signals.
 - Copy that sounds like an analyst wrote a recap after watching the videos.
+- Diligence-binder language on the visible site. Use "what happened," "what I learned," "what changed," and "where it led" before words like evidence, proof, receipts, or packet.

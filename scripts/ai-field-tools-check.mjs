@@ -24,7 +24,7 @@ await page.fill('#command-search', 'ask about ai');
 await page.click('.command-result[data-command-target^="ask:"]');
 await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
 await page.click('.command-launcher');
-await page.fill('#command-search', 'operator links');
+await page.fill('#command-search', 'operator path');
 await page.click('.command-result[data-command-target="proof:operator"]');
 await page.click('.command-launcher');
 await page.fill('#command-search', 'draft operator memo');
@@ -92,7 +92,7 @@ if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.sim
 if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result.highlights} highlights, expected at least 20.`);
 if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
 if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
-if (result.proofCount !== 3) failures.push(`Link packet rendered ${result.proofCount} items, expected 3.`);
+if (result.proofCount !== 3) failures.push(`Reading path rendered ${result.proofCount} items, expected 3.`);
 if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
 if (result.compassCount !== 7) failures.push(`Site compass rendered ${result.compassCount} links, expected 7.`);

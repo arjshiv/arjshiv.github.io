@@ -14,7 +14,7 @@ Reference family:
 
 ## Physical Scene
 
-A founder, AI-team executive, partner, or evidence reviewer is reading the site on a laptop during the workday, probably between calls, trying to decide whether Arjun's work is specific and real. The page should be light, legible, fast to scan, and tactile enough to be memorable.
+A founder, AI-team executive, partner, or serious reader is reading the site on a laptop during the workday, probably between calls, trying to decide whether Arjun's work is specific and real. The page should be light, legible, fast to scan, and tactile enough to be memorable.
 
 ## Color Strategy
 
@@ -22,15 +22,15 @@ Full palette, but controlled by role.
 
 - Paper base: icy blue-white, never pure white and never cream.
 - Ink: dark teal-black, never flat black.
-- Deep blue: main active state, proof bands, primary controls, selected tabs.
-- Cyan and aqua: hero surfaces, proof previews, content cards, and field-map panels.
+- Deep blue: main active state, story bands, primary controls, selected tabs.
+- Cyan and aqua: hero surfaces, public-link previews, content cards, and field-map panels.
 - Seafoam and mint: start-here panels, operating cards, secondary controls, and hover states.
 - Violet: module indexes, small status ticks, badges, and active accents.
 - Coral is optional and rare. It should not pull the site warm.
 
 Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
 
-Color theory rule: hold contrast by lightness first, then tune hue and chroma. Most surfaces should live at high lightness with low-to-medium chroma; active/proof panels can drop much darker for clear contrast. The palette should use analogous cool hues (cyan, blue, teal, mint) with a tiny split-complement accent only for module indexes and status ticks.
+Color theory rule: hold contrast by lightness first, then tune hue and chroma. Most surfaces should live at high lightness with low-to-medium chroma; active story panels can drop much darker for clear contrast. The palette should use analogous cool hues (cyan, blue, teal, mint) with a tiny split-complement accent only for module indexes and status ticks.
 
 ## Typography
 
@@ -46,8 +46,8 @@ Use Geist and Geist Mono only.
 ## Layout
 
 - Page width stays constrained around the existing max width.
-- Sections should have a visible rhythm: heading, content, proof or links. Avoid giant empty slabs.
-- Early sections should feel like an authentic founder page: current notes, current work, receipts, then deeper context. It should never sound like the visitor is being sorted into a funnel.
+- Sections should have a visible rhythm: heading, story, links or next step. Avoid giant empty slabs.
+- Early sections should feel like an authentic founder page: current notes, current work, what shaped it, then deeper context. It should never sound like the visitor is being sorted into a funnel.
 - Hero can be asymmetric. Utility and content sections should favor readable grids.
 - Cards are allowed when they behave like physical printed objects. Do not nest cards inside cards.
 - Avoid full-width heavy-bordered rows unless the row is genuinely a table or control.
@@ -56,7 +56,7 @@ Use Geist and Geist Mono only.
 
 ## Surface Rules
 
-- Borders are hard ink, usually 2px or 3px. Use 4px only for primary hero or major proof modules.
+- Borders are hard ink, usually 2px or 3px. Use 4px only for primary hero or major story modules.
 - Radius stays tight: around 0.18rem to 0.35rem for retro surfaces.
 - Shadows are hard offset shadows using the ink token. They must not be clipped by containment.
 - Surface backgrounds should be intentional: ice paper, glacier blue, cyan, teal, seafoam, or mint.
