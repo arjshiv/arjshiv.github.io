@@ -4,7 +4,7 @@
       id: 'residesk',
       title: 'ResiDesk',
       href: '#now',
-      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, context, owner reports, and work someone can move.',
+      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, owner context, and work someone can pick up without rereading the whole history.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
     {
@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: '#writing',
-      text: 'I care about AI that survives the Tuesday after the demo. Context, evals, handoff, trust, and judgment matter more than novelty or model names.',
+      text: 'I care about AI that survives Tuesday. Context, evals, handoff, trust, and judgment matter more than novelty or model names.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks',
       href: '#conversations',
-      text: 'The talks keep circling the same practical lesson: measurement matters, software is useful when it saves real time, and ResiDesk starts with hearing residents clearly enough to act.',
+      text: 'The talks come back to the same practical lesson: measurement matters, software is useful when it saves real time, and ResiDesk starts with hearing residents clearly enough to act.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
@@ -60,8 +60,8 @@
 
   const guides = {
     operator: [
-      ['#now', 'Start with the current ResiDesk work.'],
-      ['#residesk-loop', 'Then look at the resident-message loop from message to report.'],
+      ['#now', 'Start with what ResiDesk is testing now.'],
+      ['#residesk-loop', 'Then look at the resident-message loop from message to owner-visible work.'],
       ['#recent', 'Use the outside links around resident feedback, retention, and NOI.'],
       ['#conversations', 'Watch the longer explanation if you want to hear it less polished.'],
       ['#links', 'Use the press links when you want external sourcing.'],
@@ -85,13 +85,13 @@
       ['#now', 'Understand the current focus.'],
       ['#about', 'Get the personal arc and operating bias.'],
       ['#writing', 'Read the principles.'],
-      ['#links', 'Use recordings to hear how the work sounds without site polish.'],
+      ['#links', 'Use recordings to hear the work without site polish.'],
     ],
     investor: [
       ['#now', 'Start with the current company focus.'],
       ['#work', 'Look at prior operating outcomes.'],
       ['#recent', 'Check the public links.'],
-      ['#fit-boundaries', 'Read where I am useful and where I am not.'],
+      ['#fit-boundaries', 'Read where I can help and where I probably cannot.'],
       ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
     ],
     evidence: [
@@ -107,7 +107,7 @@
     harnoor: ['Physics made me care about measurement.', 'Software became useful when it saved real time.', 'ResiDesk starts with the customer, not the AI demo.'],
     greg: ['The useful part of AI is leverage inside actual company work.', 'Context has to travel with the task.', 'A system is only good if it changes what someone does next.'],
     wellfound: ['The team needs people who can carry context.', 'The work is close to residents, operators, and messy edge cases.', 'Trust matters because a human team still owns the judgment.'],
-    '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to be useful to the operator, not just interesting to analyze.'],
+    '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to help the operator, not just make an interesting analysis.'],
   };
 
   const signalFixtures = {
@@ -146,7 +146,7 @@
   };
 
   const designCritique = [
-    ['Argument', '9.0', 'The page is clearest when it starts with the job: customers are already saying useful things, and the tool should help someone act on them.'],
+    ['Argument', '9.0', 'The page is clearest when it starts with the job: customers already told you what hurts, and the tool should help someone act on it.'],
     ['Hierarchy', '8.2', 'The top half scans well. The lower tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
     ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to help the reader.'],
     ['Function', '9.1', 'The browser tools do real work without a server: answer, score, simulate, highlight, and keep notes locally. That is more useful than a fake chat widget.'],
@@ -174,7 +174,7 @@
 
   const proofPackets = {
     operator: [
-      ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and routing the right issue to the right person.'],
+      ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and getting the right issue to someone who can fix it.'],
       ['Resident messages', '#signal-map', 'Then show how raw resident messages become work someone owns.'],
       ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the external link on resident feedback and retention.'],
     ],
@@ -207,8 +207,8 @@
 
   const compassItems = [
     ['Evidence', '#evidence-ledger', 'claims with receipts'],
-    ['Now', '#now', 'what I am building'],
-    ['Map', '#signal-map', 'how resident messages turn into decisions'],
+    ['Now', '#now', 'what I am building now'],
+    ['Map', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'the work arc'],
     ['Public', '#recent', 'outside links'],
     ['Talks', '#conversations', 'direct voice'],
@@ -278,7 +278,7 @@
     {
       id: 'trust-stack',
       label: 'Trust stack',
-      title: 'A useful answer has layers under it.',
+      title: 'A useful answer has receipts under it.',
       deck: 'A good answer needs a source, context, an owner, a test, and follow-through.',
       kind: 'stack',
       values: [
@@ -367,7 +367,7 @@
     {
       id: 'handoff-map',
       label: 'Handoff map',
-      title: 'A good answer knows when it is done with its part.',
+      title: 'A good answer knows when to hand off.',
       deck: 'The map shows where AI should stop drafting and start routing.',
       kind: 'route',
       values: [
@@ -397,7 +397,7 @@
       id: 'renewal-warning',
       label: 'Renewal warning',
       title: 'Renewal risk usually talks before it leaves.',
-      deck: 'The heatmap keeps early resident signals from disappearing into ticket history.',
+      deck: 'The heatmap keeps early resident warnings from disappearing into ticket history.',
       kind: 'matrix',
       values: [
         ['Price', 76],
@@ -441,7 +441,7 @@
     {
       id: 'candidate-lens',
       label: 'Candidate lens',
-      title: 'Candidates should see how the work really feels.',
+      title: 'Candidates should see how the work actually feels.',
       deck: 'A browser AI summary can help, but the page should still show the work style directly.',
       kind: 'route',
       values: [

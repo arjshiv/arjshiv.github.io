@@ -6,6 +6,8 @@ Derived from the linked talks and interviews.
 
 - Use first person when explaining a belief or decision.
 - Start from the concrete job: renter, building, owner, operator, text, ticket, renewal, repair.
+- Be honest without turning the sentence into a shove. The best version is: acknowledge the pressure, name the evidence, separate pain from root cause, and give the next step.
+- Treat problems as system problems first. Do not make people feel alone with the mess.
 - Say "the way I think about it" only when it helps the page sound like a person, not a memo.
 - Prefer blunt setup lines: "Renting is expensive and weirdly bad." "Talk to your customer is still business 101."
 - Explain AI by what it helps someone finish, not by what the model can theoretically do.
@@ -18,6 +20,9 @@ Derived from the linked talks and interviews.
 - "The model is one part. The context and handoff are usually the hard part."
 - "If nobody owns what happens next, it is probably theater."
 - "I care about whether someone still uses it when nobody is watching."
+- "I believe the pain. I still want to separate pain from root cause."
+- "Good catch. Let's make this easier to notice next time."
+- "Tell me what broke, what evidence we have, who owns it, and what changes next."
 
 ## Current Copy Test
 
