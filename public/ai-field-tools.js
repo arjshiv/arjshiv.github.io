@@ -61,13 +61,13 @@
   const guides = {
     operator: [
       ['#now', 'Start with what ResiDesk is testing now.'],
-      ['#residesk-loop', 'Then look at the resident-message loop from message to owner-visible work.'],
+      ['#residesk-loop', 'Then look at how a resident message becomes work a property team can act on.'],
       ['#recent', 'Use the outside links around resident feedback, retention, and NOI.'],
-      ['#conversations', 'Watch the longer explanation if you want to hear it less polished.'],
-      ['#links', 'Use the public links when you want the longer story.'],
+      ['#conversations', 'Watch the longer explanation in my own words.'],
+      ['#links', 'Use the public links when you want more background.'],
     ],
     founder: [
-      ['#proof-table', 'Start with the work arc: Climb, BlackRock, ResiDesk.'],
+      ['#proof-table', 'Start with Climb, BlackRock, and ResiDesk.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at the arc from physics to finance to housing.'],
       ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
@@ -96,7 +96,7 @@
     ],
     evidence: [
       ['#work', 'Start with the work history and outcomes.'],
-      ['#proof-table', 'Use the work arc for role, lesson, result, and context.'],
+      ['#proof-table', 'Use Climb, BlackRock, and ResiDesk for role, lesson, result, and context.'],
       ['#work', 'Check the role history and measurable outcomes.'],
       ['#links', 'Open the public articles, talks, and dates.'],
       ['#conversations', 'Use talks when direct voice matters.'],
@@ -142,7 +142,7 @@
     operator: ['time pressure', 'many small exceptions', 'resident trust'],
     enterprise: ['security review', 'systems integration', 'change management'],
     field: ['low patience', 'mobile use', 'messy language'],
-    exec: ['ROI story', 'board-level narrative', 'risk ownership'],
+    exec: ['ROI path', 'board-level narrative', 'risk ownership'],
   };
 
   const designCritique = [
@@ -168,7 +168,7 @@
     },
     proof: {
       title: 'Public-link pass',
-      steps: ['Move the visitor from story to context quickly: work history, talks, writing, press.', 'Name what happened, then link the longer version.', 'Do not let design flourishes hide the actual work.'],
+      steps: ['Move the visitor from the point to the background quickly: work history, talks, writing, press.', 'Name what happened, then link the longer version.', 'Do not let design flourishes hide the actual work.'],
     },
   };
 
@@ -200,13 +200,13 @@
     ],
     evidence: [
       ['Work history', '#work', 'Start with the roles and outcomes.'],
-      ['Longer story', '#evidence-ledger', 'Use the longer story section for outcomes, recognition, and links.'],
+      ['More background', '#evidence-ledger', 'Use the background section for outcomes, recognition, and links.'],
       ['External links', '#links', 'Open the public articles, talks, and dates.'],
     ],
   };
 
   const compassItems = [
-    ['Longer story', '#evidence-ledger', 'work, writing, and conversations'],
+    ['More background', '#evidence-ledger', 'work, writing, and conversations'],
     ['Now', '#now', 'what I am building now'],
     ['Map', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'the work arc'],
@@ -262,9 +262,9 @@
     },
     {
       id: 'proof-constellation',
-      label: 'Story constellation',
-      title: 'Do not make the reader hunt for the thread.',
-      deck: 'Keep the links, talks, and company facts close to the part of the story they explain.',
+      label: 'Link map',
+      title: 'Do not make the reader hunt for background.',
+      deck: 'Keep the links, talks, and company facts close to the part of the page they explain.',
       kind: 'orbit',
       values: [
         ['ResiDesk', 90],
@@ -273,7 +273,7 @@
         ['Press', 66],
         ['Work', 81],
       ],
-      notes: ['Keep links close to the story.', 'Separate talks from work.', 'Make the trail easy.'],
+      notes: ['Keep links close to the point.', 'Separate talks from work.', 'Make the trail easy.'],
     },
     {
       id: 'trust-stack',
@@ -456,7 +456,7 @@
       id: 'founder-diligence',
       label: 'Founder diligence',
       title: 'A good founder answer starts close to the customer.',
-      deck: 'This heatmap gives investors and founders a fast way to check where the story is strongest.',
+      deck: 'This heatmap gives investors and founders a fast way to check where the work is clearest.',
       kind: 'matrix',
       values: [
         ['Customer', 91],
@@ -466,7 +466,7 @@
         ['Team', 73],
         ['Learning', 82],
       ],
-      notes: ['Close to pain beats polish.', 'The story should travel.', 'Learning speed matters.'],
+      notes: ['Close to pain beats polish.', 'The point should travel.', 'Learning speed matters.'],
     },
     {
       id: 'transcript-terrain',
@@ -485,7 +485,7 @@
     {
       id: 'article-evidence',
       label: 'Article trail',
-      title: 'Outside links should make the story easier to follow.',
+      title: 'Outside links should make the work easier to check.',
       deck: 'The constellation keeps articles, writing, and recordings from becoming a loose link pile.',
       kind: 'orbit',
       values: [
@@ -530,7 +530,7 @@
       id: 'local-model-state',
       label: 'Model state',
       title: 'The browser model is a bonus, not a dependency.',
-      deck: 'This view makes the availability story explicit so the tool feels honest.',
+      deck: 'This view makes availability explicit so the tool feels honest.',
       kind: 'bars',
       values: [
         ['Fallback', 100],
@@ -984,7 +984,7 @@
             </div>
           `).join('')}
         </div>
-        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful object. Keep pushing toward fewer decorations, more judgment, and a clearer story.</p>
+        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful object. Keep pushing toward fewer decorations, more judgment, and a clearer point.</p>
       `;
     };
     button.addEventListener('click', render);
