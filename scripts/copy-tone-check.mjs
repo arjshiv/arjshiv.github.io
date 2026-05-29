@@ -50,6 +50,7 @@ const banned = [
   'human-centered AI platform',
   'next-generation resident experience',
   'unlock the power',
+  'transformative platform',
 ];
 
 const found = banned.filter((phrase) => {
