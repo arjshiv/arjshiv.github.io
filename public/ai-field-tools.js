@@ -168,7 +168,7 @@
     },
     proof: {
       title: 'Public-link pass',
-      steps: ['Move the visitor from the main claim to the background quickly: work history, talks, writing, press.', 'Name what happened, then link the source.', 'Do not let design flourishes hide the actual work.'],
+      steps: ['Move the visitor from the main claim to the background quickly: work history, talks, writing, links.', 'Name what happened, then link the source.', 'Do not let design flourishes hide the actual work.'],
     },
   };
 
