@@ -574,7 +574,7 @@
     {
       id: 'page-density',
       label: 'Page density',
-      title: 'A visual site should still give the reader air.',
+      title: 'A visual site still needs air.',
       deck: 'This chart treats density as a design variable, not an accident.',
       kind: 'bars',
       values: [
