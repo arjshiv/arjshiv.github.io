@@ -125,7 +125,7 @@
   };
 
   const tuesdayEnvironments = {
-    operator: 'a busy operator team',
+    operator: 'a busy property team',
     enterprise: 'an enterprise customer',
     field: 'a frontline team',
     exec: 'an exec sponsor review',
