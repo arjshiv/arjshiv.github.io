@@ -25,7 +25,7 @@
       id: 'blackrock',
       title: 'BlackRock',
       href: '#about',
-      text: 'At BlackRock, the lesson was that interface quality matters when someone is making a decision with real money behind it. A tool has to survive contact with the next morning.',
+      text: 'At BlackRock, the lesson was that interface quality matters when someone is making a decision with real money behind it. A tool has to survive the next morning.',
       tags: ['blackrock', 'interface', 'money', 'decision'],
     },
     {
