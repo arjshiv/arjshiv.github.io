@@ -27,6 +27,7 @@ const banned = [
   'customer truth',
   'unlock customer truth',
   'operationalize insights',
+  'signal layer',
 ];
 
 const found = banned.filter((phrase) => {
