@@ -37,6 +37,7 @@ const banned = [
   'founder energy narrative',
   'inevitable founder arc',
   'audience pathway',
+  'stakeholder pathway',
 ];
 
 const found = banned.filter((phrase) => {
