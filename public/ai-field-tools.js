@@ -99,7 +99,7 @@
       ['#proof-table', 'Use Climb, BlackRock, and ResiDesk for the actual path.'],
       ['#work', 'Check the roles and what changed.'],
       ['#links', 'Open the public articles, talks, and dates.'],
-      ['#conversations', 'Use talks when direct voice matters.'],
+      ['#conversations', 'Use talks when you want the actual voice.'],
     ],
   };
 
