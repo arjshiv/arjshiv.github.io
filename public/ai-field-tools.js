@@ -70,7 +70,7 @@
       ['#proof-table', 'Start with Climb, BlackRock, and ResiDesk.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at how physics, finance, and housing led here.'],
-      ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
+      ['#ai-field-tools', 'Try the Useful AI test against your own idea before polishing the demo.'],
       ['#conversations', 'Watch the company-systems conversations.'],
     ],
     journalist: [
