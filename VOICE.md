@@ -49,6 +49,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - If a number appears, the sentence should still read like a human explaining what happened, not a lawyer filing exhibits.
 
+- When the page talks about AI labs or GTM, keep the proof in the work: customer context, deployment, evals, handoff, and adoption.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
