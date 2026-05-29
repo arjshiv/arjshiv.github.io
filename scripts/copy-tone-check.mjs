@@ -38,6 +38,7 @@ const banned = [
   'inevitable founder arc',
   'audience pathway',
   'stakeholder pathway',
+  'customer truth system',
 ];
 
 const found = banned.filter((phrase) => {
