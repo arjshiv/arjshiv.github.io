@@ -94,7 +94,7 @@
       ['#fit-boundaries', 'Read where I can help and where I probably cannot.'],
       ['#ai-field-tools', 'Use the simulator to see how the product idea turns into property-team work.'],
     ],
-    evidence: [
+    background: [
       ['#work', 'Start with the work history and outcomes.'],
       ['#proof-table', 'Use Climb, BlackRock, and ResiDesk for role, lesson, result, and context.'],
       ['#work', 'Check the role history and measurable outcomes.'],
@@ -198,15 +198,15 @@
       ['Prior outcomes', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
-    evidence: [
+    background: [
       ['Work history', '#work', 'Start with the roles and outcomes.'],
-      ['More background', '#evidence-ledger', 'Use the background section for outcomes, recognition, and links.'],
+      ['More background', '#background', 'Use the background section for outcomes, recognition, and links.'],
       ['External links', '#links', 'Open the public articles, talks, and dates.'],
     ],
   };
 
   const compassItems = [
-    ['More background', '#evidence-ledger', 'work, writing, and conversations'],
+    ['More background', '#background', 'work, writing, and conversations'],
     ['Now', '#now', 'what I am building now'],
     ['Map', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'where I worked before'],
