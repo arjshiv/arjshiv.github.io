@@ -77,7 +77,7 @@
       ['#conversations', 'Start with talks, topics, and direct voice.'],
       ['#work', 'Use the work history and numbers.'],
       ['#recent', 'Pull recent writing and article links.'],
-      ['#conversations', 'Use talks for direct voice.'],
+      ['#conversations', 'Use talks for the way I actually say it.'],
       ['#links', 'Grab external press, panels, recordings, and dates.'],
     ],
     candidate: [
