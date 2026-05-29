@@ -19,9 +19,18 @@ const banned = [
   'proof, not posture',
   'operating cadence',
   'leverage the power of AI',
+  'throughline',
+  'current test',
+  'main thing right now',
+  'product lead',
+  'owner context',
+  'customer truth',
 ];
 
-const found = banned.filter((phrase) => html.toLowerCase().includes(phrase));
+const found = banned.filter((phrase) => {
+  const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`\\b${escaped}\\b`, 'i').test(html);
+});
 if (found.length) {
   console.error('Copy tone check failed:');
   for (const phrase of found) console.error('- ' + phrase);
