@@ -486,7 +486,7 @@
       id: 'article-trail',
       label: 'Article trail',
       title: 'Outside links should make the work easier to understand.',
-      deck: 'The constellation keeps articles, writing, and recordings from becoming a loose link pile.',
+      deck: 'The map keeps articles, writing, and recordings from becoming a loose link pile.',
       kind: 'orbit',
       values: [
         ['Law360', 78],
