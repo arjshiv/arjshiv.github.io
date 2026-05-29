@@ -51,6 +51,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - When the page talks about AI labs or GTM, keep the proof in the work: customer context, deployment, evals, handoff, and adoption.
 
+- Use Paul Graham energy by making cause and effect obvious: I noticed a problem, did the unglamorous thing, learned the constraint, and kept going.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
