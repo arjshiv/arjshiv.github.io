@@ -195,7 +195,7 @@
     ],
     investor: [
       ['Now', '#now', 'Start with the current ResiDesk focus.'],
-      ['Prior outcomes', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
+      ['Before ResiDesk', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
     background: [
