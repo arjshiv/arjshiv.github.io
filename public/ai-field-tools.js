@@ -97,7 +97,7 @@
     background: [
       ['#work', 'Start with the work history.'],
       ['#proof-table', 'Use Climb, BlackRock, and ResiDesk for the actual path.'],
-      ['#work', 'Check the role history and measurable outcomes.'],
+      ['#work', 'Check the roles and what changed.'],
       ['#links', 'Open the public articles, talks, and dates.'],
       ['#conversations', 'Use talks when direct voice matters.'],
     ],
