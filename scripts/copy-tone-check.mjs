@@ -34,6 +34,7 @@ const banned = [
   'proof packet',
   'curated journey',
   'manufactured journey',
+  'founder energy narrative',
 ];
 
 const found = banned.filter((phrase) => {
