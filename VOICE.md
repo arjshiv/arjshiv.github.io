@@ -53,6 +53,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Use Paul Graham energy by making cause and effect obvious: I noticed a problem, did the unglamorous thing, learned the constraint, and kept going.
 
+- Founder energy should feel like taking responsibility for messy reality, not announcing that the site has founder energy.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
