@@ -135,7 +135,7 @@
     answers: ['missing policy context', 'unclear handoff', 'tone risk'],
     research: ['source drift', 'weak synthesis', 'no one owns the decision'],
     sales: ['generic sales line', 'bad account context', 'no next step'],
-    ops: ['routing ambiguity', 'permission gaps', 'no close-the-loop signal'],
+    ops: ['routing ambiguity', 'permission gaps', 'no clear close-the-loop moment'],
   };
 
   const tuesdayEnvironmentPressure = {
