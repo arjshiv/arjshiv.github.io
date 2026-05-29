@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: '#writing',
-      text: 'I care about AI that survives Tuesday. Context, evals, handoff, trust, and judgment matter more than novelty or model names.',
+      text: 'I care about AI that survives a normal Tuesday. Context, evals, handoff, trust, and judgment matter more than novelty or model names.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
