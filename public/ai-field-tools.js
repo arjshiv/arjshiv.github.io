@@ -190,7 +190,7 @@
     ],
     journalist: [
       ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk.'],
-      ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the polished site copy.'],
+      ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the site copy.'],
       ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
     investor: [
