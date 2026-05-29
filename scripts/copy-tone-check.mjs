@@ -46,6 +46,7 @@ const banned = [
   'strategic AI partner',
   'customer signal engine',
   'resident signal layer',
+  'workflow intelligence',
 ];
 
 const found = banned.filter((phrase) => {
