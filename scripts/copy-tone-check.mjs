@@ -42,6 +42,7 @@ const banned = [
   'defensible work system',
   'operating intelligence layer',
   'AI transformation partner',
+  'applied intelligence practice',
 ];
 
 const found = banned.filter((phrase) => {
