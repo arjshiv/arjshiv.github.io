@@ -142,7 +142,7 @@
     operator: ['time pressure', 'many small exceptions', 'resident trust'],
     enterprise: ['security review', 'systems integration', 'change management'],
     field: ['low patience', 'mobile use', 'messy language'],
-    exec: ['ROI path', 'board-level narrative', 'risk ownership'],
+    exec: ['ROI path', 'board-level story', 'risk ownership'],
   };
 
   const designCritique = [
