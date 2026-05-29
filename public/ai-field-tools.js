@@ -95,7 +95,7 @@
       ['#ai-field-tools', 'Use the simulator to see how the product idea turns into property-team work.'],
     ],
     background: [
-      ['#work', 'Start with the work history and outcomes.'],
+      ['#work', 'Start with the work history.'],
       ['#proof-table', 'Use Climb, BlackRock, and ResiDesk for role, lesson, result, and context.'],
       ['#work', 'Check the role history and measurable outcomes.'],
       ['#links', 'Open the public articles, talks, and dates.'],
