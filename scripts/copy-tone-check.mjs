@@ -39,6 +39,7 @@ const banned = [
   'audience pathway',
   'stakeholder pathway',
   'customer truth system',
+  'defensible work system',
 ];
 
 const found = banned.filter((phrase) => {
