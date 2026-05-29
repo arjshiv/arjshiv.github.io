@@ -25,6 +25,7 @@ const banned = [
   'product lead',
   'owner context',
   'customer truth',
+  'unlock customer truth',
 ];
 
 const found = banned.filter((phrase) => {
