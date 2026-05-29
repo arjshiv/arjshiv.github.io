@@ -41,6 +41,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Do not make ResiDesk a metaphor. It is the company I am building and where most of the work goes.
 
+- Say co-founder by describing ownership, data, product, sales, team, and the unglamorous startup work instead of forcing a title.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
