@@ -51,6 +51,7 @@ const banned = [
   'next-generation resident experience',
   'unlock the power',
   'transformative platform',
+  'mission-critical workflow',
 ];
 
 const found = banned.filter((phrase) => {
