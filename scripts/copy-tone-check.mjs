@@ -29,6 +29,7 @@ const banned = [
   'operationalize insights',
   'signal layer',
   'journey of proof',
+  'authentic founder journey',
 ];
 
 const found = banned.filter((phrase) => {
