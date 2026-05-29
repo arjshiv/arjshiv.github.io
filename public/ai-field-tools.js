@@ -88,7 +88,7 @@
       ['#links', 'Use recordings to hear the work without site polish.'],
     ],
     investor: [
-      ['#now', 'Start with the current company focus.'],
+      ['#now', 'Start with the current ResiDesk focus.'],
       ['#work', 'Look at prior operating outcomes.'],
       ['#recent', 'Check the links.'],
       ['#fit-boundaries', 'Read where I can help and where I probably cannot.'],
