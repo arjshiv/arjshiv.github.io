@@ -43,6 +43,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Say co-founder by describing ownership, data, product, sales, team, and the unglamorous startup work instead of forcing a title.
 
+- Keep candor supportive: believe the pain, separate scope from panic, and point to the next useful action.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
