@@ -82,7 +82,7 @@
     ],
     candidate: [
       ['#operating-system', 'Read how the company thinks about work.'],
-      ['#now', 'Understand the current focus.'],
+      ['#now', 'Understand what most of my week goes into.'],
       ['#about', 'Get how I got here and how I work.'],
       ['#writing', 'Read the principles.'],
       ['#links', 'Use recordings to hear the work without site polish.'],
