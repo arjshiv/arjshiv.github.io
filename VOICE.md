@@ -45,6 +45,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Keep candor supportive: believe the pain, separate scope from panic, and point to the next useful action.
 
+- Avoid implying the reader is entering a funnel. This is a founder site, not a manufactured journey.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
