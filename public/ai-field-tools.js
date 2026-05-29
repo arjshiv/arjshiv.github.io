@@ -471,7 +471,7 @@
     {
       id: 'transcript-terrain',
       label: 'Transcript terrain',
-      title: 'Talks are useful when they expose the repeated terrain.',
+      title: 'Talks are useful when they show what keeps coming back.',
       deck: 'The chart shows the topics that keep coming back across the public conversations.',
       kind: 'bars',
       values: [
