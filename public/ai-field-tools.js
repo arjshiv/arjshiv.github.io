@@ -649,7 +649,7 @@
     {
       id: 'operator-day',
       label: 'Operator day',
-      title: 'The best AI feature is the one that gives time back during the day.',
+      title: 'The best AI feature gives time back during the day.',
       deck: 'This keeps the product honest: shorter commute from problem to finished work.',
       kind: 'route',
       values: [
