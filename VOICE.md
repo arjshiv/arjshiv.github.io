@@ -47,6 +47,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Avoid implying the reader is entering a funnel. This is a founder site, not a manufactured journey.
 
+- If a number appears, the sentence should still read like a human explaining what happened, not a lawyer filing exhibits.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
