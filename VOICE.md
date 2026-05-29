@@ -39,6 +39,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - When a sentence sounds smart but vague, rewrite it with a resident, owner, operator, ticket, call, lease, renewal, or product decision.
 
+- Do not make ResiDesk a metaphor. It is the company I am building and where most of the work goes.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
