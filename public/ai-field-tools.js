@@ -4,7 +4,7 @@
       id: 'residesk',
       title: 'ResiDesk',
       href: '#now',
-      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, owner context, and work someone can pick up without rereading the whole history.',
+      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, building context, and work someone can pick up without rereading the whole history.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
     {
@@ -62,20 +62,20 @@
     operator: [
       ['#now', 'Start with what ResiDesk is testing now.'],
       ['#residesk-loop', 'Then look at how a resident message becomes work a property team can act on.'],
-      ['#recent', 'Use the outside links around resident feedback, retention, and NOI.'],
+      ['#recent', 'Use the links around resident feedback, retention, and NOI.'],
       ['#conversations', 'Watch the longer explanation in my own words.'],
-      ['#links', 'Use the public links when you want more background.'],
+      ['#links', 'Use the links when you want more background.'],
     ],
     founder: [
       ['#proof-table', 'Start with Climb, BlackRock, and ResiDesk.'],
       ['#writing', 'Read the useful-AI principles.'],
-      ['#about', 'Look at the arc from physics to finance to housing.'],
+      ['#about', 'Look at how physics, finance, and housing led here.'],
       ['#ai-field-tools', 'Try the Useful AI test against your own idea before you polish the demo.'],
       ['#conversations', 'Watch the company-systems conversations.'],
     ],
     journalist: [
       ['#conversations', 'Start with talks, topics, and direct voice.'],
-      ['#work', 'Use the measured work history.'],
+      ['#work', 'Use the work history and numbers.'],
       ['#recent', 'Pull recent writing and article links.'],
       ['#conversations', 'Use talks for direct voice.'],
       ['#links', 'Grab external press, panels, recordings, and dates.'],
@@ -83,16 +83,16 @@
     candidate: [
       ['#operating-system', 'Read how the company thinks about work.'],
       ['#now', 'Understand the current focus.'],
-      ['#about', 'Get the personal arc and operating bias.'],
+      ['#about', 'Get how I got here and how I work.'],
       ['#writing', 'Read the principles.'],
       ['#links', 'Use recordings to hear the work without site polish.'],
     ],
     investor: [
       ['#now', 'Start with the current company focus.'],
       ['#work', 'Look at prior operating outcomes.'],
-      ['#recent', 'Check the public links.'],
+      ['#recent', 'Check the links.'],
       ['#fit-boundaries', 'Read where I can help and where I probably cannot.'],
-      ['#ai-field-tools', 'Use the simulator to see how the product thesis turns into operator work.'],
+      ['#ai-field-tools', 'Use the simulator to see how the product idea turns into property-team work.'],
     ],
     evidence: [
       ['#work', 'Start with the work history and outcomes.'],
@@ -168,7 +168,7 @@
     },
     proof: {
       title: 'Public-link pass',
-      steps: ['Move the visitor from the point to the background quickly: work history, talks, writing, press.', 'Name what happened, then link the longer version.', 'Do not let design flourishes hide the actual work.'],
+      steps: ['Move the visitor from the main claim to the background quickly: work history, talks, writing, press.', 'Name what happened, then link the source.', 'Do not let design flourishes hide the actual work.'],
     },
   };
 
@@ -181,7 +181,7 @@
     founder: [
       ['How I build', '#operating-system', 'Use the six principles as the company-building spine.'],
       ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it real.'],
-      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the point of view on systems around models.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the argument for systems around models.'],
     ],
     'ai-team': [
       ['Tuesday test', '#deployment-room', 'Start with what has to survive after the model demo.'],
@@ -189,9 +189,9 @@
       ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and owner-visible work show up in housing.'],
     ],
     journalist: [
-      ['Work arc', '#work', 'Use the arc from physics to BlackRock, Climb, and ResiDesk.'],
+      ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk.'],
       ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the polished site copy.'],
-      ['Links', '#links', 'Use the public links for articles, talks, and dates.'],
+      ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
     investor: [
       ['Now', '#now', 'Start with the current ResiDesk focus.'],
@@ -209,8 +209,8 @@
     ['More background', '#evidence-ledger', 'work, writing, and conversations'],
     ['Now', '#now', 'what I am building now'],
     ['Map', '#signal-map', 'how resident messages become owned work'],
-    ['Work', '#work', 'the work arc'],
-    ['Public', '#recent', 'outside links'],
+    ['Work', '#work', 'where I worked before'],
+    ['Links', '#recent', 'articles and talks'],
     ['Talks', '#conversations', 'direct voice'],
     ['Writing', '#writing', 'AI point of view'],
   ];
@@ -273,7 +273,7 @@
         ['Press', 66],
         ['Work', 81],
       ],
-      notes: ['Keep links close to the point.', 'Separate talks from work.', 'Make the trail easy.'],
+      notes: ['Keep links close to the claim.', 'Separate talks from work.', 'Make the trail easy.'],
     },
     {
       id: 'trust-stack',
@@ -453,10 +453,10 @@
       notes: ['Show the real job.', 'Reward context carriers.', 'Skip vague culture copy.'],
     },
     {
-      id: 'founder-diligence',
-      label: 'Founder diligence',
+      id: 'founder-work',
+      label: 'Founder work',
       title: 'A good founder answer starts close to the customer.',
-      deck: 'This heatmap gives investors and founders a fast way to check where the work is clearest.',
+      deck: 'This heatmap gives founders and investors a fast way to check where the work is clearest.',
       kind: 'matrix',
       values: [
         ['Customer', 91],
@@ -466,7 +466,7 @@
         ['Team', 73],
         ['Learning', 82],
       ],
-      notes: ['Close to pain beats polish.', 'The point should travel.', 'Learning speed matters.'],
+      notes: ['Close to pain beats polish.', 'The claim should travel.', 'Learning speed matters.'],
     },
     {
       id: 'transcript-terrain',
@@ -483,7 +483,7 @@
       notes: ['Use talks for voice.', 'Watch repeated themes.', 'Do not over-polish the source.'],
     },
     {
-      id: 'article-evidence',
+      id: 'article-trail',
       label: 'Article trail',
       title: 'Outside links should make the work easier to check.',
       deck: 'The constellation keeps articles, writing, and recordings from becoming a loose link pile.',
@@ -498,9 +498,9 @@
       notes: ['Name what happened.', 'Use the date.', 'Keep the reader oriented.'],
     },
     {
-      id: 'personal-arc',
-      label: 'Personal arc',
-      title: 'The arc makes more sense when it stays tied to measurement.',
+      id: 'how-i-got-here',
+      label: 'How I got here',
+      title: 'The path makes more sense when it stays tied to measurement.',
       deck: 'Physics, finance, education finance, housing: different rooms, same bias toward useful measurement.',
       kind: 'route',
       values: [
