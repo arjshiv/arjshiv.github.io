@@ -263,7 +263,7 @@
     {
       id: 'proof-constellation',
       label: 'Link map',
-      title: 'Do not make the reader hunt for background.',
+      title: 'Do not make the reader hunt.',
       deck: 'Keep the links, talks, and company facts close to the part of the page they explain.',
       kind: 'orbit',
       values: [
