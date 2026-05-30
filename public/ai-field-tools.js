@@ -201,7 +201,7 @@
     background: [
       ['Work history', '#work', 'Start with the roles and outcomes.'],
       ['Longer version', '#background', 'Use the background section for the longer version and links.'],
-      ['External links', '#links', 'Open the public articles, talks, and dates.'],
+      ['Outside links', '#links', 'Open the public articles, talks, and dates.'],
     ],
   };
 
