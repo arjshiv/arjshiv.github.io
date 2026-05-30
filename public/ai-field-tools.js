@@ -1023,7 +1023,7 @@
       `;
     };
     button.addEventListener('click', render);
-    window.addEventListener('site-command-proof', (event) => {
+    window.addEventListener('site-command-reading', (event) => {
       const audience = String(event.detail || 'operator');
       if (readingPaths[audience]) select.value = audience;
       render();
