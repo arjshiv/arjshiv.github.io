@@ -133,7 +133,7 @@
 
   const tuesdayBreakpoints = {
     answers: ['missing policy context', 'unclear handoff', 'tone misses'],
-    research: ['bad source match', 'weak synthesis', 'no one owns the decision'],
+    research: ['bad source match', 'thin summary', 'no one owns the decision'],
     sales: ['generic sales line', 'bad account context', 'no next step'],
     ops: ['routing ambiguity', 'permission gaps', 'no clear close-the-loop moment'],
   };
