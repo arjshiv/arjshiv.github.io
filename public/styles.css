@@ -284,19 +284,19 @@
 /* tighten tap behavior for stat card. */
 .stat-card :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
 
-/* prevent grid overflow for evidence card. */
+/* prevent grid overflow for background card. */
 .background-grid article{min-width:0;}
 
-/* balance local headings for evidence card. */
+/* balance local headings for background card. */
 .background-grid article :where(h1,h2,h3,h4){text-wrap:balance;}
 
-/* pretty local prose for evidence card. */
+/* pretty local prose for background card. */
 .background-grid article :where(p,li){text-wrap:pretty;}
 
-/* stabilize embedded media for evidence card. */
+/* stabilize embedded media for background card. */
 .background-grid article :where(img,video,iframe,svg){max-width:100%;height:auto;}
 
-/* tighten tap behavior for evidence card. */
+/* tighten tap behavior for background card. */
 .background-grid article :where(a,button,summary,input,textarea,select){touch-action:manipulation;}
 
 /* prevent grid overflow for recent item. */
