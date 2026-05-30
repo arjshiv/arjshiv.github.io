@@ -163,7 +163,7 @@
       steps: ['Keep AI tools lazy-loaded and avoid any JavaScript above the fold.', 'Prefer content-visibility for lower sections and compressed images for public link cards.', 'Make interactions transform-only so old browsers do less paint work.'],
     },
     voice: {
-      title: 'Voice pass',
+      title: 'Voice fix',
       steps: ['Replace abstractions with the job: residents text, operators decide, someone owns the next step.', 'Use first person when the point is personal.', 'Cut anything that sounds like a press release or a transcript summary.'],
     },
     sources: {
