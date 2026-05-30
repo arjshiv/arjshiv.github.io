@@ -1019,7 +1019,7 @@
         <ol class="reading-path-list">
           ${packet.map(([title, href, note]) => `<li><a href="${href}">${escapeHtml(title)}</a><p>${escapeHtml(note)}</p></li>`).join('')}
         </ol>
-        <button type="button" class="text-link ai-copy-output" data-copy-kind="proof">Copy path</button>
+        <button type="button" class="text-link ai-copy-output" data-copy-kind="reading">Copy path</button>
       `;
     };
     button.addEventListener('click', render);
@@ -1029,7 +1029,7 @@
       render();
     });
     output.addEventListener('click', async (event) => {
-      if (!event.target.matches('[data-copy-kind="proof"]')) return;
+      if (!event.target.matches('[data-copy-kind="reading"]')) return;
       const copied = await copyText(output.innerText.replace('Copy path', '').trim());
       event.target.textContent = copied ? 'Copied' : 'Copy unavailable';
     });
