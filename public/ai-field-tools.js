@@ -186,7 +186,7 @@
     'ai-team': [
       ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the build-around-the-model argument.'],
-      ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and owner-visible work show up in housing.'],
+      ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and work an owner can see show up in housing.'],
     ],
     journalist: [
       ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk.'],
