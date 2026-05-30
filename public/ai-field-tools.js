@@ -74,7 +74,7 @@
       ['#conversations', 'Watch the company-building conversations.'],
     ],
     journalist: [
-      ['#conversations', 'Start with talks and direct voice.'],
+      ['#conversations', 'Start with talks and how I say it.'],
       ['#work', 'Use the work history and numbers.'],
       ['#recent', 'Pull recent writing and links.'],
       ['#conversations', 'Use talks for the way I actually say it.'],
@@ -190,7 +190,7 @@
     ],
     journalist: [
       ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk.'],
-      ['Talks', '#conversations', 'Pull direct voice from interviews and panels, not just the site copy.'],
+      ['Talks', '#conversations', 'Pull how I say it from interviews and panels, not just the site copy.'],
       ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
     investor: [
@@ -211,7 +211,7 @@
     ['Map', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'where I worked before'],
     ['Links', '#recent', 'articles and talks'],
-    ['Talks', '#conversations', 'direct voice'],
+    ['Talks', '#conversations', 'how I say it'],
     ['Writing', '#writing', 'AI point of view'],
   ];
 
