@@ -85,7 +85,7 @@
       ['#now', 'Understand what most of my week goes into.'],
       ['#about', 'Get how I got here and how I work.'],
       ['#writing', 'Read the principles.'],
-      ['#links', 'Use recordings to hear the work without site polish.'],
+      ['#links', 'Use recordings to hear the work in my own words.'],
     ],
     investor: [
       ['#now', 'Start with the current ResiDesk focus.'],
