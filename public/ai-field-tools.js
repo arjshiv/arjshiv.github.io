@@ -78,7 +78,7 @@
       ['#work', 'Use the work history and numbers.'],
       ['#recent', 'Pull recent writing and article links.'],
       ['#conversations', 'Use talks for the way I actually say it.'],
-      ['#links', 'Grab external press, panels, recordings, and dates.'],
+      ['#links', 'Grab the outside articles, panels, recordings, and dates.'],
     ],
     candidate: [
       ['#operating-system', 'Read how the company thinks about work.'],
