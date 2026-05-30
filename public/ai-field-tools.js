@@ -288,7 +288,7 @@
         ['Test', 67],
         ['Follow', 79],
       ],
-      notes: ['No answer floats alone.', 'Judgment stays human.', 'The test is use under pressure.'],
+      notes: ['No answer should float alone.', 'Judgment stays human.', 'The test is use under pressure.'],
     },
     {
       id: 'adoption-curve',
