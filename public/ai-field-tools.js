@@ -159,7 +159,7 @@
       steps: ['Audit hover states first; text should never get lighter during motion.', 'Keep long paragraphs under 68 characters per line.', 'Use borders to group choices, not to outline every empty surface.'],
     },
     speed: {
-      title: 'Speed pass',
+      title: 'Speed fix',
       steps: ['Keep AI tools lazy-loaded and avoid any JavaScript above the fold.', 'Prefer content-visibility for lower sections and compressed images for public link cards.', 'Make interactions transform-only so old browsers do less paint work.'],
     },
     voice: {
