@@ -391,7 +391,7 @@
         ['Lights', 61],
         ['Package', 73],
       ],
-      notes: ['Frequency matters.', 'Repeated small issues count.', 'Show the building pattern.'],
+      notes: ['Frequency matters.', 'Repeated small issues count.', 'Show what is repeating in the building.'],
     },
     {
       id: 'renewal-warning',
