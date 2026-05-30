@@ -383,7 +383,7 @@
       id: 'maintenance-pulse',
       label: 'Maintenance pulse',
       title: 'Maintenance complaints are often a trust chart.',
-      deck: 'This view turns repeated small problems into a pulse an operator can read.',
+      deck: 'This view turns repeated small problems into something an operator can read.',
       kind: 'bars',
       values: [
         ['Washer', 52],
