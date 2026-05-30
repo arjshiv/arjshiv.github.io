@@ -1009,7 +1009,7 @@
   };
 
   const initProofPacket = () => {
-    const select = document.querySelector('#proof-audience');
+    const select = document.querySelector('#reading-audience');
     const button = document.querySelector('#build-proof-packet');
     const output = document.querySelector('#proof-packet-output');
     if (!select || !button || !output) return;
