@@ -1014,7 +1014,7 @@
     const output = document.querySelector('#proof-packet-output');
     if (!select || !button || !output) return;
     const render = () => {
-      const packet = proofPackets[select.value] || proofPackets.operator;
+      const packet = readingPaths[select.value] || readingPaths.operator;
       output.innerHTML = `
         <ol class="proof-packet-list">
           ${packet.map(([title, href, note]) => `<li><a href="${href}">${escapeHtml(title)}</a><p>${escapeHtml(note)}</p></li>`).join('')}
@@ -1025,7 +1025,7 @@
     button.addEventListener('click', render);
     window.addEventListener('site-command-proof', (event) => {
       const audience = String(event.detail || 'operator');
-      if (proofPackets[audience]) select.value = audience;
+      if (readingPaths[audience]) select.value = audience;
       render();
     });
     output.addEventListener('click', async (event) => {
