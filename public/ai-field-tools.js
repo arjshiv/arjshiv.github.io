@@ -135,7 +135,7 @@
     answers: ['missing policy context', 'unclear handoff', 'tone misses'],
     research: ['bad source match', 'thin summary', 'no one owns the decision'],
     sales: ['generic sales line', 'bad account fit', 'no next step'],
-    ops: ['routing ambiguity', 'permission gaps', 'no clear close-the-loop moment'],
+    ops: ['unclear routing', 'permission gaps', 'no clear close-the-loop moment'],
   };
 
   const tuesdayEnvironmentPressure = {
