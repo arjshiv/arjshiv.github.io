@@ -450,7 +450,7 @@
         ['Mess', 74],
         ['Judgment', 86],
       ],
-      notes: ['Show the real job.', 'Reward context carriers.', 'Skip vague culture copy.'],
+      notes: ['Show the real job.', 'Look for people who carry context.', 'Skip vague culture copy.'],
     },
     {
       id: 'founder-work',
