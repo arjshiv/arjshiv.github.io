@@ -492,16 +492,16 @@
 .work-table{display:grid;border:3px solid var(--contrast-line);border-radius:.42rem;overflow:hidden;background:var(--contrast-paper);box-shadow:var(--contrast-shadow-sm)}
 
 /* Compression 085: proof table rows. */
-.proof-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr) minmax(0,.85fr) minmax(7rem,.45fr);gap:0;border-top:2px solid var(--contrast-line)}.proof-row:first-child{border-top:0}.proof-row>*{padding:.9rem;border-left:2px solid var(--contrast-line);color:var(--contrast-soft);line-height:1.42}.proof-row>*:first-child{border-left:0;color:var(--contrast-ink)}
+.work-row{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr) minmax(0,.85fr) minmax(7rem,.45fr);gap:0;border-top:2px solid var(--contrast-line)}.work-row:first-child{border-top:0}.work-row>*{padding:.9rem;border-left:2px solid var(--contrast-line);color:var(--contrast-soft);line-height:1.42}.work-row>*:first-child{border-left:0;color:var(--contrast-ink)}
 
 /* Compression 086: proof table header. */
-.proof-row-head{background:var(--contrast-blue)}.proof-row-head>*,.proof-row-head>*:first-child{color:var(--contrast-paper);font-family:var(--font-mono);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.work-row-head{background:var(--contrast-blue)}.work-row-head>*,.work-row-head>*:first-child{color:var(--contrast-paper);font-family:var(--font-mono);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
 
 /* Compression 087: proof table links. */
-.proof-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.proof-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
+.work-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.work-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
 
 /* Compression 088: proof table mobile layout. */
-@media (max-width:760px){.proof-row{grid-template-columns:1fr}.proof-row>*{border-left:0;border-top:1px solid color-mix(in oklch,var(--contrast-line) 50%,transparent)}.proof-row>*:first-child{border-top:0}.proof-row-head{display:none}}
+@media (max-width:760px){.work-row{grid-template-columns:1fr}.work-row>*{border-left:0;border-top:1px solid color-mix(in oklch,var(--contrast-line) 50%,transparent)}.work-row>*:first-child{border-top:0}.work-row-head{display:none}}
 
 /* Compression 089: ResiDesk loop grid. */
 .residesk-loop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(.85rem,2vw,1.1rem);margin-bottom:1rem}.residesk-before-after{display:grid;gap:.75rem;min-height:16rem;padding:clamp(1.1rem,2.2vw,1.45rem);border:3px solid var(--contrast-line);border-radius:.42rem;background:color-mix(in oklch,var(--contrast-cyan) 40%,var(--contrast-paper) 60%);box-shadow:var(--contrast-shadow-sm)}
