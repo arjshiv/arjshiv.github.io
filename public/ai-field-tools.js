@@ -155,7 +155,7 @@
 
   const tweakBriefs = {
     legibility: {
-      title: 'Legibility pass',
+      title: 'Legibility fix',
       steps: ['Audit hover states first; text should never get lighter during motion.', 'Keep long paragraphs under 68 characters per line.', 'Use borders to group choices, not to outline every empty surface.'],
     },
     speed: {
