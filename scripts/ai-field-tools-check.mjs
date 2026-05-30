@@ -49,7 +49,7 @@ await page.click('#toggle-highlights');
 await page.click('#run-design-critique');
 await page.click('#site-tweak-panel button[data-tweak="voice"]');
 await page.selectOption('#reading-audience', 'founder');
-await page.click('#build-proof-packet');
+await page.click('#build-reading-path');
 await page.fill('#operator-memo-input', 'Residents keep texting about elevator outages, package access, and renewal confusion. The team answers one by one, but nobody has shown the owner the pattern.');
 await page.click('#build-operator-memo');
 await page.fill('#private-notes', 'I care about demos versus adoption. The useful AI test is a good hook.');
