@@ -427,7 +427,7 @@
       id: 'owner-briefing',
       label: 'Owner briefing',
       title: 'An owner needs the pattern, not the inbox.',
-      deck: 'This stack turns resident noise into a brief a decision-maker can use.',
+      deck: 'This stack turns resident messages into a brief a decision-maker can use.',
       kind: 'stack',
       values: [
         ['Raw text', 90],
