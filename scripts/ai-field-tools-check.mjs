@@ -66,7 +66,7 @@ const result = await page.evaluate(() => ({
   highlights: document.querySelectorAll('mark.signal-highlight').length,
   critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
   tweak: document.querySelector('#tweak-output')?.textContent || '',
-  proofCount: document.querySelectorAll('#reading-path-output li').length,
+  readingPathCount: document.querySelectorAll('#reading-path-output li').length,
   askBusy: document.querySelector('#ai-answer')?.getAttribute('aria-busy'),
   memo: document.querySelector('#operator-memo-output')?.textContent || '',
   compassCount: document.querySelectorAll('#site-compass-output a').length,
@@ -92,7 +92,7 @@ if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.sim
 if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result.highlights} highlights, expected at least 20.`);
 if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
 if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
-if (result.proofCount !== 3) failures.push(`Reading path rendered ${result.proofCount} items, expected 3.`);
+if (result.readingPathCount !== 3) failures.push(`Reading path rendered ${result.readingPathCount} items, expected 3.`);
 if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
 if (result.compassCount !== 7) failures.push(`Site compass rendered ${result.compassCount} links, expected 7.`);
