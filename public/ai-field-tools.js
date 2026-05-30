@@ -273,7 +273,7 @@
         ['Press', 66],
         ['Work', 81],
       ],
-      notes: ['Keep links close to the claim.', 'Separate talks from work.', 'Make the trail easy.'],
+      notes: ['Keep links close to the claim.', 'Separate talks from work.', 'Make the links easy.'],
     },
     {
       id: 'trust-stack',
