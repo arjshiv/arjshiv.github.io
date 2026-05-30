@@ -421,7 +421,7 @@
         ['Mess', 48],
         ['Repeat', 57],
       ],
-      notes: ['A demo can lie by omission.', 'Busy work is the test.', 'Repeat use is the signal.'],
+      notes: ['A demo can lie by omission.', 'Busy days are the test.', 'Repeat use is the signal.'],
     },
     {
       id: 'owner-briefing',
