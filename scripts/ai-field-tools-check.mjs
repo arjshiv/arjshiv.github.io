@@ -91,7 +91,7 @@ if (!result.score.includes('5/5')) failures.push('Useful AI score did not reach 
 if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.simCount} list items, expected at least 7.`);
 if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result.highlights} highlights, expected at least 20.`);
 if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
-if (!result.tweak.includes('Voice pass')) failures.push('Tweak panel did not render the selected voice pass.');
+if (!result.tweak.includes('Voice fix')) failures.push('Tweak panel did not render the selected voice fix.');
 if (result.readingPathCount !== 3) failures.push(`Reading path rendered ${result.readingPathCount} items, expected 3.`);
 if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
 if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
