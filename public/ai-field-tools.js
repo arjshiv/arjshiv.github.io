@@ -172,7 +172,7 @@
     },
   };
 
-  const proofPackets = {
+  const readingPaths = {
     operator: [
       ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and getting the right issue to someone who can fix it.'],
       ['Resident messages', '#signal-map', 'Then show how raw resident messages become work someone owns.'],
