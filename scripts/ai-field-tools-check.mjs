@@ -25,7 +25,7 @@ await page.click('.command-result[data-command-target^="ask:"]');
 await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
 await page.click('.command-launcher');
 await page.fill('#command-search', 'operator path');
-await page.click('.command-result[data-command-target="proof:operator"]');
+await page.click('.command-result[data-command-target="reading:operator"]');
 await page.click('.command-launcher');
 await page.fill('#command-search', 'draft operator memo');
 await page.click('.command-result[data-command-target^="memo:"]');
