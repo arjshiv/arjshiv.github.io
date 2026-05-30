@@ -436,7 +436,7 @@
         ['Action', 74],
         ['Owner brief', 84],
       ],
-      notes: ['Do not forward the mess.', 'Compress without hiding.', 'Tie it to action.'],
+      notes: ['Do not forward the whole mess.', 'Compress without hiding.', 'Tie it to action.'],
     },
     {
       id: 'candidate-lens',
