@@ -212,7 +212,7 @@
     ['Work', '#work', 'where I worked before'],
     ['Links', '#recent', 'articles and talks'],
     ['Talks', '#conversations', 'how I say it'],
-    ['Writing', '#writing', 'AI point of view'],
+    ['Writing', '#writing', 'AI view'],
   ];
 
   const visualModes = [
