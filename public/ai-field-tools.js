@@ -181,7 +181,7 @@
     founder: [
       ['How I build', '#operating-system', 'Use the six principles for how I work.'],
       ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it real.'],
-      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the argument for systems around models.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the argument for building around models.'],
     ],
     'ai-team': [
       ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo.'],
