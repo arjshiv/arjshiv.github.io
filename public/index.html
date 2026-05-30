@@ -1317,8 +1317,8 @@
             ['Optional tools', '#ai-field-tools', 'Ask, score, simulate, and build reading paths', 'tools'],
             ['Ask about AI', 'ask:What does Arjun believe about useful AI?', 'Prefill the local site answer tool', 'prompt'],
             ['Tuesday test', '#ai-field-tools', 'Stress-test a demo against a real workday', 'adoption'],
-            ['Build operator path', 'proof:operator', 'Create a reading path for an owner or operator', 'path'],
-            ['Build deep-reader path', 'proof:background', 'Create a deeper reading path', 'path'],
+            ['Build operator path', 'reading:operator', 'Create a reading path for an owner or operator', 'path'],
+            ['Build deep-reader path', 'reading:background', 'Create a deeper reading path', 'path'],
             ['Draft operator memo', 'memo:Residents keep texting about packages, renewals, and maintenance. The team is answering one at a time, but nobody has shown the owner the pattern.', 'Prefill the memo builder with a realistic note', 'memo'],
             ['Fit boundaries', '#fit-boundaries', 'Where I can help and where I probably cannot', 'fit'],
             ['Investing lens', '#investing', 'How I think about founders, advice, and useful context', 'operator'],
@@ -1454,7 +1454,7 @@
             } else if (target?.startsWith('ask:')) {
                 document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
                 dispatchAiToolCommand('site-command-ask', target.slice(4));
-            } else if (target?.startsWith('proof:')) {
+            } else if (target?.startsWith('reading:')) {
                 document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
                 dispatchAiToolCommand('site-command-proof', target.slice(6));
             } else if (target?.startsWith('memo:')) {
