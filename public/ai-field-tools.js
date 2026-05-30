@@ -331,7 +331,7 @@
         ['Lease', 68],
         ['Tone', 61],
       ],
-      notes: ['Show inputs.', 'Expose missing context.', 'Let the person judge.'],
+      notes: ['Show inputs.', 'Show missing context.', 'Let the person judge.'],
     },
     {
       id: 'voice-fingerprint',
