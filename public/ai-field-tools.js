@@ -1016,7 +1016,7 @@
     const render = () => {
       const packet = readingPaths[select.value] || readingPaths.operator;
       output.innerHTML = `
-        <ol class="proof-packet-list">
+        <ol class="reading-path-list">
           ${packet.map(([title, href, note]) => `<li><a href="${href}">${escapeHtml(title)}</a><p>${escapeHtml(note)}</p></li>`).join('')}
         </ol>
         <button type="button" class="text-link ai-copy-output" data-copy-kind="proof">Copy path</button>
