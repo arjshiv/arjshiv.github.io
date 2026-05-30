@@ -1011,7 +1011,7 @@
   const initProofPacket = () => {
     const select = document.querySelector('#reading-audience');
     const button = document.querySelector('#build-reading-path');
-    const output = document.querySelector('#proof-packet-output');
+    const output = document.querySelector('#reading-path-output');
     if (!select || !button || !output) return;
     const render = () => {
       const packet = readingPaths[select.value] || readingPaths.operator;
