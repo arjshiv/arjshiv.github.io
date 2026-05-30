@@ -1456,7 +1456,7 @@
                 dispatchAiToolCommand('site-command-ask', target.slice(4));
             } else if (target?.startsWith('reading:')) {
                 document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
-                dispatchAiToolCommand('site-command-proof', target.slice(6));
+                dispatchAiToolCommand('site-command-reading', target.slice(6));
             } else if (target?.startsWith('memo:')) {
                 document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
                 dispatchAiToolCommand('site-command-memo', target.slice(5));
