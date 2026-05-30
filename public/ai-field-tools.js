@@ -74,7 +74,7 @@
       ['#conversations', 'Watch the company-building conversations.'],
     ],
     journalist: [
-      ['#conversations', 'Start with talks, topics, and direct voice.'],
+      ['#conversations', 'Start with talks and direct voice.'],
       ['#work', 'Use the work history and numbers.'],
       ['#recent', 'Pull recent writing and article links.'],
       ['#conversations', 'Use talks for the way I actually say it.'],
