@@ -66,7 +66,7 @@ const result = await page.evaluate(() => ({
   highlights: document.querySelectorAll('mark.signal-highlight').length,
   critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
   tweak: document.querySelector('#tweak-output')?.textContent || '',
-  proofCount: document.querySelectorAll('#proof-packet-output li').length,
+  proofCount: document.querySelectorAll('#reading-path-output li').length,
   askBusy: document.querySelector('#ai-answer')?.getAttribute('aria-busy'),
   memo: document.querySelector('#operator-memo-output')?.textContent || '',
   compassCount: document.querySelectorAll('#site-compass-output a').length,
