@@ -413,7 +413,7 @@
       id: 'demo-gap',
       label: 'Demo gap',
       title: 'Some demos look better than the work they replace.',
-      deck: 'The bars show the dangerous gap between a polished room and a busy team.',
+      deck: 'The bars show the gap between a polished room and a busy team.',
       kind: 'bars',
       values: [
         ['Room', 94],
