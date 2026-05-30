@@ -132,7 +132,7 @@
   };
 
   const tuesdayBreakpoints = {
-    answers: ['missing policy context', 'unclear handoff', 'tone risk'],
+    answers: ['missing policy context', 'unclear handoff', 'tone misses'],
     research: ['source drift', 'weak synthesis', 'no one owns the decision'],
     sales: ['generic sales line', 'bad account context', 'no next step'],
     ops: ['routing ambiguity', 'permission gaps', 'no clear close-the-loop moment'],
