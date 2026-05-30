@@ -242,7 +242,7 @@
         ['Owner', 64],
         ['Fix', 58],
       ],
-      notes: ['Capture the raw words.', 'Name the pattern.', 'Move the work.'],
+      notes: ['Capture the raw words.', 'Name what repeats.', 'Move the work.'],
     },
     {
       id: 'risk-heatmap',
