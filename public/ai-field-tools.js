@@ -76,7 +76,7 @@
     journalist: [
       ['#conversations', 'Start with talks and direct voice.'],
       ['#work', 'Use the work history and numbers.'],
-      ['#recent', 'Pull recent writing and article links.'],
+      ['#recent', 'Pull recent writing and links.'],
       ['#conversations', 'Use talks for the way I actually say it.'],
       ['#links', 'Grab the outside articles, panels, recordings, and dates.'],
     ],
