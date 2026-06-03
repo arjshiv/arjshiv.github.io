@@ -569,7 +569,7 @@
         ['Workflow', 84],
         ['ROI', 67],
       ],
-      notes: ['Do not dodge hard questions.', 'Map objection to system design.', 'Answer with specifics.'],
+      notes: ['Do not dodge hard questions.', 'Map objection to product design.', 'Answer with specifics.'],
     },
     {
       id: 'page-density',
