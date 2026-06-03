@@ -320,7 +320,7 @@
       notes: ['Do not stop at insight.', 'Name the decision.', 'Show who acts.'],
     },
     {
-      id: 'context-receipt',
+      id: 'context-trail',
       label: 'Context trail',
       title: 'Before AI answers, it should show what it used.',
       deck: 'Show the inputs before asking anyone to trust the answer.',
