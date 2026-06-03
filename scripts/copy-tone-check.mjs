@@ -55,6 +55,7 @@ const banned = [
   'browser model hook',
   'useful object',
   'proof constellation',
+  'context receipt',
 ];
 
 const found = banned.filter((phrase) => {
