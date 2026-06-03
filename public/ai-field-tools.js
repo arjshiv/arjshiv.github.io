@@ -294,7 +294,7 @@
       id: 'adoption-curve',
       label: 'Adoption curve',
       title: 'The demo is early. It is not done.',
-      deck: 'A local model can help describe the gap, but the chart keeps the test honest.',
+      deck: 'Local AI can help describe the gap, but the chart keeps the test honest.',
       kind: 'route',
       values: [
         ['Demo', 92],
