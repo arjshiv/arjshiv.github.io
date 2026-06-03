@@ -527,7 +527,7 @@
       notes: ['Feature-detect first.', 'Keep deterministic output.', 'Let newer browsers add depth.'],
     },
     {
-      id: 'local-model-state',
+      id: 'local-ai-state',
       label: 'Model state',
       title: 'The browser model is a bonus, not a dependency.',
       deck: 'This view makes availability explicit so the tool feels honest.',
