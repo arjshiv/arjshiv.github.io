@@ -984,7 +984,7 @@
             </div>
           `).join('')}
         </div>
-        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it behaves like a useful object. Keep pushing toward fewer decorations, more judgment, and a clearer point.</p>
+        <p class="critique-verdict"><strong>Verdict:</strong> The site is strongest when it helps the reader do something useful. Keep pushing toward fewer decorations, more judgment, and a clearer point.</p>
       `;
     };
     button.addEventListener('click', render);
