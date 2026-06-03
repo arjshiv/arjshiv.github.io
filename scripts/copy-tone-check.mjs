@@ -54,6 +54,7 @@ const banned = [
   'mission-critical workflow',
   'browser model hook',
   'useful object',
+  'proof constellation',
 ];
 
 const found = banned.filter((phrase) => {
