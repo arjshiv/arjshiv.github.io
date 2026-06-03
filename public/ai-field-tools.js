@@ -559,7 +559,7 @@
     {
       id: 'objection-map',
       label: 'Objection map',
-      title: 'The objections should point to the part of the system that answers them.',
+      title: 'Objections should point to the part of the product that answers them.',
       deck: 'Do not let browser AI talk around the hard product questions.',
       kind: 'orbit',
       values: [
