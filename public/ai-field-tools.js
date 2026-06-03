@@ -845,7 +845,7 @@
           <strong>${score}/5 useful-work checks</strong>
           <span class="ai-score-bar" aria-hidden="true"><span style="--score-width:${percent}%"></span></span>
           <ul>${hits.map(([label, hit]) => `<li>${hit ? 'Pass' : 'Missing'}: ${label}</li>`).join('')}</ul>
-          <p>${score >= 4 ? 'This has the shape of useful work. The next question is whether a real team would trust it on a busy day.' : 'This still sounds more like a demo than real work. Add context, ownership, and a concrete next step.'}</p>
+          <p>${score >= 4 ? 'This has the shape of useful work. The next question is whether a real team would trust it on a busy day.' : 'This still sounds more like a demo than something a team can use. Add context, ownership, and a concrete next step.'}</p>
         </div>
       `;
     });
