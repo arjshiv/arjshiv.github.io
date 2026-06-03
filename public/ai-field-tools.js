@@ -604,7 +604,7 @@
     {
       id: 'reading-time-map',
       label: 'Quick read',
-      title: 'Different readers should not need the same entry point.',
+      title: 'Different readers should get different shortcuts.',
       deck: 'This view helps a browser model pull relevant sections without changing the page itself.',
       kind: 'route',
       values: [
