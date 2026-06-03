@@ -52,6 +52,7 @@ const banned = [
   'unlock the power',
   'transformative platform',
   'mission-critical workflow',
+  'browser model hook',
 ];
 
 const found = banned.filter((phrase) => {
