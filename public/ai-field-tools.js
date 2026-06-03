@@ -644,7 +644,7 @@
         ['Classify', 80],
         ['Route', 88],
       ],
-      notes: ['Prefer narrow jobs.', 'Use model APIs where they fit.', 'Keep routing concrete.'],
+      notes: ['Prefer narrow jobs.', 'Use model APIs where they help.', 'Keep routing concrete.'],
     },
     {
       id: 'operator-day',
