@@ -261,7 +261,7 @@
       notes: ['Do not average away pain.', 'Watch repeat issues.', 'Make renewal risk visible.'],
     },
     {
-      id: 'proof-constellation',
+      id: 'link-map',
       label: 'Link map',
       title: 'Do not make the reader hunt.',
       deck: 'Keep links, talks, and company facts close to the part of the page they explain.',
