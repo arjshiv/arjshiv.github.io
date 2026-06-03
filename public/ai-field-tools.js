@@ -529,7 +529,7 @@
     {
       id: 'local-ai-state',
       label: 'Model state',
-      title: 'The browser model is a bonus, not a dependency.',
+      title: 'Local AI is a bonus, not a dependency.',
       deck: 'This view makes availability explicit so the tool feels honest.',
       kind: 'bars',
       values: [
