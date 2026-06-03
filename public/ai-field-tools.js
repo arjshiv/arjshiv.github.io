@@ -739,7 +739,7 @@
       const prompt = `Question: ${question}\n\nSite notes:\n${notes}`;
       const response = session.prompt ? await session.prompt(prompt) : null;
       session.destroy?.();
-      return response ? `<p><strong>Browser model:</strong> ${escapeHtml(String(response))}</p>${answerFromCorpus(question)}` : null;
+      return response ? `<p><strong>Local model:</strong> ${escapeHtml(String(response))}</p>${answerFromCorpus(question)}` : null;
     } catch {
       return null;
     }
