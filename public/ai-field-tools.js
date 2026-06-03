@@ -120,7 +120,7 @@
   const tuesdayClaims = {
     answers: 'The demo answers customer messages.',
     research: 'The demo summarizes customer research.',
-    sales: 'The demo writes sales follow-up.',
+    sales: 'The demo writes a sales follow-up.',
     ops: 'The demo moves operational work.',
   };
 
