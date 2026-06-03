@@ -751,7 +751,7 @@
     const hasPromptApi = Boolean(getBrowserLanguageModel());
     const hasWebGpu = Boolean(navigator.gpu);
     if (hasPromptApi) {
-      status.textContent = 'Browser model hook available';
+      status.textContent = 'Local model available';
       status.title = 'This browser exposes a local language model hook.';
       status.classList.add('is-browser');
       return;
