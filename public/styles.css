@@ -497,7 +497,7 @@
 /* Compression 086: work table header. */
 .work-row-head{background:var(--contrast-blue)}.work-row-head>*,.work-row-head>*:first-child{color:var(--contrast-paper);font-family:var(--font-mono);font-size:.72rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
 
-/* Compression 087: proof table links. */
+/* Compression 087: work table links. */
 .work-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.work-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
 
 /* Compression 088: proof table mobile layout. */
