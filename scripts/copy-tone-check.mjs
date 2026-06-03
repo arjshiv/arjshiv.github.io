@@ -56,6 +56,7 @@ const banned = [
   'useful object',
   'proof constellation',
   'context receipt',
+  'local model state',
 ];
 
 const found = banned.filter((phrase) => {

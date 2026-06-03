@@ -515,7 +515,7 @@
       id: 'capability-ladder',
       label: 'Capability ladder',
       title: 'Browser AI should degrade like a ladder, not a cliff.',
-      deck: 'The stack shows how the site moves from local data to browser model help when available.',
+      deck: 'The stack shows how the site moves from local data to local AI help when available.',
       kind: 'stack',
       values: [
         ['Static data', 96],
@@ -560,7 +560,7 @@
       id: 'objection-map',
       label: 'Objection map',
       title: 'Objections should point to the part of the product that answers them.',
-      deck: 'Do not let browser AI talk around the hard product questions.',
+      deck: 'Do not let local AI talk around the hard product questions.',
       kind: 'orbit',
       values: [
         ['Accuracy', 75],
@@ -605,7 +605,7 @@
       id: 'reading-time-map',
       label: 'Quick read',
       title: 'Different readers should get different shortcuts.',
-      deck: 'This view helps a browser model pull relevant sections without changing the page itself.',
+      deck: 'This view helps local AI pull relevant sections without changing the page itself.',
       kind: 'route',
       values: [
         ['Skim', 45],
