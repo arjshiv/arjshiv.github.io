@@ -543,7 +543,7 @@
     {
       id: 'note-swarm',
       label: 'Note swarm',
-      title: 'Private notes are better when patterns surface locally.',
+      title: 'Private notes are better when repeated themes show up locally.',
       deck: 'Nothing leaves the browser. The visualization just helps the reader see what they kept noticing.',
       kind: 'matrix',
       values: [
