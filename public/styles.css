@@ -500,7 +500,7 @@
 /* Compression 087: work table links. */
 .work-row a{color:var(--contrast-blue);font-weight:900;text-decoration:underline;text-decoration-thickness:.12em;text-underline-offset:.18em}.work-row a:focus-visible{outline:3px solid var(--contrast-blue);outline-offset:-4px}
 
-/* Compression 088: proof table mobile layout. */
+/* Compression 088: work table mobile layout. */
 @media (max-width:760px){.work-row{grid-template-columns:1fr}.work-row>*{border-left:0;border-top:1px solid color-mix(in oklch,var(--contrast-line) 50%,transparent)}.work-row>*:first-child{border-top:0}.work-row-head{display:none}}
 
 /* Compression 089: ResiDesk loop grid. */
