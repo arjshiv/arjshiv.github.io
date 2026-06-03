@@ -887,7 +887,7 @@
         <strong>Operator view</strong>
         <ul>
           <li>Theme: maintenance, access, and communication gaps.</li>
-          <li>Risk: repeated small issues become renewal objections because nobody sees the pattern early enough.</li>
+          <li>Risk: repeated small issues become renewal objections when nobody sees the pattern early enough.</li>
           <li>Next step: triage urgent cases, then show the owner the recurring pattern.</li>
         </ul>
       `;
