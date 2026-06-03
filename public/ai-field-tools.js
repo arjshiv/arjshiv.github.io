@@ -1219,7 +1219,7 @@
     if (interpretation) {
       status.textContent = 'Local model added a read';
       status.classList.add('is-browser');
-      stage.insertAdjacentHTML('beforeend', `<p class="visual-model-read"><strong>Browser read:</strong> ${escapeHtml(interpretation)}</p>`);
+      stage.insertAdjacentHTML('beforeend', `<p class="visual-model-read"><strong>Local read:</strong> ${escapeHtml(interpretation)}</p>`);
     }
   };
 
