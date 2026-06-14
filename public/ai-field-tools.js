@@ -96,7 +96,7 @@
     ],
     background: [
       ['#work', 'Start with the work history and the lessons it left behind.'],
-      ['#work-table', 'Use Climb, BlackRock, and ResiDesk for how I got here.'],
+      ['#work-table', 'Use Climb, BlackRock, and ResiDesk to see how the work got here.'],
       ['#work', 'Check the roles and what changed.'],
       ['#links', 'Open the public articles, talks, and dates.'],
       ['#conversations', 'Use talks when you want the actual voice.'],
