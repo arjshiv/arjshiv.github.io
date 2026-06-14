@@ -11,7 +11,7 @@
       id: 'demo',
       title: 'Demos are not adoption',
       href: '#operating-system',
-      text: 'A prototype can win the room and still lose to the spreadsheet the next morning. The room is not the test. Busy use is the test.',
+      text: 'A prototype can win the room and still lose on Monday. Busy use is the test.',
       tags: ['demo', 'adoption', 'spreadsheet', 'trust', 'work'],
     },
     {
