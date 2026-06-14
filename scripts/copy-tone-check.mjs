@@ -67,6 +67,7 @@ const banned = [
   'manufactured path',
   'the thread across',
   'AI slop',
+  'plausible reply',
 ];
 
 const found = banned.filter((phrase) => {
