@@ -426,7 +426,7 @@
     {
       id: 'owner-briefing',
       label: 'Owner briefing',
-      title: 'An owner needs the pattern, not the inbox.',
+      title: 'An owner needs the pattern, not the raw inbox.',
       deck: 'This stack turns resident messages into a brief a decision-maker can use.',
       kind: 'stack',
       values: [
