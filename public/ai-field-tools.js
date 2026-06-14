@@ -164,7 +164,7 @@
     },
     voice: {
       title: 'Voice fix',
-      steps: ['Replace abstractions with the job: residents text, operators decide, someone owns the next step.', 'Use first person when the point is personal.', 'Cut anything that sounds like a press release or a transcript summary.'],
+      steps: ['Replace abstractions with the job: residents text, operators decide, and someone owns the next step.', 'Use first person when the point is personal.', 'Cut anything that sounds like a press release or a transcript summary.'],
     },
     sources: {
       title: 'Links fix',
