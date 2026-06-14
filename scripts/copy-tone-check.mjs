@@ -65,6 +65,7 @@ const banned = [
   'reader journey',
   'curated path',
   'manufactured path',
+  'the thread across',
 ];
 
 const found = banned.filter((phrase) => {
