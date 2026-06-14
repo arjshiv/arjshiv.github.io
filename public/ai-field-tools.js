@@ -176,7 +176,7 @@
     operator: [
       ['ResiDesk', '#now', 'Start with the current work: resident texts, building context, and getting the right issue to someone who can fix it.'],
       ['Resident messages', '#signal-map', 'Then show how raw resident messages become work someone owns.'],
-      ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the outside article on resident feedback and retention.'],
+      ['Law360', 'https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results', 'Use the outside article on resident feedback and retention for the fuller story.'],
     ],
     founder: [
       ['How I build', '#operating-system', 'Use the six principles for how I work.'],
