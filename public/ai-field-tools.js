@@ -67,7 +67,7 @@
       ['#links', 'Use the links when you want the source material.'],
     ],
     founder: [
-      ['#work-table', 'Start with Climb, BlackRock, and ResiDesk.'],
+      ['#work-table', 'Start with Climb, BlackRock, and the work that came after.'],
       ['#writing', 'Read the useful-AI principles.'],
       ['#about', 'Look at how physics, finance, and housing led here.'],
       ['#ai-field-tools', 'Try the Useful AI test against your own idea before polishing the demo.'],
