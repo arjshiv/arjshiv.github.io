@@ -307,7 +307,7 @@
     {
       id: 'decision-stack',
       label: 'Decision stack',
-      title: 'The output has to land where a decision gets made.',
+      title: 'The output has to land where the decision gets made.',
       deck: 'Analysis only matters if it reaches the person who can change the building.',
       kind: 'stack',
       values: [
