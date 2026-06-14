@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks',
       href: '#conversations',
-      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to act.',
+      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to act on it.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
