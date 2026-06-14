@@ -60,6 +60,7 @@ const banned = [
   'reader pathway',
   'system gets brittle',
   'diligence binder',
+  'legal document',
 ];
 
 const found = banned.filter((phrase) => {
