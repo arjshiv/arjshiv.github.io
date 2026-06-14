@@ -39,7 +39,7 @@
       id: 'physics',
       title: 'Physics and software',
       href: '#about',
-      text: 'I studied applied physics because I liked real experiments, messy measurement, and small details changing the answer. Software became serious when it saved hours of lab work and stopped feeling like coursework.',
+      text: 'I studied applied physics because I liked real experiments, messy measurement, and small details changing the answer. Software became serious when it saved hours of lab work and felt like a real tool.',
       tags: ['physics', 'measurement', 'software', 'details'],
     },
     {
