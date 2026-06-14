@@ -382,7 +382,7 @@
     {
       id: 'maintenance-pulse',
       label: 'Maintenance pulse',
-      title: 'Maintenance complaints are often a trust signal.',
+      title: 'Maintenance complaints are often a trust check.',
       deck: 'This view turns repeated small problems into something an operator can read.',
       kind: 'bars',
       values: [
