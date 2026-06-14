@@ -111,7 +111,7 @@
   };
 
   const signalFixtures = {
-    garden: ['The laundry app charged me twice again.', 'Can someone fix the courtyard lights?', 'My renewal offer went up but the pool has been closed.', 'Package room door is stuck.'],
+    garden: ['The laundry app charged me twice again and nobody can explain it.', 'Can someone fix the courtyard lights?', 'My renewal offer went up but the pool has been closed.', 'Package room door is stuck.'],
     urban: ['Elevator 2 has been down all week.', 'The noise above me starts after midnight.', 'Guest parking rules are confusing.', 'Can maintenance enter while I am at work?'],
     student: ['Wi-Fi drops during exams.', 'Roommate transfer policy is unclear.', 'The trash chute smells bad.', 'My guarantor needs the lease link again.'],
     workforce: ['AC is out and I work nights.', 'I need a payment plan before Friday.', 'The playground gate does not latch.', 'Can I get text updates instead of portal notices?'],
