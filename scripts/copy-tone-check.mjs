@@ -62,6 +62,7 @@ const banned = [
   'diligence binder',
   'legal document',
   'case-study artifact',
+  'reader journey',
 ];
 
 const found = banned.filter((phrase) => {
