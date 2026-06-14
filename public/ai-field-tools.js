@@ -514,7 +514,7 @@
     {
       id: 'capability-ladder',
       label: 'Capability ladder',
-      title: 'Browser AI should degrade like a ladder, not a cliff.',
+      title: 'Browser AI should degrade like a ladder, not a cliff edge.',
       deck: 'The stack shows how the site moves from local data to local AI help when available.',
       kind: 'stack',
       values: [
