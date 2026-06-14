@@ -105,7 +105,7 @@
 
   const talkLenses = {
     harnoor: ['Physics made me care about measurement.', 'Software became useful when it saved real time.', 'ResiDesk starts with the customer, not the AI demo.'],
-    greg: ['The useful part of AI is leverage inside real company work.', 'The right history has to travel with the task.', 'A product is only good if it changes what someone does next.'],
+    greg: ['The useful part of AI is what it changes inside real company work.', 'The right history has to travel with the task.', 'A product is only good if it changes what someone does next.'],
     wellfound: ['The team needs people who can carry the room.', 'The work is close to residents, operators, and messy edge cases.', 'Trust matters because a real team still owns the judgment.'],
     '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to help the operator, not just make an interesting analysis.'],
   };
