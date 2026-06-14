@@ -89,7 +89,7 @@
     ],
     investor: [
       ['#now', 'Start with the current ResiDesk build.'],
-      ['#work', 'Look at the work before ResiDesk.'],
+      ['#work', 'Look at the work that came before ResiDesk and why it mattered.'],
       ['#recent', 'Check the links.'],
       ['#fit-boundaries', 'Read where I can help and where I probably cannot.'],
       ['#ai-field-tools', 'Use the Tuesday test to see whether the product idea turns into work a property team would actually use.'],
