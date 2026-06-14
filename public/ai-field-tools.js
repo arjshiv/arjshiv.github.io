@@ -150,7 +150,7 @@
     ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep behaving like a small workbench, not a wall of equal-weight cards.'],
     ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line should earn its place.'],
     ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is better than a fake chat widget.'],
-    ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push each interaction toward judgment, not novelty.'],
+    ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push every interaction toward judgment, not novelty.'],
   ];
 
   const tweakBriefs = {
