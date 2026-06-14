@@ -73,6 +73,7 @@ const banned = [
   'system design',
   'galaxy brained',
   'funnel',
+  'pathway',
 ];
 
 const found = banned.filter((phrase) => {
