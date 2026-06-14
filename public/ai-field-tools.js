@@ -189,7 +189,7 @@
       ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and work an owner can see show up in housing.'],
     ],
     journalist: [
-      ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk.'],
+      ['How I got here', '#work', 'Use physics, BlackRock, Climb, and ResiDesk to see the arc.'],
       ['Talks', '#conversations', 'Pull how I say it from interviews and panels, not just the site copy.'],
       ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
