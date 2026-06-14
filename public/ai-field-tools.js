@@ -125,7 +125,7 @@
   };
 
   const tuesdayEnvironments = {
-    operator: 'a busy property team',
+    operator: 'a busy property team with too many small exceptions',
     enterprise: 'an enterprise customer',
     field: 'a team doing the work',
     exec: 'an executive review',
