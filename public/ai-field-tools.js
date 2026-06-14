@@ -167,7 +167,7 @@
       steps: ['Replace abstractions with the job: residents text, operators decide, and someone owns the next step.', 'Use first person when the point is personal and the claim is yours.', 'Cut anything that sounds like a press release or a transcript summary.'],
     },
     sources: {
-      title: 'Links fix',
+      title: 'Recent links fix',
       steps: ['Move the visitor from the main claim to the background quickly: work history, talks, writing, links.', 'Name what happened, then link the source.', 'Do not let design flourishes hide the actual work.'],
     },
   };
