@@ -500,7 +500,7 @@
     {
       id: 'how-i-got-here',
       label: 'How I got here',
-      title: 'The path makes more sense when it stays tied to measurement.',
+      title: 'The path makes more sense when it stays tied to what changed.',
       deck: 'Physics, finance, education finance, housing: different rooms, same bias toward useful measurement.',
       kind: 'route',
       values: [
