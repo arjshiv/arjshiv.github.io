@@ -119,7 +119,7 @@
 
   const tuesdayClaims = {
     answers: 'The demo answers customer messages with the right context and tone.',
-    research: 'The demo summarizes customer research without losing the point.',
+    research: 'The demo summarizes customer research without flattening it.',
     sales: 'The demo writes a sales follow-up that sounds like me.',
     ops: 'The demo moves operational work.',
   };
