@@ -33,7 +33,7 @@ Any new section should pass this plain question: would I say this to an owner, o
 - The story should feel earned, not curated: physics made measurement feel natural, BlackRock made stakes concrete, Climb made outcomes impossible to ignore, and ResiDesk is where those lessons meet a customer problem that repeats every day.
 - The reader should feel relentless resourcefulness in the choices: find the messy real job, build the tool, measure what changed, and keep going until the work is easier for the team.
 - The copy should make cause and effect obvious. Avoid "theme" language when "I learned X, so I built Y" would be clearer.
-- Founder energy is not a title. It is ownership, urgency, taste, and willingness to do the unglamorous parts of making the system work.
+- Founder energy is not a title. It is ownership, urgency, taste, and willingness to do the unglamorous parts of making the company work.
 
 - Use "I learned this when..." only when the next sentence names the actual room, customer, or decision.
 
