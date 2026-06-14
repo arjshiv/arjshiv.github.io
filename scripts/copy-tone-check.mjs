@@ -71,6 +71,7 @@ const banned = [
   'deployment room',
   'AI deployment',
   'system design',
+  'galaxy brained',
 ];
 
 const found = banned.filter((phrase) => {
