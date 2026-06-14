@@ -322,7 +322,7 @@
     {
       id: 'context-trail',
       label: 'Context trail',
-      title: 'Before AI answers, it should show what it used.',
+      title: 'Before AI answers, it should show what it used to get there.',
       deck: 'Show the inputs before asking anyone to trust the answer.',
       kind: 'bars',
       values: [
