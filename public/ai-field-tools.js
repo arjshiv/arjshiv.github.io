@@ -278,7 +278,7 @@
     {
       id: 'trust-stack',
       label: 'Trust stack',
-      title: 'A useful answer shows what it used.',
+      title: 'A useful answer shows what it used and what it left out.',
       deck: 'A good answer needs inputs, history, an owner, a test, and follow-through.',
       kind: 'stack',
       values: [
