@@ -263,7 +263,7 @@
     {
       id: 'link-map',
       label: 'Link map',
-      title: 'Make the links easy to find.',
+      title: 'Make the links easier to find.',
       deck: 'Keep links, talks, and company facts close to the part of the page they explain.',
       kind: 'orbit',
       values: [
