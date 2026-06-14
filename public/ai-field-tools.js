@@ -367,7 +367,7 @@
     {
       id: 'handoff-map',
       label: 'Handoff map',
-      title: 'A good answer knows when to hand off.',
+      title: 'A good answer knows when to hand off and who should get it.',
       deck: 'The map shows where AI should stop drafting and start routing.',
       kind: 'route',
       values: [
