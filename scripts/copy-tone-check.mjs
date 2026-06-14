@@ -61,6 +61,7 @@ const banned = [
   'system gets brittle',
   'diligence binder',
   'legal document',
+  'case-study artifact',
 ];
 
 const found = banned.filter((phrase) => {
