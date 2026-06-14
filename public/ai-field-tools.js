@@ -84,7 +84,7 @@
       ['#operating-system', 'Read how I think about work that matters.'],
       ['#now', 'Understand what most of my week goes into today.'],
       ['#about', 'Get how I got here and how I work with people.'],
-      ['#writing', 'Read the principles.'],
+      ['#writing', 'Read the working rules.'],
       ['#links', 'Use recordings to hear the work in my own words.'],
     ],
     investor: [
