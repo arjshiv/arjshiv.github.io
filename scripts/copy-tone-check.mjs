@@ -58,6 +58,7 @@ const banned = [
   'context receipt',
   'local model state',
   'reader pathway',
+  'system gets brittle',
 ];
 
 const found = banned.filter((phrase) => {
