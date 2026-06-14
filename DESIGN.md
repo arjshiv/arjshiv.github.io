@@ -60,7 +60,7 @@ Use Geist and Geist Mono only.
 - Radius stays tight: around 0.18rem to 0.35rem for retro surfaces.
 - Shadows are hard offset shadows using the ink token. They must not be clipped by containment.
 - Surface backgrounds should be intentional: ice paper, glacier blue, cyan, teal, seafoam, or mint.
-- Every repeated card set needs a clear visual system, not random color alternation.
+- Every repeated card set needs a clear visual system, not random color alternation or decorative noise.
 
 ## Interaction
 
