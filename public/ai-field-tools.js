@@ -95,7 +95,7 @@
       ['#ai-field-tools', 'Use the Tuesday test to see whether the idea turns into work a property team would actually use.'],
     ],
     background: [
-      ['#work', 'Start with the work history.'],
+      ['#work', 'Start with the work history and the lessons it left behind.'],
       ['#work-table', 'Use Climb, BlackRock, and ResiDesk for how I got here.'],
       ['#work', 'Check the roles and what changed.'],
       ['#links', 'Open the public articles, talks, and dates.'],
