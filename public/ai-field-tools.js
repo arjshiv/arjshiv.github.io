@@ -352,7 +352,7 @@
     {
       id: 'customer-compass',
       label: 'Customer compass',
-      title: 'The customer stays at the center of the map.',
+      title: 'The customer stays in the center of the map.',
       deck: 'Browser AI is useful here only if it keeps pulling the reader back to the job.',
       kind: 'orbit',
       values: [
