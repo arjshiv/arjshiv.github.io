@@ -220,7 +220,7 @@
       id: 'site-spine',
       label: 'Site spine',
       title: 'The page should do one job without noise.',
-      deck: 'How what customers keep saying becomes work someone owns.',
+      deck: 'How what customers keep saying becomes work someone can own.',
       kind: 'route',
       values: [
         ['Customer', 92],
