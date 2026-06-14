@@ -184,7 +184,7 @@
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the argument for building around models.'],
     ],
     'ai-team': [
-      ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo.'],
+      ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo in real use.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the build-around-the-model argument.'],
       ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and work an owner can see show up in housing.'],
     ],
