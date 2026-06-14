@@ -63,6 +63,7 @@ const banned = [
   'legal document',
   'case-study artifact',
   'reader journey',
+  'curated path',
 ];
 
 const found = banned.filter((phrase) => {
