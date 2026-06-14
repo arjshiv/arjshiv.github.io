@@ -141,7 +141,7 @@
   const tuesdayEnvironmentPressure = {
     operator: ['time pressure that keeps rising', 'too many small exceptions', 'resident trust at risk'],
     enterprise: ['security review and procurement', 'system integration work', 'rollout pressure'],
-    field: ['low patience from the team', 'mobile use', 'messy inputs'],
+    field: ['low patience from the team', 'mobile use in the field', 'messy inputs'],
     exec: ['ROI', 'exec story', 'who owns risk'],
   };
 
