@@ -61,4 +61,4 @@ Any new section should pass this plain question: would I say this to an owner, o
 - Phrases like "what shows up across the talks" or "the thread across."
 - Abstract nouns stacked together: workflow orchestration, operating cadence, resident signal language.
 - Copy that sounds like an analyst wrote a recap after watching the videos.
-- Diligence-binder language on the visible site. Use "what happened," "what I learned," "what changed," and "where it led" before words like evidence, proof, receipts, or packet. The site should feel like a founder explaining what he has learned, not a binder.
+- Research-binder language on the visible site. Use "what happened," "what I learned," "what changed," and "where it led" before words like evidence, proof, receipts, or packet. The site should feel like a founder explaining what he has learned, not a binder.
