@@ -206,7 +206,7 @@
   };
 
   const compassItems = [
-    ['More background', '#background', 'work, writing, and talks'],
+    ['More background and context', '#background', 'work, writing, and talks'],
     ['Now', '#now', 'what I am building now'],
     ['Map', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'where I worked before'],
