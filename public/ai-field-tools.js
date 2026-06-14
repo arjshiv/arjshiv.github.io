@@ -62,7 +62,7 @@
     operator: [
       ['#now', 'Start with what ResiDesk is doing now.'],
       ['#residesk-loop', 'Then look at how a resident message becomes work a property team can own end to end.'],
-      ['#recent', 'Use the links around resident feedback, retention, and NOI.'],
+      ['#recent', 'Use the links around resident feedback, retention, and cash flow.'],
       ['#conversations', 'Watch the longer explanation in my own words.'],
       ['#links', 'Use the links when you want more background.'],
     ],
