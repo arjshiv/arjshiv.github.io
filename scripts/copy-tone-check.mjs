@@ -68,6 +68,7 @@ const banned = [
   'the thread across',
   'AI slop',
   'plausible reply',
+  'deployment room',
 ];
 
 const found = banned.filter((phrase) => {
