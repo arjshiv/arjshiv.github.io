@@ -59,6 +59,7 @@ const banned = [
   'local model state',
   'reader pathway',
   'system gets brittle',
+  'diligence binder',
 ];
 
 const found = banned.filter((phrase) => {
