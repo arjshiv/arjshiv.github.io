@@ -6,7 +6,7 @@ brand
 
 ## Product Purpose
 
-This is Arjun Kannan's personal site. It should explain who he is, what he is building at ResiDesk, how his work connects physics, finance, housing, and AI, and where founders, advisor-seekers, AI teams, and serious readers can understand the path quickly.
+This is Arjun Kannan's personal site. It should explain who he is, what he is building at ResiDesk, how his work connects physics, finance, housing, and AI, and where founders, advisor-seekers, AI teams, and serious readers can understand the story quickly.
 
 The site is not a generic founder landing page. It should feel like a working field manual for a builder who cares about context, customers, measurement, and tools that keep working after the demo.
 
