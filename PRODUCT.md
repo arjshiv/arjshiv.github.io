@@ -28,7 +28,7 @@ Plainspoken, candid, specific, and context-first. The copy should sound like Arj
 - "If nobody owns the next step, nobody trusts the answer, and nothing changes afterward, it is probably theater."
 - "If you can solve something with a fax machine, you do not need something better than a fax machine."
 
-Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings, owners, operators, renewal, rent, maintenance, follow-through, context, judgment, work.
+Avoid product-marketing fog. Prefer concrete nouns: residents, texts, buildings, owners, operators, renewal, rent, maintenance, follow-through, history, judgment, work.
 
 ## Tone Rules
 
