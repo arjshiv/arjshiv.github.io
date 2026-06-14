@@ -70,6 +70,7 @@ const banned = [
   'plausible reply',
   'deployment room',
   'AI deployment',
+  'system design',
 ];
 
 const found = banned.filter((phrase) => {
