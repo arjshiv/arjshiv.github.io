@@ -2,7 +2,7 @@
 
 ## Design Direction
 
-Polished field-passport personal site: icy paper, hard teal-black ink, app-like ticket controls, printed labels, and bright cyan, aqua, teal, mint, and small violet accents. The site should feel like a modern consumer app crossed with a field manual for applied AI and housing operations, not a novelty arcade skin.
+Polished field-passport personal site: icy paper, hard teal-black ink, app-like controls, printed labels, and bright cyan, aqua, teal, mint, and small violet accents. The site should feel like a modern consumer app crossed with a field manual for applied AI and housing operations, not a novelty arcade skin.
 
 Reference family:
 
