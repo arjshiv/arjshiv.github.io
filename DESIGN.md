@@ -86,7 +86,7 @@ Reference: Jakub Krehel's "Details That Make Interfaces Feel Better".
 
 ## Copy System
 
-- Copy stays close to the transcript voice: practical, candid, context-heavy.
+- Copy stays close to the transcript voice: practical, candid, and context-heavy.
 - Replace abstractions with the job being done.
 - Prefer "what happens next" over "workflow orchestration."
 - Prefer "read every text by hand" over "at scale" when explaining the practical problem.
