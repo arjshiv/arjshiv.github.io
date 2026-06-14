@@ -25,7 +25,7 @@
       id: 'blackrock',
       title: 'BlackRock',
       href: '#about',
-      text: 'At BlackRock, interface quality mattered because real money sat behind the decision. The tool had to survive the next morning.',
+      text: 'At BlackRock, interface quality mattered because real money sat behind the decision. The tool had to survive the next morning when the real call came back.',
       tags: ['blackrock', 'interface', 'money', 'decision'],
     },
     {
