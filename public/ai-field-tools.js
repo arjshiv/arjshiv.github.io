@@ -132,7 +132,7 @@
   };
 
   const tuesdayBreakpoints = {
-    answers: ['missing policy or lease context', 'unclear handoff to the owner', 'tone misses'],
+    answers: ['missing policy or lease context', 'unclear handoff to the owner', 'tone misses the room'],
     research: ['bad source match', 'thin summary', 'no one owns the decision'],
     sales: ['generic sales line', 'bad account fit', 'no next step'],
     ops: ['unclear routing', 'missing permissions', 'no clear close-the-loop moment'],
