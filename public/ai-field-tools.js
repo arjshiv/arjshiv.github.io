@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks',
       href: '#conversations',
-      text: 'The talks come back to the same practical lesson: measurement matters, software is useful when it saves real time, and ResiDesk starts with hearing residents clearly enough to act.',
+      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to act.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
