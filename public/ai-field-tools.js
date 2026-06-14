@@ -53,7 +53,7 @@
       id: 'investing',
       title: 'Investing',
       href: '#investing',
-      text: 'I have invested in more than 100 startups and tend to back founders who are close to the problem, close to the customer, and honest about what they do not know yet.',
+      text: 'I have invested in more than 100 startups and tend to back founders who are close to the problem, close to the customer, and honest about what they still need to learn.',
       tags: ['investing', 'founders', 'customer', 'context'],
     },
   ];
