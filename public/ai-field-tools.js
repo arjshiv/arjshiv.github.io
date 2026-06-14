@@ -247,7 +247,7 @@
     {
       id: 'risk-heatmap',
       label: 'Risk heatmap',
-      title: 'Small resident issues get expensive when they repeat.',
+      title: 'Small issues get expensive when they repeat.',
       deck: 'The point is to catch ordinary complaints before they quietly become expensive.',
       kind: 'matrix',
       values: [
