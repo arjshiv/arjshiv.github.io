@@ -10,7 +10,7 @@ A working voice for the site.
 - Treat problems as work problems first. Do not make people feel alone with the mess.
 - Say "the way I think about it" only when it helps the page sound like a person, not a memo.
 - Prefer blunt setup lines: "Renting is expensive and weirdly bad." "Talk to your customer is still business 101."
-- Explain AI by what it helps someone finish, not by what the model can theoretically do.
+- Explain AI by what it helps someone finish, not by what the model can theoretically promise.
 - Keep the skepticism. A demo is not adoption. A chat answer is not a finished job.
 
 ## Useful Phrases
