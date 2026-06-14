@@ -441,7 +441,7 @@
     {
       id: 'candidate-lens',
       label: 'Candidate lens',
-      title: 'Candidates should see how the work actually feels.',
+      title: 'Candidates should see how the work actually feels in practice.',
       deck: 'A browser AI summary can help, but the page should still show the work style directly.',
       kind: 'route',
       values: [
