@@ -92,7 +92,7 @@
       ['#work', 'Look at the work that came before ResiDesk and why it mattered.'],
       ['#recent', 'Check the recent links and dates.'],
       ['#fit-boundaries', 'Read where I can help and where I am probably not the fit.'],
-      ['#ai-field-tools', 'Use the Tuesday test to see whether the product idea turns into work a property team would actually use.'],
+      ['#ai-field-tools', 'Use the Tuesday test to see whether the idea turns into work a property team would actually use.'],
     ],
     background: [
       ['#work', 'Start with the work history.'],
