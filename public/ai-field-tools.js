@@ -219,7 +219,7 @@
     {
       id: 'site-spine',
       label: 'Site spine',
-      title: 'The page should have one job.',
+      title: 'The page should do one job.',
       deck: 'How what customers keep saying becomes work someone owns.',
       kind: 'route',
       values: [
