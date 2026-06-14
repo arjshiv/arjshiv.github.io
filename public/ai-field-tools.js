@@ -455,7 +455,7 @@
     {
       id: 'founder-work',
       label: 'Founder work',
-      title: 'A good founder answer starts close to the customer.',
+      title: 'A good founder answer starts close to the customer problem.',
       deck: 'This heatmap gives founders and investors a fast way to check where the work is clearest.',
       kind: 'matrix',
       values: [
