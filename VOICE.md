@@ -37,7 +37,7 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Use "I learned this when..." only when the next sentence names the actual room, customer, or decision.
 
-- When a sentence sounds smart but vague, rewrite it with a resident, owner, operator, ticket, call, lease, renewal, or product decision.
+- When a sentence sounds smart but vague, rewrite it with a resident, owner, operator, ticket, call, lease, renewal, or product choice.
 
 - Do not make ResiDesk a metaphor. It is the company I am building and where most of the work goes.
 
