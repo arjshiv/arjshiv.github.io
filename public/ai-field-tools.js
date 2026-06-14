@@ -194,7 +194,7 @@
       ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
     investor: [
-      ['Now', '#now', 'Start with the current ResiDesk focus.'],
+      ['Now and current work', '#now', 'Start with the current ResiDesk focus.'],
       ['Before ResiDesk', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
