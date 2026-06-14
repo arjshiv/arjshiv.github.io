@@ -396,7 +396,7 @@
     {
       id: 'renewal-warning',
       label: 'Renewal warning',
-      title: 'Renewal risk usually shows up before it leaves.',
+      title: 'Renewal risk usually shows up before it walks.',
       deck: 'The heatmap keeps early resident warnings from disappearing into ticket history.',
       kind: 'matrix',
       values: [
