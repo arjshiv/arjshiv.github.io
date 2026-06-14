@@ -147,7 +147,7 @@
 
   const designCritique = [
     ['Argument', '9.0', 'The page is clearest when it starts with the job: customers already said what hurts, and the tool should help someone act on it.'],
-    ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep behaving like a small workbench, not a pile of equal-weight cards.'],
+    ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep behaving like a small workbench, not a wall of equal-weight cards.'],
     ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line needs to help the reader.'],
     ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is more useful than a fake chat widget.'],
     ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push each interaction toward judgment, not novelty.'],
