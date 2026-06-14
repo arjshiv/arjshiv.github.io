@@ -336,7 +336,7 @@
     {
       id: 'voice-fingerprint',
       label: 'Voice fingerprint',
-      title: 'The copy should sound like me, not a recap of me.',
+      title: 'The copy should sound like me, not a recap of me from far away.',
       deck: 'Check for concrete nouns, first-person judgment, and language that stays close to the job.',
       kind: 'matrix',
       values: [
