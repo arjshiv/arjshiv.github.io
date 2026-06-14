@@ -160,7 +160,7 @@
     },
     speed: {
       title: 'Speed fix',
-      steps: ['Keep AI tools lazy-loaded and keep the first paint free of extra script.', 'Prefer content-visibility for lower sections and compressed images for public cards.', 'Make interactions transform-only so old browsers do less paint work.'],
+      steps: ['Keep AI tools lazy-loaded and keep the first paint free of extra script.', 'Prefer content-visibility for lower sections and compressed images for public cards.', 'Make interactions transform-only so older browsers do less paint work.'],
     },
     voice: {
       title: 'Voice fix',
