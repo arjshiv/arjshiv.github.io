@@ -5,7 +5,7 @@ A working voice for the site.
 ## Core Shape
 
 - Use first person when explaining a belief or decision.
-- Start from the concrete job: renter, building, owner, operator, text, ticket, renewal, repair.
+- Start from the concrete job: resident, building, owner, operator, text, ticket, renewal, repair.
 - Be honest without turning the sentence into a shove. Believe the complaint first, then ask what actually caused it and who can change it.
 - Treat problems as system problems first. Do not make people feel alone with the mess.
 - Say "the way I think about it" only when it helps the page sound like a person, not a memo.
