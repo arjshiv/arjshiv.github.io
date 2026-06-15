@@ -135,7 +135,7 @@
     answers: ['missing policy or lease context plus the local rule', 'unclear handoff to the owner', 'tone misses the room'],
     research: ['weak source match or thin source selection', 'thin summary that loses the point', 'no one owns the next step'],
     sales: ['generic sales line that sounds copied from somewhere else', 'weak account fit', 'no next step'],
-    ops: ['unclear routing to the right person', 'missing permissions or access', 'no clear close-the-loop step'],
+    ops: ['unclear routing to the right person or team', 'missing permissions or access', 'no clear close-the-loop step'],
   };
 
   const tuesdayEnvironmentPressure = {
