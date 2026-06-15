@@ -68,7 +68,7 @@
     ],
     founder: [
       ['Work table', 'Start with Climb, BlackRock, and the work that followed.'],
-      ['#writing', 'Read the AI principles that still hold up in practice.'],
+      ['#writing', 'Read the AI principles that still hold up on a busy day.'],
       ['#about', 'Look at how physics, finance, and housing shaped the work.'],
       ['Useful AI test', 'Try the Useful AI test against your own idea before calling it real.'],
       ['#conversations', 'Watch the company-building conversations in plain language.'],
