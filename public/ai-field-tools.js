@@ -3,7 +3,7 @@
     {
       id: 'residesk',
       title: 'ResiDesk',
-      href: '#now',
+      href: 'ResiDesk now',
       text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, context, and follow-up the team can act on without rereading the whole thread.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
