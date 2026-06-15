@@ -32,7 +32,7 @@
       id: 'climb',
       title: 'Climb Credit',
       href: '#about',
-      text: 'At Climb Credit, we asked what happened after the program. That pushed outcomes into underwriting, product, and data while annual loan volume moved from 1 million dollars to 300 million dollars and the work stayed close to the borrower.',
+      text: 'At Climb Credit, we asked what happened after the program. That pushed outcomes into underwriting, product, and data while annual loan volume rose from 1 million dollars to 300 million dollars and the work stayed close to the borrower.',
       tags: ['climb', 'credit', 'underwriting', 'outcomes', 'earnings'],
     },
     {
