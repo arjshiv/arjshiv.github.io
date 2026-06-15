@@ -63,7 +63,7 @@
       ['#now', 'Start with ResiDesk first.'],
       ['Resident-message loop', 'Then look at how a resident message becomes work a property team can own clearly.'],
       ['#recent', 'Use the links around resident feedback, retention, and the operating side.'],
-      ['#conversations', 'Watch the longer explanation in my own words.'],
+      ['#conversations', 'Watch the longer version in my own words.'],
       ['#links', 'Use the links when you want the source context.'],
     ],
     founder: [
