@@ -74,7 +74,7 @@
       ['#conversations', 'Watch the company-building conversations in plain language and keep the noise down.'],
     ],
     journalist: [
-      ['#conversations', 'Start with talks and how I sound live first.'],
+      ['#conversations', 'Start with talks and my real voice.'],
       ['#work', 'Use the work history and the numbers behind it.'],
       ['#recent', 'Pull recent writing and links together.'],
       ['#conversations', 'Use talks for the way I speak live.'],
