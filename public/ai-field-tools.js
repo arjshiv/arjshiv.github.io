@@ -77,7 +77,7 @@
       ['#conversations', 'Start with talks and my real voice.'],
       ['#work', 'Use the work history and the numbers beside it.'],
       ['#recent', 'Pull recent writing and links together.'],
-      ['#conversations', 'Use talks for the way I speak live.'],
+      ['#conversations', 'Use talks for the way I sound live.'],
       ['#links', 'Grab the outside articles, panels, recordings, and dates that help explain the work.'],
     ],
     candidate: [
