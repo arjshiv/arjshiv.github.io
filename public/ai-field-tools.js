@@ -64,7 +64,7 @@
       ['Resident-message loop', 'Then look at how a resident message becomes work a property team can own.'],
       ['#recent', 'Use the links around resident feedback, retention, and the business side.'],
       ['#conversations', 'Watch the longer explanation in my own words.'],
-      ['#links', 'Use the links when you want the source material.'],
+      ['#links', 'Use the links when you want the source context.'],
     ],
     founder: [
       ['#work-table', 'Start with Climb, BlackRock, and the work that came after.'],
