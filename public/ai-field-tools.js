@@ -60,7 +60,7 @@
 
   const guides = {
     operator: [
-      ['#now', 'Start with ResiDesk now.'],
+      ['#now', 'Start with ResiDesk first.'],
       ['Resident-message loop', 'Then look at how a resident message becomes work a property team can own.'],
       ['#recent', 'Use the links around resident feedback, retention, and the business side.'],
       ['#conversations', 'Watch the longer explanation in my own words.'],
