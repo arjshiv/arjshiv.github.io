@@ -71,7 +71,7 @@
       ['#writing', 'Read the AI principles that still hold up on a busy day.'],
       ['#about', 'Look at how physics, finance, and housing shaped the work.'],
       ['Useful AI test', 'Try the Useful AI test against your own idea before calling it useful.'],
-      ['#conversations', 'Watch the company-building conversations in plain language.'],
+      ['#conversations', 'Watch the company-building conversations in plain language and keep the noise down.'],
     ],
     journalist: [
       ['#conversations', 'Start with talks and how I sound live first.'],
