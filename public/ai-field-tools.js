@@ -121,7 +121,7 @@
     answers: 'The demo answers customer messages with the right context and the right tone for the room.',
     research: 'The demo summarizes customer research without flattening the point.',
     sales: 'The demo writes a sales follow-up that sounds like me instead of a template.',
-    ops: 'The demo moves operational work without losing the owner.',
+    ops: 'The demo moves operational work without losing the owner or the next step.',
   };
 
   const tuesdayEnvironments = {
