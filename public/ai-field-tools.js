@@ -88,7 +88,7 @@
       ['#links', 'Use recordings to hear the work directly from me.'],
     ],
     investor: [
-      ['#now', 'Start with the current ResiDesk build.'],
+      ['#now', 'Start with the current ResiDesk work.'],
       ['#work', 'Look at the work that came before ResiDesk and why it mattered.'],
       ['#recent', 'Check the recent links and dates.'],
       ['#fit-boundaries', 'Read where I can help and where I am probably not the fit.'],
