@@ -81,7 +81,7 @@
       ['#links', 'Grab the outside links, panels, recordings, and dates that help explain the work.'],
     ],
     candidate: [
-      ['#operating-system', 'Read how I think about work that matters.'],
+      ['#operating-system', 'Read how I think about work that matters to me.'],
       ['#now', 'Understand what most of my week goes into today.'],
       ['#about', 'Get how I got here and how I work with people.'],
       ['#writing', 'Read the working rules.'],
