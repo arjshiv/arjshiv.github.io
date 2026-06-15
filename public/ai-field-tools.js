@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: '#writing',
-      text: 'I care about AI that works on a normal Tuesday. History, evals, handoff, trust, and judgment matter more than model names.',
+      text: 'I care about AI that works on a normal Tuesday. History, evals, handoff, trust, and judgment matter more than model names when the work is real.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
