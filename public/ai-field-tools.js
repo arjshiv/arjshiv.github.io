@@ -4,81 +4,81 @@
       id: 'residesk',
       title: 'ResiDesk',
       href: 'ResiDesk now',
-      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into answers, context, and follow-up the team can act on without rereading the whole thread.',
+      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into something they can answer, route, and follow up on without rereading the whole thread.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
     {
       id: 'demo',
       title: 'Demos are not adoption',
       href: '#operating-system',
-      text: 'A prototype can win the room and still lose the next morning. Busy use is the test.',
+      text: 'A prototype can win the room and still fall apart the next morning. Busy use is the test.',
       tags: ['demo', 'adoption', 'spreadsheet', 'trust', 'work'],
     },
     {
       id: 'ai-view',
       title: 'AI view',
       href: 'Writing and AI',
-      text: 'I care about AI that works on a normal Tuesday. History, evals, handoff, trust, and judgment matter more than model names when the work is real.',
+      text: 'I care about AI that works on a normal Tuesday. History, evals, handoff, trust, and judgment matter more than model names when people actually have work to do.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
       id: 'blackrock',
       title: 'BlackRock',
       href: 'Background and route',
-      text: 'At BlackRock, interface quality mattered because real money sat behind the decision. The tool had to still make sense the next morning when the real call came back.',
+      text: 'At BlackRock, interface quality mattered because real money sat behind the decision. The tool had to still make sense the next morning when the call came back.',
       tags: ['blackrock', 'interface', 'money', 'decision'],
     },
     {
       id: 'climb',
       title: 'Climb Credit',
       href: '#about',
-      text: 'At Climb Credit, we asked what happened after the program. That pushed outcomes into underwriting, product, and data while annual loan volume rose from 1 million dollars to 300 million dollars and the work stayed close to the borrower.',
+      text: 'At Climb Credit, we asked what happened after the program. That pushed outcomes into underwriting, product, and data while annual loan volume grew from 1 million dollars to 300 million dollars and the work stayed close to the borrower.',
       tags: ['climb', 'credit', 'underwriting', 'outcomes', 'earnings'],
     },
     {
       id: 'physics',
       title: 'Physics and software',
       href: '#about',
-      text: 'I studied applied physics because I liked real experiments, messy measurement, and small details changing the answer. Software became serious when it saved hours of lab work and felt worth using.',
+      text: 'I studied applied physics because I liked real experiments, messy measurement, and small details changing the answer. Software got serious when it saved hours of lab work and felt worth using.',
       tags: ['physics', 'measurement', 'software', 'details'],
     },
     {
       id: 'talks',
       title: 'Talks and interviews',
       href: 'Talks and voice',
-      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to act on it.',
+      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to do something about it.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
       id: 'investing',
       title: 'Investing',
       href: '#investing',
-      text: 'I have invested in more than 100 startups and tend to back founders who are close to the problem, close to the customer, and honest about what they still have to learn.',
+      text: "I've invested in more than 100 startups and tend to back founders who stay close to the problem, stay close to the customer, and are honest about what they still need to learn.",
       tags: ['investing', 'founders', 'customer', 'context'],
     },
   ];
 
   const guides = {
     operator: [
-      ['#now', 'Start with ResiDesk first.'],
-      ['Resident-message loop', 'Then look at how a resident message becomes work a property team can own clearly.'],
+      ['#now', 'Start with ResiDesk.'],
+      ['Resident-message loop', 'Then follow one resident message into work the team can own.'],
       ['#recent', 'Use the links around resident feedback, retention, and the operating side.'],
       ['#conversations', 'Watch the longer version in my own words.'],
       ['#links', 'Use the links when you want the source trail.'],
     ],
     founder: [
       ['Work table', 'Start with Climb, BlackRock, and the work that followed.'],
-      ['#writing', 'Read the AI principles that still hold up on a busy day.'],
-      ['#about', 'Look at how physics, finance, and housing shaped the work.'],
-      ['Useful AI test', 'Try the Useful AI test against your own idea before calling it useful.'],
+      ['#writing', 'Read the AI rules that still hold up on a busy day.'],
+      ['#about', 'See how physics, finance, and housing shaped the work.'],
+      ['Useful AI test', 'Use the Useful AI test before calling an idea useful.'],
       ['#conversations', 'Watch the company-building conversations in plain language and keep the noise down.'],
     ],
     journalist: [
-      ['#conversations', 'Start with talks and my real voice.'],
-      ['#work', 'Use the work history and the numbers beside it.'],
-      ['#recent', 'Pull recent writing and links together.'],
+      ['#conversations', 'Start with talks and the way I sound in a room.'],
+      ['#work', 'Use the work history and the numbers next to it.'],
+      ['#recent', 'Pull the recent writing and links together.'],
       ['#conversations', 'Use talks for the way I sound live.'],
-      ['#links', 'Grab the outside links, panels, recordings, and dates that help explain the work.'],
+      ['#links', 'Grab the outside links, panels, recordings, and dates that explain the work.'],
     ],
     candidate: [
       ['#operating-system', 'Read how I think about work that matters to me.'],
@@ -88,23 +88,23 @@
       ['#links', 'Use recordings to hear the work directly from me.'],
     ],
     investor: [
-      ['#now', 'Start with the current ResiDesk work.'],
+      ['#now', 'Start with the work at ResiDesk now.'],
       ['#work', 'Look at the work that came before ResiDesk and why it mattered.'],
       ['#recent', 'Check the recent links and dates.'],
-      ['#fit-boundaries', 'Read where I can help and where I am probably not the fit.'],
-      ['#ai-field-tools', 'Use the Tuesday test to see whether the idea turns into work a property team would actually use.'],
+      ['#fit-boundaries', 'Read where I can help and where I am probably not the right fit.'],
+      ['#ai-field-tools', 'Use the Tuesday test to see whether the idea turns into work a property team would actually use on a Tuesday.'],
     ],
     background: [
-      ['#work', 'Start with the work history and the lessons it left behind.'],
-      ['#work-table', 'Use Climb, BlackRock, and ResiDesk to see how the work got here.'],
-      ['#work', 'Check the roles and what changed.'],
+      ['#work', 'Start with the work history and what it changed.'],
+      ['#work-table', 'See how Climb, BlackRock, and ResiDesk connect.'],
+      ['#work', 'Check the roles and the change each one forced.'],
       ['#links', 'Open the public articles, talks, and dates.'],
       ['#conversations', 'Use talks when you want the actual voice.'],
     ],
   };
 
   const talkLenses = {
-    harnoor: ['Physics taught me to respect measurement.', 'Software became useful when it saved real time on actual work.', 'ResiDesk starts with the customer, not the demo.'],
+    harnoor: ['Physics taught me to respect measurement and the stuff it hides.', 'Software became useful when it saved real time on actual work.', 'ResiDesk starts with the customer, not the demo room.'],
     greg: ['The useful part of AI is what it changes inside real company work, not the slide deck.', 'The right history has to travel with the task.', 'A product is only good if it changes what someone does next.'],
     wellfound: ['The team needs people who can carry the room.', 'The work is close to residents, operators, and messy edge cases.', 'Trust matters because a real team still owns the judgment.'],
     '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to help the operator, not just make an interesting analysis.'],
@@ -118,15 +118,15 @@
   };
 
   const tuesdayClaims = {
-    answers: 'The demo answers customer messages with the right context and the right tone for the room.',
-    research: 'The demo summarizes customer research without flattening the point.',
-    sales: 'The demo writes a sales follow-up that sounds like me instead of a template.',
+    answers: 'The demo answers customer messages with the right context and tone.',
+    research: 'The demo summarizes customer research without sanding off the point.',
+    sales: 'The demo writes a sales follow-up that sounds like me, not a template.',
     ops: 'The demo moves operational work without losing the owner or the next step.',
   };
 
   const tuesdayEnvironments = {
-    operator: 'a busy property team already dealing with too many exceptions',
-    enterprise: 'an enterprise customer with a real rollout and real scrutiny',
+    operator: 'a busy property team already handling too many exceptions',
+    enterprise: 'an enterprise customer with a real rollout and real review',
     field: 'a field team doing the work under pressure every day',
     exec: 'an executive review with hard questions and a short clock',
   };
@@ -146,11 +146,11 @@
   };
 
   const designCritique = [
-    ['Argument', '9.0', 'The page is clearest when it starts with the job: customers already said what hurts, and the tool should help someone act on it.'],
-    ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep behaving like a small workbench, not a wall of equal-weight cards.'],
-    ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is over-bordering; every line should earn its place.'],
-    ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is better than a fake chat widget.'],
-    ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push every interaction toward judgment, not novelty.'],
+    ['Argument', '9.0', 'The page is clearest when it starts with the job: residents already said what hurts, and the tool should help someone act on it.'],
+    ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep working like a small workbench, not a wall of equal-weight cards.'],
+    ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is too many borders; every line should earn its place.'],
+    ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is better than a pretend chat widget.'],
+    ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push each interaction toward judgment, not novelty.'],
   ];
 
   const tweakBriefs = {
@@ -181,11 +181,11 @@
     founder: [
       ['How I build', '#operating-system', 'Use the six principles for how I work and decide.'],
       ['Useful AI test', '#ai-field-tools', 'Score an AI idea against context, owner, next step, measurement, and trust before calling it ready.'],
-      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the argument for building around models.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the case for building around models.'],
     ],
     'ai-team': [
       ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo in real use.'],
-      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the build-around-the-model argument.'],
+      ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the build-around-the-model case.'],
       ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and work an owner can see show up in housing.'],
     ],
     journalist: [
@@ -194,7 +194,7 @@
       ['Links', '#links', 'Use the articles, talks, and dates.'],
     ],
     investor: [
-      ['Now and current work', '#now', 'Start with the current ResiDesk focus.'],
+      ['Now and current work', '#now', 'Start with the work at ResiDesk now.'],
       ['Before ResiDesk', '#work', 'Use BlackRock and Climb to show the pattern is not housing-only.'],
       ['Investing lens', '#investing', 'Read the founder and customer-context filter.'],
     ],
@@ -206,8 +206,8 @@
   };
 
   const compassItems = [
-    ['More background and context', '#background', 'work, writing, and talks'],
-    ['Now', '#now', 'what I am building now'],
+    ['Background', '#background', 'work, writing, and talks'],
+    ['Now', '#now', "what I'm building now"],
     ['Map of resident messages', '#signal-map', 'how resident messages become owned work'],
     ['Work', '#work', 'where I worked before'],
     ['Links', '#recent', 'articles and talks'],
@@ -219,8 +219,8 @@
     {
       id: 'site-spine',
       label: 'Site spine',
-      title: 'The page should do one job without noise.',
-      deck: 'How what customers keep saying becomes work someone can own.',
+      title: 'The page should do one job.',
+      deck: 'How customer complaints become work someone can own.',
       kind: 'route',
       values: [
         ['Customer', 92],
@@ -248,7 +248,7 @@
       id: 'risk-heatmap',
       label: 'Risk heatmap',
       title: 'Small issues get expensive when they repeat.',
-      deck: 'The point is to catch ordinary complaints before they quietly become expensive.',
+      deck: 'The point is to catch ordinary complaints before they turn expensive.',
       kind: 'matrix',
       values: [
         ['Maintenance', 81],
@@ -258,12 +258,12 @@
         ['Wi-Fi', 68],
         ['Payments', 47],
       ],
-      notes: ['Do not average away pain.', 'Watch repeat issues.', 'Make renewal risk visible.'],
+      notes: ['Do not smooth away pain.', 'Watch repeat issues.', 'Make renewal risk visible.'],
     },
     {
       id: 'link-map',
       label: 'Link map',
-      title: 'Make the links easier to find.',
+      title: 'Make the links easy to find.',
       deck: 'Keep links, talks, and company facts close to the part of the page they explain.',
       kind: 'orbit',
       values: [
@@ -273,7 +273,7 @@
         ['Press', 66],
         ['Work', 81],
       ],
-      notes: ['Keep links close to the claim.', 'Separate talks from work.', 'Make the links easy.'],
+      notes: ['Keep links close to the claim.', 'Separate talks from work.', 'Make the links easy to scan.'],
     },
     {
       id: 'trust-stack',
@@ -293,7 +293,7 @@
     {
       id: 'adoption-curve',
       label: 'Adoption curve',
-      title: 'The demo is early. The work is not done yet.',
+      title: 'The demo is early. The work is not done.',
       deck: 'Local AI can help describe the gap, but the chart keeps the test honest.',
       kind: 'route',
       values: [
@@ -308,7 +308,7 @@
       id: 'decision-stack',
       label: 'Decision stack',
       title: 'The output has to land where decisions get made.',
-      deck: 'Analysis only matters if it reaches the person who can change the building.',
+      deck: 'Analysis only matters if it reaches the person who can change things.',
       kind: 'stack',
       values: [
         ['Resident', 83],
@@ -322,7 +322,7 @@
     {
       id: 'context-trail',
       label: 'Context trail',
-      title: 'Before AI answers, it should show what it used to get to the answer.',
+      title: 'Before AI answers, it should show what it used.',
       deck: 'Show the inputs before asking anyone to trust the answer.',
       kind: 'bars',
       values: [
@@ -367,7 +367,7 @@
     {
       id: 'handoff-map',
       label: 'Handoff map',
-      title: 'A good answer knows when to hand off and who should get it next.',
+      title: 'A good answer should know when to hand off and who should get it next.',
       deck: 'The map shows where AI should stop drafting and start routing.',
       kind: 'route',
       values: [
@@ -396,7 +396,7 @@
     {
       id: 'renewal-warning',
       label: 'Renewal warning',
-      title: 'Renewal risk usually shows up before it walks.',
+      title: 'Renewal risk usually shows up before people say it out loud.',
       deck: 'The heatmap keeps early resident warnings from disappearing into ticket history.',
       kind: 'matrix',
       values: [
@@ -407,12 +407,12 @@
         ['Access', 62],
         ['Safety', 69],
       ],
-      notes: ['Listen before renewal season.', 'Show cause, not just churn.', 'Give the owner time.'],
+      notes: ['Listen before renewal season.', 'Show cause, not just churn.', 'Give the owner time to act.'],
     },
     {
       id: 'demo-gap',
       label: 'Demo gap',
-      title: 'Some demos look better than the work they replace in practice.',
+      title: 'Some demos look better than the work they replace.',
       deck: 'The bars show the gap between a polished room and a busy team.',
       kind: 'bars',
       values: [
@@ -456,7 +456,7 @@
       id: 'founder-work',
       label: 'Founder work',
       title: 'A good founder answer starts close to the customer problem.',
-      deck: 'This heatmap gives founders and investors a fast way to check where the work is clearest.',
+      deck: 'This heatmap gives founders and investors a fast way to see where the work is clearest.',
       kind: 'matrix',
       values: [
         ['Customer', 91],
@@ -486,7 +486,7 @@
       id: 'article-trail',
       label: 'Article trail',
       title: 'Outside links should make the work easier to follow.',
-      deck: 'The map keeps articles, writing, and recordings from becoming a loose link pile.',
+      deck: 'The map keeps articles, writing, and recordings from turning into a loose link pile.',
       kind: 'orbit',
       values: [
         ['Law360', 78],
@@ -514,7 +514,7 @@
     {
       id: 'capability-ladder',
       label: 'Capability ladder',
-      title: 'Browser AI should degrade like a ladder, not a cliff edge.',
+      title: 'Browser AI should degrade like a ladder, not a cliff.',
       deck: 'The stack shows how the site moves from local data to local AI help when available.',
       kind: 'stack',
       values: [
@@ -633,7 +633,7 @@
     {
       id: 'ai-use-case-sorter',
       label: 'Use-case sorter',
-      title: 'Useful AI sorts by work changed, not model drama.',
+      title: 'Useful AI sorts by the work it changes, not model drama.',
       deck: 'The heatmap makes the browser-AI feature set feel practical instead of magical.',
       kind: 'matrix',
       values: [
@@ -1217,7 +1217,7 @@
     `;
     const interpretation = await visualPlanFromBrowserModel(mode);
     if (interpretation) {
-      status.textContent = 'Local model added a read';
+      status.textContent = 'Local model added context';
       status.classList.add('is-browser');
       stage.insertAdjacentHTML('beforeend', `<p class="visual-model-read"><strong>Local read:</strong> ${escapeHtml(interpretation)}</p>`);
     }
