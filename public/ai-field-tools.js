@@ -1056,7 +1056,7 @@
             <li><span>Pattern</span>${escapeHtml(topic)}</li>
             <li><span>Next question</span>What would I do differently if this kept happening next week?</li>
             <li><span>Decision</span>Name who owns the next step before adding more analysis.</li>
-            <li><span>Close the loop</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
+            <li><span>Follow-through</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
           </ul>
           <button type="button" class="text-link ai-copy-output" data-copy-kind="memo">Copy memo</button>
         </div>
