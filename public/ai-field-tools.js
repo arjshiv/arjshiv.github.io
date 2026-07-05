@@ -4,7 +4,7 @@
       id: 'residesk',
       title: 'ResiDesk',
       href: 'ResiDesk now',
-      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into something they can answer, route, and follow up on without rereading the whole thread.',
+      text: 'I co-founded ResiDesk to help property teams turn resident texts, reviews, tickets, and calls into work they can answer, route, and close without rereading the whole thread.',
       tags: ['residesk', 'housing', 'resident', 'texts', 'operator', 'customer'],
     },
     {
@@ -18,7 +18,7 @@
       id: 'ai-view',
       title: 'AI view',
       href: 'Writing and AI',
-      text: 'I care about AI that works on a normal Tuesday. History, evals, handoff, trust, and judgment matter more than model names when people actually have work to do.',
+      text: 'I care about AI that works on a normal Tuesday. History, checks, handoff, trust, and judgment matter more than model names when people actually have work to do.',
       tags: ['ai', 'context', 'evaluation', 'judgment', 'handoff', 'model'],
     },
     {
@@ -46,7 +46,7 @@
       id: 'talks',
       title: 'Talks and interviews',
       href: 'Talks and voice',
-      text: 'The talks keep coming back to measurement, useful software, and hearing residents clearly enough to do something about it.',
+      text: 'The talks keep coming back to measurement, software that helps, and hearing residents clearly enough to do something about it.',
       tags: ['talks', 'video', 'company', 'residesk'],
     },
     {
@@ -62,15 +62,15 @@
     operator: [
       ['#now', 'Start with ResiDesk.'],
       ['Resident-message loop', 'Then follow one resident message into work the team can own.'],
-      ['#recent', 'Use the links around resident feedback, retention, and the operating side.'],
+      ['#recent', 'Use the links around resident feedback, retention, and daily operations.'],
       ['#conversations', 'Watch the longer version in my own words.'],
       ['#links', 'Use the links when you want the source trail.'],
     ],
     founder: [
       ['Work table', 'Start with Climb, BlackRock, and the work that followed.'],
-      ['#writing', 'Read the AI rules that still hold up on a busy day.'],
+      ['#writing', 'Read the AI rules that still hold up when the day gets busy.'],
       ['#about', 'See how physics, finance, and housing shaped the work.'],
-      ['Useful AI test', 'Use the Useful AI test before calling an idea useful.'],
+      ['Useful AI test', 'Use the Useful AI test before calling an idea ready.'],
       ['#conversations', 'Watch the company-building conversations in plain language and keep the noise down.'],
     ],
     journalist: [
@@ -105,9 +105,9 @@
 
   const talkLenses = {
     harnoor: ['Physics taught me to respect measurement and the stuff it hides.', 'Software became useful when it saved real time on actual work.', 'ResiDesk starts with the customer, not the demo room.'],
-    greg: ['The useful part of AI is what it changes inside real company work, not the slide deck.', 'The right history has to travel with the task.', 'A product is only good if it changes what someone does next.'],
-    wellfound: ['The team needs people who can carry the room.', 'The work is close to residents, operators, and messy edge cases.', 'Trust matters because a real team still owns the judgment.'],
-    '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is leaking trust.', 'The output has to help the operator, not just make an interesting analysis.'],
+    greg: ['The useful part of AI is what it changes in real company work, not the slide deck.', 'The right history has to travel with the task.', 'A product is only good if it changes what someone does next.'],
+    wellfound: ['The team needs people who can carry the room.', 'The work stays close to residents, operators, and messy edge cases.', 'Trust matters because a real team still owns the judgment.'],
+    '20for20': ['Wi-Fi complaints are not just support tickets.', 'Resident sentiment can show owners where the building is losing trust.', 'The output has to help the operator, not just make a nice chart.'],
   };
 
   const signalFixtures = {
@@ -125,8 +125,8 @@
   };
 
   const tuesdayEnvironments = {
-    operator: 'a busy property team already handling too many exceptions',
-    enterprise: 'an enterprise customer with a real rollout and real review',
+    operator: 'a busy property team already juggling too many exceptions',
+    enterprise: 'an enterprise customer with a real rollout and a real review',
     field: 'a field team doing the work under pressure every day',
     exec: 'an executive review with hard questions and a short clock',
   };
@@ -142,14 +142,14 @@
     operator: ['time pressure that keeps rising all day', 'too many small exceptions', 'resident trust at risk'],
     enterprise: ['security review and procurement', 'system integration work', 'rollout pressure'],
     field: ['low patience from the team', 'mobile use in the field', 'messy inputs all day'],
-    exec: ['ROI under a microscope', 'exec story that still holds up', 'who owns the risk'],
+    exec: ['ROI under a microscope', 'an exec story that still holds up', 'who owns the risk'],
   };
 
   const designCritique = [
     ['Argument', '9.0', 'The page is clearest when it starts with the job: residents already said what hurts, and the tool should help someone act on it.'],
     ['Hierarchy', '8.2', 'The top half scans well. The tools section should keep working like a small workbench, not a wall of equal-weight cards.'],
     ['Detail', '8.0', 'The cool palette, hard shadows, and mono labels are distinctive. The risk is too many borders; every line should earn its place.'],
-    ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is better than a pretend chat widget.'],
+    ['Function', '9.1', 'The local tools do useful work without a server: answer, check, simulate, highlight, and keep notes locally. That is better than a fake chat box.'],
     ['Taste', '8.5', 'The best version of the site should feel useful before it feels clever. Push each interaction toward judgment, not novelty.'],
   ];
 
@@ -184,7 +184,7 @@
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Read the case for building around models.'],
     ],
     'ai-team': [
-      ['Tuesday test', '#deployment-room', 'Start with what has to survive after the demo in real use.'],
+      ['Tuesday test', '#deployment-room', 'Start with what has to hold up after the demo in real use.'],
       ['System design essay', 'https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator', 'Use the essay for the build-around-the-model case.'],
       ['ResiDesk loop', '#residesk-loop', 'See how context, handoff, trust, and work an owner can see show up in housing.'],
     ],
@@ -208,7 +208,7 @@
   const compassItems = [
     ['Background', '#background', 'work, writing, and talks'],
     ['Now', '#now', "what I'm building now"],
-    ['Map of resident messages', '#signal-map', 'how resident messages become owned work'],
+    ['Map of resident messages', '#signal-map', 'how resident messages turn into owned work'],
     ['Work', '#work', 'where I worked before'],
     ['Links', '#recent', 'articles and talks'],
     ['Talks', '#conversations', 'how I say it'],
@@ -279,7 +279,7 @@
       id: 'trust-stack',
       label: 'Trust stack',
       title: 'A useful answer shows what it used and what it skipped.',
-      deck: 'A good answer needs inputs, history, an owner, a test, and follow-through.',
+      deck: 'A good answer needs the source, the history, an owner, a test, and follow-through.',
       kind: 'stack',
       values: [
         ['Input', 88],
@@ -294,7 +294,7 @@
       id: 'adoption-curve',
       label: 'Adoption curve',
       title: 'The demo is early. The work is not done.',
-      deck: 'Local AI can help describe the gap, but the chart keeps the test honest.',
+      deck: 'The chart keeps room reaction separate from real use.',
       kind: 'route',
       values: [
         ['Demo', 92],
@@ -337,7 +337,7 @@
       id: 'voice-fingerprint',
       label: 'Voice fingerprint',
       title: 'The copy should sound like me, not a recap from far away.',
-      deck: 'Check for concrete nouns, first-person judgment, and language that stays close to the job.',
+      deck: 'Check for concrete nouns, first-person judgment, and plain language that stays close to the job.',
       kind: 'matrix',
       values: [
         ['Concrete', 86],
@@ -353,7 +353,7 @@
       id: 'customer-compass',
       label: 'Customer compass',
       title: 'The customer stays in the center of the map.',
-      deck: 'Browser AI is useful here only if it keeps pulling the reader back to the job.',
+      deck: 'Keep the reader anchored on the resident, not the chart.',
       kind: 'orbit',
       values: [
         ['Resident', 94],
@@ -368,7 +368,7 @@
       id: 'handoff-map',
       label: 'Handoff map',
       title: 'A good answer should know when to hand off and who should get it next.',
-      deck: 'The map shows where AI should stop drafting and start routing.',
+      deck: 'Drafting is not ownership. Routing is the point.',
       kind: 'route',
       values: [
         ['Read', 85],
@@ -383,7 +383,7 @@
       id: 'maintenance-pulse',
       label: 'Maintenance pulse',
       title: 'Maintenance complaints are often a trust check.',
-      deck: 'This view turns repeated small problems into something an operator can read.',
+      deck: 'Repeated small problems add up to a trust problem.',
       kind: 'bars',
       values: [
         ['Washer', 52],
@@ -397,7 +397,7 @@
       id: 'renewal-warning',
       label: 'Renewal warning',
       title: 'Renewal risk usually shows up before people say it out loud.',
-      deck: 'The heatmap keeps early resident warnings from disappearing into ticket history.',
+      deck: 'Early complaints should not disappear into ticket history.',
       kind: 'matrix',
       values: [
         ['Price', 76],
@@ -413,7 +413,7 @@
       id: 'demo-gap',
       label: 'Demo gap',
       title: 'Some demos look better than the work they replace.',
-      deck: 'The bars show the gap between a polished room and a busy team.',
+      deck: 'The bars show the gap between a polished room and a team under load.',
       kind: 'bars',
       values: [
         ['Room', 94],
@@ -427,7 +427,7 @@
       id: 'owner-briefing',
       label: 'Owner briefing',
       title: 'An owner needs the pattern, not the raw inbox.',
-      deck: 'This stack turns resident messages into a brief a decision-maker can use.',
+      deck: 'This stack turns resident messages into a brief someone can use.',
       kind: 'stack',
       values: [
         ['Raw text', 90],
@@ -442,7 +442,7 @@
       id: 'candidate-lens',
       label: 'Candidate lens',
       title: 'Candidates should see how the work actually feels in practice.',
-      deck: 'A browser AI summary can help, but the page should still show the work style directly.',
+      deck: 'A summary can help, but the page should still show how the work feels.',
       kind: 'route',
       values: [
         ['Context', 91],
@@ -456,7 +456,7 @@
       id: 'founder-work',
       label: 'Founder work',
       title: 'A good founder answer starts close to the customer problem.',
-      deck: 'This heatmap gives founders and investors a fast way to see where the work is clearest.',
+      deck: 'It shows where the work is clearest and closest to pain.',
       kind: 'matrix',
       values: [
         ['Customer', 91],
@@ -472,7 +472,7 @@
       id: 'transcript-terrain',
       label: 'Transcript terrain',
       title: 'Talks are useful when they show what keeps coming back up.',
-      deck: 'The chart shows the topics that keep coming back across public conversations.',
+      deck: 'Use talks to show the themes that keep coming back.',
       kind: 'bars',
       values: [
         ['Physics', 54],
@@ -486,7 +486,7 @@
       id: 'article-trail',
       label: 'Article trail',
       title: 'Outside links should make the work easier to follow.',
-      deck: 'The map keeps articles, writing, and recordings from turning into a loose link pile.',
+      deck: 'Keep articles, writing, and recordings easy to follow.',
       kind: 'orbit',
       values: [
         ['Law360', 78],
@@ -501,7 +501,7 @@
       id: 'how-i-got-here',
       label: 'How I got here',
       title: 'The path makes more sense when it stays tied to what changed.',
-      deck: 'Physics, finance, education finance, housing: different rooms, same bias toward useful measurement.',
+      deck: 'Different rooms, same bias toward useful measurement.',
       kind: 'route',
       values: [
         ['Physics', 70],
@@ -514,7 +514,7 @@
     {
       id: 'capability-ladder',
       label: 'Capability ladder',
-      title: 'Browser AI should degrade like a ladder, not a cliff.',
+      title: 'Browser AI should fail softly, not all at once.',
       deck: 'The stack shows how the site moves from local data to local AI help when available.',
       kind: 'stack',
       values: [
@@ -529,7 +529,7 @@
     {
       id: 'local-ai-state',
       label: 'Model state',
-      title: 'Local AI is a bonus, not a dependency.',
+      title: 'Local AI should be a fallback, not the whole product.',
       deck: 'This view makes availability explicit so the tool feels honest.',
       kind: 'bars',
       values: [
@@ -543,8 +543,8 @@
     {
       id: 'note-swarm',
       label: 'Note swarm',
-      title: 'Private notes are better when repeated themes show up locally.',
-      deck: 'Nothing leaves the browser. The visualization just helps the reader see what they kept noticing.',
+      title: 'Private notes work better when repeated themes show up locally.',
+      deck: 'Nothing leaves the browser. The view just surfaces what kept coming up.',
       kind: 'matrix',
       values: [
         ['Demo', 71],
@@ -560,7 +560,7 @@
       id: 'objection-map',
       label: 'Objection map',
       title: 'Objections should point to the part of the product that answers them.',
-      deck: 'Do not let local AI talk around the hard product questions.',
+      deck: 'Do not let local AI dodge the hard product questions.',
       kind: 'orbit',
       values: [
         ['Accuracy', 75],
@@ -575,7 +575,7 @@
       id: 'page-density',
       label: 'Page density',
       title: 'A visual site still needs air.',
-      deck: 'This chart treats density as a design variable, not an accident.',
+      deck: 'This chart treats density as a choice, not an accident.',
       kind: 'bars',
       values: [
         ['Hero', 70],
@@ -589,7 +589,7 @@
       id: 'section-contrast',
       label: 'Contrast map',
       title: 'Playful color still has to read.',
-      deck: 'The heatmap keeps visual ambition tied to legibility and hover states.',
+      deck: 'The heatmap keeps visual ambition tied to legibility, hover states, and mobile.',
       kind: 'matrix',
       values: [
         ['Hero', 88],
@@ -605,7 +605,7 @@
       id: 'reading-time-map',
       label: 'Quick read',
       title: 'Different readers should get different shortcuts.',
-      deck: 'This view helps local AI pull relevant sections without changing the page itself.',
+      deck: 'Different readers need different routes through the page.',
       kind: 'route',
       values: [
         ['Skim', 45],
@@ -619,7 +619,7 @@
       id: 'follow-through-queue',
       label: 'Action queue',
       title: 'If nobody owns the queue, the answer did not help.',
-      deck: 'The stack shows how local AI can sort work while leaving judgment with a person.',
+      deck: 'The stack shows how local AI can sort work without taking judgment away from a person.',
       kind: 'stack',
       values: [
         ['Urgent', 90],
@@ -634,7 +634,7 @@
       id: 'ai-use-case-sorter',
       label: 'Use-case sorter',
       title: 'Useful AI sorts by the work it changes, not model drama.',
-      deck: 'The heatmap makes the browser-AI feature set feel practical instead of magical.',
+      deck: 'The heatmap makes the browser-AI feature set feel practical, not magical.',
       kind: 'matrix',
       values: [
         ['Summarize', 76],
@@ -650,7 +650,7 @@
       id: 'operator-day',
       label: 'Operator day',
       title: 'The best AI feature gives time back during the day.',
-      deck: 'This keeps the product honest: shorter commute from problem to finished work.',
+      deck: 'This keeps the product honest: shorter path from problem to done work.',
       kind: 'route',
       values: [
         ['Inbox', 83],
@@ -706,14 +706,14 @@
 
   const getBrowserLanguageModel = () => globalThis.LanguageModel || globalThis.ai?.languageModel || null;
 
-  const visualPlanFromBrowserModel = async (mode) => {
+    const visualPlanFromBrowserModel = async (mode) => {
     const api = getBrowserLanguageModel();
     if (!api?.create) return null;
     try {
       const availability = api.availability ? await api.availability() : 'available';
       if (availability === 'unavailable') return null;
       const session = await api.create({
-        systemPrompt: 'Read this site-visualization brief and return one plainspoken sentence. No hype. No markdown.',
+        systemPrompt: 'Read this brief and return one plainspoken sentence. Keep it concrete. No hype. No markdown.',
       });
       const prompt = `Visualization: ${mode.title}\nPoint: ${mode.deck}\nSignals: ${mode.values.map(([label, value]) => `${label} ${value}`).join(', ')}`;
       const response = session.prompt ? await session.prompt(prompt) : null;
@@ -733,10 +733,10 @@
         if (availability === 'unavailable') return null;
       }
       const session = await api.create({
-        systemPrompt: 'Answer only from the supplied site notes. Be plainspoken, specific, and concise. If the notes do not answer the question, say so.',
+        systemPrompt: 'Answer only from the supplied notes. Be plainspoken, specific, and concise. If the notes do not answer the question, say so.',
       });
       const notes = topDocs(question, 5).map((doc) => `${doc.title}: ${doc.text}`).join('\n');
-      const prompt = `Question: ${question}\n\nSite notes:\n${notes}`;
+      const prompt = `Question: ${question}\n\nNotes:\n${notes}`;
       const response = session.prompt ? await session.prompt(prompt) : null;
       session.destroy?.();
       return response ? `<p><strong>Local model:</strong> ${escapeHtml(String(response))}</p>${answerFromCorpus(question)}` : null;
@@ -751,18 +751,18 @@
     const hasPromptApi = Boolean(getBrowserLanguageModel());
     const hasWebGpu = Boolean(navigator.gpu);
     if (hasPromptApi) {
-      status.textContent = 'Local model available';
+      status.textContent = 'Local model ready';
       status.title = 'This browser exposes a local language model.';
       status.classList.add('is-browser');
       return;
     }
     if (hasWebGpu) {
-      status.textContent = 'WebGPU available';
+      status.textContent = 'WebGPU ready';
       status.title = 'This browser can run local model features when available.';
       status.classList.add('is-local');
       return;
     }
-    status.textContent = 'Local fallback active';
+    status.textContent = 'Local fallback ready';
     status.title = 'This uses the built-in page retrieval fallback.';
     status.classList.add('is-local');
   };
@@ -776,11 +776,11 @@
       event.preventDefault();
       const question = input.value.trim().slice(0, 180);
       if (!question) {
-        output.innerHTML = '<p class="article-meta">Ask a real question first.</p>';
+        output.innerHTML = '<p class="article-meta">Type a question first.</p>';
         return;
       }
       output.setAttribute('aria-busy', 'true');
-      output.innerHTML = '<p class="article-meta">Checking the site notes...</p>';
+      output.innerHTML = '<p class="article-meta">Checking the notes...</p>';
       output.innerHTML = (await answerWithBrowserModel(question)) || answerFromCorpus(question);
       output.setAttribute('aria-busy', 'false');
     });
@@ -845,7 +845,7 @@
           <strong>${score}/5 useful-work checks</strong>
           <span class="ai-score-bar" aria-hidden="true"><span style="--score-width:${percent}%"></span></span>
           <ul>${hits.map(([label, hit]) => `<li>${hit ? 'Pass' : 'Missing'}: ${label}</li>`).join('')}</ul>
-          <p>${score >= 4 ? 'This has the shape of useful work. The next question is whether a real team would trust it on a busy day.' : 'This still sounds more like a demo than something a team can use. Add context, ownership, and a concrete next step.'}</p>
+          <p>${score >= 4 ? 'This looks ready for a real team. The next test is whether they would trust it on a busy day.' : 'This still reads like a demo. Add context, ownership, and a concrete next step.'}</p>
         </div>
       `;
     });
@@ -863,10 +863,10 @@
       const breakpoints = tuesdayBreakpoints[claim.value] || tuesdayBreakpoints.answers;
       const pressure = tuesdayEnvironmentPressure[environment.value] || tuesdayEnvironmentPressure.operator;
       output.innerHTML = `
-        <p><strong>Tuesday setup:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>
-        <ul>${breakpoints.map((item) => `<li>Demo risk: ${escapeHtml(item)}</li>`).join('')}</ul>
-        <ul>${pressure.map((item) => `<li>Workday pressure: ${escapeHtml(item)}</li>`).join('')}</ul>
-        <p><strong>Adoption check:</strong> Name the owner, show missing context, decide what gets reviewed, and measure whether the work moved.</p>
+        <p><strong>Tuesday test:</strong> ${escapeHtml(claimText)} Now put it inside ${escapeHtml(envText)}.</p>
+        <ul>${breakpoints.map((item) => `<li>Break point: ${escapeHtml(item)}</li>`).join('')}</ul>
+        <ul>${pressure.map((item) => `<li>Tuesday pressure: ${escapeHtml(item)}</li>`).join('')}</ul>
+        <p><strong>Useful on Tuesday:</strong> Name the owner, show missing context, decide what gets reviewed, and measure whether the work moved.</p>
       `;
     };
     button.addEventListener('click', render);
@@ -1044,7 +1044,7 @@
     button.addEventListener('click', () => {
       const note = input.value.trim();
       if (!note) {
-        output.innerHTML = '<p class="article-meta">Paste the messy notes first.</p>';
+        output.innerHTML = '<p class="article-meta">Paste the notes first.</p>';
         return;
       }
       const topic = summarizeTopic(note);
@@ -1054,9 +1054,9 @@
           <p>${escapeHtml(firstSentence(note))}</p>
           <ul>
             <li><span>Pattern</span>${escapeHtml(topic)}</li>
-            <li><span>Question</span>What would I do differently if this kept happening next week?</li>
+            <li><span>Next question</span>What would I do differently if this kept happening next week?</li>
             <li><span>Decision</span>Name who owns the next step before adding more analysis.</li>
-            <li><span>Follow-through</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
+            <li><span>Close the loop</span>Route urgent cases, then show the recurring pattern to the person who can change the building.</li>
           </ul>
           <button type="button" class="text-link ai-copy-output" data-copy-kind="memo">Copy memo</button>
         </div>
