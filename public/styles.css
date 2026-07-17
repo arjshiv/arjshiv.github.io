@@ -739,7 +739,7 @@ main {
   }
 
   .hero h1 {
-    font-size: clamp(2.6rem, 13vw, 4rem);
+    font-size: 3rem;
   }
 
   .portrait {
