@@ -22,15 +22,18 @@ for (const viewport of [
     };
     const title = rect('.hero h1');
     const portrait = rect('.portrait-frame');
+    const primaryAction = rect('.hero .button.primary');
     const overflow = Math.round(document.documentElement.scrollWidth - window.innerWidth);
     const overlapX = title && portrait ? Math.max(0, Math.min(title.right, portrait.right) - Math.max(title.left, portrait.left)) : 0;
     const overlapY = title && portrait ? Math.max(0, Math.min(title.bottom, portrait.bottom) - Math.max(title.top, portrait.top)) : 0;
     const portraitOutsideViewport = portrait ? portrait.left < 0 || portrait.right > window.innerWidth : true;
-    return { overflow, heroOverlap: Math.round(overlapX * overlapY), portraitOutsideViewport };
+    const mobileActionBelowFold = window.innerWidth <= 390 && (!primaryAction || primaryAction.bottom > window.innerHeight);
+    return { overflow, heroOverlap: Math.round(overlapX * overlapY), portraitOutsideViewport, mobileActionBelowFold };
   });
   if (result.overflow !== 0) failures.push(viewport.name + ': horizontal overflow ' + result.overflow + 'px');
     if (result.heroOverlap !== 0) failures.push(viewport.name + ': hero title overlaps portrait');
     if (result.portraitOutsideViewport) failures.push(viewport.name + ': portrait leaves the viewport');
+    if (result.mobileActionBelowFold) failures.push(viewport.name + ': primary action falls below the first viewport');
   await page.close();
 }
 
