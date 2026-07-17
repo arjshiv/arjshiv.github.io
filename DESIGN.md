@@ -8,7 +8,7 @@ The page has six sections:
 
 1. Opening
 2. ResiDesk
-3. The path here
+3. How I got here
 4. How I work
 5. Writing and talks
 6. Contact
@@ -24,9 +24,10 @@ Use four color roles:
 - Muted ink: supporting copy and metadata
 - Accent: restrained teal for links, numbers, and section markers
 
-New colors should use OKLCH with a hex fallback. Do not introduce gradients, glows, beige, purple, warm retro colors, or random card fills.
+Keep production colors as explicit hex or RGB values so browser rendering and contrast audits agree. Do not introduce gradients, glows, beige, purple, warm retro colors, or random card fills.
 
 Use Geist for headings and body copy. Use Geist Mono only for navigation, dates, numbers, and short labels. Headings use text-wrap: balance; short body copy uses text-wrap: pretty.
+Choose type sizes at deliberate breakpoints. Do not scale type continuously with viewport width.
 
 ## Layout
 
@@ -71,7 +72,7 @@ Use Geist for headings and body copy. Use Geist Mono only for navigation, dates,
 ## Guardrails
 
 - Six main sections
-- At most 350 DOM nodes
+- At most 300 DOM nodes
 - At most 10,000px page height at 390px viewport width
 - No command palette
 - No tool lab
