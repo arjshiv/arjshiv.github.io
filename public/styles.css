@@ -698,6 +698,12 @@ main {
   }
 }
 
+@media (max-width: 1000px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
 @media (max-width: 760px) {
   :root {
     --page: min(100% - 1.5rem, 68rem);
