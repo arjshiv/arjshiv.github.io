@@ -56,6 +56,7 @@ console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, init
   cssBytes,
   initialJsBytes,
   aiLoadedInitially,
+  domNodes,
 })), null, 2));
 
 if (failures.length) {
