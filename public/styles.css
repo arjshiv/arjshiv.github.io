@@ -834,6 +834,15 @@ main {
     grid-column: 1;
   }
 
+  .link-list > a {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .link-list p {
+    grid-column: 1;
+  }
+
   .work-loop,
   .stat-row {
     grid-template-columns: 1fr;
