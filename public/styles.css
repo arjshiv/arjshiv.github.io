@@ -283,7 +283,7 @@ main {
 
 .portrait {
   align-self: start;
-  margin-top: 1.5rem;
+  margin-top: 0;
 }
 
 .portrait img {
