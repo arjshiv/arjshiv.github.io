@@ -742,6 +742,10 @@ main {
     font-size: 3rem;
   }
 
+  .hero-lede {
+    font-size: 1.25rem;
+  }
+
   .portrait {
     width: min(100%, 20rem);
     margin: 0;
