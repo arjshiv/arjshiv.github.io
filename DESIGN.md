@@ -1,101 +1,93 @@
 # Design System
 
-## Design Direction
+## Direction
 
-Polished field-passport personal site: icy paper, hard teal-black ink, app-like controls, printed labels, and bright cyan, aqua, teal, mint, and small violet accents. The site should feel like a modern consumer app crossed with a field manual for applied AI and housing operations, not a novelty arcade skin.
+This is a calm editorial founder site with one mechanical edge. It should read like Arjun explaining his work to another thoughtful operator, not like a dashboard, a press packet, or an AI demo.
 
-Reference family:
+The page has six sections:
 
-- RetroUI-style hard borders and tactile surfaces.
-- Lazyweb consumer-app patterns: readable FAQ rows, playful progress surfaces, passport/checkpoint energy, and mobile-first card rhythm.
-- Nothing-inspired mechanical labeling and grid discipline.
-- Taste Skill anti-slop rules: no generic SaaS gradients, no empty decorative cards, no fake polish that breaks layout.
-- Impeccable rules: brand register, concrete voice, no side-stripe accents, no gradient text, no glassmorphism by default, no identical card-grid monotony when another structure fits better.
+1. Opening
+2. ResiDesk
+3. The path here
+4. How I work
+5. Writing and talks
+6. Contact
 
-## Physical Scene
+Do not add a section unless it introduces a genuinely new part of the story.
 
-A founder, AI-team executive, partner, or serious reader is reading the site on a laptop during the workday, probably between calls, trying to decide whether Arjun's work is specific and worth their time. The page should be light, legible, fast to scan, and tactile enough to be memorable.
+## Visual System
 
-## Color Strategy
+Use four color roles:
 
-Full palette, but controlled by role.
+- Paper: cool near-white
+- Ink: dark teal-black
+- Muted ink: supporting copy and metadata
+- Accent: restrained teal for links, numbers, and section markers
 
-- Paper base: icy blue-white, never pure white and never cream.
-- Ink: dark teal-black, never flat black.
-- Deep blue: main active state, work-history bands, primary controls, selected tabs.
-- Cyan and aqua: hero surfaces, public-link previews, content cards, and field-map panels.
-- Seafoam and mint: start-here panels, operating cards, secondary controls, and hover states.
-- Violet: module indexes, small status ticks, badges, and active accents.
-- Coral is optional and rare. It should not pull the site warm.
+New colors should use OKLCH with a hex fallback. Do not introduce gradients, glows, beige, purple, warm retro colors, or random card fills.
 
-Use OKLCH tokens only for new colors. Do not introduce purple, neon blue, glass gradients, beige dominance, or generic gray text on colored panels. Text on color must use ink, paper, or a darker shade of the panel, never washed neutral gray.
-
-Color theory rule: hold contrast by lightness first, then tune hue and chroma. Most surfaces should live at high lightness with low-to-medium chroma; active work panels can drop much darker for clear contrast. The palette should use analogous cool hues (cyan, blue, teal, mint) with a tiny split-complement accent only for module indexes and status ticks.
-
-## Typography
-
-Use Geist and Geist Mono only.
-
-- Geist: body, long-form copy, explanatory text, navigation labels that need readability.
-- Geist Mono: display titles, module labels, numbers, compact technical labels, buttons.
-- Large headings can use hard shadow sparingly, but the shadow must never reduce readability.
-- Body copy should sit around 55 to 68 characters per line where possible.
-- Mobile headings must wrap deliberately. No single-word orphan lines when avoidable.
-- Avoid all-caps for paragraph-length copy. Reserve caps for short labels only.
+Use Geist for headings and body copy. Use Geist Mono only for navigation, dates, numbers, and short labels. Headings use text-wrap: balance; short body copy uses text-wrap: pretty.
 
 ## Layout
 
-- Page width stays constrained around the existing max width.
-- Sections should have a visible rhythm: heading, concrete work, links or next step. Avoid giant empty slabs.
-- Early sections should feel like an authentic founder page: current notes, current work, what shaped it, then deeper context. It should never sound like the visitor is being sorted into a funnel.
-- Hero can be asymmetric. Utility and content sections should favor readable grids.
-- Cards are allowed when they behave like physical printed objects. Do not nest cards inside cards.
-- Avoid full-width heavy-bordered rows unless the row is genuinely a table or control.
-- Use centered or constrained accordions for FAQ-like content, not edge-to-edge slabs.
-- Mobile layouts collapse to one column with stable touch targets and no horizontal scroll.
+- The reading spine is about 62 characters wide.
+- The hero and major data rows may break out to the wider page grid.
+- Every section begins with a thin rule and a small numbered mono label.
+- That rule-and-label pattern is the one surviving mechanical gesture.
+- Most hierarchy comes from whitespace, type, and alignment.
+- Cards are unusual. Use a card only when a surface genuinely needs containment.
+- Mobile collapses to one column with no horizontal scrolling.
 
-## Surface Rules
+## Surfaces
 
-- Borders are hard ink, usually 2px or 3px. Use 4px only for primary hero or major work modules.
-- Radius stays tight: around 0.18rem to 0.35rem for retro surfaces.
-- Shadows are hard offset shadows using the ink token. They must not be clipped by containment.
-- Surface backgrounds should be intentional: ice paper, glacier blue, cyan, teal, seafoam, or mint.
-- Every repeated card set needs a clear visual system, not random color alternation or decorative noise.
+- Use 1px rules for section and row separation.
+- Portraits and media get a neutral inset outline.
+- Buttons use transparent layered shadows instead of hard borders.
+- Radius is small and quiet.
+- Nested radii must be concentric.
+- Do not restore hard offset shadows or thick retro frames.
 
 ## Interaction
 
-- Buttons and cards should feel tactile: short transform on hover or active, hard-shadow compression, visible focus ring.
-- Accordions should have consistent closed and open states.
-- Anchor navigation must not produce awkward scroll positions.
-- Motion should be quick, transform/opacity-only, and respect reduced motion.
-- Do not use animated states that temporarily reduce text contrast.
+- The page must remain useful with JavaScript disabled.
+- Use JavaScript only for the click-to-load video facade.
+- Interactive transitions must be interruptible and under 200ms.
+- Never use transition: all.
+- Press feedback uses scale(0.96).
+- Hover motion is gated behind fine-pointer media queries.
+- Reduced-motion users get instant state changes.
+- Every interactive target is at least 44px tall.
 
-## Interface Detail Rules
+## Copy
 
-Reference: Jakub Krehel's "Details That Make Interfaces Feel Better".
+- Start with the actual job, customer, and decision.
+- Use first person for beliefs and lessons.
+- Keep the causal chain visible: what happened, what I learned, what I did next.
+- State each major number once.
+- Do not turn ResiDesk into a metaphor. It is the company Arjun is building.
+- Candor should feel supportive: take the pain seriously, separate symptom from cause, and name the next useful action.
+- Remove anything that sounds like a persona funnel, research binder, legal brief, or generic AI consultancy.
 
-- Headings use `text-wrap: balance`; paragraph copy uses `text-wrap: pretty`.
-- All visible numeric labels, counters, dates, and module indexes use tabular numbers.
-- Root text stays antialiased for crisp rendering.
-- Interactive motion must be interruptible. Use transitions for hover, active, menu, and text-swap states; keyframes are only for staged entrance.
-- Press feedback uses `scale(0.96)` exactly where it does not distort layout.
-- Images and embeds get a subtle inset outline so media edges stay crisp on paper surfaces.
-- Use optical alignment for arrows and tiny symbols; do not trust geometric centering when the icon shape reads off.
-- Prefer soft layered depth for secondary repeated cards. Keep hard retro borders for major panels and controls only, so the page does not become visually noisy.
-- Nested surfaces must use concentric radii: outer radius equals inner radius plus the visible padding.
+## Guardrails
 
-## Copy System
+- Six main sections
+- At most 350 DOM nodes
+- At most 10,000px page height at 390px viewport width
+- No command palette
+- No tool lab
+- No scroll-triggered reveal system
+- No decorative perpetual animation
+- No repeated proof metrics
+- No duplicate article grids
 
-- Copy stays close to the transcript voice: practical, candid, and context-heavy.
-- Replace abstractions with the job being done.
-- Prefer "what happens next" over "workflow orchestration."
-- Prefer "read every text by hand" over "at scale" when explaining the practical problem.
-- Keep the anti-demo point, but do not overuse it.
+## Quality Check
 
-## Current Polish Pass
+Before shipping:
 
-The May 2026 polish pass keeps the site light, fast, keyboard-friendly, and grounded in first-person copy. New UI should improve orientation, not add decoration.
-
-## Known Quality Bar
-
-Flagship personal site. It should be visually distinctive, highly readable, responsive, fast, and clean enough that future edits can follow the documented system instead of adding another override pile.
+- Read the page once at 390px and once at 1440px.
+- Check that the portrait never overlaps the title.
+- Check all text and controls at WCAG AA contrast.
+- Confirm keyboard focus is visible.
+- Confirm the page works without JavaScript.
+- Confirm the video facade creates a privacy-enhanced embed.
+- Run bun run check:all.
