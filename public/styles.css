@@ -825,6 +825,15 @@ main {
     flex: 1 1 100%;
   }
 
+  .timeline article {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .timeline article > p:last-child {
+    grid-column: 1;
+  }
+
   .work-loop,
   .stat-row {
     grid-template-columns: 1fr;
