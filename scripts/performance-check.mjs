@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 
 const target = process.argv[2] || 'http://127.0.0.1:4173';
 const maxInitialBytes = Number(process.env.PERF_MAX_INITIAL_BYTES || 380000);
-const maxCssBytes = Number(process.env.PERF_MAX_CSS_BYTES || 220000);
+const maxCssBytes = Number(process.env.PERF_MAX_CSS_BYTES || 30000);
 const maxInitialJsBytes = Number(process.env.PERF_MAX_INITIAL_JS_BYTES || 2000);
 const maxDomNodes = Number(process.env.PERF_MAX_DOM_NODES || 900);
 
