@@ -23,18 +23,19 @@ async function auditText(root, minRatio) {
         return { r, g, b, a };
       }
 
+      const oklabMatch = value.match(/oklab\(([^)]+)\)/);
       const oklchMatch = value.match(/oklch\(([^)]+)\)/);
-      if (!oklchMatch) return null;
-      const parts = oklchMatch[1].replace(/\s*\/\s*/, ' ').split(/\s+/).filter(Boolean);
+      if (!oklabMatch && !oklchMatch) return null;
+      const parts = (oklabMatch || oklchMatch)[1].replace(/\s*\/\s*/, ' ').split(/\s+/).filter(Boolean);
       if (parts.length < 3) return null;
       const l = parts[0].endsWith('%') ? Number(parts[0].slice(0, -1)) / 100 : Number(parts[0]);
-      const c = Number(parts[1]);
-      const h = Number(parts[2]) * Math.PI / 180;
+      const c = oklabMatch ? null : Number(parts[1]);
+      const h = oklabMatch ? null : Number(parts[2]) * Math.PI / 180;
       const alpha = parts[3] ? Number(parts[3]) : 1;
-      if ([l, c, h, alpha].some(Number.isNaN)) return null;
+      if ([l, alpha, ...(oklabMatch ? parts.slice(1, 3).map(Number) : [c, h])].some(Number.isNaN)) return null;
 
-      const a = c * Math.cos(h);
-      const b = c * Math.sin(h);
+      const a = oklabMatch ? Number(parts[1]) : c * Math.cos(h);
+      const b = oklabMatch ? Number(parts[2]) : c * Math.sin(h);
       const lPrime = l + 0.3963377774 * a + 0.2158037573 * b;
       const mPrime = l - 0.1055613458 * a - 0.0638541728 * b;
       const sPrime = l - 0.0894841775 * a - 1.2914855480 * b;
