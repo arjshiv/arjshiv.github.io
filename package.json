@@ -17,7 +17,6 @@
     "playwright": "^1.59.1"
   },
   "scripts": {
-    "build:css": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --minify",
     "check:ai-tools": "node scripts/ai-field-tools-check.mjs",
     "check:contrast": "node scripts/contrast-check.mjs",
     "check:performance": "node scripts/performance-check.mjs",
