@@ -231,7 +231,7 @@ main {
 }
 
 .hero-copy > p:last-of-type {
-  max-width: var(--measure);
+  max-width: 38rem;
   margin-top: 1.25rem;
   color: var(--muted);
 }
