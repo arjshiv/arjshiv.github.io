@@ -741,8 +741,8 @@ main {
   }
 
   .portrait img {
-    aspect-ratio: 5 / 4;
-    object-position: 51% 44%;
+    aspect-ratio: 16 / 10;
+    object-position: 50% 46%;
   }
 
   .section {
