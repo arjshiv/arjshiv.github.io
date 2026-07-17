@@ -464,7 +464,7 @@ main {
 .stat-row strong {
   display: block;
   color: var(--accent);
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-size: 2rem;
   font-weight: 560;
   line-height: 1;
   letter-spacing: -0.04em;
