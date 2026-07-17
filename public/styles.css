@@ -140,7 +140,6 @@ figcaption {
   font-weight: 650;
 }
 
-.wordmark small,
 .site-nav,
 .eyebrow,
 .section-label,
@@ -153,12 +152,6 @@ figcaption {
 .site-footer {
   font-family: "Geist Mono", ui-monospace, monospace;
   font-variant-numeric: tabular-nums;
-}
-
-.wordmark small {
-  color: var(--muted);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
 }
 
 .site-nav {
@@ -717,10 +710,6 @@ main {
   .header-inner {
     min-height: 4.25rem;
     gap: 1rem;
-  }
-
-  .wordmark small {
-    display: none;
   }
 
   .site-nav {
