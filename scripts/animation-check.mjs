@@ -45,7 +45,9 @@ await page.waitForTimeout(180);
 const arrowTransform = await externalArrow.evaluate((node) => getComputedStyle(node).transform);
 if (arrowTransform === 'none') failures.push('External arrow does not give directional hover feedback.');
 
-const video = page.locator('[data-video-id]');
+const videoCount = await page.locator('[data-video-id]').count();
+if (videoCount !== 3) failures.push(`Talk archive has ${videoCount} videos, expected three.`);
+const video = page.locator('[data-video-id]').first();
 await video.scrollIntoViewIfNeeded();
 await video.click();
 await page.locator('.video-shell iframe').waitFor({ state: 'attached' });
@@ -71,7 +73,8 @@ if (keyboardNav.transitionDurations.some((duration) => duration !== '0s')) {
   failures.push(`Keyboard nav underline still animates: ${keyboardNav.transitionDurations.join(', ')}.`);
 }
 
-const keyboardVideo = keyboardPage.locator('[data-video-id]');
+const keyboardVideo = keyboardPage.locator('[data-video-id]').first();
+const keyboardVideoShell = keyboardPage.locator('.video-shell').first();
 await keyboardVideo.scrollIntoViewIfNeeded();
 await keyboardVideo.focus();
 await keyboardPage.keyboard.press('Enter');
@@ -95,12 +98,12 @@ if (keyboardLoading.copyOpacity !== '1') failures.push('Keyboard video activatio
 if (keyboardLoading.imageTransform !== 'none') failures.push('Keyboard video activation transforms the facade image.');
 if (keyboardLoading.iframeTransition !== '0s') failures.push('Keyboard video iframe still has a transition.');
 await keyboardPage.locator('.video-shell[data-video-state="ready"]').waitFor();
-await keyboardPage.locator('.video-facade').waitFor({ state: 'detached' });
+await keyboardVideoShell.locator('.video-facade').waitFor({ state: 'detached' });
 
 const spacePage = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 await stubVideo(spacePage);
 await spacePage.goto(target, { waitUntil: 'networkidle' });
-const spaceVideo = spacePage.locator('[data-video-id]');
+const spaceVideo = spacePage.locator('[data-video-id]').first();
 await spaceVideo.scrollIntoViewIfNeeded();
 await spaceVideo.focus();
 await spacePage.keyboard.down('Space');

@@ -40,11 +40,12 @@ const desktop = await page.evaluate(() => ({
   currentLocations: document.querySelectorAll('[aria-current="location"]').length,
 }));
 
-await page.click('[data-video-id]');
-const loadingState = await page.locator('.video-shell').getAttribute('data-video-state');
-const iframe = await page.locator('.video-shell iframe').getAttribute('src');
-await page.locator('.video-shell[data-video-state="ready"]').waitFor();
-await page.locator('.video-facade').waitFor({ state: 'detached' });
+const firstVideoShell = page.locator('.video-shell').first();
+await firstVideoShell.locator('[data-video-id]').click();
+const loadingState = await firstVideoShell.getAttribute('data-video-state');
+const iframe = await firstVideoShell.locator('iframe').getAttribute('src');
+await page.waitForFunction(() => document.querySelector('.video-shell')?.dataset.videoState === 'ready');
+await firstVideoShell.locator('.video-facade').waitFor({ state: 'detached' });
 
 await page.locator('#work').scrollIntoViewIfNeeded();
 await page.waitForFunction(() => (
