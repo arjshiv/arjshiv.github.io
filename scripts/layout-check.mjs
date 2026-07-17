@@ -25,10 +25,12 @@ for (const viewport of [
     const overflow = Math.round(document.documentElement.scrollWidth - window.innerWidth);
     const overlapX = title && portrait ? Math.max(0, Math.min(title.right, portrait.right) - Math.max(title.left, portrait.left)) : 0;
     const overlapY = title && portrait ? Math.max(0, Math.min(title.bottom, portrait.bottom) - Math.max(title.top, portrait.top)) : 0;
-    return { overflow, heroOverlap: Math.round(overlapX * overlapY) };
+    const portraitOutsideViewport = portrait ? portrait.left < 0 || portrait.right > window.innerWidth : true;
+    return { overflow, heroOverlap: Math.round(overlapX * overlapY), portraitOutsideViewport };
   });
   if (result.overflow !== 0) failures.push(viewport.name + ': horizontal overflow ' + result.overflow + 'px');
-  if (result.heroOverlap !== 0) failures.push(viewport.name + ': hero title overlaps portrait');
+    if (result.heroOverlap !== 0) failures.push(viewport.name + ': hero title overlaps portrait');
+    if (result.portraitOutsideViewport) failures.push(viewport.name + ': portrait leaves the viewport');
   await page.close();
 }
 
