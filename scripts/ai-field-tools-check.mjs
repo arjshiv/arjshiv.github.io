@@ -3,10 +3,9 @@
 import { chromium } from 'playwright';
 
 const target = process.argv[2] || 'http://127.0.0.1:4173';
-
 const browser = await chromium.launch({ headless: true });
-const page = await browser.newPage({ viewport: { width: 1440, height: 1100 } });
 const errors = [];
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 
 page.on('console', (message) => {
   if (message.type() === 'error') errors.push(message.text());
@@ -14,97 +13,59 @@ page.on('console', (message) => {
 page.on('pageerror', (error) => errors.push(error.message));
 
 await page.goto(target, { waitUntil: 'networkidle' });
-await page.click('.command-launcher');
-await page.fill('#command-search', 'public');
-await page.keyboard.press('ArrowDown');
-await page.keyboard.press('ArrowUp');
-await page.keyboard.press('Enter');
-await page.click('.command-launcher');
-await page.fill('#command-search', 'ask about ai');
-await page.click('.command-result[data-command-target^="ask:"]');
-await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
-await page.click('.command-launcher');
-await page.fill('#command-search', 'operator path');
-await page.click('.command-result[data-command-target="reading:operator"]');
-await page.click('.command-launcher');
-await page.fill('#command-search', 'draft operator memo');
-await page.click('.command-result[data-command-target^="memo:"]');
-await page.locator('#ai-field-tools').scrollIntoViewIfNeeded();
 
-await page.fill('#ai-question', 'What does Arjun mean by demos are not adoption?');
-await page.click('#ai-ask-form button');
-await page.waitForFunction(() => !document.querySelector('#ai-answer')?.textContent.includes('Checking the site notes'));
-
-await page.click('#conversation-map button[data-question="Why housing and ResiDesk?"]');
-await page.selectOption('#guide-persona', 'journalist');
-await page.click('#build-guide');
-await page.selectOption('#talk-lens', 'greg');
-await page.click('#run-lens');
-await page.click('.visual-mode-button[data-visual-mode="operator-day"]');
-await page.fill('#useful-ai-input', 'AI assistant that checks resident history and lease context, drafts a response, flags risky cases, routes unresolved work to the operator, and measures retention outcomes.');
-await page.click('#score-ai-idea');
-await page.selectOption('#building-type', 'urban');
-await page.click('#simulate-signals');
-await page.click('#toggle-highlights');
-await page.click('#run-design-critique');
-await page.click('#site-tweak-panel button[data-tweak="voice"]');
-await page.selectOption('#reading-audience', 'founder');
-await page.click('#build-reading-path');
-await page.fill('#operator-memo-input', 'Residents keep texting about elevator outages, package access, and renewal confusion. The team answers one by one, but nobody has shown the owner the pattern.');
-await page.click('#build-operator-memo');
-await page.fill('#private-notes', 'I care about demos versus adoption. The useful AI test is a good hook.');
-await page.click('#summarize-notes');
-
-const result = await page.evaluate(() => ({
-  answer: document.querySelector('#ai-answer')?.textContent || '',
-  guideCount: document.querySelectorAll('#guide-output li').length,
-  lensCount: document.querySelectorAll('#lens-output li').length,
-  visualModeCount: document.querySelectorAll('#visual-mode-list .visual-mode-button').length,
-  visualStage: document.querySelector('#visual-stage')?.textContent || '',
-  score: document.querySelector('#ai-score-output')?.textContent || '',
-  simCount: document.querySelectorAll('#signal-sim-output li').length,
-  highlights: document.querySelectorAll('mark.signal-highlight').length,
-  critiqueCount: document.querySelectorAll('#design-critique-output .critique-score').length,
-  tweak: document.querySelector('#tweak-output')?.textContent || '',
-  readingPathCount: document.querySelectorAll('#reading-path-output li').length,
-  askBusy: document.querySelector('#ai-answer')?.getAttribute('aria-busy'),
-  memo: document.querySelector('#operator-memo-output')?.textContent || '',
-  compassCount: document.querySelectorAll('#site-compass-output a').length,
-  notes: document.querySelector('#notes-output')?.textContent || '',
+const desktop = await page.evaluate(() => ({
+  sections: document.querySelectorAll('main > section').length,
+  nodes: document.querySelectorAll('*').length,
+  height: document.documentElement.scrollHeight,
   overflow: document.documentElement.scrollWidth - window.innerWidth,
+  heading: document.querySelector('h1')?.textContent || '',
+  commandPalette: Boolean(document.querySelector('.command-launcher, #site-command-palette')),
+  toolLab: Boolean(document.querySelector('#ai-field-tools')),
+  preservedAnchors: ['work', 'residesk-loop', 'background', 'links', 'site-contact', 'faq']
+    .every((id) => Boolean(document.getElementById(id))),
+  repeatedCopy: /\b(\w+)\s+\1\s+\1\b/i.test(document.body.innerText),
 }));
 
-await page.setViewportSize({ width: 390, height: 900 });
+await page.click('[data-video-id]');
+const iframe = await page.locator('.video-shell iframe').getAttribute('src');
+
+await page.setViewportSize({ width: 390, height: 844 });
 await page.goto(target, { waitUntil: 'networkidle' });
-await page.locator('#ai-field-tools').scrollIntoViewIfNeeded();
-result.mobileOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+const mobile = await page.evaluate(() => ({
+  overflow: document.documentElement.scrollWidth - window.innerWidth,
+  height: document.documentElement.scrollHeight,
+}));
+
+const noScript = await browser.newPage({
+  viewport: { width: 390, height: 844 },
+  javaScriptEnabled: false,
+});
+await noScript.goto(target, { waitUntil: 'networkidle' });
+const noScriptText = await noScript.locator('main').innerText();
 
 await browser.close();
 
 const failures = [];
-if (!result.answer.includes('ResiDesk')) failures.push('Ask/conversation answer did not render expected grounded content.');
-if (result.guideCount !== 5) failures.push(`Section finder rendered ${result.guideCount} items, expected 5.`);
-if (result.lensCount !== 3) failures.push(`Transcript lens rendered ${result.lensCount} items, expected 3.`);
-if (result.visualModeCount !== 30) failures.push(`Visual lab rendered ${result.visualModeCount} modes, expected 30.`);
-if (!result.visualStage.toLowerCase().includes('operator')) failures.push('Visual lab did not render the selected operator-day view.');
-if (!result.score.includes('5/5')) failures.push('Useful AI score did not reach expected 5/5 for the complete sample.');
-if (result.simCount < 7) failures.push(`Resident simulator rendered ${result.simCount} list items, expected at least 7.`);
-if (result.highlights < 20) failures.push(`Pattern highlighter rendered ${result.highlights} highlights, expected at least 20.`);
-if (result.critiqueCount !== 5) failures.push(`Design critique rendered ${result.critiqueCount} dimensions, expected 5.`);
-if (!result.tweak.includes('Voice fix')) failures.push('Tweak panel did not render the selected voice fix.');
-if (result.readingPathCount !== 3) failures.push(`Reading path rendered ${result.readingPathCount} items, expected 3.`);
-if (result.askBusy === 'true') failures.push('Ask output stayed busy after rendering.');
-if (!result.memo.includes('Follow-through')) failures.push('Operator memo did not render a follow-through row.');
-if (result.compassCount !== 7) failures.push(`Site compass rendered ${result.compassCount} links, expected 7.`);
-if (!result.notes.includes('useful AI test')) failures.push('Private notes summary did not render saved note text.');
-if (result.overflow !== 0) failures.push(`Desktop overflow is ${result.overflow}px.`);
-if (result.mobileOverflow !== 0) failures.push(`Mobile overflow is ${result.mobileOverflow}px.`);
-if (errors.length) failures.push(`Console/page errors: ${errors.join(' | ')}`);
+if (desktop.sections !== 6) failures.push('Found ' + desktop.sections + ' main sections, expected 6.');
+if (desktop.nodes > 350) failures.push('DOM contains ' + desktop.nodes + ' nodes, expected at most 350.');
+if (desktop.height > 12000) failures.push('Desktop page is ' + desktop.height + 'px tall, expected at most 12000px.');
+if (desktop.overflow !== 0) failures.push('Desktop overflow is ' + desktop.overflow + 'px.');
+if (!desktop.heading.includes('messy work')) failures.push('Hero heading did not render.');
+if (desktop.commandPalette) failures.push('Old command palette remains in the page.');
+if (desktop.toolLab) failures.push('Old tool lab remains in the page.');
+if (!desktop.preservedAnchors) failures.push('One or more legacy anchors are missing.');
+if (desktop.repeatedCopy) failures.push('Repeated three-word copy bug remains in visible text.');
+if (!iframe?.includes('youtube-nocookie.com/embed/LIsSQ_8ZZIw')) failures.push('Video facade did not create the privacy-enhanced embed.');
+if (mobile.overflow !== 0) failures.push('Mobile overflow is ' + mobile.overflow + 'px.');
+if (mobile.height > 10000) failures.push('Mobile page is ' + mobile.height + 'px tall, expected at most 10000px.');
+if (!noScriptText.includes('Most of my time goes into ResiDesk')) failures.push('Core story is not readable with JavaScript disabled.');
+if (errors.length) failures.push('Console/page errors: ' + errors.join(' | '));
 
 if (failures.length) {
-  console.error('AI field tools check failed:');
-  for (const failure of failures) console.error(`- ${failure}`);
+  console.error('Simplified site check failed:');
+  for (const failure of failures) console.error('- ' + failure);
   process.exit(1);
 }
 
-console.log('AI field tools check passed.');
+console.log('Simplified site check passed.');
