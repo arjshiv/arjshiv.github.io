@@ -1,1657 +1,329 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Arjun Kannan | ResiDesk, housing, and practical AI work</title>
-    <meta name="description" content="I build software for teams that already hear the customer. The work is turning that signal into something people actually use.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arjun Kannan | ResiDesk, housing, and practical AI</title>
+    <meta name="description" content="Arjun Kannan co-founded ResiDesk and builds software around resident messages, property operations, and AI that holds up in real work.">
     <meta name="author" content="Arjun Kannan">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#f7fbfa">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://arjunkannan.com/">
-    <meta property="og:title" content="Arjun Kannan | ResiDesk, housing, and useful work">
-    <meta property="og:description" content="I build software that turns customer signal into work a team can actually use.">
-    <meta property="og:locale" content="en_US">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%230b756f%22/><text x=%2250%22 y=%2264%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2248%22 font-weight=%22700%22 fill=%22white%22>AK</text></svg>">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://arjunkannan.com/">
-    <meta property="og:site_name" content="Arjun Kannan">
+    <meta property="og:title" content="Arjun Kannan | ResiDesk, housing, and practical AI">
+    <meta property="og:description" content="I build software for the messy work that starts with a customer.">
     <meta property="og:image" content="https://arjunkannan.com/assets/landscape-1.png">
-    <meta property="og:image:alt" content="Portrait of Arjun Kannan">
+    <meta property="og:image:alt" content="Arjun Kannan">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arjun Kannan | ResiDesk and work that holds up">
-    <meta name="twitter:description" content="ResiDesk, Climb, BlackRock, and a bias toward software people use.">
+    <meta name="twitter:title" content="Arjun Kannan | ResiDesk, housing, and practical AI">
+    <meta name="twitter:description" content="I build software for the messy work that starts with a customer.">
     <meta name="twitter:image" content="https://arjunkannan.com/assets/landscape-1.png">
-    <meta name="twitter:image:alt" content="Portrait of Arjun Kannan">
-    <meta name="theme-color" content="#d7f7f2">
-    <meta name="application-name" content="Arjun Kannan">
-    <meta name="apple-mobile-web-app-title" content="Arjun Kannan">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="color-scheme" content="light">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="icon" type="image/webp" href="assets/landscape-1.webp">
-    <link rel="preload" as="image" href="assets/landscape-1.webp" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://i.ytimg.com" crossorigin>
-    <link rel="preconnect" href="https://www.youtube-nocookie.com">
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Person",
-              "@id": "https://arjunkannan.com/#person",
-              "name": "Arjun Kannan",
-              "url": "https://arjunkannan.com/",
-              "image": "https://arjunkannan.com/assets/landscape-1.png",
-              "jobTitle": "Co-founder, ResiDesk",
-              "description": "Arjun Kannan co-founded ResiDesk and builds software that helps teams do something useful with resident messages, customer complaints, and messy work.",
-              "alumniOf": {
-                "@type": "CollegeOrUniversity",
-                "name": "Cornell University"
-              },
-              "worksFor": {
-                "@id": "https://hello.theresidesk.com/#organization"
-              },
-              "knowsAbout": [
-                "AI products",
-                "AI agents",
-                "LLM evaluation",
-                "AI product design",
-                "AI in the field",
-                "go-to-market strategy",
-                "founder advising",
-                "resident work",
-                "resident experience",
-                "multifamily operations",
-                "NOI improvement",
-                "product engineering",
-                "underwriting",
-                "human review and handoff"
-              ],
-              "sameAs": [
-                "https://arjunkannan.substack.com/",
-                "https://hackernoon.com/u/arjunkannan"
-              ]
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://hello.theresidesk.com/#organization",
-              "name": "ResiDesk",
-              "url": "https://hello.theresidesk.com/",
-              "description": "ResiDesk helps rental-property owners and operators turn resident messages into answers, context, and follow-up without making someone reread the whole thread."
-            },
-            {
-              "@type": "WebSite",
-              "@id": "https://arjunkannan.com/#website",
-              "name": "Arjun Kannan",
-              "url": "https://arjunkannan.com/",
-              "inLanguage": "en-US"
-            },
-            {
-              "@type": "WebPage",
-              "@id": "https://arjunkannan.com/#webpage",
-              "url": "https://arjunkannan.com/",
-              "name": "Arjun Kannan | ResiDesk, AI, Housing, and Useful Work",
-              "description": "Arjun Kannan co-founded ResiDesk to help property teams turn resident messages into clear answers, useful context, and a next step someone can own.",
-              "isPartOf": {
-                "@id": "https://arjunkannan.com/#website"
-              },
-              "about": {
-                "@id": "https://arjunkannan.com/#person"
-              },
-              "dateModified": "2026-05-23",
-              "speakable": {
-                "@type": "SpeakableSpecification",
-                "cssSelector": [
-                  ".hero-title",
-                  ".hero-subtitle",
-                  ".hero-copy",
-                  ".faq-list"
-                ]
-              }
-            },
-            {
-              "@type": "FAQPage",
-              "@id": "https://arjunkannan.com/#faq",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What kind of AI work does Arjun build?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "I build AI around work people already have to do. At ResiDesk, that means helping property teams answer residents, see what keeps coming up, and get the right issue to the right person."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What did Arjun build before ResiDesk?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Before ResiDesk: the earlier work, I worked at Climb Credit and BlackRock. At Climb, I helped annual loan volume grow from 1 million dollars to 300 million dollars. At BlackRock, I built a retail analytics product that reached 40 million dollars in annual recurring revenue in its first year."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What does Arjun Kannan write and speak about?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "I keep coming back to agents, checks, product loops, and the gap between a good demo and something people still reach for on a busy day."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What is Arjun Kannan's view on AI?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "I care about AI that helps a real person finish a real task. Context, testing, handoff, and judgment matter more than a clean demo."
-                  }
-                }
-              ]
-            }
+          "@type": "Person",
+          "@id": "https://arjunkannan.com/#person",
+          "name": "Arjun Kannan",
+          "url": "https://arjunkannan.com/",
+          "image": "https://arjunkannan.com/assets/landscape-1.png",
+          "jobTitle": "Co-founder, ResiDesk",
+          "description": "Arjun Kannan co-founded ResiDesk and works across data, product, and the ordinary work of running a startup.",
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Cornell University"
+          },
+          "worksFor": {
+            "@id": "https://hello.theresidesk.com/#organization"
+          },
+          "sameAs": [
+            "https://arjunkannan.substack.com/",
+            "https://hackernoon.com/u/arjunkannan"
           ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://hello.theresidesk.com/#organization",
+          "name": "ResiDesk",
+          "url": "https://hello.theresidesk.com/",
+          "description": "ResiDesk helps property teams answer residents, see what keeps coming up, and get the next step to the right person."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://arjunkannan.com/#website",
+          "name": "Arjun Kannan",
+          "url": "https://arjunkannan.com/",
+          "inLanguage": "en-US"
         }
+      ]
+    }
     </script>
 </head>
-<body class="site-body" id="top">
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    <header class="topbar">
-        <div class="scroll-progress" aria-hidden="true">
-            <span class="scroll-progress-bar"></span>
-        </div>
-        <div class="topbar-inner">
-            <a href="#top" class="brand-mark" aria-label="Arjun Kannan home">
-                <span class="brand-mark-text">
-                    <span class="brand-mark-name">Arjun Kannan</span>
-                    <span class="brand-mark-role">ResiDesk / housing / useful AI</span>
-                </span>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="wordmark" href="#top" aria-label="Arjun Kannan, home">
+                <span>Arjun Kannan</span>
+                <small>ResiDesk · housing · AI</small>
             </a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-                <span class="nav-toggle-label">Menu</span>
-                <span class="nav-toggle-icon" aria-hidden="true">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>
-            <nav id="primary-nav" class="main-nav" aria-label="Primary">
-                <a href="#start-here" class="nav-link">Start</a>
-                <a href="#work-table" class="nav-link">Work</a>
-                <a href="#residesk-loop" class="nav-link">ResiDesk</a>
-                <a href="#deployment-room" class="nav-link">AI</a>
-                <a href="#fit-boundaries" class="nav-link">Fit</a>
-                <a href="#site-contact" class="nav-link">Contact</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#work">ResiDesk</a>
+                <a href="#story">Story</a>
+                <a href="#notes">Notes</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
-    <button class="nav-scrim" type="button" aria-label="Close navigation"></button>
-    <button class="command-launcher" type="button" aria-haspopup="dialog" aria-controls="site-command-palette" aria-expanded="false" aria-label="Open site search">
-        <span>Command</span>
-        <kbd>/</kbd>
-    </button>
-    <section class="command-palette" id="site-command-palette" role="dialog" aria-modal="true" aria-labelledby="command-palette-title" aria-describedby="command-palette-help" hidden>
-        <div class="command-palette-panel">
-            <div class="command-palette-head">
-                <p class="story-label">Find</p>
-                <button class="command-close" type="button" aria-label="Close search">Close</button>
-            </div>
-            <h2 id="command-palette-title">Find the part you need.</h2>
-            <p id="command-palette-help" class="command-help">Search ResiDesk, work, writing, talks, and small tools.</p>
-            <label class="sr-only" for="command-search">Search the site</label>
-            <input id="command-search" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" placeholder="Try ResiDesk, housing, AI, Climb, BlackRock, or contact">
-            <div class="command-results" id="command-results" aria-live="polite"></div>
-        </div>
-    </section>
 
-    <main id="main-content" class="page-shell">
-        <section class="hero-section reveal visible" aria-labelledby="hero-title">
-            <article class="poster-card">
-                <div class="panel-heading">
-                <p class="section-kicker">Founder, builder, housing work work work</p>
-                </div>
-                <div class="hero-grid">
-                    <div class="hero-copy-panel">
-                        <p class="hero-note-label">Resident texts, reviews, tickets, and calls</p>
-                        <h1 id="hero-title" class="hero-title">Arjun Kannan</h1>
-                        <p class="hero-promise">I build software for teams that already hear from customers every day. The hard part is turning it into work someone can use.</p>
-                        <p class="hero-subtitle">At ResiDesk, that means turning resident texts, reviews, calls, and support threads into an answer, the right history, and a next step the property team can trust.</p>
-                        <div class="hero-note">
-                            <p class="hero-copy">
-                                Talking with customers is still business 101. The hard part is noticing when the same problem is showing up in three places.
-                            </p>
-                            <p class="hero-copy">
-                                ResiDesk takes most of my week. Before that, I worked on outcome-based lending at Climb Credit and advisor tools at BlackRock. Different rooms, similar lesson: lose the thread and the product gets harder to trust.
-                            </p>
-                            <p class="hero-copy">
-                                I care less about a polished demo than the next day. The queue is full, the edge cases are real, and the person using the product has to live with it.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="hero-utility-column">
-                        <div class="portrait-cutout">
-                            <img src="assets/landscape-1.webp" alt="Arjun Kannan" width="1400" height="788" fetchpriority="high" decoding="async">
-                        </div>
-                        <aside class="hero-milestone-card" aria-label="One turning point">
-                            <p class="story-label">One thing I learned at Climb</p>
-                            <strong>$1M to $300M</strong>
-                            <span>Annual loan volume at Climb Credit, as graduate outcomes moved into the product, data, and underwriting.</span>
-                        </aside>
-                        <p class="portrait-caption">ResiDesk takes up most of my week. Before that: Climb Credit and BlackRock. I like work where the customer has already pointed at the problem.</p>
-                    </div>
-                </div>
+    <main id="main">
+        <section class="hero wide" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Founder and builder</p>
+                <h1 id="hero-title">I build software for the messy work that starts with a customer.</h1>
+                <p class="hero-lede">Most of my time goes into ResiDesk. We help property teams answer residents, see what keeps coming up, and get the next step to someone who can do something about it.</p>
+                <p>Before this, I built advisor software at BlackRock and ran product and engineering at Climb Credit. The industries changed. The habit did not: stay close to the customer, measure what changed, and keep going until the thing works on a normal Tuesday.</p>
                 <div class="hero-actions">
-                    <a href="#start-here" class="primary-link">Start here <span aria-hidden="true">↓</span></a>
-                    <a href="#work-table" class="secondary-link">My route <span aria-hidden="true">↓</span></a>
+                    <a class="button primary" href="#work">What I am building <span aria-hidden="true">↘</span></a>
+                    <a class="button secondary" href="mailto:arj.shiv@gmail.com">Email me <span aria-hidden="true">↗</span></a>
                 </div>
-            </article>
-
-            <article class="program-card">
-                <p class="panel-index">[NOTES 02]</p>
-                <div class="program-head">
-                    <span>A few notes from the work</span>
-                    <span>Now</span>
-                </div>
-                <h2>The work I keep returning to</h2>
-                <div class="program-item">
-                    <strong>The customer usually left a clue somewhere somewhere</strong>
-                    <p>Most teams already hear plenty from customers. It gets stuck in inboxes, tickets, calls, and support threads before it changes rent, renewals, maintenance, staffing, or the product itself.</p>
-                </div>
-                <div class="program-item">
-                    <strong>The next day is where the test starts</strong>
-                    <p>I care about what survives once the meeting ends: the queue is full, the team is moving, and someone still needs an answer they trust.</p>
-                </div>
-                <div class="program-item">
-                    <strong>Do not make the team guess twice twice</strong>
-                    <p>A good tool helps the team move faster without getting careless. It shows the policy, the history, the uncertainty, and the person who owns the next step.</p>
-                </div>
-                <div class="program-item">
-                    <strong>The test is pretty simple</strong>
-                    <p>Useful software helps the person doing the work see the customer, what happened, and the next decision before the queue gets away from them.</p>
-                </div>
-            </article>
+            </div>
+            <figure class="portrait">
+                <img src="assets/landscape-1.webp" alt="Arjun Kannan" width="1400" height="788" fetchpriority="high" decoding="async">
+                <figcaption>New York, with a preference for problems that are already talking back.</figcaption>
+            </figure>
         </section>
 
-
-
-        <section id="start-here" class="section-block start-here reveal" aria-labelledby="start-here-title">
-            <div class="section-heading compact-heading">
-                <p class="section-kicker">Start here</p>
-                <p class="panel-index">[PATHS 03]</p>
-                <h2 id="start-here-title">Start with the question you came here with</h2>
+        <section class="section" id="work" aria-labelledby="work-title">
+            <span class="anchor-alias" id="residesk-loop" aria-hidden="true"></span>
+            <div class="section-label">
+                <span>01</span>
+                <p>ResiDesk</p>
             </div>
-            <p class="section-intro">You probably came here with one question. Start there. The rest can wait for now.</p>
-            <div class="reader-shortcut-grid">
-                <a href="#signal-map" class="reader-shortcut-card">
+            <div class="section-grid">
+                <div class="section-heading">
+                    <h2 id="work-title">Renting is expensive and weirdly bad.</h2>
+                </div>
+                <div class="prose">
+                    <p>Residents tell a building what is broken every day. The messages show up in texts, reviews, tickets, surveys, calls, and renewal notes. Most property teams do not need another inbox. They need the history, the local rule, and the next person who can help.</p>
+                    <p>That is what we are building at ResiDesk. I spend most of my energy on the data and product, alongside sales, hiring, customer calls, and the unglamorous work that makes a startup run.</p>
+                    <a class="text-link" href="https://hello.theresidesk.com/" target="_blank" rel="noopener noreferrer">Visit ResiDesk <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="work-loop" aria-label="How ResiDesk turns a resident message into work">
+                <article>
                     <span>01</span>
-                    <strong>For property teams</strong>
-                    <p>Resident texts, renewals, maintenance, owner reporting, and the follow-up that keeps disappearing.</p>
-                </a>
-                <a href="#deployment-room" class="reader-shortcut-card">
+                    <h3>Hear the resident</h3>
+                    <p>Start with what they actually said, not a score that stripped the story out.</p>
+                </article>
+                <article>
                     <span>02</span>
-                    <strong>For AI builders</strong>
-                    <p>Where AI helps, where it quietly breaks, and what has to be true before a team will trust it.</p>
-                </a>
-                <a href="#background" class="reader-shortcut-card">
+                    <h3>Bring the history</h3>
+                    <p>Lease, policy, unit, prior messages, and what the team already tried.</p>
+                </article>
+                <article>
                     <span>03</span>
-                    <strong>For founders, builders, and operators</strong>
-                    <p>How I got here, what I am building now, and the problems I can help make clearer.</p>
-                </a>
-            </div>
-        </section>
-
-        <a href="#start-here" class="scroll-cue" aria-label="Continue to start here">
-            <span class="scroll-cue-label">Start here</span>
-        </a>
-
-        <section id="now" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">What I am doing these days</p>
-                <p class="panel-index">[MODULE 03]</p>
-                <h2>Most of my time is ResiDesk</h2>
-            </div>
-            <div class="now-grid">
-                <article class="now-primary-panel">
-                    <p class="panel-index">[UPDATED 2026-05-07]</p>
-                    <h3>We help property teams see what keeps happening while there is still time to do something about it.</h3>
-                    <p>Residents already tell you what is broken. The job is to answer them, notice what keeps repeating, and get it to the right person without asking someone to reread the whole thread.</p>
+                    <h3>Find the owner</h3>
+                    <p>Answer, escalate, repair, explain, or change the rule. Someone still owns the call.</p>
                 </article>
-                <div class="now-stack">
-                <article class="now-card">
-                    <p class="story-label">What I look for</p>
-                    <h3>Teams do not need another place to search.</h3>
-                    <p>The best operators care about retention, NOI, workload, maintenance, and resident trust. The hard part is seeing the pattern and knowing who should act on it.</p>
-                </article>
-                <article class="now-card">
-                    <p class="story-label">What I keep coming back to in writing</p>
-                    <h3>What happens after the answer is the part that matters.</h3>
-                    <p>AI can write a decent answer quickly. I still care who owns the next step, what they know, and whether the resident has to tell the story again.</p>
-                </article>
-                    <article class="now-card">
-                        <p class="story-label">Where I lose patience</p>
-                        <h3>An answer is not the work done.</h3>
-                        <p>If the answer goes out and nothing changes, I do not trust the product. That is not the work done; it is just a cleaner inbox.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="work-table" class="section-block work-table-section reveal" aria-labelledby="work-table-title">
-            <div class="section-heading compact-heading">
-                <p class="section-kicker">Before ResiDesk</p>
-                <p class="panel-index">[WORK 04]</p>
-                <h2 id="work-table-title">The jobs that changed the way I work</h2>
-            </div>
-            <div class="work-table" role="table" aria-label="Work before ResiDesk and lessons">
-                <div class="work-row work-row-head" role="row">
-                    <span role="columnheader">Where</span>
-                    <span role="columnheader">My part</span>
-                    <span role="columnheader">What changed</span>
-                    <span role="columnheader">More</span>
-                </div>
-                <div class="work-row" role="row">
-                    <span role="cell">Climb Credit</span>
-                    <span role="cell">I was CTO and CPO. We put student outcomes into the product, data, and underwriting.</span>
-                    <span role="cell">Annual loan volume grew from $1M to $300M as the product moved closer to student outcomes.</span>
-                    <a role="cell" href="https://techcrunch.com/2016/04/13/climb-credit-looks-to-transform-student-lending-with-a-new-business-model-based-on-graduate-success/" target="_blank" rel="noopener noreferrer">TechCrunch</a>
-                </div>
-                <div class="work-row" role="row">
-                    <span role="cell">BlackRock</span>
-                    <span role="cell">I worked on product and engineering for advisor tools. Interface quality mattered because real money sat behind every decision.</span>
-                    <span role="cell">The advisor analytics product reached $40M ARR in its first year, with me working across product and engineering.</span>
-                    <a role="cell" href="#work">Work history</a>
-                </div>
-                <div class="work-row" role="row">
-                    <span role="cell">ResiDesk</span>
-                    <span role="cell">I co-founded ResiDesk and spend most of my energy on data, product, and the ordinary work of running a company.</span>
-                    <span role="cell">Law360 covered a reported 7% lift associated with getting resident feedback into decisions sooner.</span>
-                    <a role="cell" href="https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results" target="_blank" rel="noopener noreferrer">Law360</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="operating-system" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">How I try to work</p>
-                <p class="panel-index">[MODULE 04]</p>
-                <h2>How I work</h2>
-            </div>
-            <p class="section-intro">
-                My default is simple: talk to the customer, make the work visible, and see what survives a busy day.
-            </p>
-            <div class="operating-grid">
-                <article class="operating-rule">
-                    <p class="story-label">01 / Customer</p>
-                    <h3>Talk to the customer before asking a model to help.</h3>
-                    <p>If you have customers, understanding them is still business 101. In housing, the hard part is hearing enough residents without making one operator read every thread.</p>
-                </article>
-                <article class="operating-rule">
-                    <p class="story-label">02 / Context</p>
-                    <h3>Show me the job as it really is.</h3>
-                    <p>Abstractions do not move a team. Show me the stakes, the weird cases, and the person who has to live with the result every day.</p>
-                </article>
-                <article class="operating-rule">
-                    <p class="story-label">03 / Adoption</p>
-                    <h3>A demo is not adoption. Repeated use is the test.</h3>
-                    <p>I learned this at BlackRock: a prototype can win the room and still lose to the spreadsheet people already trust. The test is what they open the next morning.</p>
-                </article>
-                <article class="operating-rule">
-                    <p class="story-label">04 / AI</p>
-                    <h3>Shorten the distance between a question and an answer someone can act on.</h3>
-                    <p>I do not need AI to handle everything. I need it to move something from stuck to almost done while a person still owns the call.</p>
-                </article>
-                <article class="operating-rule">
-                    <p class="story-label">05 / Candor</p>
-                    <h3>Be direct without making the person feel small.</h3>
-                    <p>The best teams can name what broke without blaming the person who found it. Take the pain seriously, then separate what happened from what caused it.</p>
-                </article>
-                <article class="operating-rule">
-                    <p class="story-label">06 / Team</p>
-                    <h3>Work with people who make the room clearer.</h3>
-                    <p>The best people I have worked with can walk into a mess, find the few facts that matter, and move. They make the room clearer by keeping the work simple.</p>
+                <article>
+                    <span>04</span>
+                    <h3>Notice the pattern</h3>
+                    <p>Show owners what keeps repeating before it becomes churn, cost, or a surprise.</p>
                 </article>
             </div>
         </section>
 
-        <section id="deployment-room" class="section-block deployment-room reveal">
-            <div class="section-heading">
-                <p class="section-kicker">AI in use</p>
-                <p class="panel-index">[MODULE 05]</p>
-                <h2>What still works once people use it?</h2>
+        <section class="section" id="story" aria-labelledby="story-title">
+            <span class="anchor-alias" id="background" aria-hidden="true"></span>
+            <div class="section-label">
+                <span>02</span>
+                <p>The path here</p>
             </div>
-            <p class="section-intro">
-                AI made it easier to produce a good answer quickly. It did not make it easy to change the work. I care about the policy, the handoff, the risk, and what happens after the answer leaves the box.
-            </p>
-            <div class="deployment-board" aria-label="AI use operating board">
-                <article class="deployment-brief">
-                    <p class="story-label">Field note</p>
-                    <h3>The real product starts when people use it.</h3>
-                    <p>I am most useful when a team has a rollout problem in real use: the launch worked, and the actual day still fights back.</p>
-                </article>
-                <ol class="deployment-loop" aria-label="Rollout loop">
-                    <li>
-                        <span>01</span>
-                        <strong>Watch the work happen</strong>
-                        <p>Spend time with the people doing the job. Watch what happens when the tool is slow, weird, or just one more thing to manage.</p>
-                    </li>
-                    <li>
-                        <span>02</span>
-                        <strong>Name the change</strong>
-                        <p>Check whether it saves time, lowers risk, protects retention, frees capacity, or earns trust. If nothing changes, the work is not done.</p>
-                    </li>
-                    <li>
-                        <span>03</span>
-                        <strong>Design around the work people actually do</strong>
-                        <p>Choose the model later. First decide what history it gets, what it can do, who checks it, and where the work goes next.</p>
-                    </li>
-                    <li>
-                        <span>04</span>
-                        <strong>Test the cases most likely to break it</strong>
-                        <p>Run the cases where it misses. Show the misses without drama. Then measure whether the work moved faster, got safer, or reached the right person.</p>
-                    </li>
-                    <li>
-                        <span>05</span>
-                        <strong>Put what you learn back into the product</strong>
-                        <p>Sales credibility comes from what actually happened: the objection, the before state, the number that moved, and the sentence the buyer can repeat without editing it.</p>
-                    </li>
-                </ol>
-                <aside class="deployment-note">
-                    <p class="story-label">Why I keep doing this work</p>
-                    <p>I have been in the room, built the product, carried the number, and watched the spreadsheet win when the product was not ready. That is why I care about what happens after launch.</p>
-                </aside>
-                <div class="deployment-metrics" aria-label="Work history points">
-                    <div>
-                        <strong>$40M ARR</strong>
-                        <span>BlackRock advisor analytics, year one</span>
-                    </div>
-                    <div>
-                        <strong>$300M</strong>
-                        <span>Climb Credit annual loan volume</span>
-                    </div>
-                    <div>
-                        <strong>100+</strong>
-                        <span>Startup investments and founder work</span>
-                    </div>
+            <div class="section-grid">
+                <div class="section-heading">
+                    <h2 id="story-title">The industries changed. The habit did not.</h2>
+                </div>
+                <div class="prose">
+                    <p>I grew up around research and studied applied physics at Cornell. Software clicked in an electron microscopy lab, when a small tool saved hours on a magnetic-noise experiment. It stopped feeling like coursework and started feeling useful.</p>
                 </div>
             </div>
-        </section>
-
-        <section id="ai-lab-fit" class="section-block ai-lab-fit reveal">
-            <div class="section-heading">
-                <p class="section-kicker">AI work in use</p>
-                <p class="panel-index">[MODULE 06]</p>
-                <h2>The demo is only the start</h2>
-            </div>
-            <p class="section-intro">
-                Capability is only the first question. The buyer, user, reviewer, and executive sponsor usually worry about different things.
-            </p>
-            <div class="lab-fit-board">
-                <article class="lab-fit-lead">
-                    <p class="story-label">Field note</p>
-                    <h3>Find the work. Show where AI helps. Name the person who owns it.</h3>
-                    <p>A great demo can still lose to a spreadsheet. Information helps only when the person making the decision can act on it without decoding it first.</p>
+            <div class="timeline">
+                <article>
+                    <p class="timeline-meta">Physics</p>
+                    <h3>Measure the thing.</h3>
+                    <p>The first useful program I wrote gave a researcher real time back. That is still a good standard.</p>
                 </article>
-                <div class="lab-fit-lanes" aria-label="Where AI products break during real use">
-                    <article>
-                        <span>01</span>
-                        <h4>Start with the work itself</h4>
-                        <p>Find the narrow place where AI changes the day, not just the pitch. Talk to the buyer, the user, and the person who is stuck when it breaks.</p>
-                    </article>
-                    <article>
-                        <span>02</span>
-                        <h4>Make the rollout something you can repeat</h4>
-                        <p>Know the job, staff the messy parts, test the risk, and put what you learn back into the product.</p>
-                    </article>
-                    <article>
-                        <span>03</span>
-                        <h4>Tell the story of what really happened</h4>
-                        <p>Help the team say the true thing: what changed, why the buyer cared, what broke, and what still worked.</p>
-                    </article>
-                    <article>
-                        <span>04</span>
-                        <h4>Keep the simple version true</h4>
-                        <p>Make it simple without making it vague. I care about the number, the risk, the owner, and the next move.</p>
-                    </article>
-                </div>
-                <aside class="lab-fit-note">
-                    <p class="story-label">Why I keep coming back to the work</p>
-                    <p>BlackRock taught me that interface quality matters when money is on the line. Climb taught me to put outcomes inside the product. At ResiDesk, that means residents, operators, owners, and the work in front of someone today.</p>
-                </aside>
-            </div>
-        </section>
-
-        <section id="signal-map" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Messages from residents</p>
-                <p class="panel-index">[MODULE 07]</p>
-                <h2>How a resident message becomes work someone can hand off</h2>
-            </div>
-            <div class="signal-console">
-                <div class="signal-stage-list" role="tablist" aria-label="Resident message steps">
-                    <button class="signal-stage is-active" type="button" role="tab" aria-controls="signal-readout" aria-selected="true" data-signal-step="0">
-                        <span>01</span>
-                        <strong>Listen</strong>
-                    </button>
-                    <button class="signal-stage" type="button" role="tab" aria-controls="signal-readout" aria-selected="false" data-signal-step="1">
-                        <span>02</span>
-                        <strong>Place</strong>
-                    </button>
-                    <button class="signal-stage" type="button" role="tab" aria-controls="signal-readout" aria-selected="false" data-signal-step="2">
-                        <span>03</span>
-                        <strong>Help</strong>
-                    </button>
-                    <button class="signal-stage" type="button" role="tab" aria-controls="signal-readout" aria-selected="false" data-signal-step="3">
-                        <span>04</span>
-                        <strong>Report</strong>
-                    </button>
-                    <button class="signal-stage" type="button" role="tab" aria-controls="signal-readout" aria-selected="false" data-signal-step="4">
-                        <span>05</span>
-                        <strong>Improve</strong>
-                    </button>
-                </div>
-                <article class="signal-readout" id="signal-readout" aria-live="polite">
-                    <p class="panel-index" id="signal-step-label">[STEP 01 / LISTEN]</p>
-                    <h3 id="signal-step-title">Start with what the resident actually said.</h3>
-                    <p id="signal-step-copy">A useful product starts with ordinary apartment problems: a broken washer, a pet-policy question, Wi-Fi complaints, package-room issues, and the early signs someone may not renew.</p>
-                    <div class="signal-metrics">
-                        <span id="signal-metric-a">Texts every day</span>
-                        <span id="signal-metric-b">Actual complaints</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-
-
-        <section id="residesk-loop" class="section-block residesk-loop reveal" aria-labelledby="residesk-loop-title">
-            <div class="section-heading compact-heading">
-                <p class="section-kicker">ResiDesk</p>
-                <p class="panel-index">[LOOP 08]</p>
-                <h2 id="residesk-loop-title">Why housing makes this concrete</h2>
-            </div>
-            <div class="residesk-loop-grid">
-                <article class="residesk-before-after">
-                    <p class="story-label">Before</p>
-                    <h3>Resident feedback is everywhere, and it is still hard to use.</h3>
-                    <p>Texts, reviews, tickets, surveys, renewal notes, and maintenance complaints still live in different places. By the time an owner sees the pattern, the problem is usually old.</p>
-                </article>
-                <article class="residesk-before-after">
-                    <p class="story-label">After</p>
-                    <h3>The right person sees the issue in time.</h3>
-                    <p>The product brings enough history together to answer, route, report, and show what the building can change while there is still time.</p>
-                </article>
-            </div>
-            <ol class="resident-loop-steps" aria-label="Resident work loop">
-                <li><span>01</span><strong>Message</strong><p>A resident text, review, ticket, call, survey, or renewal note comes in.</p></li>
-                <li><span>02</span><strong>History</strong><p>Lease, policy, unit, prior messages, tone, and what already happened.</p></li>
-                <li><span>03</span><strong>Owner</strong><p>The person or team that can change what happens next.</p></li>
-                <li><span>04</span><strong>Action</strong><p>Answer, escalate, repair, explain, or change the rule.</p></li>
-                <li><span>05</span><strong>Report</strong><p>What owners need to see about retention, NOI, workload, and risk while there is still time to act.</p></li>
-            </ol>
-        </section>
-
-        <section id="about" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">About</p>
-                <p class="panel-index">[MODULE 08]</p>
-                <h2>I did not start in housing</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-copy">
-                    <p>
-                        I grew up around research, so the route looked academic at first. I studied applied physics at Cornell because it sounded hard, interesting, and close to experiments.
-                    </p>
-                    <p>
-                        Software came in sideways. I was in an electron microscopy lab and wrote code to speed up a magnetic-noise setup. It saved hours quickly, and software stopped feeling theoretical.
-                    </p>
-                    <p>
-                        The industries changed. The habit did not. At BlackRock, it meant making institutional tools usable for advisors. At Climb Credit, it meant underwriting against outcomes. At ResiDesk, it means helping housing teams hear residents clearly enough to act.
-                    </p>
-                </div>
-                <aside class="quote-panel" aria-label="Operating belief">
-                    <p class="quote-label">Operating belief</p>
-                    <p class="quote-copy">Getting an answer is not the hard part anymore. Getting the right thing to happen next is the job.</p>
-                </aside>
-            </div>
-            <div class="story-grid">
-                <article class="story-card">
-                    <p class="story-label">Physics</p>
-                    <h3>Software clicked when it gave me real time back.</h3>
-                    <p>I wrote a tool in an electron microscopy lab to speed up a magnetic-noise experiment. It saved enough time that software stopped feeling like coursework and started feeling useful.</p>
-                </article>
-                <article class="story-card">
-                    <p class="story-label">BlackRock</p>
+                <article>
+                    <p class="timeline-meta">BlackRock</p>
                     <h3>Real stakes make the interface matter.</h3>
-                    <p>I did not get the job at first. Six months later I re-interviewed, moved to New York, and learned that interface quality matters when real money sits behind the decision.</p>
+                    <p>I worked across product and engineering on advisor tools. A prototype could win the room and still lose to the spreadsheet someone trusted the next morning.</p>
                 </article>
-                <article class="story-card">
-                    <p class="story-label">Climb Credit</p>
-                    <h3>Outcomes changed the question.</h3>
-                    <p>Instead of asking who looked safest on paper, we asked how the graduate's earnings changed after the program. That pushed outcomes into underwriting, product, and data as annual loan volume moved from $1 million to $300 million.</p>
+                <article>
+                    <p class="timeline-meta">Climb Credit</p>
+                    <h3>Outcomes change the question.</h3>
+                    <p>As CTO and CPO, I helped put graduate earnings into the product, data, and underwriting instead of treating a credit score as the whole person.</p>
                 </article>
-                <article class="story-card">
-                    <p class="story-label">ResiDesk</p>
-                    <h3>Housing can listen more carefully.</h3>
-                    <p>Residents tell buildings what works and what does not every day. The work is making that clear to owners, useful for operators, and less annoying for residents.</p>
+                <article>
+                    <p class="timeline-meta">ResiDesk</p>
+                    <h3>Listen closely enough to act.</h3>
+                    <p>Housing is where the lessons meet: messy conversations, real money, overloaded teams, and a customer problem that repeats every day.</p>
+                </article>
+            </div>
+            <div class="stat-row" aria-label="Selected results">
+                <article>
+                    <strong>7%</strong>
+                    <p>Reported lift associated with acting on resident feedback sooner. <a href="https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results" target="_blank" rel="noopener noreferrer">Law360 ↗</a></p>
+                </article>
+                <article>
+                    <strong>$1M → $300M</strong>
+                    <p>Climb Credit annual loan volume while outcomes moved into the product. <a href="https://techcrunch.com/2016/04/13/climb-credit-looks-to-transform-student-lending-with-a-new-business-model-based-on-graduate-success/" target="_blank" rel="noopener noreferrer">TechCrunch ↗</a></p>
+                </article>
+                <article>
+                    <strong>$40M ARR</strong>
+                    <p>Advisor analytics product I helped take from zero in its first year at BlackRock.</p>
                 </article>
             </div>
         </section>
 
-        <section id="work" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Work history</p>
-                <p class="panel-index">[MODULE 09]</p>
-                <h2>How I got here</h2>
+        <section class="section" id="principles" aria-labelledby="principles-title">
+            <span class="anchor-alias" id="operating-system" aria-hidden="true"></span>
+            <div class="section-label">
+                <span>03</span>
+                <p>How I work</p>
             </div>
-            <p class="section-intro">
-                The settings changed, but the habit stayed similar: understand what the customer is saying inside a messy process, then build the simplest responsible way to help.
-            </p>
-            <div class="stats-row">
-                <article class="stat-card">
-                    <p class="stat-label">Resident feedback result</p>
-                    <p class="stat-value">7%</p>
-                    <p class="stat-copy">That 7% is associated with getting resident feedback into decisions sooner. Law360 wrote up the outside version.</p>
-                </article>
-                <article class="stat-card">
-                    <p class="stat-label">Climb Credit</p>
-                    <p class="stat-value">$1M → $300M</p>
-                    <p class="stat-copy">Annual loan volume grew while outcomes moved into product, data, and underwriting.</p>
-                </article>
-                <article class="stat-card">
-                    <p class="stat-label">Advisor tools</p>
-                    <p class="stat-value">$40M ARR</p>
-                    <p class="stat-copy">Advisor-facing analytics product I helped take from zero to $40M ARR in its first year.</p>
-                </article>
-            </div>
-            <div class="role-list">
-                <article class="role-card">
-                    <div class="role-head">
-                        <h3><a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer">ResiDesk</a></h3>
-                        <p>Co-founder; data, product, and the ordinary work of running the company</p>
-                    </div>
-                    <p>We help rental-property owners and operators understand what residents ask for across renewals, rent, maintenance, and staffing. The product earns its keep when the right person knows what to do before the next thread arrives.</p>
-                </article>
-                <article class="role-card">
-                    <div class="role-head">
-                        <h3><a href="https://www.climbcredit.com" target="_blank" rel="noopener noreferrer">Climb Credit</a></h3>
-                        <p>CTO and CPO</p>
-                    </div>
-                    <p>We underwrote against a different question: not who looked safest on paper, but what happened to a graduate's earnings. That put outcomes into the product, data, and underwriting.</p>
-                </article>
-                <article class="role-card">
-                    <div class="role-head">
-                        <h3><a href="https://www.blackrock.com" target="_blank" rel="noopener noreferrer">BlackRock</a></h3>
-                        <p>Product and engineering</p>
-                    </div>
-                    <p>The job was turning institutional infrastructure into a product advisors could use in real conversations. The information was the same underneath, but the product had to help someone explain, compare, and decide.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="background" class="section-block background-section reveal">
-            <div class="section-heading">
-                <p class="section-kicker">More detail</p>
-                <p class="panel-index">[MODULE 10]</p>
-                <h2>More detail, if you want it</h2>
-            </div>
-            <div class="background-grid" aria-label="Longer links for Arjun Kannan work">
-                <article>
-                    <p class="story-label">What changed</p>
-                    <h3>I have worked on products where the number had to mean something.</h3>
-                    <p>BlackRock advisor analytics reached $40M ARR in the first year. At Climb, annual loan volume grew from $1M to $300M as outcomes moved into product and data.</p>
-                    <a href="#work" class="text-link">See work history</a>
-                </article>
-                <article>
-                    <p class="story-label">Working rules about AI</p>
-                    <h3>The AI test I trust is simple.</h3>
-                    <p>Model quality matters. Checks, handoff, trust, and the next task decide whether the product gets used.</p>
-                    <a href="https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator" target="_blank" rel="noopener noreferrer" class="text-link">Read the essay</a>
-                </article>
-                <article>
-                    <p class="story-label">More detail</p>
-                    <h3>If you want the longer version, start with the links.</h3>
-                    <p>TechCrunch covered Climb. Law360, HackerNoon, TechTimes, TechBullion, BuiltWorlds, and 20for20 fill in more of ResiDesk, applied AI, talks, and property-operations work.</p>
-                    <a href="#links" class="text-link">Open links</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="recent" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Links</p>
-                <p class="panel-index">[MODULE 11]</p>
-                <h2>Writing, talks, and links</h2>
-            </div>
-            <div class="recent-grid">
-                <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="feature-card">
-                    <img src="assets/link-previews/techbullion-noi-not-noise.png" alt="TechBullion article preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="feature-copy">
-                        <span class="feature-badge">Essay</span>
-                        <p class="article-meta">TechBullion / May 6, 2025</p>
-                        <h3>NOI, Not Noise</h3>
-                        <p>My view on AI in operations: do not stop at another chat window. Connect resident conversations to follow-up, retention, and NOI.</p>
-                    </div>
-                </a>
-                <div class="recent-list">
-                    <a href="https://hackernoon.com/as-ai-models-converge-system-design-becomes-the-differentiator" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">HackerNoon / April 12, 2026</p>
-                        <p><em>As AI Models Converge, the Work Around the Model Becomes the Differentiator</em> on why the work around the model matters more than the model name.</p>
-                    </a>
-                    <a href="https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">Law360 / December 18, 2024</p>
-                        <p><em>ResiDesk Simplifies Resident Engagement For Deeper Results</em> on getting resident feedback closer to retention and the decisions operators already make.</p>
-                    </a>
-                    <a href="https://lp.20for20.com/25-wp-wifi-sentiment-analysis" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">20for20 / November 20, 2025</p>
-                        <p>A white paper on what residents actually say about Wi-Fi, and how those complaints show a building where trust is leaking.</p>
-                    </a>
-                    <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management-with-arjun-kannan" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">HackerNoon / September 18, 2024</p>
-                        <p><em>The Power of Applied AI</em> on using AI inside the property-management job, where context and follow-through matter more than novelty.</p>
-                    </a>
-                    <a href="https://www.techtimes.com/articles/307216/20240820/ai-for-humans-practical-ways-ai-is-improving-lives-in-real-estate-finance-and-education.htm" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">TechTimes / August 20, 2024</p>
-                        <p>A profile on practical AI: the useful version helps with a decision someone still owns.</p>
-                    </a>
-                    <a href="https://techcrunch.com/2016/04/13/climb-credit-looks-to-transform-student-lending-with-a-new-business-model-based-on-graduate-success/" target="_blank" rel="noopener noreferrer" class="recent-item">
-                        <p class="article-meta">TechCrunch / April 13, 2016</p>
-                        <p>Coverage of Climb Credit's early bet that lending could be built around graduate success, not just credit-score filtering.</p>
-                    </a>
+            <div class="section-grid">
+                <div class="section-heading">
+                    <h2 id="principles-title">Give me the actual work, the stakes, and the person who has to live with it.</h2>
                 </div>
-            </div>
-        </section>
-
-        <section id="conversations" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Talks</p>
-                <p class="panel-index">[MODULE 12]</p>
-                <h2>Things I can talk about from doing the work</h2>
-            </div>
-            <p class="section-intro">
-                If you want to hear how I actually say it, start here: physics, software, ResiDesk, and why I keep coming back to the day after the demo.
-            </p>
-            <div class="conversation-grid">
-                <div class="video-column">
-                    <div class="video-card">
-                        <button class="video-poster" type="button" data-youtube-id="LIsSQ_8ZZIw" data-video-title="Interview with Harnoor Singh" aria-label="Play Interview with Harnoor Singh">
-                            <img src="https://i.ytimg.com/vi/LIsSQ_8ZZIw/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
-                            <span class="video-overlay">
-                                <span>
-                                    <span class="video-meta">Singh in USA / 2026</span>
-                                    <span class="video-title">Interview with Harnoor Singh</span>
-                                </span>
-                                <span class="video-play">Watch</span>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="video-mini-grid">
-                        <div class="video-card">
-                            <button class="video-poster" type="button" data-youtube-id="OtvONEQNngQ" data-video-title="AI CEO Breaks Down How He Gets 10x Leverage" aria-label="Play AI CEO Breaks Down How He Gets 10x Leverage">
-                                <img src="https://i.ytimg.com/vi/OtvONEQNngQ/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
-                                <span class="video-overlay">
-                                    <span>
-                                        <span class="video-meta">Greg Kamradt / 2024</span>
-                                        <span class="video-title">AI CEO Breaks Down How He Gets 10x Leverage</span>
-                                    </span>
-                                    <span class="video-play">Watch</span>
-                                </span>
-                            </button>
+                <div class="principle-list">
+                    <article>
+                        <span>01</span>
+                        <div>
+                            <h3>Start with the job.</h3>
+                            <p>If you do not know what someone is trying to finish, the model choice is probably the least interesting part.</p>
                         </div>
-                        <div class="video-card">
-                            <button class="video-poster" type="button" data-youtube-id="C2aUblIKQoM" data-video-title="Why Work Here: Arjun Kannan, ResiDesk" aria-label="Play Why Work Here: Arjun Kannan, ResiDesk">
-                                <img src="https://i.ytimg.com/vi/C2aUblIKQoM/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
-                                <span class="video-overlay">
-                                    <span>
-                                        <span class="video-meta">Wellfound / 2024</span>
-                                        <span class="video-title">Why Work Here: Arjun Kannan, ResiDesk</span>
-                                    </span>
-                                    <span class="video-play">Watch</span>
-                                </span>
-                            </button>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <div>
+                            <h3>Be direct without making people feel small.</h3>
+                            <p>I believe the pain. I still want to separate what happened from what caused it, and make the next move clear.</p>
                         </div>
-                    </div>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <div>
+                            <h3>A demo is not adoption.</h3>
+                            <p>I care about whether someone still uses the product when the queue is full, the edge case is real, and nobody is watching.</p>
+                        </div>
+                    </article>
                 </div>
-                <div class="article-list">
-                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="article-card">
-                        <p class="article-meta">20for20 / February 2026</p>
-                        <h3>What Wi-Fi complaints tell owners</h3>
-                        <p>A talk on what residents say about Wi-Fi, and why those complaints matter if you own or run the building.</p>
+            </div>
+        </section>
+
+        <section class="section" id="notes" aria-labelledby="notes-title">
+            <span class="anchor-alias" id="links" aria-hidden="true"></span>
+            <div class="section-label">
+                <span>04</span>
+                <p>Writing and talks</p>
+            </div>
+            <div class="section-grid">
+                <div class="section-heading">
+                    <h2 id="notes-title">I write when I am trying to make a thought less fuzzy.</h2>
+                </div>
+                <div class="prose">
+                    <p>Most of it comes back to the same question: does this help someone finish the work, or did we just make the demo easier to sell?</p>
+                    <a class="text-link" href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer">Read the Substack <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+
+            <div class="media-grid">
+                <div class="video-shell">
+                    <button class="video-facade" type="button" data-video-id="LIsSQ_8ZZIw" data-video-title="Interview with Arjun Kannan">
+                        <img src="https://i.ytimg.com/vi/LIsSQ_8ZZIw/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+                        <span class="video-copy">
+                            <small>Singh in USA · 2026</small>
+                            <strong>Physics, finance, housing, and the work after the demo</strong>
+                            <span class="play-label">Play interview <span aria-hidden="true">▶</span></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="link-list">
+                    <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer">
+                        <span>2025</span>
+                        <strong>NOI, Not Noise</strong>
+                        <p>Why resident conversations should reach the operating decisions someone already has to make.</p>
                     </a>
-                    <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="article-card">
-                        <p class="article-meta">BuiltWorlds / March 2026</p>
-                        <h3>AI from the owner/operator perspective</h3>
-                        <p>A conversation with owners, operators, and investors about where AI changes underwriting and operations, and where it stays noise.</p>
+                    <a href="https://hackernoon.com/as-ai-models-converge-the-work-around-the-model-becomes-the-differentiator" target="_blank" rel="noopener noreferrer">
+                        <span>2026</span>
+                        <strong>The work around the model</strong>
+                        <p>Context, checks, handoff, and what makes an AI product useful after launch.</p>
                     </a>
-                    <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="article-card">
-                        <p class="article-meta">TechBullion / May 2025</p>
-                        <h3>NOI, Not Noise</h3>
-                        <p>A breakdown of why ResiDesk cannot stop at another inbox. Resident conversations should reach the decisions someone already has to make.</p>
+                    <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer">
+                        <span>2026</span>
+                        <strong>What Wi-Fi complaints tell owners</strong>
+                        <p>Resident complaints as a practical view into trust, operations, and where a building needs help.</p>
+                    </a>
+                    <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer">
+                        <span>2026</span>
+                        <strong>AI from the owner and operator seat</strong>
+                        <p>Where AI changes underwriting and operations, and where it is mostly noise.</p>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="writing" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Essays</p>
-                <p class="panel-index">[MODULE 13]</p>
-                <h2>Writing while I work</h2>
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+            <span class="anchor-alias" id="site-contact" aria-hidden="true"></span>
+            <span class="anchor-alias" id="faq" aria-hidden="true"></span>
+            <div class="section-label">
+                <span>05</span>
+                <p>Contact</p>
             </div>
-            <div class="two-column-section">
+            <div class="contact-grid">
                 <div>
-                    <p class="section-intro">
-                        I write when I am trying to make a thought less fuzzy. Most pieces come back to the same test: does this help someone finish the work, or did we just make the demo easier to sell?
-                    </p>
-                    <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="text-link">Read the full archive</a>
+                    <h2 id="contact-title">A good email starts with the actual problem.</h2>
+                    <p>ResiDesk, housing operations, AI in real work, product judgment, founder questions, and speaking are all good reasons to reach out.</p>
                 </div>
-                <div class="principles-grid">
-                    <article class="principle-card">
-                        <h3>Useful beats impressive</h3>
-                        <p>If a tool does not help someone finish a real task sooner, with less dropped context, it is hard for me to care.</p>
-                    </article>
-                    <article class="principle-card">
-                        <h3>Understand the job first</h3>
-                        <p>If you do not know what someone is actually trying to do, you are probably just rearranging pixels.</p>
-                    </article>
-                    <article class="principle-card">
-                        <h3>Build around the work</h3>
-                        <p>The model is one part. The surrounding tools, guardrails, checks, and handoff into someone's day decide whether anything changes.</p>
-                    </article>
-                    <article class="principle-card">
-                        <h3>Demos leave things out</h3>
-                        <p>What matters is whether people still reach for it mid-work, when nobody is watching.</p>
-                    </article>
+                <div class="contact-fit">
+                    <p><strong>Especially useful:</strong> you have a customer problem, a messy rollout, or a decision that gets clearer with the right context.</p>
+                    <p><strong>Probably not useful:</strong> a broad AI inspiration call with no customer, no job, and no next decision.</p>
+                    <div class="contact-links">
+                        <a class="button primary" href="mailto:arj.shiv@gmail.com">arj.shiv@gmail.com <span aria-hidden="true">↗</span></a>
+                        <a class="text-link" href="https://hello.theresidesk.com/" target="_blank" rel="noopener noreferrer">ResiDesk ↗</a>
+                        <a class="text-link" href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer">Substack ↗</a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="faq" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">FAQ</p>
-                <p class="panel-index">[MODULE 14]</p>
-                <h2>Quick answers</h2>
-            </div>
-            <div class="faq-list">
-                <details class="faq-card">
-                    <summary>What kind of AI do you build?</summary>
-                    <p>I build AI around work people already have to do. At ResiDesk, that means helping property teams answer residents, understand what is happening in the building, and get the right issue to someone who can act on it.</p>
-                </details>
-                <details class="faq-card">
-                    <summary>What came before ResiDesk?</summary>
-                    <p>Before ResiDesk, I worked at Climb Credit and BlackRock. At Climb, I helped take annual loan volume from $1M to $300M. At BlackRock, I worked on an advisor analytics product that reached $40M ARR in its first year.</p>
-                </details>
-                <details class="faq-card">
-                    <summary>What do I usually come back to?</summary>
-                    <p>I usually come back to the same things: agents, checks, product loops, and the gap between a strong demo and something people still reach for on a busy day. Housing makes this concrete because residents are already telling you what broke.</p>
-                </details>
-                <details class="faq-card">
-                    <summary>How do I judge AI?</summary>
-                    <p>I care less about whether something looks impressive and more about whether it helps someone make a better call. That means getting the sequence right, testing what good looks like, and keeping a person close enough to stop the product from doing the wrong thing.</p>
-                </details>
-            </div>
-        </section>
-
-        <section id="investing" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Investing</p>
-                <p class="panel-index">[MODULE 15]</p>
-                <h2>Investing, when I can be useful</h2>
-            </div>
-            <div class="two-column-section">
-                <aside class="quote-panel" aria-label="Investing perspective">
-                    <p class="quote-label">When I can help</p>
-                    <p class="quote-copy">A useful investor should sharpen the next decision, not add one more vague opinion to the room.</p>
-                </aside>
-                <div class="about-copy">
-                    <p>I have invested in more than 100 startups and mentored through Techstars. I tend to back founders who are close to the problem, close to the customer, and honest about what they still do not know.</p>
-                    <p>Generic advice is everywhere now. The useful version is specific: the customer, the constraint, the ask, and the next decision.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="links" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Links</p>
-                <p class="panel-index">[MODULE 16]</p>
-                <h2>More links and talks</h2>
-            </div>
-            <div class="link-preview-grid">
-                <a href="https://builtworlds.com/event/2026-venture-west/" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/builtworlds-venture-west.png" alt="BuiltWorlds Venture West page preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">BuiltWorlds / March 11-12, 2026</p>
-                    <h3>BuiltWorlds Venture West</h3>
-                    <p>Panel on where owners and operators see AI change day-to-day work.</p>
-                    </div>
-                </a>
-                <a href="https://20for20.com/press-and-media/" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/20for20-press.png" alt="20for20 press and media page preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">20for20 / 2025-2026</p>
-                    <h3>Resident sentiment presentation and podcast</h3>
-                    <p>Presentation, podcast, and white paper on what residents say and what operators can do with it.</p>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=LIsSQ_8ZZIw&t=1s" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="https://i.ytimg.com/vi/LIsSQ_8ZZIw/hqdefault.jpg" alt="Interview with Harnoor Singh" loading="lazy" decoding="async" width="480" height="360">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">Singh in USA / 2026</p>
-                    <h3>Interview with Harnoor Singh</h3>
-                    <p>How physics, finance, housing, and AI connect when software meets real work.</p>
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/watch?v=OtvONEQNngQ" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="https://i.ytimg.com/vi/OtvONEQNngQ/hqdefault.jpg" alt="Greg Kamradt interview" loading="lazy" decoding="async" width="480" height="360">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">Greg Kamradt / 2024</p>
-                    <h3>AI inside company work</h3>
-                    <p>What it looks like to run AI inside a company, not just narrate it.</p>
-                    </div>
-                </a>
-                <a href="https://www.law360.com/real-estate-authority/articles/2275147/residesk-simplifies-resident-engagement-for-deeper-results" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/law360-residesk.png" alt="Law360 article preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">Law360 / December 18, 2024</p>
-                    <h3>ResiDesk in Law360</h3>
-                    <p>How resident conversations get closer to the people making operating decisions.</p>
-                    </div>
-                </a>
-                <a href="https://hackernoon.com/the-power-of-applied-ai-in-real-estate-transforming-property-management-with-arjun-kannan" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/hackernoon-applied-ai.png" alt="HackerNoon article preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">HackerNoon / September 18, 2024</p>
-                    <h3>Applied AI in real estate</h3>
-                    <p>On putting AI to work inside property management, not around it.</p>
-                    </div>
-                </a>
-                <a href="https://techbullion.com/noi-not-noise-why-arjun-kannans-startup-is-yelling-at-chatbots-on-behalf-of-property-managers/" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/techbullion-noi-not-noise.png" alt="TechBullion article preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">TechBullion / May 6, 2025</p>
-                    <h3>NOI, Not Noise</h3>
-                    <p>Why resident conversations matter to NOI, not just customer support.</p>
-                    </div>
-                </a>
-                <a href="https://www.techtimes.com/articles/307216/20240820/ai-for-humans-practical-ways-ai-is-improving-lives-in-real-estate-finance-and-education.htm" target="_blank" rel="noopener noreferrer" class="link-preview-card">
-                    <img src="assets/link-previews/techtimes-ai-for-humans.png" alt="TechTimes article preview" loading="lazy" decoding="async" width="1280" height="900">
-                    <div class="link-preview-copy">
-                    <p class="article-meta">TechTimes / August 20, 2024</p>
-                    <h3>Practical AI</h3>
-                    <p>The lesson I keep coming back to: useful AI helps with a decision someone still owns.</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-
-
-        <section id="fit-boundaries" class="section-block fit-boundaries reveal" aria-labelledby="fit-boundaries-title">
-            <div class="section-heading compact-heading">
-                <p class="section-kicker">Fit</p>
-                <p class="panel-index">[BOUNDARY 18]</p>
-                <h2 id="fit-boundaries-title">Where I can help</h2>
-            </div>
-            <div class="fit-grid">
-                <article class="fit-card fit-card-good">
-                    <p class="story-label">Worth emailing about</p>
-                    <ul>
-                        <li>You have real customer pain and need it to change the product, GTM, or operations.</li>
-                        <li>You are putting AI into work where checks, handoff, and trust are not optional.</li>
-                        <li>You are a housing operator trying to spot resident issues before they become churn, extra cost, or owner surprises.</li>
-                    </ul>
-                </article>
-                <article class="fit-card fit-card-bad">
-                    <p class="story-label">Probably not the fit</p>
-                    <ul>
-                        <li>You want generic AI inspiration without a real customer or real job behind it.</li>
-                        <li>You need someone to bless a demo with no owner, no metric, and no next step.</li>
-                        <li>You want a broad advisory call without a specific problem to make sharper.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section id="ai-field-tools" class="section-block reveal">
-            <div class="section-heading">
-                <p class="section-kicker">Small tools</p>
-                <p class="panel-index">[MODULE 17]</p>
-                <h2>Small tools if useful</h2>
-            </div>
-            <div class="ai-tools-grid">
-                <article class="ai-tool ai-tool-wide browser-visual-lab" aria-labelledby="browser-visual-title">
-                    <div class="ai-tool-head">
-                    <p class="story-label">01 / Page map</p>
-                        <span class="ai-status" id="visual-ai-status" role="status">Local views ready</span>
-                    </div>
-                    <h3 id="browser-visual-title">Map the work.</h3>
-                    <p id="browser-visual-help">Pick a view. The graphic runs anywhere. If the browser has a local model, it can add a sharper read.</p>
-                    <div class="visual-lab-layout">
-                        <div class="visual-mode-list ai-chip-row" id="visual-mode-list"></div>
-                        <div class="visual-stage" id="visual-stage" aria-live="polite" aria-describedby="browser-visual-help"></div>
-                    </div>
-                </article>
-
-                <article class="ai-tool ai-tool-primary" aria-labelledby="ai-ask-title">
-                    <div class="ai-tool-head">
-                        <p class="story-label">02 / Ask this site</p>
-                        <span class="ai-status" id="browser-ai-status" role="status">Checking browser AI</span>
-                    </div>
-                    <h3 id="ai-ask-title">Ask a real question.</h3>
-                    <p id="ai-ask-help">The answer uses the copy, talks, writing, links, and tools already on this page. Try: "why ResiDesk?", "what works after launch?", "where should I start?"</p>
-                    <form class="ai-ask-form" id="ai-ask-form" aria-describedby="ai-ask-help">
-                        <label class="sr-only" for="ai-question">Question</label>
-                        <input id="ai-question" type="search" autocomplete="off" spellcheck="false" enterkeyhint="search" maxlength="180" placeholder="What does Arjun mean by demos are not adoption?">
-                        <button type="submit" class="primary-link">Ask</button>
-                    </form>
-                    <div class="ai-answer" id="ai-answer" aria-live="polite">
-                    <p class="article-meta">Try asking about ResiDesk, founder advice, BlackRock, Climb, writing, or what happens after launch.</p>
-                    </div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-map-title">
-                    <p class="story-label">03 / Conversation map</p>
-                    <h3 id="ai-map-title">Start with the question.</h3>
-                    <div class="ai-chip-row" id="conversation-map">
-                    <button type="button" data-question="What connects the site?">What connects this</button>
-                        <button type="button" data-question="What does Arjun believe about AI?">AI view</button>
-                        <button type="button" data-question="Why housing and ResiDesk?">Housing</button>
-                        <button type="button" data-question="What did BlackRock and Climb teach him?">Before ResiDesk</button>
-                    </div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-guide-title">
-                    <p class="story-label">04 / Find what matters</p>
-                    <h3 id="ai-guide-title">Skip to the parts that matter.</h3>
-                    <label for="guide-persona">I am here as</label>
-                    <select id="guide-persona">
-                        <option value="operator">an owner/operator</option>
-                        <option value="founder">a founder/builder</option>
-                        <option value="journalist">a journalist/event host</option>
-                        <option value="candidate">a candidate/collaborator</option>
-                        <option value="investor">an investor</option>
-                        <option value="background">someone going deeper</option>
-                    </select>
-                    <button type="button" class="secondary-link" id="build-guide">Show the shortcuts</button>
-                    <ol class="ai-output-list" id="guide-output"></ol>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-transcript-title">
-                    <p class="story-label">05 / Talk lens</p>
-                    <h3 id="ai-transcript-title">Pull the point from one conversation.</h3>
-                    <label for="talk-lens">Conversation</label>
-                    <select id="talk-lens">
-                        <option value="harnoor">Harnoor interview</option>
-                        <option value="greg">Greg Kamradt conversation</option>
-                        <option value="wellfound">Why Work Here</option>
-                        <option value="20for20">20for20 resident sentiment</option>
-                    </select>
-                    <button type="button" class="secondary-link" id="run-lens">Show takeaways</button>
-                    <div class="ai-answer compact" id="lens-output"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-useful-title">
-                    <p class="story-label">06 / Useful AI check</p>
-                    <h3 id="ai-useful-title">Paste an AI idea. Check the job.</h3>
-                    <textarea id="useful-ai-input" rows="5" maxlength="600" placeholder="Example: AI assistant that answers resident texts, checks the lease, flags risky cases, and hands unresolved issues to the property team."></textarea>
-                    <button type="button" class="secondary-link" id="score-ai-idea">Check idea</button>
-                    <div class="ai-score" id="ai-score-output" aria-live="polite"></div>
-                </article>
-
-                <article class="ai-tool ai-tool-wide tuesday-test-tool" aria-labelledby="ai-tuesday-title">
-                    <p class="story-label">07 / Tuesday test</p>
-                    <h3 id="ai-tuesday-title">Put a demo through a normal Tuesday.</h3>
-                    <p>Pick a demo promise and where it has to run. The tool shows what has to be true before it works on a normal day.</p>
-                    <div class="tuesday-controls">
-                        <label for="tuesday-claim">Demo says it</label>
-                        <select id="tuesday-claim">
-                            <option value="answers">Answers customer messages</option>
-                            <option value="research">Summarizes customer research</option>
-                            <option value="sales">Writes follow-up for sales</option>
-                            <option value="ops">Routes operational work</option>
-                        </select>
-                        <label for="tuesday-env">Where it runs</label>
-                        <select id="tuesday-env">
-                            <option value="operator">busy property team</option>
-                            <option value="enterprise">enterprise customer</option>
-                            <option value="field">team doing the work</option>
-                            <option value="exec">executive review</option>
-                        </select>
-                        <button type="button" class="secondary-link" id="run-tuesday-test">Run Tuesday test</button>
-                    </div>
-                    <div class="tuesday-output" id="tuesday-output" aria-live="polite">
-                        <p class="article-meta">Run the test to see what the demo is likely to miss on a real day.</p>
-                    </div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-resident-title">
-                    <p class="story-label">08 / Resident messages</p>
-                    <h3 id="ai-resident-title">Build a small owner readout.</h3>
-                    <label for="building-type">Building</label>
-                    <select id="building-type">
-                        <option value="garden">garden-style apartments</option>
-                        <option value="urban">urban high-rise</option>
-                        <option value="student">student housing</option>
-                        <option value="workforce">workforce housing</option>
-                    </select>
-                    <button type="button" class="secondary-link" id="simulate-signals">Make readout</button>
-                    <div class="signal-sim-output" id="signal-sim-output"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-highlight-title">
-                    <p class="story-label">09 / Pattern check</p>
-                    <h3 id="ai-highlight-title">Show repeated words.</h3>
-                    <p>Highlights the words I use a lot here: customer, measurement, handoff, follow-through, trust, and demo.</p>
-                    <button type="button" class="secondary-link" id="toggle-highlights" aria-pressed="false">Highlight repeats</button>
-                </article>
-
-                <article class="ai-tool ai-tool-wide" aria-labelledby="ai-critique-title">
-                    <p class="story-label">10 / Page check</p>
-                    <h3 id="ai-critique-title">Check whether the page is clear.</h3>
-                    <p>This checks whether the page is clear, useful, and honest about the work.</p>
-                    <button type="button" class="secondary-link" id="run-design-critique">Run check</button>
-                    <div class="design-critique-output" id="design-critique-output" aria-live="polite"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-tweaks-title">
-                    <p class="story-label">11 / Next fix</p>
-                    <h3 id="ai-tweaks-title">Pick the next rough spot.</h3>
-                    <p>Pick the part that feels roughest and get one concrete next fix.</p>
-                    <div class="ai-chip-row" id="site-tweak-panel">
-                        <button type="button" data-tweak="legibility">Legibility</button>
-                        <button type="button" data-tweak="speed">Speed</button>
-                        <button type="button" data-tweak="voice">Voice</button>
-                        <button type="button" data-tweak="sources">Sources</button>
-                    </div>
-                    <div class="ai-answer compact" id="tweak-output" aria-live="polite"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-reading-title">
-                    <p class="story-label">12 / Reading path</p>
-                    <h3 id="ai-reading-title">Build a quick route.</h3>
-                    <label for="reading-audience">Reader</label>
-                    <select id="reading-audience">
-                        <option value="operator">operator</option>
-                        <option value="founder">founder</option>
-                        <option value="ai-team">AI/product builder</option>
-                        <option value="journalist">journalist</option>
-                        <option value="investor">investor</option>
-                        <option value="background">deep reader</option>
-                    </select>
-                    <button type="button" class="secondary-link" id="build-reading-path">Build the read</button>
-                    <div class="reading-path-output" id="reading-path-output" aria-live="polite"></div>
-                </article>
-
-                <article class="ai-tool ai-tool-wide" aria-labelledby="ai-memo-title">
-                    <p class="story-label">13 / Operator note</p>
-                    <h3 id="ai-memo-title">Turn messy notes into a next step.</h3>
-                    <textarea id="operator-memo-input" rows="4" maxlength="600" placeholder="Example: residents keep texting about elevators, package room access, and renewal confusion. Team answers one-off, owner wants a clearer view."></textarea>
-                    <button type="button" class="secondary-link" id="build-operator-memo">Build note</button>
-                    <div class="operator-memo-output" id="operator-memo-output" aria-live="polite"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-compass-title">
-                    <p class="story-label">14 / Site map</p>
-                    <h3 id="ai-compass-title">Pick what you need.</h3>
-                    <div class="site-compass-output" id="site-compass-output"></div>
-                </article>
-
-                <article class="ai-tool" aria-labelledby="ai-notes-title">
-                    <p class="story-label">15 / Private notes</p>
-                    <h3 id="ai-notes-title">Keep notes while you read.</h3>
-                    <textarea id="private-notes" rows="6" maxlength="900" placeholder="Notes stay in this browser."></textarea>
-                    <div class="ai-note-actions">
-                        <button type="button" class="secondary-link" id="summarize-notes">Summarize</button>
-                        <button type="button" class="text-link" id="clear-notes">Clear</button>
-                    </div>
-                    <div class="ai-answer compact" id="notes-output"></div>
-                </article>
-            </div>
-        </section>
-
-        <footer id="site-contact" class="site-footer reveal">
-            <p class="section-kicker">Reach out</p>
-            <p class="panel-index">[OUTPUT 17]</p>
-            <div class="site-footer-grid">
-                <p class="site-footer-copy">Good reasons to email: ResiDesk, AI in the field, property operations, founder and product judgment, speaking, or a customer problem with enough detail to work on.</p>
-                <div class="site-footer-links">
-                    <a href="https://hello.theresidesk.com" target="_blank" rel="noopener noreferrer" class="footer-link">ResiDesk</a>
-                    <a href="https://arjunkannan.substack.com/" target="_blank" rel="noopener noreferrer" class="footer-link">Substack</a>
-                    <a href="mailto:arj.shiv@gmail.com" class="footer-link">Email</a>
-                </div>
-            </div>
-            <p class="site-footer-note">If the problem is vague, make it concrete first. If it is concrete, I can usually be useful quickly.</p>
-        </footer>
     </main>
-    <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">↑</a>
-    <script>
-        (() => {
-            let aiFieldToolsLoaded = false;
-            let aiFieldToolsReady = Promise.resolve();
-            const loadAiFieldTools = () => {
-                if (aiFieldToolsLoaded) {
-                    return aiFieldToolsReady;
-                }
-                aiFieldToolsLoaded = true;
-                aiFieldToolsReady = new Promise((resolve) => {
-                    const script = document.createElement('script');
-                    script.src = 'ai-field-tools.js';
-                    script.defer = true;
-                    script.addEventListener('load', resolve, { once: true });
-                    script.addEventListener('error', resolve, { once: true });
-                    document.body.append(script);
-                });
-                return aiFieldToolsReady;
-            };
-            window.loadSiteAiFieldTools = loadAiFieldTools;
 
-            const aiTools = document.querySelector('#ai-field-tools');
-            if ('IntersectionObserver' in window && aiTools) {
-                const aiToolsObserver = new IntersectionObserver((entries) => {
-                    if (entries.some((entry) => entry.isIntersecting)) {
-                        loadAiFieldTools();
-                        aiToolsObserver.disconnect();
-                    }
-                }, { rootMargin: '900px 0px' });
-                aiToolsObserver.observe(aiTools);
-            } else {
-                window.addEventListener('load', () => window.setTimeout(loadAiFieldTools, 900), { once: true });
-            }
-
-            const showAiToolsForHash = () => {
-                if (window.location.hash !== '#ai-field-tools') return;
-                loadAiFieldTools().then(() => {
-                    window.setTimeout(() => aiTools?.scrollIntoView({ block: 'start', behavior: 'auto' }), 0);
-                });
-            };
-            const shouldLoadAiToolsForHash = () => window.location.hash === '#ai-field-tools';
-            if (shouldLoadAiToolsForHash()) {
-                window.setTimeout(showAiToolsForHash, 0);
-            }
-            window.addEventListener('hashchange', showAiToolsForHash);
-            document.querySelectorAll('a[href="#ai-field-tools"]').forEach((link) => {
-                link.addEventListener('click', () => window.setTimeout(showAiToolsForHash, 0), { passive: true });
-            });
-        })();
-    </script>
+    <footer class="site-footer">
+        <p>Arjun Kannan</p>
+        <p>Built around the work. Updated July 2026.</p>
+    </footer>
 
     <script>
-        const topbar = document.querySelector('.topbar');
-        const navToggle = document.querySelector('.nav-toggle');
-        const navScrim = document.querySelector('.nav-scrim');
-        const backToTop = document.querySelector('.back-to-top');
-        const scrollProgressBar = document.querySelector('.scroll-progress-bar');
-        const commandLauncher = document.querySelector('.command-launcher');
-        const commandPalette = document.querySelector('#site-command-palette');
-        const commandSearch = document.querySelector('#command-search');
-        const commandResults = document.querySelector('#command-results');
-        const commandClose = document.querySelector('.command-close');
-        const sections = [...document.querySelectorAll('main section[id]')];
-        const navLinks = [...document.querySelectorAll('.nav-link')];
-        const motionAllowed = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        let lastCommandFocus = commandLauncher;
-        let commandActiveIndex = 0;
-        const commandButtons = () => [...commandResults?.querySelectorAll('.command-result') || []];
-        const dispatchAiToolCommand = (eventName, detail) => {
-            const ready = window.loadSiteAiFieldTools?.() || Promise.resolve();
-            ready.then(() => window.dispatchEvent(new CustomEvent(eventName, { detail })));
-        };
-        const commandItems = [
-            ['Start here', '#start-here', 'Three quick routes into the site', 'start'],
-            ['Current work', '#now', 'What I am building at ResiDesk now', 'now'],
-            ['Work before ResiDesk', '#work-table', 'Climb, BlackRock, and what came next', 'work'],
-            ['Now', '#now', 'Current ResiDesk work and focus', 'start'],
-            ['ResiDesk loop', '#residesk-loop', 'How resident messages become real work', 'operator'],
-            ['How I build', '#operating-system', 'Customers, candor, AI, and the team', 'work'],
-            ['AI in use', '#deployment-room', 'How AI turns into daily work', 'ai'],
-            ['AI field notes', '#ai-lab-fit', 'What happens after the demo matters', 'lab'],
-            ['About', '#about', 'How physics, BlackRock, Climb, and ResiDesk got me here', 'bio'],
-            ['Links', '#recent', 'Essays, press, and public links', 'links'],
-            ['Talks', '#conversations', 'Hear how I say it', 'voice'],
-            ['Writing', '#writing', 'Essays on models and what happens after the answer', 'essays'],
-            ['FAQ', '#faq', 'Short answers to the common questions', 'answers'],
-            ['Small tools', '#ai-field-tools', 'Ask, score, simulate, and build quick reads', 'tools'],
-            ['Ask about AI', 'ask:What does Arjun believe about useful AI?', 'Prefill the local answer tool', 'prompt'],
-            ['Tuesday test', '#ai-field-tools', 'Stress-test a demo on a real workday', 'adoption'],
-            ['Build operator path', 'reading:operator', 'Create a quick read for an owner or operator', 'path'],
-            ['Build deep-reader path', 'reading:background', 'Create a deeper read', 'path'],
-            ['Draft operator memo', 'memo:Residents keep texting about packages, renewals, and maintenance. The team is answering one at a time, but nobody has shown the owner the pattern.', 'Prefill the memo builder with a real note', 'memo'],
-            ['Fit boundaries', '#fit-boundaries', 'Where I can help and where I probably cannot help', 'fit'],
-            ['Investing lens', '#investing', 'Working rules about founders, advice, and the useful context', 'operator'],
-            ['Links', '#links', 'External articles, panels, and company links', 'links'],
-            ['Focus reader', 'reader-mode', 'Quiet the page for focused reading', 'toggle'],
-            ['Reach out', 'mailto:arj.shiv@gmail.com', 'Email me about product, advising, AI in the field, housing, or messy work', 'contact'],
-        ];
-
-        const wrapTextWords = (element) => {
-            if (!element || element.dataset.textWrapped === 'true') {
-                return;
-            }
-            const words = element.textContent.trim().split(/\s+/);
-            element.textContent = '';
-            words.forEach((word, index) => {
-                const wordSpan = document.createElement('span');
-                wordSpan.className = 'text-word';
-                wordSpan.style.setProperty('--word-index', index);
-                wordSpan.textContent = word;
-                element.append(wordSpan);
-                if (index < words.length - 1) {
-                    element.append(' ');
-                }
-            });
-            element.dataset.textWrapped = 'true';
-        };
-
-        const setCommandActive = (nextIndex = 0) => {
-            const buttons = commandButtons();
-            if (!buttons.length) {
-                commandActiveIndex = 0;
-                return;
-            }
-            commandActiveIndex = Math.min(Math.max(nextIndex, 0), buttons.length - 1);
-            buttons.forEach((button, index) => {
-                const active = index === commandActiveIndex;
-                button.dataset.active = String(active);
-                button.setAttribute('aria-selected', String(active));
-            });
-        };
-
-        const renderCommands = (query = '') => {
-            if (!commandResults) {
-                return;
-            }
-            const normalized = query.trim().toLowerCase();
-            const filteredItems = commandItems.filter(([title, href, description, label]) => {
-                const haystack = `${title} ${href} ${description} ${label}`.toLowerCase();
-                return !normalized || haystack.includes(normalized);
-            });
-            commandResults.innerHTML = filteredItems.length ? filteredItems.map(([title, href, description, label], index) => `
-                <button class="command-result" type="button" role="option" id="command-result-${index}" aria-selected="false" data-command-index="${index}" data-command-target="${href}">
-                    <span><strong>${title}</strong><span>${description}</span></span>
-                    <em>${label}</em>
-                </button>
-            `).join('') : '<p class="command-empty" role="status">No matching command yet.</p>';
-            setCommandActive(0);
-        };
-
-        const setCommandPalette = (isOpen) => {
-            if (!commandPalette || !commandLauncher) {
-                return;
-            }
-            commandPalette.hidden = !isOpen;
-            commandLauncher.setAttribute('aria-expanded', String(isOpen));
-            if (isOpen) lastCommandFocus = document.activeElement || commandLauncher;
-            document.body.dataset.commandOpen = String(isOpen);
-            if (isOpen) {
-                renderCommands(commandSearch?.value || '');
-                window.setTimeout(() => commandSearch?.focus(), 0);
-            } else {
-                (lastCommandFocus || commandLauncher).focus();
-            }
-        };
-
-        if (motionAllowed) {
-            document.querySelectorAll('.hero-title, .hero-subtitle, .quote-copy').forEach((element) => {
-                element.classList.add('text-animate-hero');
-                wrapTextWords(element);
-            });
-        }
-
-        document.body.dataset.readerMode = localStorage.getItem('arjun-reader-mode') === 'true' ? 'true' : 'false';
-
-        commandLauncher?.addEventListener('click', () => setCommandPalette(true));
-        commandClose?.addEventListener('click', () => setCommandPalette(false));
-        commandSearch?.addEventListener('input', () => {
-            renderCommands(commandSearch.value);
-            setCommandActive(0);
-        });
-        commandResults?.addEventListener('mousemove', (event) => {
-            const command = event.target.closest('.command-result');
-            if (command?.dataset.commandIndex) setCommandActive(Number(command.dataset.commandIndex));
-        });
-
-        commandSearch?.addEventListener('keydown', (event) => {
-            const buttons = commandButtons();
-            if (!buttons.length) return;
-            if (event.key === 'ArrowDown') {
-                event.preventDefault();
-                setCommandActive(commandActiveIndex + 1);
-            } else if (event.key === 'ArrowUp') {
-                event.preventDefault();
-                setCommandActive(commandActiveIndex - 1);
-            } else if (event.key === 'Home') {
-                event.preventDefault();
-                setCommandActive(0);
-            } else if (event.key === 'End') {
-                event.preventDefault();
-                setCommandActive(buttons.length - 1);
-            } else if (event.key === 'Enter') {
-                event.preventDefault();
-                buttons[commandActiveIndex]?.click();
-            }
-        });
-
-        commandPalette?.addEventListener('click', (event) => {
-            if (event.target === commandPalette) {
-                setCommandPalette(false);
-                return;
-            }
-            const command = event.target.closest('.command-result');
-            if (!command) {
-                return;
-            }
-            const target = command.dataset.commandTarget;
-            setCommandPalette(false);
-            if (target === 'reader-mode') {
-                const nextState = document.body.dataset.readerMode !== 'true';
-                document.body.dataset.readerMode = String(nextState);
-                localStorage.setItem('arjun-reader-mode', String(nextState));
-                commandLauncher.title = nextState ? 'Reader mode on' : 'Open site command palette';
-            } else if (target?.startsWith('ask:')) {
-                document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
-                dispatchAiToolCommand('site-command-ask', target.slice(4));
-            } else if (target?.startsWith('reading:')) {
-                document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
-                dispatchAiToolCommand('site-command-reading', target.slice(8));
-            } else if (target?.startsWith('memo:')) {
-                document.querySelector('#ai-field-tools')?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
-                dispatchAiToolCommand('site-command-memo', target.slice(5));
-            } else if (target?.startsWith('#')) {
-                document.querySelector(target)?.scrollIntoView({ block: 'start', behavior: motionAllowed ? 'smooth' : 'auto' });
-            } else if (target) {
-                window.location.href = target;
-            }
-        });
-
-        const updateScrollProgress = () => {
-            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
-            scrollProgressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
-            topbar.classList.toggle('topbar-scrolled', window.scrollY > 12);
-            backToTop.classList.toggle('visible', window.scrollY > 700);
-        };
-
-        updateScrollProgress();
-        window.addEventListener('scroll', updateScrollProgress, { passive: true });
-        window.addEventListener('resize', updateScrollProgress);
-        const closeNav = () => {
-            document.body.dataset.navOpen = 'false';
-            navToggle.setAttribute('aria-expanded', 'false');
-        };
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 760) closeNav();
-        });
-
-        navToggle.addEventListener('click', () => {
-            const nextState = document.body.dataset.navOpen !== 'true';
-            document.body.dataset.navOpen = String(nextState);
-            navToggle.setAttribute('aria-expanded', String(nextState));
-        });
-
-        navScrim.addEventListener('click', closeNav);
-
-        navLinks.forEach((link) => {
-            link.addEventListener('click', closeNav);
-        });
-
-        window.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-                if (document.body.dataset.commandOpen === 'true') {
-                    setCommandPalette(false);
-                    return;
-                }
-                closeNav();
-            }
-            if (event.key === '/' && !event.metaKey && !event.ctrlKey && !event.altKey && !event.target.matches('input, textarea, select')) {
-                event.preventDefault();
-                setCommandPalette(true);
-            }
-        });
-
-        document.querySelectorAll('.reveal').forEach((element) => {
-            element.classList.add('visible');
-        });
-
-        sections.forEach((section) => {
-            const heading = section.querySelector('.section-heading h2');
-            if (!heading) {
-                return;
-            }
-
-            const anchor = document.createElement('a');
-            anchor.className = 'section-anchor';
-            anchor.href = `#${section.id}`;
-            anchor.setAttribute('aria-label', `Link to ${heading.textContent}`);
-            anchor.textContent = '#';
-            anchor.title = `Copy link to ${heading.textContent}`;
-            heading.append(anchor);
-        });
-
-        const observeNavSections = () => {
-            if (!('IntersectionObserver' in window)) return;
-            const navObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
-                    return;
-                }
-                navLinks.forEach((link) => {
-                    const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
-                    link.toggleAttribute('aria-current', isCurrent);
-                });
-            });
-        }, {
-            rootMargin: '-20% 0px -65% 0px',
-            threshold: 0.12,
-        });
-
-            sections.forEach((section) => navObserver.observe(section));
-        };
-        observeNavSections();
-
-        const signalSteps = [
-            {
-                label: '[STEP 01 / LISTEN]',
-                title: 'Start with what the resident actually said.',
-                copy: 'A useful system starts with ordinary stuff: the broken washer, the pet policy question, the Wi-Fi complaint, the package-room mess, the reason someone may not renew.',
-                metrics: ['Daily texts', 'Real complaints'],
-            },
-            {
-                label: '[STEP 02 / PLACE]',
-                title: 'Put the message in the building context.',
-                copy: 'A pool-hours question, lease clause, late package, or maintenance issue means different things in different buildings. The answer needs the local rules and the resident history.',
-                metrics: ['Local rules', 'Resident history'],
-            },
-            {
-                label: '[STEP 03 / HELP]',
-                title: 'Help the resident without hiding the judgment.',
-                copy: 'AI can prepare the answer, find the policy, draft the response, and flag the weird case. A human still carries judgment where trust and tone matter.',
-                metrics: ['Answer ready', 'Human judgment'],
-            },
-            {
-                label: '[STEP 04 / REPORT]',
-                title: 'Show owners what the team is hearing.',
-                copy: 'Property teams are often underwater, not careless. Owners need to see what residents keep asking for, what is unresolved, and where the team needs help.',
-                metrics: ['Owner visibility', 'Team capacity'],
-            },
-            {
-                label: '[STEP 05 / IMPROVE]',
-                title: 'Use the pattern to make the building better.',
-                copy: 'The goal is not a prettier inbox. It is better renewals, smarter staffing, clearer priorities, and residents who feel like the building knows what is going on.',
-                metrics: ['Retention', 'Better operations'],
-            },
-        ];
-
-        const signalButtons = [...document.querySelectorAll('.signal-stage')];
-        const signalLabel = document.querySelector('#signal-step-label');
-        const signalTitle = document.querySelector('#signal-step-title');
-        const signalCopy = document.querySelector('#signal-step-copy');
-        const signalMetricA = document.querySelector('#signal-metric-a');
-        const signalMetricB = document.querySelector('#signal-metric-b');
-        const signalReadout = document.querySelector('.signal-readout');
-        let signalSwitchTimer;
-
-        const setSignalStep = (stepIndex) => {
-            const step = signalSteps[stepIndex];
-            if (!step || !signalLabel || !signalTitle || !signalCopy || !signalMetricA || !signalMetricB) {
-                return;
-            }
-
-            const writeSignalStep = () => {
-                signalButtons.forEach((button, index) => {
-                    const isActive = index === stepIndex;
-                    button.classList.toggle('is-active', isActive);
-                    button.setAttribute('aria-selected', String(isActive));
-                });
-                signalLabel.textContent = step.label;
-                signalTitle.textContent = step.title;
-                signalCopy.textContent = step.copy;
-                signalMetricA.textContent = step.metrics[0];
-                signalMetricB.textContent = step.metrics[1];
-                signalReadout?.setAttribute('data-current-step', String(stepIndex + 1));
-            };
-
-            if (!motionAllowed || !signalReadout) {
-                writeSignalStep();
-                return;
-            }
-
-            window.clearTimeout(signalSwitchTimer);
-            signalReadout.classList.add('is-switching');
-            signalSwitchTimer = window.setTimeout(() => {
-                writeSignalStep();
-                signalReadout.classList.remove('is-switching');
-            }, 120);
-        };
-
-        signalButtons.forEach((button) => {
-            button.addEventListener('click', () => {
-                setSignalStep(Number(button.dataset.signalStep));
-            });
-            button.addEventListener('keydown', (event) => {
-                if (!event.key.startsWith('Arrow')) return;
-                event.preventDefault();
-                const direction = event.key === 'ArrowLeft' || event.key === 'ArrowUp' ? -1 : 1;
-                const next = (Number(button.dataset.signalStep) + direction + signalButtons.length) % signalButtons.length;
-                signalButtons[next]?.focus();
-                setSignalStep(next);
-            });
-        });
-
-        document.querySelectorAll('.video-poster').forEach((poster) => {
-            poster.addEventListener('click', () => {
-                const iframe = document.createElement('iframe');
-                iframe.className = 'video-frame';
-                iframe.src = `https://www.youtube-nocookie.com/embed/${poster.dataset.youtubeId}?autoplay=1&rel=0`;
-                iframe.title = poster.dataset.videoTitle;
-                iframe.loading = 'eager';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-                iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-                iframe.allowFullscreen = true;
-                poster.replaceWith(iframe);
-            }, { once: true });
-        });
+        const video = document.querySelector('[data-video-id]');
+        video?.addEventListener('click', () => {
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube-nocookie.com/embed/${video.dataset.videoId}?autoplay=1`;
+            iframe.title = video.dataset.videoTitle;
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+            iframe.allowFullscreen = true;
+            video.replaceWith(iframe);
+        }, { once: true });
     </script>
 </body>
 </html>
