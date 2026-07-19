@@ -84,3 +84,4 @@ body { overflow-wrap: break-word; }
 .stat-row p { font-size: 0.86rem; }
 .stat-row p { line-height: 1.5; }
 .principle-list article { padding-block: 1.55rem; }
+.principle-list article { grid-template-columns: 2.25rem 1fr; }
