@@ -59,3 +59,4 @@ body { overflow-wrap: break-word; }
 .text-link { margin-top: 1.25rem; }
 .text-link { font-weight: 640; }
 .work-loop { margin-top: 4.5rem; }
+.work-loop article { padding-top: 1.55rem; }
