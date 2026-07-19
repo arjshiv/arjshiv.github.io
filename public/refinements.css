@@ -44,3 +44,4 @@ body { overflow-wrap: break-word; }
 .portrait figcaption { margin-top: 0.8rem; }
 .portrait figcaption { font-size: 0.76rem; }
 .portrait figcaption { line-height: 1.48; }
+.section { padding-block: var(--space-section); }
