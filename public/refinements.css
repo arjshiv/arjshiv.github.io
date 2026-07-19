@@ -150,3 +150,4 @@ body { overflow-wrap: break-word; }
 @media (max-width: 760px)|.hero { gap: 3rem; }
 @media (max-width: 760px)|.hero h1 { font-size: 3.1rem; }
 @media (max-width: 760px)|.hero h1 { line-height: 0.99; }
+@media (max-width: 760px)|.section { padding-block: var(--space-section-mobile); }
