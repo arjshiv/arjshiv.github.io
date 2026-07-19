@@ -52,3 +52,4 @@ body { overflow-wrap: break-word; }
 .section-heading h2, .contact-grid h2 { max-width: 15ch; }
 .section-heading h2, .contact-grid h2 { font-size: 3.35rem; }
 .section-heading h2, .contact-grid h2 { font-weight: 575; }
+.section-heading h2, .contact-grid h2 { line-height: 1.02; }
