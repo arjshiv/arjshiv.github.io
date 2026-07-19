@@ -28,3 +28,4 @@ body { overflow-wrap: break-word; }
 .hero h1 { letter-spacing: -0.03em; }
 .hero-lede { max-width: 40rem; }
 .hero-lede { margin-top: 2.1rem; }
+.hero-lede { font-size: 1.36rem; }
