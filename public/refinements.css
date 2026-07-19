@@ -146,3 +146,4 @@ body { overflow-wrap: break-word; }
 @media (hover: hover) and (pointer: fine)|.video-facade:hover img { transform: scale(1.018); }
 @media (hover: hover) and (pointer: fine)|.link-list > a:hover strong { transform: translateX(2px); }
 @media (max-width: 760px)|:root { --page: min(100% - 1.75rem, 70rem); }
+@media (max-width: 760px)|.hero { padding-block: 4.25rem 5.25rem; }
