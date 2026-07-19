@@ -19,3 +19,4 @@ body { overflow-wrap: break-word; }
 .site-nav-links a { min-height: 3rem; }
 .hero { padding-block: 6.5rem 7.5rem; }
 @media (min-width: 761px)|.hero { grid-template-columns: minmax(0, 1fr) minmax(13rem, 16.5rem); }
+.hero { gap: clamp(3.5rem, 8vw, 7.5rem); }
