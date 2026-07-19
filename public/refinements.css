@@ -108,3 +108,4 @@ body { overflow-wrap: break-word; }
 .video-shell { outline: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); }
 .video-shell { outline-offset: -1px; }
 .video-copy { right: 0.65rem; }
+.video-copy { bottom: 0.65rem; }
