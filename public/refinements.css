@@ -131,3 +131,4 @@ body { overflow-wrap: break-word; }
 .link-list p { max-width: 48ch; }
 .link-list p { font-size: 0.88rem; }
 .link-list p { line-height: 1.52; }
+@media (min-width: 761px)|.contact-grid { grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.92fr); }
