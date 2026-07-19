@@ -46,3 +46,4 @@ body { overflow-wrap: break-word; }
 .portrait figcaption { line-height: 1.48; }
 .section { padding-block: var(--space-section); }
 .section-label { margin-bottom: 3.5rem; }
+.section-label { letter-spacing: 0.11em; }
