@@ -32,3 +32,4 @@ body { overflow-wrap: break-word; }
 .hero-lede { line-height: 1.46; }
 .hero-lede { letter-spacing: -0.01em; }
 .hero-copy > p:last-of-type { max-width: 40rem; }
+.hero-copy > p:last-of-type { margin-top: 1.45rem; }
