@@ -35,3 +35,4 @@ body { overflow-wrap: break-word; }
 .hero-copy > p:last-of-type { margin-top: 1.45rem; }
 .hero-actions { margin-top: 2.15rem; }
 .hero-actions { gap: 0.75rem; }
+.button { min-height: 3.1rem; }
