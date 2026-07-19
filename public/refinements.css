@@ -148,3 +148,4 @@ body { overflow-wrap: break-word; }
 @media (max-width: 760px)|:root { --page: min(100% - 1.75rem, 70rem); }
 @media (max-width: 760px)|.hero { padding-block: 4.25rem 5.25rem; }
 @media (max-width: 760px)|.hero { gap: 3rem; }
+@media (max-width: 760px)|.hero h1 { font-size: 3.1rem; }
