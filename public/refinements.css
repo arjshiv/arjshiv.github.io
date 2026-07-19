@@ -93,3 +93,4 @@ body { overflow-wrap: break-word; }
 .principle-list p { font-size: 0.95rem; }
 .principle-list p { line-height: 1.58; }
 .media-grid { margin-top: 4.75rem; }
+@media (min-width: 761px)|.media-grid { grid-template-columns: minmax(20rem, 0.95fr) minmax(0, 1.05fr); }
