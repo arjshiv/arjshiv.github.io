@@ -68,3 +68,4 @@ body { overflow-wrap: break-word; }
 .timeline { margin-top: 4.5rem; }
 @media (min-width: 761px)|.timeline article { grid-template-columns: 7rem minmax(13rem, 0.72fr) minmax(0, 1.28fr); }
 .timeline article { gap: clamp(1.75rem, 5vw, 4.25rem); }
+.timeline article { padding-block: 1.55rem; }
