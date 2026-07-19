@@ -57,3 +57,4 @@ body { overflow-wrap: break-word; }
 .prose p { line-height: 1.7; }
 .prose p + p { margin-top: 1.15rem; }
 .text-link { margin-top: 1.25rem; }
+.text-link { font-weight: 640; }
