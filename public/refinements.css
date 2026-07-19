@@ -66,3 +66,4 @@ body { overflow-wrap: break-word; }
 .work-loop p { font-size: 0.93rem; }
 .work-loop p { line-height: 1.56; }
 .timeline { margin-top: 4.5rem; }
+@media (min-width: 761px)|.timeline article { grid-template-columns: 7rem minmax(13rem, 0.72fr) minmax(0, 1.28fr); }
