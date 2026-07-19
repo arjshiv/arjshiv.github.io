@@ -72,3 +72,4 @@ body { overflow-wrap: break-word; }
 .timeline h3 { font-size: 1.08rem; }
 .timeline h3 { line-height: 1.28; }
 .timeline article > p:last-child { max-width: 52ch; }
+.timeline article > p:last-child { font-size: 0.94rem; }
