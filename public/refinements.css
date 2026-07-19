@@ -29,3 +29,4 @@ body { overflow-wrap: break-word; }
 .hero-lede { max-width: 40rem; }
 .hero-lede { margin-top: 2.1rem; }
 .hero-lede { font-size: 1.36rem; }
+.hero-lede { line-height: 1.46; }
