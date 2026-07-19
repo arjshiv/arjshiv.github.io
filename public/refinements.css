@@ -3,3 +3,4 @@
 :root { --muted: #506d69; }
 :root { --accent: #08766f; }
 :root { --rule: color-mix(in srgb, var(--ink) 16%, transparent); }
+:root { --rule-strong: color-mix(in srgb, var(--ink) 28%, transparent); }
