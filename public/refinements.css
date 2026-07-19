@@ -49,3 +49,4 @@ body { overflow-wrap: break-word; }
 .section-label { letter-spacing: 0.11em; }
 @media (min-width: 761px)|.section-grid { grid-template-columns: minmax(16rem, 0.78fr) minmax(0, 1.22fr); }
 .section-grid { gap: clamp(3.5rem, 8vw, 7.5rem); }
+.section-heading h2, .contact-grid h2 { max-width: 15ch; }
