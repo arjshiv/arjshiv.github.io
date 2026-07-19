@@ -42,3 +42,4 @@ body { overflow-wrap: break-word; }
 .portrait-frame { border-radius: var(--radius-small); }
 .portrait figcaption { max-width: 28ch; }
 .portrait figcaption { margin-top: 0.8rem; }
+.portrait figcaption { font-size: 0.76rem; }
