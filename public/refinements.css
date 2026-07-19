@@ -21,3 +21,4 @@ body { overflow-wrap: break-word; }
 @media (min-width: 761px)|.hero { grid-template-columns: minmax(0, 1fr) minmax(13rem, 16.5rem); }
 .hero { gap: clamp(3.5rem, 8vw, 7.5rem); }
 .hero h1 { max-width: 14ch; }
+.hero h1 { margin-top: 1.15rem; }
