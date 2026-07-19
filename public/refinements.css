@@ -117,3 +117,4 @@ body { overflow-wrap: break-word; }
 .video-copy small { letter-spacing: 0.07em; }
 .video-copy strong { max-width: 30ch; }
 .video-copy strong { font-size: 1rem; }
+.video-copy strong { line-height: 1.34; }
