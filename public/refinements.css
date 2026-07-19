@@ -114,3 +114,4 @@ body { overflow-wrap: break-word; }
 .video-copy { gap: 0.4rem; }
 .video-copy { background: rgba(18, 52, 50, 0.94); }
 .video-copy small { font-size: 0.64rem; }
+.video-copy small { letter-spacing: 0.07em; }
