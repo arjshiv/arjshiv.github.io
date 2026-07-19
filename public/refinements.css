@@ -139,3 +139,4 @@ body { overflow-wrap: break-word; }
 .contact-fit > p { line-height: 1.62; }
 .contact-links { margin-top: 1.9rem; }
 .contact-links { gap: 0.65rem 1.35rem; }
+.site-footer { padding-block: 1.75rem 2.25rem; }
