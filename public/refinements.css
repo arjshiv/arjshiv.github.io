@@ -109,3 +109,4 @@ body { overflow-wrap: break-word; }
 .video-shell { outline-offset: -1px; }
 .video-copy { right: 0.65rem; }
 .video-copy { bottom: 0.65rem; }
+.video-copy { left: 0.65rem; }
