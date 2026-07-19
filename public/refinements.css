@@ -56,3 +56,4 @@ body { overflow-wrap: break-word; }
 .section-heading h2, .contact-grid h2 { letter-spacing: -0.025em; }
 .prose p { line-height: 1.7; }
 .prose p + p { margin-top: 1.15rem; }
+.text-link { margin-top: 1.25rem; }
