@@ -157,3 +157,4 @@ body { overflow-wrap: break-word; }
 @media (max-width: 760px)|.media-grid { gap: 3.25rem; }
 @media (max-width: 480px)|.hero h1 { font-size: 2.85rem; }
 @media (max-width: 480px)|.video-list { gap: 1rem; }
+@media (max-width: 480px)|.link-list > a { padding-block: 1.2rem; }
