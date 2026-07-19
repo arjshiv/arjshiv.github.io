@@ -154,3 +154,4 @@ body { overflow-wrap: break-word; }
 @media (max-width: 760px)|.section-label { margin-bottom: 2.75rem; }
 @media (max-width: 760px)|.section-heading h2, .contact-grid h2 { font-size: 2.7rem; }
 @media (max-width: 760px)|.section-heading h2, .contact-grid h2 { line-height: 1.04; }
+@media (max-width: 760px)|.media-grid { gap: 3.25rem; }
