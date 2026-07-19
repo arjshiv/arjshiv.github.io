@@ -134,3 +134,4 @@ body { overflow-wrap: break-word; }
 @media (min-width: 761px)|.contact-grid { grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.92fr); }
 .contact-grid { gap: clamp(3.5rem, 8vw, 7.5rem); }
 .contact-grid > div:first-child > p { max-width: 36rem; }
+.contact-grid > div:first-child > p { margin-top: 1.6rem; }
