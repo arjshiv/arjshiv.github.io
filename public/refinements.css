@@ -79,3 +79,4 @@ body { overflow-wrap: break-word; }
 .stat-row article { padding-bottom: 1.85rem; }
 .stat-row strong { font-size: 2.1rem; }
 .stat-row strong { font-weight: 590; }
+.stat-row strong { letter-spacing: -0.025em; }
