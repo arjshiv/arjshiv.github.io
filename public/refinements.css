@@ -40,3 +40,4 @@ body { overflow-wrap: break-word; }
 .button { border-radius: var(--radius-control); }
 .button { font-size: 0.8rem; }
 .portrait-frame { border-radius: var(--radius-small); }
+.portrait figcaption { max-width: 28ch; }
