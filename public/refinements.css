@@ -47,3 +47,4 @@ body { overflow-wrap: break-word; }
 .section { padding-block: var(--space-section); }
 .section-label { margin-bottom: 3.5rem; }
 .section-label { letter-spacing: 0.11em; }
+@media (min-width: 761px)|.section-grid { grid-template-columns: minmax(16rem, 0.78fr) minmax(0, 1.22fr); }
