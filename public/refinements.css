@@ -60,3 +60,4 @@ body { overflow-wrap: break-word; }
 .text-link { font-weight: 640; }
 .work-loop { margin-top: 4.5rem; }
 .work-loop article { padding-top: 1.55rem; }
+.work-loop article { padding-bottom: 1.7rem; }
