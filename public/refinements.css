@@ -122,3 +122,4 @@ body { overflow-wrap: break-word; }
 .play-label { font-weight: 620; }
 .link-list > a { padding-block: 1.12rem; }
 @media (min-width: 761px)|.link-list > a { grid-template-columns: 3.35rem minmax(9rem, 0.78fr) minmax(0, 1.22fr); }
+.link-list > a { gap: 1.1rem; }
