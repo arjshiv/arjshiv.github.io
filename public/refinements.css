@@ -11,3 +11,4 @@
 :root { --radius-small: 0.25rem; }
 :root { --radius-control: 0.4rem; }
 body { line-height: 1.68; }
+body { overflow-wrap: break-word; }
