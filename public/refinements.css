@@ -102,3 +102,4 @@ body { overflow-wrap: break-word; }
 .archive-heading { gap: 1.25rem; }
 .archive-heading p { font-size: 0.96rem; }
 .archive-heading p { font-weight: 680; }
+.archive-heading span { font-family: "Geist Mono", ui-monospace, monospace; }
