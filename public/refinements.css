@@ -76,3 +76,4 @@ body { overflow-wrap: break-word; }
 .timeline article > p:last-child { line-height: 1.58; }
 .stat-row { margin-top: 4.5rem; }
 .stat-row article { padding-top: 1.65rem; }
+.stat-row article { padding-bottom: 1.85rem; }
