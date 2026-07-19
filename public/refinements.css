@@ -144,3 +144,4 @@ body { overflow-wrap: break-word; }
 :focus-visible { outline-width: 3px; }
 :focus-visible { outline-offset: 4px; }
 @media (hover: hover) and (pointer: fine)|.video-facade:hover img { transform: scale(1.018); }
+@media (hover: hover) and (pointer: fine)|.link-list > a:hover strong { transform: translateX(2px); }
