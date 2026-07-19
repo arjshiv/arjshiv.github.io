@@ -15,3 +15,4 @@ body { overflow-wrap: break-word; }
 .site-header { background: rgba(244, 250, 248, 0.96); }
 .header-inner { min-height: 4.5rem; }
 .wordmark span { font-weight: 680; }
+.site-nav-links { font-size: 0.73rem; }
