@@ -82,3 +82,4 @@ body { overflow-wrap: break-word; }
 .stat-row strong { letter-spacing: -0.025em; }
 .stat-row p { margin-top: 0.9rem; }
 .stat-row p { font-size: 0.86rem; }
+.stat-row p { line-height: 1.5; }
