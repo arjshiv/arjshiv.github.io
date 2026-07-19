@@ -98,3 +98,4 @@ body { overflow-wrap: break-word; }
 .talks-column { gap: 1.15rem; }
 .video-list { gap: 0.85rem; }
 .archive-heading { min-height: 2.25rem; }
+.archive-heading { padding-bottom: 0.85rem; }
