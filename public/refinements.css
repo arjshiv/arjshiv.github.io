@@ -125,3 +125,4 @@ body { overflow-wrap: break-word; }
 .link-list > a { gap: 1.1rem; }
 .link-list > a > span { font-size: 0.67rem; }
 .link-list > a > span { line-height: 1.5; }
+.link-list strong { font-size: 0.96rem; }
