@@ -151,3 +151,4 @@ body { overflow-wrap: break-word; }
 @media (max-width: 760px)|.hero h1 { font-size: 3.1rem; }
 @media (max-width: 760px)|.hero h1 { line-height: 0.99; }
 @media (max-width: 760px)|.section { padding-block: var(--space-section-mobile); }
+@media (max-width: 760px)|.section-label { margin-bottom: 2.75rem; }
