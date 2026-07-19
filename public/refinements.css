@@ -38,3 +38,4 @@ body { overflow-wrap: break-word; }
 .button { min-height: 3.1rem; }
 .button { padding: 0.78rem 1.05rem 0.78rem 1.15rem; }
 .button { border-radius: var(--radius-control); }
+.button { font-size: 0.8rem; }
