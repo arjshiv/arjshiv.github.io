@@ -141,3 +141,4 @@ body { overflow-wrap: break-word; }
 .contact-links { gap: 0.65rem 1.35rem; }
 .site-footer { padding-block: 1.75rem 2.25rem; }
 .site-footer { font-size: 0.67rem; }
+:focus-visible { outline-width: 3px; }
