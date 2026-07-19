@@ -26,3 +26,4 @@ body { overflow-wrap: break-word; }
 .hero h1 { font-weight: 590; }
 .hero h1 { line-height: 0.97; }
 .hero h1 { letter-spacing: -0.03em; }
+.hero-lede { max-width: 40rem; }
