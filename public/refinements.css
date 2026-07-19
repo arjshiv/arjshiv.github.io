@@ -5,3 +5,4 @@
 :root { --rule: color-mix(in srgb, var(--ink) 16%, transparent); }
 :root { --rule-strong: color-mix(in srgb, var(--ink) 28%, transparent); }
 :root { --page: min(100% - 3rem, 70rem); }
+:root { --measure: 66ch; }
