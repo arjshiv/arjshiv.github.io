@@ -127,3 +127,4 @@ body { overflow-wrap: break-word; }
 .link-list > a > span { line-height: 1.5; }
 .link-list strong { font-size: 0.96rem; }
 .link-list strong { font-weight: 650; }
+.link-list strong { line-height: 1.38; }
