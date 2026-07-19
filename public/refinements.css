@@ -39,3 +39,4 @@ body { overflow-wrap: break-word; }
 .button { padding: 0.78rem 1.05rem 0.78rem 1.15rem; }
 .button { border-radius: var(--radius-control); }
 .button { font-size: 0.8rem; }
+.portrait-frame { border-radius: var(--radius-small); }
