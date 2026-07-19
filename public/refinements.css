@@ -105,3 +105,4 @@ body { overflow-wrap: break-word; }
 .archive-heading span { font-family: "Geist Mono", ui-monospace, monospace; }
 .archive-heading span { font-size: 0.66rem; }
 .video-shell { border-radius: var(--radius-small); }
+.video-shell { outline: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); }
