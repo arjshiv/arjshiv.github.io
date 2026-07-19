@@ -135,3 +135,4 @@ body { overflow-wrap: break-word; }
 .contact-grid { gap: clamp(3.5rem, 8vw, 7.5rem); }
 .contact-grid > div:first-child > p { max-width: 36rem; }
 .contact-grid > div:first-child > p { margin-top: 1.6rem; }
+.contact-grid > div:first-child > p { line-height: 1.65; }
