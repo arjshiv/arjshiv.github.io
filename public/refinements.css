@@ -13,3 +13,4 @@
 body { line-height: 1.68; }
 body { overflow-wrap: break-word; }
 .site-header { background: rgba(244, 250, 248, 0.96); }
+.header-inner { min-height: 4.5rem; }
