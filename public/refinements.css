@@ -30,3 +30,4 @@ body { overflow-wrap: break-word; }
 .hero-lede { margin-top: 2.1rem; }
 .hero-lede { font-size: 1.36rem; }
 .hero-lede { line-height: 1.46; }
+.hero-lede { letter-spacing: -0.01em; }
