@@ -111,3 +111,4 @@ body { overflow-wrap: break-word; }
 .video-copy { bottom: 0.65rem; }
 .video-copy { left: 0.65rem; }
 .video-copy { padding: 0.95rem 1rem; }
+.video-copy { gap: 0.4rem; }
