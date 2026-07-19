@@ -137,3 +137,4 @@ body { overflow-wrap: break-word; }
 .contact-grid > div:first-child > p { margin-top: 1.6rem; }
 .contact-grid > div:first-child > p { line-height: 1.65; }
 .contact-fit > p { line-height: 1.62; }
+.contact-links { margin-top: 1.9rem; }
