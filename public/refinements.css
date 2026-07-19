@@ -99,3 +99,4 @@ body { overflow-wrap: break-word; }
 .video-list { gap: 0.85rem; }
 .archive-heading { min-height: 2.25rem; }
 .archive-heading { padding-bottom: 0.85rem; }
+.archive-heading { gap: 1.25rem; }
