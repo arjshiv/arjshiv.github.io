@@ -6,7 +6,7 @@
   --rule: color-mix(in srgb, var(--ink) 15%, transparent);
   --rule-strong: color-mix(in srgb, var(--ink) 27%, transparent);
   --page: min(100% - 3rem, 71rem);
-  --measure: 66ch;
+  --measure: 64ch;
   --space-section: 7.5rem;
   --space-section-mobile: 4.25rem;
   --radius-small: 0.25rem;
