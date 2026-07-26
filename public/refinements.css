@@ -1,6 +1,6 @@
 :root {
   --paper: #f3f9f7;
-  --ink: #123432;
+  --ink: #113331;
   --muted: #506d69;
   --accent: #08766f;
   --rule: color-mix(in srgb, var(--ink) 16%, transparent);
