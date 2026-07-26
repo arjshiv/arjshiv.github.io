@@ -57,7 +57,7 @@ body {
   margin-top: 2rem;
   font-size: 1.34rem;
   line-height: 1.48;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .hero-copy > p:last-of-type {
