@@ -72,7 +72,7 @@ body {
 
 .button {
   min-height: 3rem;
-  padding: 0.78rem 1.05rem 0.78rem 1.15rem;
+  padding: 0.76rem 1rem 0.76rem 1.1rem;
   border-radius: var(--radius-control);
   font-size: 0.8rem;
 }
