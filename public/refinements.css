@@ -349,7 +349,7 @@ body {
 
 @media (max-width: 760px) {
   :root {
-    --page: min(100% - 1.75rem, 70rem);
+    --page: min(100% - 1.75rem, 71rem);
   }
 
   .hero {
