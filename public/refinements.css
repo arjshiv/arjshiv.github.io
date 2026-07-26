@@ -283,7 +283,7 @@ body {
 }
 
 .contact-grid {
-  gap: clamp(3.5rem, 8vw, 7.5rem);
+  gap: clamp(3.5rem, 8vw, 7.25rem);
 }
 
 .contact-grid > div:first-child > p {
