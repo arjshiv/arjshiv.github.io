@@ -98,7 +98,7 @@ body {
 }
 
 .section-grid {
-  gap: clamp(3.5rem, 8vw, 7.5rem);
+  gap: clamp(3.5rem, 8vw, 7.25rem);
 }
 
 .section-heading h2, .contact-grid h2 {
