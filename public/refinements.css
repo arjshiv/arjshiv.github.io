@@ -8,7 +8,7 @@
   --page: min(100% - 3rem, 71rem);
   --measure: 64ch;
   --space-section: 7.25rem;
-  --space-section-mobile: 4.25rem;
+  --space-section-mobile: 4.125rem;
   --radius-small: 0.25rem;
   --radius-control: 0.4rem;
 }
