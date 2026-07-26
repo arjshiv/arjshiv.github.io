@@ -201,7 +201,7 @@ body {
 }
 
 .media-grid {
-  margin-top: 4.75rem;
+  margin-top: 4.5rem;
   gap: clamp(2.5rem, 6vw, 5.25rem);
 }
 
