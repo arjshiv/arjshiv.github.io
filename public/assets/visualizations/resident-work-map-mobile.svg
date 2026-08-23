@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">From a resident message to owned work</title>
+  <desc id="desc">Resident messages join the lease, policy, unit, and history before a property team chooses and owns the next action.</desc>
+  <defs>
+    <filter id="m-lift" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#113331" flood-opacity="0.10"/></filter>
+    <pattern id="m-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#113331" stroke-opacity="0.05"/></pattern>
+  </defs>
+  <rect width="640" height="900" rx="20" fill="#e8f5f2"/><rect width="640" height="900" rx="20" fill="url(#m-grid)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="40" y="50" fill="#08746d" font-size="16" font-weight="700" letter-spacing="2">WHAT THE RESIDENT SAID</text>
+    <g filter="url(#m-lift)" fill="#f8fcfb" stroke="#9acdc7">
+      <rect x="40" y="78" width="260" height="64" rx="8"/><rect x="340" y="78" width="260" height="64" rx="8"/>
+      <rect x="40" y="164" width="260" height="64" rx="8"/><rect x="340" y="164" width="260" height="64" rx="8"/>
+    </g>
+    <g fill="#113331" font-size="20" font-weight="650">
+      <text x="66" y="118">Text message</text><text x="366" y="118">Support ticket</text>
+      <text x="66" y="204">Resident review</text><text x="366" y="204">Phone call</text>
+    </g>
+    <path d="M170 242C170 288 250 286 276 326M470 242C470 288 390 286 364 326" fill="none" stroke="#72bcb5" stroke-width="3"/>
+    <text x="40" y="294" fill="#08746d" font-size="16" font-weight="700" letter-spacing="2">WHAT THE TEAM KNOWS</text>
+    <g transform="translate(92 326)" filter="url(#m-lift)">
+      <path d="M24 0H432L448 16V286L432 302H24L8 286V16Z" fill="#b8e4dd" stroke="#08746d" stroke-width="2"/>
+      <text x="228" y="44" text-anchor="middle" fill="#113331" font-size="20" font-weight="750">CONTEXT</text>
+      <g fill="#f8fcfb"><rect x="40" y="70" width="376" height="44" rx="6"/><rect x="40" y="126" width="376" height="44" rx="6"/><rect x="40" y="182" width="376" height="44" rx="6"/><rect x="40" y="238" width="376" height="44" rx="6"/></g>
+      <g fill="#113331" font-size="19" font-weight="650"><text x="62" y="99">Message history</text><text x="62" y="155">Lease and unit</text><text x="62" y="211">Building policy</text><text x="62" y="267">What was tried</text></g>
+    </g>
+    <path d="M320 636V688" stroke="#72bcb5" stroke-width="3"/>
+    <text x="40" y="680" fill="#08746d" font-size="16" font-weight="700" letter-spacing="2">WHAT HAPPENS NEXT</text>
+    <g filter="url(#m-lift)"><path d="M40 710H210V774H58L40 756Z" fill="#c8eddf" stroke="#7ab89f"/><path d="M235 710H405V774H253L235 756Z" fill="#c7e8ef" stroke="#78b6c4"/><path d="M430 710H600V774H448L430 756Z" fill="#dcebbf" stroke="#9dbb68"/></g>
+    <g fill="#113331" font-size="21" font-weight="700"><text x="72" y="750">Answer</text><text x="267" y="750">Repair</text><text x="462" y="750">Change</text></g>
+    <path d="M80 830H560" stroke="#113331" stroke-opacity="0.22" stroke-dasharray="4 8"/><circle cx="80" cy="830" r="7" fill="#08746d"/><circle cx="560" cy="830" r="7" fill="#83d9a8"/>
+    <text x="320" y="865" text-anchor="middle" fill="#4e6b67" font-size="18">A named person owns the next step</text>
+  </g>
+</svg>
