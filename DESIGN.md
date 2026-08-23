@@ -48,6 +48,14 @@ Choose type sizes at deliberate breakpoints. Do not scale type continuously with
 - Nested radii must be concentric.
 - Do not restore hard offset shadows or thick retro frames.
 
+## Visualizations
+
+- A diagram must explain work that the surrounding copy already names.
+- Use flat depth, connected structures, and cool pastel fields. Do not add decorative particles or a generic 3D background.
+- Keep diagrams in external SVG files so they add almost no DOM and remain useful without JavaScript.
+- Wide and mobile diagrams need separate compositions when shrinking would make labels unreadable.
+- Motion is optional feedback on fine pointers. The information must be complete while still.
+
 ## Interaction
 
 - The page must remain useful with JavaScript disabled.
@@ -73,7 +81,7 @@ Choose type sizes at deliberate breakpoints. Do not scale type continuously with
 
 - Six main sections
 - At most 300 DOM nodes
-- At most 10,000px page height at 390px viewport width
+- At most 12,500px page height at 390px viewport width
 - No command palette
 - No tool lab
 - No scroll-triggered reveal system
