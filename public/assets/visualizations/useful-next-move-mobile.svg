@@ -7,7 +7,7 @@
   </defs>
   <rect width="640" height="900" rx="20" fill="#e8f5f2"/><rect width="640" height="900" rx="20" fill="url(#u-grid)"/>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="40" y="52" fill="#08746d" font-size="16" font-weight="700" letter-spacing="2">SUPPORTIVE CANDOR</text>
+    <text x="40" y="52" fill="#08746d" font-size="16" font-weight="700" letter-spacing="2">WHEN SOMETHING BREAKS</text>
     <g fill="none" stroke="#79bdb5" stroke-width="3"><path d="M320 180V252"/><path d="M320 346V418"/><path d="M320 512V584"/><path d="M320 678V730"/></g>
     <g filter="url(#u-lift)">
       <path d="M40 96L58 78H582L600 96V164L582 182H58L40 164Z" fill="#f8fcfb" stroke="#9acdc7"/>
@@ -18,6 +18,6 @@
     <g font-size="16" font-weight="700" letter-spacing="1.5"><text x="72" y="120" fill="#08746d">01</text><text x="72" y="286" fill="#08746d">02</text><text x="72" y="452" fill="#08746d">03</text><text x="72" y="618" fill="#08746d">04</text></g>
     <g fill="#113331" font-size="24" font-weight="720"><text x="72" y="154">What happened?</text><text x="72" y="320">What do we know?</text><text x="72" y="486">Who owns it?</text><text x="72" y="652">What changes next?</text></g>
     <g transform="translate(208 718)" filter="url(#u-lift)"><path d="M112 0L224 44L112 88L0 44Z" fill="#c9eee0" stroke="#08746d" stroke-width="2"/><path d="M0 44L112 88V146L0 102Z" fill="#9ed9bf" stroke="#08746d" stroke-width="2"/><path d="M224 44L112 88V146L224 102Z" fill="#79c4a4" stroke="#08746d" stroke-width="2"/><text x="112" y="107" text-anchor="middle" fill="#113331" font-size="18" font-weight="750">NEXT USEFUL MOVE</text></g>
-    <text x="320" y="884" text-anchor="middle" fill="#4e6b67" font-size="17">Take the pain seriously. Make the work specific.</text>
+    <text x="320" y="884" text-anchor="middle" fill="#4e6b67" font-size="17">Take the problem seriously. Make the next move specific.</text>
   </g>
 </svg>

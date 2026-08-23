@@ -54,11 +54,11 @@
   </g>
 
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="60" y="58" fill="#08746d" font-size="15" font-weight="700" letter-spacing="2">THE WORK CHANGED</text>
-    <text x="60" y="88" fill="#113331" font-size="28" font-weight="720">The habit stayed useful.</text>
+    <text x="60" y="58" fill="#08746d" font-size="15" font-weight="700" letter-spacing="2">PHYSICS TO HOUSING</text>
+    <text x="60" y="88" fill="#113331" font-size="28" font-weight="720">I kept asking the same question.</text>
     <g transform="translate(470 438)">
       <rect width="260" height="54" rx="27" fill="#f8fcfb" stroke="#9acdc7"/>
-      <text x="130" y="34" text-anchor="middle" fill="#113331" font-size="17" font-weight="700">Make the real job easier</text>
+      <text x="130" y="34" text-anchor="middle" fill="#113331" font-size="17" font-weight="700">Did the real job get easier?</text>
     </g>
     <path d="M211 411H989" stroke="#113331" stroke-opacity="0.18"/>
     <circle cx="211" cy="411" r="5" fill="#08746d"/>
