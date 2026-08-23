@@ -476,3 +476,12 @@ body {
     padding-block: 1.2rem;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .story-visual,
+  .story-visual img,
+  .story-visual:hover img {
+    transform: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
