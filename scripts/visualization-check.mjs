@@ -9,6 +9,7 @@ const names = [
 ];
 const failures = [];
 const html = fs.readFileSync('public/index.html', 'utf8');
+const css = fs.readFileSync('public/refinements.css', 'utf8');
 
 for (const name of names) {
   for (const suffix of ['', '-mobile']) {
@@ -31,6 +32,9 @@ for (const name of names) {
 
 if ((html.match(/class="story-visual"/g) || []).length !== names.length) {
   failures.push(`Expected ${names.length} story visual figures.`);
+}
+if (!/@media \(prefers-reduced-motion: reduce\)[\s\S]*?\.story-visual[\s\S]*?transform: none/.test(css)) {
+  failures.push('Story visualizations do not provide a reduced-motion override.');
 }
 
 if (failures.length) {
