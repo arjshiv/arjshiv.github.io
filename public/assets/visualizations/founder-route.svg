@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">A route from physics to ResiDesk</title>
+  <desc id="desc">Four connected stations show how measurement in physics led to trusted tools at BlackRock, outcomes in the product at Climb Credit, and customer conversations at ResiDesk.</desc>
+  <defs>
+    <filter id="route-lift" x="-25%" y="-35%" width="150%" height="190%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#113331" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="route-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#113331" opacity="0.085"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="560" rx="22" fill="#eaf6f3"/>
+  <rect width="1200" height="560" rx="22" fill="url(#route-grid)"/>
+
+  <path d="M112 354C240 160 364 446 494 252C616 70 734 420 856 230C932 112 1024 150 1092 224" fill="none" stroke="#9dcec8" stroke-width="22" stroke-linecap="round"/>
+  <path d="M112 354C240 160 364 446 494 252C616 70 734 420 856 230C932 112 1024 150 1092 224" fill="none" stroke="#08746d" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 11"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" filter="url(#route-lift)">
+    <g transform="translate(62 270)">
+      <path d="M48 0L128 34L80 68L0 34Z" fill="#d5efe9" stroke="#72bcb5"/>
+      <path d="M0 34L80 68V112L0 78Z" fill="#9ed8cf" stroke="#72bcb5"/>
+      <path d="M128 34L80 68V112L128 78Z" fill="#83c8bd" stroke="#72bcb5"/>
+      <circle cx="64" cy="34" r="14" fill="#113331"/>
+      <text x="64" y="143" text-anchor="middle" fill="#113331" font-size="17" font-weight="750">PHYSICS</text>
+      <text x="64" y="164" text-anchor="middle" fill="#4e6b67" font-size="14">MEASURE</text>
+    </g>
+
+    <g transform="translate(360 240)">
+      <path d="M48 0L128 34L80 68L0 34Z" fill="#d2edf2" stroke="#76b8c4"/>
+      <path d="M0 34L80 68V112L0 78Z" fill="#a3d3dc" stroke="#76b8c4"/>
+      <path d="M128 34L80 68V112L128 78Z" fill="#83bfca" stroke="#76b8c4"/>
+      <rect x="51" y="21" width="26" height="26" rx="5" fill="#113331"/>
+      <text x="64" y="143" text-anchor="middle" fill="#113331" font-size="17" font-weight="750">BLACKROCK</text>
+      <text x="64" y="164" text-anchor="middle" fill="#4e6b67" font-size="14">EARN TRUST</text>
+    </g>
+
+    <g transform="translate(688 250)">
+      <path d="M48 0L128 34L80 68L0 34Z" fill="#dfefc9" stroke="#9cb970"/>
+      <path d="M0 34L80 68V112L0 78Z" fill="#c0dc98" stroke="#9cb970"/>
+      <path d="M128 34L80 68V112L128 78Z" fill="#a6c77b" stroke="#9cb970"/>
+      <path d="M49 42L64 20L79 42Z" fill="#113331"/>
+      <text x="64" y="143" text-anchor="middle" fill="#113331" font-size="17" font-weight="750">CLIMB</text>
+      <text x="64" y="164" text-anchor="middle" fill="#4e6b67" font-size="14">MEASURE OUTCOMES</text>
+    </g>
+
+    <g transform="translate(996 142)">
+      <path d="M48 0L128 34L80 68L0 34Z" fill="#c9eee0" stroke="#6eb695" stroke-width="2"/>
+      <path d="M0 34L80 68V112L0 78Z" fill="#9ed9bf" stroke="#6eb695" stroke-width="2"/>
+      <path d="M128 34L80 68V112L128 78Z" fill="#79c4a4" stroke="#6eb695" stroke-width="2"/>
+      <path d="M47 27H81V48H61L50 57L53 48H47Z" fill="#113331"/>
+      <text x="64" y="143" text-anchor="middle" fill="#113331" font-size="17" font-weight="750">RESIDESK</text>
+      <text x="64" y="164" text-anchor="middle" fill="#4e6b67" font-size="14">LISTEN CLOSELY</text>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="58" fill="#08746d" font-size="15" font-weight="700" letter-spacing="2">THE WORK CHANGED</text>
+    <text x="60" y="88" fill="#113331" font-size="28" font-weight="720">The habit stayed useful.</text>
+    <g transform="translate(470 438)">
+      <rect width="260" height="54" rx="27" fill="#f8fcfb" stroke="#9acdc7"/>
+      <text x="130" y="34" text-anchor="middle" fill="#113331" font-size="17" font-weight="700">Make the real job easier</text>
+    </g>
+    <path d="M211 411H989" stroke="#113331" stroke-opacity="0.18"/>
+    <circle cx="211" cy="411" r="5" fill="#08746d"/>
+    <circle cx="989" cy="411" r="5" fill="#83d9a8"/>
+  </g>
+</svg>
