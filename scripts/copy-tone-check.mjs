@@ -74,6 +74,13 @@ const banned = [
   'galaxy brained',
   'funnel',
   'pathway',
+  'messy work around customers',
+  'the industries changed',
+  'the way I work did not',
+  'the best conversations start',
+  'at its core',
+  'this matters because',
+  "here's the thing",
 ];
 
 const found = banned.filter((phrase) => {
