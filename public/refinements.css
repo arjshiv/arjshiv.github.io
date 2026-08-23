@@ -30,6 +30,11 @@ body {
   font-weight: 680;
 }
 
+.wordmark {
+  min-height: 2.9rem;
+  align-content: center;
+}
+
 .site-nav-links {
   font-size: 0.72rem;
 }
