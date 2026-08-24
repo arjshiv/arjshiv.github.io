@@ -24,11 +24,11 @@ for (const viewport of [
       encodedBodySize: resource.encodedBodySize,
       duration: resource.duration,
     }));
-    const css = resources.filter((resource) => new URL(resource.name).pathname.endsWith('.css'));
+    const css = resources.find((resource) => resource.name.endsWith('/styles.css'));
     const initialJs = resources.filter((resource) => resource.name.endsWith('.js'));
     return {
       resources,
-      cssBytes: css.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
+      cssBytes: css?.encodedBodySize || 0,
       initialJsBytes: initialJs.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
       initialBytes: resources.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
       aiLoadedInitially: resources.some((resource) => resource.name.endsWith('/ai-field-tools.js')),

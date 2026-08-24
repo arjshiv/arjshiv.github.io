@@ -28,11 +28,6 @@ const desktop = await page.evaluate(() => ({
   height: document.documentElement.scrollHeight,
   overflow: document.documentElement.scrollWidth - window.innerWidth,
   heading: document.querySelector('h1')?.textContent || '',
-  visualCount: document.querySelectorAll('.story-visual').length,
-  visualAlts: [...document.querySelectorAll('.story-visual img')].every((image) => image.alt.trim().length > 24),
-  mobileVisualSources: [...document.querySelectorAll('.story-visual source')].every((source) => (
-    source.media === '(max-width: 640px)' && source.srcset.includes('-mobile.svg')
-  )),
   commandPalette: Boolean(document.querySelector('.command-launcher, #site-command-palette')),
   toolLab: Boolean(document.querySelector('#ai-field-tools')),
   preservedAnchors: ['work', 'residesk-loop', 'background', 'links', 'site-contact', 'faq']
@@ -90,9 +85,6 @@ if (desktop.nodes > 350) failures.push('DOM contains ' + desktop.nodes + ' nodes
 if (desktop.height > 12000) failures.push('Desktop page is ' + desktop.height + 'px tall, expected at most 12000px.');
 if (desktop.overflow !== 0) failures.push('Desktop overflow is ' + desktop.overflow + 'px.');
 if (!desktop.heading.includes('helps teams listen to customers')) failures.push('Hero heading did not render.');
-if (desktop.visualCount !== 3) failures.push('Found ' + desktop.visualCount + ' story visualizations, expected 3.');
-if (!desktop.visualAlts) failures.push('One or more story visualizations lacks useful alternative text.');
-if (!desktop.mobileVisualSources) failures.push('One or more story visualizations lacks a mobile source.');
 if (desktop.commandPalette) failures.push('Old command palette remains in the page.');
 if (desktop.toolLab) failures.push('Old tool lab remains in the page.');
 if (!desktop.preservedAnchors) failures.push('One or more legacy anchors are missing.');
@@ -103,7 +95,7 @@ if (loadingState !== 'loading') failures.push('Video facade did not enter its lo
 if (!iframe?.includes('youtube-nocookie.com/embed/LIsSQ_8ZZIw')) failures.push('Video facade did not create the privacy-enhanced embed.');
 if (currentWorkLocations !== 1) failures.push('Section observer did not retain exactly one current location.');
 if (mobile.overflow !== 0) failures.push('Mobile overflow is ' + mobile.overflow + 'px.');
-if (mobile.height > 12500) failures.push('Mobile page is ' + mobile.height + 'px tall, expected at most 12500px.');
+if (mobile.height > 10000) failures.push('Mobile page is ' + mobile.height + 'px tall, expected at most 10000px.');
 if (!noScriptText.includes('Most of my time goes into ResiDesk')) failures.push('Core story is not readable with JavaScript disabled.');
 if (reducedTransforms.some((transform) => transform !== 'none')) failures.push('Reduced motion did not remove movement transforms.');
 if (errors.length) failures.push('Console/page errors: ' + errors.join(' | '));

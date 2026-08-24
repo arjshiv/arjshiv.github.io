@@ -30,11 +30,6 @@ body {
   font-weight: 680;
 }
 
-.wordmark {
-  min-height: 2.9rem;
-  align-content: center;
-}
-
 .site-nav-links {
   font-size: 0.72rem;
 }
@@ -125,65 +120,6 @@ body {
 .text-link {
   margin-top: 1.2rem;
   font-weight: 640;
-}
-
-.story-visual {
-  margin: 4.35rem 0 0;
-  overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
-  border-radius: var(--radius-control);
-  background: #e8f5f2;
-  box-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--ink) 7%, transparent);
-  contain: paint;
-  transition: border-color 160ms var(--ease-out), box-shadow 160ms var(--ease-out);
-}
-
-@supports (overflow: clip) {
-  .story-visual {
-    overflow: clip;
-  }
-}
-
-.story-visual picture,
-.story-visual img {
-  display: block;
-  width: 100%;
-}
-
-.story-visual img {
-  height: auto;
-  transition: transform 180ms var(--ease-out);
-}
-
-.story-visual figcaption {
-  padding: 1.15rem 1.3rem 1.25rem;
-  display: grid;
-  grid-template-columns: minmax(11rem, 0.72fr) minmax(0, 1.28fr);
-  gap: 1.5rem;
-  align-items: baseline;
-  border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
-  background: #f3f9f7;
-}
-
-.story-visual figcaption span {
-  color: var(--accent);
-  font-family: "Geist Mono", ui-monospace, monospace;
-  font-size: 0.7rem;
-  font-weight: 680;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.story-visual figcaption p {
-  max-width: 58ch;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.5;
-}
-
-.story-visual + .work-loop,
-.story-visual + .timeline {
-  margin-top: 2.6rem;
 }
 
 .work-loop {
@@ -402,15 +338,6 @@ body {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .story-visual:hover {
-    border-color: color-mix(in srgb, var(--accent) 46%, transparent);
-    box-shadow: 0 1.2rem 3rem color-mix(in srgb, var(--ink) 10%, transparent);
-  }
-
-  .story-visual:hover img {
-    transform: scale(1.006);
-  }
-
   .video-facade:hover img {
     transform: scale(1.018);
   }
@@ -448,21 +375,6 @@ body {
     line-height: 1.04;
   }
 
-  .story-visual {
-    margin-top: 3rem;
-  }
-
-  .story-visual figcaption {
-    grid-template-columns: 1fr;
-    gap: 0.55rem;
-    padding: 1rem 1.05rem 1.1rem;
-  }
-
-  .story-visual + .work-loop,
-  .story-visual + .timeline {
-    margin-top: 2.25rem;
-  }
-
   .media-grid {
     gap: 3.25rem;
   }
@@ -479,14 +391,5 @@ body {
 
   .link-list > a {
     padding-block: 1.2rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .story-visual,
-  .story-visual img,
-  .story-visual:hover img {
-    transform: none !important;
-    transition-duration: 0.01ms !important;
   }
 }
