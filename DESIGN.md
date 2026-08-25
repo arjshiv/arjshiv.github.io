@@ -73,7 +73,7 @@ Choose type sizes at deliberate breakpoints. Do not scale type continuously with
 
 - Six main sections
 - At most 300 DOM nodes
-- At most 10,000px page height at 390px viewport width
+- At most 12,000px page height at 390px viewport width
 - No command palette
 - No tool lab
 - No scroll-triggered reveal system

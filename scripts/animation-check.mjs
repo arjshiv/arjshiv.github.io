@@ -38,7 +38,7 @@ if (titleTransformAfter === titleTransformBefore || titleTransformAfter === 'non
   failures.push('Article title does not move on fine-pointer hover.');
 }
 
-const externalLink = page.locator('.text-link').filter({ hasText: 'Read the Substack' });
+const externalLink = page.locator('.text-link').filter({ hasText: "Read what I've been writing" });
 const externalArrow = externalLink.locator('.direction-arrow');
 await externalLink.hover();
 await page.waitForTimeout(180);
@@ -120,7 +120,7 @@ if (heldSpace.transitionDuration !== '0s') failures.push(`Held Space retains a $
 const reducedPage = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 await reducedPage.emulateMedia({ reducedMotion: 'reduce' });
 await reducedPage.goto(target, { waitUntil: 'networkidle' });
-const reducedLink = reducedPage.locator('.text-link').filter({ hasText: 'Read the Substack' });
+const reducedLink = reducedPage.locator('.text-link').filter({ hasText: "Read what I've been writing" });
 const reducedArrow = reducedLink.locator('.direction-arrow');
 await reducedLink.hover();
 await reducedPage.waitForTimeout(180);

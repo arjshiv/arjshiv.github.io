@@ -74,6 +74,10 @@ const banned = [
   'galaxy brained',
   'funnel',
   'pathway',
+  'thought leadership',
+  'operational intelligence',
+  'durable layer',
+  'strategic narrative',
 ];
 
 const found = banned.filter((phrase) => {
