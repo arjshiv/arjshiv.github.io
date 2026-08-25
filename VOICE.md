@@ -55,6 +55,8 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 - Founder energy should feel like taking responsibility for messy reality, not announcing that the site has founder energy.
 
+- A manual correction is interesting when it changes how the next run works. Tell that story through the mistake, the fix, and what the tool learned.
+
 ## Avoid
 
 - Third-person summaries of Arjun's own views.
