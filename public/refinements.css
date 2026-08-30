@@ -235,7 +235,8 @@ a {
 }
 
 .work-loop {
-  margin-top: 4.35rem;
+  margin-top: 4rem;
+  border-color: var(--hairline);
 }
 
 .work-loop article {
