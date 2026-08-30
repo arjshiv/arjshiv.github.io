@@ -167,6 +167,11 @@ a {
   border-radius: var(--radius-small);
 }
 
+.portrait img {
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
 .portrait figcaption {
   max-width: 27ch;
   margin-top: 0.75rem;
