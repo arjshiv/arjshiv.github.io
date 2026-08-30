@@ -79,7 +79,7 @@ a {
 }
 
 .hero {
-  padding-block: 6.25rem 7.25rem;
+  padding-block: 7rem 7.5rem;
   gap: clamp(3.5rem, 8vw, 7.25rem);
 }
 
