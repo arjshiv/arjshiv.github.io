@@ -117,7 +117,9 @@ a {
 
 .hero-copy > p:last-of-type {
   max-width: 40rem;
-  margin-top: 1.4rem;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .hero-actions {
