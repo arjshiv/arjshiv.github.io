@@ -435,8 +435,9 @@ a {
 }
 
 .play-label {
+  color: var(--muted);
   font-size: 0.74rem;
-  font-weight: 620;
+  font-weight: 500;
 }
 
 .link-list > a {
