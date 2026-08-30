@@ -80,6 +80,7 @@ a {
 
 .hero {
   padding-block: 7rem 7.5rem;
+  align-items: center;
   gap: clamp(3.5rem, 8vw, 7.25rem);
 }
 
