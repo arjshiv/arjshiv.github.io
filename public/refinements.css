@@ -374,9 +374,10 @@ a {
 }
 
 .archive-heading {
-  min-height: 2.2rem;
-  padding-bottom: 0.8rem;
+  min-height: 2.5rem;
+  padding-bottom: 0.9rem;
   gap: 1.25rem;
+  border-bottom-color: var(--hairline-strong);
 }
 
 .archive-heading p {
