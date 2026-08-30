@@ -305,6 +305,10 @@ a {
   padding-bottom: 2rem;
 }
 
+.stat-row article + article {
+  border-left-color: var(--hairline);
+}
+
 .stat-row strong {
   font-size: 2.1rem;
   font-weight: 590;
