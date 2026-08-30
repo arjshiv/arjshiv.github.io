@@ -148,6 +148,13 @@ a {
   box-shadow: none;
 }
 
+.button.secondary {
+  color: var(--muted);
+  background: transparent;
+  border-color: var(--hairline);
+  box-shadow: none;
+}
+
 .portrait-frame {
   border-radius: var(--radius-small);
 }
