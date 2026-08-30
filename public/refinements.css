@@ -329,6 +329,10 @@ a {
   text-underline-offset: 0.2rem;
 }
 
+.principle-list {
+  border-top-color: var(--hairline);
+}
+
 .principle-list article {
   padding-block: 1.55rem;
   grid-template-columns: 2.25rem 1fr;
