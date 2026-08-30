@@ -141,6 +141,13 @@ a {
   transition-timing-function: ease-out;
 }
 
+.button.primary {
+  color: var(--heading);
+  background: var(--surface-raised);
+  border-color: var(--hairline-strong);
+  box-shadow: none;
+}
+
 .portrait-frame {
   border-radius: var(--radius-small);
 }
