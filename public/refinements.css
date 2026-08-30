@@ -39,6 +39,7 @@ body {
 
 .site-header {
   background: rgba(0, 0, 0, 0.96);
+  border-bottom-color: var(--hairline);
 }
 
 .header-inner {
