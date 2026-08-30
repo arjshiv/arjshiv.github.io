@@ -24,7 +24,7 @@
     "check:copy": "node scripts/copy-tone-check.mjs",
     "check:layout": "node scripts/layout-check.mjs",
     "check:motion": "node scripts/animation-check.mjs",
-    "check:all": "bun run check:copy && bun run check:layout && bun run check:contrast && bun run check:motion && bun run check:performance && bun run check:ai-tools",
+    "check:all": "bun run check:design && bun run check:copy && bun run check:layout && bun run check:contrast && bun run check:motion && bun run check:performance && bun run check:ai-tools",
     "firebase:login": "firebase login",
     "firebase:init": "firebase init",
     "firebase:deploy": "firebase deploy"
