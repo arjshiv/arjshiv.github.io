@@ -261,8 +261,9 @@ a {
 }
 
 .work-loop p {
-  font-size: 0.93rem;
-  line-height: 1.56;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
 }
 
 .timeline {
