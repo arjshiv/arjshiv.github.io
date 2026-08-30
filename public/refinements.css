@@ -187,8 +187,10 @@ a {
 }
 
 .section-label {
-  margin-bottom: 3.35rem;
-  letter-spacing: 0.11em;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0;
 }
 
 .section-grid {
