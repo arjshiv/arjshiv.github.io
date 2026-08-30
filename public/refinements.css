@@ -393,9 +393,10 @@ a {
 }
 
 .video-shell {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
   border-radius: var(--radius-small);
-  outline: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
-  outline-offset: -1px;
+  outline: 0;
 }
 
 .video-copy {
