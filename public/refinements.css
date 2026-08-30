@@ -388,6 +388,7 @@ a {
 
 .archive-heading span {
   font-family: "Geist Mono", ui-monospace, monospace;
+  color: var(--quiet);
   font-size: 0.66rem;
 }
 
