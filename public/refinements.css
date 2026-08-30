@@ -337,6 +337,7 @@ a {
   padding-block: 1.75rem;
   grid-template-columns: 2.5rem 1fr;
   gap: 1.25rem;
+  border-bottom-color: var(--hairline);
 }
 
 .principle-list h3 {
