@@ -28,6 +28,28 @@ A working voice for the site.
 
 Any new section should pass this plain question: would I say this to an owner, operator, founder, or candidate without sounding like I am recapping myself?
 
+## Story Map
+
+The visible story now follows the facts instead of announcing a theme:
+
+1. An iPhone compass in a Cornell lab made software feel useful.
+2. BlackRock rejected Arjun, hired him six months later, and taught him that a clever demo can still lose to a spreadsheet.
+3. Climb made graduate outcomes part of lending and made the cost of a bad product decision harder to ignore.
+4. ResiDesk starts with what residents already say and follows the work through the answer, repair, renewal, or decision.
+5. The operating principles come after the story because they were learned from it.
+
+Do not replace these scenes with a summary of what they supposedly prove.
+
+## Plain Writing Standard
+
+- Ask who cares and what changed. If a paragraph cannot answer either question, cut it.
+- Make each claim as strong as the facts allow. Do not make it vague merely to make it safe.
+- Prefer one odd, true detail over a polished generalization.
+- Let confidence come from selection. Publish the sentence only when it earns its certainty.
+- Read the page aloud. Rewrite any sentence that catches, drags, or sounds like a line written for a founder website.
+- Keep enough texture that removing a sentence removes information, not just emphasis.
+- Do not imitate another writer's surface style. Use their discipline: plain words, clean causality, useful surprise, and ruthless cutting.
+
 ## Founder Narrative Test
 
 - The story should feel earned, not curated: physics made measurement feel natural, BlackRock made stakes concrete, Climb made outcomes impossible to ignore, and ResiDesk is where those lessons meet a customer problem that repeats every day.

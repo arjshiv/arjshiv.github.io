@@ -84,7 +84,7 @@ if (desktop.sections !== 6) failures.push('Found ' + desktop.sections + ' main s
 if (desktop.nodes > 350) failures.push('DOM contains ' + desktop.nodes + ' nodes, expected at most 350.');
 if (desktop.height > 12000) failures.push('Desktop page is ' + desktop.height + 'px tall, expected at most 12000px.');
 if (desktop.overflow !== 0) failures.push('Desktop overflow is ' + desktop.overflow + 'px.');
-if (!desktop.heading.includes('software with the people who have to use it')) failures.push('Hero heading did not render.');
+if (!desktop.heading.includes("person doing the work usually knows what's wrong")) failures.push('Hero heading did not render.');
 if (desktop.commandPalette) failures.push('Old command palette remains in the page.');
 if (desktop.toolLab) failures.push('Old tool lab remains in the page.');
 if (!desktop.preservedAnchors) failures.push('One or more legacy anchors are missing.');
@@ -96,7 +96,7 @@ if (!iframe?.includes('youtube-nocookie.com/embed/LIsSQ_8ZZIw')) failures.push('
 if (currentWorkLocations !== 1) failures.push('Section observer did not retain exactly one current location.');
 if (mobile.overflow !== 0) failures.push('Mobile overflow is ' + mobile.overflow + 'px.');
 if (mobile.height > 12000) failures.push('Mobile page is ' + mobile.height + 'px tall, expected at most 12000px.');
-if (!noScriptText.includes('Right now, that means building ResiDesk with property teams')) failures.push('Core story is not readable with JavaScript disabled.');
+if (!noScriptText.includes('A resident should not have to explain the same problem three times')) failures.push('Core story is not readable with JavaScript disabled.');
 if (reducedTransforms.some((transform) => transform !== 'none')) failures.push('Reduced motion did not remove movement transforms.');
 if (errors.length) failures.push('Console/page errors: ' + errors.join(' | '));
 
