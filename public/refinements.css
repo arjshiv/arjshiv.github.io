@@ -484,7 +484,13 @@ a {
 }
 
 .contact-fit > p {
+  color: var(--muted);
   line-height: 1.62;
+}
+
+.contact-fit strong {
+  color: var(--heading);
+  font-weight: 540;
 }
 
 .contact-links {
