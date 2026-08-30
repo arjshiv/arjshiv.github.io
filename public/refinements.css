@@ -499,8 +499,10 @@ a {
 }
 
 .site-footer {
-  padding-block: 1.65rem 2.1rem;
-  font-size: 0.67rem;
+  padding-block: 2rem 2.5rem;
+  color: var(--quiet);
+  border-top-color: var(--hairline);
+  font-size: 0.68rem;
 }
 
 :focus-visible {
