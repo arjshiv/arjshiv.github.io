@@ -421,8 +421,9 @@ a {
 }
 
 .video-copy small {
+  color: var(--accent-strong);
   font-size: 0.64rem;
-  letter-spacing: 0.07em;
+  letter-spacing: 0;
 }
 
 .video-copy strong {
