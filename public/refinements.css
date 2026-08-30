@@ -290,8 +290,9 @@ a {
 
 .timeline article > p:last-child {
   max-width: 52ch;
-  font-size: 0.94rem;
-  line-height: 1.58;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.62;
 }
 
 .stat-row {
