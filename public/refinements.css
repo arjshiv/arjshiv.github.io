@@ -74,6 +74,11 @@ a {
   text-transform: none;
 }
 
+.section-label p {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
 .site-nav a[aria-current="location"] {
   color: var(--heading);
 }
