@@ -64,6 +64,7 @@ const forbiddenAdditions = [
   [/(?:linear|radial|conic)-gradient\s*\(/i, 'The design contract does not use gradients.'],
   [/box-shadow\s*:(?!\s*none)/i, 'The design contract does not use shadows for elevation.'],
   [/backdrop-filter\s*:/i, 'The design contract does not use glass effects.'],
+  [/letter-spacing\s*:\s*-\d/i, 'The design contract uses zero letter spacing.'],
 ];
 
 for (const line of addedLines) {
@@ -84,6 +85,17 @@ if (styles.includes('refero-resend-contract')) {
 
   if (!html.includes('<meta name="theme-color" content="#000000"')) {
     failures.push('The page theme-color must match the black canvas.');
+  }
+
+  for (const requirement of [
+    'background: var(--canvas)',
+    'border: 1px solid var(--hairline)',
+    'box-shadow: none',
+    'font-family: Georgia, "Times New Roman", serif',
+  ]) {
+    if (!styles.includes(requirement)) {
+      failures.push(`Production CSS is missing the adapted design rule: ${requirement}.`);
+    }
   }
 }
 
