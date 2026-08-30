@@ -66,6 +66,14 @@ a {
   text-underline-offset: 0.4rem;
 }
 
+.eyebrow,
+.section-label {
+  color: var(--accent);
+  font-weight: 520;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .site-nav a[aria-current="location"] {
   color: var(--heading);
 }
