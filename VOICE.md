@@ -13,17 +13,6 @@ A working voice for the site.
 - Explain AI by what it helps someone finish, not by what the model can theoretically promise.
 - Keep the skepticism. A demo is not adoption. A chat answer is not a finished job.
 
-## Useful Phrases
-
-- "If you have customers, understanding them is business 101."
-- "Give me the actual work, the stakes, and the person who has to live with the outcome."
-- "The model is one part. The context and handoff are usually the hard part."
-- "If nobody owns what happens next, it is probably theater."
-- "I care about whether someone still uses it when nobody is watching."
-- "I believe the pain. I still want to separate pain from root cause."
-- "Good catch. Let's make this easier to notice next time."
-- "Tell me what broke, what we know, who owns it, and what changes next."
-
 ## Current Copy Test
 
 Any new section should pass this plain question: would I say this to an owner, operator, founder, or candidate without sounding like I am recapping myself?
@@ -32,11 +21,10 @@ Any new section should pass this plain question: would I say this to an owner, o
 
 The visible story now follows the facts instead of announcing a theme:
 
-1. An iPhone compass in a Cornell lab made software feel useful.
-2. BlackRock rejected Arjun, hired him six months later, and taught him that a clever demo can still lose to a spreadsheet.
-3. Climb made graduate outcomes part of lending and made the cost of a bad product decision harder to ignore.
-4. ResiDesk starts with what residents already say and follows the work through the answer, repair, renewal, or decision.
-5. The operating principles come after the story because they were learned from it.
+1. An iPhone magnetometer cut the time needed to check a Cornell lab for magnetic noise roughly in half.
+2. BlackRock rejected Arjun, hired him six months later, and later put him on an advisor product after three hackathon wins.
+3. At Climb, Arjun ran product, engineering, and data while annual loan volume grew from roughly $1 million to $300 million.
+4. Arjun co-founded ResiDesk and spends most of his time on product and data, alongside customer calls, sales, hiring, and bugs.
 
 Do not replace these scenes with a summary of what they supposedly prove.
 
@@ -48,16 +36,13 @@ Do not replace these scenes with a summary of what they supposedly prove.
 - Let confidence come from selection. Publish the sentence only when it earns its certainty.
 - Read the page aloud. Rewrite any sentence that catches, drags, or sounds like a line written for a founder website.
 - Keep enough texture that removing a sentence removes information, not just emphasis.
-- Do not imitate another writer's surface style. Use their discipline: plain words, clean causality, useful surprise, and ruthless cutting.
+- Do not imitate another writer's surface style. Use plain words, keep the chronology clear, and cut sentences that only explain the sentence before them.
 
-## Founder Narrative Test
+## Story Test
 
-- The story should feel earned, not curated: physics made measurement feel natural, BlackRock made stakes concrete, Climb made outcomes impossible to ignore, and ResiDesk is where those lessons meet a customer problem that repeats every day.
-- The reader should feel relentless resourcefulness in the choices: find the messy real job, build the tool, measure what changed, and keep going until the work is easier for the team.
-- The copy should make cause and effect obvious. Avoid "theme" language when "I learned X, so I built Y" would be clearer.
-- Founder energy is not a title. It is ownership, urgency, taste, and willingness to do the unglamorous parts of making the company work.
-
-- Use "I learned this when..." only when the next sentence names the actual room, customer, or decision.
+- Say what happened in order. Do not add a moral after every anecdote.
+- Keep details that could only belong to this story: the iPhone magnetometer, the Delaware job, the spreadsheet, graduate outcomes, resident texts.
+- Describe responsibility through the work: product, data, customers, sales, hiring, and bugs.
 
 - When a sentence sounds smart but vague, rewrite it with a resident, owner, operator, ticket, call, lease, renewal, or product choice.
 
@@ -65,19 +50,14 @@ Do not replace these scenes with a summary of what they supposedly prove.
 
 - Say co-founder by describing ownership, data, product, sales, people, and the unglamorous startup work instead of forcing a title.
 
-- Keep candor supportive: believe the pain, separate scope from panic, and point to the next useful action.
+- Keep candor supportive: take the complaint seriously, check how often it happens, and say what happens next.
 
 - Avoid implying the reader is entering a funnel. This is a founder site, not a manufactured path.
 
 - If a number appears, the sentence should still read like a human explaining what happened, not a lawyer filing exhibits.
 
-- When the page talks about AI labs or GTM, keep the claim in the work: customer context, rollout, evals, handoff, and adoption.
-
-- Use Paul Graham energy by making cause and effect obvious: I noticed a problem, did the unglamorous thing, learned the constraint, and kept going.
-
-- Founder energy should feel like taking responsibility for messy reality, not announcing that the site has founder energy.
-
-- A manual correction is interesting when it changes how the next run works. Tell that story through the mistake, the fix, and what the tool learned.
+- When the page talks about AI, name the information, tool, test, or handoff involved.
+- When a person corrects the software, say what was wrong and what changed.
 
 ## Avoid
 
@@ -85,4 +65,6 @@ Do not replace these scenes with a summary of what they supposedly prove.
 - Phrases like "what shows up across the talks" or "the thread across."
 - Abstract nouns stacked together: workflow orchestration, operating cadence, resident signal language.
 - Copy that sounds like an analyst wrote a recap after watching the videos.
-- Research-binder language on the visible site. Use "what happened," "what I learned," "what changed," and "where it led" before words like evidence, proof, receipts, or packet. The site should feel like a founder explaining what he has learned, not a binder.
+- Research-binder language on the visible site: evidence, proof, receipts, packet, thesis, or narrative.
+- Stock constructions such as "the useful part," "the hard part," "what matters," "not X but Y," and "more than just."
+- Sentences that explain why the previous sentence is impressive, important, human, or founder-like.

@@ -78,6 +78,13 @@ const banned = [
   'operational intelligence',
   'durable layer',
   'strategic narrative',
+  'the useful part',
+  'what mattered was',
+  'the hard part was',
+  'the point is',
+  'the lesson was',
+  'the real work',
+  'this is why',
 ];
 
 const found = banned.filter((phrase) => {
