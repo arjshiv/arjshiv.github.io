@@ -340,6 +340,11 @@ a {
   border-bottom-color: var(--hairline);
 }
 
+.principle-list article > span {
+  color: var(--accent);
+  font-size: 0.7rem;
+}
+
 .principle-list h3 {
   font-size: 1.18rem;
   line-height: 1.3;
