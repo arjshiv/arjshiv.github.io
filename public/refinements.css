@@ -183,6 +183,7 @@ a {
 .section {
   padding-block: var(--space-section);
   scroll-margin-top: 4rem;
+  border-top-color: var(--hairline);
 }
 
 .section-label {
