@@ -74,6 +74,10 @@ a {
   background: var(--accent);
 }
 
+.wide {
+  width: min(100%, 71rem);
+}
+
 .hero {
   padding-block: 6.25rem 7.25rem;
   gap: clamp(3.5rem, 8vw, 7.25rem);
