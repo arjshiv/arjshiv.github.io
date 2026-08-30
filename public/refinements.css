@@ -441,8 +441,10 @@ a {
 }
 
 .link-list > a {
-  padding-block: 1.08rem;
+  padding-block: 1.2rem;
   gap: 1.1rem;
+  color: var(--text);
+  border-bottom-color: var(--hairline);
 }
 
 .link-list > a > span {
