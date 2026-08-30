@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -eu
+
+changed_files="$(git diff --cached --name-only --diff-filter=ACMR)"
+
+if printf '%s\n' "$changed_files" | grep -Eq '^(DESIGN\.md|public/.*\.(css|html)|scripts/design-system-check\.mjs)$'; then
+  printf '%s\n' 'Checking frontend changes against DESIGN.md...'
+  bun run check:design
+fi
