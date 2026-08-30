@@ -448,6 +448,7 @@ a {
 }
 
 .link-list > a > span {
+  color: var(--quiet);
   font-size: 0.67rem;
   line-height: 1.5;
 }
