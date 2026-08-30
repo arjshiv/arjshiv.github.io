@@ -568,17 +568,39 @@ a {
 
 @media (max-width: 760px) {
   :root {
-    --page: min(100% - 1.75rem, 71rem);
+    --page: min(100% - 2rem, 75rem);
+  }
+
+  .header-inner {
+    min-height: 3.75rem;
+  }
+
+  .site-nav-links {
+    gap: 0.75rem;
   }
 
   .hero {
-    padding-block: 4.25rem 5.25rem;
-    gap: 3rem;
+    padding-block: 4.5rem 5.5rem;
+    gap: 2.75rem;
   }
 
   .hero h1 {
-    font-size: 3.1rem;
-    line-height: 0.99;
+    max-width: 12ch;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  .hero-lede {
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+
+  .portrait {
+    width: min(100%, 24rem);
+  }
+
+  .portrait-frame {
+    aspect-ratio: 16 / 10;
   }
 
   .section {
@@ -586,22 +608,23 @@ a {
   }
 
   .section-label {
-    margin-bottom: 2.75rem;
+    margin-bottom: 2.25rem;
   }
 
   .section-heading h2, .contact-grid h2 {
-    font-size: 2.65rem;
-    line-height: 1.04;
+    max-width: 18ch;
+    font-size: 2.5rem;
+    line-height: 1.1;
   }
 
   .media-grid {
-    gap: 3.25rem;
+    gap: 3.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2.85rem;
+    font-size: 3rem;
   }
 
   .video-list {
