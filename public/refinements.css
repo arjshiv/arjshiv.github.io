@@ -361,8 +361,8 @@ a {
 }
 
 .media-grid {
-  margin-top: 4.5rem;
-  gap: clamp(2.5rem, 6vw, 5rem);
+  margin-top: 4.25rem;
+  gap: clamp(3rem, 6vw, 5.5rem);
 }
 
 .talks-column {
