@@ -47,7 +47,8 @@ body {
 }
 
 .wordmark span {
-  font-weight: 680;
+  color: var(--heading);
+  font-weight: 560;
 }
 
 .site-nav-links {
