@@ -353,7 +353,7 @@ a {
 
 @media (min-width: 761px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(13rem, 16.5rem);
+    grid-template-columns: minmax(0, 1.2fr) minmax(14rem, 0.8fr);
   }
 
   .section-grid {
