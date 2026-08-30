@@ -399,6 +399,11 @@ a {
   outline: 0;
 }
 
+.video-facade {
+  color: var(--heading);
+  background: var(--surface);
+}
+
 .video-copy {
   right: 0.65rem;
   bottom: 0.65rem;
