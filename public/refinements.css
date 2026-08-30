@@ -79,6 +79,10 @@ a {
   font-size: 0.72rem;
 }
 
+.section-label span {
+  color: var(--quiet);
+}
+
 .site-nav a[aria-current="location"] {
   color: var(--heading);
 }
