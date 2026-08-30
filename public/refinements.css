@@ -334,9 +334,9 @@ a {
 }
 
 .principle-list article {
-  padding-block: 1.55rem;
-  grid-template-columns: 2.25rem 1fr;
-  gap: 1.15rem;
+  padding-block: 1.75rem;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1.25rem;
 }
 
 .principle-list h3 {
