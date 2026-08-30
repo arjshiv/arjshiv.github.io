@@ -58,6 +58,8 @@ body {
 
 .site-nav-links a {
   min-height: 2.9rem;
+  color: var(--muted);
+  text-underline-offset: 0.4rem;
 }
 
 .hero {
