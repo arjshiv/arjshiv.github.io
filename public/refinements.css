@@ -471,9 +471,15 @@ a {
   gap: clamp(3.5rem, 8vw, 7.25rem);
 }
 
+.contact-grid h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
 .contact-grid > div:first-child > p {
   max-width: 36rem;
   margin-top: 1.6rem;
+  color: var(--muted);
   line-height: 1.65;
 }
 
