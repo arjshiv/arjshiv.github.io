@@ -227,7 +227,10 @@ a {
 
 .text-link {
   margin-top: 1.2rem;
-  font-weight: 640;
+  color: var(--accent-strong);
+  font-weight: 540;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.3rem;
 }
 
 .work-loop {
