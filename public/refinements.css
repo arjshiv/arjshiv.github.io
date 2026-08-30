@@ -454,8 +454,9 @@ a {
 }
 
 .link-list strong {
+  color: var(--heading);
   font-size: 0.96rem;
-  font-weight: 650;
+  font-weight: 520;
   line-height: 1.38;
 }
 
