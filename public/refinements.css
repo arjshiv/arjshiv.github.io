@@ -32,6 +32,11 @@ body {
   overflow-wrap: break-word;
 }
 
+::selection {
+  color: var(--canvas);
+  background: var(--accent-strong);
+}
+
 .site-header {
   background: rgba(243, 249, 247, 0.97);
 }
