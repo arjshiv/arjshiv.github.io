@@ -52,6 +52,7 @@ body {
 }
 
 .site-nav-links {
+  gap: 1.25rem;
   font-size: 0.72rem;
 }
 
