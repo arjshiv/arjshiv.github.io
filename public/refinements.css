@@ -66,6 +66,10 @@ body {
   color: var(--heading);
 }
 
+.site-nav a::after {
+  background: var(--accent);
+}
+
 .hero {
   padding-block: 6.25rem 7.25rem;
   gap: clamp(3.5rem, 8vw, 7.25rem);
