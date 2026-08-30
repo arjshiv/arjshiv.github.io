@@ -416,6 +416,14 @@ a {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .button.primary:hover,
+  .button.secondary:hover {
+    color: var(--accent-strong);
+    background: var(--surface);
+    border-color: var(--text);
+    box-shadow: none;
+  }
+
   .video-facade:hover img {
     transform: scale(1.018);
   }
