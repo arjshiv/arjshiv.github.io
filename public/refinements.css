@@ -296,7 +296,8 @@ a {
 }
 
 .stat-row {
-  margin-top: 4.35rem;
+  margin-top: 4rem;
+  border-color: var(--hairline-strong);
 }
 
 .stat-row article {
