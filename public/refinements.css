@@ -109,8 +109,9 @@ a {
 .hero-lede {
   max-width: 39rem;
   margin-top: 2rem;
-  font-size: 1.34rem;
-  line-height: 1.48;
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1.56;
   letter-spacing: 0;
 }
 
