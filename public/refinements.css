@@ -130,8 +130,15 @@ a {
 .button {
   min-height: 3rem;
   padding: 0.76rem 1rem 0.76rem 1.1rem;
+  color: var(--heading);
+  background: transparent;
+  border: 1px solid var(--hairline-strong);
   border-radius: var(--radius-control);
+  box-shadow: none;
   font-size: 0.79rem;
+  transition-property: color, background-color, border-color, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
 }
 
 .portrait-frame {
