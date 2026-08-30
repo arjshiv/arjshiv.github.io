@@ -428,7 +428,9 @@ a {
 
 .video-copy strong {
   max-width: 30ch;
+  color: var(--heading);
   font-size: 1rem;
+  font-weight: 520;
   line-height: 1.34;
 }
 
