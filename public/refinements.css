@@ -462,8 +462,9 @@ a {
 
 .link-list p {
   max-width: 48ch;
-  font-size: 0.88rem;
-  line-height: 1.52;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.58;
 }
 
 .contact-grid {
