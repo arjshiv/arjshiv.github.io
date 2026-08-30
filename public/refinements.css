@@ -404,6 +404,10 @@ a {
   background: var(--surface);
 }
 
+.video-facade img {
+  outline: 0;
+}
+
 .video-copy {
   right: 0.65rem;
   bottom: 0.65rem;
