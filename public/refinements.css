@@ -155,6 +155,11 @@ a {
   box-shadow: none;
 }
 
+.button:active,
+.video-facade:active {
+  transform: scale(0.98);
+}
+
 .portrait-frame {
   border-radius: var(--radius-small);
 }
