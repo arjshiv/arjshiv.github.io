@@ -354,9 +354,10 @@ a {
 
 .principle-list p {
   max-width: 52ch;
-  margin-top: 0.45rem;
-  font-size: 0.95rem;
-  line-height: 1.58;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.62;
 }
 
 .media-grid {
