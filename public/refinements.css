@@ -272,7 +272,8 @@ a {
 
 .timeline article {
   gap: clamp(1.75rem, 5vw, 4.25rem);
-  padding-block: 1.55rem;
+  padding-block: 1.75rem;
+  border-color: var(--hairline);
 }
 
 .timeline h3 {
