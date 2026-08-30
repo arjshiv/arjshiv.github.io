@@ -523,6 +523,18 @@ a {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .site-nav a:hover,
+  .text-link:hover,
+  .link-list > a:hover strong,
+  .stat-row a:hover {
+    color: var(--accent-strong);
+  }
+
+  .text-link:hover,
+  .stat-row a:hover {
+    text-decoration-color: var(--heading);
+  }
+
   .button.primary:hover,
   .button.secondary:hover {
     color: var(--accent-strong);
