@@ -276,6 +276,11 @@ a {
   border-color: var(--hairline);
 }
 
+.timeline-meta {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
 .timeline h3 {
   font-size: 1.08rem;
   line-height: 1.28;
