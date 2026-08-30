@@ -381,8 +381,9 @@ a {
 }
 
 .archive-heading p {
+  color: var(--heading);
   font-size: 0.96rem;
-  font-weight: 680;
+  font-weight: 540;
 }
 
 .archive-heading span {
