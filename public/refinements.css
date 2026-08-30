@@ -323,6 +323,12 @@ a {
   line-height: 1.58;
 }
 
+.stat-row a {
+  color: var(--accent-strong);
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.2rem;
+}
+
 .principle-list article {
   padding-block: 1.55rem;
   grid-template-columns: 2.25rem 1fr;
