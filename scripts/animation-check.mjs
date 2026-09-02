@@ -20,6 +20,16 @@ await stubVideo(page);
 await page.goto(target, { waitUntil: 'networkidle' });
 await page.waitForTimeout(250);
 
+const supportsScrollTimeline = await page.evaluate(() => CSS.supports('animation-timeline: scroll()'));
+if (supportsScrollTimeline) {
+  const before = await page.locator('.hero-plane-front').evaluate((node) => getComputedStyle(node).transform);
+  await page.evaluate(() => scrollTo(0, 420));
+  await page.waitForTimeout(100);
+  const after = await page.locator('.hero-plane-front').evaluate((node) => getComputedStyle(node).transform);
+  if (before === after) failures.push('Foreground parallax layer does not move with scroll.');
+  await page.evaluate(() => scrollTo(0, 0));
+}
+
 const currentCount = await page.locator('.site-nav [aria-current="location"]').count();
 if (currentCount !== 1) failures.push(`Navigation has ${currentCount} current links, expected exactly one.`);
 
