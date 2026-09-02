@@ -7,6 +7,7 @@ const maxInitialBytes = Number(process.env.PERF_MAX_INITIAL_BYTES || 260000);
 const maxCssBytes = Number(process.env.PERF_MAX_CSS_BYTES || 30000);
 const maxInitialJsBytes = Number(process.env.PERF_MAX_INITIAL_JS_BYTES || 2000);
 const maxDomNodes = Number(process.env.PERF_MAX_DOM_NODES || 300);
+const maxParallaxLayerBytes = Number(process.env.PERF_MAX_PARALLAX_LAYER_BYTES || 110000);
 
 const browser = await chromium.launch({ headless: true });
 const results = [];
@@ -32,6 +33,7 @@ for (const viewport of [
       }
     });
     const initialJs = resources.filter((resource) => resource.name.endsWith('.js'));
+    const parallaxLayers = resources.filter((resource) => /\/assets\/parallax\/city-(base|mid|foreground)\.(avif|webp)$/.test(new URL(resource.name).pathname));
     return {
       resources,
       cssBytes: css.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
@@ -39,6 +41,8 @@ for (const viewport of [
       initialBytes: resources.reduce((sum, resource) => sum + resource.encodedBodySize, 0),
       aiLoadedInitially: resources.some((resource) => resource.name.endsWith('/ai-field-tools.js')),
       domNodes: document.querySelectorAll('*').length,
+      parallaxLayerCount: parallaxLayers.length,
+      largestParallaxLayer: Math.max(0, ...parallaxLayers.map((resource) => resource.encodedBodySize)),
     };
   });
   results.push({ viewport: viewport.name, ...result });
@@ -54,6 +58,8 @@ for (const result of results) {
   if (result.initialJsBytes > maxInitialJsBytes) failures.push(`${result.viewport}: initial JS bytes ${result.initialJsBytes} > ${maxInitialJsBytes}`);
   if (result.aiLoadedInitially) failures.push(`${result.viewport}: AI tools script loaded before the AI section was near the viewport`);
   if (result.domNodes > maxDomNodes) failures.push(`${result.viewport}: DOM nodes ${result.domNodes} > ${maxDomNodes}`);
+  if (result.parallaxLayerCount !== 3) failures.push(`${result.viewport}: loaded ${result.parallaxLayerCount} parallax layers, expected 3`);
+  if (result.largestParallaxLayer > maxParallaxLayerBytes) failures.push(`${result.viewport}: largest parallax layer ${result.largestParallaxLayer} > ${maxParallaxLayerBytes}`);
 }
 
 console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially, domNodes }) => ({
@@ -63,6 +69,8 @@ console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, init
   initialJsBytes,
   aiLoadedInitially,
   domNodes,
+  parallaxLayerCount,
+  largestParallaxLayer,
 })), null, 2));
 
 if (failures.length) {
