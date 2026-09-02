@@ -324,4 +324,10 @@
     font-size: clamp(3.35rem, 15.5vw, 4.2rem);
     line-height: 0.94;
   }
+
+  .hero .hero-copy .hero-lede {
+    max-width: 29rem;
+    font-size: 1.06rem;
+    line-height: 1.52;
+  }
 }
