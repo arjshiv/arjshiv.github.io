@@ -50,6 +50,16 @@
   z-index: 3;
 }
 
+.hero-routes {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  right: -2%;
+  width: min(68vw, 68rem);
+  height: 78%;
+  overflow: visible;
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
