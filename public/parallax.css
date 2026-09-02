@@ -200,6 +200,11 @@
     width: min(10.25rem, 44vw);
   }
 
+  .hero .portrait figcaption {
+    color: rgba(255, 255, 255, 0.76);
+    text-align: right;
+  }
+
   .hero-scroll-cue {
     display: none;
   }
