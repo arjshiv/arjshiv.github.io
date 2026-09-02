@@ -336,4 +336,10 @@
     font-size: 0.9rem;
     line-height: 1.55;
   }
+
+  .hero .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+  }
 }
