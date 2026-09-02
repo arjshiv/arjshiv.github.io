@@ -7,6 +7,7 @@ const design = readFileSync('DESIGN.md', 'utf8');
 const styles = [
   readFileSync('public/styles.css', 'utf8'),
   readFileSync('public/refinements.css', 'utf8'),
+  readFileSync('public/parallax.css', 'utf8'),
 ].join('\n');
 const html = readFileSync('public/index.html', 'utf8');
 const failures = [];
