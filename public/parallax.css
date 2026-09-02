@@ -342,4 +342,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 0.55rem;
   }
+
+  .hero .hero-actions .button {
+    min-height: 2.75rem;
+    padding-inline: 0.7rem;
+    justify-content: center;
+    font-size: 0.72rem;
+  }
 }
