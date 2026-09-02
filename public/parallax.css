@@ -9,6 +9,18 @@
   pointer-events: none;
 }
 
+.hero-plane,
+.hero-plane img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-plane img {
+  object-fit: cover;
+}
+
 .hero.wide {
   position: relative;
   width: 100vw;
