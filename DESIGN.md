@@ -121,6 +121,9 @@ Color rules:
 - At most 12,000px page height at a 390px viewport.
 - Useful with JavaScript disabled.
 - JavaScript is limited to the click-to-load video facade and essential progressive enhancement. The hero parallax should prefer native scroll-driven CSS and remain useful as a static composition when unsupported.
+- The hero uses three generated 2000 by 1125 image planes: a distant city, middle architecture, and a transparent foreground. Each plane gets its own crop and travel distance; none may carry text.
+- Visual QA must cover 1440px desktop, 900px tablet, and 390px mobile at both the top and lower edge of the hero. Check image loading, copy contrast, portrait clearance, horizontal overflow, and a visible transform delta after scrolling.
+- On narrow screens, route annotations disappear and the image becomes a quieter portrait crop. Reduced-motion users receive the composed first frame with no transforms; reduced-data users receive the base city only.
 - No command palette, tool lab, fake terminal, or browser-AI showcase in the primary narrative.
 - No duplicate metrics, repeated article grids, or effects whose only purpose is to prove they can run.
 - Preserve compatibility with current evergreen browsers and readable fallback behavior in older browsers.
