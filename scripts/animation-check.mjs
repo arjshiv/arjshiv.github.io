@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-import { chromium } from 'playwright';
+import { launchBrowser } from './playwright-browser.mjs';
 
 const target = process.argv[2] || 'http://127.0.0.1:4173';
-const browser = await chromium.launch({ headless: true });
+const browser = await launchBrowser();
 const failures = [];
 const stubVideo = async (page) => {
   await page.route('https://www.youtube-nocookie.com/**', async (route) => {

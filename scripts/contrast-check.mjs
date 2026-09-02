@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { chromium } from 'playwright';
+import { launchBrowser } from './playwright-browser.mjs';
 
 const target = process.argv[2] || 'http://127.0.0.1:4173';
 const minRatio = Number(process.env.CONTRAST_MIN || 4.5);
@@ -137,7 +137,7 @@ async function auditText(root, minRatio) {
   }, minRatio);
 }
 
-const browser = await chromium.launch({ headless: true });
+const browser = await launchBrowser();
 const failures = [];
 
 for (const viewport of viewports) {

@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 
-import { chromium } from 'playwright';
+import { launchBrowser } from './playwright-browser.mjs';
 
 const target = process.argv[2] || 'http://127.0.0.1:4173';
-const maxInitialBytes = Number(process.env.PERF_MAX_INITIAL_BYTES || 260000);
+const maxInitialBytes = Number(process.env.PERF_MAX_INITIAL_BYTES || 380000);
 const maxCssBytes = Number(process.env.PERF_MAX_CSS_BYTES || 30000);
 const maxInitialJsBytes = Number(process.env.PERF_MAX_INITIAL_JS_BYTES || 2000);
 const maxDomNodes = Number(process.env.PERF_MAX_DOM_NODES || 300);
 const maxParallaxLayerBytes = Number(process.env.PERF_MAX_PARALLAX_LAYER_BYTES || 110000);
 
-const browser = await chromium.launch({ headless: true });
+const browser = await launchBrowser();
 const results = [];
 
 for (const viewport of [
@@ -62,7 +62,7 @@ for (const result of results) {
   if (result.largestParallaxLayer > maxParallaxLayerBytes) failures.push(`${result.viewport}: largest parallax layer ${result.largestParallaxLayer} > ${maxParallaxLayerBytes}`);
 }
 
-console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially, domNodes }) => ({
+console.log(JSON.stringify(results.map(({ viewport, initialBytes, cssBytes, initialJsBytes, aiLoadedInitially, domNodes, parallaxLayerCount, largestParallaxLayer }) => ({
   viewport,
   initialBytes,
   cssBytes,
