@@ -142,6 +142,10 @@
   .hero-plane-front {
     animation-name: hero-front-drift;
   }
+
+  .hero-routes {
+    animation-name: hero-route-drift;
+  }
 }
 
 .hero.wide {
