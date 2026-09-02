@@ -120,6 +120,16 @@
   to { transform: translate3d(0, -4rem, 0); }
 }
 
+@supports (animation-timeline: scroll()) {
+  .hero-plane,
+  .hero-routes,
+  .hero-route-note {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
