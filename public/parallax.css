@@ -330,4 +330,10 @@
     font-size: 1.06rem;
     line-height: 1.52;
   }
+
+  .hero .hero-copy > p:last-of-type {
+    max-width: 30rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
 }
