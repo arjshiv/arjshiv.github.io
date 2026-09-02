@@ -195,17 +195,6 @@
   }
 }
 
-@media (max-width: 760px) {
-  .hero.wide {
-    min-height: 67rem;
-  }
-
-  .hero .hero-copy {
-    min-height: 67rem;
-    padding-block: 7rem 17rem;
-  }
-}
-
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
@@ -317,5 +306,16 @@
     color: var(--canvas);
     background: var(--hero-accent);
     border-color: var(--hero-accent);
+  }
+}
+
+@media (max-width: 760px) {
+  .hero.wide {
+    min-height: 67rem;
+  }
+
+  .hero .hero-copy {
+    min-height: 67rem;
+    padding-block: 7rem 17rem;
   }
 }
