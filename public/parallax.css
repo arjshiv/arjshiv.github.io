@@ -175,6 +175,17 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .hero-plane,
+  .hero-routes,
+  .hero-routes path,
+  .hero-route-note,
+  .hero-scroll-cue {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
