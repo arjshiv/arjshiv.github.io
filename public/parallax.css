@@ -134,6 +134,10 @@
   .hero-plane-base {
     animation-name: hero-base-drift;
   }
+
+  .hero-plane-mid {
+    animation-name: hero-mid-drift;
+  }
 }
 
 .hero.wide {
