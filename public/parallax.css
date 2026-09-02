@@ -156,6 +156,12 @@
   .hero-route-note {
     animation-name: hero-note-drift;
   }
+
+  .hero-routes path {
+    animation: hero-route-draw 1s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 72svh;
+  }
 }
 
 .hero.wide {
