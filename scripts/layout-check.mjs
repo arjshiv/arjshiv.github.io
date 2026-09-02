@@ -21,6 +21,8 @@ for (const viewport of [
       return { left: r.left, right: r.right, top: r.top, bottom: r.bottom, width: r.width, height: r.height };
     };
     const title = rect('.hero h1');
+    const hero = rect('.hero.wide');
+    const scene = rect('.hero-scene');
     const portrait = rect('.portrait-frame');
     const primaryAction = rect('.hero .button.primary');
     const overflow = Math.round(document.documentElement.scrollWidth - window.innerWidth);
@@ -28,12 +30,14 @@ for (const viewport of [
     const overlapY = title && portrait ? Math.max(0, Math.min(title.bottom, portrait.bottom) - Math.max(title.top, portrait.top)) : 0;
     const portraitOutsideViewport = portrait ? portrait.left < 0 || portrait.right > window.innerWidth : true;
     const mobileActionBelowFold = window.innerWidth <= 390 && (!primaryAction || primaryAction.bottom > window.innerHeight);
-    return { overflow, heroOverlap: Math.round(overlapX * overlapY), portraitOutsideViewport, mobileActionBelowFold };
+    const sceneMiss = !hero || !scene || Math.abs(hero.width - scene.width) > 1 || Math.abs(hero.height - scene.height) > 1;
+    return { overflow, heroOverlap: Math.round(overlapX * overlapY), portraitOutsideViewport, mobileActionBelowFold, sceneMiss };
   });
   if (result.overflow !== 0) failures.push(viewport.name + ': horizontal overflow ' + result.overflow + 'px');
     if (result.heroOverlap !== 0) failures.push(viewport.name + ': hero title overlaps portrait');
     if (result.portraitOutsideViewport) failures.push(viewport.name + ': portrait leaves the viewport');
     if (result.mobileActionBelowFold) failures.push(viewport.name + ': primary action falls below the first viewport');
+    if (result.sceneMiss) failures.push(viewport.name + ': parallax scene does not fill the hero');
   await page.close();
 }
 
