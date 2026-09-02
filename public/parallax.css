@@ -71,3 +71,11 @@
   margin-inline: auto;
   padding-block: clamp(6rem, 14vh, 9rem) 8rem;
 }
+
+.hero .hero-copy > * {
+  max-width: min(39rem, 52vw);
+}
+
+.hero .hero-copy h1 {
+  max-width: 9ch;
+}
