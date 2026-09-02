@@ -357,6 +357,7 @@
   }
 
   .hero .hero-copy > p:last-of-type {
+    color: rgba(255, 255, 255, 0.78);
     max-width: 30rem;
     font-size: 0.9rem;
     line-height: 1.55;
