@@ -148,6 +148,13 @@
   transform: translateX(-50%);
 }
 
+.hero-scroll-cue > span {
+  width: 1px;
+  height: 1.35rem;
+  background: var(--hero-accent);
+  transform-origin: top;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero .button.primary:hover,
   .hero .button.secondary:hover {
