@@ -193,6 +193,12 @@
   .hero-route-note {
     display: none;
   }
+
+  .hero .portrait {
+    right: var(--gutter);
+    bottom: 2.75rem;
+    width: min(10.25rem, 44vw);
+  }
 }
 
 .hero.wide {
