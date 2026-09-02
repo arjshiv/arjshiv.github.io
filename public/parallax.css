@@ -85,6 +85,11 @@
   right: 24%;
 }
 
+.hero-route-note-renewal {
+  top: 58%;
+  right: 10%;
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
