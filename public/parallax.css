@@ -80,6 +80,11 @@
   white-space: nowrap;
 }
 
+.hero-route-note-repair {
+  top: 43%;
+  right: 24%;
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
