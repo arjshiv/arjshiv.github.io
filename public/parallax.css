@@ -120,6 +120,11 @@
   to { transform: translate3d(0, -4rem, 0); }
 }
 
+@keyframes hero-route-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
 @supports (animation-timeline: scroll()) {
   .hero-plane,
   .hero-routes,
