@@ -138,6 +138,9 @@ const reducedArrowTransform = await reducedArrow.evaluate((node) => getComputedS
 if (reducedArrowTransform !== 'none' && reducedArrowTransform !== 'matrix(1, 0, 0, 1, 0, 0)') {
   failures.push(`Reduced-motion arrow still moves: ${reducedArrowTransform}.`);
 }
+await reducedPage.evaluate(() => scrollTo(0, 420));
+const reducedPlaneTransform = await reducedPage.locator('.hero-plane-front').evaluate((node) => getComputedStyle(node).transform);
+if (reducedPlaneTransform !== 'none') failures.push(`Reduced-motion parallax still moves: ${reducedPlaneTransform}.`);
 
 const mobilePage = await browser.newPage({ viewport: { width: 390, height: 844 } });
 await mobilePage.goto(target, { waitUntil: 'networkidle' });
