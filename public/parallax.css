@@ -97,4 +97,7 @@
 
 .hero .hero-copy > p:last-of-type {
   color: var(--muted);
+  max-width: 34rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
 }
