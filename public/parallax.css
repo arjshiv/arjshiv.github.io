@@ -146,6 +146,10 @@
   .hero-routes {
     animation-name: hero-route-drift;
   }
+
+  .hero-route-note {
+    animation-name: hero-note-drift;
+  }
 }
 
 .hero.wide {
