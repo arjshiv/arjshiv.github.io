@@ -349,4 +349,9 @@
     justify-content: center;
     font-size: 0.72rem;
   }
+
+  .hero-plane-base {
+    inset: -3%;
+    object-position: 63% center;
+  }
 }
