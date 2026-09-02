@@ -79,6 +79,8 @@
 .hero .hero-copy h1 {
   max-width: 9ch;
   color: var(--heading);
+  font-size: clamp(4.5rem, 7.2vw, 6.75rem);
+  line-height: 0.92;
 }
 
 .hero .hero-copy .hero-lede {
