@@ -5,7 +5,7 @@
 This design system adapts the Resend style documented by Refero:
 https://styles.refero.design/style/0d914ef0-fa84-4c60-a9aa-cef0b5eb6e5d
 
-The reference contributes its black canvas, graphite rules, restrained violet identifier, serif display type, compact controls, and exact spacing. This site remains an editorial founder story. It must not become a developer-product landing page, a fake terminal, a dashboard, or an effects demo.
+The reference contributes its black canvas, graphite rules, restrained violet identifier, serif display type, compact controls, and exact spacing. The opening adds one cinematic New York apartment parallax inspired by the depth and pacing of Blume without copying its flowers, colors, or product composition. This site remains an editorial founder story. It must not become a developer-product landing page, a fake terminal, a dashboard, or an effects demo.
 
 The page keeps six sections:
 
@@ -44,7 +44,7 @@ Color rules:
 - Violet identifies links, selected states, and small editorial markers. It is never a large filled CTA or decorative gradient.
 - Blue is reserved for keyboard focus. Red, green, and amber are reserved for real status or data semantics.
 - All normal text and controls must meet WCAG AA contrast in default, hover, focus, active, and visited states.
-- Do not use gradients, glows, texture overlays, translucent glass, or colored page backgrounds.
+- Do not use gradients, glows, texture overlays, translucent glass, or colored page backgrounds outside the hero. The hero may use one black edge fade to join the generated scene to the canvas.
 
 ## Typography
 
@@ -92,14 +92,15 @@ Color rules:
 - Default transition: 150ms ease-out on color, border-color, opacity, and transform only.
 - Never use `transition: all`.
 - Motion must be interruptible and should explain hover, focus, expansion, or video loading.
-- No scroll-triggered reveal system, loading theater, perpetual decoration, parallax, or background animation.
+- The hero is the single motion event: three image planes move at restrained, depth-scaled rates for the first viewport only. No other section uses scroll-triggered reveals, perpetual decoration, or background animation.
+- Parallax must use transforms only, stop outside the hero, preserve normal scrolling, and become static under `prefers-reduced-motion`.
 - Fine-pointer hover effects belong inside `@media (hover: hover) and (pointer: fine)`.
 - `prefers-reduced-motion: reduce` removes nonessential transitions and transforms.
 
 ## Media And Visuals
 
 - Keep the portrait and the existing talks. They are evidence of a real person and a real body of work.
-- Preserve natural image color. Do not hide media under heavy tints, blur, duotone, or atmospheric crops.
+- Preserve natural image color. Do not hide media under heavy tints, blur, duotone, or atmospheric crops. The generated hero scene is exempt because its cool night palette is the composition itself.
 - The video facade remains click-to-load and privacy-enhanced.
 - Do not add a 3D cube, abstract code object, stock image, generated founder portrait, or decorative illustration merely to imitate the reference.
 
@@ -119,7 +120,7 @@ Color rules:
 - At most 300 DOM nodes.
 - At most 12,000px page height at a 390px viewport.
 - Useful with JavaScript disabled.
-- JavaScript is limited to the click-to-load video facade and essential progressive enhancement.
+- JavaScript is limited to the click-to-load video facade and essential progressive enhancement. The hero parallax should prefer native scroll-driven CSS and remain useful as a static composition when unsupported.
 - No command palette, tool lab, fake terminal, or browser-AI showcase in the primary narrative.
 - No duplicate metrics, repeated article grids, or effects whose only purpose is to prove they can run.
 - Preserve compatibility with current evergreen browsers and readable fallback behavior in older browsers.
