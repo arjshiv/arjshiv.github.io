@@ -101,3 +101,10 @@
   font-size: 0.98rem;
   line-height: 1.6;
 }
+
+.hero .button.primary,
+.hero .button.secondary {
+  color: var(--heading);
+  background: rgba(0, 0, 0, 0.48);
+  border-color: color-mix(in srgb, var(--hero-accent) 45%, transparent);
+}
