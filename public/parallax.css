@@ -195,6 +195,12 @@
   }
 }
 
+@media (max-width: 760px) {
+  .hero.wide {
+    min-height: 67rem;
+  }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
