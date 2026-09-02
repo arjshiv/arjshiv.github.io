@@ -130,6 +130,10 @@
     animation-timeline: scroll(root block);
     animation-range: 0 100svh;
   }
+
+  .hero-plane-base {
+    animation-name: hero-base-drift;
+  }
 }
 
 .hero.wide {
