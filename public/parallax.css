@@ -127,6 +127,8 @@
     animation-duration: 1s;
     animation-fill-mode: both;
     animation-timing-function: linear;
+    animation-timeline: scroll(root block);
+    animation-range: 0 100svh;
   }
 }
 
