@@ -105,6 +105,11 @@
   to { transform: translate3d(0, -8%, 0) scale(1.025); }
 }
 
+@keyframes hero-front-drift {
+  from { transform: translate3d(0, 0, 0) scale(1.04); }
+  to { transform: translate3d(0, -14%, 0) scale(1.04); }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
