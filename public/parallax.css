@@ -78,4 +78,13 @@
 
 .hero .hero-copy h1 {
   max-width: 9ch;
+  color: var(--heading);
+}
+
+.hero .hero-copy .hero-lede {
+  color: var(--text);
+}
+
+.hero .hero-copy > p:last-of-type {
+  color: var(--muted);
 }
