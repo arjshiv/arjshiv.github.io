@@ -202,6 +202,7 @@
 
   .hero .hero-copy {
     min-height: 67rem;
+    padding-block: 7rem 17rem;
   }
 }
 
