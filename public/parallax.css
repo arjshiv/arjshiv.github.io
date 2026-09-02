@@ -366,4 +366,9 @@
     object-position: 70% center;
     opacity: 0.58;
   }
+
+  .hero-routes,
+  .hero-route-note {
+    display: none;
+  }
 }
