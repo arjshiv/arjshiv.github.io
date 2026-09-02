@@ -90,6 +90,11 @@
   right: 10%;
 }
 
+.hero-route-note-movein {
+  top: 25%;
+  right: 5%;
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
