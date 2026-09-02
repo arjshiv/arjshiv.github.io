@@ -186,6 +186,15 @@
   }
 }
 
+@media (prefers-reduced-data: reduce) {
+  .hero-plane-mid,
+  .hero-plane-front,
+  .hero-routes,
+  .hero-route-note {
+    display: none;
+  }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
