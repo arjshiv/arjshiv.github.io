@@ -108,3 +108,12 @@
   background: rgba(0, 0, 0, 0.48);
   border-color: color-mix(in srgb, var(--hero-accent) 45%, transparent);
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .hero .button.primary:hover,
+  .hero .button.secondary:hover {
+    color: var(--canvas);
+    background: var(--hero-accent);
+    border-color: var(--hero-accent);
+  }
+}
