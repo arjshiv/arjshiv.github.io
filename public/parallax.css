@@ -29,6 +29,18 @@
   will-change: transform;
 }
 
+.hero-plane-base {
+  z-index: 0;
+}
+
+.hero-plane-mid {
+  z-index: 1;
+}
+
+.hero-plane-front {
+  z-index: 3;
+}
+
 .hero.wide {
   position: relative;
   width: 100vw;
