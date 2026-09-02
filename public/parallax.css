@@ -199,6 +199,10 @@
   .hero.wide {
     min-height: 67rem;
   }
+
+  .hero .hero-copy {
+    min-height: 67rem;
+  }
 }
 
 .hero.wide {
