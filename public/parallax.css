@@ -21,6 +21,13 @@
   object-fit: cover;
 }
 
+.hero-plane {
+  inset: -6%;
+  width: auto;
+  height: auto;
+  will-change: transform;
+}
+
 .hero.wide {
   position: relative;
   width: 100vw;
