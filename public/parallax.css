@@ -5,9 +5,13 @@
 }
 
 .hero.wide {
+  position: relative;
   width: 100vw;
   max-width: none;
   min-height: calc(100svh - 4rem);
   margin-inline: calc(50% - 50vw);
   padding: 0;
+  display: block;
+  overflow: clip;
+  isolation: isolate;
 }
