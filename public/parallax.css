@@ -167,6 +167,12 @@
     animation-timeline: scroll(root block);
     animation-range: 0 72svh;
   }
+
+  .hero-scroll-cue {
+    animation: hero-cue-fade 1s linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 32svh;
+  }
 }
 
 .hero.wide {
