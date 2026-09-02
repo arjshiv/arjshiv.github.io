@@ -60,6 +60,16 @@
   overflow: visible;
 }
 
+.hero-routes path {
+  stroke: var(--hero-accent);
+  stroke-width: 1.35;
+  vector-effect: non-scaling-stroke;
+}
+
+.hero-routes circle {
+  fill: var(--hero-accent);
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
