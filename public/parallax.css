@@ -126,6 +126,11 @@
   to { stroke-dashoffset: 0; }
 }
 
+@keyframes hero-cue-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 @supports (animation-timeline: scroll()) {
   .hero-plane,
   .hero-routes,
