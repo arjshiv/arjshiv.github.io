@@ -125,6 +125,13 @@
   border-color: color-mix(in srgb, var(--hero-accent) 30%, var(--hairline));
 }
 
+.hero .portrait figcaption {
+  margin-top: 0.5rem;
+  color: var(--text);
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero .button.primary:hover,
   .hero .button.secondary:hover {
