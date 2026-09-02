@@ -115,6 +115,11 @@
   to { transform: translate3d(0, -10%, 0); }
 }
 
+@keyframes hero-note-drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -4rem, 0); }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
