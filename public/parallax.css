@@ -61,3 +61,13 @@
   overflow: clip;
   isolation: isolate;
 }
+
+.hero .hero-copy {
+  position: relative;
+  z-index: 10;
+  width: var(--page);
+  max-width: none;
+  min-height: calc(100svh - 4rem);
+  margin-inline: auto;
+  padding-block: clamp(6rem, 14vh, 9rem) 8rem;
+}
