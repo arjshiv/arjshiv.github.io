@@ -360,4 +360,10 @@
     object-position: 67% center;
     opacity: 0.82;
   }
+
+  .hero-plane-front {
+    inset: -5%;
+    object-position: 70% center;
+    opacity: 0.58;
+  }
 }
