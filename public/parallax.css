@@ -90,6 +90,9 @@
 
 .hero .hero-copy .hero-lede {
   color: var(--text);
+  max-width: 35rem;
+  font-size: clamp(1.1rem, 1.7vw, 1.28rem);
+  line-height: 1.55;
 }
 
 .hero .hero-copy > p:last-of-type {
