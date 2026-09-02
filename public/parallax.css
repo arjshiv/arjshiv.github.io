@@ -9,6 +9,15 @@
   pointer-events: none;
 }
 
+.hero-scene::after {
+  position: absolute;
+  z-index: 8;
+  inset: auto 0 0;
+  height: 24%;
+  background: linear-gradient(to bottom, transparent, var(--canvas) 88%); /* parallax-fade-allow */
+  content: "";
+}
+
 .hero-plane,
 .hero-plane img {
   position: absolute;
