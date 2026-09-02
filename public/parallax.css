@@ -100,6 +100,11 @@
   to { transform: translate3d(0, -3%, 0) scale(1.01); }
 }
 
+@keyframes hero-mid-drift {
+  from { transform: translate3d(0, 0, 0) scale(1.025); }
+  to { transform: translate3d(0, -8%, 0) scale(1.025); }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
