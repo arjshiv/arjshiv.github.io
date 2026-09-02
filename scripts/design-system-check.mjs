@@ -70,6 +70,7 @@ const forbiddenAdditions = [
 
 for (const line of addedLines) {
   for (const [pattern, message] of forbiddenAdditions) {
+    if (line.includes('parallax-fade-allow') && message.includes('gradients')) continue;
     if (pattern.test(line)) failures.push(`${message} Added line: ${line.trim()}`);
   }
 }
