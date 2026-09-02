@@ -318,4 +318,10 @@
     min-height: 67rem;
     padding-block: 7rem 17rem;
   }
+
+  .hero .hero-copy h1 {
+    max-width: 8ch;
+    font-size: clamp(3.35rem, 15.5vw, 4.2rem);
+    line-height: 0.94;
+  }
 }
