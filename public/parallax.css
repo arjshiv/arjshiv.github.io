@@ -118,6 +118,13 @@
   margin: 0;
 }
 
+.hero .portrait-frame {
+  aspect-ratio: 4 / 3;
+  padding: 0.25rem;
+  background: rgba(0, 0, 0, 0.72);
+  border-color: color-mix(in srgb, var(--hero-accent) 30%, var(--hairline));
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero .button.primary:hover,
   .hero .button.secondary:hover {
