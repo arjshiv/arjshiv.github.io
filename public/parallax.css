@@ -95,6 +95,11 @@
   right: 5%;
 }
 
+@keyframes hero-base-drift {
+  from { transform: translate3d(0, 0, 0) scale(1.01); }
+  to { transform: translate3d(0, -3%, 0) scale(1.01); }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
