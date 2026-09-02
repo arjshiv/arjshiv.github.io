@@ -132,6 +132,22 @@
   font-size: 0.66rem;
 }
 
+.hero-scroll-cue {
+  position: absolute;
+  z-index: 12;
+  bottom: 2.2rem;
+  left: 50%;
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 0.66rem;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .hero .button.primary:hover,
   .hero .button.secondary:hover {
