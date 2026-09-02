@@ -214,6 +214,20 @@
   }
 }
 
+@media (prefers-contrast: more) {
+  .hero .hero-copy > p,
+  .hero .portrait figcaption,
+  .hero-scroll-cue {
+    color: #fff;
+  }
+
+  .hero .button.primary,
+  .hero .button.secondary {
+    border-color: #fff;
+    background: #000;
+  }
+}
+
 .hero.wide {
   --hero-accent: #83d9d0;
   position: relative;
