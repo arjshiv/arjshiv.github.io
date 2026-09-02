@@ -203,6 +203,10 @@
   .hero-scroll-cue {
     display: none;
   }
+
+  .hero .hero-copy > :not(.hero-actions) {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.82);
+  }
 }
 
 .hero.wide {
