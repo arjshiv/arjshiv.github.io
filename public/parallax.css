@@ -354,4 +354,10 @@
     inset: -3%;
     object-position: 63% center;
   }
+
+  .hero-plane-mid {
+    inset: -4%;
+    object-position: 67% center;
+    opacity: 0.82;
+  }
 }
