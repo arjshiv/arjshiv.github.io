@@ -241,6 +241,12 @@
   isolation: isolate;
 }
 
+@supports not (overflow: clip) {
+  .hero.wide {
+    overflow: hidden;
+  }
+}
+
 .hero .eyebrow {
   color: var(--hero-accent);
 }
