@@ -34,7 +34,9 @@ for (const viewport of [
     const founderOverlapY = founderNote && portrait ? Math.max(0, Math.min(founderNote.bottom, portrait.bottom) - Math.max(founderNote.top, portrait.top)) : 0;
     const mobileActionBelowFold = window.innerWidth <= 390 && (!primaryAction || primaryAction.bottom > window.innerHeight);
     const sceneMiss = !hero || !scene || Math.abs(hero.width - scene.width) > 1 || Math.abs(hero.height - scene.height) > 1;
-    return { overflow, heroOverlap: Math.round(overlapX * overlapY), founderOverlap: Math.round(founderOverlapX * founderOverlapY), portraitOutsideViewport, mobileActionBelowFold, sceneMiss };
+    const sceneHidden = document.querySelector('.hero-scene')?.getAttribute('aria-hidden') === 'true';
+    const decorativeImages = [...document.querySelectorAll('.hero-scene img')].every((image) => image.alt === '');
+    return { overflow, heroOverlap: Math.round(overlapX * overlapY), founderOverlap: Math.round(founderOverlapX * founderOverlapY), portraitOutsideViewport, mobileActionBelowFold, sceneMiss, sceneHidden, decorativeImages };
   });
   if (result.overflow !== 0) failures.push(viewport.name + ': horizontal overflow ' + result.overflow + 'px');
     if (result.heroOverlap !== 0) failures.push(viewport.name + ': hero title overlaps portrait');
@@ -42,6 +44,7 @@ for (const viewport of [
     if (result.portraitOutsideViewport) failures.push(viewport.name + ': portrait leaves the viewport');
     if (result.mobileActionBelowFold) failures.push(viewport.name + ': primary action falls below the first viewport');
     if (result.sceneMiss) failures.push(viewport.name + ': parallax scene does not fill the hero');
+    if (!result.sceneHidden || !result.decorativeImages) failures.push(viewport.name + ': decorative scene enters the accessibility tree');
   await page.close();
 }
 
