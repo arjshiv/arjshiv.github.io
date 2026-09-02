@@ -1,7 +1,12 @@
 /* Hero depth system. Rules are added in small, reviewable passes. */
 
 .hero-scene {
-  display: none;
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  background: var(--canvas);
+  pointer-events: none;
 }
 
 .hero.wide {
