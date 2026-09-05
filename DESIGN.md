@@ -132,7 +132,7 @@ Color rules:
 
 ### Optional Fun Mode
 
-The user-authorized `/fun/` page is an isolated handheld-console portfolio. It uses a light lavender desk, molded off-white shell, green LCD, burgundy controls, physical shadows and material gradients. These physical treatments are scoped to `public/fun/`; the regular site's design and content stay unchanged apart from its mode link. The console must work with touch and keyboard, expose readable screen content, respect reduced motion, and offer an always-visible return to the regular site. No console-brand names or logos are used.
+The user-authorized `/fun/` page is an isolated dual-screen handheld portfolio. It uses an image-generated pearl-white clamshell engraved with Arjun Kannan's name, a skyline wallpaper, main navigation on the upper screen, and a synchronized sitemap below. Material shadows and screen-specific colors are scoped to `public/fun/`; the regular site remains unchanged. The render is a bitmap with responsive live HTML screens and physical-control hit areas. Keyboard focus must survive chapter changes; Enter opens, Escape returns, Home resets, and arrows follow each screen's grid. Sound must wait for a running audio context and its test must measure an actual output signal. No console-brand names or logos appear on the site.
 
 `DESIGN.md` is the contract for frontend work. Any change to `public/*.html` or `public/*.css` must be checked against it.
 
