@@ -130,6 +130,10 @@ Color rules:
 
 ## Enforcement
 
+### Optional Fun Mode
+
+The user-authorized `/fun/` page is an isolated handheld-console portfolio. It uses a light lavender desk, molded off-white shell, green LCD, burgundy controls, physical shadows and material gradients. These physical treatments are scoped to `public/fun/`; the regular site's design and content stay unchanged apart from its mode link. The console must work with touch and keyboard, expose readable screen content, respect reduced motion, and offer an always-visible return to the regular site. No console-brand names or logos are used.
+
 `DESIGN.md` is the contract for frontend work. Any change to `public/*.html` or `public/*.css` must be checked against it.
 
 - Run `bun run check:design` for design-system drift.

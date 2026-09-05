@@ -55,10 +55,12 @@ try {
   failures.push('Could not inspect the staged frontend diff.');
 }
 
-const addedLines = stagedDiff
-  .split('\n')
-  .filter((line) => line.startsWith('+') && !line.startsWith('+++'))
-  .map((line) => line.slice(1));
+// The optional console has its own material treatment, scoped in DESIGN.md.
+let funModeFile = false;
+const addedLines = stagedDiff.split('\n').flatMap((line) => {
+  if (line.startsWith('+++ b/')) funModeFile = line.startsWith('+++ b/public/fun/');
+  return !funModeFile && line.startsWith('+') && !line.startsWith('+++') ? [line.slice(1)] : [];
+});
 
 const forbiddenAdditions = [
   [/transition\s*:\s*all\b/i, 'Use explicit transition properties instead of transition: all.'],
