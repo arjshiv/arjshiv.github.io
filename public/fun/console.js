@@ -4,30 +4,38 @@ const mapLinks = [...document.querySelectorAll("#sitemap a")];
 const home = document.querySelector("#home-view");
 const detail = document.querySelector("#detail-view");
 const soundButton = document.querySelector("#sound");
+const sectionLinks = {
+  top: "About me",
+  work: "More about ResiDesk",
+  story: "Read my story",
+  principles: "More on how I work",
+  notes: "Read and watch",
+  contact: "Contact details",
+};
 const chapters = {
   top: [
     "Hello, I'm Arjun.",
-    "I co-founded ResiDesk. I spend most of my time on product and data, plus the rest of running a startup.",
+    "I co-founded ResiDesk, where most of my time goes into product and data. I also work on sales, hiring, and whatever's holding the team up that day.",
   ],
   work: [
     "Building ResiDesk.",
-    "Residents text about rent, repairs, renewals, and everything else happening in their building. We help the team answer and keep track of what still needs to happen.",
+    "Your landlord usually talks to you when they need rent. You talk to them when the sink breaks. ResiDesk brings those conversations together so property teams can answer residents and follow up on repairs, renewals, and other open issues.",
   ],
   story: [
     "How I got here.",
-    "I thought I was going to get a PhD. Then I wrote an iPhone app for the lab. That led to financial software at BlackRock, education lending at Climb, and eventually ResiDesk.",
+    "I thought I'd get a PhD. At Cornell, I wrote an iPhone app to check our physics lab for magnetic noise and found I liked building software. I later built financial software at BlackRock, then ran product, engineering, and data at Climb, which financed education. After that, I co-founded ResiDesk.",
   ],
   principles: [
     "I ask a lot of questions.",
-    "Start with the person doing the work. Take the complaint seriously, then check the data. And when we fix something, let's make sure we don't have to fix it again.",
+    "When someone flags a problem, I want to understand what they're dealing with and help them fix it. We look at the messages and check how often it's happening. If the same problem keeps coming back, we need to change how the work gets done.",
   ],
   notes: [
     "Writing and talks.",
-    "I write about AI, housing, and software. There are essays, interviews, and longer conversations on the full site.",
+    "I write about AI, housing, and building software. In the talks, I get into how I ended up here and what we're learning at ResiDesk.",
   ],
   contact: [
     "Email me.",
-    "Building something? Working through a product problem? I'd like to hear about it.",
+    "Tell me what you're building or where you're stuck. A bit of context helps me work out whether I can help.",
   ],
 };
 let selected = "top",
@@ -38,11 +46,14 @@ let selected = "top",
   togglePending = false;
 async function enableAudio() {
   const Audio = window.AudioContext || window.webkitAudioContext;
-  if (!Audio) throw new Error("Audio is not supported in this browser.");
+  if (!Audio)
+    throw new Error(
+      "This browser can't play the button sounds. You can still use both screens.",
+    );
   context ||= new Audio();
   if (context.state !== "running") await context.resume();
   if (context.state !== "running")
-    throw new Error("Audio is paused. Try enabling sound again.");
+    throw new Error("Sound didn't start. Press Turn sound on to try again.");
 }
 async function tone(confirm = false) {
   if (!sound) return;
@@ -73,8 +84,8 @@ function setSound(enabled) {
   sound = enabled;
   soundButton.setAttribute("aria-pressed", String(sound));
   soundButton.querySelector("span").textContent = sound
-    ? "Sound on"
-    : "Enable sound";
+    ? "Turn sound off"
+    : "Turn sound on";
   document
     .querySelector("#sound-waves")
     .setAttribute(
@@ -113,6 +124,8 @@ function select(id) {
     .find((link) => link.dataset.chapter === id)
     .lastElementChild.textContent.toUpperCase();
   document.querySelector("#full-section").href = "/#" + selected;
+  document.querySelector("#full-section").textContent =
+    sectionLinks[selected] + " ↗";
 }
 function showChapter(id, updateHistory = true, moveFocus = false) {
   if (!powered || !chapters[id]) return;
@@ -123,8 +136,7 @@ function showChapter(id, updateHistory = true, moveFocus = false) {
   document.querySelector("#detail-copy").textContent = copy;
   const link = document.querySelector("#detail-link");
   link.href = id === "contact" ? "mailto:arj.shiv@gmail.com" : "/#" + id;
-  link.textContent =
-    id === "contact" ? "Send me a note ↗" : "Read the full section ↗";
+  link.textContent = id === "contact" ? "Email me ↗" : sectionLinks[id] + " ↗";
   home.hidden = true;
   detail.hidden = false;
   detail.scrollTop = 0;

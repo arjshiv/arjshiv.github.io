@@ -117,7 +117,7 @@ try {
     );
     await page.locator("#power").click();
     await page
-      .getByRole("button", { name: "Home: All chapters", exact: true })
+      .getByRole("button", { name: "Home: Back to menu", exact: true })
       .click();
     await page.screenshot({ path: `/tmp/dual-${width}.png`, fullPage: true });
     await page
@@ -140,10 +140,7 @@ try {
   });
   await page.goto(target + "/fun/");
   await page.locator("#sound").click();
-  assert.match(
-    await page.locator("#audio-status").textContent(),
-    /not supported/,
-  );
+  assert.match(await page.locator("#audio-status").textContent(), /can't play/);
   assert.equal(
     await page.locator("#sound").getAttribute("aria-pressed"),
     "false",
