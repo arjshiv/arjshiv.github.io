@@ -6,215 +6,242 @@
     <meta name="theme-color" content="#eeedf2" />
     <meta
       name="description"
-      content="Arjun Kannan's pocket-sized portfolio. Product, data, and the rest of running a startup."
+      content="Arjun Kannan's dual-screen portfolio. Explore the story, work, writing, and talks."
     />
-    <title>Arjun Kannan · Pocket Edition</title>
+    <meta property="og:title" content="Arjun Kannan · Dual Screen Edition" />
+    <meta
+      property="og:image"
+      content="https://arjunkannan.com/fun/handheld-shell.webp"
+    />
+    <title>Arjun Kannan · Dual Screen Edition</title>
     <link rel="canonical" href="https://arjunkannan.com/fun/" />
-    <link rel="stylesheet" href="console.css" />
-    <script src="console.js" defer></script>
+    <link rel="stylesheet" href="console.css?v=dual1" />
+    <script src="console.js?v=dual1" defer></script>
   </head>
   <body>
     <header class="masthead">
-      <a class="identity" href="/"
-        >arjun<span class="identity-pixels" aria-hidden="true">▪</span></a
-      >
-      <span class="edition">THE POCKET EDITION / 001</span>
-      <a class="mode-switch" href="/" aria-label="Switch to regular site"
+      <a class="identity" href="/">arjun<span>■</span></a
+      ><span class="edition">DUAL SCREEN EDITION / 002</span
+      ><a class="mode-switch" href="/" aria-label="Switch to regular site"
         ><span class="switch-track" aria-hidden="true"></span>Fun mode
-        <span class="mode-state">ON</span></a
+        <small>ON</small></a
       >
     </header>
     <main>
-      <section class="intro" aria-labelledby="title">
-        <p class="eyebrow">A SMALL DETOUR</p>
-        <h1 id="title">Same Arjun.<br /><em>Smaller screen.</em></h1>
-        <p class="intro-copy">
-          I'm building ResiDesk.<br />This is the pocket edition.
+      <div class="intro">
+        <p class="eyebrow">ARJUN KANNAN</p>
+        <h1>Two screens.<br /><em>Same person.</em></h1>
+        <p>
+          I'm building ResiDesk.<br />
+          There's more to the story.
         </p>
-        <a class="plain-link" href="/"
-          >Back to the full story <span aria-hidden="true">↗</span></a
-        >
-        <p class="handwritten">Still a kid with a new toy.</p>
-      </section>
-
+        <a href="/" class="regular-link">Read the regular site ↗</a>
+      </div>
       <section
         class="console-stage"
-        aria-label="Interactive handheld portfolio"
+        aria-label="Arjun Kannan dual-screen handheld portfolio"
       >
-        <div class="console">
-          <div class="top-edge">
-            <button
-              id="power"
-              class="power-switch"
-              aria-label="Console power"
-              aria-pressed="true"
+        <div class="console" id="console" tabindex="-1">
+          <img
+            class="hardware"
+            src="handheld-shell.webp"
+            alt="Pearl-white dual-screen handheld with Arjun Kannan engraved on its hinge"
+            width="1254"
+            height="1254"
+            fetchpriority="high"
+          />
+          <section class="upper-screen" aria-label="Main screen">
+            <div class="screen-bar">
+              <span>ARJUN KANNAN</span
+              ><span class="status-led" aria-label="Powered on">●</span>
+            </div>
+            <div id="home-view">
+              <h2>Building ResiDesk.</h2>
+              <nav class="apps" aria-label="Portfolio chapters">
+                <a href="#top" data-chapter="top"
+                  ><span class="app-icon">AK</span><span>Hello</span></a
+                >
+                <a href="#work" data-chapter="work"
+                  ><span class="app-icon">RD</span><span>ResiDesk</span></a
+                >
+                <a href="#story" data-chapter="story"
+                  ><span class="app-icon">01</span><span>My story</span></a
+                >
+                <a href="#principles" data-chapter="principles"
+                  ><span class="app-icon">&amp;</span><span>How I work</span></a
+                >
+                <a href="#notes" data-chapter="notes"
+                  ><span class="app-icon">Aa</span
+                  ><span>Notes &amp; talks</span></a
+                >
+                <a href="#contact" data-chapter="contact"
+                  ><span class="app-icon">@</span><span>Contact</span></a
+                >
+              </nav>
+            </div>
+            <article
+              id="detail-view"
+              hidden
+              tabindex="0"
+              aria-label="Selected chapter"
             >
-              <span>OFF</span><i aria-hidden="true"></i><span>ON</span></button
-            ><span class="model">AK–01</span>
-          </div>
-          <div class="shell-seam" aria-hidden="true"></div>
-          <div class="bezel">
-            <div class="bezel-heading">
-              <span></span>
-              <p>DOT MATRIX WITH CURIOSITY</p>
-              <span></span>
-            </div>
-            <div class="battery"><i></i><span>POWER</span></div>
-            <div class="lcd" id="lcd">
-              <div class="screen-top">
-                <span id="screen-label">ARJUN'S POCKET</span
-                ><span id="screen-counter">01 / 05</span>
-              </div>
-              <div
-                id="screen"
-                class="screen-content"
-                tabindex="0"
-                role="region"
-                aria-label="Portfolio screen"
-                aria-live="polite"
-              ></div>
-              <div class="screen-bottom">
-                <span id="screen-hint">A: OPEN</span><span>START: HOME</span>
-              </div>
-            </div>
-          </div>
-          <div class="device-brand">
-            <strong>pocket<span>.</span></strong
-            ><span>ARJUN KANNAN</span>
-          </div>
-          <div class="controls">
-            <div class="dpad" role="group" aria-label="Directional controls">
-              <span class="dpad-center" aria-hidden="true"></span>
-              <button
-                class="direction up"
-                data-action="up"
-                aria-label="Previous item"
-              >
-                <span aria-hidden="true">▲</span>
+              <button id="back" aria-label="Back to chapters">
+                ← Chapters
               </button>
-              <button
-                class="direction left"
-                data-action="left"
-                aria-label="Previous page"
+              <h2 id="detail-title"></h2>
+              <p id="detail-copy"></p>
+              <a id="detail-link" href="/">Read the full story ↗</a>
+            </article>
+            <div class="screen-footer">
+              <span id="selection">HELLO</span><span>AK / 002</span>
+            </div>
+          </section>
+          <section class="lower-screen" aria-label="Lower screen sitemap">
+            <div class="map-heading">
+              <h2>Site map</h2>
+              <span>06 CHAPTERS</span>
+            </div>
+            <nav id="sitemap" aria-label="Sitemap">
+              <a href="#top" data-chapter="top"><span>01</span>Hello</a
+              ><a href="#work" data-chapter="work"><span>02</span>ResiDesk</a
+              ><a href="#story" data-chapter="story"><span>03</span>My story</a
+              ><a href="#principles" data-chapter="principles"
+                ><span>04</span>How I work</a
+              ><a href="#notes" data-chapter="notes"
+                ><span>05</span>Notes &amp; talks</a
+              ><a href="#contact" data-chapter="contact"
+                ><span>06</span>Contact</a
               >
-                <span aria-hidden="true">◀</span>
-              </button>
-              <button
-                class="direction right"
-                data-action="right"
-                aria-label="Next page"
-              >
-                <span aria-hidden="true">▶</span>
-              </button>
-              <button
-                class="direction down"
-                data-action="down"
-                aria-label="Next item"
-              >
-                <span aria-hidden="true">▼</span>
-              </button>
-            </div>
-            <div class="action-buttons">
-              <div>
-                <button
-                  data-action="back"
-                  class="round-button"
-                  aria-label="B: Go back"
-                ></button
-                ><span>B</span>
-              </div>
-              <div>
-                <button
-                  data-action="open"
-                  class="round-button"
-                  aria-label="A: Open selection"
-                ></button
-                ><span>A</span>
-              </div>
-            </div>
+            </nav>
+            <a id="full-section" class="full-section" href="/#top"
+              >Open full page ↗</a
+            >
+          </section>
+          <div
+            class="hardware-controls"
+            role="group"
+            aria-label="Handheld controls"
+          >
+            <button
+              class="hit circle-pad"
+              data-action="next"
+              aria-label="Circle pad: next chapter"
+              title="Next chapter"
+            ></button>
+            <button
+              class="hit d-up"
+              data-action="up"
+              aria-label="Up"
+              title="Up"
+            ></button
+            ><button
+              class="hit d-down"
+              data-action="down"
+              aria-label="Down"
+              title="Down"
+            ></button
+            ><button
+              class="hit d-left"
+              data-action="left"
+              aria-label="Left"
+              title="Left"
+            ></button
+            ><button
+              class="hit d-right"
+              data-action="right"
+              aria-label="Right"
+              title="Right"
+            ></button>
+            <button
+              class="hit x-button"
+              data-action="map"
+              aria-label="X: Focus sitemap"
+              title="Focus sitemap"
+            ></button
+            ><button
+              class="hit y-button"
+              data-action="sound"
+              aria-label="Y: Toggle sound"
+              title="Toggle sound"
+            ></button
+            ><button
+              class="hit a-button"
+              data-action="open"
+              aria-label="A: Open selection"
+              title="Open selection"
+            ></button
+            ><button
+              class="hit b-button"
+              data-action="back"
+              aria-label="B: Go back"
+              title="Go back"
+            ></button>
+            <button
+              class="hit select-button"
+              data-action="map"
+              aria-label="Select: Focus sitemap"
+              title="Focus sitemap"
+            ></button
+            ><button
+              class="hit home-button"
+              data-action="home"
+              aria-label="Home: All chapters"
+              title="All chapters"
+            ></button
+            ><button
+              class="hit start-button"
+              data-action="open"
+              aria-label="Start: Open selection"
+              title="Open selection"
+            ></button>
           </div>
-          <div class="system-buttons">
-            <div>
-              <button
-                data-action="select"
-                aria-label="Select next item"
-              ></button
-              ><span>SELECT</span>
-            </div>
-            <div>
-              <button
-                data-action="home"
-                aria-label="Start: Home screen"
-              ></button
-              ><span>START</span>
-            </div>
-          </div>
-          <div class="speaker" aria-hidden="true">
-            <i></i><i></i><i></i><i></i><i></i><i></i>
-          </div>
-          <span class="serial">EST. ALWAYS CURIOUS</span>
+          <button
+            id="power"
+            class="hit power-button"
+            aria-label="Console power"
+            aria-pressed="true"
+            title="Console power"
+          ></button>
         </div>
-        <p class="stage-caption">
-          <span aria-hidden="true">●</span> ONE FOUNDER. FIVE LITTLE CHAPTERS.
-        </p>
       </section>
-
-      <aside class="guide" aria-label="Console controls">
-        <p class="eyebrow">MAKE YOURSELF AT HOME</p>
-        <div class="guide-row">
-          <span class="key directional-key" aria-hidden="true">✛</span>
-          <div>
-            <strong>Wander a little</strong>
-            <p>D-pad or arrow keys</p>
-          </div>
-        </div>
-        <div class="guide-row">
-          <span class="key" aria-hidden="true">A</span>
-          <div>
-            <strong>Take a look</strong>
-            <p>A button or Z key</p>
-          </div>
-        </div>
-        <div class="guide-row">
-          <span class="key" aria-hidden="true">B</span>
-          <div>
-            <strong>Go back</strong>
-            <p>B button or X key</p>
-          </div>
-        </div>
-        <div class="guide-row">
-          <span class="key start-key" aria-hidden="true"></span>
-          <div>
-            <strong>Start over</strong>
-            <p>Start or Enter key</p>
-          </div>
-        </div>
-        <button id="sound" class="sound-button" aria-pressed="false">
+      <div class="toolbar">
+        <button id="sound" aria-pressed="false">
           <svg
             width="18"
             height="18"
             viewBox="0 0 24 24"
-            fill="none"
             stroke="currentColor"
+            fill="none"
             stroke-width="1.5"
             aria-hidden="true"
           >
-            <path d="m11 5-6 4H2v6h3l6 4zM16 9l5 6m0-6-5 6" /></svg
-          ><span>Sound off</span>
-        </button>
-        <a class="contact-link" href="mailto:arj.shiv@gmail.com"
-          >Have something in mind? <span aria-hidden="true">↗</span></a
+            <path d="m11 5-6 4H2v6h3l6 4z" />
+            <path id="sound-waves" d="m16 9 5 6m0-6-5 6" /></svg
+          ><span>Enable sound</span></button
+        ><span id="audio-status" role="status"></span
+        ><button
+          id="keyboard-help"
+          aria-expanded="false"
+          aria-controls="key-help"
         >
-      </aside>
+          Keyboard controls
+        </button>
+        <p id="key-help" hidden>
+          Arrows move · Enter or Z opens · Escape or X goes back · Home returns
+          to chapters · Tab switches controls
+        </p>
+      </div>
     </main>
+    <span id="chapter-announcement" class="sr-only" role="status"></span>
     <footer>
-      <span>ARJUN KANNAN · NEW YORK</span><span>NO BATTERIES REQUIRED.</span
-      ><a href="/">Regular site ↗</a>
+      <span>ARJUN KANNAN · NEW YORK</span><a href="/">Regular site ↗</a>
     </footer>
     <noscript
       ><p class="no-script">
-        The console needs JavaScript.
-        <a href="/">Read the full portfolio here.</a>
+        Read <a href="/#work">ResiDesk</a>, <a href="/#story">my story</a>,
+        <a href="/#principles">how I work</a>,
+        <a href="/#notes">writing and talks</a>, or
+        <a href="/#contact">contact me</a> on the regular site.
       </p></noscript
     >
   </body>
