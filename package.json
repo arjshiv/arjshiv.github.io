@@ -17,6 +17,7 @@
     "playwright": "^1.59.1"
   },
   "scripts": {
+    "check:fun": "node scripts/fun-mode-check.mjs",
     "check:ai-tools": "node scripts/ai-field-tools-check.mjs",
     "check:contrast": "node scripts/contrast-check.mjs",
     "check:design": "node scripts/design-system-check.mjs",
